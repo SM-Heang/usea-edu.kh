@@ -42,28 +42,27 @@
 							// print_r($result);
 							// echo "</pre>";
 						foreach ($result as $key => $value) { ?>
-						<!-- <img src="../media/events/independent_days.jpg" alt="independent_days" width="375px" height="245px"> -->
 						<p><?php echo $value['article_description_en'];?></p>
 						<?php } ?>
 					</div>
-					<!-- <h4>LOGO Meaning</h4>
-					<div class="content-meaning-detail">
-						<img src="media/logo/logo-update.png" alt="USEA LOGO" width="180px" height="180px">
-						<ul>
-							<li>The picture of the golden rice panicles around the circle symbolizes the university strength, development and sustainabitity.</li>
-							<li>The dark blue phrases written in both Khmer and English around the circle and the word USEA with the light blue color on the book symbolize the name of the University of South-East Asia.</li>
-							<li>The picture of the light blue globe inside the circle represents fame, national and internaational recognition, and regional and global integration.</li>
-							<li>The pictures of the blue hat and spearhead on the book symbolize high quality education and research, resulting in excellent leadership with professional ethics, createivity, social understanding, and commitment to promoting national.</li>
-						</ul>
-					</div> -->
-
-
 				</div>
 			</div>
 			<!-- Start Right Content-->
-			<?php
-				include_once 'include/right-content.php';
-			?>
+			<div class="col-xxl-3">
+				<div class="right-content">
+					<ul>
+						<li><a href="history-logo.php" class="active">History & LOGO Meaning</a></li><br><hr>
+						<li><a href="president-message.php">President Message</a></li><br><hr>
+						<li><a href="vision-mision-corevalue.php">Vision, Mission & Core Value</a></li><br><hr>
+						<li><a href="usea-structure.php">University Structure</a></li><br><hr>
+						<li><a href="recognition.php">Recognition</a></li><br><hr>
+						<li><a href="upcoming-events.php">Events</a></li><br><hr>
+						<li><a href="location.php">Location</a></li><br><hr>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- End Main Content-->
 
 	<?php

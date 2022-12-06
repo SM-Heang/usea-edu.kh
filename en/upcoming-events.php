@@ -38,7 +38,7 @@
 					</p>				
 				</div>
 				<?php 
-					$stmt= $conn->prepare("SELECT * from usea_events WHERE event_status = 'past' ORDER BY event_date DESC limit 6;");
+					$stmt= $conn->prepare("SELECT * from usea_events WHERE event_status = 'past' ORDER BY event_date DESC limit 8;");
 					$stmt->execute();
 					$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 					foreach ($result as $key => $value) { ?>

@@ -207,7 +207,7 @@
 										</li>
 										<li class="list-control">
 											<img src="../media/nav-icon/project.png" width="25px" height="25px">
-											<a href="#">Research Project</a>
+											<a href="research-project.php">Research Project</a>
 										</li>
 									</ul>
 								</div>

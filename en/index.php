@@ -66,17 +66,6 @@
 					// echo "</pre>";
 					foreach ($result as $key => $value) { ?>
 				<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex" id="events-card">
-					<!-- <div class="fh5co-blog">
-						<div href="#" class="blog-img-holder">
-							<img src="media/events/mou_blum_center.jpg" class="img-responsive">
-						</div>
-						<div class="blog-text">
-							<h3><a href="#"></a></h3>
-							<p></p>
-							<button  class="btn btn-danger" style="font-size: 16px; float: right;"><a href="#" style="text-decoration: none; color:#fff;">Read More</a></button>
-						</div> 
-						
-					</div> -->
 					<div class="card" style="background-color: #FFFCF3;">
 					  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
 					    <img src="../media/events/<?php echo $value['event_cover']; ?>" class="img-fluid"/>
@@ -102,7 +91,7 @@
 
 	<!-- =====> Start Carousel Partnership <===== -->
 	<div class="container">
-		<h1 id="partnership">Partnership Test</h1>
+		<h1 id="partnership">Partnership</h1>
 		<div class="owl-carousel owl-theme" id="partnership-logo">
 			<div class="item p-3" id="item"><a href="https://angel-project.eu/" target="_blank"><img src="../media/Partnership/100px/angel.png"></a></div>
 			<div class="item p-3" id="item"><a href="https://rwi.lu.se/" target="_blank"><img src="../media/Partnership/100px/rwi.png"></a></div>

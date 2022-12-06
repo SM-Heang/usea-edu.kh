@@ -21,9 +21,7 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- End Web Location -->
-
 	<!-- Main Content-->
 	<div class="container">
 		<div class="row">
@@ -32,41 +30,26 @@
 						Recognition
 					</div>
 			</div>
+			<?php  
+							$stmt= $conn->prepare("SELECT * from usea_partnership ORDER BY signed_date DESC limit 4;");
+							$stmt->execute();
+							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+							// echo "<pre>";
+							// print_r($result);
+							// echo "</pre>";
+						foreach ($result as $key => $value) { ?>
+						<!-- <img src="media/events/independent_days.jpg" alt="independent_days" width="375px" height="245px"> -->
+						
 			<!-- Start Content-->
 			<div class="col-xxl-12 d-flex mt-2">
-				<img src="../media/events/entrepreneur's_future.jpg" alt="" width="175px" height="130px">
+				<img src="media/Partnership/<?php echo $value['partnership_logo']; ?>" alt="" width="175px" height="130px">
                 <div >
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ut quisquam nihil accusantium repellat officia, necessitatibus eius? Illum tempore quos est ullam obcaecati, libero similique error voluptatibus? Ex, aperiam harum.</p>
+				<p><?php echo $value['partnership_title_en'];?></p>
                     <button class="btn btn-danger text-white float-end" >Download</button>
                 </div>
                 <hr>
-
 			</div>
-            <div class="col-xxl-12 d-flex mt-2">
-				<img src="../media/events/entrepreneur's_future.jpg" alt="" width="175px" height="130px">
-                <div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ut quisquam nihil accusantium repellat officia, necessitatibus eius? Illum tempore quos est ullam obcaecati, libero similique error voluptatibus? Ex, aperiam harum.</p>
-                    <button class="btn btn-danger text-white float-end">Download</button>
-                </div>
-                <hr>
-			</div>
-            <div class="col-xxl-12 d-flex mt-2">
-				<img src="../media/events/entrepreneur's_future.jpg" alt="" width="175px" height="130px">
-                <div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ut quisquam nihil accusantium repellat officia, necessitatibus eius? Illum tempore quos est ullam obcaecati, libero similique error voluptatibus? Ex, aperiam harum.</p>
-                    <button class="btn btn-danger text-white float-end">Download</button>
-                </div>
-                <hr>
-			</div>
-            <div class="col-xxl-12 d-flex mt-2">
-				<img src="../media/events/entrepreneur's_future.jpg" alt="" width="175px" height="130px">
-                <div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ut quisquam nihil accusantium repellat officia, necessitatibus eius? Illum tempore quos est ullam obcaecati, libero similique error voluptatibus? Ex, aperiam harum.</p>
-                    <button class="btn btn-danger text-white float-end">Download</button>
-                </div>
-                <hr>
-			</div>
-			</div>
+		<?php } ?>
 	<!-- End Main Content-->
 <?php 
 	include_once 'include/buttom-content.php';
