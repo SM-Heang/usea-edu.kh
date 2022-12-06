@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "parcel": "^2.6.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  },
+  "name": "www.usea.edu.kh",
+  "description": "TITLE:  Education - 100% Fully Responsive Free HTML5 Bootstrap Template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

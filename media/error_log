@@ -1,0 +1,1020 @@
+[02-Aug-2014 06:42:12 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[02-Aug-2014 06:42:12 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Aug-2014 06:42:12 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Aug-2014 06:42:12 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[02-Aug-2014 06:42:12 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Aug-2014 06:42:12 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[02-Aug-2014 06:42:13 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Aug-2014 06:42:13 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Aug-2014 06:42:13 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[02-Aug-2014 06:42:13 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Aug-2014 06:42:13 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[02-Aug-2014 06:42:13 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Aug-2014 06:42:13 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Aug-2014 06:42:13 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[02-Aug-2014 06:42:13 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Aug-2014 06:43:24 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[02-Aug-2014 06:43:24 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Aug-2014 06:43:24 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Aug-2014 06:43:24 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[02-Aug-2014 06:43:24 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Aug-2014 06:43:26 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[02-Aug-2014 06:43:26 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Aug-2014 06:43:26 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Aug-2014 06:43:26 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[02-Aug-2014 06:43:26 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Aug-2014 06:43:27 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[02-Aug-2014 06:43:27 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Aug-2014 06:43:27 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Aug-2014 06:43:27 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[02-Aug-2014 06:43:27 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Aug-2014 06:43:29 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[02-Aug-2014 06:43:29 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Aug-2014 06:43:29 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Aug-2014 06:43:29 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[02-Aug-2014 06:43:29 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Aug-2014 06:43:30 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[02-Aug-2014 06:43:30 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Aug-2014 06:43:30 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Aug-2014 06:43:30 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[02-Aug-2014 06:43:30 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Aug-2014 06:43:32 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[02-Aug-2014 06:43:32 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Aug-2014 06:43:32 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Aug-2014 06:43:32 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[02-Aug-2014 06:43:32 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[14-Aug-2014 04:39:28 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[14-Aug-2014 04:39:28 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[14-Aug-2014 04:39:28 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[14-Aug-2014 04:39:28 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[14-Aug-2014 04:39:28 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[14-Aug-2014 04:39:28 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[14-Aug-2014 04:39:28 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[14-Aug-2014 04:39:28 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[14-Aug-2014 04:39:28 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[14-Aug-2014 04:39:28 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[14-Aug-2014 04:39:29 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[14-Aug-2014 04:39:29 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[14-Aug-2014 04:39:29 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[14-Aug-2014 04:39:29 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[14-Aug-2014 04:39:29 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[14-Aug-2014 04:44:33 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[14-Aug-2014 04:44:33 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[14-Aug-2014 04:44:33 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[14-Aug-2014 04:44:33 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[14-Aug-2014 04:44:33 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[14-Aug-2014 04:44:40 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[14-Aug-2014 04:44:40 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[14-Aug-2014 04:44:40 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[14-Aug-2014 04:44:40 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[14-Aug-2014 04:44:40 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[14-Aug-2014 06:38:33 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[14-Aug-2014 06:38:33 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[14-Aug-2014 06:38:33 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[14-Aug-2014 06:38:33 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[14-Aug-2014 06:38:33 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[14-Aug-2014 06:38:33 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[14-Aug-2014 06:38:33 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[14-Aug-2014 06:38:33 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[14-Aug-2014 06:38:33 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[14-Aug-2014 06:38:33 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[14-Aug-2014 06:38:34 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[14-Aug-2014 06:38:34 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[14-Aug-2014 06:38:34 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[14-Aug-2014 06:38:34 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[14-Aug-2014 06:38:34 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[16-Aug-2014 22:08:42 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[16-Aug-2014 22:08:42 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[16-Aug-2014 22:08:42 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[16-Aug-2014 22:08:42 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[16-Aug-2014 22:08:42 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[18-Aug-2014 09:50:19 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[18-Aug-2014 09:50:19 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[18-Aug-2014 09:50:19 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[18-Aug-2014 09:50:19 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[18-Aug-2014 09:50:19 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[18-Aug-2014 09:50:20 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[18-Aug-2014 09:50:20 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[18-Aug-2014 09:50:20 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[18-Aug-2014 09:50:20 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[18-Aug-2014 09:50:20 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[18-Aug-2014 09:50:20 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[18-Aug-2014 09:50:20 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[18-Aug-2014 09:50:20 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[18-Aug-2014 09:50:20 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[18-Aug-2014 09:50:20 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[18-Aug-2014 09:50:20 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[18-Aug-2014 09:50:20 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[18-Aug-2014 09:50:20 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[18-Aug-2014 09:50:20 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[18-Aug-2014 09:50:20 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[18-Aug-2014 14:06:58 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[18-Aug-2014 14:06:59 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[18-Aug-2014 14:06:59 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[18-Aug-2014 14:06:59 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[18-Aug-2014 14:06:59 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[19-Aug-2014 05:01:55 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[19-Aug-2014 05:01:55 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[19-Aug-2014 05:01:55 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[19-Aug-2014 05:01:55 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[19-Aug-2014 05:01:55 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[11-Sep-2014 03:41:10 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[11-Sep-2014 03:41:10 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[11-Sep-2014 03:41:10 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[11-Sep-2014 03:41:10 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[11-Sep-2014 03:41:10 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[11-Sep-2014 12:53:00 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[11-Sep-2014 12:53:00 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[11-Sep-2014 12:53:00 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[11-Sep-2014 12:53:00 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[11-Sep-2014 12:53:00 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[16-Sep-2014 08:55:21 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[16-Sep-2014 08:55:21 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[16-Sep-2014 08:55:21 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[16-Sep-2014 08:55:21 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[16-Sep-2014 08:55:21 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[25-Sep-2014 07:44:36 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[25-Sep-2014 07:44:36 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[25-Sep-2014 07:44:36 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[25-Sep-2014 07:44:36 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[25-Sep-2014 07:44:36 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Sep-2014 08:00:50 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[28-Sep-2014 08:00:50 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Sep-2014 08:00:50 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Sep-2014 08:00:50 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[28-Sep-2014 08:00:50 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Sep-2014 08:51:56 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[28-Sep-2014 08:51:56 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Sep-2014 08:51:56 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Sep-2014 08:51:56 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[28-Sep-2014 08:51:56 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Sep-2014 08:51:57 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[28-Sep-2014 08:51:57 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Sep-2014 08:51:57 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Sep-2014 08:51:57 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[28-Sep-2014 08:51:57 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Sep-2014 08:51:59 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[28-Sep-2014 08:51:59 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Sep-2014 08:51:59 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Sep-2014 08:51:59 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[28-Sep-2014 08:51:59 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Sep-2014 09:07:03 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[28-Sep-2014 09:07:03 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Sep-2014 09:07:03 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Sep-2014 09:07:03 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[28-Sep-2014 09:07:03 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Sep-2014 09:07:05 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[28-Sep-2014 09:07:05 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Sep-2014 09:07:05 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Sep-2014 09:07:05 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[28-Sep-2014 09:07:05 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Sep-2014 09:09:15 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[28-Sep-2014 09:09:15 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Sep-2014 09:09:15 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Sep-2014 09:09:15 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[28-Sep-2014 09:09:15 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Sep-2014 09:09:16 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[28-Sep-2014 09:09:16 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Sep-2014 09:09:16 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[28-Sep-2014 09:09:16 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[28-Sep-2014 09:09:16 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 04:00:47 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[02-Oct-2014 04:00:47 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 04:00:47 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 04:00:47 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[02-Oct-2014 04:00:47 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 04:00:58 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[02-Oct-2014 04:00:58 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 04:00:58 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 04:00:58 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[02-Oct-2014 04:00:58 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 04:01:00 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[02-Oct-2014 04:01:00 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 04:01:00 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 04:01:00 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[02-Oct-2014 04:01:00 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 04:01:05 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[02-Oct-2014 04:01:05 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 04:01:05 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 04:01:05 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[02-Oct-2014 04:01:05 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 04:01:08 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[02-Oct-2014 04:01:08 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 04:01:08 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 04:01:08 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[02-Oct-2014 04:01:08 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 04:01:11 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[02-Oct-2014 04:01:11 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 04:01:12 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 04:01:12 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[02-Oct-2014 04:01:12 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 06:39:48 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[02-Oct-2014 06:39:48 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 06:39:48 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 06:39:48 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[02-Oct-2014 06:39:48 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 06:39:49 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[02-Oct-2014 06:39:49 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 06:39:49 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 06:39:49 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[02-Oct-2014 06:39:49 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 06:39:51 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[02-Oct-2014 06:39:51 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 06:39:51 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 06:39:51 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[02-Oct-2014 06:39:51 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 06:39:54 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[02-Oct-2014 06:39:54 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 06:39:54 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[02-Oct-2014 06:39:54 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[02-Oct-2014 06:39:54 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[03-Oct-2014 17:29:24 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[03-Oct-2014 17:29:24 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[03-Oct-2014 17:29:24 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[03-Oct-2014 17:29:24 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[03-Oct-2014 17:29:24 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[08-Oct-2014 04:47:17 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[08-Oct-2014 04:47:17 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[08-Oct-2014 04:47:17 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[08-Oct-2014 04:47:17 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[08-Oct-2014 04:47:17 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[08-Oct-2014 04:47:19 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[08-Oct-2014 04:47:19 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[08-Oct-2014 04:47:19 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[08-Oct-2014 04:47:19 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[08-Oct-2014 04:47:19 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[08-Oct-2014 04:47:26 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[08-Oct-2014 04:47:26 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[08-Oct-2014 04:47:26 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[08-Oct-2014 04:47:26 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[08-Oct-2014 04:47:26 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[08-Oct-2014 04:47:29 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[08-Oct-2014 04:47:29 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[08-Oct-2014 04:47:29 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[08-Oct-2014 04:47:29 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[08-Oct-2014 04:47:29 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[08-Oct-2014 04:47:34 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[08-Oct-2014 04:47:34 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[08-Oct-2014 04:47:34 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[08-Oct-2014 04:47:34 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[08-Oct-2014 04:47:34 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[17-Oct-2014 12:26:41 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[17-Oct-2014 12:26:41 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[17-Oct-2014 12:26:41 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[17-Oct-2014 12:26:41 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[17-Oct-2014 12:26:41 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[17-Oct-2014 12:27:23 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[17-Oct-2014 12:27:23 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[17-Oct-2014 12:27:23 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[17-Oct-2014 12:27:23 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[17-Oct-2014 12:27:23 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[18-Oct-2014 22:34:35 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[18-Oct-2014 22:34:35 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[18-Oct-2014 22:34:35 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[18-Oct-2014 22:34:35 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[18-Oct-2014 22:34:35 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[27-Oct-2014 02:09:29 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[27-Oct-2014 02:09:29 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[27-Oct-2014 02:09:29 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[27-Oct-2014 02:09:29 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[27-Oct-2014 02:09:29 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[01-Nov-2014 09:30:35 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[01-Nov-2014 09:30:35 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[01-Nov-2014 09:30:35 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[01-Nov-2014 09:30:35 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[01-Nov-2014 09:30:35 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[01-Nov-2014 09:30:46 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[01-Nov-2014 09:30:46 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[01-Nov-2014 09:30:46 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[01-Nov-2014 09:30:46 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[01-Nov-2014 09:30:46 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[01-Nov-2014 09:30:49 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[01-Nov-2014 09:30:49 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[01-Nov-2014 09:30:49 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[01-Nov-2014 09:30:49 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[01-Nov-2014 09:30:49 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[01-Nov-2014 09:30:52 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[01-Nov-2014 09:30:52 UTC] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[01-Nov-2014 09:30:52 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[01-Nov-2014 09:30:52 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20060613/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[01-Nov-2014 09:30:52 UTC] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20060613
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
