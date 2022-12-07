@@ -190,7 +190,7 @@
 							</div>
 						</div>
 					</li>
-					<li><a href="#">Partnership</a></li>
+					<li><a href="partnership-local.php">Partnership</a></li>
 					<li>
 						<a href="#">Research</a>
 						<div class="mega-box">

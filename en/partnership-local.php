@@ -14,7 +14,7 @@
 					</a>
 					</li>
 					<li>
-						<a href="partnership-local">Recognition</a>
+						<a href="#">Partnership</a>
 					</li>
 				</ul>
             
@@ -26,27 +26,42 @@
 	<div class="container">
 		<div class="row">
 			<!-- Start Content-->
-			<div class="col-xxl-12">
+			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-						Recognition
+						Partnership
 					</div>
 				</div>
 				<div id="content-detail">
 					<div class="content-president-detail">
 					<?php  
-							$stmt= $conn->prepare("SELECT * from usea_article WHERE categories_id = 7 AND keywords = 'Accreditaion';");
+							$stmt= $conn->prepare("SELECT * from usea_partnership WHERE partnership_type = 'local' ORDER BY signed_date DESC limit 8;");
 							$stmt->execute();
 							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-							echo "<pre>";
-							var_dump($result);
-							echo "</pre>";
-						 ?>
-						
+							// echo "<pre>";
+							// print_r($result);
+							// echo "</pre>";
+						foreach ($result as $key => $value) { ?>
+						<div class="col-xxl-12 d-flex mt-3 ">
+							<img src="../media/Partnership/<?php echo $value['partnership_logo']; ?>" alt="" width="125px" height="100px" >
+							<div>
+								<p><?php echo $value['partnership_title_en'];?></p>
+							</div>
+                			<hr>
+						</div>
+						<?php } ?>
 					</div>
 				</div>
 			</div>
 			<!-- Start Right Content-->
+			<div class="col-xxl-3">
+				<div class="right-content">
+					<ul>
+						<li><a href="partnership-local.php" class="active">Local</a></li><br><hr>
+						<li><a href="partnership-international">International</a></li><br><hr>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
 	<!-- End Main Content-->
