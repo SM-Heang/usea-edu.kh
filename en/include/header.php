@@ -131,11 +131,11 @@
 										</li>
 										<li class="list-control">
 											<img src="../media/nav-icon/recognition.png" class="nav-icon" width="25px" height="25px">
-											<a href="recognition.php">Recognition</a>
+											<a href="#">Recognition</a>
 										</li>
 										<li class="list-control">
 											<img src="../media/nav-icon/event.png" class="nav-icon" width="25px" height="25px">
-											<a href="upcoming-events.php">Events</a>
+											<a href="#">Events</a>
 										</li>
 										
 									</ul>
@@ -207,7 +207,7 @@
 										</li>
 										<li class="list-control">
 											<img src="../media/nav-icon/project.png" width="25px" height="25px">
-											<a href="research-project.php">Research Project</a>
+											<a href="#">Research Project</a>
 										</li>
 									</ul>
 								</div>

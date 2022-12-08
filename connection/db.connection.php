@@ -5,6 +5,7 @@ $password = "";
 
 try {
   $conn = new PDO("mysql:host=$servername;dbname=usea_maindb", $username, $password);
+  $conn->exec("set names utf8mb4");
   // set the PDO error mode to exception
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   // echo "Connected successfully";
