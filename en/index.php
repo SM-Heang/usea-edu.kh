@@ -26,9 +26,7 @@
 						foreach ($result as $key => $value) { ?>
 							<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex" id="upcoming-events-cards">
 								<div class="fh5co-event" >
-
 									<div class="date text-center">
-
 										<span>
 											<?php echo date('d', strtotime ($value['event_date'])); ?><br><?php echo date('M', strtotime ($value['event_date'])); ?>.
 										</span>
@@ -37,7 +35,7 @@
 										<div style="height: 3rem;">
 											<h3><a href="#"> <?php echo substr($value['event_title_en'], 0, 45). "..."; ?> </a></h3>
 										</div>
-										<p ><?php echo substr($value['event_description_en'], 0, 100) . "..."; ?></p>										
+										<p ><?php echo substr($value['event_description_en'], 0, 100) . "..."; ?></p>					
 									</div>
 									<div style="text-align: right;">
 										<a href="#" type="button" class="btn btn-outline-primary">Read More</a>

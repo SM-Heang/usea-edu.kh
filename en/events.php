@@ -1,7 +1,9 @@
 <?php
     include_once 'include/header.php';
     include_once '../connection/db.connection.php';
+
 ?>
+
 <!-- Start Web Location -->
 <div>
 <div class="container">
@@ -21,6 +23,7 @@
 		</div>
 	</div>
 	<!-- End Web Location -->
+
   <!-- Main Content-->
 	<div class="container">
 		<div class="row">
@@ -31,17 +34,22 @@
                         Past Events
 					</div>
 				</div>
+
 				<!-- =====> Start Events <===== -->
 			<div class="row animate-box" id="events">
-				<div class="row animate-box fh5co-heading">
-					<p style="font-size: 20px; font-weight: bold;">
-						<a href="#" style="text-decoration: none; color:#002060;">Past Events | <span style="font-size: 12px; font-weight: 500;">All Events</span></a>
-					</p>				
-				</div>
 				<?php 
-					$stmt= $conn->prepare("SELECT * from usea_events WHERE event_status = 'past' ORDER BY event_date DESC limit 8;");
+					$sql ="SELECT * from usea_events WHERE event_status = 'past' ORDER BY event_date DESC limit 12";
+					$stmt= $conn->prepare($sql);
 					$stmt->execute();
 					$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+					if (isset($_GET['page'])) {
+				    	if ($_GET['page']>1) {
+				    		$sql .= "OFFSET" . ($_GET['page']-1)*12;
+				    	}
+				    }
+				    echo "<pre>";
+				    print_r($_GET);
+				    echo "</pre>";
 					foreach ($result as $key => $value) { ?>
 				<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex" id="events-card">
 					<div class="card" style="background-color: #FFFCF3;">
@@ -61,24 +69,50 @@
 					</div>
 				</div>
 				<?php } ?>
+
 			</div>
 			<!-- =====> End Events <===== -->
-            <nav aria-label="..." clas="text-center">
-                <ul class="pagination">
+
+				<!--Start Pagination -->
+
+				<?php 
+				 	$sql = "SELECT count(*) AS CountRecords FROM usea_events WHERE event_status = 'past' ";
+				    $stmt = $conn->prepare($sql);
+				    $stmt ->execute();
+				    $temp = $stmt->fetch(PDO::FETCH_ASSOC);
+				    $maxpage =1;
+				    if ($temp) {
+				    	$maxpage = ceil($temp['CountRecords']/12);
+				    }
+ 				?>
+                <ul class="pagination float-right mt-3">
                     <li class="page-item disabled">
                     <a class="page-link">Previous</a>
                     </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item active" aria-current="page">
-                    <a class="page-link" href="#">2</a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
+                    <?php 
+                    	for ($i=1; $i <=$maxpage ; $i++) { ?>
+                    		
+                    		<li class="page-item"><a class="page-link 
+                    		<?php 
+                    			if (isset($_GET['page'])) {
+                    				if ($i==$_GET['page']) {
+                    					echo 'active';
+                    				}
+                    				}else{
+                    					if ($i==1) {
+                    						echo 'active';
+                    					}
+                    			}
+                    		 ?>" href="events.php?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
+                    	<?php } ?>
+
                     <a class="page-link" href="#">Next</a>
                     </li>
                 </ul>
-            </nav>
+                <!--End Logic Pagination -->
+         
 	</div>
+
 			<!-- Start Right Content-->
 			<div class="col-xxl-3">
 				<div class="right-content">
@@ -99,8 +133,8 @@
 					</ul>
 				</div>
 			</div>
-	
 	<!-- End Main Content-->
+
 <?php
     include_once 'include/buttom-content.php';
     include_once 'include/footer.php';
