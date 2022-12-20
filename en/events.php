@@ -10,7 +10,7 @@
 		<div class="row">
 			<div class="col-12 web-location">
 				<ul>
-					<li><a href="index.html">
+					<li><a href="index.php">
 						<i class="fa-solid fa-house"></i>
 						<i class="fa-solid fa-caret-right"></i>
 					</a>
@@ -39,17 +39,14 @@
 			<div class="row animate-box" id="events">
 				<?php 
 					$sql ="SELECT * from usea_events WHERE event_status = 'past' ORDER BY event_date DESC limit 12";
+					if (isset($_GET['page'])) {
+				    	if ($_GET['page']>1) {
+				    		 $sql .= " OFFSET ".  ($_GET['page']-1)*12;
+				    	}
+				    }
 					$stmt= $conn->prepare($sql);
 					$stmt->execute();
 					$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-					if (isset($_GET['page'])) {
-				    	if ($_GET['page']>1) {
-				    		$sql .= "OFFSET" . ($_GET['page']-1)*12;
-				    	}
-				    }
-				    echo "<pre>";
-				    print_r($_GET);
-				    echo "</pre>";
 					foreach ($result as $key => $value) { ?>
 				<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex" id="events-card">
 					<div class="card" style="background-color: #FFFCF3;">
@@ -74,7 +71,6 @@
 			<!-- =====> End Events <===== -->
 
 				<!--Start Pagination -->
-
 				<?php 
 				 	$sql = "SELECT count(*) AS CountRecords FROM usea_events WHERE event_status = 'past' ";
 				    $stmt = $conn->prepare($sql);
@@ -86,7 +82,7 @@
 				    }
  				?>
                 <ul class="pagination float-right mt-3">
-                    <li class="page-item disabled">
+                    <li class="page-item">
                     <a class="page-link">Previous</a>
                     </li>
                     <?php 

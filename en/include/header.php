@@ -135,7 +135,7 @@
 										</li>
 										<li class="list-control">
 											<img src="../media/nav-icon/event.png" class="nav-icon" width="25px" height="25px">
-											<a href="#">Events</a>
+											<a href="events.php">Events</a>
 										</li>
 										
 									</ul>
