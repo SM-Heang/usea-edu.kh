@@ -50,9 +50,9 @@
 					foreach ($result as $key => $value) { ?>
 				<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex" id="events-card">
 					<div class="card" style="background-color: #FFFCF3;">
-					  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-					    <img src="../media/events/<?php echo $value['event_cover']; ?>" class="img-fluid"/>
-					    <a href="#!">
+					  <div class="bg-image hover-overlay ripple text-center" data-mdb-ripple-color="light">
+					    <img src="../media/events/<?php echo $value['event_cover']; ?>" class="img-fluid" style="object-fit: cover;"/>
+					    <a href="#">
 					      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
 					    </a>
 					  </div>

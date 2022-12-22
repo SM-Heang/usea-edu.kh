@@ -35,12 +35,15 @@
 				<div id="content-detail">
 					<div class="content-president-detail">
 					<?php  
-							$stmt= $conn->prepare("SELECT * from usea_partnership WHERE partnership_type = 'local' ORDER BY signed_date DESC limit 8;");
+							$sql ="SELECT * from usea_partnership WHERE partnership_type = 'local' ORDER BY signed_date DESC limit 10";
+							if (isset($_GET['page'])) {
+				    			if ($_GET['page']>1) {
+				    		 	$sql .= " OFFSET ".  ($_GET['page']-1)*10;
+				    			}
+				   			 }
+							$stmt= $conn->prepare($sql);
 							$stmt->execute();
 							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-							// echo "<pre>";
-							// print_r($result);
-							// echo "</pre>";
 						foreach ($result as $key => $value) { ?>
 						<div class="col-xxl-12 d-flex mt-3 ">
 							<img src="../media/Partnership/<?php echo $value['partnership_logo']; ?>" alt="" width="125px" height="100px" >
@@ -63,8 +66,45 @@
 				</div>
 			</div>
 		</div>
+		<!--Start Pagination -->
+				<?php 
+				 	$sql = "SELECT count(*) AS CountRecords FROM usea_partnership WHERE partnership_type = 'local' ";
+				    $stmt = $conn->prepare($sql);
+				    $stmt ->execute();
+				    $temp = $stmt->fetch(PDO::FETCH_ASSOC);
+				    $maxpage =1;
+				    if ($temp) {
+				    	$maxpage = ceil($temp['CountRecords']/10);
+				    }
+ 				?>
+                <ul class="pagination float-right mt-3">
+                    <li class="page-item">
+                    <a class="page-link">Previous</a>
+                    </li>
+                    <?php 
+                    	for ($i=1; $i <=$maxpage ; $i++) { ?>
+                    		
+                    		<li class="page-item"><a class="page-link 
+                    		<?php 
+                    			if (isset($_GET['page'])) {
+                    				if ($i==$_GET['page']) {
+                    					echo 'active';
+                    				}
+                    				}else{
+                    					if ($i==1) {
+                    						echo 'active';
+                    					}
+                    			}
+                    		 ?>" href="partnership-local.php?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
+                    	<?php } ?>
+
+                    <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+                <!--End Logic Pagination -->
 	</div>
 	<!-- End Main Content-->
+
 <?php 
 	include_once 'include/buttom-content.php';
 	include_once 'include/footer.php';

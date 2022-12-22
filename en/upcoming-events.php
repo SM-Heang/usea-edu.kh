@@ -99,7 +99,7 @@
                     						echo 'active';
                     					}
                     			}
-                    		 ?>" href="events.php?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
+                    		 ?>" href="upcoming-events.php?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
                     	<?php } ?>
 
                     <a class="page-link" href="#">Next</a>
