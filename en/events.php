@@ -38,18 +38,10 @@
 				<!-- =====> Start Events <===== -->
 			<div class="row animate-box" id="events">
 				<?php 
-					$sql ="SELECT * from usea_events WHERE event_status = 'past' ORDER BY event_date DESC limit 12";
+					$sql ="SELECT * from usea_events WHERE event_status = 'past' ORDER BY event_date limit 12";
 					$stmt= $conn->prepare($sql);
 					$stmt->execute();
 					$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-					if (isset($_GET['page'])) {
-				    	if ($_GET['page']>1) {
-				    		$sql .= "OFFSET" . ($_GET['page']-1)*12;
-				    	}
-				    }
-				    echo "<pre>";
-				    print_r($_GET);
-				    echo "</pre>";
 					foreach ($result as $key => $value) { ?>
 				<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex" id="events-card">
 					<div class="card" style="background-color: #FFFCF3;">
@@ -74,7 +66,6 @@
 			<!-- =====> End Events <===== -->
 
 				<!--Start Pagination -->
-
 				<?php 
 				 	$sql = "SELECT count(*) AS CountRecords FROM usea_events WHERE event_status = 'past' ";
 				    $stmt = $conn->prepare($sql);
@@ -84,11 +75,18 @@
 				    if ($temp) {
 				    	$maxpage = ceil($temp['CountRecords']/12);
 				    }
+				    if (isset($_GET['page'])) {
+				    	if ($_GET['page']>1) {
+				    		$sql .= "OFFSET" . ($_GET['page']-1)*12;
+				    	}
+				    }
+				    print_r ($_GET);
  				?>
                 <ul class="pagination float-right mt-3">
                     <li class="page-item disabled">
                     <a class="page-link">Previous</a>
                     </li>
+                    <!-- Loop Page Number -->
                     <?php 
                     	for ($i=1; $i <=$maxpage ; $i++) { ?>
                     		
