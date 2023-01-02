@@ -1,4 +1,5 @@
 <?php
+	$page= "events";
     include_once 'include/header.php';
     include_once '../connection/db.connection.php';
 
@@ -19,7 +20,7 @@
 						<a href="#">Events</a>
 					</li>
 				</ul>
-			</div>
+			</div> 
 		</div>
 	</div>
 	<!-- End Web Location -->
@@ -48,8 +49,8 @@
 					$stmt->execute();
 					$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 					foreach ($result as $key => $value) { ?>
-				<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex" id="events-card">
-					<div class="card" style="background-color: #FFFCF3;">
+				<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex gx-2 gy-2" id="events-card">
+					<div class="card">
 					  <div class="bg-image hover-overlay ripple text-center" data-mdb-ripple-color="light">
 					    <img src="../media/events/<?php echo $value['event_cover']; ?>" class="img-fluid" style="object-fit: cover;"/>
 					    <a href="#">
@@ -61,7 +62,7 @@
 					    <p class="card-text" ><?php echo substr($value['event_description_en'],0 ,0) ?></p>
 					  </div>
 					  <div style="text-align: right;">
-					  	<a href="#" class="btn btn-danger btn-sm">Read More</a>
+					  	<a href="events.php?" class="btn btn-danger btn-sm">Read More</a>
 					  </div>
 					</div>
 				</div>
@@ -110,25 +111,9 @@
 	</div>
 
 			<!-- Start Right Content-->
-			<div class="col-xxl-3">
-				<div class="right-content">
-					<ul>
-						<li><a href="history-logo.php">History & LOGO Meaning</a></li><br><hr>
-						<li><a href="president-message.php">President Message</a></li><br><hr>
-						<li><a href="vision-mision-corevalue.php">Vision, Mission & Core Value</a></li><br><hr>
-						<li><a href="usea-structure">University Structure</a></li><br><hr>
-						<li><a href="#">Recognition</a></li><br><hr>
-						<li>
-							<a href="#" >Events</a><br><hr>							
-							<ul>
-								<li><a href="upcoming-events.php">Upcoming Events</a><br><hr></li>
-								<li><a href="events.php" class="active">Past Events</a><br><hr></li>
-							</ul>
-                        </li><br><hr>
-						<li><a href="location.php">Location</a></li><br><hr>
-					</ul>
-				</div>
-			</div>
+			<?php
+				include_once "include/right-content.php";
+			?>
 	<!-- End Main Content-->
 
 <?php

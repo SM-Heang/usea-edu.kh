@@ -60,8 +60,8 @@
 					$stmt->execute();
 					$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 					foreach ($result as $key => $value) { ?>
-				<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex" id="events-card">
-					<div class="card" style="background-color: #FFFCF3;">
+				<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex gx-2 gy-2" id="events-card">
+					<div class="card">
 					  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
 					    <img src="../media/events/<?php echo $value['event_cover']; ?>" class="img-fluid"/>
 					    <a href="#!">

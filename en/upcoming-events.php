@@ -1,4 +1,5 @@
 <?php
+	$page= 'upcoming';
     include_once 'include/header.php';
     include_once '../connection/db.connection.php';
 
@@ -49,8 +50,8 @@
 					$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 					foreach ($result as $key => $value) { ?>
 				<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex" id="events-card">
-					<div class="card" style="background-color: #FFFCF3;">
-					  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+					<div class="card">
+					  <div class="bg-image hover-overlay" data-mdb-ripple-color="light">
 					    <img src="../media/events/<?php echo $value['event_cover']; ?>" class="img-fluid"/>
 					    <a href="#!">
 					      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
@@ -110,25 +111,9 @@
 	</div>
 
 			<!-- Start Right Content-->
-			<div class="col-xxl-3">
-				<div class="right-content">
-					<ul>
-						<li><a href="history-logo.php">History & LOGO Meaning</a></li><br><hr>
-						<li><a href="president-message.php">President Message</a></li><br><hr>
-						<li><a href="vision-mision-corevalue.php">Vision, Mission & Core Value</a></li><br><hr>
-						<li><a href="usea-structure">University Structure</a></li><br><hr>
-						<li><a href="#">Recognition</a></li><br><hr>
-						<li>
-							<a href="#" >Events</a><br><hr>							
-							<ul>
-								<li><a href="upcoming-events.php"  class="active">Upcoming Events</a><br><hr></li>
-								<li><a href="events.php">Past Events</a><br><hr></li>
-							</ul>
-                        </li><br><hr>
-						<li><a href="location.php">Location</a></li><br><hr>
-					</ul>
-				</div>
-			</div>
+			<?php
+				include_once 'include/right-content.php';
+			?>
 	<!-- End Main Content-->
 
 <?php

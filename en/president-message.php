@@ -1,4 +1,5 @@
 <?php 
+	$page = 'president';
 	include_once 'include/header.php';
 	include_once '../connection/db.connection.php';     
  ?>
@@ -50,19 +51,9 @@
 				</div>
 			</div>
 			<!-- Start Right Content-->
-			<div class="col-xxl-3">
-				<div class="right-content">
-					<ul>
-						<li><a href="history-logo.php">History & LOGO Meaning</a></li><br><hr>
-						<li><a href="president-message.php" class="active">President Message</a></li><br><hr>
-						<li><a href="vision-mision-corevalue.php">Vision, Mission & Core Value</a></li><br><hr>
-						<li><a href="usea-structure.php">University Structure</a></li><br><hr>
-						<li><a href="#">Recognition</a></li><br><hr>
-						<li><a href="#">Events</a></li><br><hr>
-						<li><a href="location.php">Location</a></li><br><hr>
-					</ul>
-				</div>
-			</div>
+			<?php
+				include_once 'include/right-content.php';
+			?>
 		</div>
 	</div>
 	<!-- End Main Content-->
