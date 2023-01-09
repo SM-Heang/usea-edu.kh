@@ -19,7 +19,7 @@
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
-	
+		
 	<!-- jQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="../js/jquery.min.js"></script>
@@ -44,8 +44,16 @@
 	<script src="../js/simplyCountdown.js"></script>
 	<!-- Main -->
 	<script src="../js/main.js"></script>
+	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.item-link').click(function(){
+				$(this).next('.sub-menu').slideToggle();
+			});
+		});
+	</script>
 	<script>
 		$('.owl-carousel').owlCarousel({
     loop:true,
@@ -82,5 +90,6 @@
 			});
 		});
 	</script>
+	
 	</body>
 </html>
