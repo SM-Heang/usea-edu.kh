@@ -1,4 +1,5 @@
 <?php
+	$page= "events";
     include_once 'include/header.php';
     include_once '../connection/db.connection.php';
 
@@ -10,7 +11,7 @@
 		<div class="row">
 			<div class="col-12 web-location">
 				<ul>
-					<li><a href="index.html">
+					<li><a href="index.php">
 						<i class="fa-solid fa-house"></i>
 						<i class="fa-solid fa-caret-right"></i>
 					</a>
@@ -19,7 +20,7 @@
 						<a href="#">Events</a>
 					</li>
 				</ul>
-			</div>
+			</div> 
 		</div>
 	</div>
 	<!-- End Web Location -->
@@ -38,16 +39,24 @@
 				<!-- =====> Start Events <===== -->
 			<div class="row animate-box" id="events">
 				<?php 
-					$sql ="SELECT * from usea_events WHERE event_status = 'past' ORDER BY event_date limit 12";
+					$sql ="SELECT * from usea_events WHERE event_status = 'past' ORDER BY event_date DESC limit 12";
 					$stmt= $conn->prepare($sql);
 					$stmt->execute();
 					$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+					if (isset($_GET['page'])) {
+				    	if ($_GET['page']>1) {
+				    		$sql .= "OFFSET" . ($_GET['page']-1)*12;
+				    	}
+				    }
+				    echo "<pre>";
+				    print_r($_GET);
+				    echo "</pre>";
 					foreach ($result as $key => $value) { ?>
-				<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex" id="events-card">
-					<div class="card" style="background-color: #FFFCF3;">
-					  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-					    <img src="../media/events/<?php echo $value['event_cover']; ?>" class="img-fluid"/>
-					    <a href="#!">
+				<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex gx-2 gy-2" id="events-card">
+					<div class="card">
+					  <div class="bg-image hover-overlay ripple text-center" data-mdb-ripple-color="light">
+					    <img src="../media/events/<?php echo $value['event_cover']; ?>" class="img-fluid" style="object-fit: cover;"/>
+					    <a href="#">
 					      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
 					    </a>
 					  </div>
@@ -56,7 +65,7 @@
 					    <p class="card-text" ><?php echo substr($value['event_description_en'],0 ,0) ?></p>
 					  </div>
 					  <div style="text-align: right;">
-					  	<a href="#" class="btn btn-danger btn-sm">Read More</a>
+					  	<a href="events.php?" class="btn btn-danger btn-sm">Read More</a>
 					  </div>
 					</div>
 				</div>
@@ -83,7 +92,7 @@
 				    print_r ($_GET);
  				?>
                 <ul class="pagination float-right mt-3">
-                    <li class="page-item disabled">
+                    <li class="page-item">
                     <a class="page-link">Previous</a>
                     </li>
                     <!-- Loop Page Number -->
@@ -112,25 +121,9 @@
 	</div>
 
 			<!-- Start Right Content-->
-			<div class="col-xxl-3">
-				<div class="right-content">
-					<ul>
-						<li><a href="history-logo.php">History & LOGO Meaning</a></li><br><hr>
-						<li><a href="president-message.php">President Message</a></li><br><hr>
-						<li><a href="vision-mision-corevalue.php">Vision, Mission & Core Value</a></li><br><hr>
-						<li><a href="usea-structure">University Structure</a></li><br><hr>
-						<li><a href="#">Recognition</a></li><br><hr>
-						<li>
-							<a href="#" >Events</a><br><hr>							
-							<ul>
-								<li><a href="upcoming-events.php">Upcoming Events</a><br><hr></li>
-								<li><a href="events.php" class="active">Past Events</a><br><hr></li>
-							</ul>
-                        </li><br><hr>
-						<li><a href="location.php">Location</a></li><br><hr>
-					</ul>
-				</div>
-			</div>
+			<?php
+				include_once "include/right-content.php";
+			?>
 	<!-- End Main Content-->
 
 <?php

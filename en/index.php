@@ -12,7 +12,7 @@
 				<div class="text-center ">
 					<h2 style="color: #002060; font-weight: bold;">LATEST NEWS</h2>
 				</div>
-				<p><a href="#" style="text-decoration: none; color:#002060;">Upcoming Events | <span style="font-size: 0.75rem; font-weight: 500;">All Events</span></a></p>
+				<p><a href="upcoming-events.php" style="text-decoration: none; color:#002060;">Upcoming Events | <span style="font-size: 0.75rem; font-weight: 500;">All Events</span></a></p>
 			</div>
 				<div class="container" id="upcoming-events">
 					<div class="row">
@@ -24,7 +24,7 @@
 								// print_r($result);
 								// echo "</pre>";`
 						foreach ($result as $key => $value) { ?>
-							<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex" id="upcoming-events-cards">
+							<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex mt-auto" id="upcoming-events-cards">
 								<div class="fh5co-event" >
 									<div class="date text-center">
 										<span>
@@ -52,19 +52,16 @@
 			<div class="row animate-box" id="events">
 				<div class="row animate-box fh5co-heading">
 					<p style="font-size: 20px; font-weight: bold;">
-						<a href="#" style="text-decoration: none; color:#002060;"> Events | <span style="font-size: 12px; font-weight: 500;">All Events</span></a>
+						<a href="events.php" style="text-decoration: none; color:#002060;"> Events | <span style="font-size: 12px; font-weight: 500;">All Events</span></a>
 					</p>				
 				</div>
 				<?php 
 					$stmt= $conn->prepare("SELECT * from usea_events WHERE event_status = 'past' ORDER BY event_date DESC limit 4;");
 					$stmt->execute();
 					$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-					// echo "<pre>";
-					// print_r($result);
-					// echo "</pre>";
 					foreach ($result as $key => $value) { ?>
-				<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex" id="events-card">
-					<div class="card" style="background-color: #FFFCF3;">
+				<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex gx-2 gy-2" id="events-card">
+					<div class="card">
 					  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
 					    <img src="../media/events/<?php echo $value['event_cover']; ?>" class="img-fluid"/>
 					    <a href="#!">

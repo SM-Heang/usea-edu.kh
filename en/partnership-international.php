@@ -35,7 +35,13 @@
 				<div id="content-detail">
 					<div class="content-president-detail">
 					<?php  
-							$stmt= $conn->prepare("SELECT * from usea_partnership WHERE partnership_type = 'international' ORDER BY signed_date DESC limit 8;");
+							$sql = "SELECT * from usea_partnership WHERE partnership_type = 'international' ORDER BY signed_date DESC limit 8";
+							if (isset($_GET['page'])) {
+				    			if ($_GET['page']>1) {
+				    		 	$sql .= " OFFSET ".  ($_GET['page']-1)*10;
+				    			}
+				   			 }
+							$stmt= $conn->prepare($sql);
 							$stmt->execute();
 							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 							// echo "<pre>";
@@ -61,6 +67,42 @@
 				</div>
 			</div>
 		</div>
+		<!--Start Pagination -->
+				<?php 
+				 	$sql = "SELECT count(*) AS CountRecords FROM usea_partnership WHERE partnership_type = 'international' ";
+				    $stmt = $conn->prepare($sql);
+				    $stmt ->execute();
+				    $temp = $stmt->fetch(PDO::FETCH_ASSOC);
+				    $maxpage =1;
+				    if ($temp) {
+				    	$maxpage = ceil($temp['CountRecords']/10);
+				    }
+ 				?>
+                <ul class="pagination float-right mt-3">
+                    <li class="page-item">
+                    <a class="page-link">Previous</a>
+                    </li>
+                    <?php 
+                    	for ($i=1; $i <=$maxpage ; $i++) { ?>
+                    		
+                    		<li class="page-item"><a class="page-link 
+                    		<?php 
+                    			if (isset($_GET['page'])) {
+                    				if ($i==$_GET['page']) {
+                    					echo 'active';
+                    				}
+                    				}else{
+                    					if ($i==1) {
+                    						echo 'active';
+                    					}
+                    			}
+                    		 ?>" href="partnership-international.php?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
+                    	<?php } ?>
+
+                    <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+                <!--End Logic Pagination -->
 	</div>
 	<!-- End Main Content-->
 <?php 

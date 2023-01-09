@@ -134,7 +134,9 @@ body {
   color: #002060;
   font-size: 1rem;
 }
-
+.img-fluid{
+  height: 200px !important;
+}
 #top-nav ul li a{
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: bold;
