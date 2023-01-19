@@ -109,15 +109,15 @@
 									<ul class="mega-link">
 										<li class="list-control">
 											<img src="../../media/nav-icon/history.png" class="nav-icon" width="25px" height="25px">
-											<a href="history-logo.php">History & Logo Meaning</a>
+											<a href="../Pages/history-logo.php">History & Logo Meaning</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/president.png" class="nav-icon" width="25px" height="25px">
-											<a href="president-message.php">President Message</a>
+											<a href="../Pages/president-message.php">President Message</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/core-value.png" class="nav-icon" width="25px" height="25px">
-											<a href="../vission-Mission/vision-mision-corevalue.php">Vision Mission & Core Value</a>
+											<a href="../Pages/vission-mission-core-value.php">Vision Mission & Core Value</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/location.png" class="nav-icon" width="25px" height="25px">
@@ -129,7 +129,7 @@
 									<ul class="mega-link">
 										<li class="list-control">
 											<img src="../../media/nav-icon/structure.png" class="nav-icon" width="25px" height="25px">
-											<a href="usea-structure.php">University Structure</a>
+											<a href="../Pages/usea-structure.php">University Structure</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/recognition.png" class="nav-icon" width="25px" height="25px">
@@ -137,7 +137,7 @@
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/event.png" class="nav-icon" width="25px" height="25px">
-											<a href="events.php">Events</a>
+											<a href="../Pages/events.php">Events</a>
 										</li>
 										
 									</ul>
@@ -153,11 +153,11 @@
 									<ul class="mega-link">
 										<li class="list-control">
 											<img src="../../media/nav-icon/f-economic.png" width="25px" height="25px">
-											<a href="faculty-economics.php">Faculty of Economics,<br> Business & Tourism</a>
+											<a href="../Pages/faculty-economics.php">Faculty of Economics,<br> Business & Tourism</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/f-it.png" width="25px" height="25px">
-											<a href="faculty-sciences-technology.php">Faculty of Sciences & <br> Technology</a>
+											<a href="../Pages/faculty-sciences-technology.php">Faculty of Sciences & <br> Technology</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/f-law.png" width="25px" height="25px">
@@ -165,7 +165,7 @@
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/f-art.png" width="25px" height="25px">
-											<a href="faculty-arts-humanities-education.php">Faculty of Arts, Humanities <br>& Education</a>
+											<a href="../Pages/faculty-arts-humanities-education.php">Faculty of Arts, Humanities <br>& Education</a>
 										</li>
 									</ul>
 								</div>
@@ -177,22 +177,22 @@
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/fli.png" width="25px" height="25px">
-											<a href="foreign-language.php">Foreign Language <br>Institute</a>
+											<a href="../Pages/foreign-language.php">Foreign Language <br>Institute</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/post-graduate.png" width="25px" height="25px">
-											<a href="post-graduate.php">Post Graduate</a>
+											<a href="../Pages/post-graduate.php">Post Graduate</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/short-course.png" width="25px" height="25px">
-											<a href="short-course.php">Short Course</a>
+											<a href="../Pages/short-course.php">Short Course</a>
 										</li>
 									</ul>
 								</div>
 							</div>
 						</div>
 					</li>
-					<li><a href="partnership-local.php">Partnership</a></li>
+					<li><a href="../Pages/partnership-local.php">Partnership</a></li>
 					<li>
 						<a href="#">Research</a>
 						<div class="mega-box">
@@ -201,15 +201,15 @@
 									<ul class="mega-link">
 										<li class="list-control">
 											<img src="../../media/nav-icon/policy-and-procedure.png" width="25px" height="25px">
-											<a href="#">Research Policy and Procedure</a>
+											<a href="../Pages/research-policy-procedure.php">Research Policy and Procedure</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/research-activity.png" width="25px" height="25px">
-											<a href="#">Research Activites</a>
+											<a href="../Pages/research-activities.php">Research Activites</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/project.png" width="25px" height="25px">
-											<a href="#">Research Project</a>
+											<a href="../Pages/research-project.php">Research Project</a>
 										</li>
 									</ul>
 								</div>
@@ -217,11 +217,11 @@
 									<ul class="mega-link">
 										<li class="list-control">
 											<img src="../../media/nav-icon/research-team.png" width="25px" height="25px">
-											<a href="#">Research Team</a>
+											<a href="../Pages/research-team.php">Research Team</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/publication.png" width="25px" height="25px">
-											<a href="#">Publication</a>
+											<a href="../Pages/publication.php">Publication</a>
 										</li>
 									</ul>
 								</div>
@@ -238,33 +238,33 @@
 		<!-- ====== mobile menu ======= -->
 		<div class="mobile-menu">
 			<ul>
-				<li><a href="#">Home</a></li><hr>
+				<li><a href="../Pages/index.php">Home</a></li><hr>
 				<li class="dropdown-parent"><a href="#">About <i class="fas fa-caret-down"></i></a>
 					<div class="dropdown-hamburger">
 						<ul>
 							<li>
 								<img src="../media/nav-icon/history.png" class="nav-icon" width="15px" height="15px">
-								<a href="history-logo.php">History & Logo Meaning</a>
+								<a href="../Pages/history-logo.php">History & Logo Meaning</a>
 							</li>
 							<li>
 								<img src="../media/nav-icon/structure.png" class="nav-icon" width="15px" height="15px">
-								<a href="usea-structure.php">University Structure</a>
+								<a href="../Pages/usea-structure.php">University Structure</a>
 							</li>
 							<li>
 								<img src="../media/nav-icon/president.png" class="nav-icon" width="15px" height="15px">
-								<a href="president-message.php">President Message</a>
+								<a href="../Pages/president-message.php">President Message</a>
 							</li>
 							<li>
 								<img src="../media/nav-icon/recognition.png" class="nav-icon" width="15px" height="15px">
-								<a href="recognition.php">Recognition</a>
+								<a href="../Pages/recognition.php">Recognition</a>
 							</li>
 							<li>
 								<img src="../media/nav-icon/core-value.png" class="nav-icon" width="15px" height="15px">
-								<a href="../vission-Mission/vision-mision-corevalue.php">Vision Mission & Core Value</a>
+								<a href="../Pages/vission-mission-core-value.php">Vision Mission & Core Value</a>
 							</li>
 							<li>
 								<img src="../media/nav-icon/event.png" class="nav-icon" width="15px" height="15px">
-								<a href="events.php">Events</a>
+								<a href="../Pages/events.php">Events</a>
 							</li>
 							<li>
 								<img src="../media/nav-icon/location.png" class="nav-icon" width="15px" height="15px">
@@ -278,58 +278,58 @@
 						<ul>
 							<li>
 								<img src="../media/nav-icon/f-economic.png" class="nav-icon" width="15px" height="15px">
-								<a href="faculty-economics.php">Faculty of Economics, Business & Tourism</a>
+								<a href="../Pages/faculty-economics.php">Faculty of Economics, Business & Tourism</a>
 							</li>
 							<li>
 								<img src="../media/nav-icon/f-it.png" class="nav-icon" width="15px" height="15px">
-								<a href="faculty-sciences-technology.php">Faculty of Sciences & Technology</a>
+								<a href="../Pages/faculty-sciences-technology.php">Faculty of Sciences & Technology</a>
 							</li>
 							<li>
 								<img src="../media/nav-icon/f-law.png" class="nav-icon" width="15px" height="15px">
-								<a href="faculty-sciences-law.php">Faculty of Social Science & Law</a>
+								<a href="../Pages/faculty-sciences-law.php">Faculty of Social Science & Law</a>
 							</li>
 							<li>
 								<img src="../media/nav-icon/f-art.png" class="nav-icon" width="15px" height="15px">
-								<a href="faculty-arts-humanities-education.php">Faculty of Arts, Humanities & Education</a>
+								<a href="../Pages/faculty-arts-humanities-education.php">Faculty of Arts, Humanities & Education</a>
 							</li>
 							<li>
 								<img src="../media/nav-icon/f-internation-college.png" class="nav-icon" width="15px" height="15px">
-								<a href="international-college.php">International College</a>
+								<a href="../Pages/international-college.php">International College</a>
 							</li>
 							<li>
 								<img src="../media/nav-icon/fli.png" class="nav-icon" width="15px" height="15px">
-								<a href="foreign-language.php">Foreign Language Institute</a>
+								<a href="../Pages/foreign-language.php">Foreign Language Institute</a>
 							</li>
 							<li>
 								<img src="../../media/nav-icon/post-graduate.png" class="nav-icon" width="15px" height="15px">
-								<a href="post-graduate.php">Post Graduate</a>
+								<a href="../Pages/post-graduate.php">Post Graduate</a>
 							</li>
 							<li>
 								<img src="../../media/nav-icon/short-course.png" class="nav-icon" width="15px" height="15px">
-								<a href="short-course.php">Short Course</a>
+								<a href="../Pages/short-course.php">Short Course</a>
 							</li>
 						</ul>
 					</div>
 				</li><hr>
-				<li><a href="#">Partnership</a></li><hr>
+				<li><a href="../Pages/partnership-local.php">Partnership</a></li><hr>
 				<li class="dropdown-parent"><a href="#">Research <i class="fas fa-caret-down"></i></a>
 					<div class="dropdown-hamburger">
 						<ul>
 							<li>
 								<img src="../../media/nav-icon/policy-and-procedure.png" class="nav-icon" width="15px" height="15px">
-								<a href="#">Research Policy and Procedure</a>
+								<a href="../Pages/research-policy-procedure.php">Research Policy and Procedure</a>
 							</li>
 							<li>
 								<img src="../../media/nav-icon/research-activity.png" class="nav-icon" width="15px" height="15px">
-								<a href="#">Research Activites</a>
+								<a href="../Pages/research-activities.php">Research Activites</a>
 							</li>
 							<li>
 								<img src="../../media/nav-icon/research-team.png" class="nav-icon" width="15px" height="15px">
-								<a href="#">Research Team</a>
+								<a href="../Pages/research-team.php">Research Team</a>
 							</li>
 							<li>
 								<img src="../../media/nav-icon/publication.png" class="nav-icon" width="15px" height="15px">
-								<a href="#">Publication</a>
+								<a href="../Pages/publication.php">Publication</a>
 							</li>
 						</ul>
 					</div>
@@ -337,7 +337,7 @@
 			</ul>
 		</div>
 	</div>
-	<!-- =====> End Navigation <===== -->
+	<!-- =====> End Navigation mobile<===== -->
 
 	<!-- =====> Start Slider <===== -->
 	<div class="container">

@@ -6,7 +6,7 @@
 	<!-- Start Web Location -->
 	<div class="container">
 		<div class="row">
-			<div class="col-12 web-location">../
+			<div class="col-12 web-location">
 				<ul>
 					<li><a href="index.php">
 						<i class="fa-solid fa-house"></i>

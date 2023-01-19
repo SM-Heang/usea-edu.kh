@@ -1,5 +1,5 @@
 <?php 
-	$page = 'Research Activities';
+	$page = 'Research Project';
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     
  ?>
@@ -14,7 +14,7 @@
 					</a>
 					</li>
 					<li>
-						<a href="#">Research Activities</a>
+						<a href="#">Research Project</a>
 					</li>
 				</ul>
 			</div>
@@ -30,7 +30,7 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-						Research Activities
+						Research Project
 					</div>
 				</div>
 				<div id="content-detail">

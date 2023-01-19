@@ -14,7 +14,7 @@
 					</a>
 					</li>
 					<li>
-						<a href="#">Vision Mission & Core Value</a>
+						<a href="#">Vision Mission</a>
 					</li>
 				</ul>
 			</div>
@@ -30,7 +30,7 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-						Vision Mission & Core Value
+						Vision Mission
 					</div>
 				</div>
 				<div id="content-detail">
