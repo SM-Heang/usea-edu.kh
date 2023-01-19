@@ -1,6 +1,6 @@
 <?php 
-	include_once 'include/header.php';
-	include_once '../connection/db.connection.php';     
+	include_once '../include/header.php';
+	include_once '../../connection/db.connection.php';     
  ?>
 	<!-- Start Web Location -->
 	
@@ -49,7 +49,7 @@
 							// echo "</pre>";
 						foreach ($result as $key => $value) { ?>
 						<div class="col-xxl-12 d-flex mt-3 ">
-							<img src="../media/Partnership/<?php echo $value['partnership_logo']; ?>" alt="" width="125px" height="100px" >
+							<img src="../../media/Partnership/<?php echo $value['partnership_logo']; ?>" alt="" width="125px" height="100px" >
                             <hr>
 								<p><?php echo $value['partnership_title_en'];?></p>
 						</div>
@@ -106,7 +106,7 @@
 	</div>
 	<!-- End Main Content-->
 <?php 
-	include_once 'include/buttom-content.php';
-	include_once 'include/footer.php';
+	include_once '../include/buttom-content.php';
+	include_once '../include/footer.php';
 ?>
 

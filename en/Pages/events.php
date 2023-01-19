@@ -1,7 +1,7 @@
 <?php
 	$page= "events";
-    include_once 'include/header.php';
-    include_once '../connection/db.connection.php';
+    include_once '../include/header.php';
+    include_once '../../connection/db.connection.php';
 
 ?>
 
@@ -55,7 +55,7 @@
 				<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex gx-2 gy-2" id="events-card">
 					<div class="card">
 					  <div class="bg-image hover-overlay ripple text-center" data-mdb-ripple-color="light">
-					    <img src="../media/events/<?php echo $value['event_cover']; ?>" class="img-fluid" style="object-fit: cover;"/>
+					    <img src="../../media/events/<?php echo $value['event_cover']; ?>" class="img-fluid" style="object-fit: cover;"/>
 					    <a href="#">
 					      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
 					    </a>
@@ -122,11 +122,11 @@
 
 			<!-- Start Right Content-->
 			<?php
-				include_once "include/right-content.php";
+				include_once "../include/right-content.php";
 			?>
 	<!-- End Main Content-->
 
 <?php
-    include_once 'include/buttom-content.php';
-    include_once 'include/footer.php';
+    include_once '../include/buttom-content.php';
+    include_once '../include/footer.php';
 ?>

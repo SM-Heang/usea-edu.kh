@@ -1,6 +1,6 @@
 <?php 
-	include_once 'include/header.php';
-	include_once '../connection/db.connection.php';     
+	include_once '../include/header.php';
+	include_once '../../connection/db.connection.php';     
  ?>
 	<!-- Start Web Location -->
 	
@@ -38,7 +38,7 @@
 							$sql ="SELECT * from usea_partnership WHERE partnership_type = 'local' ORDER BY signed_date DESC limit 10";
 							if (isset($_GET['page'])) {
 				    			if ($_GET['page']>1) {
-				    		 	$sql .= " OFFSET ".  ($_GET['page']-1)*10;
+				    		 	$sql .= " OFFSET ".($_GET['page']-1)*10;
 				    			}
 				   			 }
 							$stmt= $conn->prepare($sql);
@@ -46,7 +46,7 @@
 							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 						foreach ($result as $key => $value) { ?>
 						<div class="col-xxl-12 d-flex mt-3 ">
-							<img src="../media/Partnership/<?php echo $value['partnership_logo']; ?>" alt="" width="125px" height="100px" >
+							<img src="../../media/Partnership/<?php echo $value['partnership_logo']; ?>" alt="" width="125px" height="100px" >
 							<div>
 								<p><?php echo $value['partnership_title_en'];?></p>
 							</div>
@@ -56,15 +56,21 @@
 					</div>
 				</div>
 			</div>
+
 			<!-- Start Right Content-->
-			<div class="col-xxl-3">
+			<!-- <div class="col-xxl-3">
 				<div class="right-content">
 					<ul>
 						<li><a href="partnership-local.php" class="active">Local</a></li><br><hr>
 						<li><a href="partnership-international">International</a></li><br><hr>
 					</ul>
 				</div>
-			</div>
+			</div> -->
+
+			<?php 
+				include_once "../include/right-conent-partnership.php";
+			 ?>
+			 
 		</div>
 		<!--Start Pagination -->
 				<?php 
@@ -106,7 +112,7 @@
 	<!-- End Main Content-->
 
 <?php 
-	include_once 'include/buttom-content.php';
-	include_once 'include/footer.php';
+	include_once '../include/buttom-content.php';
+	include_once '../include/footer.php';
 ?>
 

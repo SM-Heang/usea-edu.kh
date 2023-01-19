@@ -1,7 +1,7 @@
 <?php
 	$page = 'location';
-    include_once 'include/header.php';
-    include_once '../connection/db.connection.php';
+    include_once '../include/header.php';
+    include_once '../../connection/db.connection.php';
 ?>
 <!-- Start Web Location -->
 <div class="container">
@@ -36,12 +36,12 @@
 	</div>
 			<!-- Start Right Content-->
             <?php
-				include_once 'include/right-content.php';
+				include_once '../include/right-content.php';
 			?>
 		</div>
 	</div>
 	<!-- End Main Content-->
 <?php
-    include_once 'include/buttom-content.php';
-    include_once 'include/footer.php';
+    include_once '../include/buttom-content.php';
+    include_once '../include/footer.php';
 ?>

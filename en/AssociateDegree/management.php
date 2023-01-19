@@ -1,10 +1,9 @@
 <?php 
-	$page = 'president';
-	include_once 'include/header.php';
-	include_once '../connection/db.connection.php';     
+	$page = 'Management';
+	include_once '../include/header.php';
+	include_once '../../connection/db.connection.php';     
  ?>
 	<!-- Start Web Location -->
-	
 	<div class="container">
 		<div class="row">
 			<div class="col-12 web-location">
@@ -15,7 +14,13 @@
 					</a>
 					</li>
 					<li>
-						<a href="#">President Message</a>
+						<a href="#"> Home > </a>
+					</li>
+					<li>
+					<a href="#"> Academics > </a>
+					</li>
+					<li>
+					<a href="#"> Management </a>
 					</li>
 				</ul>
 			</div>
@@ -31,34 +36,39 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-						President Message
+						Associate's Degree in Management
 					</div>
 				</div>
 				<div id="content-detail">
-					<div class="content-president-detail">
 					<?php  
-							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =19");
+							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =27");
 							$stmt->execute();
 							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 							// echo "<pre>";
 							// print_r($result);
 							// echo "</pre>";
 						foreach ($result as $key => $value) { ?>
-						<!-- <img src="../media/image/president/Dr.MeanSothy.jpg" alt="president photo" width="240px" height="300px"> -->
-						<p><?php echo $value['article_description_en'];?></p>
-						<?php } ?>
-					</div>
+						<!-- <img src="media/events/independent_days.jpg" alt="independent_days" width="375px" height="245px"> -->
+						<p>
+                            <?php 
+                        echo $value['article_description_en'];
+                        ?>
+                        </p>
+					<?php } ?>
+
+
 				</div>
 			</div>
 			<!-- Start Right Content-->
 			<?php
-				include_once 'include/right-content.php';
+				include_once '../include/right-content-economic.php';
 			?>
 		</div>
 	</div>
 	<!-- End Main Content-->
-<?php
-	include_once 'include/buttom-content.php';
-	include_once 'include/footer.php';
-?>
+
+	<?php
+		include_once '../include/buttom-content.php';
+		include_once '../include/footer.php';
+	?>
 

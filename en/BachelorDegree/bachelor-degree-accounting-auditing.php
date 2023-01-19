@@ -1,10 +1,13 @@
-<?php
-	$page = 'vision-mission';
-	include_once 'include/header.php';
-	include_once '../connection/db.connection.php';     
+<?php 
+	$page = 'Accounting & Auditing';
+	// include_once 'include/header.php';
+	include_once '../include/header.php';
+
+	// include_once '../connection/db.connection.php';     
+	include_once '../../connection/db.connection.php';     
+
  ?>
 	<!-- Start Web Location -->
-	
 	<div class="container">
 		<div class="row">
 			<div class="col-12 web-location">
@@ -15,7 +18,13 @@
 					</a>
 					</li>
 					<li>
-						<a href="#">Faculty of Economics, Business & Tourism</a>
+						<a href="#"> Home > </a>
+					</li>
+					<li>
+					<a href="#"> Academics > </a>
+					</li>
+					<li>
+					<a href="#"> Accounting & Auditing </a>
 					</li>
 				</ul>
 			</div>
@@ -31,12 +40,12 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-						Vission & Mission
+					Bachelor's Degree in Accounting & Auditing
 					</div>
 				</div>
 				<div id="content-detail">
 					<?php  
-							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =304");
+							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =27");
 							$stmt->execute();
 							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 							// echo "<pre>";
@@ -44,20 +53,30 @@
 							// echo "</pre>";
 						foreach ($result as $key => $value) { ?>
 						<!-- <img src="media/events/independent_days.jpg" alt="independent_days" width="375px" height="245px"> -->
-						<p><?php echo $value['article_description_en'];?></p>
+						<p>
+                            <?php 
+                                 echo $value['article_description_en'];
+                            ?>
+                        </p>
 					<?php } ?>
+
+
 				</div>
 			</div>
 			<!-- Start Right Content-->
-			<?php 
-				include_once "include/right-content-economic.php";
-			 ?>
+			<?php
+				include_once '../include/right-content-economic.php';
+			?>
 		</div>
 	</div>
 	<!-- End Main Content-->
-<?php
-	include_once 'include/buttom-content.php';
-	include_once 'include/footer.php';
-?>
 
+	<?php
+		// include_once 'include/buttom-content.php';
+		include_once '../include/buttom-content.php';
+
+		// include_once 'include/footer.php';
+		include_once '../include/footer.php';
+
+	?>
 

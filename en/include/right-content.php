@@ -3,7 +3,7 @@
 					<ul>
 						<li><a href="history-logo.php" class="<?php if($page== 'history'){echo 'active';}?>">History & LOGO Meaning</a></li><br><hr>
 						<li><a href="president-message.php" class="<?php if($page== 'president'){echo 'active';}?>">President Message</a></li><br><hr>
-						<li><a href="vision-mision-corevalue.php" class="<?php if($page== 'vision-mission'){echo 'active';}?>">Vision, Mission & Core Value</a></li><br><hr>
+						<li><a href="../vission-Mission/vision-mision-corevalue.php" class="<?php if($page== 'vision-mission'){echo 'active';}?>">Vision, Mission & Core Value</a></li><br><hr>
 						<li><a href="usea-structure.php" class="<?php if($page== 'structure'){echo 'active';}?>">University Structure</a></li><br><hr>
 						<li><a href="#">Recognition</a></li><br><hr>
 						<li>

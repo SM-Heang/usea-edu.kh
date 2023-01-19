@@ -1,6 +1,6 @@
 <?php 
-	include_once 'include/header.php';
-	include_once '../connection/db.connection.php';     
+	include_once '../include/header.php';
+	include_once '../../connection/db.connection.php';     
  ?>
 	<!-- Start Web Location -->
 	
@@ -39,7 +39,7 @@
 				?>
 				 
 				<div class="mt-2 d-flex">
-					<img src="../media/g1.jpg" width="180px" height="130px">
+					<img src="../../media/g1.jpg" width="180px" height="130px">
 					<p style="margin-left: 10px; text-align: justify;">Goverment</p>
 				</div>
 				<a class="btn btn-danger" style="float: right; margin-top: 0px;">Download</a>
@@ -47,7 +47,7 @@
 
 
 				<div class="mt-2 d-flex">
-					<img src="../media/m1.jpg" width="200px" height="150px">
+					<img src="../../media/m1.jpg" width="200px" height="150px">
 					<p style="margin-left: 10px; text-align: justify;">MOEYS</p>
 				</div>
 				<a class="btn btn-danger" style="float: right; margin-top: 0px;">Download</a>
@@ -55,7 +55,7 @@
 
 
 				<div class="mt-2 d-flex">
-					<img src="../media/ACC.jpg" width="180px" height="130px">
+					<img src="../../media/ACC.jpg" width="180px" height="130px">
 					<p style="margin-left: 10px; text-align: justify;">ACC</p>
 				</div>
 				<a class="btn btn-danger" style="float: right; margin-top: 0px;">Download</a>
@@ -63,7 +63,7 @@
 
 
 				<div class="mt-2 d-flex">
-					<img src="../media/AUN.jpg" width="180px" height="130px">
+					<img src="../../media/AUN.jpg" width="180px" height="130px">
 					<p style="margin-left: 10px; text-align: justify;">AUN</p>
 				</div>
 				<a class="btn btn-danger" style="float: right; margin-top: 0px;">Download</a>
@@ -89,7 +89,7 @@
 	<!-- End Main Content-->
 
 <?php 
-	include_once 'include/buttom-content.php';
-	include_once 'include/footer.php';
+	include_once '../include/buttom-content.php';
+	include_once '../include/footer.php';
 ?>
 

@@ -1,51 +1,29 @@
-<!-- <script src="../../js/nav-right.js"></script> -->
 <div class="col-xxl-3">
 				<div class="right-content-economic">
-					<div class="item"><a class="item-link" href="../vission-Mission/vision-mision-corevalue.php">Vision & Mission</a></div><hr>
-					<div class="item">
-						<!-- <a class="item-link" href="#"><i class="fas fa-angle-right"></i> Associate's Degree</a><hr> -->
+					<div class="item"><a class="item-link" href="../Partnership/partnership-vission.php"> Vission </a></div><hr>
+					<div class="item"><a class="item-link" href="../Partnership/partnership-docteral.php"> Docteral </a></div><hr>
+					<div class="item"><a class="item-link" href="../Partnership/partnership-master-degree.php"> Master Degree </a></div><hr>
+					<div class="item"><a class="item-link" href="../Partnership/partnership-dissertation.php"> Dissertation </a></div><hr>
+
+					<!-- <div class="item">
 						<nav class="sidebar">
 							<ul class="nav flex-column" id="nav_accordion">
 								<li class="nav-item has-submenu">
-									<a class="nav-link item-link" href="#">Associate's Degree<i class="fas fa-angle-down"></i></a>
+									<a class="nav-link item-link" href="#"> Associate's Degree <i class="fas fa-angle-down"></i></a>
 									<ul class="submenu collapse">
 										<li><a class="nav-link item-link" aria-current="page" href="../AssociateDegree/finance-banking.php"> Finance & Banking </a></li>
 										<li><a class="nav-link item-link" href="../AssociateDegree/management.php"> Management </a></li> 
 										<li><a class="nav-link item-link" href="../AssociateDegree/accounting.php"> Accounting </a></li> 
-										<li><a class="nav-link item-link" href="../AssociateDegree/marketing.php"> Marketing </a> </li> 
-										<li><a class="nav-link item-link" href="../AssociateDegree/tourism.php"> Tourism </a> </li>
+										<li><a class="nav-link item-link" href="../AssociateDegree/marketing.php"> Marketing </a></li> 
+										<li><a class="nav-link item-link" href="../AssociateDegree/tourism.php"> Tourism </a></li>
 									</ul>
 								</li>
 							</ul>
                 		</nav>
 						<hr>
-						<!-- <div class="sub-menu">
-							<div class="sub-item"><a href="#">Accounting</a></div>
-							<div class="sub-item"><a href="#">Finance & Banking</a></div>
-							<div class="sub-item"><a href="#">Management</a></div>
-							<div class="sub-item"><a href="#">Marketing</a></div>
-							<div class="sub-item"><a href="#">Tourism</a></div>
-						</div> -->
-					</div>
+					</div> -->
 					
-					<div class="item">
-						<!-- <a class="item-link" href="#">Bachelor's Degree</a><hr> -->
-						<!-- <div class="sub-menu">
-							<div class="sub-item"><a href="#">Management</a></div>
-							<div class="sub-item"><a href="#">Marketing</a></div>
-							<div class="sub-item"><a href="#">Accounting & Auditing</a></div>
-							<div class="sub-item"><a href="#">Finance & Banking</a></div>
-							<div class="sub-item"><a href="#">Industrail Econnomics</a></div>
-							<div class="sub-item"><a href="#">Intrepreneurship</a></div>
-							<div class="sub-item"><a href="#">Internation Business</a></div>
-							<div class="sub-item"><a href="#">International Business</a></div>
-							<div class="sub-item"><a href="#">International Tourism Management</a></div>
-							<div class="sub-item"><a href="#">Catering Management</a></div>
-							<div class="sub-item"><a href="#">Tourism & Hospitality Management</a></div>
-							<div class="sub-item"><a href="#">Eco-Tourism</a></div>
-							<div class="sub-item"><a href="#">Event Management</a></div>
-						</div> -->
-
+					<!-- <div class="item">
 						<nav class="sidebar">
 								<ul class="nav flex-column" id="nav_accordion">
 									<li class="nav-item has-submenu">
@@ -67,10 +45,8 @@
                     				</li>
                					</ul>
                 		 </nav>
-					</div>
-					<hr>
-					
-					<!-- <div class="item"><a class="item-link" href="../MasterDegree/master-degree.php">Master's Degree</a></div> -->
+					</div> -->
+
 				</div>
 			</div>
 		</div>

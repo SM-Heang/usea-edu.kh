@@ -1,9 +1,10 @@
 <?php 
-	$page = 'vision-mission';
-	include_once 'include/header.php';
-	include_once '../connection/db.connection.php';     
+	$page = 'International College';
+	include_once '../include/header.php';
+	include_once '../../connection/db.connection.php';     
  ?>
 	<!-- Start Web Location -->
+	
 	<div class="container">
 		<div class="row">
 			<div class="col-12 web-location">
@@ -14,7 +15,7 @@
 					</a>
 					</li>
 					<li>
-						<a href="#">Vision Mission & Core Value</a>
+						<a href="#">International College</a>
 					</li>
 				</ul>
 			</div>
@@ -30,12 +31,12 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-						Vision Mission & Core Value
+                    International College
 					</div>
 				</div>
 				<div id="content-detail">
 					<?php  
-							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =27");
+							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =316");
 							$stmt->execute();
 							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 							// echo "<pre>";
@@ -45,20 +46,17 @@
 						<!-- <img src="media/events/independent_days.jpg" alt="independent_days" width="375px" height="245px"> -->
 						<p><?php echo $value['article_description_en'];?></p>
 					<?php } ?>
-
-
 				</div>
 			</div>
 			<!-- Start Right Content-->
-			<?php
-				include_once 'include/right-content.php';
-			?>
+			<?php 
+				include_once "../include/right-content-economic.php";
+			 ?>
 		</div>
 	</div>
 	<!-- End Main Content-->
-
-	<?php
-		include_once 'include/buttom-content.php';
-		include_once 'include/footer.php';
-	?>
+<?php
+	include_once '../include/buttom-content.php';
+	include_once '../include/footer.php';
+?>
 

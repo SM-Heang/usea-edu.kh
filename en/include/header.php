@@ -17,31 +17,33 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
 	<!-- Animate.css -->
-	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../../css/animate.css">
 
 	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="../css/icomoon.css">
+	<link rel="stylesheet" href="../../css/icomoon.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
 
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../../css/bootstrap.css">
+	<link rel="stylesheet" href="../../css//bootstrap.css">
+
 
 	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="../css/magnific-popup.css">
+	<link rel="stylesheet" href="../../css/magnific-popup.css">
 
 	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="../css/owl.carousel.min.css">
-	<link rel="stylesheet" href="../css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="../../css/owl.carousel.min.css">
+	<link rel="stylesheet" href="../../css/owl.theme.default.min.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Pricing -->
-	<link rel="stylesheet" href="../css/pricing.css">
+	<link rel="stylesheet" href="../../css/pricing.css">
 
 	<!-- Theme style  -->
-	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../../css/style.css">
 
 	<!-- Modernizr JS -->
-	<script src="../js/modernizr-2.6.2.min.js"></script>
+	<script src="../../js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -76,7 +78,7 @@
 								<span>|</span>			
 								<a href="#">Portal</a>
 								<span>|</span>
-								<a href="#"><img src="../media/nav-icon/khmer.png" width="25" height="25"><span style="margin: 0px 5px;">Khmer</span></a>
+								<a href="#"><img src="../../media/nav-icon/khmer.png" width="25" height="25"><span style="margin: 0px 5px;">Khmer</span></a>
 						</div>	
 					</div>
 				</div>
@@ -91,14 +93,14 @@
 			<div class="wrapper">
 				<div class="logo">
 					<a href="#">
-						<img src="../media/title/usea-title-1.png" alt="USEA LOGO">
+						<img src="../../media/title/usea-title-1.png" alt="USEA LOGO">
 					</a>
 				</div>
 				<div class="hamburger">
 					<div class="bar"></div>
 				</div>
 				<ul class="nav-link"> 
-					<li><a href="index.php" class="active">Home</a></li>
+					<li><a href="../Pages/index.php" class="active">Home</a></li>
 					<li>
 						<a href="#">About</a>
 						<div class="mega-box">
@@ -106,35 +108,35 @@
 								<div class="row">
 									<ul class="mega-link">
 										<li class="list-control">
-											<img src="../media/nav-icon/history.png" class="nav-icon" width="25px" height="25px">
+											<img src="../../media/nav-icon/history.png" class="nav-icon" width="25px" height="25px">
 											<a href="history-logo.php">History & Logo Meaning</a>
 										</li>
 										<li class="list-control">
-											<img src="../media/nav-icon/president.png" class="nav-icon" width="25px" height="25px">
+											<img src="../../media/nav-icon/president.png" class="nav-icon" width="25px" height="25px">
 											<a href="president-message.php">President Message</a>
 										</li>
 										<li class="list-control">
-											<img src="../media/nav-icon/core-value.png" class="nav-icon" width="25px" height="25px">
-											<a href="vision-mision-corevalue.php">Vision Mission & Core Value</a>
+											<img src="../../media/nav-icon/core-value.png" class="nav-icon" width="25px" height="25px">
+											<a href="../vission-Mission/vision-mision-corevalue.php">Vision Mission & Core Value</a>
 										</li>
 										<li class="list-control">
-											<img src="../media/nav-icon/location.png" class="nav-icon" width="25px" height="25px">
-											<a href="location.php">Location</a>
+											<img src="../../media/nav-icon/location.png" class="nav-icon" width="25px" height="25px">
+											<a href="../Pages/location.php">Location</a>
 										</li>
 									</ul>
 								</div>
 								<div class="row">
 									<ul class="mega-link">
 										<li class="list-control">
-											<img src="../media/nav-icon/structure.png" class="nav-icon" width="25px" height="25px">
+											<img src="../../media/nav-icon/structure.png" class="nav-icon" width="25px" height="25px">
 											<a href="usea-structure.php">University Structure</a>
 										</li>
 										<li class="list-control">
-											<img src="../media/nav-icon/recognition.png" class="nav-icon" width="25px" height="25px">
+											<img src="../../media/nav-icon/recognition.png" class="nav-icon" width="25px" height="25px">
 											<a href="recognition.php">Recognition</a>
 										</li>
 										<li class="list-control">
-											<img src="../media/nav-icon/event.png" class="nav-icon" width="25px" height="25px">
+											<img src="../../media/nav-icon/event.png" class="nav-icon" width="25px" height="25px">
 											<a href="events.php">Events</a>
 										</li>
 										
@@ -150,40 +152,40 @@
 								<div class="row">
 									<ul class="mega-link">
 										<li class="list-control">
-											<img src="../media/nav-icon/f-economic.png" width="25px" height="25px">
+											<img src="../../media/nav-icon/f-economic.png" width="25px" height="25px">
 											<a href="faculty-economics.php">Faculty of Economics,<br> Business & Tourism</a>
 										</li>
 										<li class="list-control">
-											<img src="../media/nav-icon/f-it.png" width="25px" height="25px">
+											<img src="../../media/nav-icon/f-it.png" width="25px" height="25px">
 											<a href="faculty-sciences-technology.php">Faculty of Sciences & <br> Technology</a>
 										</li>
 										<li class="list-control">
-											<img src="../media/nav-icon/f-law.png" width="25px" height="25px">
+											<img src="../../media/nav-icon/f-law.png" width="25px" height="25px">
 											<a href="faculty-sciences-law.php">Faculty of Social Science <br>& Law</a>
 										</li>
 										<li class="list-control">
-											<img src="../media/nav-icon/f-art.png" width="25px" height="25px">
-											<a href="#">Faculty of Arts, Humanities <br>& Education</a>
+											<img src="../../media/nav-icon/f-art.png" width="25px" height="25px">
+											<a href="faculty-arts-humanities-education.php">Faculty of Arts, Humanities <br>& Education</a>
 										</li>
 									</ul>
 								</div>
 								<div class="row">
 									<ul class="mega-link">
 										<li class="list-control">
-											<img src="../media/nav-icon/f-internation-college.png" width="25px" height="25px">
-											<a href="#">International College</a>
+											<img src="../../media/nav-icon/f-internation-college.png" width="25px" height="25px">
+											<a href="international-college.php">International College</a>
 										</li>
 										<li class="list-control">
-											<img src="../media/nav-icon/fli.png" width="25px" height="25px">
+											<img src="../../media/nav-icon/fli.png" width="25px" height="25px">
 											<a href="foreign-language.php">Foreign Language <br>Institute</a>
 										</li>
 										<li class="list-control">
-											<img src="../media/nav-icon/post-graduate.png" width="25px" height="25px">
-											<a href="#">Post Graduate</a>
+											<img src="../../media/nav-icon/post-graduate.png" width="25px" height="25px">
+											<a href="post-graduate.php">Post Graduate</a>
 										</li>
 										<li class="list-control">
-											<img src="../media/nav-icon/short-course.png" width="25px" height="25px">
-											<a href="#">Short Course</a>
+											<img src="../../media/nav-icon/short-course.png" width="25px" height="25px">
+											<a href="short-course.php">Short Course</a>
 										</li>
 									</ul>
 								</div>
@@ -198,15 +200,15 @@
 								<div class="row">
 									<ul class="mega-link">
 										<li class="list-control">
-											<img src="../media/nav-icon/policy-and-procedure.png" width="25px" height="25px">
+											<img src="../../media/nav-icon/policy-and-procedure.png" width="25px" height="25px">
 											<a href="#">Research Policy and Procedure</a>
 										</li>
 										<li class="list-control">
-											<img src="../media/nav-icon/research-activity.png" width="25px" height="25px">
+											<img src="../../media/nav-icon/research-activity.png" width="25px" height="25px">
 											<a href="#">Research Activites</a>
 										</li>
 										<li class="list-control">
-											<img src="../media/nav-icon/project.png" width="25px" height="25px">
+											<img src="../../media/nav-icon/project.png" width="25px" height="25px">
 											<a href="#">Research Project</a>
 										</li>
 									</ul>
@@ -214,11 +216,11 @@
 								<div class="row">
 									<ul class="mega-link">
 										<li class="list-control">
-											<img src="../media/nav-icon/research-team.png" width="25px" height="25px">
+											<img src="../../media/nav-icon/research-team.png" width="25px" height="25px">
 											<a href="#">Research Team</a>
 										</li>
 										<li class="list-control">
-											<img src="../media/nav-icon/publication.png" width="25px" height="25px">
+											<img src="../../media/nav-icon/publication.png" width="25px" height="25px">
 											<a href="#">Publication</a>
 										</li>
 									</ul>
@@ -231,6 +233,9 @@
 					
 			</div>
 		</nav>
+
+
+		<!-- ====== mobile menu ======= -->
 		<div class="mobile-menu">
 			<ul>
 				<li><a href="#">Home</a></li><hr>
@@ -238,32 +243,32 @@
 					<div class="dropdown-hamburger">
 						<ul>
 							<li>
-								<img src="media/nav-icon/history.png" class="nav-icon" width="15px" height="15px">
-								<a href="#">History & Logo Meaning</a>
+								<img src="../media/nav-icon/history.png" class="nav-icon" width="15px" height="15px">
+								<a href="history-logo.php">History & Logo Meaning</a>
 							</li>
 							<li>
-								<img src="media/nav-icon/structure.png" class="nav-icon" width="15px" height="15px">
-								<a href="#">University Structure</a>
+								<img src="../media/nav-icon/structure.png" class="nav-icon" width="15px" height="15px">
+								<a href="usea-structure.php">University Structure</a>
 							</li>
 							<li>
-								<img src="media/nav-icon/president.png" class="nav-icon" width="15px" height="15px">
-								<a href="#">President Message</a>
+								<img src="../media/nav-icon/president.png" class="nav-icon" width="15px" height="15px">
+								<a href="president-message.php">President Message</a>
 							</li>
 							<li>
-								<img src="media/nav-icon/recognition.png" class="nav-icon" width="15px" height="15px">
-								<a href="#">Recognition</a>
+								<img src="../media/nav-icon/recognition.png" class="nav-icon" width="15px" height="15px">
+								<a href="recognition.php">Recognition</a>
 							</li>
 							<li>
-								<img src="media/nav-icon/core-value.png" class="nav-icon" width="15px" height="15px">
-								<a href="#">Vision Mission & Core Value</a>
+								<img src="../media/nav-icon/core-value.png" class="nav-icon" width="15px" height="15px">
+								<a href="../vission-Mission/vision-mision-corevalue.php">Vision Mission & Core Value</a>
 							</li>
 							<li>
-								<img src="media/nav-icon/event.png" class="nav-icon" width="15px" height="15px">
-								<a href="#">Events</a>
+								<img src="../media/nav-icon/event.png" class="nav-icon" width="15px" height="15px">
+								<a href="events.php">Events</a>
 							</li>
 							<li>
-								<img src="media/nav-icon/location.png" class="nav-icon" width="15px" height="15px">
-								<a href="#">Location</a>
+								<img src="../media/nav-icon/location.png" class="nav-icon" width="15px" height="15px">
+								<a href="../Pages/location.php">Location</a>
 							</li>
 						</ul>
 					</div>
@@ -272,36 +277,36 @@
 					<div class="dropdown-hamburger">
 						<ul>
 							<li>
-								<img src="media/nav-icon/f-economic.png" class="nav-icon" width="15px" height="15px">
-								<a href="#">Faculty of Economics, Business & Tourism</a>
+								<img src="../media/nav-icon/f-economic.png" class="nav-icon" width="15px" height="15px">
+								<a href="faculty-economics.php">Faculty of Economics, Business & Tourism</a>
 							</li>
 							<li>
-								<img src="media/nav-icon/f-it.png" class="nav-icon" width="15px" height="15px">
-								<a href="#">Faculty of Sciences & Technology</a>
+								<img src="../media/nav-icon/f-it.png" class="nav-icon" width="15px" height="15px">
+								<a href="faculty-sciences-technology.php">Faculty of Sciences & Technology</a>
 							</li>
 							<li>
-								<img src="media/nav-icon/f-law.png" class="nav-icon" width="15px" height="15px">
-								<a href="#">Faculty of Social Science & Law</a>
+								<img src="../media/nav-icon/f-law.png" class="nav-icon" width="15px" height="15px">
+								<a href="faculty-sciences-law.php">Faculty of Social Science & Law</a>
 							</li>
 							<li>
-								<img src="media/nav-icon/f-art.png" class="nav-icon" width="15px" height="15px">
-								<a href="#">Faculty of Arts, Humanities & Education</a>
+								<img src="../media/nav-icon/f-art.png" class="nav-icon" width="15px" height="15px">
+								<a href="faculty-arts-humanities-education.php">Faculty of Arts, Humanities & Education</a>
 							</li>
 							<li>
-								<img src="media/nav-icon/f-internation-college.png" class="nav-icon" width="15px" height="15px">
-								<a href="#">International College</a>
+								<img src="../media/nav-icon/f-internation-college.png" class="nav-icon" width="15px" height="15px">
+								<a href="international-college.php">International College</a>
 							</li>
 							<li>
-								<img src="media/nav-icon/fli.png" class="nav-icon" width="15px" height="15px">
-								<a href="#">Foreign Language Institute</a>
+								<img src="../media/nav-icon/fli.png" class="nav-icon" width="15px" height="15px">
+								<a href="foreign-language.php">Foreign Language Institute</a>
 							</li>
 							<li>
-								<img src="../media/nav-icon/post-graduate.png" class="nav-icon" width="15px" height="15px">
-								<a href="#">Post Graduate</a>
+								<img src="../../media/nav-icon/post-graduate.png" class="nav-icon" width="15px" height="15px">
+								<a href="post-graduate.php">Post Graduate</a>
 							</li>
 							<li>
-								<img src="../media/nav-icon/short-course.png" class="nav-icon" width="15px" height="15px">
-								<a href="#">Short Course</a>
+								<img src="../../media/nav-icon/short-course.png" class="nav-icon" width="15px" height="15px">
+								<a href="short-course.php">Short Course</a>
 							</li>
 						</ul>
 					</div>
@@ -311,19 +316,19 @@
 					<div class="dropdown-hamburger">
 						<ul>
 							<li>
-								<img src="../media/nav-icon/policy-and-procedure.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/policy-and-procedure.png" class="nav-icon" width="15px" height="15px">
 								<a href="#">Research Policy and Procedure</a>
 							</li>
 							<li>
-								<img src="../media/nav-icon/research-activity.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/research-activity.png" class="nav-icon" width="15px" height="15px">
 								<a href="#">Research Activites</a>
 							</li>
 							<li>
-								<img src="../media/nav-icon/research-team.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/research-team.png" class="nav-icon" width="15px" height="15px">
 								<a href="#">Research Team</a>
 							</li>
 							<li>
-								<img src="../media/nav-icon/publication.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/publication.png" class="nav-icon" width="15px" height="15px">
 								<a href="#">Publication</a>
 							</li>
 						</ul>
@@ -339,19 +344,19 @@
 	<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-inner">
 		  <div class="carousel-item active">
-			<img src="../media/slider/2-Law.png" class="d-flex align-items-center w-100 " alt="...">
+			<img src="../../media/slider/2-Law.png" class="d-flex align-items-center w-100 " alt="...">
 		  </div>
 		  <div class="carousel-item">
-			<img src="../media/slider/3-IT.png" class="d-flex align-items-center w-100" alt="...">
+			<img src="../../media/slider/3-IT.png" class="d-flex align-items-center w-100" alt="...">
 		  </div>
 		  <div class="carousel-item">
-			<img src="../media/slider/4-English.png" class="d-flex align-items-center w-100" alt="...">
+			<img src="../../media/slider/4-English.png" class="d-flex align-items-center w-100" alt="...">
 		  </div>
 		  <div class="carousel-item">
-			<img src="../media/slider/5-Education.png" class="d-flex align-items-center w-100" alt="...">
+			<img src="../../media/slider/5-Education.png" class="d-flex align-items-center w-100" alt="...">
 		  </div>
 		  <div class="carousel-item">
-			<img src="../media/slider/6-Argriculture.png" class="d-flex align-items-center w-100" alt="...">
+			<img src="../../media/slider/6-Argriculture.png" class="d-flex align-items-center w-100" alt="...">
 		  </div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">

@@ -1,7 +1,7 @@
 <?php 
 	$page = 'structure';
-	include_once 'include/header.php';
-	include_once '../connection/db.connection.php';     
+	include_once '../include/header.php';
+	include_once '../../connection/db.connection.php';     
  ?>
 	<!-- Start Web Location -->
 	
@@ -40,20 +40,20 @@
 							specialized committee and three Vice Presidents managing the assigned offices. USEA has the Board of Trustees governing 
 							the university for its final decision on academic and administrative matters. The President is the authority in the university 
 							assisted by Assistant to the Vice President, advisors, academic board, specialized committee and three Vice Presidents managing the assigned offices.</p>
-						<img src="../media/image/usea-structure-2022.jpg" class="rounded mx-auto d-block" alt="president photo" width="100%" height="auto">
+						<img src="../../media/image/usea-structure-2022.jpg" class="rounded mx-auto d-block" alt="president photo" width="100%" height="auto">
 					</div>
 				</div>
 			</div>
 			<!-- Start Right Content-->
 			<?php
-				include_once 'include/right-content.php';
+				include_once '../include/right-content.php';
 			?>
 		</div>
 	</div>
 	<!-- End Main Content-->
 
 	<?php
-		include_once 'include/buttom-content.php';
-		include_once 'include/footer.php';
+		include_once '../include/buttom-content.php';
+		include_once '../include/footer.php';
 	?>
 

@@ -1,18 +1,18 @@
 <?php 
-	include_once 'include/header.php';
-	include_once '../connection/db.connection.php';     
+	include_once '../include/header.php';
+	include_once '../../connection/db.connection.php';     
+
  ?>
 	<!-- =====> Start Event <===== -->
 	<div id="fh5co-blog">  
 		<div class="container">
 
-			
 			<!-- =====> Start Upcoming Events <===== -->
-			<div class="row animate-box fh5co-heading ">
+			<div class="row animate-box fh5co-heading">
 				<div class="text-center ">
 					<h2 style="color: #002060; font-weight: bold;">LATEST NEWS</h2>
 				</div>
-				<p><a href="upcoming-events.php" style="text-decoration: none; color:#002060;">Upcoming Events | <span style="font-size: 0.75rem; font-weight: 500;">All Events</span></a></p>
+				<p><a href="upcoming-events.php" style="text-decoration:none; color:#002060;">Upcoming Events | <span style="font-size: 0.75rem; font-weight: 500;">All Events</span></a></p>
 			</div>
 				<div class="container" id="upcoming-events">
 					<div class="row">
@@ -33,12 +33,14 @@
 									</div>
 									<div style="text-align: justify;">
 										<div style="height: 3rem;">
-											<h3><a href="#"> <?php echo substr($value['event_title_en'], 0, 45). "..."; ?> </a></h3>
+											<h3>
+												<a href="#"> <?php echo substr($value['event_title_en'], 0, 45). "..."; ?> </a>
+											</h3>
 										</div>
 										<p ><?php echo substr($value['event_description_en'], 0, 100) . "..."; ?></p>					
 									</div>
 									<div style="text-align: right;">
-										<a href="#" type="button" class="btn btn-outline-primary">Read More</a>
+										<a href="#" type="button" class="btn btn-outline-primary"> Read More </a>
 									</div>
 								</div>
 							</div>
@@ -63,7 +65,7 @@
 				<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex gx-2 gy-2" id="events-card">
 					<div class="card">
 					  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-					    <img src="../media/events/<?php echo $value['event_cover']; ?>" class="img-fluid"/>
+					    <img src="../../media/events/<?php echo $value['event_cover']; ?>" class="img-fluid"/>
 					    <a href="#!">
 					      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
 					    </a>
@@ -88,18 +90,18 @@
 	<div class="container">
 		<h1 id="partnership">Partnership</h1>
 		<div class="owl-carousel owl-theme" id="partnership-logo">
-			<div class="item p-3" id="item"><a href="https://angel-project.eu/" target="_blank"><img src="../media/Partnership/100px/angel.png"></a></div>
-			<div class="item p-3" id="item"><a href="https://rwi.lu.se/" target="_blank"><img src="../media/Partnership/100px/rwi.png"></a></div>
-			<div class="item p-3" id="item"><a href="https://www.accaglobal.com/gb/en.html" target="_blank"><img src="../media/Partnership/100px/acca.png"></a></div>
-			<div class="item p-3" id="item"><a href="#"><img src="../media/Partnership/100px/ati.png"></a></div>
-			<div class="item p-3" id="item"><a href="https://www.cisco.com/site/us/en/index.html" target="_blank"><img src="../media/Partnership/100px/cisco.png"></a></div>
-			<div class="item p-3" id="item"><a href="#"><img src="../media/Partnership/100px/jnu.png"></a></div>
-			<div class="item p-3" id="item"><a href="#"><img src="../media/Partnership/100px/dpu.png"></a></div>
-			<div class="item p-3" id="item"><a href="#"><img src="../media/Partnership/100px/hu.png"></a></div>
-			<div class="item p-3" id="item"><a href="#"><img src="../media/Partnership/100px/cu.png"></a></div>
-			<div class="item p-3" id="item"><a href="#"><img src="../media/Partnership/100px/knu.png"></a></div>
-			<div class="item p-3" id="item"><a href="#"><img src="../media/Partnership/100px/ku.png"></a></div>
-			<div class="item p-3" id="item"><a href="#"><img src="../media/Partnership/mara-logo.png"></a></div>
+			<div class="item p-3" id="item"><a href="https://angel-project.eu/" target="_blank"><img src="../../media/Partnership/100px/angel.png"></a></div>
+			<div class="item p-3" id="item"><a href="https://rwi.lu.se/" target="_blank"><img src="../../media/Partnership/100px/rwi.png"></a></div>
+			<div class="item p-3" id="item"><a href="https://www.accaglobal.com/gb/en.html" target="_blank"><img src="../../media/Partnership/100px/acca.png"></a></div>
+			<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/ati.png"></a></div>
+			<div class="item p-3" id="item"><a href="https://www.cisco.com/site/us/en/index.html" target="_blank"><img src="../../media/Partnership/100px/cisco.png"></a></div>
+			<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/jnu.png"></a></div>
+			<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/dpu.png"></a></div>
+			<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/hu.png"></a></div>
+			<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/cu.png"></a></div>
+			<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/knu.png"></a></div>
+			<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/ku.png"></a></div>
+			<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/mara-logo.png"></a></div>
 			
 		</div>
 	</div>
@@ -107,6 +109,6 @@
 
 
 	<?php 
-		include_once 'include/buttom-content.php';
-		include_once 'include/footer.php';
+		include_once '../include/buttom-content.php';
+		include_once '../include/footer.php';
 	 ?>
