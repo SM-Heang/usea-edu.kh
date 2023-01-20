@@ -1,10 +1,17 @@
 <div class="col-xxl-3">
 				<div class="right-content-economic">
-					<div class="item"><a class="item-link" href="history-logo.php"> History & LOGO Meaning </a></div><hr>
-					<div class="item"><a class="item-link" href="president-message.php"> President Message </a></div><hr>
-					<div class="item"><a class="item-link" href="../vission-Mission/vision-mision-corevalue.php"> Vision, Mission & Core Value </a></div><hr>
-					<div class="item"><a class="item-link" href="usea-structure.php">University Structure</a></div><hr>
-					<div class="item"><a class="item-link" href="../Pages/recognition.php"> Recognition </a></div><hr>
+					<div class="item">
+						<nav class="sidebar">
+								<ul class="nav flex-column">
+									<li class="active <?php if($_SESSION['right'] == 'history'){ echo 'active'; } ?>"> <a class="nav-link item-link" href="history-logo.php"> History & Logo Meaning </a></li><hr>
+									<li class="<?php if($_SESSION['r_menu'] == 'p_message'){ echo 'right_active'; } ?>"><a class="nav-link item-link" href="president-message.php"> President Message </a></li><hr>
+									<li class="<?php if($_SESSION['page'] == 'history'){ echo 'active'; } ?>"><a class="nav-link item-link" href="../vission-Mission/vision-mision-corevalue.php"> Vision, Mission & Core Value </a></li><hr>
+									<li class="<?php if($_SESSION['page'] == 'history'){ echo 'active'; } ?>"><a class="nav-link item-link" href="usea-structure.php"> University Structure </a></li><hr>
+									<li class="<?php if($_SESSION['page'] == 'history'){ echo 'active'; } ?>"><a class="nav-link item-link" href="../Pages/recognition.php"> Recognition </a></li><hr>
+								</ul>
+						</nav>
+					</div>
+
 					<div class="item">
 						<nav class="sidebar">
 							<ul class="nav flex-column" id="nav_accordion">

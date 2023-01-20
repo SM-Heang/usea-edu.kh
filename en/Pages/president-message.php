@@ -1,5 +1,11 @@
 <?php 
-	$page = 'President Message';
+	$page = 'about';
+	if (session_status() === PHP_SESSION_NONE) {
+		session_start();
+	}
+	$_SESSION['page']= $page;
+	$_SESSION['r_menu'] = 'p_message';
+	
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     
  ?>

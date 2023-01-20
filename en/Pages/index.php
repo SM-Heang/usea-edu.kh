@@ -1,7 +1,12 @@
 <?php 
+	$page = 'home'; 
+	if (session_status() === PHP_SESSION_NONE) {
+		session_start();
+	}
+	$_SESSION['page']= $page;
+	
 	include_once '../include/header.php';
-	include_once '../../connection/db.connection.php';     
-
+	include_once '../../connection/db.connection.php';    
  ?>
 	<!-- =====> Start Event <===== -->
 	<div id="fh5co-blog">  

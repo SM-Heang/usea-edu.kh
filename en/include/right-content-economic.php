@@ -1,4 +1,3 @@
-<!-- <script src="../../js/nav-right.js"></script> -->
 <div class="col-xxl-3">
 				<div class="right-content-economic">
 					<div class="item"><a class="item-link" href="../vission-Mission/vision-mision-corevalue.php">Vision & Mission</a></div><hr>
@@ -19,33 +18,9 @@
 							</ul>
                 		</nav>
 						<hr>
-						<!-- <div class="sub-menu">
-							<div class="sub-item"><a href="#">Accounting</a></div>
-							<div class="sub-item"><a href="#">Finance & Banking</a></div>
-							<div class="sub-item"><a href="#">Management</a></div>
-							<div class="sub-item"><a href="#">Marketing</a></div>
-							<div class="sub-item"><a href="#">Tourism</a></div>
-						</div> -->
 					</div>
 					
 					<div class="item">
-						<!-- <a class="item-link" href="#">Bachelor's Degree</a><hr> -->
-						<!-- <div class="sub-menu">
-							<div class="sub-item"><a href="#">Management</a></div>
-							<div class="sub-item"><a href="#">Marketing</a></div>
-							<div class="sub-item"><a href="#">Accounting & Auditing</a></div>
-							<div class="sub-item"><a href="#">Finance & Banking</a></div>
-							<div class="sub-item"><a href="#">Industrail Econnomics</a></div>
-							<div class="sub-item"><a href="#">Intrepreneurship</a></div>
-							<div class="sub-item"><a href="#">Internation Business</a></div>
-							<div class="sub-item"><a href="#">International Business</a></div>
-							<div class="sub-item"><a href="#">International Tourism Management</a></div>
-							<div class="sub-item"><a href="#">Catering Management</a></div>
-							<div class="sub-item"><a href="#">Tourism & Hospitality Management</a></div>
-							<div class="sub-item"><a href="#">Eco-Tourism</a></div>
-							<div class="sub-item"><a href="#">Event Management</a></div>
-						</div> -->
-
 						<nav class="sidebar">
 								<ul class="nav flex-column" id="nav_accordion">
 									<li class="nav-item has-submenu">
@@ -69,8 +44,6 @@
                 		 </nav>
 					</div>
 					<hr>
-					
-					<!-- <div class="item"><a class="item-link" href="../MasterDegree/master-degree.php">Master's Degree</a></div> -->
 				</div>
 			</div>
 		</div>

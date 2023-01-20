@@ -325,6 +325,9 @@ body {
   box-shadow: 0px 3px 5px rgb(0, 0, 0,0.3);
   border-radius: 10px;
 }
+.right-content-economic .right_active{
+  color: red !important;
+}
 .right-content-economic hr{
   border: 2px solid #002060;
   font-weight: bold;
@@ -598,6 +601,9 @@ body {
 }
 .mobile-menu{
   display: none;
+}
+.mobile-menu .active_mobile{
+    color: red !important; 
 }
 .mobile-menu ul{
   margin: 0;
