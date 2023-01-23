@@ -1,5 +1,10 @@
 <?php 
-	$page = 'Marketing';
+	$page = 'marketing';
+		if(session_status() === PHP_SESSION_NONE){
+			session_start();
+		}
+		$_SESSION['right_economic'] = $page;
+
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     
  ?>

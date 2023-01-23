@@ -2487,15 +2487,66 @@ For Media Query Devices with Breakpoint
     font-size: 0.9rem !important;
     padding: 10px 0px;
     margin: 0px 10px;
-    /* background-color: red; */
   }
 
   .content-history-detail table tbody td img {
     width: 125px !important;
     height: 125px !important;
-    /* float: center; */
     padding: 10px 10px;
   }
+
+
+    /* president message */
+  #content-detail .content-structure-detail p{
+    margin-top: 10px;
+    color: #002060;
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+  .txt-president{
+    color: #002060;
+    font-size: 1rem !important;
+    text-align: center !important;
+    word-spacing: 0px;
+  }
+
+   .container_txt  .sub_txt .img_responsive img{
+    font-size: 1.25rem;
+    text-align: justify;
+  }
+  .container_txt .content_center span{
+    font-size: 1rem;
+    word-spacing: 0px;
+  }
+  /* .container_txt p span{
+    font-size: 1rem;
+  } */
+  .container_txt .txt_1, .txt_2{
+    font-size: 1rem !important;
+  }
+
+   /* vision mission */
+   #content-detail .container_txt .sub_container .vision{
+    font-size: 1.50rem !important;
+   }
+   #content-detail .container_txt .sub_container .core{
+    font-size: 1.50rem !important;
+   }
+
+   .sub_container .content_vision, 
+   .content_mission,
+   .content_edu
+   {
+    font-size: 1rem !important;
+    display: block;
+    width: 362px;
+   }
+   .sub_container .content_knowledge li div span{
+    font-size: 1rem !important;
+    display: block;
+    width: 290px;
+   }
+
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
