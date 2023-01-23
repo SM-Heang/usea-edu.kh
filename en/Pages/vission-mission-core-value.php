@@ -4,6 +4,7 @@
 		session_start();
 	}
 	$_SESSION['page']= $page;
+	$_SESSION['right']= 'vision_mission';
 	
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     
@@ -56,8 +57,7 @@
 			</div>
 			<!-- Start Right Content-->
 			<?php
-				// include_once 'include/right-content.php';
-				include_once '../include/right-content-economic.php';
+				include_once '../include/right-content.php';
 			?>
 		</div>
 	</div>

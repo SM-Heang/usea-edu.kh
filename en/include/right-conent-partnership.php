@@ -1,9 +1,8 @@
 <div class="col-xxl-3">
 				<div class="right-content-economic">
-					<div class="item"><a class="item-link" href="../Partnership/partnership-vission.php"> Vission </a></div><hr>
-					<div class="item"><a class="item-link" href="../Partnership/partnership-docteral.php"> Docteral </a></div><hr>
-					<div class="item"><a class="item-link" href="../Partnership/partnership-master-degree.php"> Master Degree </a></div><hr>
-					<div class="item"><a class="item-link" href="../Partnership/partnership-dissertation.php"> Dissertation </a></div><hr>
+					<div class="item"><a class="item-link" href="partnership-local.php"> Local </a></div><hr>
+					<div class="item"><a class="item-link" href="partnership-international.php"> International </a></div><hr>
+					
 
 					<!-- <div class="item">
 						<nav class="sidebar">

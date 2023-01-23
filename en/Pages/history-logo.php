@@ -1,11 +1,11 @@
 <?php 
-	$page = 'history';
+	$page = 'about';
 	if (session_status() === PHP_SESSION_NONE) {
 		session_start();
 	}
 
 	$_SESSION['page']= $page;
-	$_SESSION['right']= $page;
+	$_SESSION['right']= 'history_logo';
 	
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     

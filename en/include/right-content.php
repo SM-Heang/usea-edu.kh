@@ -3,11 +3,11 @@
 					<div class="item">
 						<nav class="sidebar">
 								<ul class="nav flex-column">
-									<li class="active <?php if($_SESSION['right'] == 'history'){ echo 'active'; } ?>"> <a class="nav-link item-link" href="history-logo.php"> History & Logo Meaning </a></li><hr>
-									<li class="<?php if($_SESSION['r_menu'] == 'p_message'){ echo 'right_active'; } ?>"><a class="nav-link item-link" href="president-message.php"> President Message </a></li><hr>
-									<li class="<?php if($_SESSION['page'] == 'history'){ echo 'active'; } ?>"><a class="nav-link item-link" href="../vission-Mission/vision-mision-corevalue.php"> Vision, Mission & Core Value </a></li><hr>
-									<li class="<?php if($_SESSION['page'] == 'history'){ echo 'active'; } ?>"><a class="nav-link item-link" href="usea-structure.php"> University Structure </a></li><hr>
-									<li class="<?php if($_SESSION['page'] == 'history'){ echo 'active'; } ?>"><a class="nav-link item-link" href="../Pages/recognition.php"> Recognition </a></li><hr>
+									<li> <a class="nav-link item-link <?php if($_SESSION['right'] == 'history_logo'){ echo 'right_active'; } ?>" href="history-logo.php"> History & Logo Meaning </a></li><hr>
+									<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'p_message'){ echo 'right_active'; } ?>" href="president-message.php"> President Message </a></li><hr>
+									<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'vision_mission'){ echo 'right_active'; } ?>" href="vission-mission-core-value.php"> Vision, Mission & Core Value </a></li><hr>
+									<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'structure'){ echo 'right_active'; } ?>" href="usea-structure.php"> University Structure </a></li><hr>
+									<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'recognition'){ echo 'right_active'; } ?>" href="recognition.php"> Recognition </a></li><hr>
 								</ul>
 						</nav>
 					</div>
@@ -26,7 +26,7 @@
                 		</nav>
 						<hr>
 					</div>
-					<div class="item"><a class="item-link" href="location.php"> Location </a></div>
+					<div class="item"><a class="item-link <?php if($_SESSION['right'] == 'location'){ echo 'right_active'; } ?>" href="location.php"> Location </a></div>
 				</div>
 			</div>
 	</div>

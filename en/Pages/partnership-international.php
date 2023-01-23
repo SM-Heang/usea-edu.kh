@@ -1,7 +1,14 @@
-<?php 
-	include_once '../include/header.php';
-	include_once '../../connection/db.connection.php';     
- ?>
+<?php
+	$page = 'partnership';
+	if (session_status() === PHP_SESSION_NONE) {
+		session_start();
+	}
+	$_SESSION['page']= $page;
+	
+    include_once '../include/header.php';
+    include_once '../../connection/db.connection.php';
+
+?>
 	<!-- Start Web Location -->
 	
 	<div class="container">
@@ -58,14 +65,9 @@
 				</div>
 			</div>
 			<!-- Start Right Content-->
-			<div class="col-xxl-3">
-				<div class="right-content">
-					<ul>
-						<li><a href="partnership-local.php">Local</a></li><br><hr>
-						<li><a href="partnership-international" class="active">International</a></li><br><hr>
-					</ul>
-				</div>
-			</div>
+			<?php 
+				include_once "../include/right-conent-partnership.php";
+			 ?>
 		</div>
 		<!--Start Pagination -->
 				<?php 

@@ -4,7 +4,7 @@
 		session_start();
 	}
 	$_SESSION['page']= $page;
-	$_SESSION['r_menu'] = 'p_message';
+	$_SESSION['right'] = 'p_message';
 	
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     

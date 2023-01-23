@@ -55,7 +55,7 @@
 			</div>
 			<!-- Start Right Content-->
 			<?php 
-				include_once "../include/right-content-economic.php";
+				include_once "../include/right-content-laws.php";
 			 ?>
 		</div>
 	</div>

@@ -25,9 +25,9 @@
 							$stmt= $conn->prepare("SELECT * from usea_events WHERE event_status = 'upcoming' ORDER BY event_date DESC limit 4;");
 							$stmt->execute();
 							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-								// `echo "<pre>";
+								// echo "<pre>";
 								// print_r($result);
-								// echo "</pre>";`
+								// echo "</pre>";
 						foreach ($result as $key => $value) { ?>
 							<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex mt-auto" id="upcoming-events-cards">
 								<div class="fh5co-event" >
