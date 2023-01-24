@@ -1125,7 +1125,7 @@ h1, h2, h3, h4, h5, h6, figure {
     display: block;
     width: 150px;
     cursor: pointer;
-    margin-top: 45px !important;
+    margin-top: 28px !important;
     appearance: none;
     background: none;
     outline: none;
@@ -2503,25 +2503,34 @@ For Media Query Devices with Breakpoint
     font-size: 0.9rem;
     text-align: justify;
   }
-  .txt-president{
+  /* .txt-president{
     color: #002060;
     font-size: 1rem !important;
     text-align: center !important;
     word-spacing: 0px;
-  }
+  } */
 
-   .container_txt  .sub_txt .img_responsive img{
+   .container_txt  .sub_txt .img_responsive{
     font-size: 1.25rem;
     text-align: justify;
+    display:flex;
+    justify-content: center;
   }
-  .container_txt .content_center span{
-    font-size: 1rem;
+  .container_txt .content_cen{
+    padding: 92px !important;
+    font-size: 1rem !important;
+  }
+  .container_txt .content_center{
+    font-size: 1rem !important;
     word-spacing: 0px;
   }
   /* .container_txt p span{
     font-size: 1rem;
   } */
-  .container_txt .txt_1, .txt_2{
+  .container_txt .txt_1, .txt_2, .cont_txt{
+    font-size: 1rem !important;
+  }
+  .container_txt .pre_txt{
     font-size: 1rem !important;
   }
 
@@ -2545,6 +2554,32 @@ For Media Query Devices with Breakpoint
     font-size: 1rem !important;
     display: block;
     width: 290px;
+   }
+   .container_txt .excellance {
+    font-size: 1.50rem !important;
+   }
+  #content-detail .content_excellance li div .ct_ex{
+    font-size: 1rem !important;
+    display: block;
+    width: 290px;
+   }
+
+   /* location  */
+   iframe{
+    width: 100%;
+   }
+
+   /* recognition */
+   .container .row .txt_reco{
+    text-align: justify;
+    width: 183px;
+    font-size: 0.9rem !important;
+   }
+
+   /* faculty economic */
+   #content-detail .fac_eco{
+    font-size: 1rem !important;
+    margin-left: 5px !important;
    }
 
 }
