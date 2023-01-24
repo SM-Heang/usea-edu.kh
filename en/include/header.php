@@ -173,7 +173,7 @@
 									<ul class="mega-link">
 										<li class="list-control">
 											<img src="../../media/nav-icon/f-internation-college.png" width="25px" height="25px">
-											<a href="international-college.php">International College</a>
+											<a href="../Pages/international-college.php">International College</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/fli.png" width="25px" height="25px">

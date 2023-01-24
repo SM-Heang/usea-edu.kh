@@ -8,7 +8,7 @@
 								<li class="nav-item has-submenu">
 									<a class="nav-link item-link" href="#">Associate's Degree<i class="fas fa-angle-down"></i></a>
 									<ul class="submenu collapse">
-										<li class=""><a class="nav-link item-link <?php if($_SESSION['right_economic'] == 'finance_banking'){ echo 'right_active'; } ?>" href="../AssociateDegree/finance-banking.php"> Finance & Banking </a></li>
+										<li><a class="nav-link item-link <?php if($_SESSION['right_economic'] == 'finance_banking'){ echo 'right_active'; } ?>" href="../AssociateDegree/finance-banking.php"> Finance & Banking </a></li>
 										<li><a class="nav-link item-link <?php if($_SESSION['right_economic'] == 'management'){ echo 'right_active'; } ?>" href="../AssociateDegree/management.php"> Management </a></li> 
 										<li><a class="nav-link item-link <?php if($_SESSION['right_economic'] == 'accounting'){ echo 'right_active'; } ?>" href="../AssociateDegree/accounting.php"> Accounting </a></li> 
 										<li><a class="nav-link item-link <?php if($_SESSION['right_economic'] == 'marketing'){ echo 'right_active'; } ?>" href="../AssociateDegree/marketing.php"> Marketing </a> </li> 

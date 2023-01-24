@@ -159,6 +159,7 @@ body {
 #content-detail{
   display: block;
 }
+
   /* Start History Detail*/
 #content-detail h4{
   font-weight: bold;
@@ -2440,6 +2441,31 @@ h1, h2, h3, h4, h5, h6, figure {
 
 
 
+/* pagination of partnership */
+.pagination .page-item .bg_btn{
+  border-radius: 10px 0px 0px 10px;
+  color: #002060;
+  border: 3px solid #002060;
+}
+.pagination .bg_btn{
+  border-radius: 0px 10px 10px 0px;
+  color: #002060;
+  border: 3px solid #002060;
+}
+
+.pagination .active>.page-link, 
+.page-link.active{
+  background-color: #00205a;
+  border: 4px solid #002060;
+  color: #ffffff;
+  padding: 5.5px 10px;
+}
+.page-item:not(:first-child) .page-link{
+  border: 3px solid #002060;
+  padding: 6.5px 10px;
+}
+
+
 
 
 
@@ -2495,7 +2521,6 @@ For Media Query Devices with Breakpoint
     padding: 10px 10px;
   }
 
-
     /* president message */
   #content-detail .content-structure-detail p{
     margin-top: 10px;
@@ -2503,13 +2528,6 @@ For Media Query Devices with Breakpoint
     font-size: 0.9rem;
     text-align: justify;
   }
-  /* .txt-president{
-    color: #002060;
-    font-size: 1rem !important;
-    text-align: center !important;
-    word-spacing: 0px;
-  } */
-
    .container_txt  .sub_txt .img_responsive{
     font-size: 1.25rem;
     text-align: justify;
@@ -2589,11 +2607,16 @@ For Media Query Devices with Breakpoint
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
+  iframe{
+    width: 100%;
+    margin-bottom: 20px;
+   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+  iframe{
+    width: 100%;
+   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {

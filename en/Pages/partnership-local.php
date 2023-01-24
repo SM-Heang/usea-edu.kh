@@ -1,15 +1,14 @@
 <?php 
-	$page = 'partnership';
+	$page = 'partnership_local';
 		if(session_status() === PHP_SESSION_NONE){
 			session_start();
 		}
-		$_SESSION['page'] = $page;
+		$_SESSION['right_partnership'] = $page;
 
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     
  ?>
 	<!-- Start Web Location -->
-	
 	<div class="container">
 		<div class="row">
 			<div class="col-12 web-location">
@@ -39,7 +38,7 @@
 					</div>
 				</div>
 				<div id="content-detail">
-					<div class="content-president-detail">
+					<div class="content-president-detail fw-bolder">
 					<?php  
 							$sql ="SELECT * from usea_partnership WHERE partnership_type = 'local' ORDER BY signed_date DESC limit 10";
 							if (isset($_GET['page'])) {
@@ -52,7 +51,7 @@
 							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 						foreach ($result as $key => $value) { ?>
 						<div class="col-xxl-12 d-flex mt-3 ">
-							<img src="../../media/Partnership/<?php echo $value['partnership_logo']; ?>" alt="" width="125px" height="100px" >
+							<img src="../../media/Partnership/<?php echo $value['partnership_logo']; ?>" width="125px" height="100px" >
 							<div>
 								<p><?php echo $value['partnership_title_en'];?></p>
 							</div>
@@ -62,21 +61,9 @@
 					</div>
 				</div>
 			</div>
-
-			<!-- Start Right Content-->
-			<!-- <div class="col-xxl-3">
-				<div class="right-content">
-					<ul>
-						<li><a href="partnership-local.php" class="active">Local</a></li><br><hr>
-						<li><a href="partnership-international">International</a></li><br><hr>
-					</ul>
-				</div>
-			</div> -->
-
 			<?php 
 				include_once "../include/right-conent-partnership.php";
 			 ?>
-			 
 		</div>
 		<!--Start Pagination -->
 				<?php 
@@ -89,9 +76,9 @@
 				    	$maxpage = ceil($temp['CountRecords']/10);
 				    }
  				?>
-                <ul class="pagination float-right mt-3">
+                <ul class="pagination d-flex justify-content-center mt-3 bg-light">
                     <li class="page-item">
-                    <a class="page-link">Previous</a>
+                    <a class="page-link bg_btn btn m-0"><< Previous</a>
                     </li>
                     <?php 
                     	for ($i=1; $i <=$maxpage ; $i++) { ?>
@@ -110,7 +97,7 @@
                     		 ?>" href="partnership-local.php?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
                     	<?php } ?>
 
-                    <a class="page-link" href="#">Next</a>
+                    <a class="page-link bg_btn btn m-0" href="#">Next >></a>
                     </li>
                 </ul>
                 <!--End Logic Pagination -->

@@ -1,13 +1,13 @@
 <div class="col-xxl-3">
-				<div class="right-content">
-					<ul>
-						<li><a href="#">Research Policy and Procedure</a></li><br><hr><br><hr>
-						<li><a href="#">Research Team</a></li><br><hr>
-						<li><a href="#">Research Activities</a></li><br><hr>
-						<li><a href="#">Publication</a></li><br><hr>
-						<li><a href="#">Research Project</a></li><br><hr>
-					</ul>
+				<div class="right-content-economic">
+					<div class="item"><a class="item-link <?php if($_SESSION['right_research'] == 'research_procedure'){ echo 'right_active'; } ?>" href="../Pages/research-policy-procedure.php"> Research Policy & Procedure </a></div><hr>
+					<div class="item"><a class="item-link <?php if($_SESSION['right_research'] == 'research_activities'){ echo 'right_active'; } ?>" href="../Pages/research-activities.php"> Research Activites </a></div><hr>
+					<div class="item"><a class="item-link <?php if($_SESSION['right_research'] == 'research_project'){ echo 'right_active'; } ?>" href="../Pages/research-project.php"> Research Project </a></div><hr>
+					<div class="item"><a class="item-link <?php if($_SESSION['right_research'] == 'research_team'){ echo 'right_active'; } ?>" href="../Pages/research-team.php"> Research Team </a></div><hr>
+					<div class="item"><a class="item-link <?php if($_SESSION['right_research'] == 'publication'){ echo 'right_active'; } ?>" href="../Pages/publication.php"> Publication </a></div><hr>
+
 				</div>
 			</div>
 		</div>
 	</div>
+	<script src="../../js/main.js"></script>
