@@ -29,8 +29,8 @@
 								// print_r($result);
 								// echo "</pre>";
 						foreach ($result as $key => $value) { ?>
-							<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex mt-auto" id="upcoming-events-cards">
-								<div class="fh5co-event" >
+							<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex mt-auto">
+								<div class="fh5co-event">
 									<div class="date text-center">
 										<span>
 											<?php echo date('d', strtotime ($value['event_date'])); ?><br><?php echo date('M', strtotime ($value['event_date'])); ?>.
