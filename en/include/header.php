@@ -194,22 +194,22 @@
 					</li>
 					<li><a class="<?php if($_SESSION['page'] == 'partnership'){ echo 'active'; } ?>" href="../Pages/partnership-local.php">Partnership</a></li>
 					<li>
-						<a class="<?php if($_SESSION['page'] == 'research'){ echo 'active'; } ?>" href="../Pages/research-policy-procedure.php">Research</a>
+						<a class="<?php if($_SESSION['page'] == 'research'){ echo 'active'; } ?>" href="../Research/research-policy-procedure.php">Research</a>
 						<div class="mega-box">
 							<div class="content" id="nav-research">
 								<div class="row">
 									<ul class="mega-link">
 										<li class="list-control">
 											<img src="../../media/nav-icon/policy-and-procedure.png" width="25px" height="25px">
-											<a href="../Pages/research-policy-procedure.php">Research Policy and Procedure</a>
+											<a href="../Research/research-policy-procedure.php">Research Policy and Procedure</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/research-activity.png" width="25px" height="25px">
-											<a href="../Pages/research-activities.php">Research Activites</a>
+											<a href="../Research/research-activities.php">Research Activites</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/project.png" width="25px" height="25px">
-											<a href="../Pages/research-project.php">Research Project</a>
+											<a href="../Research/research-project.php">Research Project</a>
 										</li>
 									</ul>
 								</div>
@@ -217,11 +217,11 @@
 									<ul class="mega-link">
 										<li class="list-control">
 											<img src="../../media/nav-icon/research-team.png" width="25px" height="25px">
-											<a href="../Pages/research-team.php">Research Team</a>
+											<a href="../Research/research-team.php">Research Team</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/publication.png" width="25px" height="25px">
-											<a href="../Pages/publication.php">Publication</a>
+											<a href="../Research/publication.php">Publication</a>
 										</li>
 									</ul>
 								</div>

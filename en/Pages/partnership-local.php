@@ -76,7 +76,7 @@
 				    	$maxpage = ceil($temp['CountRecords']/10);
 				    }
  				?>
-                <ul class="pagination d-flex justify-content-center mt-3 bg-light">
+                <ul class="pagination d-flex justify-content-center mt-3">
                     <li class="page-item">
                     <a class="page-link bg_btn btn m-0"><< Previous</a>
                     </li>
