@@ -315,19 +315,19 @@
 						<ul>
 							<li>
 								<img src="../../media/nav-icon/policy-and-procedure.png" class="nav-icon" width="15px" height="15px">
-								<a href="../Pages/research-policy-procedure.php">Research Policy and Procedure</a>
+								<a href="../Research/research-policy-procedure.php">Research Policy and Procedure</a>
 							</li>
 							<li>
 								<img src="../../media/nav-icon/research-activity.png" class="nav-icon" width="15px" height="15px">
-								<a href="../Pages/research-activities.php">Research Activites</a>
+								<a href="../Research/research-activities.php">Research Activites</a>
 							</li>
 							<li>
 								<img src="../../media/nav-icon/research-team.png" class="nav-icon" width="15px" height="15px">
-								<a href="../Pages/research-team.php">Research Team</a>
+								<a href="../Research/research-team.php">Research Team</a>
 							</li>
 							<li>
 								<img src="../../media/nav-icon/publication.png" class="nav-icon" width="15px" height="15px">
-								<a href="../Pages/publication.php">Publication</a>
+								<a href="../Research/publication.php">Publication</a>
 							</li>
 						</ul>
 					</div>
