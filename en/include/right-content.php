@@ -16,7 +16,7 @@
 						<nav class="sidebar">
 							<ul class="nav flex-column" id="nav_accordion">
 								<li class="nav-item has-submenu">
-									<a class="nav-link item-link" href="#"> Events <i class="fas fa-angle-down"></i></a>
+									<a class="nav-link item-link <?php if($_SESSION['right'] == 'events'){ echo 'right_active'; } ?>" href="#"> Events <i class="fas fa-angle-down"></i></a>
 									<ul class="submenu collapse">
 										<li><a class="nav-link item-link" aria-current="page" href="upcoming-events.php"> Upcoming Events </a></li>
 										<li><a class="nav-link item-link" href="events.php"> Past Events </a></li> 

@@ -42,7 +42,7 @@
 				</div>
 
 				<!-- =====> Start Events <===== -->
-			<div class="row animate-box" id="events">
+			<div class="row animate-box mt-5 mb-5" id="events">
 				<?php 
 					$sql ="SELECT * from usea_events WHERE event_status = 'past' ORDER BY event_date DESC limit 12";
 					$stmt= $conn->prepare($sql);
@@ -53,9 +53,9 @@
 				    		$sql .= "OFFSET" . ($_GET['page']-1)*12;
 				    	}
 				    }
-				    echo "<pre>";
-				    print_r($_GET);
-				    echo "</pre>";
+				    // echo "<pre>";
+				    // print_r($_GET);
+				    // echo "</pre>";
 					foreach ($result as $key => $value) { ?>
 				<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex gx-2 gy-2" id="events-card">
 					<div class="card">
@@ -94,11 +94,11 @@
 				    		$sql .= "OFFSET" . ($_GET['page']-1)*12;
 				    	}
 				    }
-				    print_r ($_GET);
+				    // print_r ($_GET);
  				?>
-                <ul class="pagination float-right mt-3">
+                <ul class="pagination d-flex justify-content-center mt-5 mb-3">
                     <li class="page-item">
-                    <a class="page-link">Previous</a>
+                    <a class="page-link bg_btn btn m-0">Previous</a>
                     </li>
                     <!-- Loop Page Number -->
                     <?php 
@@ -118,7 +118,7 @@
                     		 ?>" href="events.php?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
                     	<?php } ?>
 
-                    <a class="page-link" href="#">Next</a>
+                    <a class="page-link bg_btn btn m-0" href="#">Next</a>
                     </li>
                 </ul>
                 <!--End Logic Pagination -->

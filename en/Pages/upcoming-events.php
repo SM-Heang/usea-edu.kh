@@ -1,5 +1,10 @@
 <?php
-	$page= 'upcoming';
+	$page= 'events';
+		if(session_status() == PHP_SESSION_NONE){
+			session_start();
+		}
+		$_SESSION['right'] = $page;
+
     include_once '../include/header.php';
     include_once '../../connection/db.connection.php';
 
@@ -37,7 +42,7 @@
 				</div>
 
 				<!-- =====> Start Events <===== -->
-			<div class="row animate-box" id="events">
+			<div class="row animate-box mt-5 mb-5" id="events">
 				<?php 
 					$sql ="SELECT * from usea_events WHERE event_status = 'upcoming' ORDER BY event_date DESC limit 12";
 					if (isset($_GET['page'])) {
@@ -82,9 +87,9 @@
 				    	$maxpage = ceil($temp['CountRecords']/12);
 				    }
  				?>
-                <ul class="pagination float-right mt-3">
+                <ul class="pagination d-flex justify-content-center mt-5 mb-5">
                     <li class="page-item">
-                    <a class="page-link">Previous</a>
+                    <a class="page-link bg_btn btn m-0">Previous</a>
                     </li>
                     <?php 
                     	for ($i=1; $i <=$maxpage ; $i++) { ?>
@@ -103,7 +108,7 @@
                     		 ?>" href="upcoming-events.php?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
                     	<?php } ?>
 
-                    <a class="page-link" href="#">Next</a>
+                    <a class="page-link bg_btn btn m-0" href="#">Next</a>
                     </li>
                 </ul>
                 <!--End Logic Pagination -->

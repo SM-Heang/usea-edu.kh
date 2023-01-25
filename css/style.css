@@ -2510,7 +2510,7 @@ For Media Query Devices with Breakpoint
     justify-content: center;
   }
   .content-history-detail span {
-    font-size: 0.9rem !important;
+    font-size: 1rem !important;
     padding: 10px 0px;
     margin: 0px 10px;
   }
@@ -2525,8 +2525,9 @@ For Media Query Devices with Breakpoint
   #content-detail .content-structure-detail p{
     margin-top: 10px;
     color: #002060;
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-align: justify;
+    word-spacing: -2px !important;
   }
    .container_txt  .sub_txt .img_responsive{
     font-size: 1.25rem;
@@ -2566,7 +2567,8 @@ For Media Query Devices with Breakpoint
    {
     font-size: 1rem !important;
     display: block;
-    width: 362px;
+    width: 390px;
+    word-spacing: -2px !important;
    }
    .sub_container .content_knowledge li div span{
     font-size: 1rem !important;
@@ -2590,8 +2592,9 @@ For Media Query Devices with Breakpoint
    /* recognition */
    .container .row .txt_reco{
     text-align: justify;
-    width: 183px;
-    font-size: 0.9rem !important;
+    width: 200px;
+    font-size: 1rem !important;
+    word-spacing: -2px;
    }
 
    /* faculty economic */
@@ -2601,9 +2604,64 @@ For Media Query Devices with Breakpoint
    }
 
    .img-fluid{
-    height: 254px !important;
+    height: 100% !important;
     border-radius: 5px 5px 0px 0px;
    }
+
+   #content-detail .content-history-detail .first_img{
+      width: 390px !important;
+  }
+
+  /* .pagination .page-item .bg_btn{
+    font-size: 9px;
+    padding: 0px 12px;
+    border-radius: 5px 0px 0px 5px;
+  } */
+  .page-link{
+    font-size: 10px;
+  }
+  .page-item:not(:first-child) .page-link{
+    border: 3px solid #002060;
+    padding: 7px 10px;
+  }
+  .row>*{
+    margin-bottom: 20px;
+  }
+
+
+  /* 
+  About
+  right about 
+  */
+
+    .right-content-economic .item .item-link {
+      padding: 1rem;
+      text-decoration: none;
+      color: #002060;
+      font-size: 0.99rem;
+      font-weight: 700;
+    }
+
+    .responsive_txt{
+      word-spacing: -2px !important;
+    }
+    .right-content-economic hr {
+      border: 1px solid #002060;
+      font-weight: bold;
+      border-radius: 10px;
+      opacity: 0.9 !important;
+      margin: 0px 0px;
+  }
+  .m_txt{
+    margin-top: 30px !important;
+  }
+
+  .d-flex{
+    display: flex!important;
+    justify-content: center;
+    margin: 10px 0px;
+  }
+
 
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */

@@ -93,7 +93,7 @@
 		<nav class="navbar-parent"> 
 			<div class="wrapper">
 				<div class="logo">
-					<a href="#">
+					<a href="../Pages/index.php">
 						<img src="../../media/title/usea-title-1.png" alt="USEA LOGO">
 					</a>
 				</div>
