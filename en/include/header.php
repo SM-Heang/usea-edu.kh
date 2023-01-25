@@ -146,7 +146,7 @@
 						</div>
 					</li>
 					<li>
-						<a class="<?php if($_SESSION['page'] == 'academics'){ echo 'active'; } ?>" href="../Pages/faculty-economics.php">Academics</a>
+						<a class="<?php if($_SESSION['page'] == 'faculty_economics'){ echo 'active'; } ?>" href="../Pages/faculty-economics.php">Academics</a>
 						<div class="mega-box">
 							<div class="content" id="nav-academics">
 								<div class="row">

@@ -1,5 +1,5 @@
 <?php
-	$page = 'academics';
+	$page = 'faculty_economics';
 		if(session_status() === PHP_SESSION_NONE){
 			session_start();
 		}

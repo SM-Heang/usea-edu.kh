@@ -2600,6 +2600,11 @@ For Media Query Devices with Breakpoint
     margin-left: 5px !important;
    }
 
+   .img-fluid{
+    height: 254px !important;
+    border-radius: 5px 5px 0px 0px;
+   }
+
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
