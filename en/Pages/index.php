@@ -23,11 +23,8 @@ include_once '../../connection/db.connection.php';
 			</div>
 			<p class="mt-5"><a href="upcoming-events.php" style="text-decoration:none; color:#002060;">Upcoming Events | <span style="font-size: 0.75rem; font-weight: 500;">All Events</span></a></p>
 		</div>
-		<div class="container mb-5" id="upcoming-events">
+		<div class="container mb-5" id="upcoming-events"> -->
 			<div class="row">
-
-
-
 				<!-- <?php
 						$stmt = $conn->prepare("SELECT * from usea_events WHERE event_status = 'upcoming' ORDER BY event_date DESC limit 4;");
 						$stmt->execute();
@@ -57,6 +54,86 @@ include_once '../../connection/db.connection.php';
 								</div>
 							</div>
 						<?php } ?> -->
+
+
+
+
+						<div class="container text-center my-3">
+							<div class="row mx-auto my-auto justify-content-center">
+								<div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+									<div class="carousel-inner" role="listbox">
+										<div class="carousel-item item_slider active">
+											<div class="col-md-3">
+												<div class="card">
+													<div class="card-img">
+														<img src="//via.placeholder.com/500x400/31f?text=1" class="img-fluid">
+													</div>
+													<div class="card-img-overlay">Slide 1</div>
+												</div>
+											</div>
+										</div>
+										<div class="carousel-item item_slider">
+											<div class="col-md-3">
+												<div class="card">
+													<div class="card-img">
+														<img src="//via.placeholder.com/500x400/e66?text=2" class="img-fluid">
+													</div>
+													<div class="card-img-overlay">Slide 2</div>
+												</div>
+											</div>
+										</div>
+										<div class="carousel-item item_slider">
+											<div class="col-md-3">
+												<div class="card">
+													<div class="card-img">
+														<img src="//via.placeholder.com/500x400/7d2?text=3" class="img-fluid">
+													</div>
+													<div class="card-img-overlay">Slide 3</div>
+												</div>
+											</div>
+										</div>
+										<div class="carousel-item item_slider">
+											<div class="col-md-3">
+												<div class="card">
+													<div class="card-img">
+														<img src="//via.placeholder.com/500x400?text=4" class="img-fluid">
+													</div>
+													<div class="card-img-overlay">Slide 4</div>
+												</div>
+											</div>
+										</div>
+										<div class="carousel-item item_slider">
+											<div class="col-md-3">
+												<div class="card">
+													<div class="card-img">
+														<img src="//via.placeholder.com/500x400/aba?text=5" class="img-fluid">
+													</div>
+													<div class="card-img-overlay">Slide 5</div>
+												</div>
+											</div>
+										</div>
+										<div class="carousel-item item_slider">
+											<div class="col-md-3">
+												<div class="card">
+													<div class="card-img">
+														<img src="//via.placeholder.com/500x400/fc0?text=6" class="img-fluid">
+													</div>
+													<div class="card-img-overlay">Slide 6</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									</a>
+									<a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+
+
 
 
 
@@ -123,6 +200,31 @@ include_once '../../connection/db.connection.php';
 	</div>
 </div>
 <!-- =====> End Carousel Partnership <===== -->
+
+
+<script>
+
+	
+let items = document.querySelectorAll('.carousel .carousel-item item_slider');
+
+items.forEach((el) => {
+	const minPerSlide = 4
+	let next = el.nextElementSibling
+	for (var i = 1; i < minPerSlide; i++) {
+		if (!next) {
+			// wrap carousel by using first child
+			next = items[0]
+		}
+		let cloneChild = next.cloneNode(true)
+		el.appendChild(cloneChild.children[0])
+		next = next.nextElementSibling
+	}
+});
+
+
+</script>
+
+
 
 
 <?php

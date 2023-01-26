@@ -2497,7 +2497,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 /* medium and up screens */
 
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
   
   .carousel-inner .carousel-item-end.active,
   .carousel-inner .carousel-item-next {
@@ -2513,7 +2513,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .carousel-inner .carousel-item-end,
 .carousel-inner .carousel-item-start { 
 transform: translateX(0);
-} */
+}
 
 
 
