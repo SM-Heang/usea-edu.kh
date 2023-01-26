@@ -50,6 +50,14 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+			<!-- Swiper CSS -->
+			<link rel="stylesheet" href="../../css/swiper-bundle.min.css">
+			 <!-- Swiper JS -->
+			 <script src="../../js/swiper-bundle.min.js"></script>
+
+			<!-- JavaScript -->
+			<script src="../../js/script.js"></script>
+
 	</head>
 	<body>
 	<div class="fh5co-loader"></div>

@@ -41,7 +41,8 @@
 					</div>
 				</div>
 				<div id="content-detail">
-					<div class="content-president-detail">
+				<h4 class="mt-3">President Message</h4>
+					<div class="content-president-detail mt-3">
 					<?php  
 							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =19");
 							$stmt->execute();
