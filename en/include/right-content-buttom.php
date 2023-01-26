@@ -1,14 +1,14 @@
 <div class="col-xxl-3">
 				<div class="right-content-economic">
-					<div class="item"><a class="nav-link item-link" href="location.php"> Human Resource </a></div>
+					<div class="item"><a class="nav-link item-link <?php if($_SESSION['right'] == 'human_resource'){ echo 'right_active'; } ?>" href="human-resource.php"> Human Resource </a></div>
 					<hr>
 					<div class="item">
 						<nav class="sidebar">
 							<ul class="nav flex-column" id="nav_accordion">
 								<li class="nav-item has-submenu">
-									<a class="nav-link item-link" href="#"> Student Services <i class="fas fa-angle-down"></i></a>
+									<a class="nav-link item-link" href="student-services.php" onclick="return false"> Student Services <i class="fas fa-angle-down"></i></a>
 									<ul class="submenu collapse">
-										<li><a class="nav-link item-link" aria-current="page" href="upcoming-events.php"> Practucum/Internship </a></li>
+										<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'practucum_internship'){ echo 'right_active'; } ?>" aria-current="page" href="practucum-internship.php"> Practucum/Internship </a></li>
 										<li><a class="nav-link item-link" href="events.php"> Student Tours </a></li> 
 										<li><a class="nav-link item-link" href="events.php"> Sport </a></li> 
 										<li><a class="nav-link item-link" href="events.php"> Art & Cultural Exchange </a></li> 
@@ -22,7 +22,7 @@
 						<nav class="sidebar">
 							<ul class="nav flex-column" id="nav_accordion">
 								<li class="nav-item has-submenu">
-									<a class="nav-link item-link" href="#"> Library <i class="fas fa-angle-down"></i></a>
+									<a class="nav-link item-link" href="#" onclick="return false"> Library <i class="fas fa-angle-down"></i></a>
 									<ul class="submenu collapse">
 										<li><a class="nav-link item-link" aria-current="page" href="upcoming-events.php"> Joint Public Information Center  </a></li>
 										<li><a class="nav-link item-link" href="events.php"> American Corner </a></li> 

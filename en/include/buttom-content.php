@@ -4,7 +4,7 @@
 				<div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4" id="button-content">
 					<ul>
 						<li><a href="../ButtomPages/human-resource.php">Human Resource</a></li><br><hr>
-						<li><a href="../ButtomPages/student-services.php">Student Services</a></li><br><hr>
+						<li><a href="../ButtomPages/practucum-internship.php">Student Services</a></li><br><hr>
 						<li><a href="../ButtomPages/library.php">Library</a></li><br><hr>
 						<li><a href="../ButtomPages/outstanding-students.php">Outstanding Students</a></li><br><hr>
 					</ul>

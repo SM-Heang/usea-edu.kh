@@ -10,7 +10,7 @@
     include_once '../../connection/db.connection.php';
 ?>
 <?php
-    include_once '../include/buttom-content.php';
+    include_once '../include/right-content-buttom.php';
     include_once '../include/footer.php';
 ?>
 
