@@ -50,13 +50,11 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
-			<!-- Swiper CSS -->
-			<link rel="stylesheet" href="../../css/swiper-bundle.min.css">
-			 <!-- Swiper JS -->
-			 <script src="../../js/swiper-bundle.min.js"></script>
-
 			<!-- JavaScript -->
 			<script src="../../js/script.js"></script>
+
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
 
 	</head>
 	<body>
