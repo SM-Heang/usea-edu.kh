@@ -26,36 +26,83 @@ include_once '../../connection/db.connection.php';
 		<div class="container mb-5" id="upcoming-events">
 
 			<div class="row">
-						<?php
-						$stmt = $conn->prepare("SELECT * from usea_events WHERE event_status = 'upcoming' ORDER BY event_date DESC limit 4;");
-						$stmt->execute();
-						$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-						// echo "<pre>";
-						// print_r($result);
-						// echo "</pre>";
-						foreach ($result as $key => $value) { ?>
-							<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex mt-auto">
-								<div class="fh5co-event item">
-									<div class="date text-center">
-										<span>
-											<?php echo date('d', strtotime($value['event_date'])); ?><br><?php echo date('M', strtotime($value['event_date'])); ?>.
-										</span>
-									</div>
-									<div style="text-align: justify;">
-										<div style="height: 3rem;">
-											<h3>
-												<a href="#"> <?php echo substr($value['event_title_en'], 0, 45) . "..."; ?> </a>
-											</h3>
-										</div>
-										<p><?php echo substr($value['event_description_en'], 0, 100) . "..."; ?></p>
-									</div>
-									<div style="text-align: right;">
-										<a href="#" type="button" class="btn btn-outline-primary"> Read More </a>
-									</div>
-								</div>
+				<?php
+				$stmt = $conn->prepare("SELECT * from usea_events WHERE event_status = 'upcoming' ORDER BY event_date DESC limit 4;");
+				$stmt->execute();
+				$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+				// echo "<pre>";
+				// print_r($result);
+				// echo "</pre>";
+				foreach ($result as $key => $value) { ?>
+					<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex mt-auto">
+						<div class="fh5co-event item">
+							<div class="date text-center">
+								<span>
+									<?php echo date('d', strtotime($value['event_date'])); ?><br><?php echo date('M', strtotime($value['event_date'])); ?>.
+								</span>
 							</div>
-						<?php } ?>
+							<div style="text-align: justify;">
+								<div style="height: 3rem;">
+									<h3>
+										<a href="#"> <?php echo substr($value['event_title_en'], 0, 45) . "..."; ?> </a>
+									</h3>
+								</div>
+								<p><?php echo substr($value['event_description_en'], 0, 100) . "..."; ?></p>
+							</div>
+							<div style="text-align: right;">
+								<a href="#" type="button" class="btn btn-outline-primary"> Read More </a>
+							</div>
+						</div>
+					</div>
+				<?php } ?>
+			</div>
+
+			<!-- ==================== -->
+			<hr>
+
+			<div class="container mt-5 mb-5 row">
+				<!-- <div class="carousel owl-carousel"> -->
+				<!-- <div class="item p-3" id="item"> -->
+				<div class="card col">
+					<img src="../../media/IMG_2131.JPG" alt="">
+					<div class="card-header">
+						<h3>Hi</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque maxime delectus cum suscipit quia labore eum, et aut, veniam sed, error impedit minus voluptatum hic iste obcaecati porro incidunt cupiditate.</p>
+					</div>
 				</div>
+				<!-- </div> -->
+				<!-- <div class="item p-3" id="item"> -->
+				<div class="card col">
+					<img src="../../media/IMG_2131.JPG" alt="">
+					<div class="card-header">
+						<h3>Hi</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque maxime delectus cum suscipit quia labore eum, et aut, veniam sed, error impedit minus voluptatum hic iste obcaecati porro incidunt cupiditate.</p>
+					</div>
+				</div>
+				<!-- </div> -->
+				<!-- <div class="item p-3" id="item"> -->
+				<div class="card col">
+					<img src="../../media/IMG_2131.JPG" alt="">
+					<div class="card-header">
+						<h3>Hi</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque maxime delectus cum suscipit quia labore eum, et aut, veniam sed, error impedit minus voluptatum hic iste obcaecati porro incidunt cupiditate.</p>
+					</div>
+				</div>
+				<!-- </div> -->
+				<!-- <div class="item p-3" id="item"> -->
+				<div class="card col">
+					<img src="../../media/IMG_2131.JPG" alt="">
+					<div class="card-header">
+						<h3>Hi</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque maxime delectus cum suscipit quia labore eum, et aut, veniam sed, error impedit minus voluptatum hic iste obcaecati porro incidunt cupiditate.</p>
+					</div>
+				</div>
+				<!-- </div> -->
+
+				<!-- </div> -->
+			</div>
+
+			<!-- ==================== -->
 
 
 
@@ -122,6 +169,29 @@ include_once '../../connection/db.connection.php';
 	</div>
 	<!-- =====> End Carousel Partnership <===== -->
 
+	<script>
+		$(".carousel").owlCarousel({
+			margin: 20,
+			loop: true,
+			autoplay: true,
+			autoplayTimeout: 2000,
+			autoplayHoverPause: true,
+			responsive: {
+				0: {
+					items: 1,
+					nav: false
+				},
+				600: {
+					items: 2,
+					nav: false
+				},
+				1000: {
+					items: 3,
+					nav: false
+				},
+			},
+		});
+	</script>
 
 	<?php
 	include_once '../include/buttom-content.php';
