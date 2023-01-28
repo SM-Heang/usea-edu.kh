@@ -49,7 +49,7 @@
                 		</nav>
 						<hr>
 					</div>
-					<div class="item"><a class="nav-link item-link" href="location.php"> Scholarship </a></div>
+					<div class="item"><a class="nav-link item-link" href="scholarship.php"> Scholarship </a></div>
 					<hr>
 					<div class="item">
 						<nav class="sidebar">
@@ -101,9 +101,9 @@
 					<div class="item">
 						<nav class="sidebar">
 								<ul class="nav flex-column">
-									<li> <a class="nav-link item-link" href="history-logo.php"> Policies and Strategies </a></li><hr>
-									<li><a class="nav-link item-link" href="president-message.php"> USEA Form Downlaod </a></li><hr>
-									<li><a class="nav-link item-link" href="vission-mission-core-value.php"> News Website </a></li><hr>
+									<li> <a class="nav-link item-link" href="policies-strategies.php"> Policies and Strategies </a></li><hr>
+									<li><a class="nav-link item-link" href="form-download.php"> USEA Form Downlaod </a></li><hr>
+									<li><a class="nav-link item-link" href="news-website.php"> News Website </a></li><hr>
 								</ul>
 						</nav>
 					</div>
