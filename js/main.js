@@ -336,6 +336,12 @@
 						}
 					});
 
+					// toggle right content
+					// let changeIcon = function(icon) {
+					// 	icon.classList.toggle('fa-times')
+					// }
+					// changeIcon = (icon) => icon.classList.toggle('fa-angle-up');
+
 
 						// slide 
 						

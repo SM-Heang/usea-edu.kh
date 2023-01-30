@@ -379,6 +379,10 @@ body {
 .nav-link:hover {
   color: #ff0000 !important;
 }
+/* 
+.fa-angle-up:before {
+  display: none !important;
+} */
 
 /* ========================================= */
 
@@ -2516,7 +2520,6 @@ figure {
 }
 
 /* ========== custom slider ============ */
-
 
 
 
