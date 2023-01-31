@@ -1,10 +1,10 @@
 <?php
-    $page = 'practucum-internship';
+    $page = 'public-information';
     if (session_status() === PHP_SESSION_NONE) {
         session_start();
     }
     $_SESSION['page'] = $page;
-    $_SESSION['right'] = 'practucum_internship';
+    $_SESSION['right'] = 'public_information_center';
 
     include_once '../include/header.php';
     include_once '../../connection/db.connection.php';
