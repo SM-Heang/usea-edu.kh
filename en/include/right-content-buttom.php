@@ -12,19 +12,30 @@
 			<nav class="sidebar">
 				<ul class="nav flex-column" id="nav_accordion">
 					<li class="nav-item has-submenu select-menu">
-						<a class="nav-link item-link select-btn" href="student-services.php" onclick="return false"> Student Services
-							<i class="fa-solid fa-angle-up simple"></i>
+						<a class="nav-link item-link select-btn" href="student-services.php" onclick="return false">Student Services
+							<!-- <i class="fa-solid fa-angle-up simple i_1"></i> -->
+							<?php
+								if ($_SESSION['page'] == 'practucum-internship') {
+									echo '<i class="fa-solid fa-angle-up simple i_1"></i>';
+								}else{
+									echo '<i class="fa-solid fa-angle-down simple i_1"></i>';
+								}
+							?>
 						</a>
 						<ul class="submenu collapse
-							<?php if ($_SESSION['page'] == 'practucum-internship') {
-								echo "show";
-							} else if ($_SESSION['page'] == 'practucum-internship') {
-								echo "simple";
-							} ?>">
+							<?php 
+									if ($_SESSION['page'] == 'practucum-internship') {
+										echo "show";
+									}
+							?>">
 							<li>
-								<a class="nav-link item-link <?php if ($_SESSION['right'] == 'practucum_internship') {
-																	echo 'right_active';
-																} ?>" aria-current="page" href="practucum-internship.php"> Practucum/Internship
+								<a class="nav-link item-link 
+								  <?php 
+								  		if ($_SESSION['right'] == 'practucum_internship') {
+											 echo 'right_active';
+																} ?>" 
+									aria-current="page" 
+									href="practucum-internship.php"> Practucum/Internship
 								</a>
 							</li>
 							<li><a class="nav-link item-link" href="#"> Student Tours </a></li>
@@ -44,18 +55,29 @@
 				<ul class="nav flex-column" id="nav_accordion">
 					<li class="nav-item has-submenu select-menu-2">
 						<a class="nav-link item-link select-btn-2" href="public-information-center.php" onclick="return false"> Library
-							<i class="fa-solid fa-angle-up simple-2"></i>
+							<!-- <i class="fa-solid fa-angle-up simple i_2"></i> -->
+							<?php
+								if ($_SESSION['page'] == 'public-information') {
+									echo '<i class="fa-solid fa-angle-up i_2"></i>';
+								}else{
+									echo '<i class="fa-solid fa-angle-down i_2"></i>';
+								}
+							?>
 						</a>
 						<ul class="submenu collapse
-							<?php if ($_SESSION['page'] == 'public-information') {
-								echo "show";
-							} else if ($_SESSION['page'] == 'public-information') {
-								echo "simple";
-							} ?>">
+							<?php
+									if ($_SESSION['page'] == 'public-information') {
+										echo "show";
+									}
+							?>">
 							<li>
-								<a class="nav-link item-link <?php if ($_SESSION['right'] == 'public_information_center') {
-																	echo 'right_active';
-																} ?>" aria-current="page" href="public-information-center.php"> Joint Public Information Center
+								<a class="nav-link item-link 
+									<?php 
+										if ($_SESSION['right'] == 'public_information_center') {
+											echo 'right_active';
+									} ?>"
+									aria-current="page" 
+									href="public-information-center.php"> Joint Public Information Center
 								</a>
 							</li>
 							<li><a class="nav-link item-link" href="#"> American Corner </a></li>
@@ -69,8 +91,34 @@
 
 
 
-
-
+		<div class="item">
+			<nav class="sidebar">
+				<ul class="nav flex-column" id="nav_accordion">
+					<li class="nav-item has-submenu select-menu-3">
+						<a class="nav-link item-link select-btn-3" href="associate-degree.php" onclick="return false"> Outstanding Students
+							<i class="fa-solid fa-angle-down simple-3"></i>
+						</a>
+						<ul class="submenu collapse
+							<?php if ($_SESSION['page'] == 'associate-degree') {
+								echo "show";
+							} else if ($_SESSION['page'] == 'associate-degree') {
+								echo "simple";
+							} ?>">
+							<li>
+								<a class="nav-link item-link <?php if ($_SESSION['right'] == 'associate_degree') {
+																	echo 'right_active';
+																} ?>" aria-current="page" href="associate-degree.php"> Associate's Degree
+								</a>
+							</li>
+							<li><a class="nav-link item-link" href="#"> Bachelor's Degree </a></li>
+							<li><a class="nav-link item-link" href="#"> Master's Degree </a></li>
+							<li><a class="nav-link item-link" href="#"> General English Program </a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<hr>
+		</div>
 
 
 

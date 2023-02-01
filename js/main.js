@@ -343,7 +343,11 @@
 
 	const optionMenu2 = document.querySelector(".select-menu-2"),
 		selectBtn2 = optionMenu2.querySelector(".select-btn-2");
-	selectBtn2.addEventListener("click", () => optionMenu2.classList.toggle("active_menu"));
+	selectBtn2.addEventListener("click", () => optionMenu2.classList.toggle("active_menu2"));
+
+
+
+
 	// slide 
 
 

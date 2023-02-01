@@ -2873,32 +2873,28 @@ figure {
   padding: 6.5px 10px;
 }
 
-/* ========== custom slider ============ */
+/* ========== custom right bar icons ============ */
 
+/* 1 */
 .right-content-economic .select-menu {
   cursor: pointer;
 }
-.right-content-economic .select-btn i {
+.right-content-economic .select-btn .i_1 {
   transition: 0.3s;
 }
-.right-content-economic .select-menu.active_menu .select-btn i {
+.right-content-economic .select-menu.active_menu .select-btn .i_1 {
   transform: rotate(-180deg);
 }
-.right-content-economic .select-btn .simple {
-  transform: rotate(90deg);
-}
 
+/* 2 */
 .right-content-economic .select-menu-2 {
   cursor: pointer;
 }
-.right-content-economic .select-btn-2 i {
+.right-content-economic .select-btn-2 .i_2 {
   transition: 0.3s;
 }
-.right-content-economic .select-menu-2.active_menu .select-btn-2 i {
+.right-content-economic .select-menu-2.active_menu2 .select-btn-2 .i_2 {
   transform: rotate(-180deg);
-}
-.right-content-economic .select-btn-2 .simple-2 {
-  transform: rotate(90deg);
 }
 
 
@@ -2991,7 +2987,7 @@ For Media Query Devices with Breakpoint
   .content_edu {
     font-size: 1rem !important;
     display: block;
-    width: 390px;
+    width: 370px;
     word-spacing: -2px !important;
   }
 
