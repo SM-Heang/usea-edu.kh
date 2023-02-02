@@ -2897,6 +2897,60 @@ figure {
   transform: rotate(-180deg);
 }
 
+/* 3 */
+.right-content-economic .select-menu-3 {
+  cursor: pointer;
+}
+.right-content-economic .select-btn-3 .i_3 {
+  transition: 0.3s;
+}
+.right-content-economic .select-menu-3.active_menu3  .select-btn-3 .i_3 {
+  transform: rotate(-180deg);
+}
+
+/* 4 */
+.right-content-economic .select-menu-4 {
+  cursor: pointer;
+}
+.right-content-economic .select-btn-4 .i_4 {
+  transition: 0.4s;
+}
+.right-content-economic .select-menu-4.active_menu4  .select-btn-4 .i_4 {
+  transform: rotate(-180deg);
+}
+
+/* 5 */
+.right-content-economic .select-menu-5 {
+  cursor: pointer;
+}
+.right-content-economic .select-btn-5 .i_5 {
+  transition: 0.4s;
+}
+.right-content-economic .select-menu-5.active_menu5  .select-btn-5 .i_5 {
+  transform: rotate(-180deg);
+}
+
+/* 5 */
+.right-content-economic .select-menu-5 {
+  cursor: pointer;
+}
+.right-content-economic .select-btn-5 .i_5 {
+  transition: 0.4s;
+}
+.right-content-economic .select-menu-5.active_menu5  .select-btn-5 .i_5 {
+  transform: rotate(-180deg);
+}
+
+/* 6 */
+.right-content-economic .select-menu-6 {
+  cursor: pointer;
+}
+.right-content-economic .select-btn-6 .i_6 {
+  transition: 0.4s;
+}
+.right-content-economic .select-menu-6.active_menu6  .select-btn-6 .i_6 {
+  transform: rotate(-180deg);
+}
 
 
 

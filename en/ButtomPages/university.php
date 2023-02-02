@@ -1,10 +1,10 @@
 <?php
-$page = 'associate-degree';
+$page = 'university';
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 $_SESSION['page'] = $page;
-$_SESSION['right'] = 'associate_degree';
+$_SESSION['right'] = 'univer_sity';
 
 include_once '../include/header.php';
 include_once '../../connection/db.connection.php';

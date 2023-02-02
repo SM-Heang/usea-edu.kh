@@ -299,7 +299,7 @@
 
 
 
-	// ============ right menu 		
+	// ============ right menu drop down		
 	document.addEventListener("DOMContentLoaded", function () {
 		document.querySelectorAll('.sidebar .nav-link').forEach(function (element) {
 
@@ -336,7 +336,7 @@
 		}
 	});
 
-	// toggle right content
+	// toggle icon right content
 	const optionMenu = document.querySelector(".select-menu"),
 		selectBtn = optionMenu.querySelector(".select-btn");
 	selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active_menu"));
@@ -345,8 +345,21 @@
 		selectBtn2 = optionMenu2.querySelector(".select-btn-2");
 	selectBtn2.addEventListener("click", () => optionMenu2.classList.toggle("active_menu2"));
 
+	const optionMenu3 = document.querySelector(".select-menu-3"),
+		selectBtn3 = optionMenu3.querySelector(".select-btn-3");
+	selectBtn3.addEventListener("click", () => optionMenu3.classList.toggle("active_menu3"));
 
+	const optionMenu4 = document.querySelector(".select-menu-4"),
+		selectBtn4 = optionMenu4.querySelector(".select-btn-4");
+	selectBtn4.addEventListener("click", () => optionMenu4.classList.toggle("active_menu4"));
 
+	const optionMenu5 = document.querySelector(".select-menu-5"),
+		selectBtn5 = optionMenu5.querySelector(".select-btn-5");
+	selectBtn5.addEventListener("click", () => optionMenu5.classList.toggle("active_menu5"));
+
+	const optionMenu6 = document.querySelector(".select-menu-6"),
+		selectBtn6 = optionMenu6.querySelector(".select-btn-6");
+	selectBtn6.addEventListener("click", () => optionMenu6.classList.toggle("active_menu6"));
 
 	// slide 
 

@@ -1,5 +1,6 @@
 <div class="col-xxl-3">
 	<div class="right-content-economic">
+
 		<div class="item">
 			<a class="nav-link item-link <?php if ($_SESSION['right'] == 'human_resource') {
 												echo 'right_active';
@@ -13,7 +14,6 @@
 				<ul class="nav flex-column" id="nav_accordion">
 					<li class="nav-item has-submenu select-menu">
 						<a class="nav-link item-link select-btn" href="student-services.php" onclick="return false">Student Services
-							<!-- <i class="fa-solid fa-angle-up simple i_1"></i> -->
 							<?php
 								if ($_SESSION['page'] == 'practucum-internship') {
 									echo '<i class="fa-solid fa-angle-up simple i_1"></i>';
@@ -55,7 +55,6 @@
 				<ul class="nav flex-column" id="nav_accordion">
 					<li class="nav-item has-submenu select-menu-2">
 						<a class="nav-link item-link select-btn-2" href="public-information-center.php" onclick="return false"> Library
-							<!-- <i class="fa-solid fa-angle-up simple i_2"></i> -->
 							<?php
 								if ($_SESSION['page'] == 'public-information') {
 									echo '<i class="fa-solid fa-angle-up i_2"></i>';
@@ -90,24 +89,33 @@
 		</div>
 
 
-
 		<div class="item">
 			<nav class="sidebar">
 				<ul class="nav flex-column" id="nav_accordion">
 					<li class="nav-item has-submenu select-menu-3">
 						<a class="nav-link item-link select-btn-3" href="associate-degree.php" onclick="return false"> Outstanding Students
-							<i class="fa-solid fa-angle-down simple-3"></i>
+							<?php
+								if ($_SESSION['page'] == 'associate-degree') {
+									echo '<i class="fa-solid fa-angle-up i_3"></i>';
+								}else{
+									echo '<i class="fa-solid fa-angle-down i_3"></i>';
+								}
+							?>
 						</a>
 						<ul class="submenu collapse
-							<?php if ($_SESSION['page'] == 'associate-degree') {
-								echo "show";
-							} else if ($_SESSION['page'] == 'associate-degree') {
-								echo "simple";
-							} ?>">
+							<?php
+									if ($_SESSION['page'] == 'associate-degree') {
+										echo "show";
+									}
+							?>">
 							<li>
-								<a class="nav-link item-link <?php if ($_SESSION['right'] == 'associate_degree') {
-																	echo 'right_active';
-																} ?>" aria-current="page" href="associate-degree.php"> Associate's Degree
+								<a class="nav-link item-link 
+									<?php 
+										if ($_SESSION['right'] == 'associate_degree') {
+											echo 'right_active';
+									} ?>"
+									aria-current="page" 
+									href="associate-degree.php"> Associate's Degree
 								</a>
 							</li>
 							<li><a class="nav-link item-link" href="#"> Bachelor's Degree </a></li>
@@ -120,92 +128,91 @@
 			<hr>
 		</div>
 
-
-
-
-		<!-- 		
 		<div class="item">
-			<nav class="sidebar">
-				<ul class="nav flex-column" id="nav_accordion">
-					<li class="nav-item has-submenu select-menu">
-						<a class="nav-link item-link select-btn" href="upcoming-events.php" onclick="return false"> Library
-							<i class="fa-solid fa-angle-up simple"></i>
-						</a>
-						<ul class="submenu collapse 
-							<?php if ($_SESSION['page'] == 'library') {
-								echo "show";
-							} else if ($_SESSION['page'] == 'library') {
-								echo "simple";
-							} ?>">
-							<li>
-								<a class="nav-link item-link <?php if ($_SESSION['right'] == 'library') {
-																	echo 'right_active';
-																} ?>" 
-								   aria-current="page" href="upcoming-events.php"> Joint Public Information Center 
-								</a>
-							</li>
-							<li><a class="nav-link item-link" href="events.php"> American Corner </a></li>
-							<li><a class="nav-link item-link" href="events.php"> E-Library </a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-			<hr>
+			<a class="nav-link item-link <?php if ($_SESSION['right'] == 'scholarship_right') {
+												echo 'right_active';
+											} ?>" href="scholarship.php"> Scholarship
+			</a>
 		</div>
-
-		<div class="item">
-			<nav class="sidebar">
-				<ul class="nav flex-column" id="nav_accordion">
-					<li class="nav-item has-submenu">
-						<a class="nav-link item-link" href="#"> Outstanding Students
-							<i class="fa-solid fa-angle-down"></i>
-						</a>
-						<ul class="submenu collapse">
-							<li><a class="nav-link item-link" aria-current="page" href="upcoming-events.php"> Associate's Degree </a></li>
-							<li><a class="nav-link item-link" href="events.php"> Bachelor's Degree </a></li>
-							<li><a class="nav-link item-link" href="events.php"> Master's Degree </a></li>
-							<li><a class="nav-link item-link" href="events.php"> General English Program </a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-			<hr>
-		</div>
-
-		<div class="item"><a class="nav-link item-link" href="scholarship.php"> Scholarship </a></div>
-
 		<hr>
 
 		<div class="item">
 			<nav class="sidebar">
 				<ul class="nav flex-column" id="nav_accordion">
-					<li class="nav-item has-submenu">
-						<a class="nav-link item-link" href="#"> Career
-							<i class="fa-solid fa-angle-down"></i>
+					<li class="nav-item has-submenu select-menu-4">
+						<a class="nav-link item-link select-btn-4" href="university.php" onclick="return false"> Career
+							<?php
+								if ($_SESSION['page'] == 'university') {
+									echo '<i class="fa-solid fa-angle-up i_4"></i>';
+								}else{
+									echo '<i class="fa-solid fa-angle-down i_4"></i>';
+								}
+							?>
 						</a>
-						<ul class="submenu collapse">
-							<li><a class="nav-link item-link" aria-current="page" href="upcoming-events.php"> University </a></li>
-							<li><a class="nav-link item-link" href="events.php"> Other Institution </a></li>
+						<ul class="submenu collapse
+							<?php
+									if ($_SESSION['page'] == 'university') {
+										echo "show";
+									}
+							?>">
+							<li>
+								<a class="nav-link item-link 
+									<?php 
+										if ($_SESSION['right'] == 'univer_sity') {
+											echo 'right_active';
+									} ?>"
+									aria-current="page" 
+									href="university.php"> University
+								</a>
+							</li>
+							<li><a class="nav-link item-link" href="#"> Other Institution </a></li>
 						</ul>
 					</li>
 				</ul>
 			</nav>
 			<hr>
 		</div>
+
+		<div class="item">
+			<a class="nav-link item-link <?php if ($_SESSION['right'] == 'alumni_right') {
+								echo 'right_active';
+											} ?>" href="alumni.php"> Alumni
+			</a>
+		</div>
+		<hr>
 
 		<div class="item">
 			<nav class="sidebar">
 				<ul class="nav flex-column" id="nav_accordion">
-					<li class="nav-item has-submenu">
-						<a class="nav-link item-link" href="#"> Alumni
-							<i class="fa-solid fa-angle-down"></i>
+					<li class="nav-item has-submenu select-menu-5">
+						<a class="nav-link item-link select-btn-5" href="facilities.php" onclick="return false"> Facilities
+							<?php
+								if ($_SESSION['page'] == 'facilities') {
+									echo '<i class="fa-solid fa-angle-up i_5"></i>';
+								}else{
+									echo '<i class="fa-solid fa-angle-down i_5"></i>';
+								}
+							?>
 						</a>
-						<ul class="submenu collapse">
-							<li><a class="nav-link item-link" aria-current="page" href="upcoming-events.php"> Promotion 9 </a></li>
-							<li><a class="nav-link item-link" href="events.php"> Promotion 10 </a></li>
-							<li><a class="nav-link item-link" href="events.php"> Promotion 11 </a></li>
-							<li><a class="nav-link item-link" href="events.php"> Promotion 12 </a></li>
-							<li><a class="nav-link item-link" href="events.php"> Promotion 13 </a></li>
+						<ul class="submenu collapse
+							<?php
+									if ($_SESSION['page'] == 'facilities') {
+										echo "show";
+									}
+							?>">
+							<li>
+								<a class="nav-link item-link 
+									<?php 
+										if ($_SESSION['right'] == 'facilities_right') {
+											echo 'right_active';
+									} ?>"
+									aria-current="page" 
+									href="facilities.php">Building
+								</a>
+							</li>
+							<li><a class="nav-link item-link" href="#"> Classroom </a></li>
+							<li><a class="nav-link item-link" href="#"> Lab </a></li>
+							<li><a class="nav-link item-link" href="#"> Front office </a></li>
 						</ul>
 					</li>
 				</ul>
@@ -214,43 +221,23 @@
 		</div>
 
 		<div class="item">
-			<nav class="sidebar">
-				<ul class="nav flex-column" id="nav_accordion">
-					<li class="nav-item has-submenu">
-						<a class="nav-link item-link" href="#"> Facilities
-							<i class="fa-solid fa-angle-down"></i>
-						</a>
-						<ul class="submenu collapse">
-							<li><a class="nav-link item-link" aria-current="page" href="upcoming-events.php"> Building </a></li>
-							<li><a class="nav-link item-link" href="events.php"> Classroom </a></li>
-							<li><a class="nav-link item-link" href="events.php"> Lab </a></li>
-							<li><a class="nav-link item-link" href="events.php"> Front Office </a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-			<hr>
+			<a class="nav-link item-link <?php if ($_SESSION['right'] == 'Policies_Strategies') {
+								echo 'right_active';
+											} ?>" href="policies-strategies.php"> Policies and Strategies
+			</a>
 		</div>
+		<hr>
 
 		<div class="item">
-			<nav class="sidebar">
-				<ul class="nav flex-column">
-					<li> <a class="nav-link item-link" href="policies-strategies.php"> Policies and Strategies </a></li>
-					<hr>
-					<li><a class="nav-link item-link" href="form-download.php"> USEA Form Downlaod </a></li>
-					<hr>
-					<li><a class="nav-link item-link" href="news-website.php"> News Website </a></li>
-					<hr>
-				</ul>
-			</nav>
-		</div> -->
-
-
-
-
-
+			<a class="nav-link item-link <?php if ($_SESSION['right'] == 'form_download') {
+								echo 'right_active';
+											} ?>" href="form-download.php"> USEA Form Download
+			</a>
+		</div>
+		<hr>
 
 	</div>
 </div>
 </div>
+
 <script src="../../js/main.js"></script>
