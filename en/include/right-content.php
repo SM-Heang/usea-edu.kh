@@ -31,26 +31,28 @@
 		<div class="item">
 			<nav class="sidebar">
 				<ul class="nav flex-column" id="nav_accordion">
-					<li class="nav-item has-submenu select-menu-6">
-						<a class="nav-link item-link select-btn-6" href="upcoming-events.php" onclick="return false"> Events
+					<li class="nav-item has-submenu select-menu">
+						<a class="nav-link item-link select-btn" href="../Pages/events.php" onclick="return false"> Events
 							<?php
-							if ($_SESSION['page'] == 'upcoming-events') {
-								echo '<i class="fa-solid fa-angle-up i_6"></i>';
+							if ($_SESSION['page'] == 'events') {
+								echo '<i class="fa-solid fa-angle-down i_1"></i>';
 							} else {
-								echo '<i class="fa-solid fa-angle-down i_6"></i>';
+								echo '<i class="fa-solid fa-angle-up i_1"></i>';
 							}
 							?>
 						</a>
 						<ul class="submenu collapse" <?php
-														if ($_SESSION['page'] == 'upcoming-events') {
+														if ($_SESSION['page'] == 'events') {
 															echo "show";
 														}
 														?>">
 							<li>
 								<a class="nav-link item-link 
-											   <?php if ($_SESSION['right'] == 'upcoming_events') {
+											   <?php if ($_SESSION['right'] == 'event_s') {
 													echo 'right_active';
-												} ?>" aria-current="page" href="upcoming-events.php"> Upcoming Events
+												} ?>" 
+									aria-current="page" 
+									href="upcoming-events.php"> Upcoming Events
 								</a>
 							</li>
 							<li><a class="nav-link item-link" href="events.php"> Past Events </a></li>

@@ -2875,6 +2875,7 @@ figure {
 
 /* ========== custom right bar icons ============ */
 
+/* right content buttom */
 /* 1 */
 .right-content-economic .select-menu {
   cursor: pointer;
@@ -2930,16 +2931,8 @@ figure {
   transform: rotate(-180deg);
 }
 
-/* 5 */
-.right-content-economic .select-menu-5 {
-  cursor: pointer;
-}
-.right-content-economic .select-btn-5 .i_5 {
-  transition: 0.4s;
-}
-.right-content-economic .select-menu-5.active_menu5  .select-btn-5 .i_5 {
-  transform: rotate(-180deg);
-}
+
+/* right content */
 
 /* 6 */
 .right-content-economic .select-menu-6 {

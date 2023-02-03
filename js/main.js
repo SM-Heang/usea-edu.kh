@@ -357,9 +357,6 @@
 		selectBtn5 = optionMenu5.querySelector(".select-btn-5");
 	selectBtn5.addEventListener("click", () => optionMenu5.classList.toggle("active_menu5"));
 
-	const optionMenu6 = document.querySelector(".select-menu-6"),
-		selectBtn6 = optionMenu6.querySelector(".select-btn-6");
-	selectBtn6.addEventListener("click", () => optionMenu6.classList.toggle("active_menu6"));
 
 	// slide 
 
