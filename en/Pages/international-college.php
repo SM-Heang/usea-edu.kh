@@ -41,7 +41,7 @@
 				</div>
 				<div id="content-detail">
 					<?php  
-							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =316");
+							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =27");
 							$stmt->execute();
 							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 							// echo "<pre>";
@@ -55,7 +55,7 @@
 			</div>
 			<!-- Start Right Content-->
 			<?php 
-				include_once "../include/right-content-economic.php";
+				include_once "../include/right-content-international-college.php";
 			 ?>
 		</div>
 	</div>
