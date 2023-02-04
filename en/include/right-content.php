@@ -72,7 +72,7 @@
 			echo 'right_active';
 		} ?>" href="location.php"> Location </a></div>
 	</div> -->
-	
+
 </div>
 </div>
 <script src="../../js/main.js"></script>
