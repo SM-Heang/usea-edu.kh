@@ -73,7 +73,7 @@
 		<div class="item"><a class="item-link <?php if ($_SESSION['right'] == 'location') {
 			echo 'right_active';
 		} ?>" href="location.php"> Location </a></div>
-	</div> -->
+	</div>
 	
 </div>
 </div>

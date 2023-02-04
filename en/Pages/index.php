@@ -57,57 +57,6 @@ include_once '../../connection/db.connection.php';
 				<?php } ?>
 			</div>
 
-			<!-- ==================== -->
-			<hr>
-
-			<div class="container mt-5 mb-5 row">
-				<!-- <div class="carousel owl-carousel"> -->
-				<!-- <div class="item p-3" id="item"> -->
-				<div class="card col">
-					<img src="../../media/IMG_2131.JPG" alt="">
-					<div class="card-header">
-						<h3>Hi</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque maxime delectus cum suscipit quia labore eum, et aut, veniam sed, error impedit minus voluptatum hic iste obcaecati porro incidunt cupiditate.</p>
-					</div>
-				</div>
-				<!-- </div> -->
-				<!-- <div class="item p-3" id="item"> -->
-				<div class="card col">
-					<img src="../../media/IMG_2131.JPG" alt="">
-					<div class="card-header">
-						<h3>Hi</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque maxime delectus cum suscipit quia labore eum, et aut, veniam sed, error impedit minus voluptatum hic iste obcaecati porro incidunt cupiditate.</p>
-					</div>
-				</div>
-				<!-- </div> -->
-				<!-- <div class="item p-3" id="item"> -->
-				<div class="card col">
-					<img src="../../media/IMG_2131.JPG" alt="">
-					<div class="card-header">
-						<h3>Hi</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque maxime delectus cum suscipit quia labore eum, et aut, veniam sed, error impedit minus voluptatum hic iste obcaecati porro incidunt cupiditate.</p>
-					</div>
-				</div>
-				<!-- </div> -->
-				<!-- <div class="item p-3" id="item"> -->
-				<div class="card col">
-					<img src="../../media/IMG_2131.JPG" alt="">
-					<div class="card-header">
-						<h3>Hi</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque maxime delectus cum suscipit quia labore eum, et aut, veniam sed, error impedit minus voluptatum hic iste obcaecati porro incidunt cupiditate.</p>
-					</div>
-				</div>
-				<!-- </div> -->
-
-				<!-- </div> -->
-			</div>
-
-			<!-- ==================== -->
-
-
-
-
-
 			<hr style="color: #002060;">
 			<!-- =====> End Upcoming Events <===== -->
 
