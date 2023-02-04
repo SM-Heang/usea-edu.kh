@@ -2945,7 +2945,7 @@ figure {
 /* right content */
 
 /* 6 */
-.right-content-economic .select-menu-6 {
+/* .right-content-economic .select-menu-6 {
   cursor: pointer;
 }
 
@@ -2955,8 +2955,21 @@ figure {
 
 .right-content-economic .select-menu-6.active_menu6 .select-btn-6 .i_6 {
   transform: rotate(-180deg);
+} */
+
+/* right content economic */
+/* 7 */
+.right-content-economic .select-menu-7 {
+  cursor: pointer;
 }
 
+.right-content-economic .select-btn-7 .i_7 {
+  transition: 0.4s;
+}
+
+.right-content-economic .select-menu-7.active_menu7 .select-btn-7 .i_7 {
+  transform: rotate(-180deg);
+}
 
 
 /*
