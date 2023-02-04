@@ -336,7 +336,7 @@
 		}
 	});
 
-	// toggle icon right content
+	// buttom right content
 	const optionMenu = document.querySelector(".select-menu"),
 		selectBtn = optionMenu.querySelector(".select-btn");
 	selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active_menu"));
@@ -356,7 +356,16 @@
 	const optionMenu5 = document.querySelector(".select-menu-5"),
 		selectBtn5 = optionMenu5.querySelector(".select-btn-5");
 	selectBtn5.addEventListener("click", () => optionMenu5.classList.toggle("active_menu5"));
-
+	
+	// right content
+	const optionMenu6 = document.querySelector(".select-menu-6"),
+		selectBtn6 = optionMenu6.querySelector(".select-btn-6");
+	selectBtn6.addEventListener("click", () => optionMenu6.classList.toggle("active_menu6"));
+	
+	// right content economic
+	const optionMenu7 = document.querySelector(".select-menu-7"),
+		selectBtn7 = optionMenu7.querySelector(".select-btn-7");
+	selectBtn7.addEventListener("click", () => optionMenu7.classList.toggle("active_menu7"));
 
 	// slide 
 
