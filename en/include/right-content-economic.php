@@ -1,6 +1,6 @@
 <div class="col-xxl-3">
 	<div class="right-content-economic">
-		<div class="item"><a class="item-link <?php if ($_SESSION['right_economic'] == 'vision_mision_corevalue') {
+		<div class="item"><a class="item-link <?php if ($_SESSION['right_economic'] == 'academic') {
 													echo 'right_active';
 												} ?>" href="../vission-Mission/vision-mision-corevalue.php">Vision & Mission</a></div>
 		<hr>
@@ -10,32 +10,36 @@
 				<ul class="nav flex-column" id="nav_accordion">
 					<li class="nav-item has-submenu select-menu">
 						<a class="nav-link item-link select-btn" href="../AssociateDegree/finance-banking.php">Associate's Degree
-							
+
 							<?php
-							if ($_SESSION['right_economic'] == 'finance_banking' || 
-								$_SESSION['right_economic'] == 'manage_ment' || 
+							if (
+								$_SESSION['right_economic'] == 'finance_banking' ||
+								$_SESSION['right_economic'] == 'manage_ment' ||
 								$_SESSION['right_economic'] == 'accoun_ting' ||
 								$_SESSION['right_economic'] == 'marke_ting' ||
-								$_SESSION['right_economic'] == 'tou_rism' ) {
+								$_SESSION['right_economic'] == 'tou_rism'
+							) {
 
 								echo '<i class="fa-solid fa-angle-up i_1"></i>';
 							} else {
 								echo '<i class="fa-solid fa-angle-down i_1"></i>';
 							}
 							?>
-							
+
 						</a>
 						<ul class="submenu collapse
 						
 						<?php
-									if ($_SESSION['right_economic'] == 'finance_banking' ||
-										$_SESSION['right_economic'] == 'manage_ment' || 
-										$_SESSION['right_economic'] == 'accoun_ting' ||
-										$_SESSION['right_economic'] == 'marke_ting' ||
-										$_SESSION['right_economic'] == 'tou_rism' ) {
-										echo "show";
-									}
-							?>
+						if (
+							$_SESSION['right_economic'] == 'finance_banking' ||
+							$_SESSION['right_economic'] == 'manage_ment' ||
+							$_SESSION['right_economic'] == 'accoun_ting' ||
+							$_SESSION['right_economic'] == 'marke_ting' ||
+							$_SESSION['right_economic'] == 'tou_rism'
+						) {
+							echo "show";
+						}
+						?>
 						
 						">
 							<li><a class="nav-link item-link <?php if ($_SESSION['right_economic'] == 'finance_banking') {
@@ -64,15 +68,25 @@
 			<nav class="sidebar">
 				<ul class="nav flex-column" id="nav_accordion">
 					<li class="nav-item has-submenu select-menu-2">
-						<a class="nav-link item-link select-btn-2" href="right-content-economic.php"> Bachelor's Degree 
+						<a class="nav-link item-link select-btn-2" href="right-content-economic.php"> Bachelor's Degree
 							<!-- <i class="fas fa-angle-down"></i> -->
 
 							<?php
-							if ($_SESSION['right_economic'] == 'bachelor_degree_management' || 
+							if (
+								$_SESSION['right_economic'] == 'bachelor_degree_management' ||
 								$_SESSION['right_economic'] == 'bachelor_degree_marketing' ||
 								$_SESSION['right_economic'] == 'bachelor_degree_accounting_auditing' ||
-								$_SESSION['right_economic'] == 'bachelor_degree_accounting_auditing'
-							
+								$_SESSION['right_economic'] == 'bachelor_degree_accounting_auditing' ||
+								$_SESSION['right_economic'] == 'bachelor_degree_industrail_economics' ||
+								$_SESSION['right_economic'] == 'bachelor_degree_finance_banking' ||
+								$_SESSION['right_economic'] == 'bachelor_international_economics' ||
+								$_SESSION['right_economic'] == 'bachelor_intrepreneurship' ||
+								$_SESSION['right_economic'] == 'bechelor_international_business' ||
+								$_SESSION['right_economic'] == 'bachelor_international_tourism_management' ||
+								$_SESSION['right_economic'] == 'bechelor_catering_management' ||
+								$_SESSION['right_economic'] == 'bachelor_tourism_hospitality_management' ||
+								$_SESSION['right_economic'] == 'bachelor_eco_tourism' ||
+								$_SESSION['right_economic'] == 'bachelor_event_management'
 							) {
 
 								echo '<i class="fa-solid fa-angle-up i_2"></i>';
@@ -82,17 +96,28 @@
 							?>
 
 
-						 </a>
+						</a>
 						<ul class="submenu collapse
 						
 						<?php
-									if ($_SESSION['right_economic'] == 'bachelor_degree_management' ||
-										$_SESSION['right_economic'] == 'bachelor_degree_marketing' ||
-										$_SESSION['right_economic'] == 'bachelor_degree_accounting_auditing'
-									) {
-										echo "show";
-									}
-							?>
+						if (
+							$_SESSION['right_economic'] == 'bachelor_degree_management' ||
+							$_SESSION['right_economic'] == 'bachelor_degree_marketing' ||
+							$_SESSION['right_economic'] == 'bachelor_degree_accounting_auditing' ||
+							$_SESSION['right_economic'] == 'bachelor_degree_industrail_economics' ||
+							$_SESSION['right_economic'] == 'bachelor_degree_finance_banking' ||
+							$_SESSION['right_economic'] == 'bachelor_international_economics' ||
+							$_SESSION['right_economic'] == 'bachelor_intrepreneurship' ||
+							$_SESSION['right_economic'] == 'bechelor_international_business' ||
+							$_SESSION['right_economic'] == 'bachelor_international_tourism_management' ||
+							$_SESSION['right_economic'] == 'bechelor_catering_management' ||
+							$_SESSION['right_economic'] == 'bachelor_tourism_hospitality_management' ||
+							$_SESSION['right_economic'] == 'bachelor_eco_tourism' ||
+							$_SESSION['right_economic'] == 'bachelor_event_management'
+						) {
+							echo "show";
+						}
+						?>
 						
 						">
 							<li><a class="nav-link item-link <?php if ($_SESSION['right_economic'] == 'bachelor_degree_management') {

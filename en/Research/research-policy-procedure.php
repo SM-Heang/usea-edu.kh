@@ -3,7 +3,8 @@
 		if(session_status() === PHP_SESSION_NONE){
 			session_start();
 		}
-		$_SESSION['right_research'] = $page;
+		$_SESSION['right_research'] = 'right_research_right';
+		$_SESSION['page'] = $page;
 		
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     

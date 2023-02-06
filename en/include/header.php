@@ -152,7 +152,7 @@
 						</div>
 					</li>
 					<li>
-						<a class="<?php if($_SESSION['page'] == 'faculty_economics'){ echo 'active'; } ?>" href="../vission-Mission/vision-mision-corevalue.php">Academics</a>
+						<a class="<?php if($_SESSION['page'] == 'vision_mision_corevalue'){ echo 'active'; } ?>" href="../vission-Mission/vision-mision-corevalue.php">Academics</a>
 						<div class="mega-box">
 							<div class="content" id="nav-academics">
 								<div class="row">
@@ -198,9 +198,9 @@
 							</div>
 						</div>
 					</li>
-					<li><a class="<?php if($_SESSION['page'] == 'partnership'){ echo 'active'; } ?>" href="../Pages/partnership-local.php">Partnership</a></li>
+					<li><a class="<?php if($_SESSION['page'] == 'partnership_local'){ echo 'active'; } ?>" href="../Pages/partnership-local.php">Partnership</a></li>
 					<li>
-						<a class="<?php if($_SESSION['page'] == 'research'){ echo 'active'; } ?>" href="../Research/research-policy-procedure.php">Research</a>
+						<a class="<?php if($_SESSION['page'] == 'research_procedure'){ echo 'active'; } ?>" href="../Research/research-policy-procedure.php">Research</a>
 						<div class="mega-box">
 							<div class="content" id="nav-research">
 								<div class="row">
@@ -238,6 +238,30 @@
 				<!-- =====> End Menu Bar <===== -->
 			</div>
 		</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		<!-- ====== mobile menu ======= -->
 		<div class="mobile-menu">
@@ -277,6 +301,7 @@
 						</ul>
 					</div>
 				</li><hr>
+				
 				<li class="dropdown-parent"><a class="<?php if($_SESSION['page'] =='academics'){echo 'active_mobile';} ?>" href="#">Academics <i class="fas fa-caret-down"></i></a>
 					<div class="dropdown-hamburger">
 						<ul>

@@ -165,7 +165,7 @@ body {
 }
 
 .img-fluid {
-  height: 200px !important;
+  height: 210px !important;
 }
 
 #top-nav ul li a {
@@ -3162,13 +3162,21 @@ For Media Query Devices with Breakpoint
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   iframe {
     width: 100%;
     margin-bottom: 20px;
+  }
+  .img-fluid{
+    height: 100% !important	;
+  }
+  .icon_img{
+    height: 90px !important;
   }
 }
 

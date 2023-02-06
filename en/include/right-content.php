@@ -12,9 +12,9 @@
 															echo 'right_active';
 														} ?>" href="president-message.php"> President Message </a></li>
 					<hr>
-					<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'vision_mission') {
+					<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'vision_mision_corevalue_right') {
 															echo 'right_active';
-														} ?>" href="vission-mission-core-value.php"> Vision, Mission & Core Value </a></li>
+														} ?>" href="vision-mision-corevalue.php"> Vision, Mission & Core Value </a></li>
 					<hr>
 					<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'structure') {
 															echo 'right_active';

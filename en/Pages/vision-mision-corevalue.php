@@ -1,11 +1,11 @@
 <?php 
-	$page = 'about';
-	if (session_status() === PHP_SESSION_NONE) {
-		session_start();
-	}
-	$_SESSION['page']= $page;
-	$_SESSION['right']= 'vision_mission';
-	
+	$page = 'vision_mision_corevalue';
+		if(session_status() === PHP_SESSION_NONE){
+			session_start();
+		}
+		$_SESSION['page'] = $page;
+		$_SESSION['right'] = 'vision_mision_corevalue_right';
+
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     
  ?>
@@ -20,7 +20,7 @@
 					</a>
 					</li>
 					<li>
-						<a href="#">Vision Mission & Core Value</a>
+						<a href="#">Vision Mission</a>
 					</li>
 				</ul>
 			</div>
@@ -36,7 +36,7 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-						Vision Mission & Core Value
+						Vision Mission
 					</div>
 				</div>
 				<div id="content-detail">
@@ -57,6 +57,7 @@
 			</div>
 			<!-- Start Right Content-->
 			<?php
+				// include_once 'include/right-content.php';
 				include_once '../include/right-content.php';
 			?>
 		</div>
