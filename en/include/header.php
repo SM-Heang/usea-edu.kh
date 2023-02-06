@@ -340,8 +340,8 @@
 						</ul>
 					</div>
 				</li><hr>
-				<li><a class="<?php if($_SESSION['page'] == 'partnership'){ echo 'active_mobile'; } ?>" href="../Pages/partnership-local.php">Partnership</a></li><hr>
-				<li class="dropdown-parent"><a class="<?php if($_SESSION['page'] == 'research'){ echo 'active_mobile';} ?>" href="#">Research <i class="fas fa-caret-down"></i></a>
+				<li><a class="<?php if($_SESSION['page'] == 'partnership_local'){ echo 'active_mobile'; } ?>" href="../Pages/partnership-local.php">Partnership</a></li><hr>
+				<li class="dropdown-parent"><a class="<?php if($_SESSION['page'] == 'research_procedure'){ echo 'active_mobile';} ?>" href="#">Research <i class="fas fa-caret-down"></i></a>
 					<div class="dropdown-hamburger">
 						<ul>
 							<li>
@@ -367,6 +367,19 @@
 		</div>
 	</div>
 	<!-- =====> End Navigation mobile<===== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	<!-- =====> Start Slider <===== -->
 	<div class="container">
