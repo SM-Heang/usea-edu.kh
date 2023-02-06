@@ -3163,7 +3163,11 @@ For Media Query Devices with Breakpoint
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  #card-events{
+    width: 100%;
+    object-fit: cover;
 
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

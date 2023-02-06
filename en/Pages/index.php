@@ -57,11 +57,8 @@ include_once '../../connection/db.connection.php';
 				<?php } ?>
 			</div>
 
-<<<<<<< HEAD
 			<!-- ==================== -->
 
-=======
->>>>>>> 3b988e678399ae36a0ee0f1c94537d5f9b09edad
 			<hr style="color: #002060;">
 			<!-- =====> End Upcoming Events <===== -->
 
@@ -80,7 +77,7 @@ include_once '../../connection/db.connection.php';
 					<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex gx-2 gy-2" id="events-card">
 						<div class="card">
 							<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-								<img src="../../media/events/<?php echo $value['event_cover']; ?>" class="img-fluid" />
+								<img src="../../media/events/<?php echo $value['event_cover']; ?>" class="img-fluid " id="card-events"/>
 								<a href="#!">
 									<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
 								</a>
