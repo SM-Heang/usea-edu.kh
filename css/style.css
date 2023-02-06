@@ -2048,7 +2048,6 @@ figure {
   left: 0;
   top: 0.05em;
   font-family: "icomoon";
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -2983,6 +2982,11 @@ For Media Query Devices with Breakpoint
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  #card-events{
+    width: 100% !important;
+    object-fit: cover;
+
+  }
   .d-flex .icon_img {
     height: 80px !important;
     margin-top: -50px;
