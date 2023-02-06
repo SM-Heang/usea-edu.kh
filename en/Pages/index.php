@@ -57,8 +57,11 @@ include_once '../../connection/db.connection.php';
 				<?php } ?>
 			</div>
 
+<<<<<<< HEAD
 			<!-- ==================== -->
 
+=======
+>>>>>>> 3b988e678399ae36a0ee0f1c94537d5f9b09edad
 			<hr style="color: #002060;">
 			<!-- =====> End Upcoming Events <===== -->
 
