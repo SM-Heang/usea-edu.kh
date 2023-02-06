@@ -2989,6 +2989,7 @@ For Media Query Devices with Breakpoint
   }
   .d-flex .icon_img {
     height: 80px !important;
+    width: 180px !important;
     margin-top: -50px;
   }
 
@@ -3103,7 +3104,9 @@ For Media Query Devices with Breakpoint
   }
 
   .img-fluid {
-    height: 100% !important;
+    /* height: 100% !important; */
+    width: 100%;
+    object-fit: cover;
     border-radius: 5px 5px 0px 0px;
   }
 
@@ -3125,8 +3128,11 @@ For Media Query Devices with Breakpoint
     padding: 7px 10px;
   }
 
-  .row>* {
-    margin-bottom: 20px;
+  /* .row>* {
+    margin-bottom: -20px;
+  } */
+  .mt-5{
+    margin-top: 0rem !important;
   }
 
   /* 
@@ -3167,10 +3173,14 @@ For Media Query Devices with Breakpoint
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+
+ .img-fluid {
+    height: 100% !important;
+    border-radius: 5px 5px 0px 0px;
+ }
   #card-events{
     width: 100%;
     object-fit: cover;
-
   }
 }
 
