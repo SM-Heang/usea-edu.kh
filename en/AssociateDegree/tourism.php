@@ -6,6 +6,8 @@ if (session_status() === PHP_SESSION_NONE) {
 // show active dropdown
 // show icon dropdown
 $_SESSION['right_economic'] = $page;
+$_SESSION['page'] = 'tourism';
+
 include_once '../include/header.php';
 include_once '../../connection/db.connection.php';
 ?>

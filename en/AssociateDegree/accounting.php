@@ -7,7 +7,7 @@
 	 // show icon dropdown
 	 $_SESSION['right_economic'] = $page;
 	 // show active color
-	//  $_SESSION['page'] = 'accounting';
+	 $_SESSION['page'] = 'accounting';
 	 
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     

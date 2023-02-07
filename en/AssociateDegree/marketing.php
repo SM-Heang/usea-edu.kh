@@ -8,7 +8,7 @@ if (session_status() === PHP_SESSION_NONE) {
 $_SESSION['right_economic'] = $page;
 
 // show active color
-// $_SESSION['page'] = 'marketing';
+$_SESSION['page'] = 'marketing';
 
 
 include_once '../include/header.php';

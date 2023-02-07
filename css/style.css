@@ -16,7 +16,7 @@
 body {
   font-family: "Khmer OS System";
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.7;
   color: #828282;
   box-sizing: border-box;
@@ -161,7 +161,7 @@ body {
 .phone-menu-bar .phone-menu ul a {
   text-decoration: none;
   color: #002060;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .img-fluid {
@@ -298,7 +298,7 @@ body {
 
 #content-detail .content-president-detail p {
   color: #002060;
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-align: justify;
 }
 
@@ -357,7 +357,7 @@ body {
 }
 
 .right-content ul {
-  padding-top: 1rem;
+  padding-top: 0.9rem;
   list-style: none;
 }
 
@@ -403,7 +403,7 @@ body {
 }
 
 .right-content-economic .item .item-link {
-  padding: 1rem;
+  padding: 0.9rem;
   text-decoration: none;
   color: #002060;
   font-size: 1.15rem;
@@ -425,8 +425,8 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
   border-bottom: 1px solid #000000;
 }
 
@@ -563,7 +563,7 @@ body {
   .nav-link li a {
     color: #002060;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 5px;
@@ -601,7 +601,7 @@ body {
   }
 
   .fh5co-heading p a {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: bold;
   }
 }
@@ -724,7 +724,7 @@ body {
 }
 
 .mobile-menu ul li a {
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-decoration: none;
   color: #002060;
   display: block;
@@ -899,12 +899,12 @@ body {
   }
 
   #footer-location {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: white;
   }
 
   .copyright {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -1110,15 +1110,15 @@ figure {
   }
 
   #container-parent #row-parent #button-content ul li a {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   #footer-location p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .copyright p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -1153,15 +1153,15 @@ figure {
   }
 
   #container-parent #row-parent #button-content ul li a {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   #footer-location p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .copyright p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -1304,15 +1304,15 @@ figure {
   }
 
   #container-parent #row-parent #button-content ul li a {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   #footer-location p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .copyright p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -1445,15 +1445,15 @@ figure {
   }
 
   #container-parent #row-parent #button-content ul li a {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   #footer-location p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .copyright p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -1476,7 +1476,7 @@ figure {
 }
 
 #upcoming-events .fh5co-event p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   opacity: 0.6;
   text-align: justify;
   color: #002060;
@@ -1489,7 +1489,7 @@ figure {
 
 #upcoming-events .fh5co-event button a {
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 #events .blog-text p {
@@ -1901,7 +1901,7 @@ figure {
 
 .fh5co-counters .fh5co-counter-label {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-bottom: 2em;
   display: block;
   font-family: "Roboto Slab", serif;
@@ -2255,13 +2255,13 @@ figure {
   width: 80px;
   padding: 20px;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 24px;
   color: #002060;
 }
 
 .fh5co-event h3 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-bottom: 20px;
   line-height: 1.5;
 }
@@ -2309,7 +2309,7 @@ figure {
 .fh5co-blog .blog-text h3 {
   font-family: Khmer OS Siemreap;
   text-align: justify;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -2603,7 +2603,7 @@ figure {
   margin-right: 4px;
   margin-bottom: 4px;
   font-family: "Source Sans Pro", Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 400;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -2763,7 +2763,7 @@ figure {
 .btn-outline {
   background: none;
   border: 2px solid gray;
-  font-size: 1rem;
+  font-size: 0.9rem;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -2979,6 +2979,15 @@ For Media Query Devices with Breakpoint
 ** Mobile Element Image
 ==================================
 */
+@media only screen and (min-width : 320px) {
+  #content-detail .content-history-detail .first_img{
+    width: 355px !important;
+  }
+}
+
+@media only screen and (min-width : 480px) {
+ 
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -3000,7 +3009,7 @@ For Media Query Devices with Breakpoint
   }
 
   .content-history-detail span {
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
     padding: 10px 0px;
     margin: 0px 10px;
   }
@@ -3015,7 +3024,7 @@ For Media Query Devices with Breakpoint
   #content-detail .content-structure-detail p {
     margin-top: 10px;
     color: #002060;
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align: justify;
     word-spacing: -2px !important;
   }
@@ -3029,25 +3038,21 @@ For Media Query Devices with Breakpoint
 
   .container_txt .content_cen {
     padding: 92px !important;
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
   }
 
   .container_txt .content_center {
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
     word-spacing: 0px;
   }
-
-  /* .container_txt p span{
-    font-size: 1rem;
-  } */
   .container_txt .txt_1,
   .txt_2,
   .cont_txt {
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
   }
 
   .container_txt .pre_txt {
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
   }
 
   /* vision mission */
@@ -3062,14 +3067,14 @@ For Media Query Devices with Breakpoint
   .sub_container .content_vision,
   .content_mission,
   .content_edu {
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
     display: block;
     width: 370px;
     word-spacing: -2px !important;
   }
 
   .sub_container .content_knowledge li div span {
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
     display: block;
     width: 290px;
   }
@@ -3079,7 +3084,7 @@ For Media Query Devices with Breakpoint
   }
 
   #content-detail .content_excellance li div .ct_ex {
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
     display: block;
     width: 290px;
   }
@@ -3093,13 +3098,13 @@ For Media Query Devices with Breakpoint
   .container .row .txt_reco {
     text-align: justify;
     width: 200px;
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
     word-spacing: -2px;
   }
 
   /* faculty economic */
   #content-detail .fac_eco {
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
     margin-left: 5px !important;
   }
 
@@ -3109,10 +3114,9 @@ For Media Query Devices with Breakpoint
     object-fit: cover;
     border-radius: 5px 5px 0px 0px;
   }
-
-  #content-detail .content-history-detail .first_img {
+  /* #content-detail .content-history-detail .first_img {
     width: 390px !important;
-  }
+  } */
 
   /* .pagination .page-item .bg_btn{
     font-size: 9px;
@@ -3127,10 +3131,6 @@ For Media Query Devices with Breakpoint
     border: 3px solid #002060;
     padding: 7px 10px;
   }
-
-  /* .row>* {
-    margin-bottom: -20px;
-  } */
   .mt-5{
     margin-top: 0rem !important;
   }
@@ -3141,7 +3141,7 @@ For Media Query Devices with Breakpoint
   */
 
   .right-content-economic .item .item-link {
-    padding: 1rem;
+    padding: 0.9rem;
     text-decoration: none;
     color: #002060;
     font-size: 0.99rem;
@@ -3182,6 +3182,7 @@ For Media Query Devices with Breakpoint
     width: 100%;
     object-fit: cover;
   }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

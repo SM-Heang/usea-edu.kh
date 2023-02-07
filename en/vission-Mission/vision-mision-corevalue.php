@@ -3,7 +3,7 @@
 		if(session_status() === PHP_SESSION_NONE){
 			session_start();
 		}
-		$_SESSION['right_economic'] = 'academic';
+		// $_SESSION['right_economic'] = 'academic';
 		$_SESSION['page'] = $page;
 
 	include_once '../include/header.php';
