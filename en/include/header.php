@@ -124,7 +124,7 @@
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/core-value.png" class="nav-icon" width="25px" height="25px">
-											<a href="../Pages/vission-mission-core-value.php">Vision Mission & Core Value</a>
+											<a href="../Pages/vision-mision-corevalue.php">Vision Mission & Core Value</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/location.png" class="nav-icon" width="25px" height="25px">

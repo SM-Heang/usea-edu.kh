@@ -51,7 +51,7 @@ include_once '../../connection/db.connection.php';
 							$sql .= " OFFSET " . ($_GET['page'] - 1) * 12;
 						}
 					}
-					echo $sql;
+					// echo $sql;
 					$stmt = $conn->prepare($sql);
 					$stmt->execute();
 					$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
