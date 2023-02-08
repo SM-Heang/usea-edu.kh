@@ -1,9 +1,11 @@
 <?php
-	$page = 'partnership_international';
+		$page = 'partnership_local';
+
 	if (session_status() === PHP_SESSION_NONE) {
 		session_start();
 	}
-	$_SESSION['right_partnership']= $page;
+	$_SESSION['page']= $page;
+	$_SESSION['right_partnership']= 'partnership-international';
 	
     include_once '../include/header.php';
     include_once '../../connection/db.connection.php';

@@ -690,6 +690,7 @@ body {
   height: 5px;
   background-color: #002060;
   margin: 6px 0px;
+  border-radius: 10px;
   transition: 0.4s;
 }
 
@@ -2983,6 +2984,12 @@ For Media Query Devices with Breakpoint
   #content-detail .content-history-detail .first_img{
     width: 355px !important;
   }
+  .sub_container .content_mission{
+    font-size: 0.9rem !important;
+    display: block;
+    width: 370px !important;
+    word-spacing: -2px !important;
+  }
 }
 
 @media only screen and (min-width : 480px) {
@@ -3065,11 +3072,16 @@ For Media Query Devices with Breakpoint
   }
 
   .sub_container .content_vision,
-  .content_mission,
   .content_edu {
     font-size: 0.9rem !important;
     display: block;
     width: 370px;
+    word-spacing: -2px !important;
+  }
+  .sub_container .content_mission{
+    font-size: 0.9rem !important;
+    display: block;
+    width: 390px !important;
     word-spacing: -2px !important;
   }
 
@@ -3166,7 +3178,7 @@ For Media Query Devices with Breakpoint
 
   .d-flex {
     display: flex !important;
-    justify-content: center;
+    /* justify-content: center; */
     margin: 10px 0px;
   }
 }

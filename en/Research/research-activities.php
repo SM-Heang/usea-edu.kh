@@ -38,21 +38,28 @@
 						Research Activities
 					</div>
 				</div>
-				<div id="content-detail">
+				<!-- <div id="content-detail">
 					<?php  
 							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =27");
 							$stmt->execute();
 							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-							// echo "<pre>";
-							// print_r($result);
-							// echo "</pre>";
 						foreach ($result as $key => $value) { ?>
-						<!-- <img src="media/events/independent_days.jpg" alt="independent_days" width="375px" height="245px"> -->
 						<p><?php echo $value['article_description_en'];?></p>
 					<?php } ?>
-
-
-				</div>
+				</div> -->
+				<div id="content-detail">
+				<?php
+				$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id = 304");
+				$stmt->execute();
+				$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+				// echo "<pre>";
+				// print_r($result);
+				// echo "</pre>";
+				foreach ($result as $key => $value) { ?>
+					<!-- <img src="media/events/independent_days.jpg" alt="independent_days" width="375px" height="245px"> -->
+					<p><?php echo $value['article_description_en']; ?></p>
+				<?php } ?>
+			</div>
 			</div>
 			<!-- Start Right Content-->
 			<?php

@@ -31,11 +31,6 @@
 						
 						<?php
 						if (
-							// $_SESSION['right_economic'] == 'finance_banking' ||
-							// $_SESSION['right_economic'] == 'manage_ment' ||
-							// $_SESSION['right_economic'] == 'accoun_ting' ||
-							// $_SESSION['right_economic'] == 'marke_ting' ||
-							// $_SESSION['right_economic'] == 'tou_rism'
 							$_SESSION['page'] == 'finance-banking' ||
 								$_SESSION['page'] == 'management' ||
 								$_SESSION['page'] == 'accounting' ||
