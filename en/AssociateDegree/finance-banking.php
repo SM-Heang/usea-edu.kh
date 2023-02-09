@@ -1,12 +1,10 @@
 <?php 
-	$page = 'finance_banking';
+	$page = 'academics';
 		if(session_status() === PHP_SESSION_NONE){
 			session_start();
 		}
-		// show active dropdown
-		// show icon dropdown
+
 		$_SESSION['right_economic'] = $page;
-		// show active color
 		$_SESSION['page'] = 'finance-banking';
 
 	include_once '../include/header.php';

@@ -1,5 +1,5 @@
 <?php 
-	$page = 'bachelor_tourism_hospitality_management';
+	$page = 'academics';
 	if(session_status() === PHP_SESSION_NONE){
 		session_start();
 	}

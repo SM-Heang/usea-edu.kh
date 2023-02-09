@@ -1,5 +1,5 @@
 <?php 
-	$page = 'bachelor_degree_accounting_auditing';
+	$page = 'academics';
 	if(session_status() === PHP_SESSION_NONE){
 		session_start();
 	}

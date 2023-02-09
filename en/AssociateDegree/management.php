@@ -1,12 +1,9 @@
 <?php 
-	$page = 'manage_ment';
+	$page = 'academics';
 	 if(session_status() === PHP_SESSION_NONE){
 		session_start();
 	 }
-	  // show active dropdown
-	 // show icon dropdown
 	 $_SESSION['right_economic'] = $page;
-	 // show active color
 	 $_SESSION['page'] = 'management';
 
 	include_once '../include/header.php';

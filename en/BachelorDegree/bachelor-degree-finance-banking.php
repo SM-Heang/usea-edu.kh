@@ -1,5 +1,5 @@
 <?php 
-	$page = 'bachelor_degree_finance_banking';
+	$page = 'academics';
 	if(session_status() === PHP_SESSION_NONE){
 		session_start();
 	}

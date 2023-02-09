@@ -1,5 +1,5 @@
 <?php 
-	$page = 'bechelor_international_business';
+	$page = 'academics';
 	if(session_status() === PHP_SESSION_NONE){
 		session_start();
 	}

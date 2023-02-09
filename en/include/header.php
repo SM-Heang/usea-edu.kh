@@ -152,7 +152,14 @@
 						</div>
 					</li>
 					<li>
-						<a class="<?php if($_SESSION['page'] == 'vision_mision_corevalue'){ echo 'active'; } ?>" href="../vission-Mission/vision-mision-corevalue.php">Academics</a>
+						<a class="<?php 
+							if($_SESSION['right_economic'] == 'academics'){ echo 'active'; } 
+							if($_SESSION['page'] == 'partnership_local'){ echo 'noactive';}
+							if($_SESSION['page'] == 'about'){ echo 'noactive';}
+							if($_SESSION['page'] == 'research_procedure'){ echo 'noactive';}
+							if($_SESSION['page'] == 'home'){ echo 'noactive';}
+							?>" 
+							href="../vission-Mission/vision-mision-corevalue.php">Academics</a>
 						<div class="mega-box">
 							<div class="content" id="nav-academics">
 								<div class="row">

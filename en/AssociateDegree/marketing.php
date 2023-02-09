@@ -1,5 +1,5 @@
 <?php
-$page = 'marke_ting';
+$page = 'academics';
 if (session_status() === PHP_SESSION_NONE) {
 	session_start();
 }

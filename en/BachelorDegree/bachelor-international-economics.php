@@ -1,5 +1,5 @@
 <?php 
-	$page = 'bachelor_international_economics';
+	$page = 'academics';
 
 	if(session_status() === PHP_SESSION_NONE){
 		session_start();

@@ -1,10 +1,10 @@
 <?php 
-	$page = 'vision_mision_corevalue';
+	$page = 'academics';
 		if(session_status() === PHP_SESSION_NONE){
 			session_start();
 		}
-		// $_SESSION['right_economic'] = 'academic';
-		$_SESSION['page'] = $page;
+		$_SESSION['page'] = 'vision-mission';
+		$_SESSION['right_economic'] = $page;
 
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     
