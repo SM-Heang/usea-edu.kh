@@ -100,7 +100,11 @@ include_once '../../connection/db.connection.php';
 				?>
 				<ul class="pagination d-flex justify-content-center mt-5 mb-3">
 					<li class="page-item">
-						<a class="page-link bg_btn btn m-0">Previous</a>
+						<a class="page-link bg_btn btn m-0"​ href="events.php?page=<?php if (isset($_GET['page']) && $_GET['page'] > 1)
+							echo $_GET['page'] - 1;
+						else
+							echo 1;
+						?>">​Previous</a>
 					</li>
 					<!-- Loop Page Number -->
 					<?php
@@ -120,7 +124,11 @@ include_once '../../connection/db.connection.php';
 													?>" href="events.php?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
 					<?php } ?>
 
-					<a class="page-link bg_btn btn m-0" href="#">Next</a>
+					<a class="page-link bg_btn btn m-0" href="events.php?page=<?php if (isset($_GET['page']) && $_GET['page'] ==$maxpage)
+							echo $maxpage;
+						else
+							echo $_GET['page']+1;
+						?>">Next</a>
 					</li>
 				</ul>
 				<!--End Logic Pagination -->
