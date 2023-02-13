@@ -153,7 +153,7 @@
 					</li>
 					<li>
 						<a class="<?php 
-							if($_SESSION['right_economic'] == 'academics'){ echo 'active'; } 
+							if($_SESSION['page'] == 'vision-mission'){ echo 'active'; } 
 							if($_SESSION['page'] == 'partnership_local'){ echo 'noactive';}
 							if($_SESSION['page'] == 'about'){ echo 'noactive';}
 							if($_SESSION['page'] == 'research_procedure'){ echo 'noactive';}
