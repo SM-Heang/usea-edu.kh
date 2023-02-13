@@ -56,7 +56,7 @@
 								</a>
 							</li>
 							<li>
-								<a class="nav-link item-link <?php if ($_SESSION['page'] == 'events') {
+								<a class="nav-link item-link <?php if ($_SESSION['right'] == 'event_s') {
 													echo 'right_active';
 												} ?>" 
 								   href="events.php"> Past Events 

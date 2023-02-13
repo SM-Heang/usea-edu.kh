@@ -11,7 +11,7 @@ include_once '../include/header.php';
 include_once '../../connection/db.connection.php';
 ?>
 <!-- Start Web Location -->
-
+ 
 <div class="container">
 	<div class="row">
 		<div class="col-12 web-location">

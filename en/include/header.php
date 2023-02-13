@@ -152,13 +152,9 @@
 						</div>
 					</li>
 					<li>
-						<a class="<?php 
-							if($_SESSION['right_economic'] == 'academics'){ echo 'active'; } 
-							if($_SESSION['page'] == 'partnership_local'){ echo 'noactive';}
-							if($_SESSION['page'] == 'about'){ echo 'noactive';}
-							if($_SESSION['page'] == 'research_procedure'){ echo 'noactive';}
-							if($_SESSION['page'] == 'home'){ echo 'noactive';}
-							?>" 
+					
+						<a class="
+						<?php if($_SESSION['page'] == 'academics'){ echo 'active'; } ?>" 
 							href="../vission-Mission/vision-mision-corevalue.php">Academics</a>
 						<div class="mega-box">
 							<div class="content" id="nav-academics">
@@ -245,31 +241,6 @@
 				<!-- =====> End Menu Bar <===== -->
 			</div>
 		</nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		<!-- ====== mobile menu ======= -->
 		<div class="mobile-menu">
 			<ul>
@@ -374,18 +345,6 @@
 		</div>
 	</div>
 	<!-- =====> End Navigation mobile<===== -->
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 	<!-- =====> Start Slider <===== -->

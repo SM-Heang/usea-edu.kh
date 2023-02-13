@@ -55,7 +55,7 @@
 			</div>
 			<!-- Start Right Content-->
 			<?php 
-				include_once "../include/right-conent-partnership.php";
+				include_once "../include/right-content-post-graduate.php";
 			 ?>
 		</div>
 	</div>

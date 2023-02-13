@@ -1,5 +1,6 @@
 <?php
-	$page= 'upcoming-events';
+	// $page= 'upcoming-events';
+	$page = 'about';
 		if(session_status() == PHP_SESSION_NONE){
 			session_start();
 		}

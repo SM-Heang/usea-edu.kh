@@ -1,9 +1,9 @@
 <?php 
-	$page = 'vision_mision_corevalue';
+	// $page = 'about';
 		if(session_status() === PHP_SESSION_NONE){
 			session_start();
 		}
-		$_SESSION['page'] = $page;
+		$_SESSION['page'] = 'about';
 		$_SESSION['right'] = 'vision_mision_corevalue_right';
 
 	include_once '../include/header.php';

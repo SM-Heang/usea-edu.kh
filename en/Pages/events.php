@@ -1,9 +1,11 @@
 <?php
-$page = 'events';
+$page = 'about';
+// $page = 'about';
 if (session_status() === PHP_SESSION_NONE) {
 	session_start();
 }
 $_SESSION['page'] = $page;
+
 $_SESSION['right'] = 'event_s';
 
 include_once '../include/header.php';
@@ -61,9 +63,9 @@ include_once '../../connection/db.connection.php';
 					foreach ($result as $key => $value) { ?>
 						<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex gx-2 gy-2" id="events-card">
 							<div class="card">
-								<div class="bg-image hover-overlay ripple text-center" data-mdb-ripple-color="light">
+								<div class="bg-image hover-overlay ripple text-center" data-mdb-ripple-color="light" style="height: 200px; width: auto;" >
 									<img src="../../media/events/<?php echo $value['event_cover']; ?>" class="img-fluid"
-										style="object-fit: cover;" />
+										style="object-fit: cover;" width="100%"/>
 									<a href="#">
 										<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
 									</a>
@@ -96,7 +98,7 @@ include_once '../../connection/db.connection.php';
 				if ($temp) {
 					$maxpage = ceil($temp['CountRecords'] / 12);
 				}
-
+ 
 				?>
 				<ul class="pagination d-flex justify-content-center mt-5 mb-3">
 					<li class="page-item">
@@ -124,10 +126,17 @@ include_once '../../connection/db.connection.php';
 													?>" href="events.php?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
 					<?php } ?>
 
-					<a class="page-link bg_btn btn m-0" href="events.php?page=<?php if (isset($_GET['page']) && $_GET['page'] ==$maxpage)
+					<a class="page-link bg_btn btn m-0" href="events.php?page=<?php 
+					
+					if (isset($_GET['page'])){
+						if($_GET['page']==$maxpage){
 							echo $maxpage;
-						else
+						}else{
 							echo $_GET['page']+1;
+						}
+					}else{
+						echo 2;
+					}
 						?>">Next</a>
 					</li>
 				</ul>
