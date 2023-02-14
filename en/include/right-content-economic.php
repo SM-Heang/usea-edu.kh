@@ -42,11 +42,11 @@
 						?>
 						
 						">
-							<li><a class="nav-link item-link <?php if ($_SESSION['page'] == 'finance-banking') {
+							<li><a class="nav-link item-link <?php if ($_SESSION['page'] == 'accounting') {
 																	echo 'right_active';
 																} ?>" href="../AssociateDegree/accounting.php"> Accounting  </a></li>
 							
-							<li><a class="nav-link item-link <?php if ($_SESSION['page'] == 'accounting') {
+							<li><a class="nav-link item-link <?php if ($_SESSION['page'] == 'finance-banking') {
 																	echo 'right_active';
 																} ?>" href="../AssociateDegree/finance-banking.php">Finance & Banking </a></li>
 																<li><a class="nav-link item-link <?php if ($_SESSION['page'] == 'management') {
