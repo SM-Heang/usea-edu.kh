@@ -13,7 +13,7 @@
                                         <li><a class="nav-link item-link" aria-current="page" href="../AssociateDegree/finance-banking.php"> Architechture </a></li>
 										<li><a class="nav-link item-link" href="../AssociateDegree/management.php"> Chemistry </a></li> 
 										<li><a class="nav-link item-link" href="../AssociateDegree/accounting.php"> Civil Engineering </a></li> 
-										<li><a class="nav-link item-link" href="../AssociateDegree/marketing.php"> Information Technology </a> </li> 
+										<li><a class="nav-link item-link" href="../BachelorDegree/bachelor-degree-it.php"> Information Technology </a> </li> 
 										<li><a class="nav-link item-link" href="../AssociateDegree/tourism.php"> Mathematics </a> </li>
                                         <li><a class="nav-link item-link" href="../AssociateDegree/tourism.php"> Physics </a> </li>
 										</ul>

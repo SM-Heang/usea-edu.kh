@@ -26,9 +26,9 @@
 										<ul class="submenu collapse">
 											<li><a class="nav-link item-link" href="../BachelorDegree/bachelor-degree-marketing.php"> International Law </a></li>
 											<li><a class="nav-link item-link" href="../BachelorDegree/bachelor-degree-laws.php">Law</a> </li>
-											<li><a class="nav-link item-link" href="../BachelorDegree/bachelor-degree-finance-banking.php"> Political Sciences and International Relations </a> </li>
+											<li><a class="nav-link item-link" href="../BachelorDegree/bachelor-degree-ir.php"> Political Sciences and International Relations </a> </li>
 											<li><a class="nav-link item-link" href="../BachelorDegree/bachelor-degree-industrail-economics.php"> Private Law </a> </li>
-											<li><a class="nav-link item-link" href="../BachelorDegree/bachelor-international-economics.php"> Public Administration </a> </li>
+											<li><a class="nav-link item-link" href="../BachelorDegree/bachelor-degree-public-admin.php"> Public Administration </a> </li>
 										</ul>
                     				</li>
                					</ul>
