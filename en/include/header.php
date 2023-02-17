@@ -174,7 +174,7 @@
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/f-law.png" width="25px" height="25px">
-											<a href="faculty-sciences-law.php">Faculty of Social Science <br>& Law</a>
+											<a href="../vission-Mission/vision-mision-corevalue-law.php">Faculty of Social Science <br>& Law</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/f-art.png" width="25px" height="25px">

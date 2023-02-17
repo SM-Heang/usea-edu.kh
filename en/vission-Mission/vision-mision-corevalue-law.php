@@ -3,26 +3,13 @@
 		if(session_status() === PHP_SESSION_NONE){
 			session_start();
 		}
-		$_SESSION['page'] = $page;
-
-
-		
+		$_SESSION['page'] = 'vision-mission-law';
+		$_SESSION['right_economic'] = $page;
 
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     
-
-	// $id = $_GET['article_id'];
-	// echo "======> " . $id;
-
-	// if(isset($id)){
-	// 	$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id = '$id'");
-	// 						$stmt->execute();
-	// 						$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-	// }
-
  ?>
 	<!-- Start Web Location -->
-	
 	<div class="container">
 		<div class="row">
 			<div class="col-12 web-location">
@@ -33,7 +20,7 @@
 					</a>
 					</li>
 					<li>
-						<a href="#">Faculty of Social Sciences & Law</a>
+						<a href="#">Vision Mission</a>
 					</li>
 				</ul>
 			</div>
@@ -49,12 +36,12 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-					Faculty of Social Sciences & Law
+						Vision Mission
 					</div>
 				</div>
 				<div id="content-detail">
 					<?php  
-							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =382");
+							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =27");
 							$stmt->execute();
 							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 							// echo "<pre>";
@@ -64,17 +51,21 @@
 						<!-- <img src="media/events/independent_days.jpg" alt="independent_days" width="375px" height="245px"> -->
 						<p><?php echo $value['article_description_en'];?></p>
 					<?php } ?>
+
+
 				</div>
 			</div>
 			<!-- Start Right Content-->
-			<?php 
-				include_once "../include/right-content-laws.php";
-			 ?>
+			<?php
+				// include_once 'include/right-content.php';
+				include_once '../include/right-content-laws.php';
+			?>
 		</div>
 	</div>
 	<!-- End Main Content-->
-<?php
-	include_once '../include/buttom-content.php';
-	include_once '../include/footer.php';
-?>
+
+	<?php
+		include_once '../include/buttom-content.php';
+		include_once '../include/footer.php';
+	?>
 
