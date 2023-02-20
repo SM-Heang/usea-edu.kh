@@ -2,7 +2,7 @@
 	<div class="right-content-economic">
 		<div class="item"><a class="item-link <?php if ($_SESSION['page'] == 'vision-mission') {
 													echo 'right_active';
-												}?>" href="../vission-Mission/vision-mision-corevalue.php">Vision & Mission</a></div>
+												}?>" href="../vission-Mission/vision-mision-corevalue-economic.php">Vision & Mission</a></div>
 		<hr>
 		<div class="item">
 			<!-- <a class="item-link" href="#"><i class="fas fa-angle-right"></i> Associate's Degree</a><hr> -->

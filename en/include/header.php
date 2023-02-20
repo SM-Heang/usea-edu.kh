@@ -166,7 +166,7 @@
 									<ul class="mega-link">
 										<li class="list-control">
 											<img src="../../media/nav-icon/f-economic.png" width="25px" height="25px">
-											<a href="../Pages/faculty-economics.php">Faculty of Economics,<br> Business & Tourism</a>
+											<a href="../vission-Mission/vision-mision-corevalue-economic.php">Faculty of Economics,<br> Business & Tourism</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/f-it.png" width="25px" height="25px">
