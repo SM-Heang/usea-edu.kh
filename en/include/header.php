@@ -170,7 +170,7 @@
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/f-it.png" width="25px" height="25px">
-											<a href="../Pages/faculty-sciences-technology.php">Faculty of Sciences & <br> Technology</a>
+											<a href="../vission-Mission/vision-mision-corevalue-science-technology.php">Faculty of Sciences & <br> Technology</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/f-law.png" width="25px" height="25px">
@@ -190,7 +190,7 @@
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/fli.png" width="25px" height="25px">
-											<a href="../Pages/foreign-language.php">Foreign Language <br>Institute</a>
+											<a href="../vission-Mission/vision-mision-corevalue-fli.php">Foreign Language <br>Institute</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/post-graduate.png" width="25px" height="25px">
