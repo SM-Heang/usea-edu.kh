@@ -4,18 +4,18 @@
 		session_start();
 	}
 	$_SESSION['right_economic'] = $page;
-	$_SESSION['page'] = 'bechelor-international-business';
-	
+	$_SESSION['right'] = 'bachelor-accounting-auditing';
+
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     
+
  ?>
 	<!-- Start Web Location -->
 	<div class="container">
 		<div class="row">
 			<div class="col-12 web-location">
 				<ul>
-					<li>
-						<a href="index.php">
+					<li><a href="index.php">
 						<i class="fa-solid fa-house"></i>
 						<i class="fa-solid fa-caret-right"></i>
 					</a>
@@ -24,10 +24,10 @@
 						<a href="#"> Home > </a>
 					</li>
 					<li>
-						<a href="#"> Academics > </a>
+					<a href="#"> Academics > </a>
 					</li>
 					<li>
-						<a href="#"> International Business </a>
+					<a href="#"> Accounting & Auditing </a>
 					</li>
 				</ul>
 			</div>
@@ -43,7 +43,7 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-					Bachelor's Degree in International Business
+					Bachelor's Degree in Accounting & Auditing
 					</div>
 				</div>
 				<div id="content-detail">
@@ -75,7 +75,11 @@
 	<!-- End Main Content-->
 
 	<?php
+		// include_once 'include/buttom-content.php';
 		include_once '../include/buttom-content.php';
+
+		// include_once 'include/footer.php';
 		include_once '../include/footer.php';
+
 	?>
 

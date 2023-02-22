@@ -4,7 +4,7 @@
 			session_start();
 		}
 		$_SESSION['page'] = 'vision-mission-law';
-		$_SESSION['right_economic'] = $page;
+		$_SESSION['right'] = 'faculty-science-law';
 
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     

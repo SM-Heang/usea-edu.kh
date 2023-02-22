@@ -1,12 +1,12 @@
 <?php 
 	$page = 'academics';
-	if(session_status() === PHP_SESSION_NONE){
-		session_start();
-	}
-	$_SESSION['right_economic'] = $page;
-	$_SESSION['page'] = 'bachelor-degree-management';
+		if(session_status() === PHP_SESSION_NONE){
+			session_start();
+		}
+		$_SESSION['right_economic'] = $page;
+		$_SESSION['right'] = 'bachelor-marketing';
+		
 
-	
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     
  ?>
@@ -27,7 +27,7 @@
 					<a href="#"> Academics > </a>
 					</li>
 					<li>
-					<a href="#"> Information Technology </a>
+					<a href="#"> Marketing </a>
 					</li>
 				</ul>
 			</div>
@@ -43,12 +43,12 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-					Bachelor's Degree in Management
+					Bachelor's Degree in Marketing
 					</div>
 				</div>
 				<div id="content-detail">
 					<?php  
-							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =387");
+							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =27");
 							$stmt->execute();
 							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 							// echo "<pre>";
@@ -68,7 +68,7 @@
 			</div>
 			<!-- Start Right Content-->
 			<?php
-				include_once '../include/right-content-sciences-technology.php';
+				include_once '../include/right-content-economic.php';
 			?>
 		</div>
 	</div>

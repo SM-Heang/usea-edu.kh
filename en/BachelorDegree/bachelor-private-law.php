@@ -4,7 +4,7 @@
 		session_start();
 	}
 	$_SESSION['right_economic'] = $page;
-	$_SESSION['page'] = 'bachelor-degree-laws';
+	$_SESSION['right'] = 'bachelor-privat-law';
 
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     
@@ -27,7 +27,7 @@
 					<a href="#"> Academics > </a>
 					</li>
 					<li>
-					<a href="#"> Public Administration </a>
+					<a href="#"> Accounting & Auditing </a>
 					</li>
 				</ul>
 			</div>

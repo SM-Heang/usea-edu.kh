@@ -5,7 +5,7 @@
 		}
 
 		$_SESSION['right_economic'] = $page;
-		$_SESSION['page'] = 'finance-banking';
+		$_SESSION['right'] = 'finance-banking';
 
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     

@@ -1,8 +1,8 @@
 <div class="col-xxl-3">
 	<div class="right-content-economic">
-		<div class="item"><a class="item-link <?php if ($_SESSION['page'] == 'vision-mission') {
-													echo 'right_active';
-												}?>" href="../vission-Mission/vision-mision-corevalue-fli.php">Vision & Mission</a></div>
+		<div class="item"><a class="item-link <?php if ($_SESSION['right'] == 'foreign-language-institute') {
+			echo 'right_active';
+		} ?>" href="../vission-Mission/vision-mision-corevalue-fli.php">Vision & Mission</a></div>
 		<!-- <hr> -->
 		<div class="item">
 			<!-- <a class="item-link" href="#"><i class="fas fa-angle-right"></i> Associate's Degree</a><hr> -->
@@ -32,10 +32,10 @@
 						<?php
 						if (
 							$_SESSION['page'] == 'finance-banking' ||
-								$_SESSION['page'] == 'management' ||
-								$_SESSION['page'] == 'accounting' ||
-								$_SESSION['page'] == 'marketing' ||
-								$_SESSION['page'] == 'tourism'
+							$_SESSION['page'] == 'management' ||
+							$_SESSION['page'] == 'accounting' ||
+							$_SESSION['page'] == 'marketing' ||
+							$_SESSION['page'] == 'tourism'
 						) {
 							echo "show";
 						}
@@ -43,21 +43,21 @@
 						
 						">
 							<li><a class="nav-link item-link <?php if ($_SESSION['page'] == 'accounting') {
-																	echo 'right_active';
-																} ?>" href="../AssociateDegree/accounting.php"> Accounting  </a></li>
+								echo 'right_active';
+							} ?>" href="../AssociateDegree/accounting.php"> Accounting  </a></li>
 							
 							<li><a class="nav-link item-link <?php if ($_SESSION['page'] == 'finance-banking') {
-																	echo 'right_active';
-																} ?>" href="../AssociateDegree/finance-banking.php">Finance & Banking </a></li>
+								echo 'right_active';
+							} ?>" href="../AssociateDegree/finance-banking.php">Finance & Banking </a></li>
 																<li><a class="nav-link item-link <?php if ($_SESSION['page'] == 'management') {
 																	echo 'right_active';
 																} ?>" href="../AssociateDegree/management.php"> Management </a></li>
 							<li><a class="nav-link item-link <?php if ($_SESSION['page'] == 'marketing') {
-																	echo 'right_active';
-																} ?>" href="../AssociateDegree/marketing.php"> Marketing </a> </li>
+								echo 'right_active';
+							} ?>" href="../AssociateDegree/marketing.php"> Marketing </a> </li>
 							<li><a class="nav-link item-link <?php if ($_SESSION['page'] == 'tourism') {
-																	echo 'right_active';
-																} ?>" href="../AssociateDegree/tourism.php"> Tourism </a> </li>
+								echo 'right_active';
+							} ?>" href="../AssociateDegree/tourism.php"> Tourism </a> </li>
 						</ul>
 					</li>
 				</ul>
@@ -74,20 +74,10 @@
 
 							<?php
 							if (
-								$_SESSION['page'] == 'bachelor-degree-management' ||
-								$_SESSION['page'] == 'bachelor-degree-marketing' ||
-								$_SESSION['page'] == 'bachelor-degree-accounting-auditing' ||
-								$_SESSION['page'] == 'bachelor-degree-accounting-auditing' ||
-								$_SESSION['page'] == 'bachelor-degree-industrail-economics' ||
-								$_SESSION['page'] == 'bachelor-degree-finance-banking' ||
-								$_SESSION['page'] == 'bachelor-international-economics' ||
-								$_SESSION['page'] == 'bachelor-intrepreneurship' ||
-								$_SESSION['page'] == 'bechelor-international-business' ||
-								$_SESSION['page'] == 'bachelor-international-tourism-management' ||
-								$_SESSION['page'] == 'bechelor-catering-management' ||
-								$_SESSION['page'] == 'bachelor-tourism-hospitality-management' ||
-								$_SESSION['page'] == 'bachelor-eco-tourism' ||
-								$_SESSION['page'] == 'bachelor-event-management'
+								$_SESSION['right'] == 'bachelor-english-for-translation' ||
+								$_SESSION['right'] == 'bachelor-english-for-business' ||
+								$_SESSION['right'] == 'bachelor-tefl' ||
+								$_SESSION['right'] == 'bachelor-teaching-english-children'
 							) {
 
 								echo '<i class="fa-solid fa-angle-up i_2"></i>';
@@ -102,60 +92,47 @@
 						
 						<?php
 						if (
-							$_SESSION['page'] == 'bachelor-degree-management' ||
-							$_SESSION['page'] == 'bachelor-degree-marketing' ||
-							$_SESSION['page'] == 'bachelor-degree-accounting-auditing' ||
-							$_SESSION['page'] == 'bachelor-degree-industrail-economics' ||
-							$_SESSION['page'] == 'bachelor-degree-finance-banking' ||
-							$_SESSION['page'] == 'bachelor-international-economics' ||
-							$_SESSION['page'] == 'bachelor-intrepreneurship' ||
-							$_SESSION['page'] == 'bechelor-international-business' ||
-							$_SESSION['page'] == 'bachelor-international-tourism-management' ||
-							$_SESSION['page'] == 'bechelor-catering-management' ||
-							$_SESSION['page'] == 'bachelor-tourism-hospitality-management' ||
-							$_SESSION['page'] == 'bachelor-eco-tourism' ||
-							$_SESSION['page'] == 'bachelor-event-management'
+							$_SESSION['right'] == 'bachelor-english-for-translation' ||
+							$_SESSION['right'] == 'bachelor-english-for-business' ||
+							$_SESSION['right'] == 'bachelor-tefl' ||
+							$_SESSION['right'] == 'bachelor-teaching-english-children'
 						) {
 							echo "show";
 						}
 						?>
 						
 						">
-						<li>
+							<li>
 								<a class="nav-link item-link 
-										<?php if ($_SESSION['page'] == 'bachelor-degree-accounting-auditing') {
-																	echo 'right_active';
-																} ?>" 
-									href="#"> English for Translation
+										<?php if ($_SESSION['right'] == 'bachelor-english-for-translation') {
+											echo 'right_active';
+										} ?>" href="../BachelorDegree/bachelor-english-for-translation.php"> English for Translation
 								</a>
-							 </li>
+							</li>
 
-							 <li>
+							<li>
 								<a class="nav-link item-link 
-										<?php if ($_SESSION['page'] == 'bechelor-catering-management') {
-																	echo 'right_active';
-																} ?>" 
-									href="#"> English for International Business Relation
+										<?php if ($_SESSION['right'] == 'bachelor-english-for-business') {
+											echo 'right_active';
+										} ?>" href="../BachelorDegree/bachelor-english-for-business.php"> English for International Business Relation
 								</a>
-							 </li>
+							</li>
 
-							 <li>
+							<li>
 								<a class="nav-link item-link 
-										<?php if ($_SESSION['page'] == 'bachelor-eco-tourism') {
-																	echo 'right_active';
-																} ?>" 
-									href="#"> Teaching English as Foreign Language
+										<?php if ($_SESSION['right'] == 'bachelor-tefl') {
+											echo 'right_active';
+										} ?>" href="../BachelorDegree/bachelor-tefl.php"> Teaching English as Foreign Language
 								</a>
-							 </li>
+							</li>
 
-							 <li>
+							<li>
 								<a class="nav-link item-link 
-										<?php if ($_SESSION['page'] == 'bachelor-event-management') {
-																	echo 'right_active';
-																} ?>" 
-									href="#"> Teaching English to Children 
+										<?php if ($_SESSION['right'] == 'bachelor-teaching-english-children') {
+											echo 'right_active';
+										} ?>" href="../BachelorDegree/bachelor-teaching-english-to-children.php"> Teaching English to Children
 								</a>
-							 </li>
+							</li>
 						</ul>
 					</li>
 				</ul>

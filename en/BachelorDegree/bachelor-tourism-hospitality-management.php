@@ -4,7 +4,7 @@
 		session_start();
 	}
 	$_SESSION['right_economic'] = $page;
-	$_SESSION['page'] = 'bachelor-tourism-hospitality-management';
+	$_SESSION['right'] = 'bachelor-tourism-hospitality-management';
 
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     

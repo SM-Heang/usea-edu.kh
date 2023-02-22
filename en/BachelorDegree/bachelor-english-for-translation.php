@@ -4,7 +4,7 @@
 		session_start();
 	}
 	$_SESSION['right_economic'] = $page;
-	$_SESSION['page'] = 'bachelor-degree-accounting-auditing';
+	$_SESSION['right'] = 'bachelor-english-for-translation';
 
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     
@@ -27,7 +27,7 @@
 					<a href="#"> Academics > </a>
 					</li>
 					<li>
-					<a href="#"> Accounting & Auditing </a>
+					<a href="#"> Laws </a>
 					</li>
 				</ul>
 			</div>
@@ -48,7 +48,7 @@
 				</div>
 				<div id="content-detail">
 					<?php  
-							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =27");
+							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =382");
 							$stmt->execute();
 							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 							// echo "<pre>";
@@ -68,7 +68,7 @@
 			</div>
 			<!-- Start Right Content-->
 			<?php
-				include_once '../include/right-content-economic.php';
+				include_once '../include/right-content-fli.php';
 			?>
 		</div>
 	</div>

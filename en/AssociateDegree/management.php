@@ -4,7 +4,7 @@
 		session_start();
 	 }
 	 $_SESSION['right_economic'] = $page;
-	 $_SESSION['page'] = 'management';
+	 $_SESSION['right'] = 'management';
 
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     

@@ -178,7 +178,7 @@
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/f-art.png" width="25px" height="25px">
-											<a href="../Pages/faculty-arts-humanities-education.php">Faculty of Arts, Humanities <br>& Education</a>
+											<a href="../vission-Mission/vision-mision-corevalue-art-humanities.php">Faculty of Arts, Humanities <br>& Education</a>
 										</li>
 									</ul>
 								</div>

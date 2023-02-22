@@ -4,7 +4,7 @@
 		session_start();
 	}
 	$_SESSION['right_economic'] = $page;
-	$_SESSION['page'] = 'bachelor-eco-tourism';
+	$_SESSION['right'] = 'bachelor-eco-tourism';
 	
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     

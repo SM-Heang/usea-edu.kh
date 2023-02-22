@@ -3,9 +3,8 @@
 		if(session_status() === PHP_SESSION_NONE){
 			session_start();
 		}
-		$_SESSION['right_economic'] = $page;
-		$_SESSION['page'] = 'bachelor-degree-marketing';
-		
+		$_SESSION['page'] = 'vision-mission-law';
+		$_SESSION['right'] = 'faculty-science-art-human';
 
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     
@@ -21,13 +20,7 @@
 					</a>
 					</li>
 					<li>
-						<a href="#"> Home > </a>
-					</li>
-					<li>
-					<a href="#"> Academics > </a>
-					</li>
-					<li>
-					<a href="#"> Marketing </a>
+						<a href="#">Vision Mission</a>
 					</li>
 				</ul>
 			</div>
@@ -43,7 +36,7 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-					Bachelor's Degree in Marketing
+						Vision Mission
 					</div>
 				</div>
 				<div id="content-detail">
@@ -56,11 +49,7 @@
 							// echo "</pre>";
 						foreach ($result as $key => $value) { ?>
 						<!-- <img src="media/events/independent_days.jpg" alt="independent_days" width="375px" height="245px"> -->
-						<p>
-                            <?php 
-                                 echo $value['article_description_en'];
-                            ?>
-                        </p>
+						<p><?php echo $value['article_description_en'];?></p>
 					<?php } ?>
 
 
@@ -68,7 +57,8 @@
 			</div>
 			<!-- Start Right Content-->
 			<?php
-				include_once '../include/right-content-economic.php';
+				// include_once 'include/right-content.php';
+				include_once '../include/right-content-art-human.php';
 			?>
 		</div>
 	</div>

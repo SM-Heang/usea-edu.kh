@@ -1,28 +1,16 @@
 <?php 
 	$page = 'academics';
-		if(session_status() === PHP_SESSION_NONE){
-			session_start();
-		}
-		$_SESSION['page'] = $page;
-
-
-		
+	if(session_status() === PHP_SESSION_NONE){
+		session_start();
+	}
+	$_SESSION['right_economic'] = $page;
+	$_SESSION['right'] = 'bachelor-philosophy';
 
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     
 
-	// $id = $_GET['article_id'];
-	// echo "======> " . $id;
-
-	// if(isset($id)){
-	// 	$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id = '$id'");
-	// 						$stmt->execute();
-	// 						$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-	// }
-
  ?>
 	<!-- Start Web Location -->
-	
 	<div class="container">
 		<div class="row">
 			<div class="col-12 web-location">
@@ -33,7 +21,13 @@
 					</a>
 					</li>
 					<li>
-						<a href="#">Faculty of Social Sciences & Law</a>
+						<a href="#"> Home > </a>
+					</li>
+					<li>
+					<a href="#"> Academics > </a>
+					</li>
+					<li>
+					<a href="#"> Laws </a>
 					</li>
 				</ul>
 			</div>
@@ -49,7 +43,7 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-					Faculty of Social Sciences & Law
+					Bachelor's Degree in Accounting & Auditing
 					</div>
 				</div>
 				<div id="content-detail">
@@ -62,19 +56,30 @@
 							// echo "</pre>";
 						foreach ($result as $key => $value) { ?>
 						<!-- <img src="media/events/independent_days.jpg" alt="independent_days" width="375px" height="245px"> -->
-						<p><?php echo $value['article_description_en'];?></p>
+						<p>
+                            <?php 
+                                 echo $value['article_description_en'];
+                            ?>
+                        </p>
 					<?php } ?>
+
+
 				</div>
 			</div>
 			<!-- Start Right Content-->
-			<?php 
-				include_once "../include/right-content-laws.php";
-			 ?>
+			<?php
+				include_once '../include/right-content-art-human.php';
+			?>
 		</div>
 	</div>
 	<!-- End Main Content-->
-<?php
-	include_once '../include/buttom-content.php';
-	include_once '../include/footer.php';
-?>
+
+	<?php
+		// include_once 'include/buttom-content.php';
+		include_once '../include/buttom-content.php';
+
+		// include_once 'include/footer.php';
+		include_once '../include/footer.php';
+
+	?>
 
