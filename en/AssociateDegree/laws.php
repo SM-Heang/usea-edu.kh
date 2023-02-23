@@ -26,7 +26,7 @@
 					<a href="#">Academics > </a>
 					</li>
 					<li>
-					<a href="#">Accounting  </a>
+					<a href="#"> Laws  </a>
 					</li>
 				</ul>
 			</div>

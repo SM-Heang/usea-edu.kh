@@ -27,7 +27,7 @@
 					<a href="#"> Academics > </a>
 					</li>
 					<li>
-					<a href="#"> Laws </a>
+					<a href="#"> Curriculum Development </a>
 					</li>
 				</ul>
 			</div>

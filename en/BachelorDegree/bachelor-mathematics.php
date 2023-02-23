@@ -27,7 +27,7 @@
 					<a href="#"> Academics > </a>
 					</li>
 					<li>
-					<a href="#"> Architecture </a>
+					<a href="#"> Mathematics </a>
 					</li>
 				</ul>
 			</div>

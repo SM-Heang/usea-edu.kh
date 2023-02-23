@@ -27,7 +27,7 @@
 					<a href="#"> Academics > </a>
 					</li>
 					<li>
-					<a href="#"> Accounting & Auditing </a>
+					<a href="#"> Private Law </a>
 					</li>
 				</ul>
 			</div>

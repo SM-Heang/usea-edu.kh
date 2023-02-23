@@ -10,7 +10,6 @@ $_SESSION['right'] = 'event_s';
 
 include_once '../include/header.php';
 include_once '../../connection/db.connection.php';
-
 ?>
 
 <!-- Start Web Location -->

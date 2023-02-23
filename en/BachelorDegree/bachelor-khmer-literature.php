@@ -27,7 +27,7 @@
 					<a href="#"> Academics > </a>
 					</li>
 					<li>
-					<a href="#"> Laws </a>
+					<a href="#"> Khmer Literature </a>
 					</li>
 				</ul>
 			</div>

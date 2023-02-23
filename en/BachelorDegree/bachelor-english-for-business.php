@@ -27,7 +27,7 @@
 					<a href="#"> Academics > </a>
 					</li>
 					<li>
-					<a href="#"> Laws </a>
+					<a href="#"> English For International Business Relation </a>
 					</li>
 				</ul>
 			</div>

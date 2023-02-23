@@ -70,7 +70,8 @@ include_once '../../connection/db.connection.php';
 					</p>
 				</div>
 				<?php
-				$stmt = $conn->prepare("SELECT * from usea_events WHERE event_status = 'past' ORDER BY event_date DESC limit 4;");
+				$stmt = $conn->prepare("SELECT * from usea
+				_events WHERE event_status = 'past' ORDER BY event_date DESC limit 4;");
 				$stmt->execute();
 				$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 				foreach ($result as $key => $value) { ?>
@@ -87,7 +88,7 @@ include_once '../../connection/db.connection.php';
 								<p class="card-text"><?php echo substr($value['event_description_en'], 0, 0) ?></p>
 							</div>
 							<div style="text-align: right;">
-								<a href="#" class="btn btn-danger btn-sm">Read More</a>
+								<a href="event-detail.php?id=<?php echo $value['event_id'] ?>" class="btn btn-danger btn-sm">Read More</a>
 							</div>
 						</div>
 					</div>

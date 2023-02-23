@@ -27,7 +27,7 @@
 					<a href="#">Academics > </a>
 					</li>
 					<li>
-					<a href="#">Feculty of Economics, Business & Tourism </a>
+					<a href="#">Finance & Banking</a>
 					</li>
 				</ul>
 			</div>

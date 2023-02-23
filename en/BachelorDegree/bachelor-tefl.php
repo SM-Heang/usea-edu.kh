@@ -27,7 +27,7 @@
 					<a href="#"> Academics > </a>
 					</li>
 					<li>
-					<a href="#"> Laws </a>
+					<a href="#"> Teaching English as Foreign Language </a>
 					</li>
 				</ul>
 			</div>
