@@ -35,11 +35,11 @@
 						">
 							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'laws') {
 								echo 'right_active';
-							} ?>" aria-current="page" href="../AssociateDegree/laws.php"> Law
+							} ?>" aria-current="page" href="#"> Law
 								</a></li>
 							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'public-admin') {
 								echo 'right_active';
-							} ?>" href="../AssociateDegree/public-admin.php"> Public Adminstration </a></li>
+							} ?>" href="#"> Public Adminstration </a></li>
 						</ul>
 					</li>
 				</ul>
@@ -85,18 +85,18 @@
 						">
 							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'bachelor-international-law') {
 								echo 'right_active';
-							} ?>" href="../BachelorDegree/bachelor-international-law.php"> International
+							} ?>" href="#"> International
 									Law </a></li>
 							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'bachelor-laws') {
 								echo 'right_active';
 							} ?>" href="../BachelorDegree/bachelor-laws.php">Laws</a> </li>
 							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'bachelor-international-relations') {
 								echo 'right_active';
-							} ?>" href="../BachelorDegree/bachelor-international-relations.php"> Political
+							} ?>" href="#"> Political
 									Sciences and International Relations </a> </li>
 							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'bachelor-privat-law') {
 								echo 'right_active';
-							} ?>" href="../BachelorDegree/bachelor-private-law.php"> Private Law </a> </li>
+							} ?>" href="#"> Private Law </a> </li>
 							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'bachelor-public-admin') {
 								echo 'right_active';
 							} ?>" href="../BachelorDegree/bachelor-public-admin.php"> Public

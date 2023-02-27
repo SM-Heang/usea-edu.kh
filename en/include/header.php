@@ -153,7 +153,7 @@
 					</li>
 					<li>
 						<a class="<?php 
-							if($_SESSION['right_economic'] == 'academics'){ echo 'active'; } 
+							if($_SESSION['page'] == 'academics'){ echo 'active'; } 
 							if($_SESSION['page'] == 'partnership_local'){ echo 'noactive';}
 							if($_SESSION['page'] == 'about'){ echo 'noactive';}
 							if($_SESSION['page'] == 'research_procedure'){ echo 'noactive';}
@@ -207,22 +207,22 @@
 					</li>
 					<li><a class="<?php if($_SESSION['page'] == 'partnership_local'){ echo 'active'; } ?>" href="../Pages/partnership-local.php">Partnership</a></li>
 					<li>
-						<a class="<?php if($_SESSION['page'] == 'research_procedure'){ echo 'active'; } ?>" href="../Research/research-policy-procedure.php">Research</a>
+						<a class="<?php if($_SESSION['page'] == 'research_procedure'){ echo 'active'; } ?>" href="#">Research</a>
 						<div class="mega-box">
 							<div class="content" id="nav-research">
 								<div class="row">
 									<ul class="mega-link">
 										<li class="list-control">
 											<img src="../../media/nav-icon/policy-and-procedure.png" width="25px" height="25px">
-											<a href="../Research/research-policy-procedure.php">Research Policy and Procedure</a>
+											<a href="#">Research Policy and Procedure</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/research-activity.png" width="25px" height="25px">
-											<a href="../Research/research-activities.php">Research Activites</a>
+											<a href="#">Research Activites</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/project.png" width="25px" height="25px">
-											<a href="../Research/research-project.php">Research Project</a>
+											<a href="#">Research Project</a>
 										</li>
 									</ul>
 								</div>
@@ -230,11 +230,11 @@
 									<ul class="mega-link">
 										<li class="list-control">
 											<img src="../../media/nav-icon/research-team.png" width="25px" height="25px">
-											<a href="../Research/research-team.php">Research Team</a>
+											<a href="#">Research Team</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/publication.png" width="25px" height="25px">
-											<a href="../Research/publication.php">Publication</a>
+											<a href="#">Publication</a>
 										</li>
 									</ul>
 								</div>

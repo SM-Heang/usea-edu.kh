@@ -9,7 +9,7 @@
 			<nav class="sidebar">
 				<ul class="nav flex-column" id="nav_accordion">
 					<li class="nav-item has-submenu select-menu">
-						<a class="nav-link item-link select-btn" href="../AssociateDegree/finance-banking.php">Associate's Degree
+						<a class="nav-link item-link select-btn" href="#">Associate's Degree
 
 							<?php
 							if (
@@ -44,20 +44,20 @@
 						">
 							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'accounting') {
 								echo 'right_active';
-							} ?>" href="../AssociateDegree/accounting.php"> Accounting </a></li>
+							} ?>" href="#"> Accounting </a></li>
 
 							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'finance-banking') {
 								echo 'right_active';
-							} ?>" href="../AssociateDegree/finance-banking.php">Finance & Banking </a></li>
+							} ?>" href="#">Finance & Banking </a></li>
 							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'management') {
 								echo 'right_active';
-							} ?>" href="../AssociateDegree/management.php"> Management </a></li>
+							} ?>" href="#"> Management </a></li>
 							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'marketing') {
 								echo 'right_active';
-							} ?>" href="../AssociateDegree/marketing.php"> Marketing </a> </li>
+							} ?>" href="#"> Marketing </a> </li>
 							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'tourism') {
 								echo 'right_active';
-							} ?>" href="../AssociateDegree/tourism.php"> Tourism </a> </li>
+							} ?>" href="#"> Tourism </a> </li>
 						</ul>
 					</li>
 				</ul>
@@ -125,7 +125,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-accounting-auditing') {
 											echo 'right_active';
-										} ?>" href="../BachelorDegree/bachelor-accounting-auditing.php"> Accounting & Auditing
+										} ?>" href="#"> Accounting & Auditing
 								</a>
 							</li>
 
@@ -133,7 +133,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-catering-management') {
 											echo 'right_active';
-										} ?>" href="../BachelorDegree/bachelor-catering-management.php"> Catering Management
+										} ?>" href="#"> Catering Management
 								</a>
 							</li>
 
@@ -141,7 +141,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-eco-tourism') {
 											echo 'right_active';
-										} ?>" href="../BachelorDegree/bachelor-eco-tourism.php"> Eco-Tourism
+										} ?>" href="#"> Eco-Tourism
 								</a>
 							</li>
 
@@ -149,7 +149,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-event-management') {
 											echo 'right_active';
-										} ?>" href="../BachelorDegree/bachelor-event-management.php"> Event Management
+										} ?>" href="#"> Event Management
 								</a>
 							</li>
 
@@ -157,7 +157,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-finance-banking') {
 											echo 'right_active';
-										} ?>" href="../BachelorDegree/bachelor-finance-banking.php"> Finance and Banking
+										} ?>" href="#"> Finance and Banking
 								</a>
 							</li>
 
@@ -165,7 +165,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-industrail-economics') {
 											echo 'right_active';
-										} ?>" href="../BachelorDegree/bachelor-industrail-economics.php"> Industrail Economics
+										} ?>" href="#"> Industrail Economics
 								</a>
 							</li>
 
@@ -173,7 +173,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-international-economics') {
 											echo 'right_active';
-										} ?>" href="../BachelorDegree/bachelor-international-economics.php"> International Economics
+										} ?>" href="#"> International Economics
 								</a>
 							</li>
 
@@ -181,7 +181,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-international-business') {
 											echo 'right_active';
-										} ?>" href="../BachelorDegree/bachelor-international-business.php"> International Business
+										} ?>" href="#"> International Business
 								</a>
 							</li>
 
@@ -189,7 +189,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-international-tourism-management') {
 											echo 'right_active';
-										} ?>" href="../BachelorDegree/bachelor-international-tourism-management.php"> International Tourism
+										} ?>" href="#"> International Tourism
 									Management
 								</a>
 							</li>
@@ -198,7 +198,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-intrepreneurship') {
 											echo 'right_active';
-										} ?>" href="../BachelorDegree/bachelor-intrepreneurship.php"> Intrepreneurship
+										} ?>" href="#"> Intrepreneurship
 								</a>
 							</li>
 
@@ -206,7 +206,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-management') {
 											echo 'right_active';
-										} ?>" href="../BachelorDegree/bachelor-management.php"> Management
+										} ?>" href="#"> Management
 								</a>
 							</li>
 
@@ -214,7 +214,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-marketing') {
 											echo 'right_active';
-										} ?>" href="../BachelorDegree/bachelor-marketing.php"> Marketing
+										} ?>" href="#"> Marketing
 								</a>
 							</li>
 
@@ -222,7 +222,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-tourism-hospitality-management') {
 											echo 'right_active';
-										} ?>" href="../BachelorDegree/bachelor-tourism-hospitality-management.php"> Tourism and Hospitality
+										} ?>" href="#"> Tourism and Hospitality
 									Management
 								</a>
 							</li>

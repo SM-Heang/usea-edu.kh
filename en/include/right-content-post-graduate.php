@@ -10,13 +10,15 @@
 						<a class="nav-link item-link" href="#"> Master's Degree <i class="fas fa-angle-down"></i> </a>
 						<ul class="submenu collapse">
 							<li><a class="nav-link item-link" aria-current="page"
-									href="../BachelorDegree/bachelor-degree-architecture.php"> Architechture </a></li>
-							<li><a class="nav-link item-link" href="../AssociateDegree/management.php"> Chemistry </a></li>
-							<li><a class="nav-link item-link" href="../AssociateDegree/accounting.php"> Civil Engineering </a></li>
-							<li><a class="nav-link item-link" href="../BachelorDegree/bachelor-degree-it.php"> Information Technology
+									href="#"> Accounting </a></li>
+							<li><a class="nav-link item-link" href="#"> Auditing </a></li>
+							<li><a class="nav-link item-link" href="#"> Finance & Banking </a></li>
+							<li><a class="nav-link item-link" href="#"> Information Technology
 								</a> </li>
-							<li><a class="nav-link item-link" href="../AssociateDegree/tourism.php"> Mathematics </a> </li>
-							<li><a class="nav-link item-link" href="../AssociateDegree/tourism.php"> Physics </a> </li>
+							<li><a class="nav-link item-link" href="#"> International Marketing </a> </li>
+							<li><a class="nav-link item-link" href="#"> Management </a> </li>
+							<li><a class="nav-link item-link" href="#"> Public Administration </a> </li>
+							<li><a class="nav-link item-link" href="#"> Teaching English </a> </li>
 						</ul>
 					</li>
 				</ul>
@@ -30,13 +32,10 @@
 						<a class="nav-link item-link" href="#"> Doctoral Degree <i class="fas fa-angle-down"></i> </a>
 						<ul class="submenu collapse">
 							<li><a class="nav-link item-link" aria-current="page"
-									href="../BachelorDegree/bachelor-degree-architecture.php"> Architechture </a></li>
-							<li><a class="nav-link item-link" href="../AssociateDegree/management.php"> Chemistry </a></li>
-							<li><a class="nav-link item-link" href="../AssociateDegree/accounting.php"> Civil Engineering </a></li>
-							<li><a class="nav-link item-link" href="../BachelorDegree/bachelor-degree-it.php"> Information Technology
-								</a> </li>
-							<li><a class="nav-link item-link" href="../AssociateDegree/tourism.php"> Mathematics </a> </li>
-							<li><a class="nav-link item-link" href="../AssociateDegree/tourism.php"> Physics </a> </li>
+									href="#"> Business Management </a></li>
+							<li><a class="nav-link item-link" href="#"> Education Management </a></li>
+							<li><a class="nav-link item-link" href="#">Economic</a></li>
+							<li><a class="nav-link item-link" href="#"> Public Administration	</a> </li>							
 						</ul>
 					</li>
 				</ul>

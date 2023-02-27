@@ -49,20 +49,20 @@
 									href="../BachelorDegree/bachelor-architecture.php"> Architechture </a></li>
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-chemistry'){
 								echo 'right_active';
-							}?>" href="../BachelorDegree/bachelor-chemistry.php"> Chemistry </a></li>
+							}?>" href="#"> Chemistry </a></li>
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-civil-engineering'){
 								echo 'right_active';
-							}?>" href="../BachelorDegree/bachelor-civil-engineering.php"> Civil Engineering </a></li>
+							}?>" href="#"> Civil Engineering </a></li>
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-information-technology'){
 								echo 'right_active';
 							}?>" href="../BachelorDegree/bachelor-information-technology.php"> Information Technology
 								</a> </li>
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-mathematics'){
 								echo 'right_active';
-								}?>" href="../BachelorDegree/bachelor-mathematics.php"> Mathematics </a> </li>
+								}?>" href="#"> Mathematics </a> </li>
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-physic'){
 								echo 'right_active';
-							} ?>" href="../BachelorDegree/bachelor-physic.php"> Physics </a> </li>
+							} ?>" href="#"> Physics </a> </li>
 						</ul>
 					</li>
 				</ul>

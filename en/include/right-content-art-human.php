@@ -49,20 +49,20 @@
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-curriculum-development'){
 								echo 'right_active';
 							}?>" aria-current="page"
-									href="../BachelorDegree/bachelor-curriculum-development.php"> Curriculum Development </a></li>
+									href="#"> Curriculum Development </a></li>
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-education-management'){
 								echo 'right_active';
-							}?>" href="../BachelorDegree/bachelor-education-management.php"> Education Management </a></li>
+							}?>" href="#"> Education Management </a></li>
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-history'){
 								echo 'right_active';
-							}?>" href="../BachelorDegree/bachelor-history.php"> History </a></li>
+							}?>" href="#"> History </a></li>
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-khmer-literature'){
 								echo 'right_active';
-							}?>" href="../BachelorDegree/bachelor-khmer-literature.php"> Khmer Literature
+							}?>" href="#"> Khmer Literature
 								</a> </li>
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-philosophy'){
 								echo 'right_active';
-							}?>" href="../BachelorDegree/bachelor-philosophy.php"> Philosophy </a> </li>
+							}?>" href="#"> Philosophy </a> </li>
 						</ul>
 					</li>
 				</ul>
