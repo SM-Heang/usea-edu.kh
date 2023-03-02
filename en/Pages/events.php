@@ -78,7 +78,7 @@ include_once '../../connection/db.connection.php';
 									</p>
 								</div>
 								<div style="text-align: right;">
-									<a href="events.php?" class="btn btn-danger btn-sm">Read More</a>
+									<a href="event-detail.php?id=<?php echo $value['event_id']?> " class="btn btn-danger btn-sm">Read More</a>
 								</div>
 							</div>
 						</div>

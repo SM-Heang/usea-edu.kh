@@ -230,7 +230,12 @@ body {
 }
 
 /* End History Detail*/
-
+.event_detail{
+  font-family: Khmer OS System;
+  font-size: 1.25rem;
+  color: #002060;
+  text-align: justify;
+}
 /* Start Logo Meaning Detail*/
 
 #content-detail .content-meaning-detail {
