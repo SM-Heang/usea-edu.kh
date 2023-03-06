@@ -290,19 +290,19 @@
 						<ul>
 							<li>
 								<img src="../media/nav-icon/f-economic.png" class="nav-icon" width="15px" height="15px">
-								<a href="../Pages/faculty-economics.php">Faculty of Economics, Business & Tourism</a>
+								<a href="../vission-Mission/vision-mision-corevalue-economic.php">Faculty of Economics, Business & Tourism</a>
 							</li>
 							<li>
 								<img src="../media/nav-icon/f-it.png" class="nav-icon" width="15px" height="15px">
-								<a href="../Pages/faculty-sciences-technology.php">Faculty of Sciences & Technology</a>
+								<a href="../vission-Mission/vision-mision-corevalue-science-technology.php">Faculty of Sciences & Technology</a>
 							</li>
 							<li>
 								<img src="../media/nav-icon/f-law.png" class="nav-icon" width="15px" height="15px">
-								<a href="../Pages/faculty-sciences-law.php">Faculty of Social Science & Law</a>
+								<a href="../vission-Mission/vision-mision-corevalue-law.php">Faculty of Social Science & Law</a>
 							</li>
 							<li>
 								<img src="../media/nav-icon/f-art.png" class="nav-icon" width="15px" height="15px">
-								<a href="../Pages/faculty-arts-humanities-education.php">Faculty of Arts, Humanities & Education</a>
+								<a href="../vission-Mission/vision-mision-corevalue-art-humanities.php">Faculty of Arts, Humanities & Education</a>
 							</li>
 							<li>
 								<img src="../media/nav-icon/f-internation-college.png" class="nav-icon" width="15px" height="15px">
@@ -310,7 +310,7 @@
 							</li>
 							<li>
 								<img src="../media/nav-icon/fli.png" class="nav-icon" width="15px" height="15px">
-								<a href="../Pages/foreign-language.php">Foreign Language Institute</a>
+								<a href="../vission-Mission/vision-mision-corevalue-fli.php">Foreign Language Institute</a>
 							</li>
 							<li>
 								<img src="../../media/nav-icon/post-graduate.png" class="nav-icon" width="15px" height="15px">

@@ -24,7 +24,7 @@ include_once '../../connection/db.connection.php';
 						</a>
 					</li>
 					<li>
-						<a href="#">Events</a>
+						<a href="events.php">Events</a>
 					</li>
 				</ul>
 			</div>
@@ -44,7 +44,7 @@ include_once '../../connection/db.connection.php';
 				</div>
 
 				<!-- =====> Start Events <===== -->
-				<div class="row animate-box mt-5 mb-5" id="events">
+				<div class="row animate-box mt-3 mb-5" id="events">
 					<?php
 					$sql = "SELECT * from usea_events WHERE event_status = 'past' ORDER BY event_date DESC limit 12";
 					if (isset($_GET['page'])) {

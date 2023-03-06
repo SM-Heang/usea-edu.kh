@@ -230,9 +230,16 @@ body {
 }
 
 /* End History Detail*/
+.event_title{
+  margin: 0;
+  line-height: 30px;
+  text-decoration: underline;
+  font-size: 1.25rem;
+  color: red;
+}
 .event_detail{
   font-family: Khmer OS System;
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #002060;
   text-align: justify;
 }
