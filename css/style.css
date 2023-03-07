@@ -3005,10 +3005,26 @@ For Media Query Devices with Breakpoint
     width: 370px !important;
     word-spacing: -2px !important;
   }
+  .web-location ul li a{
+    font-size: 14px;
+  }
+  #content-detail .post{
+    font-size: 0.9rem !important;
+    text-align: justify;
+  }
+
+
+  /* update title when responsive */
+  .title-text{
+    font-size: 14pt !important;
+  }
+
 }
 
 @media only screen and (min-width : 480px) {
- 
+  #content-detail .post{
+    font-size: 0.9rem !important;
+  }
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -3132,7 +3148,11 @@ For Media Query Devices with Breakpoint
   /* faculty economic */
   #content-detail .fac_eco {
     font-size: 0.9rem !important;
-    margin-left: 5px !important;
+    /* margin-left: 5px !important; */
+  }
+
+  #content-detail .post{
+    font-size: 0.9rem !important;
   }
 
   .img-fluid {

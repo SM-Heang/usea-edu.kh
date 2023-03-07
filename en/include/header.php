@@ -271,7 +271,7 @@
 							</li>
 							<li>
 								<img src="../media/nav-icon/core-value.png" class="nav-icon" width="15px" height="15px">
-								<a href="../Pages/vission-mission-core-value.php">Vision Mission & Core Value</a>
+								<a href="../Pages/vision-mision-corevalue.php">Vision Mission & Core Value</a>
 							</li>
 							<li>
 								<img src="../media/nav-icon/event.png" class="nav-icon" width="15px" height="15px">
