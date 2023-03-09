@@ -1,6 +1,6 @@
 <div class="col-xxl-3">
 	<div class="right-content-economic">
-		<div class="item"><a class="item-link <?php if ($_SESSION['right'] == 'faculty-economics') {
+		<div class="item"><a class="item-link <?php if ($_SESSION['right'] == 'faculty-economics') { 
 			echo 'right_active';
 		} ?>" href="../vission-Mission/vision-mision-corevalue-economic.php">Vision & Mission</a></div>
 		<hr>

@@ -2985,8 +2985,7 @@ figure {
 .right-content-economic .select-menu-7.active_menu7 .select-btn-7 .i_7 {
   transform: rotate(-180deg);
 }
-
-
+  
 /*
 For Media Query Devices with Breakpoint
 =================================
@@ -2996,11 +2995,15 @@ For Media Query Devices with Breakpoint
 ==================================
 */
 @media only screen and (min-width : 320px) {
+
+  #content-detail{
+    text-align: justify;
+  }
   #content-detail .content-history-detail .first_img{
     width: 355px !important;
   }
   .sub_container .content_mission{
-    font-size: 0.9rem !important;
+    font-size: 1rem !important;
     display: block;
     width: 370px !important;
     word-spacing: -2px !important;
@@ -3009,7 +3012,7 @@ For Media Query Devices with Breakpoint
     font-size: 14px;
   }
   #content-detail .post{
-    font-size: 0.9rem !important;
+    font-size: 1rem !important;
     text-align: justify;
   }
 
@@ -3023,7 +3026,7 @@ For Media Query Devices with Breakpoint
 
 @media only screen and (min-width : 480px) {
   #content-detail .post{
-    font-size: 0.9rem !important;
+    font-size: 1rem !important;
   }
 }
 
