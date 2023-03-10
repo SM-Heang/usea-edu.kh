@@ -1520,6 +1520,15 @@ figure {
   color: #002060;
 }
 
+.card:hover{
+   transform: scale(1.03);
+   transition: 0.4s;
+   box-shadow: rgba(15, 15, 15, 0.45) 0px 25px 20px -20px;
+}.card{
+  transition: 0.5s;
+  margin-bottom: 10px;
+}
+
 .fh5co-nav ul {
   padding: 0;
   margin: 5px 0 0 0;
