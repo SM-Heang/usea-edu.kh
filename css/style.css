@@ -410,10 +410,10 @@ body {
 }
 
 .right-content-economic hr {
-  border: 2px solid #002060;
+  border: .1px solid #002060;
   font-weight: bold;
   border-radius: 10px;
-  opacity: 0.9 !important;
+  opacity: 1 !important;
   margin: 8px 0px;
 }
 
@@ -681,7 +681,18 @@ body {
     margin-top: 0px;
   }
 }
-
+#partnership-int .partnership-title{
+  font-family: Khmer OS Content !important;
+  color: #002060;
+  font-weight: bold;
+  font-size: 1.25rem !important;
+}
+#partnership-int .partnership-title{
+  font-family: Khmer OS Content !important;
+  color: #002060;
+  font-weight: bold;
+  font-size: 1rem !important;
+}
 /* hamburger menu */
 .hamburger {
   position: fixed;
