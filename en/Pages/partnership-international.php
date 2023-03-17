@@ -95,7 +95,7 @@
                     <?php 
                     	for ($i=1; $i <=$maxpage ; $i++) { ?>
                     		
-                    		<li class="page-item"><a class="page-link 
+                    		<li class="page-item p-0"><a class="page-link 
                     		<?php 
                     			if (isset($_GET['page'])) {
                     				if ($i==$_GET['page']) {

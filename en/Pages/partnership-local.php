@@ -51,12 +51,14 @@
 							$stmt->execute();
 							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 						foreach ($result as $key => $value) { ?>
-						<div class="col-xxl-12 d-flex mt-3 ">
+							<div class="col-xxl-12 mt-3" id="partnership-int">
 							<img src="../../media/Partnership/<?php echo $value['partnership_logo']; ?>" width="125px" height="100px" >
-							<div>
-								<p><?php echo $value['partnership_title_en'];?></p>
-							</div>
-                			<hr>
+								<p class="partnership-title"><?php echo $value['partnership_title_en'];?></p>
+								<p class="partnership-date"><?php echo "<strong>MOU Signed</strong> : " .date('d M Y', strtotime($value['signed_date']));?></p>
+								<div style="text-align: right;">
+									<a href="partnership-local-detail.php?id=<?php echo $value['partnership_id'] ?>" class="btn btn-danger">Read More</a>
+								</div>
+						
 						</div>
 						<?php } ?>
 					</div>

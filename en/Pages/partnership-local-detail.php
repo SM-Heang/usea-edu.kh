@@ -23,7 +23,7 @@ include_once '../../connection/db.connection.php';
 					</a>
 				</li>
 				<li>
-					<a href="partnership-international.php">Partnership</a>
+					<a href="partnership-local.php">Partnership</a>
 				</li>
 			</ul>
 
