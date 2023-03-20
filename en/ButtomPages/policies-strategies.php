@@ -1,11 +1,11 @@
 <?php
-    $page = 'Policies-Strategies';
+    $page = 'Policies_Strategies';
     if (session_status() === PHP_SESSION_NONE) {
         session_start();
     }
 
     $_SESSION['page']= $page;
-    $_SESSION['right']= 'Policies_Strategies';
+    $_SESSION['right']= 'Policies-Strategies';
     include_once '../include/header.php';
     include_once '../../connection/db.connection.php';
 ?>

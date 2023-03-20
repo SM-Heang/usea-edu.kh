@@ -1,11 +1,11 @@
 <?php
-    $page = 'outstanding-student';
+    $page = 'outstanding_student';
     if (session_status() === PHP_SESSION_NONE) {
         session_start();
     }
 
     $_SESSION['page']= $page;
-    $_SESSION['right']= 'outstanding_student';
+    $_SESSION['right']= 'outstanding-student';
     include_once '../include/header.php';
     include_once '../../connection/db.connection.php';
 ?>

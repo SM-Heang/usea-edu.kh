@@ -3,7 +3,7 @@
 		if(session_status() === PHP_SESSION_NONE){
 			session_start();
 		}
-		$_SESSION['right_research'] = 'right_research_right';
+		$_SESSION['right_research'] = 'right-research-right-kh';
 		$_SESSION['page'] = $page;
 		
 	include_once '../include/header.php';

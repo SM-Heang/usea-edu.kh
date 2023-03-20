@@ -1,5 +1,5 @@
 <?php 
-	$page = 'Master Degree';
+	$page = 'Master_Degree';
 	// include_once 'include/header.php';
 	include_once '../include/header.php';
 

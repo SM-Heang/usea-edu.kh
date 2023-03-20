@@ -1,11 +1,11 @@
 <?php
-    $page = 'form-download';
+    $page = 'form_download';
     if (session_status() === PHP_SESSION_NONE) {
         session_start();
     }
 
     $_SESSION['page']= $page;
-    $_SESSION['right']= 'form_download';
+    $_SESSION['right']= 'form-download';
     include_once '../include/header.php';
     include_once '../../connection/db.connection.php';
 ?>

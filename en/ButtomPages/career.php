@@ -5,7 +5,7 @@
     }
 
     $_SESSION['page']= $page;
-    $_SESSION['right']= 'career_right';
+    $_SESSION['right']= 'career-right';
     include_once '../include/header.php';
     include_once '../../connection/db.connection.php';
 ?>

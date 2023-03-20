@@ -2,7 +2,7 @@
 	<div class="right-content-economic">
 
 		<div class="item">
-			<a class="nav-link item-link <?php if ($_SESSION['right'] == 'human-resource-kh') {
+			<a class="nav-link item-link <?php if ($_SESSION['right'] == 'human-resource') {
 												echo 'right_active';
 											} ?>" href="human-resource.php"> Human Resource
 			</a>
@@ -15,7 +15,7 @@
 					<li class="nav-item has-submenu select-menu">
 						<a class="nav-link item-link select-btn" href="student-services.php" onclick="return false">Student Services
 							<?php
-								if ($_SESSION['page'] == 'practucum_internship_kh') {
+								if ($_SESSION['page'] == 'practucum_internship') {
 									echo '<i class="fa-solid fa-angle-up simple i_1"></i>';
 								}else{
 									echo '<i class="fa-solid fa-angle-down simple i_1"></i>';
@@ -24,14 +24,14 @@
 						</a>
 						<ul class="submenu collapse
 							<?php 
-									if ($_SESSION['page'] == 'practucum_internship_kh') {
+									if ($_SESSION['page'] == 'practucum_internship') {
 										echo "show";
 									}
 							?>">
 							<li>
 								<a class="nav-link item-link 
 								  <?php 
-								  		if ($_SESSION['right'] == 'practucum-internship-kh') {
+								  		if ($_SESSION['right'] == 'practucum-internship') {
 											 echo 'right_active';
 																} ?>" 
 									aria-current="page" 
@@ -56,7 +56,7 @@
 					<li class="nav-item has-submenu select-menu-2">
 						<a class="nav-link item-link select-btn-2" href="public-information-center.php" onclick="return false"> Library
 							<?php
-								if ($_SESSION['page'] == 'public_information_kh') {
+								if ($_SESSION['page'] == 'public_information') {
 									echo '<i class="fa-solid fa-angle-up i_2"></i>';
 								}else{
 									echo '<i class="fa-solid fa-angle-down i_2"></i>';
@@ -65,14 +65,14 @@
 						</a>
 						<ul class="submenu collapse
 							<?php
-									if ($_SESSION['page'] == 'public_information_kh') {
+									if ($_SESSION['page'] == 'public_information') {
 										echo "show";
 									}
 							?>">
 							<li>
 								<a class="nav-link item-link 
 									<?php 
-										if ($_SESSION['right'] == 'public-information-center-kh') {
+										if ($_SESSION['right'] == 'public-information-center') {
 											echo 'right_active';
 									} ?>"
 									aria-current="page" 
@@ -95,7 +95,7 @@
 					<li class="nav-item has-submenu select-menu-3">
 						<a class="nav-link item-link select-btn-3" href="associate-degree.php" onclick="return false"> Outstanding Students
 							<?php
-								if ($_SESSION['page'] == 'associate_degree_kh') {
+								if ($_SESSION['page'] == 'associate_degree') {
 									echo '<i class="fa-solid fa-angle-up i_3"></i>';
 								}else{
 									echo '<i class="fa-solid fa-angle-down i_3"></i>';
@@ -104,14 +104,14 @@
 						</a>
 						<ul class="submenu collapse
 							<?php
-									if ($_SESSION['page'] == 'associate_degree_kh') {
+									if ($_SESSION['page'] == 'associate_degree') {
 										echo "show";
 									}
 							?>">
 							<li>
 								<a class="nav-link item-link 
 									<?php 
-										if ($_SESSION['right'] == 'associate-degree-kh') {
+										if ($_SESSION['right'] == 'associate-degree') {
 											echo 'right_active';
 									} ?>"
 									aria-current="page" 
@@ -129,7 +129,7 @@
 		</div>
 
 		<div class="item">
-			<a class="nav-link item-link <?php if ($_SESSION['right'] == 'scholarship-right-kh') {
+			<a class="nav-link item-link <?php if ($_SESSION['right'] == 'scholarship-right') {
 												echo 'right_active';
 											} ?>" href="scholarship.php"> Scholarship
 			</a>
@@ -142,7 +142,7 @@
 					<li class="nav-item has-submenu select-menu-4">
 						<a class="nav-link item-link select-btn-4" href="university.php" onclick="return false"> Career
 							<?php
-								if ($_SESSION['page'] == 'university_kh') {
+								if ($_SESSION['page'] == 'university') {
 									echo '<i class="fa-solid fa-angle-up i_4"></i>';
 								}else{
 									echo '<i class="fa-solid fa-angle-down i_4"></i>';
@@ -151,14 +151,14 @@
 						</a>
 						<ul class="submenu collapse
 							<?php
-									if ($_SESSION['page'] == 'university_kh') {
+									if ($_SESSION['page'] == 'university') {
 										echo "show";
 									}
 							?>">
 							<li>
 								<a class="nav-link item-link 
 									<?php 
-										if ($_SESSION['right'] == 'univer-sity-kh') {
+										if ($_SESSION['right'] == 'univer-sity') {
 											echo 'right_active';
 									} ?>"
 									aria-current="page" 
@@ -174,7 +174,7 @@
 		</div>
 
 		<div class="item">
-			<a class="nav-link item-link <?php if ($_SESSION['right'] == 'alumni-right-kh') {
+			<a class="nav-link item-link <?php if ($_SESSION['right'] == 'alumni-right') {
 								echo 'right_active';
 											} ?>" href="alumni.php"> Alumni
 			</a>
@@ -187,7 +187,7 @@
 					<li class="nav-item has-submenu select-menu-5">
 						<a class="nav-link item-link select-btn-5" href="facilities.php" onclick="return false"> Facilities
 							<?php
-								if ($_SESSION['page'] == 'facilities_kh') {
+								if ($_SESSION['page'] == 'facilities') {
 									echo '<i class="fa-solid fa-angle-up i_5"></i>';
 								}else{
 									echo '<i class="fa-solid fa-angle-down i_5"></i>';
@@ -196,14 +196,14 @@
 						</a>
 						<ul class="submenu collapse
 							<?php
-									if ($_SESSION['page'] == 'facilities_kh') {
+									if ($_SESSION['page'] == 'facilities') {
 										echo "show";
 									}
 							?>">
 							<li>
 								<a class="nav-link item-link 
 									<?php 
-										if ($_SESSION['right'] == 'facilities-right-kh') {
+										if ($_SESSION['right'] == 'facilities-right') {
 											echo 'right_active';
 									} ?>"
 									aria-current="page" 
@@ -221,7 +221,7 @@
 		</div>
 
 		<div class="item">
-			<a class="nav-link item-link <?php if ($_SESSION['right'] == 'Policies-Strategies-kh') {
+			<a class="nav-link item-link <?php if ($_SESSION['right'] == 'Policies-Strategies') {
 								echo 'right_active';
 											} ?>" href="policies-strategies.php"> Policies and Strategies
 			</a>
@@ -229,7 +229,7 @@
 		<hr>
 
 		<div class="item">
-			<a class="nav-link item-link <?php if ($_SESSION['right'] == 'form-download-kh') {
+			<a class="nav-link item-link <?php if ($_SESSION['right'] == 'form-download') {
 								echo 'right_active';
 											} ?>" href="form-download.php"> USEA Form Download
 			</a>

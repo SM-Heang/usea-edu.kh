@@ -5,7 +5,7 @@
 	}
 
 	$_SESSION['page']= $page;
-	$_SESSION['right']= 'history_logo';
+	$_SESSION['right']= 'history-logo';
 	
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     

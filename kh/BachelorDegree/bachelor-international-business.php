@@ -4,7 +4,7 @@
 		session_start();
 	}
 	$_SESSION['right_economic'] = $page;
-	$_SESSION['right'] = 'bachelor-international-business_kh';
+	$_SESSION['right'] = 'bachelor-international-business-kh';
 	
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     

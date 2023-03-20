@@ -4,7 +4,7 @@
 			session_start();
 		}
 		$_SESSION['page'] = 'about';
-		$_SESSION['right'] = 'vision_mision_corevalue_right';
+		$_SESSION['right'] = 'vision-mision-corevalue-right';
 
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     

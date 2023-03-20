@@ -107,9 +107,9 @@
 					<div class="bar"></div>
 				</div>
 				<ul class="nav-link"> 
-					<li><a class="<?php if($_SESSION['page'] =='home'){echo 'active';} ?>" href="../Pages/index.php">Home</a></li>
+					<li><a class="" href="../Pages/index.php">Home</a></li>
 					<li>
-						<a class="<?php if($_SESSION['page'] =='about'){echo 'active';} ?>" href="../Pages/history-logo.php">About</a>
+						<a class="" href="../Pages/history-logo.php">About</a>
 						<div class="mega-box">
 							<div class="content" id="nav-about">
 								<div class="row">
@@ -152,13 +152,7 @@
 						</div>
 					</li>
 					<li>
-						<a class="<?php 
-							if($_SESSION['page'] == 'academics'){ echo 'active'; } 
-							if($_SESSION['page'] == 'partnership_local'){ echo 'noactive';}
-							if($_SESSION['page'] == 'about'){ echo 'noactive';}
-							if($_SESSION['page'] == 'research_procedure'){ echo 'noactive';}
-							if($_SESSION['page'] == 'home'){ echo 'noactive';}
-							?>" 
+						<a class="" 
 							href="../vission-Mission/vision-mision-corevalue.php">Academics</a>
 						<div class="mega-box">
 							<div class="content" id="nav-academics">
@@ -205,9 +199,9 @@
 							</div>
 						</div>
 					</li>
-					<li><a class="<?php if($_SESSION['page'] == 'partnership_local'){ echo 'active'; } ?>" href="../Pages/partnership-local.php">Partnership</a></li>
+					<li><a class="" href="../Pages/partnership-local.php">Partnership</a></li>
 					<li>
-						<a class="<?php if($_SESSION['page'] == 'research_procedure'){ echo 'active'; } ?>" href="#">Research</a>
+						<a class="" href="#">Research</a>
 						<div class="mega-box">
 							<div class="content" id="nav-research">
 								<div class="row">
@@ -249,8 +243,8 @@
 		<!-- ====== mobile menu ======= -->
 		<div class="mobile-menu">
 			<ul>
-				<li><a class="<?php if($_SESSION['page'] =='home'){echo 'active_mobile';} ?>" href="../Pages/index.php">Home</a></li><hr>
-				<li class="dropdown-parent"><a class="<?php if($_SESSION['page'] =='about'){echo 'active_mobile';} ?>" href="#">About <i class="fas fa-caret-down"></i></a>
+				<li><a class="" href="../Pages/index.php">Home</a></li><hr>
+				<li class="dropdown-parent"><a class="" href="#">About <i class="fas fa-caret-down"></i></a>
 					<div class="dropdown-hamburger">
 						<ul>
 							<li>
@@ -285,7 +279,7 @@
 					</div>
 				</li><hr>
 				
-				<li class="dropdown-parent"><a class="<?php if($_SESSION['page'] =='academics'){echo 'active_mobile';} ?>" href="#">Academics <i class="fas fa-caret-down"></i></a>
+				<li class="dropdown-parent"><a class="" href="#">Academics <i class="fas fa-caret-down"></i></a>
 					<div class="dropdown-hamburger">
 						<ul>
 							<li>
@@ -323,8 +317,8 @@
 						</ul>
 					</div>
 				</li><hr>
-				<li><a class="<?php if($_SESSION['page'] == 'partnership_local'){ echo 'active_mobile'; } ?>" href="../Pages/partnership-local.php">Partnership</a></li><hr>
-				<li class="dropdown-parent"><a class="<?php if($_SESSION['page'] == 'research_procedure'){ echo 'active_mobile';} ?>" href="#">Research <i class="fas fa-caret-down"></i></a>
+				<li><a class="" href="../Pages/partnership-local.php">Partnership</a></li><hr>
+				<li class="dropdown-parent"><a class="" href="#">Research <i class="fas fa-caret-down"></i></a>
 					<div class="dropdown-hamburger">
 						<ul>
 							<li>

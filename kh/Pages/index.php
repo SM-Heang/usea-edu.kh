@@ -1,9 +1,9 @@
 <?php
-$page = 'home_kh';
-if (session_status() === PHP_SESSION_NONE) {
-	session_start();
-}
-$_SESSION['page'] = $page;
+// $page = 'home_kh';
+// if (session_status() === PHP_SESSION_NONE) {
+// 	session_start();
+// }
+// $_SESSION['page'] = $page;
 
 include_once '../include/header.php';
 include_once '../../connection/db.connection.php';

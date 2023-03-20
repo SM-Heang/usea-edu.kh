@@ -3,7 +3,7 @@
 		if(session_status() === PHP_SESSION_NONE){
 			session_start();
 		}
-		$_SESSION['right_partnership'] = 'partnership_local_right';
+		$_SESSION['right_partnership'] = 'partnership-local-right';
 		$_SESSION['page'] = $page;
 
 	include_once '../include/header.php';

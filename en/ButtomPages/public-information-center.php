@@ -1,10 +1,10 @@
 <?php
-    $page = 'public-information';
+    $page = 'public_information';
     if (session_status() === PHP_SESSION_NONE) {
         session_start();
     }
     $_SESSION['page'] = $page;
-    $_SESSION['right'] = 'public_information_center';
+    $_SESSION['right'] = 'public-information-center';
 
     include_once '../include/header.php';
     include_once '../../connection/db.connection.php';

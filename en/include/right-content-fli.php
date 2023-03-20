@@ -13,7 +13,7 @@
 
 							<?php
 							if (
-								$_SESSION['page'] == 'finance-banking' ||
+								$_SESSION['page'] == 'finance_banking' ||
 								$_SESSION['page'] == 'management' ||
 								$_SESSION['page'] == 'accounting' ||
 								$_SESSION['page'] == 'marketing' ||
@@ -46,7 +46,7 @@
 								echo 'right_active';
 							} ?>" href="../AssociateDegree/accounting.php"> Accounting  </a></li>
 							
-							<li><a class="nav-link item-link <?php if ($_SESSION['page'] == 'finance-banking') {
+							<li><a class="nav-link item-link <?php if ($_SESSION['page'] == 'finance_banking') {
 								echo 'right_active';
 							} ?>" href="../AssociateDegree/finance-banking.php">Finance & Banking </a></li>
 																<li><a class="nav-link item-link <?php if ($_SESSION['page'] == 'management') {

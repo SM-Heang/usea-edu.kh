@@ -1,11 +1,11 @@
 <?php
-    $page = 'human-resource';
+    $page = 'human_resource';
     if (session_status() === PHP_SESSION_NONE) {
         session_start();
     }
 
     $_SESSION['page']= $page;
-    $_SESSION['right']= 'human_resource';
+    $_SESSION['right']= 'human-resource';
     include_once '../include/header.php';
     include_once '../../connection/db.connection.php';
 ?>

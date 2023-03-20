@@ -1,6 +1,6 @@
 <div class="col-xxl-3">
 	<div class="right-content-economic">
-		<div class="item"><a class="item-link <?php if ($_SESSION['right'] == 'foreign-language-institute') {
+		<div class="item"><a class="item-link <?php if ($_SESSION['right'] == 'foreign-language-institute-kh') {
 			echo 'right_active';
 		} ?>" href="../vission-Mission/vision-mision-corevalue-fli.php">Vision & Mission</a></div>
 		<!-- <hr> -->
@@ -13,11 +13,11 @@
 
 							<?php
 							if (
-								$_SESSION['page'] == 'finance-banking' ||
-								$_SESSION['page'] == 'management' ||
-								$_SESSION['page'] == 'accounting' ||
-								$_SESSION['page'] == 'marketing' ||
-								$_SESSION['page'] == 'tourism'
+								$_SESSION['page'] == 'finance_banking_kh' ||
+								$_SESSION['page'] == 'management_kh' ||
+								$_SESSION['page'] == 'accounting_kh' ||
+								$_SESSION['page'] == 'marketing_kh' ||
+								$_SESSION['page'] == 'tourism_kh'
 							) {
 
 								echo '<i class="fa-solid fa-angle-up i_1"></i>';
@@ -31,31 +31,31 @@
 						
 						<?php
 						if (
-							$_SESSION['page'] == 'finance-banking' ||
-							$_SESSION['page'] == 'management' ||
-							$_SESSION['page'] == 'accounting' ||
-							$_SESSION['page'] == 'marketing' ||
-							$_SESSION['page'] == 'tourism'
+							$_SESSION['page'] == 'finance_banking_kh' ||
+							$_SESSION['page'] == 'management_kh' ||
+							$_SESSION['page'] == 'accounting_kh' ||
+							$_SESSION['page'] == 'marketing_kh' ||
+							$_SESSION['page'] == 'tourism_kh'
 						) {
 							echo "show";
 						}
 						?>
 						
 						">
-							<li><a class="nav-link item-link <?php if ($_SESSION['page'] == 'accounting') {
+							<li><a class="nav-link item-link <?php if ($_SESSION['page'] == 'accounting_kh') {
 								echo 'right_active';
 							} ?>" href="../AssociateDegree/accounting.php"> Accounting  </a></li>
 							
-							<li><a class="nav-link item-link <?php if ($_SESSION['page'] == 'finance-banking') {
+							<li><a class="nav-link item-link <?php if ($_SESSION['page'] == 'finance_banking_kh') {
 								echo 'right_active';
 							} ?>" href="../AssociateDegree/finance-banking.php">Finance & Banking </a></li>
-																<li><a class="nav-link item-link <?php if ($_SESSION['page'] == 'management') {
+																<li><a class="nav-link item-link <?php if ($_SESSION['page'] == 'management_kh') {
 																	echo 'right_active';
 																} ?>" href="../AssociateDegree/management.php"> Management </a></li>
-							<li><a class="nav-link item-link <?php if ($_SESSION['page'] == 'marketing') {
+							<li><a class="nav-link item-link <?php if ($_SESSION['page'] == 'marketing_kh') {
 								echo 'right_active';
 							} ?>" href="../AssociateDegree/marketing.php"> Marketing </a> </li>
-							<li><a class="nav-link item-link <?php if ($_SESSION['page'] == 'tourism') {
+							<li><a class="nav-link item-link <?php if ($_SESSION['page'] == 'tourism_kh') {
 								echo 'right_active';
 							} ?>" href="../AssociateDegree/tourism.php"> Tourism </a> </li>
 						</ul>
@@ -74,10 +74,10 @@
 
 							<?php
 							if (
-								$_SESSION['right'] == 'bachelor-english-for-translation' ||
-								$_SESSION['right'] == 'bachelor-english-for-business' ||
-								$_SESSION['right'] == 'bachelor-tefl' ||
-								$_SESSION['right'] == 'bachelor-teaching-english-children'
+								$_SESSION['right'] == 'bachelor-english-for-translation-kh' ||
+								$_SESSION['right'] == 'bachelor-english-for-business-kh' ||
+								$_SESSION['right'] == 'bachelor-tefl-kh' ||
+								$_SESSION['right'] == 'bachelor-teaching-english-children-kh'
 							) {
 
 								echo '<i class="fa-solid fa-angle-up i_2"></i>';
@@ -92,10 +92,10 @@
 						
 						<?php
 						if (
-							$_SESSION['right'] == 'bachelor-english-for-translation' ||
-							$_SESSION['right'] == 'bachelor-english-for-business' ||
-							$_SESSION['right'] == 'bachelor-tefl' ||
-							$_SESSION['right'] == 'bachelor-teaching-english-children'
+							$_SESSION['right'] == 'bachelor-english-for-translation-kh' ||
+							$_SESSION['right'] == 'bachelor-english-for-business-kh' ||
+							$_SESSION['right'] == 'bachelor-tefl-kh' ||
+							$_SESSION['right'] == 'bachelor-teaching-english-children-kh'
 						) {
 							echo "show";
 						}
@@ -104,7 +104,7 @@
 						">
 							<li>
 								<a class="nav-link item-link 
-										<?php if ($_SESSION['right'] == 'bachelor-english-for-translation') {
+										<?php if ($_SESSION['right'] == 'bachelor-english-for-translation-kh') {
 											echo 'right_active';
 										} ?>" href="#"> English for Translation
 								</a>
@@ -112,7 +112,7 @@
 
 							<li>
 								<a class="nav-link item-link 
-										<?php if ($_SESSION['right'] == 'bachelor-english-for-business') {
+										<?php if ($_SESSION['right'] == 'bachelor-english-for-business-kh') {
 											echo 'right_active';
 										} ?>" href="#"> English for International Business Relation
 								</a>
@@ -120,7 +120,7 @@
 
 							<li>
 								<a class="nav-link item-link 
-										<?php if ($_SESSION['right'] == 'bachelor-tefl') {
+										<?php if ($_SESSION['right'] == 'bachelor-tefl-kh') {
 											echo 'right_active';
 										} ?>" href="#"> Teaching English as Foreign Language
 								</a>
@@ -128,7 +128,7 @@
 
 							<li>
 								<a class="nav-link item-link 
-										<?php if ($_SESSION['right'] == 'bachelor-teaching-english-children') {
+										<?php if ($_SESSION['right'] == 'bachelor-teaching-english-children-kh') {
 											echo 'right_active';
 										} ?>" href="#"> Teaching English to Children
 								</a>

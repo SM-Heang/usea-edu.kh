@@ -5,7 +5,7 @@
 			session_start();
 		}
 		$_SESSION['page'] = $page;
-		$_SESSION['right'] = 'upcoming_events';
+		$_SESSION['right'] = 'upcoming-events';
 
     include_once '../include/header.php';
     include_once '../../connection/db.connection.php';
