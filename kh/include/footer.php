@@ -19,24 +19,24 @@
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
-	
+		
 	<!-- jQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="js/jquery.min.js"></script>
+	<script src="../js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="../js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="../js/jquery.waypoints.min.js"></script>
 	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
+	<script src="../js/jquery.stellar.min.js"></script>
 	<!-- Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
+	<script src="../js/owl.carousel.min.js"></script>
 	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="../js/jquery.flexslider-min.js"></script>
 	<!-- countTo -->
-	<script src="js/jquery.countTo.js"></script>
+	<script src="../js/jquery.countTo.js"></script>
 	<!-- Magnific Popup -->
 	<script src="../js/jquery.magnific-popup.min.js"></script>
 	<script src="../js/magnific-popup-options.js"></script>
@@ -44,8 +44,16 @@
 	<script src="../js/simplyCountdown.js"></script>
 	<!-- Main -->
 	<script src="../js/main.js"></script>
+	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.item-link').click(function(){
+				$(this).next('.sub-menu').slideToggle();
+			});
+		});
+	</script>
 	<script>
 		$('.owl-carousel').owlCarousel({
     loop:true,
@@ -82,5 +90,6 @@
 			});
 		});
 	</script>
+	
 	</body>
 </html>
