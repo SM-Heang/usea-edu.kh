@@ -32,50 +32,160 @@
 
 	<!-- Main Content-->
 	<div class="container">
+	
 		<div class="row"> 
+		<hr>
+<div class="col-xxl-9">
 			<!-- Start Content-->
-			<div class="col-xxl-9">
-				<div class="container" style="background-color:#002060;">
-					<div class="row title-text" style="color: white; font-size: 16pt; padding: 5pt;">
-						Partnership
+	<div class="row"> 
+		<div class="col-sm-3 pt-2 pb-0 pl-2 pr-2">
+			<div class="item">
+				<div class="card">
+					<div class="img-pro">
+						<a href="#" target="_blank" style="text-align: center;">
+							<figure class="t-zoom">
+								<img class="t-pic" src="../../media/logo_update.png" width="150px" height="150px" >
+							</figure>
+							<h6>USEA Logo</h6>
+						</a>
 					</div>
-				</div>
-				<div id="content-detail">
-					<div class="content-president-detail">
-					<?php  
-							$sql = "SELECT * from usea_partnership WHERE partnership_type = 'international' ORDER BY signed_date DESC limit 10";
-							if (isset($_GET['page'])) {
-				    			if ($_GET['page']>1) {
-				    		 	$sql .= " OFFSET ".  ($_GET['page']-1)*10;
-				    			}
-				   			 }
-							$stmt= $conn->prepare($sql);
-							$stmt->execute();
-							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-							// echo "<pre>";
-							// print_r($result);
-							// echo "</pre>";
-						foreach ($result as $key => $value) { ?>
-						<div class="col-xxl-12 mt-3" id="partnership-int">
-							<img src="../../media/Partnership/<?php echo $value['partnership_logo']; ?>" width="125px" height="100px" >
-								<p class="partnership-title"><?php echo $value['partnership_title_en'];?></p>
-								<p class="partnership-date"><?php echo "<strong>MOU Signed</strong> : " .date('d M Y', strtotime($value['signed_date']));?></p>
-								<div style="text-align: right;">
-									<a href="partnership-international-detail.php?id=<?php echo $value['partnership_id'] ?>" class="btn btn-danger">Read More</a>
-								</div>
-						
-						</div>
-						
-						<?php } ?>
-						
+					<div class="card-body text-center" style="background: #002060;padding: .25rem;margin-top: 2%;">
+						<a href="../../media/logo_update.png" target="_blank" class="p-2" style="color: white;font-size: 17px;text-decoration: none;">Download</a>
 					</div>
 				</div>
 			</div>
+		</div>
+
+		<div class="col-sm-3 pt-2 pb-0 pl-2 pr-2">
+			<div class="item">
+				<div class="card">
+					<div class="img-pro">
+						<a href="#" target="_blank" style="text-align: center;">
+							<figure class="t-zoom">
+								<img class="t-pic" src="../../media/p-13-thesis-cover.png" width="100%" height="150px" >
+							</figure>
+							<h6>Thesis Slide</h6>
+						</a>
+					</div>
+					<div class="card-body text-center" style="background: #002060;padding: .25rem;margin-top: 2%;">
+						<a href="../../media/បច្ចេកទេសរៀបចំស្លាយ_និងការពារ_P13_Ok​_070922.pptx" target="_blank" class="p-2" style="color: white;font-size: 17px;text-decoration: none;">Download</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-3 pt-2 pb-0 pl-2 pr-2">
+			<div class="item">
+				<div class="card">
+					<div class="img-pro">
+						<a href="#" target="_blank" style="text-align: center;">
+							<figure class="t-zoom">
+								<img class="t-pic" src="../../media/logo_update.png" width="150px" height="150px" >
+							</figure>
+							<h6>USEA Logo</h6>
+						</a>
+					</div>
+					<div class="card-body text-center" style="background: #002060;padding: .25rem;margin-top: 2%;">
+						<a href="../../media/logo_update.png" target="_blank" class="p-2" style="color: white;font-size: 17px;text-decoration: none;">Download</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-3 pt-2 pb-0 pl-2 pr-2">
+			<div class="item">
+				<div class="card">
+					<div class="img-pro">
+						<a href="#" target="_blank" style="text-align: center;">
+							<figure class="t-zoom">
+								<img class="t-pic" src="../../media/logo_update.png" width="150px" height="150px" >
+							</figure>
+							<h6>USEA Logo</h6>
+						</a>
+					</div>
+					<div class="card-body text-center" style="background: #002060;padding: .25rem;margin-top: 2%;">
+						<a href="../../media/logo_update.png" target="_blank" class="p-2" style="color: white;font-size: 17px;text-decoration: none;">Download</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3 pt-2 pb-0 pl-2 pr-2">
+			<div class="item">
+				<div class="card">
+					<div class="img-pro">
+						<a href="#" target="_blank" style="text-align: center;">
+							<figure class="t-zoom">
+								<img class="t-pic" src="../../media/logo_update.png" width="150px" height="150px" >
+							</figure>
+							<h6>USEA Logo</h6>
+						</a>
+					</div>
+					<div class="card-body text-center" style="background: #002060;padding: .25rem;margin-top: 2%;">
+						<a href="../../media/logo_update.png" target="_blank" class="p-2" style="color: white;font-size: 17px;text-decoration: none;">Download</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3 pt-2 pb-0 pl-2 pr-2">
+			<div class="item">
+				<div class="card">
+					<div class="img-pro">
+						<a href="#" target="_blank" style="text-align: center;">
+							<figure class="t-zoom">
+								<img class="t-pic" src="../../media/logo_update.png" width="150px" height="150px" >
+							</figure>
+							<h6>USEA Logo</h6>
+						</a>
+					</div>
+					<div class="card-body text-center" style="background: #002060;padding: .25rem;margin-top: 2%;">
+						<a href="../../media/logo_update.png" target="_blank" class="p-2" style="color: white;font-size: 17px;text-decoration: none;">Download</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3 pt-2 pb-0 pl-2 pr-2">
+			<div class="item">
+				<div class="card">
+					<div class="img-pro">
+						<a href="#" target="_blank" style="text-align: center;">
+							<figure class="t-zoom">
+								<img class="t-pic" src="../../media/logo_update.png" width="150px" height="150px" >
+							</figure>
+							<h6>USEA Logo</h6>
+						</a>
+					</div>
+					<div class="card-body text-center" style="background: #002060;padding: .25rem;margin-top: 2%;">
+						<a href="../../media/logo_update.png" target="_blank" class="p-2" style="color: white;font-size: 17px;text-decoration: none;">Download</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3 pt-2 pb-0 pl-2 pr-2">
+			<div class="item">
+				<div class="card">
+					<div class="img-pro">
+						<a href="#" target="_blank" style="text-align: center;">
+							<figure class="t-zoom">
+								<img class="t-pic" src="../../media/logo_update.png" width="150px" height="150px" >
+							</figure>
+							<h6>USEA Logo</h6>
+						</a>
+					</div>
+					<div class="card-body text-center" style="background: #002060;padding: .25rem;margin-top: 2%;">
+						<a href="../../media/logo_update.png" target="_blank" class="p-2" style="color: white;font-size: 17px;text-decoration: none;">Download</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
 			<!-- Start Right Content-->
 			<?php
 				include_once '../include/right-content-buttom.php';
 			?>
 		</div>
+		
 	</div>
 	<!-- End Main Content-->
 

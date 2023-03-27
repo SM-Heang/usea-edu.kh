@@ -211,7 +211,7 @@
 					<li class="nav-item has-submenu select-menu-5">
 						<a class="nav-link item-link select-btn-5" href="facilities.php" onclick="return false"> Facilities
 							<?php
-								if ($_SESSION['page'] == 'facilities') {
+								if ($_SESSION['page'] == 'building') {
 									echo '<i class="fa-solid fa-angle-up i_5"></i>';
 								}else{
 									echo '<i class="fa-solid fa-angle-down i_5"></i>';
@@ -220,35 +220,18 @@
 						</a>
 						<ul class="submenu collapse
 							<?php
-									if ($_SESSION['page'] == 'facilities') {
+									if ($_SESSION['page'] == 'building') {
 										echo "show";
 									}
 							?>">
 							<li>
-								<a class="nav-link item-link 
-									<?php 
-										if ($_SESSION['right'] == 'building') {
-											echo 'right_active';
-									} ?>"
-									aria-current="page" 
+								<a class="nav-link item-link" aria-current="page" 
 									href="facilities.php?id=69">Building
 								</a>
 							</li>
-							<li><a class="nav-link item-link 
-							<?php 
-										if ($_SESSION['right'] == 'classroom') {
-											echo 'right_active';
-									} ?>" href="facilities.php?id=74"> Classroom </a></li>
-							<li><a class="nav-link item-link
-							<?php 
-										if ($_SESSION['right'] == 'lab') {
-											echo 'right_active';
-									} ?>" href="facilities.php?id=71"> Lab </a></li>
-							<li><a class="nav-link item-link
-							<?php 
-										if ($_SESSION['right'] == 'front-office') {
-											echo 'right_active';
-									} ?>" href="facilities.php?id=74"> Front office </a></li>
+							<li><a class="nav-link item-link" href="facilities.php?id=74"> Classroom </a></li>
+							<li><a class="nav-link item-link" href="facilities.php?id=71"> Lab </a></li>
+							<li><a class="nav-link item-link" href="facilities.php?id=74"> Front office </a></li>
 						</ul>
 					</li>
 				</ul>
