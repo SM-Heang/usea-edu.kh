@@ -34,7 +34,7 @@
 					<li class="nav-item has-submenu select-menu">
 						<a class="nav-link item-link select-btn" href="upcoming-events.php" onclick="return false"> Events
 							<?php
-							if ($_SESSION['right'] == 'upcoming_events' || $_SESSION['right'] == 'event-s') {
+							if ($_SESSION['right'] == 'upcoming-events' || $_SESSION['right'] == 'event-s') {
 								echo '<i class="fa-solid fa-angle-up i_1"></i>';
 							} else {
 								echo '<i class="fa-solid fa-angle-down i_1"></i>';
@@ -43,7 +43,7 @@
 						</a>
 						
 						<ul class="submenu collapse <?php
-													if ($_SESSION['right'] == 'upcoming_events' || $_SESSION['right'] == 'event-s' ) {
+													if ($_SESSION['right'] == 'upcoming-events' || $_SESSION['right'] == 'event-s' ) {
 														echo "show";
 													}
 													?>">

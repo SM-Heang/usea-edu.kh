@@ -1,21 +1,13 @@
 <?php
-$page = 'building';
+$page = 'career_other_institute';
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
-
 $_SESSION['page'] = $page;
-$_SESSION['right'] = 'building';
+$_SESSION['right'] = 'career-other-institute';
+
 include_once '../include/header.php';
 include_once '../../connection/db.connection.php';
-?>
-
- <?php
-            $id = $_GET['id'];
-            $sql = "SELECT * FROM usea_article WHERE article_id = '$id' ";
-            $stmt = $conn->prepare($sql);
-            $stmt->execute();
-            $temp = $stmt->fetch(PDO::FETCH_ASSOC);
 ?>
 
 <!-- Start Web Location -->
@@ -30,7 +22,7 @@ include_once '../../connection/db.connection.php';
                     </a>
                 </li>
                 <li>
-                    <a href="#"><?php echo $temp['article_title_en'] ?></a>
+                    <a href="#">Career University</a>
                 </li>
             </ul>
         </div>
@@ -46,12 +38,9 @@ include_once '../../connection/db.connection.php';
         <div class="col-xxl-9">
             <div class="container" style="background-color:#002060;">
                 <div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-                <?php echo $temp['article_title_en'] ?>
+                Career University
                 </div>
             </div>
-            <div>
-					<?php echo $temp['article_description_en'] ?>
-			</div>
 
         </div>
         <!-- Start Right Content-->

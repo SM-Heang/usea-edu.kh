@@ -22,7 +22,7 @@
 					</a>
 					</li>
 					<li>
-						<a href="#">Scholarship</a>
+						<a href="#">Practucum/Internship</a>
 					</li>
 				</ul>
 			</div>
@@ -38,7 +38,7 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-                    Scholarship
+					Practucum / Internship
 					</div>
 				</div>
 				

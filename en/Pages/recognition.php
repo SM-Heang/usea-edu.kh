@@ -44,9 +44,7 @@
 					$stmt= $conn->prepare($sql);
 					$stmt->execute();
 				?>
-				 <h4 class="fw-bold mt-3" style="color: red;">History</h4>
-				 <hr class="mt-3 mb-5" style="color: #002060;">
-				<div class="mt-2 d-flex">
+				 <div class="mt-2 d-flex">
 					<img src="../../media/g1.jpg" width="180px" height="130px">
 					<p class="txt_reco" style="margin-left: 10px; text-align: justify;">Goverment There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,</p>
 				</div>

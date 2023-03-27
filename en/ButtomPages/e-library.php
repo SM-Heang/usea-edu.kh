@@ -1,10 +1,10 @@
 <?php
-    $page = 'public_information';
+    $page = 'e_library';
     if (session_status() === PHP_SESSION_NONE) {
         session_start();
     }
     $_SESSION['page'] = $page;
-    $_SESSION['right'] = 'public-information-center';
+    $_SESSION['right'] = 'e-library';
 
     include_once '../include/header.php';
     include_once '../../connection/db.connection.php';
@@ -22,7 +22,7 @@
 					</a>
 					</li>
 					<li>
-						<a href="#">Joint Public Information Center</a>
+						<a href="#">E-Library</a>
 					</li>
 				</ul>
 			</div>
@@ -38,7 +38,7 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-					Joint Public Information Center
+					E-Library
 					</div>
 				</div>
 				

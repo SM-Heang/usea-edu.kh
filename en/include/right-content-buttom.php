@@ -24,23 +24,35 @@
 						</a>
 						<ul class="submenu collapse
 							<?php 
-									if ($_SESSION['page'] == 'practucum_internship') {
+									if ($_SESSION['page'] == 'practucum_internship'|| $_SESSION['page'] == 'student_tours' || $_SESSION['page'] == 'sport'|| $_SESSION['page'] == 'art_culture' ) {
 										echo "show";
 									}
 							?>">
 							<li>
 								<a class="nav-link item-link 
 								  <?php 
-								  		if ($_SESSION['right'] == 'practucum-internship') {
+								  		if ($_SESSION['right'] == 'practucum-internship' ) {
 											 echo 'right_active';
 																} ?>" 
 									aria-current="page" 
 									href="practucum-internship.php"> Practucum/Internship
 								</a>
 							</li>
-							<li><a class="nav-link item-link" href="#"> Student Tours </a></li>
-							<li><a class="nav-link item-link" href="#"> Sport </a></li>
-							<li><a class="nav-link item-link" href="#"> Art & Cultural Exchange </a></li>
+							<li><a class="nav-link item-link <?php 
+								  		if ($_SESSION['right'] == 'student-tours' ) {
+											 echo 'right_active';
+																} ?>" href="student-tours.php"> Student Tours </a></li>
+							<li><a class="nav-link item-link
+							<?php 
+								  		if ($_SESSION['right'] == 'sport' ) {
+											 echo 'right_active';
+																} ?>" 
+																href="sport.php"> Sport </a></li>
+							<li><a class="nav-link item-link
+							<?php 
+								  		if ($_SESSION['right'] == 'art-culture' ) {
+											 echo 'right_active';
+																} ?>" href="art-culture-exchange.php"> Art & Cultural Exchange </a></li>
 						</ul>
 					</li>
 				</ul>
@@ -65,7 +77,7 @@
 						</a>
 						<ul class="submenu collapse
 							<?php
-									if ($_SESSION['page'] == 'public_information') {
+									if ($_SESSION['page'] == 'public_information'|| $_SESSION['page'] == 'american_corner' || $_SESSION['right'] == 'e-library') {
 										echo "show";
 									}
 							?>">
@@ -79,8 +91,16 @@
 									href="public-information-center.php"> Joint Public Information Center
 								</a>
 							</li>
-							<li><a class="nav-link item-link" href="#"> American Corner </a></li>
-							<li><a class="nav-link item-link" href="#"> E-Library </a></li>
+							<li><a class="nav-link item-link
+							<?php 
+										if ($_SESSION['right'] == 'american-corner') {
+											echo 'right_active';
+									} ?>" href="american-corner.php"> American Corner </a></li>
+							<li><a class="nav-link item-link
+							<?php 
+										if ($_SESSION['right'] == 'e-library') {
+											echo 'right_active';
+									} ?>" href="e-library"> E-Library </a></li>
 						</ul>
 					</li>
 				</ul>
@@ -151,7 +171,7 @@
 						</a>
 						<ul class="submenu collapse
 							<?php
-									if ($_SESSION['page'] == 'university') {
+									if ($_SESSION['page'] == 'university' || $_SESSION['page'] == 'career_other_institute') {
 										echo "show";
 									}
 							?>">
@@ -162,10 +182,14 @@
 											echo 'right_active';
 									} ?>"
 									aria-current="page" 
-									href="university.php"> University
+									href="career-university.php"> University
 								</a>
 							</li>
-							<li><a class="nav-link item-link" href="#"> Other Institution </a></li>
+							<li><a class="nav-link item-link
+							<?php 
+										if ($_SESSION['right'] == 'career-other-institute') {
+											echo 'right_active';
+									} ?>" href="career-other-institution.php"> Other Institution </a></li>
 						</ul>
 					</li>
 				</ul>
@@ -203,16 +227,28 @@
 							<li>
 								<a class="nav-link item-link 
 									<?php 
-										if ($_SESSION['right'] == 'facilities-right') {
+										if ($_SESSION['right'] == 'building') {
 											echo 'right_active';
 									} ?>"
 									aria-current="page" 
-									href="facilities.php">Building
+									href="facilities.php?id=69">Building
 								</a>
 							</li>
-							<li><a class="nav-link item-link" href="#"> Classroom </a></li>
-							<li><a class="nav-link item-link" href="#"> Lab </a></li>
-							<li><a class="nav-link item-link" href="#"> Front office </a></li>
+							<li><a class="nav-link item-link 
+							<?php 
+										if ($_SESSION['right'] == 'classroom') {
+											echo 'right_active';
+									} ?>" href="facilities.php?id=74"> Classroom </a></li>
+							<li><a class="nav-link item-link
+							<?php 
+										if ($_SESSION['right'] == 'lab') {
+											echo 'right_active';
+									} ?>" href="facilities.php?id=71"> Lab </a></li>
+							<li><a class="nav-link item-link
+							<?php 
+										if ($_SESSION['right'] == 'front-office') {
+											echo 'right_active';
+									} ?>" href="facilities.php?id=74"> Front office </a></li>
 						</ul>
 					</li>
 				</ul>

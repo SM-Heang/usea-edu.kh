@@ -1,9 +1,9 @@
 <?php
-// $page = 'home_kh';
-// if (session_status() === PHP_SESSION_NONE) {
-// 	session_start();
-// }
-// $_SESSION['page'] = $page;
+$page = 'home_kh';
+if (session_status() === PHP_SESSION_NONE) {
+	session_start();
+}
+$_SESSION['page'] = $page;
 
 include_once '../include/header.php';
 include_once '../../connection/db.connection.php';
@@ -50,7 +50,7 @@ include_once '../../connection/db.connection.php';
 								<p><?php echo substr($value['event_description_en'], 0, 100) . "..."; ?></p>
 							</div>
 							<div style="text-align: right;">
-								<a href="#" type="button" class="btn btn-outline-primary"> Read More </a>
+								<a href="#" type="button" class="btn btn-outline-primary"> អានបន្ថែម </a>
 							</div>
 						</div>
 					</div>
@@ -87,7 +87,7 @@ include_once '../../connection/db.connection.php';
 								<p class="card-text"><?php echo substr($value['event_description_en'], 0, 0) ?></p>
 							</div>
 							<div style="text-align: right;">
-								<a href="event-detail.php?id=<?php echo $value['event_id'] ?>" class="btn btn-danger btn-sm">Read More</a>
+								<a href="event-detail.php?id=<?php echo $value['event_id'] ?>" class="btn btn-danger btn-sm">អានបន្ថែម</a>
 							</div>
 						</div>
 					</div>
