@@ -16,7 +16,7 @@ include_once '../../connection/db.connection.php';
             $stmt = $conn->prepare($sql);
             $stmt->execute();
             $temp = $stmt->fetch(PDO::FETCH_ASSOC);
-?>
+?>​
 
 <!-- Start Web Location -->
 

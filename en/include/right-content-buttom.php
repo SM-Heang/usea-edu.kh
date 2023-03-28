@@ -254,6 +254,12 @@
 			</a>
 		</div>
 		<hr>
+		<div class="item">
+			<a class="nav-link item-link <?php if ($_SESSION['right'] == 'new-website') {
+								echo 'right_active';
+											} ?>" href="form-download.php"> News Website
+			</a>
+		</div>
 
 	</div>
 </div>
