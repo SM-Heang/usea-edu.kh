@@ -9,6 +9,7 @@ $_SESSION['right'] = 'faculty-economics';
 
 include_once '../include/header.php';
 include_once '../../connection/db.connection.php';
+// print_r($_SESSION['id']);
 ?>
 <!-- Start Web Location -->
  

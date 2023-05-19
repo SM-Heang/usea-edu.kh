@@ -4,15 +4,15 @@
 		<div class="item">
 			<nav class="sidebar">
 				<ul class="nav flex-column">
-					<li> <a class="nav-link item-link <?php if ($_SESSION['right'] == 'history-logo') {
+				<li> <a class="nav-link item-link <?php if ($_SESSION['right'] == 'history_logo') {
 															echo 'right_active';
 														} ?>" href="history-logo.php"> History & Logo Meaning </a></li>
 					<hr>
-					<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'p-message') {
+					<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'p_message') {
 															echo 'right_active';
 														} ?>" href="president-message.php"> President Message </a></li>
 					<hr>
-					<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'vision-mision-corevalue-right') {
+					<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'vision_mision_corevalue_right') {
 															echo 'right_active';
 														} ?>" href="vision-mision-corevalue.php"> Vision, Mission & Core Value </a></li>
 					<hr>

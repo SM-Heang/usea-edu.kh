@@ -225,13 +225,19 @@
 									}
 							?>">
 							<li>
-								<a class="nav-link item-link" aria-current="page" 
+								<a class="nav-link item-link <?php if($_SESSION['id']== 69){
+									echo 'right_active';
+								}?>" aria-current="page" 
 									href="facilities.php?id=69">Building
 								</a>
 							</li>
-							<li><a class="nav-link item-link" href="facilities.php?id=74"> Classroom </a></li>
-							<li><a class="nav-link item-link" href="facilities.php?id=71"> Lab </a></li>
-							<li><a class="nav-link item-link" href="facilities.php?id=74"> Front office </a></li>
+							<li><a class="nav-link item-link <?php if($_SESSION['id']== 74){
+									echo 'right_active';
+								}?>" href="facilities.php?id=74"> Classroom </a></li>
+							<li><a class="nav-link item-link <?php if($_SESSION['id']== 71){
+									echo 'right_active';
+								}?>" href="facilities.php?id=71"> Lab </a></li>
+							<li><a class="nav-link item-link" href="#"> Front office </a></li>
 						</ul>
 					</li>
 				</ul>

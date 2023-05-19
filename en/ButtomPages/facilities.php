@@ -9,13 +9,13 @@ $_SESSION['right'] = 'building';
 include_once '../include/header.php';
 include_once '../../connection/db.connection.php';
 ?>
-
  <?php
             $id = $_GET['id'];
             $sql = "SELECT * FROM usea_article WHERE article_id = '$id' ";
             $stmt = $conn->prepare($sql);
             $stmt->execute();
             $temp = $stmt->fetch(PDO::FETCH_ASSOC);
+            $_SESSION['id'] = $id;
 ?>​
 
 <!-- Start Web Location -->
