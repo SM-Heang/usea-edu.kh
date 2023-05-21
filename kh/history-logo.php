@@ -13,7 +13,7 @@
 					</a>
 					</li>
 					<li>
-						<a href="#">History & Logo Meaning test</a>
+						<a href="#">History & Logo Meaning</a>
 					</li>
 				</ul>
 			</div>
