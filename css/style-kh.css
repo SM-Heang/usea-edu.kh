@@ -56,6 +56,10 @@ body {
 .nav-link li {
   list-style: none;
 }
+/* nav-link li each one */
+.main-menu{
+  width: 120px;
+}
 
 .nav-link li a {
   color: #002060;
@@ -2383,11 +2387,17 @@ figure {
     display: flex;
     justify-content: center;
   }
+  .main-menu{
+    width: 100px;
+  }
 }
 
 @media screen and (max-width: 992px) {
   .fh5co-blog {
     width: 100%;
+  }
+  .main-menu{
+    width: 100px;
   }
 }
 

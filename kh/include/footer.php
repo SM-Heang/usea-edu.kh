@@ -2,7 +2,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center" id="footer-location">
-					<p>Address : Opposite Angkor High School, Siem Reap Municipality, Kingdom of Cambodia<br> Website: www.usea.edu.kh | Email : info@usea.edu.kh <br> Tel : 063 900 090, 017 386 678 </p>
+					<p>អាស័យដ្ខាន : ភូមិវត្តបូព៌ សង្កាត់សាលាកំរើក ក្រុងសៀមរាប ខេត្តសៀមរាប (ទល់មុខវិទ្យាល័យអង្គរ)<br> គេហទំព័រ : www.usea.edu.kh | អ៊ីម៉ែល : info@usea.edu.kh <br> ទូរស័ព្ទ : 063 900 090, 017 386 678 </p>
 				</div>
 			</div>
 		</div>

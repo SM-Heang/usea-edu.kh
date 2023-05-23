@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>University of South-East Asia</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -97,7 +97,7 @@
 	</nav>
 	<div class="container">
 		<nav class="navbar-parent"> 
-			<div class="wrapper">
+			<div class="wrapper align-items-center justify-content-center py-auto">
 				<div class="logo">
 					<a href="../Pages/index.php">
 						<img src="../../media/title/usea-title-1.png" alt="USEA LOGO">
@@ -107,28 +107,28 @@
 					<div class="bar"></div>
 				</div>
 				<ul class="nav-link"> 
-					<li><a class="<?php if($_SESSION['page'] =='home_kh'){echo 'active';} ?>" href="../Pages/index.php">ទំព័រដើម</a></li>
-					<li>
+					<li class="mx-0 text-end main-menu"><a class="<?php if($_SESSION['page'] =='home_kh'){echo 'active';} ?>" href="../Pages/index.php">ទំព័រដើម</a></li>
+					<li class="mx-0 text-center main-menu">
 						<a class="<?php if($_SESSION['page'] =='about_kh'){echo 'active';} ?>" href="../Pages/history-logo.php">អំពីយើង</a>
 						<div class="mega-box">
-							<div class="content" id="nav-about">
+							<div class="content border border-1 border-primary" id="nav-about">
 								<div class="row">
 									<ul class="mega-link">
 										<li class="list-control">
 											<img src="../../media/nav-icon/history.png" class="nav-icon" width="25px" height="25px">
-											<a href="../Pages/history-logo.php">History & Logo Meaning</a>
+											<a href="../Pages/history-logo.php">ប្រវត្តិសាកលវិទ្យាល័យ និងអត្ថន័យរបស់និមិត្តសញ្ញា</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/president.png" class="nav-icon" width="25px" height="25px">
-											<a href="../Pages/president-message.php">President Message</a>
+											<a href="../Pages/president-message.php">សាររបស់សាកលវិទ្យាធិការ</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/core-value.png" class="nav-icon" width="25px" height="25px">
-											<a href="../Pages/vision-mision-corevalue.php">Vision Mission & Core Value</a>
+											<a href="../Pages/vision-mision-corevalue.php">ចក្ខុវិស័យ, បេសកកម្ម & គុណតម្លៃ</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/location.png" class="nav-icon" width="25px" height="25px">
-											<a href="../Pages/location.php">Location</a>
+											<a href="../Pages/location.php">ទីតាំង</a>
 										</li>
 									</ul>
 								</div>
@@ -136,22 +136,22 @@
 									<ul class="mega-link">
 										<li class="list-control">
 											<img src="../../media/nav-icon/structure.png" class="nav-icon" width="25px" height="25px">
-											<a href="../Pages/usea-structure.php">University Structure</a>
+											<a href="../Pages/usea-structure.php">រចនាសម្ព័ន្ធសាកលវិទ្យាល័យ</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/recognition.png" class="nav-icon" width="25px" height="25px">
-											<a href="recognition.php">Recognition</a>
+											<a href="recognition.php">ការទទួលស្គាល់</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/event.png" class="nav-icon" width="25px" height="25px">
-											<a href="../Pages/events.php">Events</a>
+											<a href="../Pages/events.php">ព្រឹត្តិការណ៍</a>
 										</li>
 									</ul>
 								</div>
 							</div>
 						</div>
 					</li>
-					<li>
+					<li class="mx-0 text-center main-menu">
 						<a class="<?php 
 							if($_SESSION['page'] == 'academics_kh'){ echo 'active'; } 
 							if($_SESSION['page'] == 'partnership_local_kh'){ echo 'noactive';}
@@ -205,8 +205,8 @@
 							</div>
 						</div>
 					</li>
-					<li><a class="<?php if($_SESSION['page'] == 'partnership_local_kh'){ echo 'active'; } ?>" href="../Pages/partnership-local.php">ដៃសហការ</a></li>
-					<li>
+					<li class="mx-0 text-center main-menu"><a class=" <?php if($_SESSION['page'] == 'partnership_local_kh'){ echo 'active'; } ?>" href="../Pages/partnership-local.php">ដៃសហការ</a></li>
+					<li class="mx-0 text-center main-menu">
 						<a class="<?php if($_SESSION['page'] == 'research_procedure_kh'){ echo 'active'; } ?>" href="#">ស្រាវជ្រាវ</a>
 						<div class="mega-box">
 							<div class="content" id="nav-research">
@@ -255,7 +255,7 @@
 						<ul>
 							<li>
 								<img src="../media/nav-icon/history.png" class="nav-icon" width="15px" height="15px">
-								<a href="../Pages/history-logo.php">History & Logo Meaning</a>
+								<a href="../Pages/history-logo.php">ប្រវត្តិសាកលវិទ្យាល័យ និងអត្ថន័យរបស់និមិត្តសញ្ញា</a>
 							</li>
 							<li>
 								<img src="../media/nav-icon/structure.png" class="nav-icon" width="15px" height="15px">
