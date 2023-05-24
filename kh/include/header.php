@@ -111,7 +111,7 @@
 					<li class="mx-0 text-center main-menu">
 						<a class="<?php if($_SESSION['page'] =='about_kh'){echo 'active';} ?>" href="../Pages/history-logo.php">អំពីយើង</a>
 						<div class="mega-box">
-							<div class="content border border-1 border-primary" id="nav-about">
+							<div class="content" id="nav-about">
 								<div class="row">
 									<ul class="mega-link">
 										<li class="list-control">
