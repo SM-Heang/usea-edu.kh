@@ -57,6 +57,9 @@
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
 
 	</head>
+
+
+	
 	<body>
 	<div class="fh5co-loader"></div>
 	<div id="page">
@@ -166,19 +169,19 @@
 									<ul class="mega-link">
 										<li class="list-control">
 											<img src="../../media/nav-icon/f-economic.png" width="25px" height="25px">
-											<a href="../vission-Mission/vision-mision-corevalue-economic.php">Faculty of Economics,<br> Business & Tourism</a>
+											<a href="../vission-Mission/vision-mision-corevalue-economic.php">មហាវិទ្យាល័យសេដ្ឋកិច្ច ពាណិជ្ជកម្ម និងទេសចរណ៍</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/f-it.png" width="25px" height="25px">
-											<a href="../vission-Mission/vision-mision-corevalue-science-technology.php">Faculty of Sciences & <br> Technology</a>
+											<a href="../vission-Mission/vision-mision-corevalue-science-technology.php">មហាវិទ្យាល័យវិទ្យាសាស្រ្ត និងបច្ចែកវិទ្យា</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/f-law.png" width="25px" height="25px">
-											<a href="../vission-Mission/vision-mision-corevalue-law.php">Faculty of Social Science <br>& Law</a>
+											<a href="../vission-Mission/vision-mision-corevalue-law.php">មហាវិទ្យាល័យវិទ្យាសាស្រ្តសង្គម និងនីតិសាស្រ្ត</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/f-art.png" width="25px" height="25px">
-											<a href="../vission-Mission/vision-mision-corevalue-art-humanities.php">Faculty of Arts, Humanities <br>& Education</a>
+											<a href="../vission-Mission/vision-mision-corevalue-art-humanities.php">មហាវិទ្យាល័យសិល្បៈ មនុស្សសាស្រ្ត និងអប់រំ</a>
 										</li>
 									</ul>
 								</div>
@@ -186,26 +189,26 @@
 									<ul class="mega-link">
 										<li class="list-control">
 											<img src="../../media/nav-icon/f-internation-college.png" width="25px" height="25px">
-											<a href="../Pages/international-college.php">International College</a>
+											<a href="../Pages/international-college.php">មហាវិទ្យាល័យអន្តរជាតិ</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/fli.png" width="25px" height="25px">
-											<a href="../vission-Mission/vision-mision-corevalue-fli.php">Foreign Language <br>Institute</a>
+											<a href="../vission-Mission/vision-mision-corevalue-fli.php">វិទ្យាស្ថានភាសាបរទេស</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/post-graduate.png" width="25px" height="25px">
-											<a href="../Pages/post-graduate.php">Post Graduate</a>
+											<a href="../Pages/post-graduate.php">សាលាក្រោយបរិញ្ញាបត្រ</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/short-course.png" width="25px" height="25px">
-											<a href="../Pages/short-course.php">Short Course</a>
+											<a href="../Pages/short-course.php">វគ្គបណ្ដុះបណ្ដាលខ្លី</a>
 										</li>
 									</ul>
 								</div>
 							</div>
 						</div>
 					</li>
-					<li class="mx-0 text-center main-menu"><a class=" <?php if($_SESSION['page'] == 'partnership_local_kh'){ echo 'active'; } ?>" href="../Pages/partnership-local.php">ដៃសហការ</a></li>
+					<li class="mx-0 text-center main-menu"><a class=" <?php if($_SESSION['page'] == 'partnership_local_kh'){ echo 'active'; } ?>" href="../Pages/partnership-local.php">ដៃគូរសហការ</a></li>
 					<li class="mx-0 text-center main-menu">
 						<a class="<?php if($_SESSION['page'] == 'research_procedure_kh'){ echo 'active'; } ?>" href="#">ស្រាវជ្រាវ</a>
 						<div class="mega-box">

@@ -58,7 +58,7 @@ body {
 }
 /* nav-link li each one */
 .main-menu{
-  width: 120px;
+  width: 136px;
 }
 
 .nav-link li a {
@@ -491,9 +491,6 @@ body {
   }
   .mega-box .mega-link .list-control img{
     margin-top: 13px;
-    
-  }
-  .mega-box .mega-link .list-control{
     
   }
 }
@@ -2414,7 +2411,7 @@ figure {
     justify-content: center;
   }
   .main-menu{
-    width: 100px;
+    width: 107px;
   }
 }
 
