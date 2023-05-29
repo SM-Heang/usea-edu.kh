@@ -83,10 +83,10 @@
 						?>
 						
 						">
-							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'bachelor-international-law') {
+							<!-- <li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'bachelor-international-law') {
 								echo 'right_active';
 							} ?>" href="#"> International
-									Law </a></li>
+									Law </a></li> -->
 							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'bachelor-laws') {
 								echo 'right_active';
 							} ?>" href="../BachelorDegree/bachelor-laws.php">Laws</a> </li>
@@ -94,9 +94,9 @@
 								echo 'right_active';
 							} ?>" href="#"> Political
 									Sciences and International Relations </a> </li>
-							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'bachelor-privat-law') {
+							<!-- <li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'bachelor-privat-law') {
 								echo 'right_active';
-							} ?>" href="#"> Private Law </a> </li>
+							} ?>" href="#"> Private Law </a> </li> -->
 							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'bachelor-public-admin') {
 								echo 'right_active';
 							} ?>" href="../BachelorDegree/bachelor-public-admin.php"> Public

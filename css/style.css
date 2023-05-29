@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap');
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
@@ -8,19 +9,28 @@
   font-weight: normal;
   font-style: normal;
 }
+:root{
+  --primary-color: #002060;
+  --title-color: #ff0000;
+  --bg-color: #fffffffc;
+  --mega-bg-color:rgb(255, 250, 250);
+  --white-color: #fff;
+  --font-en: "Poppins", sans-serif;
+  --font-kh: "Poppins", sans-serif
+}
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Khmer OS System";
+  font-family: var(--font-kh);
   font-weight: 400;
   font-size: 0.9rem;
   line-height: 1.7;
   color: #828282;
   box-sizing: border-box;
-  background: #fffffffc;
+  background: var(--bg-color);
 }
 
 /* Start My Custom Css */
@@ -49,7 +59,7 @@ body {
 }
 
 .nav-link .logo a {
-  color: #fff;
+  color: var(--white-color);
   text-decoration: none;
 }
 
@@ -59,7 +69,7 @@ body {
 }
 
 .nav-link li a {
-  color: #002060;
+  color: var(--primary-color);
   text-decoration: none;
   font-size: 1.25rem;
   font-weight: bold;
@@ -69,7 +79,7 @@ body {
 }
 
 .nav-link li a:hover {
-  color: red;
+  color: var(--title-color);
   transition: all 0.3s ease;
 }
 
@@ -89,7 +99,7 @@ body {
 }
 
 .mega-box .content {
-  background: rgb(255, 250, 250);
+  background: var(--mega-bg-color);
   border-radius: 10px;
   padding: 25px 20px;
   display: flex;
@@ -114,7 +124,7 @@ body {
 }
 
 .nav-link .active {
-  color: red;
+  color: var(--title-color);
 }
 
 .mega-link .list-control {
@@ -156,12 +166,12 @@ body {
 
 .phone-menu-bar .phone-menu ul hr {
   margin-top: 10px;
-  color: #002060;
+  color: var(--primary-color);
 }
 
 .phone-menu-bar .phone-menu ul a {
   text-decoration: none;
-  color: #002060;
+  color: var(--primary-color);
   font-size: 0.9rem;
 }
 
@@ -172,11 +182,11 @@ body {
 #top-nav ul li a {
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: bold;
-  color: #002060;
+  color: var(--primary-color);
   font-size: 20px !important;
 }
 .noactive{
-  color: #002060;
+  color: var(--primary-color);
 }
 
 .web-location ul {
@@ -191,7 +201,7 @@ body {
 .web-location ul li a {
   display: block;
   text-decoration: none;
-  color: #002060;
+  color: var(--primary-color);
   font-size: 18px;
 }
 
@@ -209,7 +219,7 @@ body {
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #ff0000;
+  color: var(--title-color);
 }
 
 #content-detail .content-history-detail img {
@@ -219,8 +229,8 @@ body {
 }
 
 #content-detail .content-history-detail p {
-  color: #002060;
-  font-family: Khmer OS System;
+  color: var(--primary-color);
+  /* font-family: var(--font-kh); */
   text-align: justify;
 }
 
@@ -236,26 +246,26 @@ body {
   line-height: 30px;
   text-decoration: underline;
   font-size: 1.25rem;
-  color: red;
+  color: var(--title-color);
 }
 .event_detail{
-  font-family: Khmer OS System;
+  font-family: var(--font-kh);
   font-size: 1rem;
-  color: #002060;
+  color: var(--primary-color);
   text-align: justify;
 }
 /* Start Logo Meaning Detail*/
 
 #content-detail .content-meaning-detail {
   text-align: center;
-  color: #002060;
+  color: var(--primary-color);
 }
 
 #content-detail .content-meaning-detail p {
   text-align: center;
   font-weight: bold;
   margin-bottom: 5px;
-  color: #002060;
+  color: var(--primary-color);
   font-size: 16pt;
 }
 
@@ -266,7 +276,7 @@ body {
 }
 
 #content-detail .content-meaning-detail ul li {
-  color: #002060;
+  color: var(--primary-color);
   font-size: 16pt;
 }
 
@@ -275,14 +285,14 @@ body {
 /* Start core value meaning Detail*/
 #content-detail .content-core-value-detail {
   text-align: justify;
-  color: #002060;
+  color: var(--primary-color);
 }
 
 #content-detail .content-core-value-detail p {
   display: block;
   text-align: justify;
   margin-bottom: 5px;
-  color: #002060;
+  color: var(--primary-color);
   font-size: 16pt;
 }
 
@@ -290,13 +300,13 @@ body {
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #ff0000;
+  color: var(--title-color);
 }
 
 #content-detail .content-core-value-detail ul li {
   text-align: justify;
   margin-bottom: 5px;
-  color: #002060;
+  color: var(--primary-color);
   font-size: 16pt;
 }
 
@@ -313,7 +323,7 @@ body {
 }
 
 #content-detail .content-president-detail p {
-  color: #002060;
+  color: var(--primary-color);
   font-size: 0.9rem;
   text-align: justify;
 }
@@ -326,7 +336,7 @@ body {
 
 #content-detail .content-structure-detail p {
   margin-top: 10px;
-  color: #002060;
+  color: var(--primary-color);
   font-size: 1.25rem;
   text-align: justify;
 }
@@ -354,9 +364,9 @@ body {
 }
 
 #button-content ul li a {
-  font-family: "Khmer OS System";
+  font-family: var(--font-kh);
   font-size: 16pt;
-  color: #002060;
+  color: var(--primary-color);
   text-decoration: none;
   font-weight: bold;
 }
@@ -368,7 +378,7 @@ body {
 /*Right Content*/
 .right-content {
   height: 70vh;
-  background-color: #fffffffc;
+  background-color: var(--bg-color);
   box-shadow: 0px 3px 5px rgb(0, 0, 0, 0.3);
 }
 
@@ -385,7 +395,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
-  color: #002060;
+  color: var(--primary-color);
 }
 
 .right-content ul li a:hover {
@@ -393,7 +403,7 @@ body {
 }
 
 .right-content ul li a.active {
-  color: #ff0000;
+  color: var(--title-color);
 }
 
 /*Right Content Economic*/
@@ -401,17 +411,17 @@ body {
   padding: 26px 10px;
   margin-bottom: 10px;
   height: 100vh auto;
-  background-color: #fffffffc;
+  background-color: var(--bg-color);
   box-shadow: 0px 3px 5px rgb(0, 0, 0, 0.3);
   border-radius: 10px;
 }
 
 .right-content-economic .right_active {
-  color: red !important;
+  color: var(--title-color) !important;
 }
 
 .right-content-economic hr {
-  border: .1px solid #002060;
+  border: .1px solid var(--primary-color);
   font-weight: bold;
   border-radius: 10px;
   opacity: 1 !important;
@@ -421,7 +431,7 @@ body {
 .right-content-economic .item .item-link {
   padding: 0.9rem;
   text-decoration: none;
-  color: #002060;
+  color: var(--primary-color);
   font-size: 1.15rem;
   font-weight: 700;
 }
@@ -433,7 +443,7 @@ body {
 .right-content-economic .item .sub-item a {
   padding-left: 2rem;
   text-decoration: none;
-  color: #002060;
+  color: var(--primary-color);
   font-size: 1.25rem;
 }
 
@@ -448,13 +458,13 @@ body {
 
 .right-content-economic .item .sidebar li .submenu,
 .right-content-economic .item .item-link:hover {
-  color: #ff0000;
+  color: var(--title-color);
 }
 
 .active-link[aria-current="page"],
 .active-v,
 .nav-link:hover {
-  color: #ff0000 !important;
+  color: var(--title-color) !important;
 }
 
 /* 
@@ -465,8 +475,8 @@ body {
 /* ========================================= */
 
 #footer-location {
-  background-color: #002060;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--white-color);
   padding: 20px;
   font-size: 20px;
 }
@@ -474,7 +484,7 @@ body {
 .copyright {
   margin-top: 5px;
   font-size: 20px;
-  color: #002060;
+  color: var(--primary-color);
 }
 
 @media screen and (max-width: 1399px) {
@@ -520,7 +530,7 @@ body {
   .fh5co-nav .top .social-parent p {
     font-size: 0.75rem;
     margin-top: 15px;
-    color: #002060;
+    color: var(--primary-color);
   }
 
   .fh5co-nav .top .social-parent span {
@@ -538,7 +548,7 @@ body {
   #btn-link a {
     font-size: 0.75rem;
     text-decoration: none;
-    color: #002060;
+    color: var(--primary-color);
     margin: 15px 10px 0px 10px;
   }
 
@@ -577,7 +587,7 @@ body {
   }
 
   .nav-link li a {
-    color: #002060;
+    color: var(--primary-color);
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: bold;
@@ -684,13 +694,13 @@ body {
 }
 #partnership-int .partnership-title{
   font-family: Khmer OS Content !important;
-  color: #002060;
+  color: var(--primary-color);
   font-weight: bold;
   font-size: 1.25rem !important;
 }
 #partnership-int .partnership-title{
   font-family: Khmer OS Content !important;
-  color: #002060;
+  color: var(--primary-color);
   font-weight: bold;
   font-size: 1rem !important;
 }
@@ -715,7 +725,7 @@ body {
   display: block;
   width: 100%;
   height: 5px;
-  background-color: #002060;
+  background-color: var(--primary-color);
   margin: 6px 0px;
   border-radius: 10px;
   transition: 0.4s;
@@ -754,16 +764,16 @@ body {
 .mobile-menu ul li a {
   font-size: 0.9rem;
   text-decoration: none;
-  color: #002060;
+  color: var(--primary-color);
   display: block;
 }
 
 .mobile-menu ul hr {
-  color: #002060;
+  color: var(--primary-color);
 }
 
 .dropdown-hamburger {
-  color: #ff0000;
+  color: var(--title-color);
   display: block;
   position: absolute;
   left: 0;
@@ -901,12 +911,12 @@ body {
 
   .phone-menu-bar .phone-menu ul hr {
     margin-top: 10px;
-    color: #002060;
+    color: var(--primary-color);
   }
 
   .phone-menu-bar .phone-menu ul a {
     text-decoration: none;
-    color: #002060;
+    color: var(--primary-color);
     font-size: 0.75rem;
   }
 
@@ -917,7 +927,7 @@ body {
 
   #row-parent #button-content ul li a {
     font-size: 12pt;
-    color: #002060;
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
   }
@@ -1012,7 +1022,7 @@ h5,
 h6,
 figure {
   color: #000;
-  font-family: "Khmer OS System";
+  font-family: var(--font-kh);
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -1075,7 +1085,7 @@ figure {
   .fh5co-nav .top .social-parent p {
     font-size: 0.75rem;
     margin-top: 15px;
-    color: #002060;
+    color: var(--primary-color);
   }
 
   .fh5co-nav .top .social-parent span {
@@ -1093,7 +1103,7 @@ figure {
   #btn-link a {
     font-size: 0.75rem;
     text-decoration: none;
-    color: #002060;
+    color: var(--primary-color);
     margin: 15px 10px 0px 10px;
   }
 
@@ -1264,12 +1274,12 @@ figure {
 
   .phone-menu-bar .phone-menu ul hr {
     margin-top: 10px;
-    color: #002060;
+    color: var(--primary-color);
   }
 
   .phone-menu-bar .phone-menu ul a {
     text-decoration: none;
-    color: #002060;
+    color: var(--primary-color);
     font-size: 0.75rem;
   }
 
@@ -1277,7 +1287,7 @@ figure {
     font-size: 0.75rem;
     display: none;
     margin-top: 15px;
-    color: #002060;
+    color: var(--primary-color);
   }
 
   .fh5co-nav .top .social-parent span {
@@ -1295,7 +1305,7 @@ figure {
   #btn-link a {
     font-size: 0.75rem;
     text-decoration: none;
-    color: #002060;
+    color: var(--primary-color);
     margin: 5px 10px 0px 10px !important;
   }
 
@@ -1365,17 +1375,17 @@ figure {
 
 #btn-link a {
   text-decoration: none;
-  color: #002060;
+  color: var(--primary-color);
   margin: 15px 10px 0px 10px;
 }
 
 #btn-link span {
-  color: #002060;
+  color: var(--primary-color);
   margin-top: 10px;
 }
 
 .fh5co-nav .top .num {
-  color: #002060;
+  color: var(--primary-color);
   font-size: 12px;
   letter-spacing: 0px;
   margin-top: 3px;
@@ -1384,7 +1394,7 @@ figure {
 
 .fh5co-nav .top .social-parent p {
   margin-top: 15px;
-  color: #002060;
+  color: var(--primary-color);
 }
 
 .fh5co-nav .top .social-parent span {
@@ -1417,7 +1427,7 @@ figure {
     font-size: 0.75rem;
     display: none;
     margin-top: 15px;
-    color: #002060;
+    color: var(--primary-color);
   }
 
   .fh5co-nav .top .social-parent span {
@@ -1436,7 +1446,7 @@ figure {
   #btn-link a {
     font-size: 0.75rem;
     text-decoration: none;
-    color: #002060;
+    color: var(--primary-color);
     margin: 5px 10px 0px 10px !important;
   }
 
@@ -1500,14 +1510,14 @@ figure {
 #nav-bar ul li a {
   font-weight: bold;
   font-size: 16pt;
-  color: #002060;
+  color: var(--primary-color);
 }
 
 #upcoming-events .fh5co-event p {
   font-size: 0.9rem;
   opacity: 0.6;
   text-align: justify;
-  color: #002060;
+  color: var(--primary-color);
 }
 
 #upcoming-events .fh5co-event button {
@@ -1523,13 +1533,13 @@ figure {
 #events .blog-text p {
   font-size: 14px;
   opacity: 0.6;
-  color: #002060;
+  color: var(--primary-color);
   text-align: justify;
 }
 
 #events .blog-text h3 a {
   text-decoration: none;
-  color: #002060;
+  color: var(--primary-color);
 }
 
 .card:hover{
@@ -2294,7 +2304,7 @@ figure {
   font-weight: 700;
   font-size: 0.9rem;
   line-height: 24px;
-  color: #002060;
+  color: var(--primary-color);
 }
 
 .fh5co-event h3 {
@@ -2304,7 +2314,7 @@ figure {
 }
 
 .fh5co-event h3 a {
-  color: #002060;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -2334,7 +2344,7 @@ figure {
 }
 
 .fh5co-blog .blog-text {
-  font-family: "Khmer OS System";
+  font-family: var(--font-kh);
   text-align: justify;
   position: relative;
   background: rgba(0, 0, 0, 0.03);
@@ -2539,7 +2549,7 @@ figure {
 }
 
 #fh5co-footer .fh5co-footer-links li a {
-  color: #002060;
+  color: var(--primary-color);
   text-decoration: none;
   font-size: 16pt;
 }
@@ -2554,7 +2564,7 @@ figure {
 
 .fh5co-footer-links hr {
   width: 300px;
-  color: #002060;
+  color: var(--primary-color);
 }
 
 @media screen and (max-width: 768px) {
@@ -2886,26 +2896,26 @@ figure {
 /* pagination of partnership */
 .pagination .page-item .bg_btn {
   border-radius: 10px 0px 0px 10px;
-  color: #002060;
-  border: 3px solid #002060;
+  color: var(--primary-color);
+  border: 3px solid var(--primary-color);
 }
 
 .pagination .bg_btn {
   border-radius: 0px 10px 10px 0px;
-  color: #002060;
-  border: 3px solid #002060;
+  color: var(--primary-color);
+  border: 3px solid var(--primary-color);
 }
 
 .pagination .active>.page-link,
 .page-link.active {
   background-color: #00205a;
-  border: 2px solid #002060;
+  border: 2px solid var(--primary-color);
   color: #ffffff;
   padding: 5.5px 10px;
 }
 
 .page-item:not(:first-child) .page-link {
-  border: 2px solid #002060;
+  border: 2px solid var(--primary-color);
   padding: 6.5px 10px;
 }
 
@@ -3085,7 +3095,7 @@ For Media Query Devices with Breakpoint
   /* president message */
   #content-detail .content-structure-detail p {
     margin-top: 10px;
-    color: #002060;
+    color: var(--primary-color);
     font-size: 0.9rem;
     text-align: justify;
     word-spacing: -2px !important;
@@ -3199,7 +3209,7 @@ For Media Query Devices with Breakpoint
   }
 
   .page-item:not(:first-child) .page-link {
-    border: 3px solid #002060;
+    border: 3px solid var(--primary-color);
     padding: 7px 10px;
   }
   .mt-5{
@@ -3214,7 +3224,7 @@ For Media Query Devices with Breakpoint
   .right-content-economic .item .item-link {
     padding: 0.9rem;
     text-decoration: none;
-    color: #002060;
+    color: var(--primary-color);
     font-size: 0.99rem;
     font-weight: 700;
   }
@@ -3224,7 +3234,7 @@ For Media Query Devices with Breakpoint
   }
 
   .right-content-economic hr {
-    border: 1px solid #002060;
+    border: 1px solid var(--primary-color);
     font-weight: bold;
     border-radius: 10px;
     opacity: 0.9 !important;
