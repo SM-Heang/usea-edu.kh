@@ -1,6 +1,7 @@
 <div class="col-xxl-3">
 	<div class="right-content-economic">
-		<div class="item"><a class="item-link <?php if ($_SESSION['right'] == 'faculty-science-law') {
+	<?php $page = substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], "/")+1);?> <!-- use to store url to $page -->
+		<div class="item"><a class="item-link <?php if ($page == 'vision-mision-corevalue-law.php') {
 			echo 'right_active';
 		} ?>" href="../vission-Mission/vision-mision-corevalue-law.php">Vision & Mission</a></div>
 		<hr>
@@ -54,11 +55,7 @@
 						<a class="nav-link item-link select-btn-2" href="#"> Bachelor's Degree
 							<?php
 							if (
-								$_SESSION['right'] == 'bachelor-international-law' ||
-								$_SESSION['right'] == 'bachelor-laws' ||
-								$_SESSION['right'] == 'bachelor-international-relations' ||
-								$_SESSION['right'] == 'bachelor-privat-law' ||
-								$_SESSION['right'] == 'bachelor-public-admin'
+								$page == 'faculty-laws-main.php?article_id=382' || 'faculty-laws-main.php?article_id=385' || 'faculty-laws-main.php?article_id=386'
 							) {
 
 								echo '<i class="fa-solid fa-angle-up i_2"></i>';
@@ -71,11 +68,7 @@
 						<ul class="submenu collapse 
 						<?php
 						if (
-							$_SESSION['right'] == 'bachelor-international-law' ||
-							$_SESSION['right'] == 'bachelor-laws' ||
-							$_SESSION['right'] == 'bachelor-international-relations' ||
-							$_SESSION['right'] == 'bachelor-privat-law' ||
-							$_SESSION['right'] == 'bachelor-public-admin'
+							$page == 'faculty-laws-main.php?article_id=382' || 'faculty-laws-main.php?article_id=385' || 'faculty-laws-main.php?article_id=386'
 						) {
 							echo 'show';
 						}
@@ -83,23 +76,18 @@
 						?>
 						
 						">
-							<!-- <li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'bachelor-international-law') {
+							<!-- <li><a class="nav-link item-link" href="#"> International Law </a></li> -->
+							<li><a class="nav-link item-link <?php if ($page == 'faculty-laws-main.php?article_id=382') {
 								echo 'right_active';
-							} ?>" href="#"> International
-									Law </a></li> -->
-							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'bachelor-laws') {
+							} ?>" href="../BachelorDegree/faculty-laws-main.php?article_id=382">Laws</a> </li>
+							<li><a class="nav-link item-link <?php if ($page == 'faculty-laws-main.php?article_id=386') {
 								echo 'right_active';
-							} ?>" href="../BachelorDegree/bachelor-laws.php">Laws</a> </li>
-							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'bachelor-international-relations') {
-								echo 'right_active';
-							} ?>" href="#"> Political
+							} ?>" href="../BachelorDegree/faculty-laws-main.php?article_id=386"> Political
 									Sciences and International Relations </a> </li>
-							<!-- <li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'bachelor-privat-law') {
+							<!-- <li><a class="nav-link item-link" href="#"> Private Law </a> </li> -->
+							<li><a class="nav-link item-link <?php if ($page == 'faculty-laws-main.php?article_id=385') {
 								echo 'right_active';
-							} ?>" href="#"> Private Law </a> </li> -->
-							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'bachelor-public-admin') {
-								echo 'right_active';
-							} ?>" href="../BachelorDegree/bachelor-public-admin.php"> Public
+							} ?>" href="../BachelorDegree/faculty-laws-main.php?article_id=385"> Public
 									Administration </a> </li>
 						</ul>
 					</li>

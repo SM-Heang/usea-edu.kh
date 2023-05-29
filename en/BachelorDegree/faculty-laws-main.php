@@ -8,6 +8,15 @@
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     
  ?>
+<?php
+	if (isset($_GET['article_id'])) {
+	$id = $_GET['article_id'];
+	$sql = "SELECT * FROM usea_article WHERE article_id = $id";
+	$stmt = $conn->prepare($sql);
+	$stmt->execute();
+	$temp = $stmt->fetch(PDO::FETCH_ASSOC);
+	}
+?>
 	<!-- Start Web Location -->
 	<div class="container">
 		<div class="row">
@@ -19,7 +28,7 @@
 					</a>
 					</li>
 					<li>
-						<a href="#">Vision Mission</a>
+						<a href="#"><?php echo $temp['title_bar_en']?></a>
 					</li>
 				</ul>
 			</div>
@@ -35,11 +44,13 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row title-text" style="color: white; font-size: 16pt; padding: 5pt;">
-						Vision Mission
+					<?php echo $temp['title_bar_en']?>
 					</div>
 				</div>
 				<div id="content-detail">
-					
+					<?php
+						echo $temp['article_description_en'];
+					?>
 
 				</div>
 			</div>
