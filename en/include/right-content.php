@@ -1,24 +1,24 @@
 <div class="col-xxl-3">
 	<div class="right-content-economic">
-
+	<?php $page = substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], "/")+1);?> <!-- use to store url to $page -->
 		<div class="item">
 			<nav class="sidebar">
 				<ul class="nav flex-column">
-				<li> <a class="nav-link item-link <?php if ($_SESSION['right'] == 'history_logo') {
+				<li> <a class="nav-link item-link <?php if ($page == 'about-main.php?article_id=25') {
 															echo 'right_active';
-														} ?>" href="history-logo.php"> History & Logo Meaning </a></li>
+														} ?>" href="../Pages/about-main.php?article_id=25"> History & Logo Meaning </a></li>
 					<hr>
-					<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'p_message') {
+					<li><a class="nav-link item-link <?php if ($page == 'about-main.php?article_id=19') {
 															echo 'right_active';
-														} ?>" href="president-message.php"> President Message </a></li>
+														} ?>" href="../Pages/about-main.php?article_id=19"> President Message </a></li>
 					<hr>
-					<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'vision_mision_corevalue_right') {
+					<li><a class="nav-link item-link <?php if ($page == 'about-main.php?article_id=27') {
 															echo 'right_active';
-														} ?>" href="vision-mision-corevalue.php"> Vision, Mission & Core Value </a></li>
+														} ?>" href="../Pages/about-main.php?article_id=27"> Vision, Mission & Core Value </a></li>
 					<hr>
-					<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'structure') {
+					<li><a class="nav-link item-link <?php if ($page == 'about-main.php?article_id=77') {
 															echo 'right_active';
-														} ?>" href="usea-structure.php"> University Structure </a></li>
+														} ?>" href="../Pages/about-main.php?article_id=77"> University Structure </a></li>
 					<hr>
 					<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'recognition') {
 															echo 'right_active';

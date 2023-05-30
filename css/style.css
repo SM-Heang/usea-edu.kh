@@ -16,7 +16,7 @@
   --mega-bg-color:rgb(255, 250, 250);
   --white-color: #fff;
   --font-en: "Poppins", sans-serif;
-  --font-kh: "Poppins", sans-serif
+  --font-kh: "Khmer OS Battambang", sans-serif
 }
 
 * {
@@ -24,7 +24,7 @@
 }
 
 body {
-  font-family: var(--font-kh);
+  font-family: var(--font-en);
   font-weight: 400;
   font-size: 0.9rem;
   line-height: 1.7;
@@ -242,6 +242,7 @@ body {
 
 /* End History Detail*/
 .event_title{
+  font-family: var(--font-kh) !important;
   margin: 0;
   line-height: 30px;
   text-decoration: underline;
@@ -364,7 +365,7 @@ body {
 }
 
 #button-content ul li a {
-  font-family: var(--font-kh);
+  font-family: var(--font-en);
   font-size: 16pt;
   color: var(--primary-color);
   text-decoration: none;
@@ -1022,7 +1023,7 @@ h5,
 h6,
 figure {
   color: #000;
-  font-family: var(--font-kh);
+  font-family: var(--font-en);
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -2344,7 +2345,7 @@ figure {
 }
 
 .fh5co-blog .blog-text {
-  font-family: var(--font-kh);
+  font-family: var(--font-en);
   text-align: justify;
   position: relative;
   background: rgba(0, 0, 0, 0.03);

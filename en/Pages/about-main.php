@@ -1,14 +1,21 @@
 <?php 
 	// $page = 'about';
-		if(session_status() === PHP_SESSION_NONE){
-			session_start();
-		}
-		$_SESSION['page'] = 'about';
-		$_SESSION['right'] = 'vision-mision-corevalue-right';
-
+	if (session_status() === PHP_SESSION_NONE) {
+		session_start();
+	}
+	// $_SESSION['page']= $page;
+	// $_SESSION['right']= 'history-logo';
+	
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     
  ?>
+<?php
+            $id = $_GET['article_id'];
+            $sql = "SELECT * FROM usea_article WHERE article_id = '$id' ";
+            $stmt = $conn->prepare($sql);
+            $stmt->execute();
+            $temp = $stmt->fetch(PDO::FETCH_ASSOC);
+?>​
 	<!-- Start Web Location -->
 	<div class="container">
 		<div class="row">
@@ -20,13 +27,12 @@
 					</a>
 					</li>
 					<li>
-						<a href="#">Vision Mission</a>
+						<a href="#"><?php echo $temp['article_title_en']?></a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
-
 	<!-- End Web Location -->
 
 	<!-- Main Content-->
@@ -36,28 +42,20 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row title-text" style="color: white; font-size: 16pt; padding: 5pt;">
-						Vision Mission
+          <?php echo $temp['article_title_en']?>
 					</div>
 				</div>
 				<div id="content-detail">
-					<?php  
-							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =27");
-							$stmt->execute();
-							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-							// echo "<pre>";
-							// print_r($result);
-							// echo "</pre>";
-						foreach ($result as $key => $value) { ?>
-						<!-- <img src="media/events/independent_days.jpg" alt="independent_days" width="375px" height="245px"> -->
-						<p><?php echo $value['article_description_en'];?></p>
-					<?php } ?>
-
-
+					<div class="content-history-detail">
+						<p>
+							<?php echo $temp['article_description_en'];?>
+						</p>
+						
+					</div>
 				</div>
 			</div>
 			<!-- Start Right Content-->
 			<?php
-				// include_once 'include/right-content.php';
 				include_once '../include/right-content.php';
 			?>
 		</div>

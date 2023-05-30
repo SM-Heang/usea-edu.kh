@@ -116,15 +116,15 @@
 									<ul class="mega-link">
 										<li class="list-control">
 											<img src="../../media/nav-icon/history.png" class="nav-icon" width="25px" height="25px">
-											<a href="../Pages/history-logo.php">History & Logo Meaning</a>
+											<a href="../Pages/about-main.php?article_id=25">History & Logo Meaning</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/president.png" class="nav-icon" width="25px" height="25px">
-											<a href="../Pages/president-message.php">President Message</a>
+											<a href="../Pages/about-main.php?article_id=19">President Message</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/core-value.png" class="nav-icon" width="25px" height="25px">
-											<a href="../Pages/vision-mision-corevalue.php">Vision Mission & Core Value</a>
+											<a href="../Pages/about-main.php?article_id=27">Vision Mission & Core Value</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/location.png" class="nav-icon" width="25px" height="25px">
@@ -136,7 +136,7 @@
 									<ul class="mega-link">
 										<li class="list-control">
 											<img src="../../media/nav-icon/structure.png" class="nav-icon" width="25px" height="25px">
-											<a href="../Pages/usea-structure.php">University Structure</a>
+											<a href="../Pages/about-main.php?article_id=77">University Structure</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/recognition.png" class="nav-icon" width="25px" height="25px">
@@ -174,7 +174,7 @@
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/f-law.png" width="25px" height="25px">
-											<a href="../vission-Mission/vision-mision-corevalue-law.php">Faculty of Social Science <br>& Law</a>
+											<a href="../BachelorDegree/faculty-laws-main.php?article_id=27">Faculty of Social Science <br>& Law</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/f-art.png" width="25px" height="25px">

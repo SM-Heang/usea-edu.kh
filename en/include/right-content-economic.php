@@ -1,5 +1,6 @@
 <div class="col-xxl-3">
 	<div class="right-content-economic">
+	<?php $page = substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], "/")+1);?> <!-- use to store url to $page -->
 		<div class="item"><a class="item-link <?php if ($_SESSION['right'] == 'faculty-economics') { 
 			echo 'right_active';
 		} ?>" href="../vission-Mission/vision-mision-corevalue-economic.php">Vision & Mission</a></div>
