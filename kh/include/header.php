@@ -154,7 +154,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="mx-0 text-center main-menu">
+					<li class="mx-0 text-start-2 main-menu">
 						<a class="<?php 
 							if($_SESSION['page'] == 'academics_kh'){ echo 'active'; } 
 							if($_SESSION['page'] == 'partnership_local_kh'){ echo 'noactive';}
