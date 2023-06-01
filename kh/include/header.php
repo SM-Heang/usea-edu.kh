@@ -154,7 +154,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="mx-0 text-center main-menu">
+					<li class="mx-0 text-start-2 main-menu">
 						<a class="<?php 
 							if($_SESSION['page'] == 'academics_kh'){ echo 'active'; } 
 							if($_SESSION['page'] == 'partnership_local_kh'){ echo 'noactive';}
@@ -217,15 +217,15 @@
 									<ul class="mega-link">
 										<li class="list-control">
 											<img src="../../media/nav-icon/policy-and-procedure.png" width="25px" height="25px">
-											<a href="#">Research Policy and Procedure</a>
+											<a href="#">គោលការណ៍ស្រាវជាវ និង​នីតិវិធី</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/research-activity.png" width="25px" height="25px">
-											<a href="#">Research Activites</a>
+											<a href="#">សកម្មភាពស្រាវជ្រាវ</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/project.png" width="25px" height="25px">
-											<a href="#">Research Project</a>
+											<a href="#">គម្រោងស្រាវជាវ</a>
 										</li>
 									</ul>
 								</div>
@@ -233,11 +233,11 @@
 									<ul class="mega-link">
 										<li class="list-control">
 											<img src="../../media/nav-icon/research-team.png" width="25px" height="25px">
-											<a href="#">Research Team</a>
+											<a href="#">ក្រុមស្រាវជ្រាវ</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/publication.png" width="25px" height="25px">
-											<a href="#">Publication</a>
+											<a href="#">បោះពុម្ពផ្សាយ</a>
 										</li>
 									</ul>
 								</div>
@@ -262,89 +262,89 @@
 							</li>
 							<li>
 								<img src="../media/nav-icon/structure.png" class="nav-icon" width="15px" height="15px">
-								<a href="../Pages/usea-structure.php">University Structure</a>
+								<a href="../Pages/usea-structure.php">រចនាសម្ព័ន្ធសាកលវិទ្យាល័យ</a>
 							</li>
 							<li>
 								<img src="../media/nav-icon/president.png" class="nav-icon" width="15px" height="15px">
-								<a href="../Pages/president-message.php">President Message</a>
+								<a href="../Pages/president-message.php">សាររបស់សាកលវិទ្យាធិការ</a>
 							</li>
 							<li>
 								<img src="../media/nav-icon/recognition.png" class="nav-icon" width="15px" height="15px">
-								<a href="../Pages/recognition.php">Recognition</a>
+								<a href="../Pages/recognition.php">ការទទួលស្គាល់</a>
 							</li>
 							<li>
 								<img src="../media/nav-icon/core-value.png" class="nav-icon" width="15px" height="15px">
-								<a href="../Pages/vision-mision-corevalue.php">Vision Mission & Core Value</a>
+								<a href="../Pages/vision-mision-corevalue.php">ចក្ខុវិស័យ, បេសកកម្ម & គុណតម្លៃ</a>
 							</li>
 							<li>
 								<img src="../media/nav-icon/event.png" class="nav-icon" width="15px" height="15px">
-								<a href="../Pages/events.php">Events</a>
+								<a href="../Pages/events.php">ព្រឹត្តិការណ៍</a>
 							</li>
 							<li>
 								<img src="../media/nav-icon/location.png" class="nav-icon" width="15px" height="15px">
-								<a href="../Pages/location.php">Location</a>
+								<a href="../Pages/location.php">ទីតាំង</a>
 							</li>
 						</ul>
 					</div>
 				</li><hr>
 				
-				<li class="dropdown-parent"><a class="<?php if($_SESSION['page'] =='academics_kh'){echo 'active_mobile';} ?>" href="#">Academics <i class="fas fa-caret-down"></i></a>
+				<li class="dropdown-parent"><a class="<?php if($_SESSION['page'] =='academics_kh'){echo 'active_mobile';} ?>" href="#">សិក្សាធិការ <i class="fas fa-caret-down"></i></a>
 					<div class="dropdown-hamburger">
 						<ul>
 							<li>
 								<img src="../media/nav-icon/f-economic.png" class="nav-icon" width="15px" height="15px">
-								<a href="../vission-Mission/vision-mision-corevalue-economic.php">Faculty of Economics, Business & Tourism</a>
+								<a href="../vission-Mission/vision-mision-corevalue-economic.php">មហាវិទ្យាល័យសេដ្ឋកិច្ច​ ពាណិជ្ជកម្ម និងទេសចរណ៍</a>
 							</li>
 							<li>
 								<img src="../media/nav-icon/f-it.png" class="nav-icon" width="15px" height="15px">
-								<a href="../vission-Mission/vision-mision-corevalue-science-technology.php">Faculty of Sciences & Technology</a>
+								<a href="../vission-Mission/vision-mision-corevalue-science-technology.php">មហាវិទ្យាល័យវិទ្យាសាស្រ្ត និង បច្ចែកវិទ្យា</a>
 							</li>
 							<li>
 								<img src="../media/nav-icon/f-law.png" class="nav-icon" width="15px" height="15px">
-								<a href="../vission-Mission/vision-mision-corevalue-law.php">Faculty of Social Science & Law</a>
+								<a href="../vission-Mission/vision-mision-corevalue-law.php">មហាវិទ្យាល័យវិទ្យាសាស្រ្តសង្គម និងនីតិសាស្រ្ត</a>
 							</li>
 							<li>
 								<img src="../media/nav-icon/f-art.png" class="nav-icon" width="15px" height="15px">
-								<a href="../vission-Mission/vision-mision-corevalue-art-humanities.php">Faculty of Arts, Humanities & Education</a>
+								<a href="../vission-Mission/vision-mision-corevalue-art-humanities.php">មហាវិទ្យាល័យសិល្បៈ មនុស្សសាស្រ្ត និងអប់រំ</a>
 							</li>
 							<li>
 								<img src="../media/nav-icon/f-internation-college.png" class="nav-icon" width="15px" height="15px">
-								<a href="../Pages/international-college.php">International College</a>
+								<a href="../Pages/international-college.php">មហាវិទ្យាល័យអន្តរជាតិ</a>
 							</li>
 							<li>
 								<img src="../media/nav-icon/fli.png" class="nav-icon" width="15px" height="15px">
-								<a href="../vission-Mission/vision-mision-corevalue-fli.php">Foreign Language Institute</a>
+								<a href="../vission-Mission/vision-mision-corevalue-fli.php">វិទ្យាស្ថានភាសាបរទេស</a>
 							</li>
 							<li>
 								<img src="../../media/nav-icon/post-graduate.png" class="nav-icon" width="15px" height="15px">
-								<a href="../Pages/post-graduate.php">Post Graduate</a>
+								<a href="../Pages/post-graduate.php">សាលាក្រោយបរិញ្ញាបត្រ</a>
 							</li>
 							<li>
 								<img src="../../media/nav-icon/short-course.png" class="nav-icon" width="15px" height="15px">
-								<a href="../Pages/short-course.php">Short Course</a>
+								<a href="../Pages/short-course.php">វគ្គបណ្ដុះបណ្ដាលខ្លី</a>
 							</li>
 						</ul>
 					</div>
 				</li><hr>
-				<li><a class="<?php if($_SESSION['page'] == 'partnership_local_kh'){ echo 'active_mobile'; } ?>" href="../Pages/partnership-local.php">Partnership</a></li><hr>
-				<li class="dropdown-parent"><a class="<?php if($_SESSION['page'] == 'research_procedure_kh'){ echo 'active_mobile';} ?>" href="#">Research <i class="fas fa-caret-down"></i></a>
+				<li><a class="<?php if($_SESSION['page'] == 'partnership_local_kh'){ echo 'active_mobile'; } ?>" href="../Pages/partnership-local.php">ដៃគូរសហការ</a></li><hr>
+				<li class="dropdown-parent"><a class="<?php if($_SESSION['page'] == 'research_procedure_kh'){ echo 'active_mobile';} ?>" href="#">ស្រាវជ្រាវ <i class="fas fa-caret-down"></i></a>
 					<div class="dropdown-hamburger">
 						<ul>
 							<li>
 								<img src="../../media/nav-icon/policy-and-procedure.png" class="nav-icon" width="15px" height="15px">
-								<a href="../Research/research-policy-procedure.php">Research Policy and Procedure</a>
+								<a href="../Research/research-policy-procedure.php">គោលការណ៍ស្រាវជាវ និង​នីតិវិធី</a>
 							</li>
 							<li>
 								<img src="../../media/nav-icon/research-activity.png" class="nav-icon" width="15px" height="15px">
-								<a href="../Research/research-activities.php">Research Activites</a>
+								<a href="../Research/research-activities.php">សកម្មភាពស្រាវជ្រាវ</a>
 							</li>
 							<li>
 								<img src="../../media/nav-icon/research-team.png" class="nav-icon" width="15px" height="15px">
-								<a href="../Research/research-team.php">Research Team</a>
+								<a href="../Research/research-team.php">ក្រុមស្រាវជ្រាវ</a>
 							</li>
 							<li>
 								<img src="../../media/nav-icon/publication.png" class="nav-icon" width="15px" height="15px">
-								<a href="../Research/publication.php">Publication</a>
+								<a href="../Research/publication.php">បោះពុម្ពផ្សាយ</a>
 							</li>
 						</ul>
 					</div>

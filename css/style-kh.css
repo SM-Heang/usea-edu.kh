@@ -98,7 +98,7 @@ body {
   border-radius: 10px;
   padding: 25px 20px;
   display: flex;
-  height: 270px;
+  height: 270px !important;
   justify-content: space-between;
 }
 
