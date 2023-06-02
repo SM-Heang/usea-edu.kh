@@ -1,24 +1,23 @@
 <div class="col-xxl-3">
 	<div class="right-content-economic">
-	<?php $page = substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], "/")+1);?> <!-- use to store url to $page -->
 		<div class="item">
 			<nav class="sidebar">
 				<ul class="nav flex-column">
-				<li> <a class="nav-link item-link <?php if ($page == 'about-main.php?article_id=25') {
+				<li> <a class="nav-link item-link <?php if ($_SESSION['right'] == 'history-logo') {
 															echo 'right_active';
-														} ?>" href="../Pages/about-main.php?article_id=25"> History & Logo Meaning </a></li>
+														} ?>" href="../Pages/history-logo.php"> History & Logo Meaning </a></li>
 					<hr>
-					<li><a class="nav-link item-link <?php if ($page == 'about-main.php?article_id=19') {
+					<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'p-message') {
 															echo 'right_active';
-														} ?>" href="../Pages/about-main.php?article_id=19"> President Message </a></li>
+														} ?>" href="../Pages/president-message.php"> President Message </a></li>
 					<hr>
-					<li><a class="nav-link item-link <?php if ($page == 'about-main.php?article_id=27') {
+					<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'vision-mision-corevalue-right') {
 															echo 'right_active';
-														} ?>" href="../Pages/about-main.php?article_id=27"> Vision, Mission & Core Value </a></li>
+														} ?>" href="../Pages/vision-mision-corevalue.php"> Vision, Mission & Core Value </a></li>
 					<hr>
-					<li><a class="nav-link item-link <?php if ($page == 'about-main.php?article_id=77') {
+					<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'structure') {
 															echo 'right_active';
-														} ?>" href="../Pages/about-main.php?article_id=77"> University Structure </a></li>
+														} ?>" href="../Pages/usea-structure.php"> University Structure </a></li>
 					<hr>
 					<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'recognition') {
 															echo 'right_active';

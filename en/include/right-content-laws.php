@@ -1,6 +1,6 @@
 <div class="col-xxl-3">
 	<div class="right-content-economic">
-	<?php $page = substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], "/")+1);?> <!-- use to store url to $page -->
+	<?php  $page = substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], "/")+1);?> <!-- use to store url to $page -->
 		<div class="item"><a class="item-link <?php if ($page == 'faculty-laws-main.php?article_id=27') {
 			echo 'right_active';
 		} ?>" href="../Pages/faculty-laws-main.php?article_id=27">Vision & Mission</a></div>
@@ -57,12 +57,10 @@
 							if (
 								$page == 'faculty-laws-main.php?article_id=382' || 'faculty-laws-main.php?article_id=385' || 'faculty-laws-main.php?article_id=386'
 							) {
-
 								echo '<i class="fa-solid fa-angle-up i_2"></i>';
 							} else {
 								echo '<i class="fa-solid fa-angle-down i_2"></i>';
 							}
-
 							?>
 						</a>
 						<ul class="submenu collapse 
@@ -72,7 +70,6 @@
 						) {
 							echo 'show';
 						}
-
 						?>
 						
 						">
