@@ -107,28 +107,34 @@
 					<div class="bar"></div>
 				</div>
 				<ul class="nav-link"> 
-					<li><a class="<?php if($_SESSION['page'] =='home'){echo 'active';} ?>" href="../Pages/index.php">Home</a></li>
+					<li><a class="<?php if($_SESSION['page'] == 'home'){echo 'active';} ?>" href="../Pages/index.php">Home</a></li>
 					<li>
-						<a class="<?php if($_SESSION['page'] =='about'){echo 'active';} ?>" href="../Pages/history-logo.php">About</a>
+						<a class="<?php 
+							if($_SESSION['page'] == 'academics'){ echo 'noactive'; } 
+							if($_SESSION['page'] == 'partnership_local'){ echo 'noactive';}
+							if($_SESSION['page'] == 'about'){ echo 'active';}
+							if($_SESSION['page'] == 'research_procedure'){ echo 'noactive';}
+							if($_SESSION['page'] == 'home'){ echo 'noactive';}
+							?>" href="#">About</a>
 						<div class="mega-box">
 							<div class="content" id="nav-about">
 								<div class="row">
 									<ul class="mega-link">
 										<li class="list-control">
 											<img src="../../media/nav-icon/history.png" class="nav-icon" width="25px" height="25px">
-											<a href="../Pages/about-main.php?article_id=25">History & Logo Meaning</a>
+											<a class="<?php if($_SESSION['right'] == 'history-logo') {echo 'active';} ?>" href="../Pages/history-logo.php">History & Logo Meaning</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/president.png" class="nav-icon" width="25px" height="25px">
-											<a href="../Pages/about-main.php?article_id=19">President Message</a>
+											<a class="<?php if($_SESSION['right'] == 'p-message') {echo 'active';} ?>" href="../Pages/president-message.php">President Message</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/core-value.png" class="nav-icon" width="25px" height="25px">
-											<a href="../Pages/about-main.php?article_id=27">Vision Mission & Core Value</a>
+											<a class="<?php if($_SESSION['right'] == 'vision-mision-corevalue-right'){ echo 'active';} ?>" href="../Pages/vision-mision-corevalue.php">Vision Mission & Core Value</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/location.png" class="nav-icon" width="25px" height="25px">
-											<a href="../Pages/location.php">Location</a>
+											<a class="<?php if($_SESSION['right'] == 'location'){ echo 'active';} ?>" href="../Pages/location.php">Location</a>
 										</li>
 									</ul>
 								</div>
@@ -136,15 +142,15 @@
 									<ul class="mega-link">
 										<li class="list-control">
 											<img src="../../media/nav-icon/structure.png" class="nav-icon" width="25px" height="25px">
-											<a href="../Pages/about-main.php?article_id=77">University Structure</a>
+											<a class="<?php if($_SESSION['right'] == 'structure'){ echo 'active';} ?>" href="../Pages/usea-structure.php">University Structure</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/recognition.png" class="nav-icon" width="25px" height="25px">
-											<a href="recognition.php">Recognition</a>
+											<a class="<?php if($_SESSION['right'] == 'recognition'){ echo 'active';} ?>" href="../Pages/recognition.php">Recognition</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/event.png" class="nav-icon" width="25px" height="25px">
-											<a href="../Pages/events.php">Events</a>
+											<a class="<?php if($_SESSION['right'] == 'event-s' || 'upcoming-events'){ echo 'active';} ?>" href="../Pages/events.php">Events</a>
 										</li>
 									</ul>
 								</div>
