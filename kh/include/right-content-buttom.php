@@ -4,7 +4,7 @@
 		<div class="item">
 			<a class="nav-link item-link <?php if ($_SESSION['right'] == 'human-resource-kh') {
 												echo 'right_active';
-											} ?>" href="human-resource.php"> Human Resource
+											} ?>" href="human-resource.php"> ធនធានមនុស្ស
 			</a>
 		</div>
 		<hr>
@@ -13,7 +13,7 @@
 			<nav class="sidebar">
 				<ul class="nav flex-column" id="nav_accordion">
 					<li class="nav-item has-submenu select-menu">
-						<a class="nav-link item-link select-btn" href="student-services.php" onclick="return false">Student Services
+						<a class="nav-link item-link select-btn" href="student-services.php" onclick="return false">សេវាកម្មនិស្សិត
 							<?php
 								if ($_SESSION['page'] == 'practucum-internship') {
 									echo '<i class="fa-solid fa-angle-up simple i_1"></i>';

@@ -19,9 +19,9 @@
 				</div>
 				<div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4" id="button-content">
 					<ul>
-						<li><a href="../ButtomPages/policies-strategies.php">Policies and Strategies</a></li><br><hr>
-						<li><a href="../ButtomPages/form-download.php">USEA Form Download</a></li><br><hr>
-						<li><a href="../ButtomPages/news-website.php">News Website</a></li><br><hr>
+						<li><a href="../ButtomPages/policies-strategies.php">គោលការណ៍ និងយុទ្ធសាស្រ្ត</a></li><br><hr>
+						<li><a href="../ButtomPages/form-download.php">ទាញយកសំណុំបែបបទ USEA</a></li><br><hr>
+						<li><a href="../ButtomPages/news-website.php">គេហទំព័រព័ត៏មាន</a></li><br><hr>
 					</ul>
 				</div> 
 		</div>

@@ -58,7 +58,7 @@ body {
 }
 /* nav-link li each one */
 .main-menu{
-  width: 136px;
+  width: 136px !important;
 }
 
 .nav-link li a {
@@ -2411,7 +2411,7 @@ figure {
     justify-content: center;
   }
   .main-menu{
-    width: 107px;
+    width: 114px !important;
   }
 }
 
@@ -2420,7 +2420,7 @@ figure {
     width: 100%;
   }
   .main-menu{
-    width: 100px;
+    width: 100px !important;
   }
 }
 
