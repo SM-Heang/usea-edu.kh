@@ -35,12 +35,12 @@
 											 echo 'right_active';
 																} ?>" 
 									aria-current="page" 
-									href="practucum-internship.php"> Practucum/Internship
+									href="practucum-internship.php"> ការងារសាកល្បង/ការងារស្ម័គចិត្ត
 								</a>
 							</li>
-							<li><a class="nav-link item-link" href="#"> Student Tours </a></li>
-							<li><a class="nav-link item-link" href="#"> Sport </a></li>
-							<li><a class="nav-link item-link" href="#"> Art & Cultural Exchange </a></li>
+							<li><a class="nav-link item-link" href="#"> ទស្សនកិច្ចរបស់និស្សិត </a></li>
+							<li><a class="nav-link item-link" href="#"> កីឡា </a></li>
+							<li><a class="nav-link item-link" href="#"> សិល្បៈ & ការផ្លាស់ប្តូរវប្បធម៌ </a></li>
 						</ul>
 					</li>
 				</ul>
@@ -54,7 +54,7 @@
 			<nav class="sidebar">
 				<ul class="nav flex-column" id="nav_accordion">
 					<li class="nav-item has-submenu select-menu-2">
-						<a class="nav-link item-link select-btn-2" href="public-information-center.php" onclick="return false"> Library
+						<a class="nav-link item-link select-btn-2" href="public-information-center.php" onclick="return false"> បណ្ណាល័យ
 							<?php
 								if ($_SESSION['page'] == 'public_information_kh') {
 									echo '<i class="fa-solid fa-angle-up i_2"></i>';
@@ -76,10 +76,10 @@
 											echo 'right_active';
 									} ?>"
 									aria-current="page" 
-									href="public-information-center.php"> Joint Public Information Center
+									href="public-information-center.php"> មជ្ឈមណ្ឌលព័ត៌មានសាធារណៈ
 								</a>
 							</li>
-							<li><a class="nav-link item-link" href="#"> American Corner </a></li>
+							<li><a class="nav-link item-link" href="#"> បណ្ណាល័យអាមេរិក </a></li>
 							<li><a class="nav-link item-link" href="#"> E-Library </a></li>
 						</ul>
 					</li>
@@ -93,7 +93,7 @@
 			<nav class="sidebar">
 				<ul class="nav flex-column" id="nav_accordion">
 					<li class="nav-item has-submenu select-menu-3">
-						<a class="nav-link item-link select-btn-3" href="associate-degree.php" onclick="return false"> Outstanding Students
+						<a class="nav-link item-link select-btn-3" href="associate-degree.php" onclick="return false"> និស្សិតឆ្នើម
 							<?php
 								if ($_SESSION['page'] == 'associate_degree_kh') {
 									echo '<i class="fa-solid fa-angle-up i_3"></i>';
@@ -115,12 +115,12 @@
 											echo 'right_active';
 									} ?>"
 									aria-current="page" 
-									href="associate-degree.php"> Associate's Degree
+									href="associate-degree.php"> ថ្នាក់បរិញ្ញាបត្ររង
 								</a>
 							</li>
-							<li><a class="nav-link item-link" href="#"> Bachelor's Degree </a></li>
-							<li><a class="nav-link item-link" href="#"> Master's Degree </a></li>
-							<li><a class="nav-link item-link" href="#"> General English Program </a></li>
+							<li><a class="nav-link item-link" href="#"> ថ្នាក់បរិញ្ញាបត្រ </a></li>
+							<li><a class="nav-link item-link" href="#"> ថ្នាក់ក្រោយបរិញ្ញាបត្រ </a></li>
+							<li><a class="nav-link item-link" href="#"> កម្មវិធីភាសាអង់គ្លេសទូទៅ </a></li>
 						</ul>
 					</li>
 				</ul>
@@ -131,7 +131,7 @@
 		<div class="item">
 			<a class="nav-link item-link <?php if ($_SESSION['right'] == 'scholarship-right-kh') {
 												echo 'right_active';
-											} ?>" href="scholarship.php"> Scholarship
+											} ?>" href="scholarship.php"> អាហារូបករណ៍
 			</a>
 		</div>
 		<hr>
@@ -140,7 +140,7 @@
 			<nav class="sidebar">
 				<ul class="nav flex-column" id="nav_accordion">
 					<li class="nav-item has-submenu select-menu-4">
-						<a class="nav-link item-link select-btn-4" href="university.php" onclick="return false"> Career
+						<a class="nav-link item-link select-btn-4" href="university.php" onclick="return false"> ការងារ
 							<?php
 								if ($_SESSION['page'] == 'university_kh') {
 									echo '<i class="fa-solid fa-angle-up i_4"></i>';
@@ -162,10 +162,10 @@
 											echo 'right_active';
 									} ?>"
 									aria-current="page" 
-									href="university.php"> University
+									href="university.php"> សាកលវិទ្យាល័យ
 								</a>
 							</li>
-							<li><a class="nav-link item-link" href="#"> Other Institution </a></li>
+							<li><a class="nav-link item-link" href="#"> ស្ថាប័នផ្សេងទៀត </a></li>
 						</ul>
 					</li>
 				</ul>
@@ -176,7 +176,7 @@
 		<div class="item">
 			<a class="nav-link item-link <?php if ($_SESSION['right'] == 'alumni-right-kh') {
 								echo 'right_active';
-											} ?>" href="alumni.php"> Alumni
+											} ?>" href="alumni.php"> អតីតនិស្សិត
 			</a>
 		</div>
 		<hr>
@@ -185,7 +185,7 @@
 			<nav class="sidebar">
 				<ul class="nav flex-column" id="nav_accordion">
 					<li class="nav-item has-submenu select-menu-5">
-						<a class="nav-link item-link select-btn-5" href="facilities.php" onclick="return false"> Facilities
+						<a class="nav-link item-link select-btn-5" href="facilities.php" onclick="return false"> បរិក្ខារ
 							<?php
 								if ($_SESSION['page'] == 'facilities_kh') {
 									echo '<i class="fa-solid fa-angle-up i_5"></i>';
@@ -207,12 +207,12 @@
 											echo 'right_active';
 									} ?>"
 									aria-current="page" 
-									href="facilities.php">Building
+									href="facilities.php"> អគារសិក្សារ
 								</a>
 							</li>
-							<li><a class="nav-link item-link" href="#"> Classroom </a></li>
-							<li><a class="nav-link item-link" href="#"> Lab </a></li>
-							<li><a class="nav-link item-link" href="#"> Front office </a></li>
+							<li><a class="nav-link item-link" href="#"> បន្ទប់សិក្សារ </a></li>
+							<li><a class="nav-link item-link" href="#"> បន្ទប់អនុវត្តន៍កុំព្យូទ័រ </a></li>
+							<li><a class="nav-link item-link" href="#"> ការិយាល័យជួរមុខ </a></li>
 						</ul>
 					</li>
 				</ul>
@@ -223,7 +223,7 @@
 		<div class="item">
 			<a class="nav-link item-link <?php if ($_SESSION['right'] == 'Policies-Strategies-kh') {
 								echo 'right_active';
-											} ?>" href="policies-strategies.php"> Policies and Strategies
+											} ?>" href="policies-strategies.php"> គោលការណ៍ និងយុទ្ធសាស្រ្ត
 			</a>
 		</div>
 		<hr>
@@ -231,7 +231,7 @@
 		<div class="item">
 			<a class="nav-link item-link <?php if ($_SESSION['right'] == 'form-download-kh') {
 								echo 'right_active';
-											} ?>" href="form-download.php"> USEA Form Download
+											} ?>" href="form-download.php"> ទាញយកសំណុំបែបបទ USEA
 			</a>
 		</div>
 		<hr>

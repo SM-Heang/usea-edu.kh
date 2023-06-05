@@ -22,7 +22,7 @@ include_once '../../connection/db.connection.php';
                     </a>
                 </li>
                 <li>
-                    <a href="#">Scholarship</a>
+                    <a href="#">និស្សិតឆ្នើម</a>
                 </li>
             </ul>
         </div>
@@ -38,7 +38,7 @@ include_once '../../connection/db.connection.php';
         <div class="col-xxl-9">
             <div class="container" style="background-color:#002060;">
                 <div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-                    Scholarship
+                    និស្សិតឆ្នើម
                 </div>
             </div>
 

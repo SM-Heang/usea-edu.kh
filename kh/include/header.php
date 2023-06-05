@@ -173,7 +173,7 @@
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/f-it.png" width="25px" height="25px">
-											<a href="../vission-Mission/vision-mision-corevalue-science-technology.php">មហាវិទ្យាល័យវិទ្យាសាស្រ្ត និងបច្ចែកវិទ្យា</a>
+											<a href="../vission-Mission/vision-mision-corevalue-science-technology.php">មហាវិទ្យាល័យវិទ្យាសាស្រ្ត និងបច្ចេកវិទ្យា</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/f-law.png" width="25px" height="25px">

@@ -22,7 +22,7 @@
 					</a>
 					</li>
 					<li>
-						<a href="#">Scholarship</a>
+						<a href="#">សេវាកម្មនិស្សិត</a>
 					</li>
 				</ul>
 			</div>
@@ -38,7 +38,7 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-                    Scholarship
+                    សេវាកម្មនិស្សិត
 					</div>
 				</div>
 				

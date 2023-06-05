@@ -21,7 +21,7 @@
 					</a>
 					</li>
 					<li>
-						<a href="#">Alumni</a>
+						<a href="#">អតីតនិស្សិត</a>
 					</li>
 				</ul>
 			</div>
@@ -37,7 +37,7 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-                    Alumni
+                    អតីតនិស្សិត
 					</div>
 				</div>
 				
