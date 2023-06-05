@@ -71,7 +71,7 @@
 					<div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex justify-content-xxl-end justify-content-xl-end justify-content-lg-end justify-content-md-center justify-content-sm-center">
 						<div class="d-md-flex social-parent">
 							<p>
-								Follow us:
+							តាមដានយើង :
 							</p>
 							<span>|</span>
 							<ul>
@@ -82,7 +82,7 @@
 							</ul>
 						</div>
 						<div class="d-md-flex justify-content-end" id="btn-link">
-								<a href="#">Admission</a>	
+								<a href="#">ចុះឈ្មោះចូលរៀន</a>	
 								<span>|</span>					
 								<a href="http://116.212.155.149:8888/usealms/login/index.php">USEA LMS</a>
 								<span>|</span>			
@@ -252,8 +252,8 @@
 		<!-- ====== mobile menu ======= -->
 		<div class="mobile-menu">
 			<ul>
-				<li><a class="<?php if($_SESSION['page'] =='home_kh'){echo 'active_mobile';} ?>" href="../Pages/index.php">Home</a></li><hr>
-				<li class="dropdown-parent"><a class="<?php if($_SESSION['page'] =='about_kh'){echo 'active_mobile';} ?>" href="#">About <i class="fas fa-caret-down"></i></a>
+				<li><a class="<?php if($_SESSION['page'] =='home_kh'){echo 'active_mobile';} ?>" href="../Pages/index.php">ទំព័រដើម</a></li><hr>
+				<li class="dropdown-parent"><a class="<?php if($_SESSION['page'] =='about_kh'){echo 'active_mobile';} ?>" href="#">អំពីយើង <i class="fas fa-caret-down"></i></a>
 					<div class="dropdown-hamburger">
 						<ul>
 							<li>
