@@ -35,7 +35,7 @@
 											 echo 'right_active';
 																} ?>" 
 									aria-current="page" 
-									href="practucum-internship.php"> ការងារសាកល្បង/ការងារស្ម័គចិត្ត
+									href="practucum-internship.php"> ការអនុវត្ត / កម្មសិក្សា
 								</a>
 							</li>
 							<li><a class="nav-link item-link" href="#"> ទស្សនកិច្ចរបស់និស្សិត </a></li>
