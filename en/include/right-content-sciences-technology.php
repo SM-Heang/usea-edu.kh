@@ -16,11 +16,9 @@
 							<?php
 							if (
 								$_SESSION['right'] == 'bachelor-architecture' ||
-								$_SESSION['right'] == 'bachelor-chemistry' ||
 								$_SESSION['right'] == 'bachelor-civil-engineering' ||
 								$_SESSION['right'] == 'bachelor-information-technology' ||
-								$_SESSION['right'] == 'bachelor-mathematics' ||
-								$_SESSION['right'] == 'bachelor-physic'
+								$_SESSION['right'] == 'bachelor-mathematics'
 							) {
 
 								echo '<i class="fa-solid fa-angle-up i_1"></i>';
@@ -32,11 +30,10 @@
 							<?php
 								if(
 									$_SESSION['right'] == 'bachelor-architecture' ||
-									$_SESSION['right'] == 'bachelor-chemistry' ||
 									$_SESSION['right'] == 'bachelor-civil-engineering' ||
 									$_SESSION['right'] == 'bachelor-information-technology' ||
-									$_SESSION['right'] == 'bachelor-mathematics' ||
-									$_SESSION['right'] == 'bachelor-physic'
+									$_SESSION['right'] == 'bachelor-mathematics'
+						
 									){
 										echo 'show';
 									}
@@ -47,9 +44,6 @@
 								echo 'right_active';
 							}?>" aria-current="page"
 									href="../BachelorDegree/bachelor-architecture.php"> Architechture </a></li>
-							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-chemistry'){
-								echo 'right_active';
-							}?>" href="#"> Chemistry </a></li>
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-civil-engineering'){
 								echo 'right_active';
 							}?>" href="#"> Civil Engineering </a></li>
@@ -60,9 +54,6 @@
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-mathematics'){
 								echo 'right_active';
 								}?>" href="#"> Mathematics </a> </li>
-							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-physic'){
-								echo 'right_active';
-							} ?>" href="#"> Physics </a> </li>
 						</ul>
 					</li>
 				</ul>
