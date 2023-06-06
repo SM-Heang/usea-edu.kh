@@ -3,7 +3,7 @@
 		<div class="item"><a class="item-link <?php if($_SESSION['right'] == 'faculty-science-art-human-kh'){
 			echo 'right_active';
 		}?>"
-				href="../vission-Mission/vision-mision-corevalue-science-technology.php">Vision & Mission</a></div>
+				href="../vission-Mission/vision-mision-corevalue-science-technology.php">ចក្ខុវិស័យ និងបេសកកម្ម</a></div>
 		<hr>
 		<div class="item">
 		</div>
@@ -12,7 +12,7 @@
 			<nav class="sidebar">
 				<ul class="nav flex-column" id="nav_accordion">
 					<li class="nav-item has-submenu select-menu">
-						<a class="nav-link item-link select-btn" href="#"> Bachelor's Degree 
+						<a class="nav-link item-link select-btn" href="#"> ថ្នាក់បិញ្ញាបត្រ 
 							
 						<?php 
 								if(
@@ -52,17 +52,17 @@
 									href="#"> Curriculum Development </a></li>
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-education-management-kh'){
 								echo 'right_active';
-							}?>" href="#"> Education Management </a></li>
+							}?>" href="#"> គ្រប់គ្រងការអប់រំ </a></li>
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-history-kh'){
 								echo 'right_active';
-							}?>" href="#"> History </a></li>
+							}?>" href="#"> ប្រវត្តិវិទ្យា </a></li>
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-khmer-literature-kh'){
 								echo 'right_active';
-							}?>" href="#"> Khmer Literature
+							}?>" href="#"> អក្សរសាស្រ្តខ្មែរ
 								</a> </li>
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-philosophy-kh'){
 								echo 'right_active';
-							}?>" href="#"> Philosophy </a> </li>
+							}?>" href="#"> ទស្សនៈវិទ្យា </a> </li>
 						</ul>
 					</li>
 				</ul>

@@ -40,7 +40,6 @@
 					</div>
 				</div>
 				<div id="content-detail">
-					<h4>History</h4>
 					<div class="content-history-detail">
 						<?php  
 							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =25");
@@ -51,7 +50,7 @@
 							// echo "</pre>";
 						foreach ($result as $key => $value) { ?>
 						<p>
-							<?php echo $value['article_description_en'];?>
+							<?php echo $value['article_description_kh'];?>
 						</p>
 						<?php } ?>
 					</div>

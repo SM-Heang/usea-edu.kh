@@ -22,7 +22,7 @@ include_once '../../connection/db.connection.php';
 					</a>
 				</li>
 				<li>
-					<a href="#">Faculty of Economics, Business & Tourism</a>
+					<a href="#">មហាវិទ្យាល័យសេដ្ឋកិច្ច ពាណិជ្ជកម្ម និងទេសចរណ៍</a>
 				</li>
 			</ul>
 		</div>
@@ -37,7 +37,7 @@ include_once '../../connection/db.connection.php';
 		<div class="col-xxl-9">
 			<div class="container" style="background-color:#002060;">
 				<div class="row title-text" style="color: white; font-size: 16pt; padding: 5pt;">
-					Faculty of Economics, Business & Tourism
+					មហាវិទ្យាល័យសេដ្ឋកិច្ច ពាណិជ្ជកម្ម និងទេសចរណ៍
 				</div>
 			</div>
 			<div id="content-detail">

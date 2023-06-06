@@ -21,7 +21,7 @@
 					</a>
 					</li>
 					<li>
-						<a href="#">Faculty of Sciences & Technology</a>
+						<a href="#">មហាវិទ្យាល័យវិទ្យាសាស្រ្ត និងបច្ចេកវិទ្យា</a>
 					</li>
 				</ul>
 			</div>
@@ -37,7 +37,7 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row title-text" style="color: white; font-size: 16pt; padding: 5pt;">
-					Faculty of Sciences & Technology
+					មហាវិទ្យាល័យវិទ្យាសាស្រ្ត និងបច្ចេកវិទ្យា
 					</div>
 				</div>
 				<div id="content-detail">

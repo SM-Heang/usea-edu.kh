@@ -2,14 +2,14 @@
 	<div class="right-content-economic">
 		<div class="item"><a class="item-link <?php if ($_SESSION['right'] == 'faculty-science-law-kh') {
 			echo 'right_active';
-		} ?>" href="../vission-Mission/vision-mision-corevalue-law.php">Vision & Mission</a></div>
+		} ?>" href="../vission-Mission/vision-mision-corevalue-law.php">ចក្ខុវិស័យ និងបេសកកម្ម</a></div>
 		<hr>
 		<div class="item">
 			<!-- <a class="item-link" href="#"><i class="fas fa-angle-right"></i> Associate's Degree</a><hr> -->
 			<nav class="sidebar">
 				<ul class="nav flex-column" id="nav_accordion">
 					<li class="nav-item has-submenu select-menu">
-						<a class="nav-link item-link select-btn" href="#">Associate's Degree
+						<a class="nav-link item-link select-btn" href="#">ថ្នាក់បិញ្ញាបត្ររង
 							<?php
 							if (
 								$_SESSION['right'] == 'laws-kh' ||
@@ -35,11 +35,11 @@
 						">
 							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'laws-kh') {
 								echo 'right_active';
-							} ?>" aria-current="page" href="#"> Law
+							} ?>" aria-current="page" href="#"> នីតិសាស្រ្ត
 								</a></li>
 							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'public-admin-kh') {
 								echo 'right_active';
-							} ?>" href="#"> Public Adminstration </a></li>
+							} ?>" href="#"> រដ្ឋបាលសាធារណៈ </a></li>
 						</ul>
 					</li>
 				</ul>
@@ -51,7 +51,7 @@
 			<nav class="sidebar">
 				<ul class="nav flex-column" id="nav_accordion">
 					<li class="nav-item has-submenu select-menu-2">
-						<a class="nav-link item-link select-btn-2" href="#"> Bachelor's Degree
+						<a class="nav-link item-link select-btn-2" href="#"> ថ្នាក់បិញ្ញាបត្រ
 							<?php
 							if (
 								$_SESSION['right'] == 'bachelor-international-law-kh' ||
@@ -83,24 +83,16 @@
 						?>
 						
 						">
-							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'bachelor-international-law-kh') {
-								echo 'right_active';
-							} ?>" href="#"> International
-									Law </a></li>
+
 							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'bachelor-laws-kh') {
 								echo 'right_active';
-							} ?>" href="../BachelorDegree/bachelor-laws.php">Laws</a> </li>
+							} ?>" href="../BachelorDegree/bachelor-laws.php">នីតិសាស្រ្ត</a> </li>
+							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'bachelor-international-law-kh') {
+								echo 'right_active';
+							} ?>" href="#"> វិទ្យាសាស្ត្រនយោបាយ <br>និងទំនាក់ទំនងអន្តរជាតិ</a></li>
 							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'bachelor-international-relations-kh') {
 								echo 'right_active';
-							} ?>" href="#"> Political
-									Sciences and International Relations </a> </li>
-							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'bachelor-privat-law-kh') {
-								echo 'right_active';
-							} ?>" href="#"> Private Law </a> </li>
-							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'bachelor-public-admin-kh') {
-								echo 'right_active';
-							} ?>" href="../BachelorDegree/bachelor-public-admin.php"> Public
-									Administration </a> </li>
+							} ?>" href="#"> រដ្ឋបាលសាធារណៈ </a> </li>
 						</ul>
 					</li>
 				</ul>

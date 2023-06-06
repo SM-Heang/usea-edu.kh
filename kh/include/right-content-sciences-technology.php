@@ -3,7 +3,7 @@
 		<div class="item"><a class="item-link <?php if($_SESSION['right'] == 'faculty-information-technology-kh'){
 			echo 'right_active';
 		}?>"
-				href="../vission-Mission/vision-mision-corevalue-science-technology.php">Vision & Mission</a></div>
+				href="../vission-Mission/vision-mision-corevalue-science-technology.php">ចក្ខុវិស័យ និងបេសកកម្ម</a></div>
 		<hr>
 		<div class="item">
 		</div>
@@ -12,7 +12,7 @@
 			<nav class="sidebar">
 				<ul class="nav flex-column" id="nav_accordion">
 					<li class="nav-item has-submenu select-menu">
-						<a class="nav-link item-link select-btn" href="#"> Bachelor's Degree 
+						<a class="nav-link item-link select-btn" href="#"> ថ្នាក់បិញ្ញាបត្រ
 							<?php
 							if (
 								$_SESSION['right'] == 'bachelor-architecture-kh' ||
@@ -46,23 +46,17 @@
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-architecture-kh'){
 								echo 'right_active';
 							}?>" aria-current="page"
-									href="../BachelorDegree/bachelor-architecture.php"> Architechture </a></li>
-							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-chemistry-kh'){
-								echo 'right_active';
-							}?>" href="#"> Chemistry </a></li>
+									href="../BachelorDegree/bachelor-architecture.php"> ស្ថាបត្យកម្ម </a></li>
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-civil-engineering-kh'){
 								echo 'right_active';
-							}?>" href="#"> Civil Engineering </a></li>
+							}?>" href="#"> វិស្វកម្មសំណង់ស៊ីវិល </a></li>
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-information-technology-kh'){
 								echo 'right_active';
-							}?>" href="../BachelorDegree/bachelor-information-technology.php"> Information Technology
+							}?>" href="../BachelorDegree/bachelor-information-technology.php"> ព័ត៏មានវិទ្យា
 								</a> </li>
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-mathematics-kh'){
 								echo 'right_active';
-								}?>" href="#"> Mathematics </a> </li>
-							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-physic-kh'){
-								echo 'right_active';
-							} ?>" href="#"> Physics </a> </li>
+								}?>" href="#"> គណិតវិទ្យា </a> </li>
 						</ul>
 					</li>
 				</ul>
