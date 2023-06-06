@@ -1,8 +1,8 @@
 <div class="col-xxl-3">
 	<div class="right-content-economic">
-		<div class="item"><a class="item-link <?php if ($_SESSION['right'] == 'vision-mision-corevalue-right') {
+		<div class="item"><a class="item-link <?php if ($_SESSION['right'] == 'faculty-science-law') {
 			echo 'right_active';
-		} ?>" href="../Pages/vision-mision-corevalue.php">Vision & Mission</a></div>
+		} ?>" href="../vission-Mission/vision-mision-corevalue-law.php">Vision & Mission</a></div>
 		<hr>
 		<div class="item">
 			<!-- <a class="item-link" href="#"><i class="fas fa-angle-right"></i> Associate's Degree</a><hr> -->
