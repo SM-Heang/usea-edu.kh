@@ -1,9 +1,8 @@
 <div class="col-xxl-3">
 	<div class="right-content-economic">
-	<?php  $page = substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], "/")+1);?> <!-- use to store url to $page -->
-		<div class="item"><a class="item-link <?php if ($page == 'faculty-laws-main.php?article_id=27') {
+		<div class="item"><a class="item-link <?php if ($_SESSION['right'] == 'vision-mision-corevalue-right') {
 			echo 'right_active';
-		} ?>" href="../Pages/faculty-laws-main.php?article_id=27">Vision & Mission</a></div>
+		} ?>" href="../Pages/vision-mision-corevalue.php">Vision & Mission</a></div>
 		<hr>
 		<div class="item">
 			<!-- <a class="item-link" href="#"><i class="fas fa-angle-right"></i> Associate's Degree</a><hr> -->

@@ -47,7 +47,7 @@
 				</div>
 				<div id="content-detail">
 					<?php  
-							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =382");
+							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =393");
 							$stmt->execute();
 							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 							// echo "<pre>";
