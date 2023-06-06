@@ -9,7 +9,7 @@
 			<nav class="sidebar">
 				<ul class="nav flex-column" id="nav_accordion">
 					<li class="nav-item has-submenu select-menu">
-						<a class="nav-link item-link select-btn" href="#">កម្រិតបរិញ្ញាបត្ររង
+						<a class="nav-link item-link select-btn" href="#">ថ្នាក់បរិញ្ញាបត្ររង
 
 							<?php
 							if (
@@ -69,7 +69,7 @@
 			<nav class="sidebar">
 				<ul class="nav flex-column" id="nav_accordion">
 					<li class="nav-item has-submenu select-menu-2">
-						<a class="nav-link item-link select-btn-2" href="right-content-economic.php"> កម្រិត​បរិញ្ញាបត្រ
+						<a class="nav-link item-link select-btn-2" href="right-content-economic.php"> ថ្នាក់​បរិញ្ញាបត្រ
 							<!-- <i class="fas fa-angle-down"></i> -->
 
 							<?php

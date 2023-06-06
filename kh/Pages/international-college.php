@@ -20,7 +20,7 @@
 					</a>
 					</li>
 					<li>
-						<a href="#">International College</a>
+						<a href="#">មហាវិទ្យាល័យអន្តរជាតិ</a>
 					</li>
 				</ul>
 			</div>
@@ -36,7 +36,7 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row title-text" style="color: white; font-size: 16pt; padding: 5pt;">
-                    International College
+                    មហាវិទ្យាល័យអន្តរជាតិ
 					</div>
 				</div>
 				<div id="content-detail">

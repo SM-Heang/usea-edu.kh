@@ -49,10 +49,10 @@
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-curriculum-development-kh'){
 								echo 'right_active';
 							}?>" aria-current="page"
-									href="#"> Curriculum Development </a></li>
+									href="#"> អភិវឌ្ឍន៍កម្មវិធីសិក្សា </a></li>
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-education-management-kh'){
 								echo 'right_active';
-							}?>" href="#"> គ្រប់គ្រងការអប់រំ </a></li>
+							}?>" href="#"> គ្រប់គ្រងអប់រំ </a></li>
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-history-kh'){
 								echo 'right_active';
 							}?>" href="#"> ប្រវត្តិវិទ្យា </a></li>

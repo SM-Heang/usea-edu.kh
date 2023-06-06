@@ -21,7 +21,7 @@
 					</a>
 					</li>
 					<li>
-						<a href="#">Foreign Language Institute</a>
+						<a href="#">វិទ្យាស្ថានភាសាបរទេស</a>
 					</li>
 				</ul>
 			</div>
@@ -37,7 +37,7 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row title-text" style="color: white; font-size: 16pt; padding: 5pt;">
-					Foreign Language Institute
+					វិទ្យាស្ថានភាសាបរទេស
 					</div>
 				</div>
 				<div id="content-detail">

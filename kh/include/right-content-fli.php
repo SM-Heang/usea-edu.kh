@@ -2,7 +2,7 @@
 	<div class="right-content-economic">
 		<div class="item"><a class="item-link <?php if ($_SESSION['right'] == 'foreign-language-institute-kh') {
 			echo 'right_active';
-		} ?>" href="../vission-Mission/vision-mision-corevalue-fli.php">Vision & Mission</a></div>
+		} ?>" href="../vission-Mission/vision-mision-corevalue-fli.php">ចក្ខុវិស័យ និងបេសកកម្ម</a></div>
 		<!-- <hr> -->
 		<div class="item">
 			<!-- <a class="item-link" href="#"><i class="fas fa-angle-right"></i> Associate's Degree</a><hr> -->
@@ -69,7 +69,7 @@
 			<nav class="sidebar">
 				<ul class="nav flex-column" id="nav_accordion">
 					<li class="nav-item has-submenu select-menu-2">
-						<a class="nav-link item-link select-btn-2" href="right-content-economic.php"> Bachelor's Degree
+						<a class="nav-link item-link select-btn-2" href="right-content-economic.php"> ថ្នាក់បិញ្ញាបត្រ
 							<!-- <i class="fas fa-angle-down"></i> -->
 
 							<?php
