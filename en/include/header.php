@@ -180,7 +180,7 @@
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/f-law.png" width="25px" height="25px">
-											<a href="../BachelorDegree/faculty-laws-main.php?article_id=27">Faculty of Social Science <br>& Law</a>
+											<a href="../vission-Mission/vision-mision-corevalue-law.php">Faculty of Social Science <br>& Law</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/f-art.png" width="25px" height="25px">
@@ -192,7 +192,7 @@
 									<ul class="mega-link">
 										<li class="list-control">
 											<img src="../../media/nav-icon/f-internation-college.png" width="25px" height="25px">
-											<a href="../Pages/international-college.php">International College</a>
+											<a href="../vission-Mission/vision-mission-international-college.php">International College</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/fli.png" width="25px" height="25px">
@@ -200,11 +200,11 @@
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/post-graduate.png" width="25px" height="25px">
-											<a href="../Pages/post-graduate.php">Post Graduate</a>
+											<a href="../vission-Mission/vision-mission-post-graduate.php">Post Graduate</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/short-course.png" width="25px" height="25px">
-											<a href="../Pages/short-course.php">Short Course</a>
+											<a href="#">Short Course</a>
 										</li>
 									</ul>
 								</div>

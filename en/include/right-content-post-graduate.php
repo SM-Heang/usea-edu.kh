@@ -1,7 +1,7 @@
 	<div class="col-xxl-3">
 	<div class="right-content-economic">
-		<div class="item"><a class="item-link nav-item"
-				href="../vission-Mission/vision-mision-corevalue-science-technology.php">Vision & Mission</a></div>
+		<div class="item"><a class="item-link nav-item <?php if($_SESSION['right'] == 'post-graduate'){ echo 'right_active';} ?>"
+				href="../vission-Mission/vision-mission-post-graduate.php">Vision & Mission</a></div>
 		<hr>
 		<div class="item">
 			<nav class="sidebar">

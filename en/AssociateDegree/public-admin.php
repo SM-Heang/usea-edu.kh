@@ -42,12 +42,12 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-						Associate's Degree in Accounting 
+						Associate's Degree in Public Administration
 					</div>
 				</div>
 				<div id="content-detail">
 					<?php  
-							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =27");
+							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =392");
 							$stmt->execute();
 							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 							// echo "<pre>";

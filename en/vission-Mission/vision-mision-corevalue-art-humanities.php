@@ -20,7 +20,7 @@
 					</a>
 					</li>
 					<li>
-						<a href="#">Vision Mission</a>
+						<a href="#">Faculty of Arts, Humanities & Education</a>
 					</li>
 				</ul>
 			</div>
@@ -36,7 +36,7 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row title-text" style="color: white; font-size: 16pt; padding: 5pt;">
-						Vision Mission
+					Faculty of Arts, Humanities & Education
 					</div>
 				</div>
 				<div id="content-detail">
