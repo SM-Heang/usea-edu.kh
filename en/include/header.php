@@ -165,7 +165,7 @@
 							if($_SESSION['page'] == 'research_procedure'){ echo 'noactive';}
 							if($_SESSION['page'] == 'home'){ echo 'noactive';}
 							?>" 
-							href="../vission-Mission/vision-mision-corevalue.php">Academics</a>
+							href="#">Academics</a>
 						<div class="mega-box">
 							<div class="content" id="nav-academics">
 								<div class="row">
