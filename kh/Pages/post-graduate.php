@@ -36,7 +36,7 @@ $_SESSION['page'] = $page;
 		<div class="col-xxl-9">
 			<div class="container" style="background-color:#002060;">
 				<div class="row title-text" style="color: white; font-size: 16pt; padding: 5pt;">
-					Post Graduate
+					សាលាក្រោយបរិញ្ញាបត្រ
 				</div>
 			</div>
 			<div id="content-detail">
