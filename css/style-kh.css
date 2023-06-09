@@ -58,7 +58,7 @@ body {
 }
 /* nav-link li each one */
 .main-menu{
-  padding: 5px 10px !important;
+  padding: 5px 5px !important;
   white-space: nowrap !important;
 }
 
@@ -216,6 +216,8 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   color: #ff0000;
+  font: 'Khmer OS Battambang';
+  font-size: 18pt;
 }
 
 #content-detail .content-history-detail img {
@@ -2422,7 +2424,7 @@ figure {
     width: 100%;
   }
   .main-menu{
-    padding: 5px 10px !important;
+    padding: 5px 5px !important;
     white-space: nowrap !important;
   }
 }
