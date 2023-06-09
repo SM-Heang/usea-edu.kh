@@ -40,15 +40,18 @@
 					</div>
 				</div>
 				<div id="content-detail">
-				<h4 class="mt-3">President Message</h4>
 					<div class="content-structure-detail">
-						<p class="mt-3 mb-5">USEA has the Board of Trustees governing the university for its final decision on academic and administrative matters. 
-							The President is the authority in the university assisted by Assistant to the Vice President, advisors, academic board, 
-							specialized committee and three Vice Presidents managing the assigned offices. USEA has the Board of Trustees governing 
-							the university for its final decision on academic and administrative matters. The President is the authority in the university 
-							assisted by Assistant to the Vice President, advisors, academic board, specialized committee and three Vice Presidents managing the assigned offices.</p>
-							<hr style="color: #002060;">
-						<img src="../../media/image/usea-structure-2022.jpg" class="rounded mx-auto d-block mb-5 mt-5" alt="president photo" width="100%" height="auto">
+						<?php  
+							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =77");
+							$stmt->execute();
+							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+							// echo "<pre>";
+							// print_r($result);
+							// echo "</pre>";
+						foreach ($result as $key => $value) { ?>
+						<!-- <img src="media/events/independent_days.jpg" alt="independent_days" width="375px" height="245px"> -->
+						<p><?php echo $value['article_description_en'];?></p>
+					<?php } ?>
 					</div>
 				</div>
 			</div>
