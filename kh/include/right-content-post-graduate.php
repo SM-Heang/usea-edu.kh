@@ -45,7 +45,7 @@
 			<nav class="sidebar">
 				<ul class="nav flex-column" id="nav_accordion">
 					<li class="nav-item has-submenu">
-						<a class="nav-link item-link" href="#"> Dissertation  </a>
+						<a class="nav-link item-link" href="#"> និក្ខេបបទថ្នាក់បណ្ឌិត </a>
 						<!-- <ul class="submenu collapse">
 							<li><a class="nav-link item-link" aria-current="page"
 									href="../BachelorDegree/bachelor-degree-architecture.php"> Architechture </a></li>

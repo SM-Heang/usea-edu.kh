@@ -208,7 +208,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="mx-0 text-center main-menu"><a class=" <?php if($_SESSION['page'] == 'partnership_local_kh'){ echo 'active'; } ?>" href="../Pages/partnership-local.php">ដៃគូរសហការ</a></li>
+					<li class="mx-0  main-menu"><a class=" <?php if($_SESSION['page'] == 'partnership_local_kh'){ echo 'active'; } ?>" href="../Pages/partnership-local.php">ដៃគូរសហការ</a></li>
 					<li class="mx-0 text-center main-menu">
 						<a class="<?php if($_SESSION['page'] == 'research_procedure_kh'){ echo 'active'; } ?>" href="#">ស្រាវជ្រាវ</a>
 						<div class="mega-box">

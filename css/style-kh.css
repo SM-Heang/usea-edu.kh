@@ -58,7 +58,8 @@ body {
 }
 /* nav-link li each one */
 .main-menu{
-  width: 141px !important;
+  padding: 5px 10px !important;
+  white-space: nowrap !important;
 }
 
 .nav-link li a {
@@ -2411,7 +2412,8 @@ figure {
     justify-content: center;
   }
   .main-menu{
-    width: 114px !important;
+    padding: 5px 2px !important;
+    white-space: nowrap !important;
   }
 }
 
@@ -2420,7 +2422,8 @@ figure {
     width: 100%;
   }
   .main-menu{
-    width: 100px !important;
+    padding: 5px 10px !important;
+    white-space: nowrap !important;
   }
 }
 

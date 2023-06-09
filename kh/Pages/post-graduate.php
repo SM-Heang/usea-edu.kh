@@ -20,7 +20,7 @@ $_SESSION['page'] = $page;
 					</a>
 				</li>
 				<li>
-					<a href="#">Post Graduate</a>
+					<a href="#">សាលាក្រោយបរិញ្ញាបត្រ</a>
 				</li>
 			</ul>
 		</div>
