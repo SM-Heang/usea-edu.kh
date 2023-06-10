@@ -23,7 +23,7 @@
 					</a>
 					</li>
 					<li>
-						<a href="partnership-local">Partnership</a>
+						<a href="partnership-local">ដៃគូរសហការ</a>
 					</li>
 				</ul>
             
@@ -38,7 +38,7 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row title-text" style="color: white; font-size: 16pt; padding: 5pt;">
-						Partnership
+						ដៃគូរសហការ
 					</div>
 				</div>
 				<div id="content-detail">
@@ -62,7 +62,7 @@
 								<p class="partnership-title"><?php echo $value['partnership_title_en'];?></p>
 								<p class="partnership-date"><?php echo "<strong>MOU Signed</strong> : " .date('d M Y', strtotime($value['signed_date']));?></p>
 								<div style="text-align: right;">
-									<a href="partnership-international-detail.php?id=<?php echo $value['partnership_id'] ?>" class="btn btn-danger">Read More</a>
+									<a href="partnership-international-detail.php?id=<?php echo $value['partnership_id'] ?>" class="btn btn-danger">អានបន្ថែម</a>
 								</div>
 						
 						</div>
@@ -90,7 +90,7 @@
  				?>
                 <ul class="pagination d-flex justify-content-center mt-3">
                     <li class="page-item">
-                    <a class="page-link bg_btn btn m-0"><< Previous</a>
+                    <a class="page-link bg_btn btn m-0"><< ត្រឡប់</a>
                     </li>
                     <?php 
                     	for ($i=1; $i <=$maxpage ; $i++) { ?>
@@ -109,7 +109,7 @@
                     		 ?>" href="partnership-international.php?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
                     	<?php } ?>
 
-                    <a class="page-link bg_btn btn m-0" href="#">Next >></a>
+                    <a class="page-link bg_btn btn m-0" href="#">បន្ទាប់ >></a>
                     </li>
                 </ul>
                 <!--End Logic Pagination -->

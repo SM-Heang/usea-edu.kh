@@ -2414,7 +2414,7 @@ figure {
     justify-content: center;
   }
   .main-menu{
-    padding: 5px 2px !important;
+    padding: 5px 0px !important;
     white-space: nowrap !important;
   }
 }

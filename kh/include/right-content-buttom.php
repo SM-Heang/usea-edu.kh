@@ -80,7 +80,7 @@
 								</a>
 							</li>
 							<li><a class="nav-link item-link" href="#"> បណ្ណាល័យអាមេរិក </a></li>
-							<li><a class="nav-link item-link" href="#"> E-Library </a></li>
+							<li><a class="nav-link item-link" href="#"> ឯកសារអេឡិចត្រូនិច </a></li>
 						</ul>
 					</li>
 				</ul>

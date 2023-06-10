@@ -15,13 +15,13 @@ include_once '../../connection/db.connection.php';
 		<!-- =====> Start Upcoming Events <===== -->
 		<div class="row animate-box fh5co-heading">
 			<div class="text-center mt-5">
-				<h2 style="color: #002060; font-weight: bold;">LATEST NEWS</h2>
+				<h2 style="color: #002060; font-weight: bold; font-size: 23pt;">ព័ត៌មានថ្មីៗ</h2>
 				<span class="d-flex justify-content-center" width="100%" height="100%">
 					<img src="../../images/border.png" class="img-fluid icon_img" alt="">
 				</span>
 				<hr style="color: #002060;">
 			</div>
-			<p class="mt-5"><a href="upcoming-events.php" style="text-decoration:none; color:#002060;">Upcoming Events | <span style="font-size: 0.75rem; font-weight: 500;">All Events</span></a></p>
+			<p class="mt-5"><a href="upcoming-events.php" style="text-decoration:none; color:#002060; font-size: 12pt;">ព្រឹត្តិការណ៍នាពេលខាងមុខ | <span style="font-size: 0.75rem; font-weight: 500;">ព្រឹត្តិការណ៍ទាំងអស់</span></a></p>
 		</div>
 		<div class="container mb-5" id="upcoming-events">
 
@@ -63,10 +63,10 @@ include_once '../../connection/db.connection.php';
 			<!-- =====> End Upcoming Events <===== -->
 
 			<!-- =====> Start Events <===== -->
-			<div class="row animate-box mt-5 mb-5 id=" events">
+			<div class="row animate-box mt-5 mb-5" id=" events">
 				<div class="row animate-box fh5co-heading">
 					<p style="font-size: 20px; font-weight: bold;">
-						<a href="events.php" style="text-decoration: none; color:#002060;"> Events | <span style="font-size: 12px; font-weight: 500;">All Events</span></a>
+						<a href="events.php" style="text-decoration: none; color:#002060; font-size: 12pt;"> ព្រឹត្តិការណ៍ | <span style="font-size: 12px; font-weight: 500;">ព្រឹត្តិការណ៍ទាំងអស់</span></a>
 					</p>
 				</div>
 				<?php
@@ -102,7 +102,7 @@ include_once '../../connection/db.connection.php';
 	<!-- =====> Start Carousel Partnership <===== -->
 
 		<div class="container mt-5 mb-5">
-				<h1 id="partnership">Partnership</h1>
+				<h1 id="partnership">ដៃគូរសហការ</h1>
 				<div class="owl-carousel owl-theme" id="partnership-logo">
 					<div class="item p-3" id="item"><a href="https://angel-project.eu/" target="_blank"><img src="../../media/Partnership/100px/angel.png"></a></div>
 					<div class="item p-3" id="item"><a href="https://rwi.lu.se/" target="_blank"><img src="../../media/Partnership/100px/rwi.png"></a></div>
