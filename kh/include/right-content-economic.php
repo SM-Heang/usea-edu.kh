@@ -82,7 +82,7 @@
 								$_SESSION['right'] == 'bachelor-finance-banking-kh' ||
 								$_SESSION['right'] == 'bachelor-international-economics-kh' ||
 								$_SESSION['right'] == 'bachelor-intrepreneurship-kh' ||
-								$_SESSION['right'] == 'bachelor-international-business-kh' ||
+								$_SESSION['right'] == 'bachelor-international-Marketing-kh' ||
 								$_SESSION['right'] == 'bachelor-international-tourism-management-kh' ||
 								$_SESSION['right'] == 'bachelor-catering-management-kh' ||
 								$_SESSION['right'] == 'bachelor-tourism-hospitality-management-kh' ||
@@ -109,7 +109,7 @@
 							$_SESSION['right'] == 'bachelor-finance-banking-kh' ||
 							$_SESSION['right'] == 'bachelor-international-economics-kh' ||
 							$_SESSION['right'] == 'bachelor-intrepreneurship-kh' ||
-							$_SESSION['right'] == 'bachelor-international-business-kh' ||
+							$_SESSION['right'] == 'bachelor-international-Marketing-kh' ||
 							$_SESSION['right'] == 'bachelor-international-tourism-management-kh' ||
 							$_SESSION['right'] == 'bachelor-catering-management-kh' ||
 							$_SESSION['right'] == 'bachelor-tourism-hospitality-management-kh' ||
@@ -131,30 +131,6 @@
 
 							<li>
 								<a class="nav-link item-link 
-										<?php if ($_SESSION['right'] == 'bachelor-catering-management-kh') {
-											echo 'right_active';
-										} ?>" href="#"> គ្រប់គ្រងសេវាម្ហូបអាហារ
-								</a>
-							</li>
-
-							<li>
-								<a class="nav-link item-link 
-										<?php if ($_SESSION['right'] == 'bachelor-eco-tourism-kh') {
-											echo 'right_active';
-										} ?>" href="#"> អេកូទេសចរណ៍
-								</a>
-							</li>
-
-							<li>
-								<a class="nav-link item-link 
-										<?php if ($_SESSION['right'] == 'bachelor-event-management-kh') {
-											echo 'right_active';
-										} ?>" href="#"> គ្រប់គ្រងព្រឹត្តិការណ៍
-								</a>
-							</li>
-
-							<li>
-								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-finance-banking-kh') {
 											echo 'right_active';
 										} ?>" href="#"> ហិរញ្ញវត្ថុ និងធនាគារ
@@ -163,23 +139,15 @@
 
 							<li>
 								<a class="nav-link item-link 
-										<?php if ($_SESSION['right'] == 'bachelor-industrail-economics-kh') {
+										<?php if ($_SESSION['right'] == 'bachelor-international-Marketing-kh') {
 											echo 'right_active';
-										} ?>" href="#"> សេដ្ឋកិច្ចសហគ្រាស
+										} ?>" href="#"> ទីផ្សារអន្តរជាតិ
 								</a>
 							</li>
 
 							<li>
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-international-economics-kh') {
-											echo 'right_active';
-										} ?>" href="#"> សេដ្ឋកិច្ចអន្តរជាតិ
-								</a>
-							</li>
-
-							<li>
-								<a class="nav-link item-link 
-										<?php if ($_SESSION['right'] == 'bachelor-international-business-kh') {
 											echo 'right_active';
 										} ?>" href="#"> ពាណិជ្ជកម្មអន្តរជាតិ
 								</a>
@@ -190,14 +158,6 @@
 										<?php if ($_SESSION['right'] == 'bachelor-international-tourism-management-kh') {
 											echo 'right_active';
 										} ?>" href="#">  ទេសចរណ៍ <br>និងបដិសណ្ឋារកិច្ចអន្តរជាតិ
-								</a>
-							</li>
-
-							<li>
-								<a class="nav-link item-link 
-										<?php if ($_SESSION['right'] == 'bachelor-intrepreneurship-kh') {
-											echo 'right_active';
-										} ?>" href="#"> សហគ្រិនភាព
 								</a>
 							</li>
 

@@ -50,7 +50,7 @@
 							// echo "</pre>";
 						foreach ($result as $key => $value) { ?>
 						<!-- <img src="media/events/independent_days.jpg" alt="independent_days" width="375px" height="245px"> -->
-						<p><?php echo $value['article_description_en'];?></p>
+						<p><?php echo $value['article_description_kh'];?></p>
 					<?php } ?>
 					</div>
 				</div>

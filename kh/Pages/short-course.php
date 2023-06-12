@@ -20,7 +20,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="events.php">Events</a>
+						<a href="events.php">ព្រឹត្តិការណ៍</a>
 					</li>
 				</ul>
 			</div>
@@ -35,7 +35,7 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row title-text" style="color: white; font-size: 16pt; padding: 5pt;">
-						Past Events
+						ព្រឹត្តិការណ៍កន្លងទៅ
 					</div>
 				</div>
 
@@ -74,7 +74,7 @@
 									</p>
 								</div>
 								<div style="text-align: right;">
-									<a href="event-detail.php?id=<?php echo $value['event_id']?> " class="btn btn-danger btn-sm">Read More</a>
+									<a href="event-detail.php?id=<?php echo $value['event_id']?> " class="btn btn-danger btn-sm">អានបន្ថែម</a>
 								</div>
 							</div>
 						</div>
@@ -97,11 +97,11 @@
 				?>
 				<ul class="pagination d-flex justify-content-center mt-5 mb-3">
 					<li class="page-item">
-						<a class="page-link bg_btn btn m-0"​ href="events.php?page=<?php if (isset($_GET['page']) && $_GET['page'] > 1)
+						<a class="page-link bg_btn btn m-0" href="events.php?page=<?php if (isset($_GET['page']) && $_GET['page'] > 1)
 							echo $_GET['page'] - 1;
 						else
 							echo 1;
-						?>">​Previous</a>
+						?>">ត្រឡប់</a>
 					</li>
 					<!-- Loop Page Number -->
 					<?php
@@ -132,7 +132,7 @@
 					}else{
 						echo 2;
 					}
-						?>">Next</a>
+						?>">បន្ទាប់</a>
 					</li>
 				</ul>
 				<!--End Logic Pagination -->
