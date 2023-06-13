@@ -58,7 +58,8 @@ body {
 }
 /* nav-link li each one */
 .main-menu{
-  width: 136px !important;
+  padding: 5px 5px !important;
+  white-space: nowrap !important;
 }
 
 .nav-link li a {
@@ -215,6 +216,8 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   color: #ff0000;
+  font: 'Khmer OS Battambang';
+  font-size: 18pt;
 }
 
 #content-detail .content-history-detail img {
@@ -2411,7 +2414,8 @@ figure {
     justify-content: center;
   }
   .main-menu{
-    width: 114px !important;
+    padding: 5px 0px !important;
+    white-space: nowrap !important;
   }
 }
 
@@ -2420,7 +2424,8 @@ figure {
     width: 100%;
   }
   .main-menu{
-    width: 100px !important;
+    padding: 5px 5px !important;
+    white-space: nowrap !important;
   }
 }
 

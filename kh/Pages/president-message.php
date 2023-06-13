@@ -21,7 +21,7 @@
 					</a>
 					</li>
 					<li>
-						<a href="#">President Message</a>
+						<a href="#">សាររបស់សាកលវិទ្យាធិការ</a>
 					</li>
 				</ul>
 			</div>
@@ -37,11 +37,11 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row title-text" style="color: white; font-size: 16pt; padding: 5pt;">
-						President Message
+					សាររបស់សាកលវិទ្យាធិការ
 					</div>
 				</div>
 				<div id="content-detail">
-				<h4 class="mt-3">President Message</h4>
+				<h4 class="mt-3" >សាររបស់សាកលវិទ្យាធិការ</h4>
 					<div class="content-president-detail mt-3">
 					<?php  
 							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =19");
@@ -52,7 +52,7 @@
 							// echo "</pre>";
 						foreach ($result as $key => $value) { ?>
 						<!-- <img src="../media/image/president/Dr.MeanSothy.jpg" alt="president photo" width="240px" height="300px"> -->
-						<p><?php echo $value['article_description_en'];?></p>
+						<p><?php echo $value['article_description_kh'];?></p>
 						<?php } ?>
 					</div>
 				</div>

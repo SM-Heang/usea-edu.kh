@@ -21,7 +21,7 @@
 					</a>
 					</li>
 					<li>
-						<a href="partnership-local">Recognition</a>
+						<a href="partnership-local">ការទទួលស្គាល់</a>
 					</li>
 				</ul>
             
@@ -36,7 +36,7 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row title-text" style="color: white; font-size: 16pt; padding: 5pt;">
-                        Recognition
+                        ការទទួលស្គាល់
 					</div>
 				</div>	
 				<?php 
@@ -44,13 +44,13 @@
 					$stmt= $conn->prepare($sql);
 					$stmt->execute();
 				?>
-				 <h4 class="fw-bold mt-3" style="color: red;">History</h4>
+				 <h4 class="fw-bold mt-3" style="color: red;">ប្រវត្តិ</h4>
 				 <hr class="mt-3 mb-5" style="color: #002060;">
 				<div class="mt-2 d-flex">
 					<img src="../../media/g1.jpg" width="180px" height="130px">
 					<p class="txt_reco" style="margin-left: 10px; text-align: justify;">Goverment There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,</p>
 				</div>
-				<a class="btn btn-danger" style="float: right; margin-top: 0px;">Download</a>
+				<a class="btn btn-danger" style="float: right; margin-top: 0px;">ទាញយក</a>
 				<br>
 				<hr class="mt-5 mb-5" style="color: #002060;">
 
@@ -58,7 +58,7 @@
 					<img src="../../media/m1.jpg" width="200px" height="150px">
 					<p class="txt_reco" style="margin-left: 10px; text-align: justify;">MOEYS There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,</p>
 				</div>
-				<a class="btn btn-danger" style="float: right; margin-top: 0px;">Download </a>
+				<a class="btn btn-danger" style="float: right; margin-top: 0px;">ទាញយក </a>
 				<br>
 				<hr class="mt-5 mb-5" style="color: #002060;">
 
@@ -66,7 +66,7 @@
 					<img src="../../media/ACC.jpg" width="180px" height="130px">
 					<p class="txt_reco" style="margin-left: 10px; text-align: justify;">ACC There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,</p>
 				</div>
-				<a class="btn btn-danger" style="float: right; margin-top: 0px;">Download </a>
+				<a class="btn btn-danger" style="float: right; margin-top: 0px;">ទាញយក </a>
 				<br>
 				<hr class="mt-5 mb-5" style="color: #002060;">
 
@@ -74,7 +74,7 @@
 					<img src="../../media/AUN.jpg" width="180px" height="130px">
 					<p class="txt_reco" style="margin-left: 10px; text-align: justify;">AUN There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,</p>
 				</div>
-				<a class="btn btn-danger" style="float: right; margin-top: 0px;">Download </a>
+				<a class="btn btn-danger" style="float: right; margin-top: 0px;">ទាញយក </a>
 				<br>
 				<hr class="mt-5 mb-5" style="color: #002060;">
 			</div>

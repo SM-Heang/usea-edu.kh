@@ -24,7 +24,7 @@
 					</a>
 					</li>
 					<li>
-						<a href="#">Events</a>
+						<a href="#">ព្រឹត្តិការណ៍</a>
 					</li>
 				</ul>
 			</div>
@@ -39,7 +39,7 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row title-text" style="color: white; font-size: 16pt; padding: 5pt;">
-                        Upcoming Events
+                        ព្រឹត្តិការណ៍នាពេលខាងមុខ
 					</div>
 				</div>
 
@@ -66,10 +66,10 @@
 					  </div>
 					  <div class="card-body">
 					    <h5 class="card-title" style="font-size: 1rem; color: #002060;"><?php echo substr($value['event_title_en'], 0, 250) . "...";?></h5>
-					    <p class="card-text" ><?php echo substr($value['event_description_en'],0 ,0) ?></p>
+					    <p class="card-text" ><?php echo substr($value['event_description_kh'],0 ,0) ?></p>
 					  </div>
 					  <div style="text-align: right;">
-					  	<a href="#" class="btn btn-danger btn-sm">Read More</a>
+					  	<a href="#" class="btn btn-danger btn-sm">អានបន្ថែម</a>
 					  </div>
 					</div>
 				</div>
@@ -91,7 +91,7 @@
  				?>
                 <ul class="pagination d-flex justify-content-center mt-5 mb-5">
                     <li class="page-item">
-                    <a class="page-link bg_btn btn m-0">Previous</a>
+                    <a class="page-link bg_btn btn m-0">ត្រឡប់</a>
                     </li>
                     <?php 
                     	for ($i=1; $i <=$maxpage ; $i++) { ?>
@@ -110,7 +110,7 @@
                     		 ?>" href="upcoming-events.php?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
                     	<?php } ?>
 
-                    <a class="page-link bg_btn btn m-0" href="#">Next</a>
+                    <a class="page-link bg_btn btn m-0" href="#">បន្ទាប់</a>
                     </li>
                 </ul>
                 <!--End Logic Pagination -->

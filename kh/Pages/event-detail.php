@@ -24,7 +24,7 @@ include_once '../../connection/db.connection.php';
 						</a>
 					</li>
 					<li>
-						<a href="events.php">Events</a>
+						<a href="events.php">ព្រឹត្តិការណ៍</a>
 					</li>
 				</ul>
 			</div>
@@ -48,17 +48,17 @@ include_once '../../connection/db.connection.php';
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row title-text" style="color: white; font-size: 16pt; padding: 5pt;">
-						Past Events
+						ព្រឹត្តិការណ៍កន្លងទៅ
 					</div>
 				</div>
 
 				<!-- =====> Start Events <===== -->
 				<div class="row animate-box mt-3 mb-5" id="events">
 						<div class="event_title">
-							<?php echo $temp['event_title_en']?>
+							<?php echo $temp['event_title_kh']?>
 						</div>
 						<div class="event_detail">
-							<?php echo $temp['event_description_en'];?>
+							<?php echo $temp['event_description_kh'];?>
 						</div>
 				</div>
 				<!-- =====> End Events <===== -->
