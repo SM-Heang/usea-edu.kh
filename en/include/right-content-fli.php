@@ -106,7 +106,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-english-for-translation') {
 											echo 'right_active';
-										} ?>" href="#"> English for Translation
+										} ?>" href="#"> English for Translation and Interpreting
 								</a>
 							</li>
 
@@ -114,7 +114,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-english-for-business') {
 											echo 'right_active';
-										} ?>" href="#"> English for International Business Relation
+										} ?>" href="#"> English for International Business
 								</a>
 							</li>
 
@@ -122,7 +122,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-tefl') {
 											echo 'right_active';
-										} ?>" href="#"> Teaching English as Foreign Language
+										} ?>" href="#"> Teaching English as a Foreign Language
 								</a>
 							</li>
 
