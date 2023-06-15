@@ -20,13 +20,13 @@
 					</a>
 					</li>
 					<li>
-						<a href="#"> Home > </a>
+						<a href="#"> ទំព័រដើម > </a>
 					</li>
 					<li>
-					<a href="#"> Academics > </a>
+					<a href="#"> សិក្សាធិការ > </a>
 					</li>
 					<li>
-					<a href="#"> Eco-Tourism </a>
+					<a href="#"> អេកូទេសចរណ៍ </a>
 					</li>
 				</ul>
 			</div>
@@ -42,7 +42,7 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-					Bachelor's Degree in Eco-Tourism
+					ថ្នាក់បរិញ្ញាបត្រ ឯកទេស អេកូទេសចរណ៍
 					</div>
 				</div>
 				<div id="content-detail">

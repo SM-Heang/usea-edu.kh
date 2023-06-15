@@ -25,13 +25,13 @@ include_once '../../connection/db.connection.php';
 					</a>
 				</li>
 				<li>
-					<a href="#">Home > </a>
+					<a href="#">ទំព័រដើម > </a>
 				</li>
 				<li>
-					<a href="#">Academics > </a>
+					<a href="#">សិក្សាធិការ > </a>
 				</li>
 				<li>
-					<a href="#">Marketing </a>
+					<a href="#">ទីផ្សារ </a>
 				</li>
 			</ul>
 		</div>
@@ -47,7 +47,7 @@ include_once '../../connection/db.connection.php';
 		<div class="col-xxl-9">
 			<div class="container" style="background-color:#002060;">
 				<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-					Associate's Degree in Marketing
+					ថ្នាក់បរិញ្ញាបត្ររង ឯកទេស ទីផ្សារ
 				</div>
 			</div>
 			<div id="content-detail">

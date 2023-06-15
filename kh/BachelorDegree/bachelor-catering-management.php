@@ -39,7 +39,7 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-					ថ្នាក់បរិញ្ញាបត្រ
+					ថ្នាក់បរិញ្ញាបត្រ ឯកទេស គ្រប់គ្រងសេវាម្ហូបអាហារ
 					</div>
 				</div>
 				<div id="content-detail">

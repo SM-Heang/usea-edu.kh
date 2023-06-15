@@ -22,13 +22,13 @@
 					</a>
 					</li>
 					<li>
-						<a href="#"> Home > </a>
+						<a href="#"> ទំព័រដើម > </a>
 					</li>
 					<li>
-						<a href="#"> Academics > </a>
+						<a href="#"> សិក្សាធិការ > </a>
 					</li>
 					<li>
-						<a href="#"> International Economics </a>
+						<a href="#"> សេដ្ឋកិច្ចអន្តរជាតិ </a>
 					</li>
 				</ul>
 			</div>
@@ -44,7 +44,7 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-					Bachelor's Degree in International Economics
+					ថ្នាក់បរិញ្ញាបត្រ ឯកទេស សេដ្ឋកិច្ចអន្តរជាតិ
 					</div>
 				</div>
 				<div id="content-detail">
@@ -59,7 +59,7 @@
 						<!-- <img src="media/events/independent_days.jpg" alt="independent_days" width="375px" height="245px"> -->
 						<p>
                             <?php 
-                                 echo $value['article_description_en'];
+                                 echo $value['article_description_kh'];
                             ?>
                         </p>
 					<?php } ?>
