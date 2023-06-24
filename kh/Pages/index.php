@@ -44,10 +44,10 @@ include_once '../../connection/db.connection.php';
 							<div style="text-align: justify;">
 								<div style="height: 3rem;">
 									<h3>
-										<a href="#"> <?php echo substr($value['event_title_en'], 0, 45) . "..."; ?> </a>
+										<a href="#"> <?php echo substr($value['event_title_kh'], 0, 45) . "..."; ?> </a>
 									</h3>
 								</div>
-								<p><?php echo substr($value['event_description_en'], 0, 100) . "..."; ?></p>
+								<p><?php echo substr($value['event_description_kh'], 0, 100) . "..."; ?></p>
 							</div>
 							<div style="text-align: right;">
 								<a href="#" type="button" class="btn btn-outline-primary"> អានបន្ថែម </a>
@@ -83,8 +83,8 @@ include_once '../../connection/db.connection.php';
 								</a>
 							</div>
 							<div class="card-body">
-								<h5 class="card-title" style="font-size: 1rem; color: #002060;"><?php echo substr($value['event_title_en'], 0, 250) . "..."; ?></h5>
-								<p class="card-text"><?php echo substr($value['event_description_en'], 0, 0) ?></p>
+								<h5 class="card-title" style="font-size: 1rem; color: #002060;"><?php echo substr($value['event_title_kh'], 0, 250) . "..."; ?></h5>
+								<p class="card-text"><?php echo substr($value['event_description_kh'], 0, 0) ?></p>
 							</div>
 							<div style="text-align: right;">
 								<a href="event-detail.php?id=<?php echo $value['event_id'] ?>" class="btn btn-danger btn-sm">អានបន្ថែម</a>

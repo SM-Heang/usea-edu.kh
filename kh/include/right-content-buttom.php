@@ -207,10 +207,10 @@
 											echo 'right_active';
 									} ?>"
 									aria-current="page" 
-									href="facilities.php"> អគារសិក្សារ
+									href="facilities.php"> អគារសិក្សា
 								</a>
 							</li>
-							<li><a class="nav-link item-link" href="#"> បន្ទប់សិក្សារ </a></li>
+							<li><a class="nav-link item-link" href="#"> បន្ទប់សិក្សា </a></li>
 							<li><a class="nav-link item-link" href="#"> បន្ទប់អនុវត្តន៍កុំព្យូទ័រ </a></li>
 							<li><a class="nav-link item-link" href="#"> ការិយាល័យជួរមុខ </a></li>
 						</ul>

@@ -50,7 +50,7 @@
 					<img src="../../media/g1.jpg" width="180px" height="130px">
 					<p class="txt_reco" style="margin-left: 10px; text-align: justify;">Goverment There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,</p>
 				</div>
-				<a class="btn btn-danger" style="float: right; margin-top: 0px;">ទាញយក</a>
+				<a class="btn btn-danger" style="float: right; margin-top: 0px;"><span style="font: 'Khmer OS Siemreap'; font-size: 12pt;">ទាញយក</span></a>
 				<br>
 				<hr class="mt-5 mb-5" style="color: #002060;">
 
