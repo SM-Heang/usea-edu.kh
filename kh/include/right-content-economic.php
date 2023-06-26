@@ -157,7 +157,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-international-tourism-management-kh') {
 											echo 'right_active';
-										} ?>" href="#">  ទេសចរណ៍ <br>និងបដិសណ្ឋារកិច្ចអន្តរជាតិ
+										} ?>" href="#">  ទេសចរណ៍ <br class="d-none d-xxl-block">និងបដិសណ្ឋារកិច្ចអន្តរជាតិ
 								</a>
 							</li>
 
@@ -181,7 +181,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-tourism-hospitality-management-kh') {
 											echo 'right_active';
-										} ?>" href="#"> គ្រប់គ្រងទេសចរណ៍ <br>និងបដិសណ្ឋារកិច្ច
+										} ?>" href="#"> គ្រប់គ្រងទេសចរណ៍ <br class="d-none d-xxl-block">និងបដិសណ្ឋារកិច្ច
 								</a>
 							</li>
 

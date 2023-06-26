@@ -80,15 +80,15 @@ body {
 .nav-link li:hover .mega-box {
   opacity: 1;
   visibility: visible;
-  transition: all 0.3s ease;
+  top: 187px;
+  transition: all 500ms ease-in-out;
 }
 
 .mega-box {
   position: absolute;
   margin-left: -13%;
-  width: 600px;
   left: 50%;
-  top: 205px;
+  top: 387px;
   z-index: 999;
   opacity: 0;
   visibility: hidden;
@@ -105,14 +105,17 @@ body {
 
 .mega-box #nav-about {
   height: 300px !important;
+  width: 830px !important;
 }
 
 .mega-box #nav-academics {
-  height: 420px !important;
+  height: 300px !important;
+  width: 800px !important;
 }
 
 .mega-box #nav-research {
-  height: 220px !important;
+  height: 225px !important;
+  width: 595px !important;
 }
 
 .mega-box .content .row .mega-link li {
@@ -488,13 +491,16 @@ body {
 @media screen and (min-width: 1340px) {
   .mega-box {
     position: absolute;
-    top: 200px;
-    left: 49.9% !important;
-    width: 900px !important;
+    top: 186px;
+    left: 53.44% !important;
   }
+
   .mega-box .mega-link .list-control img{
     margin-top: 13px;
     
+  }
+  #e-mega-box{
+    left: 65.83% !important;
   }
 }
 
@@ -524,10 +530,13 @@ body {
 
   .nav-link .mega-box {
     position: absolute;
-    top: 187px;
-    left: 41.4% !important;
-    width: 850px !important;
+    top: 186px;
+    left: 43.45% !important;
   }
+  #e-mega-box{
+    left: 59.98% !important;
+  }
+
   .nav-link .mega-box .mega-link .list-control img{
     margin-top: 15px;
   }
@@ -596,11 +605,29 @@ body {
     display: flex;
   }
 
+  .mega-box #nav-about {
+    height: 215px !important;
+    width: 593px !important;
+  }
+
+  .mega-box #nav-academics {
+    height: 225px !important;
+    width: 593px !important;
+  }
+
+  .mega-box #nav-research {
+    height: 175px !important;
+    width: 440px !important;
+  }
+
   .nav-link .mega-box {
     position: absolute;
     top: 150px !important;
-    left: 50.4% !important;
-    width: 600px !important;
+    left: 52.35% !important;
+  }
+
+  #e-mega-box{
+    left: 65.45% !important;
   }
 
   .nav-link li a {
@@ -612,14 +639,6 @@ body {
     border-radius: 5px;
     transition: all 0.3 ease;
   }
-
-  
-  /* .navbar-parent .wrapper .nav-link .mega-box {
-    position: absolute;
-    top: 150px !important;
-    left: 61.9% !important;
-    width: 600px !important;
-  } */
 
   .mega-box .content .row .mega-link li {
     display: flex;

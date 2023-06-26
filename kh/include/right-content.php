@@ -6,7 +6,7 @@
 				<ul class="nav flex-column">
 					<li> <a class="nav-link item-link <?php if ($_SESSION['right'] == 'history-logo-kh') {
 															echo 'right_active';
-														} ?>" href="history-logo.php"> ប្រវត្តិសាកលវិទ្យាល័យ <br>និងអត្ថន័យរបស់និមិត្តសញ្ញា </a></li>
+														} ?>" href="history-logo.php"> ប្រវត្តិសាកលវិទ្យាល័យ <br class="d-none d-xxl-block">និងអត្ថន័យរបស់និមិត្តសញ្ញា </a></li>
 					<hr>
 					<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'p-message-kh') {
 															echo 'right_active';
