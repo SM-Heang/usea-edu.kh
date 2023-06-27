@@ -260,31 +260,31 @@
 					<div class="dropdown-hamburger">
 						<ul>
 							<li>
-								<img src="../media/nav-icon/history.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/history.png" class="nav-icon" width="15px" height="15px">
 								<a href="../Pages/history-logo.php">History & Logo Meaning</a>
 							</li>
 							<li>
-								<img src="../media/nav-icon/structure.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/structure.png" class="nav-icon" width="15px" height="15px">
 								<a href="../Pages/usea-structure.php">University Structure</a>
 							</li>
 							<li>
-								<img src="../media/nav-icon/president.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/president.png" class="nav-icon" width="15px" height="15px">
 								<a href="../Pages/president-message.php">President Message</a>
 							</li>
 							<li>
-								<img src="../media/nav-icon/recognition.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/recognition.png" class="nav-icon" width="15px" height="15px">
 								<a href="../Pages/recognition.php">Recognition</a>
 							</li>
 							<li>
-								<img src="../media/nav-icon/core-value.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/core-value.png" class="nav-icon" width="15px" height="15px">
 								<a href="../Pages/vision-mision-corevalue.php">Vision Mission & Core Value</a>
 							</li>
 							<li>
-								<img src="../media/nav-icon/event.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/event.png" class="nav-icon" width="15px" height="15px">
 								<a href="../Pages/events.php">Events</a>
 							</li>
 							<li>
-								<img src="../media/nav-icon/location.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/location.png" class="nav-icon" width="15px" height="15px">
 								<a href="../Pages/location.php">Location</a>
 							</li>
 						</ul>
@@ -295,27 +295,27 @@
 					<div class="dropdown-hamburger">
 						<ul>
 							<li>
-								<img src="../media/nav-icon/f-economic.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/f-economic.png" class="nav-icon" width="15px" height="15px">
 								<a href="../vission-Mission/vision-mision-corevalue-economic.php">Faculty of Economics, Business & Tourism</a>
 							</li>
 							<li>
-								<img src="../media/nav-icon/f-it.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/f-it.png" class="nav-icon" width="15px" height="15px">
 								<a href="../vission-Mission/vision-mision-corevalue-science-technology.php">Faculty of Sciences & Technology</a>
 							</li>
 							<li>
-								<img src="../media/nav-icon/f-law.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/f-law.png" class="nav-icon" width="15px" height="15px">
 								<a href="../vission-Mission/vision-mision-corevalue-law.php">Faculty of Social Science & Law</a>
 							</li>
 							<li>
-								<img src="../media/nav-icon/f-art.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/f-art.png" class="nav-icon" width="15px" height="15px">
 								<a href="../vission-Mission/vision-mision-corevalue-art-humanities.php">Faculty of Arts, Humanities & Education</a>
 							</li>
 							<li>
-								<img src="../media/nav-icon/f-internation-college.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/f-internation-college.png" class="nav-icon" width="15px" height="15px">
 								<a href="../Pages/international-college.php">International College</a>
 							</li>
 							<li>
-								<img src="../media/nav-icon/fli.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/fli.png" class="nav-icon" width="15px" height="15px">
 								<a href="../vission-Mission/vision-mision-corevalue-fli.php">Foreign Language Institute</a>
 							</li>
 							<li>

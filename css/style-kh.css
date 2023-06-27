@@ -79,19 +79,21 @@ body {
 
 .nav-link li:hover .mega-box {
   opacity: 1;
-  visibility: visible;
   top: 187px;
+  visibility: visible;
   transition: all 500ms ease-in-out;
+  transform: translateY(0);
 }
 
 .mega-box {
   position: absolute;
   margin-left: -13%;
   left: 50%;
-  top: 387px;
   z-index: 999;
   opacity: 0;
   visibility: hidden;
+  transform: translateY(0.8em);
+  transform-origin: top;
 }
 
 .mega-box .content {
@@ -2443,7 +2445,7 @@ figure {
     width: 100%;
   }
   .main-menu{
-    padding: 5px 5px !important;
+    padding: 5px 0px !important;
     white-space: nowrap !important;
   }
 }

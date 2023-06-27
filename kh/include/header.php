@@ -210,7 +210,7 @@
 					</li>
 					<li class="mx-0  main-menu"><a class=" <?php if($_SESSION['page'] == 'partnership_local_kh'){ echo 'active'; } ?>" href="../Pages/partnership-local.php">ដៃគូរសហការ</a></li>
 					<li class="mx-0 text-center main-menu">
-						<a class="<?php if($_SESSION['page'] == 'research_procedure_kh'){ echo 'active'; } ?>" href="#">ស្រាវជ្រាវ</a>
+						<a class="<?php if($_SESSION['page'] == 'research_procedure_kh'){ echo 'active'; } ?>" id="drop" href="#">ស្រាវជ្រាវ</a>
 						<div class="mega-box" id="e-mega-box">
 							<div class="content" id="nav-research">
 								<div class="row">
@@ -257,31 +257,31 @@
 					<div class="dropdown-hamburger">
 						<ul>
 							<li>
-								<img src="../media/nav-icon/history.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/history.png" class="nav-icon" width="15px" height="15px">
 								<a href="../Pages/history-logo.php">ប្រវត្តិសាកលវិទ្យាល័យ និងអត្ថន័យរបស់និមិត្តសញ្ញា</a>
 							</li>
 							<li>
-								<img src="../media/nav-icon/structure.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/structure.png" class="nav-icon" width="15px" height="15px">
 								<a href="../Pages/usea-structure.php">រចនាសម្ព័ន្ធសាកលវិទ្យាល័យ</a>
 							</li>
 							<li>
-								<img src="../media/nav-icon/president.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/president.png" class="nav-icon" width="15px" height="15px">
 								<a href="../Pages/president-message.php">សាររបស់សាកលវិទ្យាធិការ</a>
 							</li>
 							<li>
-								<img src="../media/nav-icon/recognition.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/recognition.png" class="nav-icon" width="15px" height="15px">
 								<a href="../Pages/recognition.php">ការទទួលស្គាល់</a>
 							</li>
 							<li>
-								<img src="../media/nav-icon/core-value.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/core-value.png" class="nav-icon" width="15px" height="15px">
 								<a href="../Pages/vision-mision-corevalue.php">ចក្ខុវិស័យ, បេសកកម្ម & គុណតម្លៃ</a>
 							</li>
 							<li>
-								<img src="../media/nav-icon/event.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/event.png" class="nav-icon" width="15px" height="15px">
 								<a href="../Pages/events.php">ព្រឹត្តិការណ៍</a>
 							</li>
 							<li>
-								<img src="../media/nav-icon/location.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/location.png" class="nav-icon" width="15px" height="15px">
 								<a href="../Pages/location.php">ទីតាំង</a>
 							</li>
 						</ul>
@@ -292,27 +292,27 @@
 					<div class="dropdown-hamburger">
 						<ul>
 							<li>
-								<img src="../media/nav-icon/f-economic.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/f-economic.png" class="nav-icon" width="15px" height="15px">
 								<a href="../vission-Mission/vision-mision-corevalue-economic.php">មហាវិទ្យាល័យសេដ្ឋកិច្ច​ ពាណិជ្ជកម្ម និងទេសចរណ៍</a>
 							</li>
 							<li>
-								<img src="../media/nav-icon/f-it.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/f-it.png" class="nav-icon" width="15px" height="15px">
 								<a href="../vission-Mission/vision-mision-corevalue-science-technology.php">មហាវិទ្យាល័យវិទ្យាសាស្រ្ត និង បច្ចែកវិទ្យា</a>
 							</li>
 							<li>
-								<img src="../media/nav-icon/f-law.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/f-law.png" class="nav-icon" width="15px" height="15px">
 								<a href="../vission-Mission/vision-mision-corevalue-law.php">មហាវិទ្យាល័យវិទ្យាសាស្រ្តសង្គម និងនីតិសាស្រ្ត</a>
 							</li>
 							<li>
-								<img src="../media/nav-icon/f-art.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/f-art.png" class="nav-icon" width="15px" height="15px">
 								<a href="../vission-Mission/vision-mision-corevalue-art-humanities.php">មហាវិទ្យាល័យសិល្បៈ មនុស្សសាស្រ្ត និងអប់រំ</a>
 							</li>
 							<li>
-								<img src="../media/nav-icon/f-internation-college.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/f-internation-college.png" class="nav-icon" width="15px" height="15px">
 								<a href="../Pages/international-college.php">មហាវិទ្យាល័យអន្តរជាតិ</a>
 							</li>
 							<li>
-								<img src="../media/nav-icon/fli.png" class="nav-icon" width="15px" height="15px">
+								<img src="../../media/nav-icon/fli.png" class="nav-icon" width="15px" height="15px">
 								<a href="../vission-Mission/vision-mision-corevalue-fli.php">វិទ្យាស្ថានភាសាបរទេស</a>
 							</li>
 							<li>
