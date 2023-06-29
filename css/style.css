@@ -963,8 +963,9 @@ body {
 }
 
 #partnership-logo #item img {
-  width: 100px;
+  width: auto;
   height: 100px;
+  position: relative;
 }
 
 #page {
@@ -1543,15 +1544,24 @@ figure {
   color: var(--primary-color);
 }
 
-.card:hover{
+/* .card:hover{
    transform: scale(1.03);
    transition: 0.4s;
    box-shadow: rgba(15, 15, 15, 0.45) 0px 25px 20px -20px;
-}.card{
+} */
+.card{
   transition: 0.5s;
   margin-bottom: 10px;
 }
-
+.inner{
+  overflow: hidden;
+}
+.inner img{
+  transition: all 1.5s ease;
+}
+.inner:hover img{
+  transform: scale(1.2);
+}
 .fh5co-nav ul {
   padding: 0;
   margin: 5px 0 0 0;
@@ -1660,7 +1670,7 @@ figure {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -2060,14 +2070,14 @@ figure {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 
 .fh5co-social-icons li a {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   color: #2d6cdf;
   padding-left: 10px;
   padding-right: 10px;

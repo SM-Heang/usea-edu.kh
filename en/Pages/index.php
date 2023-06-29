@@ -16,17 +16,15 @@ include_once '../../connection/db.connection.php';
 
 		<!-- =====> Start Upcoming Events <===== -->
 		<div class="row animate-box fh5co-heading">
-			<div class="text-center mt-5">
+			<div class="text-center">
 				<h2 style="color: #002060; font-weight: bold;">LATEST NEWS</h2>
 				<span class="d-flex justify-content-center" width="100%" height="100%">
 					<img src="../../images/border.png" class="img-fluid icon_img" alt="">
 				</span>
-				<hr style="color: #002060;">
 			</div>
-			<p class="mt-5"><a href="upcoming-events.php" style="text-decoration:none; color:#002060;">Upcoming Events | <span style="font-size: 0.75rem; font-weight: 500;">All Events</span></a></p>
+			<p><a href="upcoming-events.php" style="text-decoration:none; color:#002060;">Upcoming Events | <span style="font-size: 0.75rem; font-weight: 500;">All Events</span></a></p>
 		</div>
 		<div class="container mb-5" id="upcoming-events">
-
 			<div class="row">
 				<?php
 				$stmt = $conn->prepare("SELECT * from usea_events WHERE event_status = 'upcoming' ORDER BY event_date DESC limit 4;");
@@ -60,12 +58,10 @@ include_once '../../connection/db.connection.php';
 			</div>
 
 			<!-- ==================== -->
-
-			<hr style="color: #002060;">
 			<!-- =====> End Upcoming Events <===== -->
 
 			<!-- =====> Start Events <===== -->
-			<div class="row animate-box mt-5 mb-5 id=" events">
+			<div class="row animate-box mt-3 mb-5 id=" events">
 				<div class="row animate-box fh5co-heading">
 					<p style="font-size: 20px; font-weight: bold;">
 						<a href="events.php" style="text-decoration: none; color:#002060;"> Events | <span style="font-size: 12px; font-weight: 500;">All Events</span></a>
@@ -76,10 +72,13 @@ include_once '../../connection/db.connection.php';
 				$stmt->execute();
 				$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 				foreach ($result as $key => $value) { ?>
+					
 					<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex gx-2 gy-2" id="events-card">
-						<div class="card">
+						<div class="card shadow">
 							<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light" style="height: 12.5rem; width: 100%;">
-								<img src="../../media/events/<?php echo $value['event_cover']; ?>" class="img-fluid " id="card-events"/>
+								<div class="inner">
+									<img src="../../media/events/<?php echo $value['event_cover']; ?>" class="img-fluid " id="card-events"/>
+								</div>
 								<a href="#!">
 									<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
 								</a>
@@ -88,20 +87,22 @@ include_once '../../connection/db.connection.php';
 								<h5 class="card-title" style="font-size: 1rem; color: #002060;"><?php echo substr($value['event_title_en'], 0, 250) . "..."; ?></h5>
 								<p class="card-text"><?php echo substr($value['event_description_en'], 0, 0) ?></p>
 							</div>
-							<div style="text-align: right;">
+							<div class="mb-3" style="text-align: right;">
 								<a href="event-detail.php?id=<?php echo $value['event_id'] ?>" class="btn btn-danger btn-sm">Read More</a>
 							</div>
 						</div>
 					</div>
+
+
+					
 				<?php } ?>
 			</div>
-			<hr style="color: #002060;">
 			<!-- =====> End Events <===== -->
 		</div>
 	</div>
 	<!-- =====> End Events <===== -->
 
-	<!-- =====> Start Carousel Partnership <===== -->
+		<!-- =====> Start Carousel Partnership <===== -->
 
 		<div class="container mt-5 mb-5">
 				<h1 id="partnership">Partnership</h1>
@@ -118,6 +119,7 @@ include_once '../../connection/db.connection.php';
 					<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/knu.png"></a></div>
 					<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/ku.png"></a></div>
 					<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/mara-logo.png"></a></div>
+					<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/SymbolSRRU.gif"></a></div>
 				</div>
 		</div>
 	
