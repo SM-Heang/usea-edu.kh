@@ -87,6 +87,8 @@ body {
   opacity: 1;
   visibility: visible;
   transition: all 0.3s ease;
+  transition: all 500ms ease-in-out;
+  transform: translateY(0); 
 }
 
 .mega-box {
@@ -96,6 +98,8 @@ body {
   z-index: 999;
   opacity: 0;
   visibility: hidden;
+  transform: translateY(0.8em);
+  transform-origin: top;
 }
 
 .mega-box .content {
