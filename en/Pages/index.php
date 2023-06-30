@@ -61,10 +61,10 @@ include_once '../../connection/db.connection.php';
 			<!-- =====> End Upcoming Events <===== -->
 
 			<!-- =====> Start Events <===== -->
-			<div class="row animate-box mt-3 mb-5 id=" events">
+			<div class="row animate-box mt-5 mb-5" id=" events">
 				<div class="row animate-box fh5co-heading">
 					<p style="font-size: 20px; font-weight: bold;">
-						<a href="events.php" style="text-decoration: none; color:#002060;"> Events | <span style="font-size: 12px; font-weight: 500;">All Events</span></a>
+						<a href="events.php" style="text-decoration: none; color:#002060;"> Events | <span style="font-size: 12px; font-weight: 500;">All Events</span></a></a>
 					</p>
 				</div>
 				<?php
@@ -72,29 +72,25 @@ include_once '../../connection/db.connection.php';
 				$stmt->execute();
 				$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 				foreach ($result as $key => $value) { ?>
-					
 					<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex gx-2 gy-2" id="events-card">
-						<div class="card shadow">
-							<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light" style="height: 12.5rem; width: 100%;">
+						<div class="card">
+							<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
 								<div class="inner">
-									<img src="../../media/events/<?php echo $value['event_cover']; ?>" class="img-fluid " id="card-events"/>
+									<img src="../../media/events/<?php echo $value['event_cover']; ?>" class="img-fluid" id="card-events"/>
 								</div>
 								<a href="#!">
 									<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
 								</a>
 							</div>
 							<div class="card-body">
-								<h5 class="card-title" style="font-size: 1rem; color: #002060;"><?php echo substr($value['event_title_en'], 0, 250) . "..."; ?></h5>
-								<p class="card-text"><?php echo substr($value['event_description_en'], 0, 0) ?></p>
+								<h5 class="card-title"><?php echo substr($value['event_title_en'], 0, 150) . "..."; ?></h5>
+								<p class="card-text"><?php echo substr($value['event_description_en'], 0, 250) ?></p>
 							</div>
-							<div class="mb-3" style="text-align: right;">
-								<a href="event-detail.php?id=<?php echo $value['event_id'] ?>" class="btn btn-danger btn-sm">Read More</a>
+							<div style="text-align: right;">
+								<a href="event-detail.php?id=<?php echo $value['event_id'] ?>" class="btn btn-danger btn-sm mb-3">Read More</a>
 							</div>
 						</div>
 					</div>
-
-
-					
 				<?php } ?>
 			</div>
 			<!-- =====> End Events <===== -->
@@ -119,7 +115,8 @@ include_once '../../connection/db.connection.php';
 					<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/knu.png"></a></div>
 					<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/ku.png"></a></div>
 					<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/mara-logo.png"></a></div>
-					<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/SymbolSRRU.gif"></a></div>
+					<div class="item p-3" id="item"><a href="https://www.srru.ac.th/" target="_blank"><img src="../../media/Partnership/100px/SymbolSRRU.gif"></a></div>
+					<div class="item p-3" id="item"><a href="https://www.fwd.com.kh/en/" target="_blank"><img src="../../media/Partnership/100px/fwd.jpg"></a></div>
 				</div>
 		</div>
 	
