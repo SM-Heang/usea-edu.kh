@@ -72,7 +72,7 @@ include_once '../../connection/db.connection.php';
 									</a>
 								</div>
 								<div class="card-body">
-									<h5 class="card-title" style="font-size: 1rem; color: #002060;">
+									<h5 class="card-title " style="font-size: 1rem; color: #002060;">
 										<?php echo substr($value['event_title_en'], 0, 250) . "..."; ?>
 									</h5>
 									<p class="card-text">
