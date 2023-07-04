@@ -2892,7 +2892,30 @@ figure {
   z-index: 9999;
   background: url(../images/loader.gif) center no-repeat #fff;
 }*/
-
+.card > .card-body > .card-title,.card-text{
+  font-family: var(--font-kh);
+}
+.card > .card-body > .card-title{
+  font-weight: bold;
+  font-size: 16px;
+}
+.card > .card-body > .card-text{
+  font-weight: bold;
+  font-size: 16px;
+}
+#card-events{
+  width: 315px !important;
+  height: 170px !important;
+}
+.inner{
+  overflow: hidden;
+}
+.inner img{
+  transition: all 1.5s ease;
+}
+.inner:hover img{
+  transform: scale(1.1);
+}
 .row-padded-mb {
   margin-bottom: 3em !important;
 }

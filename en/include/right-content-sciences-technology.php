@@ -46,14 +46,14 @@
 									href="../BachelorDegree/bachelor-architecture.php"> Architechture </a></li>
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-civil-engineering'){
 								echo 'right_active';
-							}?>" href="#"> Civil Engineering </a></li>
+							}?>" href="../BachelorDegree/bachelor-civil-engineering.php"> Civil Engineering </a></li>
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-information-technology'){
 								echo 'right_active';
 							}?>" href="../BachelorDegree/bachelor-information-technology.php"> Information Technology
 								</a> </li>
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-mathematics'){
 								echo 'right_active';
-								}?>" href="#"> Mathematics </a> </li>
+								}?>" href="../BachelorDegree/bachelor-mathematics.php"> Mathematics </a> </li>
 						</ul>
 					</li>
 				</ul>

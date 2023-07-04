@@ -62,9 +62,11 @@ include_once '../../connection/db.connection.php';
 					foreach ($result as $key => $value) { ?>
 						<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex gx-2 gy-2" id="events-card">
 							<div class="card">
-								<div class="bg-image hover-overlay ripple text-center" data-mdb-ripple-color="light" style="height: 200px; width: auto;" >
-									<img src="../../media/events/<?php echo $value['event_cover']; ?>" class="img-fluid"
-										style="object-fit: cover;" width="100%"/>
+								<div class="bg-image hover-overlay ripple text-center" data-mdb-ripple-color="light">
+									<div class="inner">
+										<img src="../../media/events/<?php echo $value['event_cover']; ?>" class="img-fluid" id="card-events"/>
+									</div>
+									
 									<a href="#">
 										<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
 									</a>

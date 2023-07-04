@@ -16,11 +16,8 @@
 							
 						<?php 
 								if(
-									$_SESSION['right'] == 'bachelor-curriculum-development' ||
-									$_SESSION['right'] == 'bachelor-education-management' ||
-									$_SESSION['right'] == 'bachelor-history' ||
-									$_SESSION['right'] == 'bachelor-khmer-literature' ||
-									$_SESSION['right'] == 'bachelor-philosophy' 
+									
+									$_SESSION['right'] == 'bachelor-khmer-literature' 
 
 								){
 
@@ -34,35 +31,18 @@
 						<ul class="submenu collapse 
 							<?php 
 								if(
-									$_SESSION['right'] == 'bachelor-curriculum-development' ||
-									$_SESSION['right'] == 'bachelor-education-management' ||
-									$_SESSION['right'] == 'bachelor-history' ||
-									$_SESSION['right'] == 'bachelor-khmer-literature' ||
-									$_SESSION['right'] == 'bachelor-philosophy' 
-
+									$_SESSION['right'] == 'bachelor-khmer-literature'
 								){
 									echo 'show';
 								}
 							?>
 						
-						">
-							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-curriculum-development'){
-								echo 'right_active';
-							}?>" aria-current="page"
-									href="#"> Curriculum Development </a></li>
-							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-education-management'){
-								echo 'right_active';
-							}?>" href="#"> Education Management </a></li>
-							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-history'){
-								echo 'right_active';
-							}?>" href="#"> History </a></li>
+						">							
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-khmer-literature'){
 								echo 'right_active';
 							}?>" href="#"> Khmer Literature
 								</a> </li>
-							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-philosophy'){
-								echo 'right_active';
-							}?>" href="#"> Philosophy </a> </li>
+							
 						</ul>
 					</li>
 				</ul>
