@@ -62,49 +62,14 @@ include_once '../../connection/db.connection.php';
 			<hr style="color: #002060;">
 			<!-- =====> End Upcoming Events <===== -->
 
-			<!-- =====> Start Events <===== -->
-			<!-- <div class="row animate-box mt-5 mb-5" id=" events">
-				<div class="row animate-box fh5co-heading">
-					<p style="font-size: 20px; font-weight: bold;">
-						<a href="events.php" style="text-decoration: none; color:#002060; font-size: 12pt;"> ព្រឹត្តិការណ៍ | <span style="font-size: 12px; font-weight: 500;">ព្រឹត្តិការណ៍ទាំងអស់</span></a>
-					</p>
-				</div>
-				<?php
-				//$stmt = $conn->prepare("SELECT * from usea_events WHERE event_status = 'past' ORDER BY event_date DESC limit 4;");
-				//$stmt->execute();
-				//$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-				//foreach ($result as $key => $value) { 
-				?>
-					<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex gx-2 gy-2" id="events-card">
-						<div class="card">
-							<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-								<img src="../../media/events/<? php // echo $value['event_cover']; 
-																?>" class="img-fluid " id="card-events"/>
-								<a href="#!">
-									<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-								</a>
-							</div>
-							<div class="card-body">
-								<h5 class="card-title" style="font-size: 1rem; color: #002060;"><? php // echo substr($value['event_title_kh'], 0, 250) . "..."; 
-																								?></h5>
-								<p class="card-text"><? php // echo substr($value['event_description_kh'], 0, 0) 
-														?></p>
-							</div>
-							<div style="text-align: right;">
-								<a href="event-detail.php?id=<?php //echo $value['event_id'] 
-																?>" class="btn btn-danger btn-sm">អានបន្ថែម</a>
-							</div>
-						</div>
-					</div>
-				<?php //} 
-				?>
-			</div> -->
+
 			<!-- <....................Kh card .....................> -->
 
 			<div class="row mt-5 mb-5 g-2">
 				<div class="row fh5co-heading">
 					<p style="font-size: 20px; font-weight: bold;">
-						<a href="events.php" style="text-decoration: none; color:#002060; font-size: 12pt;"> ព្រឹត្តិការណ៍ | <span style="font-size: 12px; font-weight: 500;">ព្រឹត្តិការណ៍ទាំងអស់</span></a>
+						<a href="events.php" style="text-decoration: none; color:#002060; font-size: 12pt;">
+							ព្រឹត្តិការណ៍ | <span style="font-size: 12px; font-weight: 500;">ព្រឹត្តិការណ៍ទាំងអស់</span></a>
 					</p>
 				</div>
 				<?php
@@ -124,7 +89,7 @@ include_once '../../connection/db.connection.php';
 								<p class="card-text"><?php echo substr($key['event_description_kh'], 0, 250) ?></p>
 							</div>
 							<div class="card-footer text-end">
-								<button class="btn btn-sm event-btn text-end py-1 px-3">អានបន្ថែម</button>
+								<a href="event-detail.php?id=<?php echo $key['event_id'] ?>" class="btn btn-sm event-btn text-end py-1 px-3">អានបន្ថែម</a>
 							</div>
 						</div>
 					</div>
