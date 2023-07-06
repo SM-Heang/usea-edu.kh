@@ -2691,7 +2691,9 @@ figure {
   box-shadow: none !important;
   outline: none !important;
 }
-
+/* .tab-pane{
+  transition: 5s;
+} */
 .btn-primary {
   background: #2d6cdf;
   color: #fff;
