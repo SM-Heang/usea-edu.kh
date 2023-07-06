@@ -21,7 +21,7 @@ include_once '../../connection/db.connection.php';
 				</span>
 				<hr style="color: #002060;">
 			</div>
-			<p class="mt-5"><a href="upcoming-events.php" style="text-decoration:none; color:#002060; font-size: 12pt;">ព្រឹត្តិការណ៍នាពេលខាងមុខ | <span style="font-size: 0.75rem; font-weight: 500;">ព្រឹត្តិការណ៍ទាំងអស់</span></a></p>
+			<p class="mt-5"><a href="upcoming-events.php" style="text-decoration:none; color:#002060; font-size: 16pt;">ព្រឹត្តិការណ៍នាពេលខាងមុខ | <span style="font-size: 0.75rem; font-weight: 500;">ព្រឹត្តិការណ៍ទាំងអស់</span></a></p>
 		</div>
 		<div class="container mb-5" id="upcoming-events">
 
@@ -61,14 +61,12 @@ include_once '../../connection/db.connection.php';
 
 			<hr style="color: #002060;">
 			<!-- =====> End Upcoming Events <===== -->
-
-
 			<!-- <....................Kh card .....................> -->
 
 			<div class="row mt-5 mb-5 g-2">
 				<div class="row fh5co-heading">
 					<p style="font-size: 20px; font-weight: bold;">
-						<a href="events.php" style="text-decoration: none; color:#002060; font-size: 12pt;">
+						<a href="events.php" style="text-decoration: none; color:#002060; font-size: 16pt;">
 							ព្រឹត្តិការណ៍ | <span style="font-size: 12px; font-weight: 500;">ព្រឹត្តិការណ៍ទាំងអស់</span></a>
 					</p>
 				</div>
@@ -94,47 +92,10 @@ include_once '../../connection/db.connection.php';
 						</div>
 					</div>
 				<?php } ?>
-				<!-- <div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
-					<div class="card w-50 h-100 w-100 animate-card">
-						<img src="../../media/Christmas Day 25-12-20131.JPG" alt="aquare" class="card-img-top">
-						<div class="card-body">
-							<h5 class="card-title">ពិធីសំណេះសំណាលជាមួយបុគ្គលិក សាស្ត្រាចារ្យ និងនិស្សិ�...</h5>
-							<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eligendi cumque amet veniam a molestiae voluptatem, provident minus porro harum, laboriosam corrupti molestias consequuntur magnam, rerum unde error earum explicabo?</p>
-						</div>
-						<div class="card-footer text-end">
-							<button class="btn btn-sm event-btn text-end py-1 px-3">អានបន្ថែម</button>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
-					<div class="card w-50 h-100 w-100 animate-card">
-						<img src="../../media/test.png" alt="aquare" class="card-img-top">
-						<div class="card-body">
-							<h5 class="card-title">ពិធីសំណេះសំណាលជាមួយបុគ្គលិក សាស្ត្រាចារ្យ និងនិស្សិ�...</h5>
-							<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eligendi cumque amet veniam a molestiae voluptatem, provident minus porro harum, laboriosam corrupti molestias consequuntur magnam, rerum unde error earum explicabo?</p>
-						</div>
-						<div class="card-footer text-end">
-							<button class="btn btn-sm event-btn text-end py-1 px-3">អានបន្ថែម</button>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
-					<div class="card w-50 h-100 w-100 animate-card">
-						<img src="../../media/test.png" alt="aquare" class="card-img-top">
-						<div class="card-body">
-							<h5 class="card-title">ពិធីសំណេះសំណាលជាមួយបុគ្គលិក សាស្ត្រាចារ្យ និងនិស្សិ�...</h5>
-							<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eligendi cumque amet veniam a molestiae voluptatem, provident minus porro harum, laboriosam corrupti molestias consequuntur magnam, rerum unde error earum explicabo?</p>
-						</div>
-						<div class="card-footer text-end">
-							<button class="btn btn-sm event-btn text-end py-1 px-3">អានបន្ថែម</button>
-						</div>
-					</div>
-				</div> -->
 			</div>
 
 			<hr style="color: #002060;">
-			<!-- =====> End Events <===== -->
+
 		</div>
 	</div>
 	<!-- =====> End Events <===== -->
