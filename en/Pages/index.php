@@ -77,7 +77,7 @@ include_once '../../connection/db.connection.php';
 							<img src="../../media/events/<?php echo $value['event_cover']; ?>" alt="aquare" class="card-img-top">
 							<div class="card-body">
 								<h5 class="card-title"><?php echo substr($value['event_title_en'], 0, 140) . "..."; ?></h5>
-								<p class="card-text"><?php echo substr($value['event_description_en'], 0, 250) ?></p>
+								<p class="card-text"><?php echo substr($value['event_description_en'], 0, 240) ?></p>
 							</div>
 							<div class="card-footer text-end">
 								<a href="event-detail.php?id=<?php echo $value['event_id'] ?>" class="btn btn-sm event-btn text-end py-1 px-3">Read More</a>
