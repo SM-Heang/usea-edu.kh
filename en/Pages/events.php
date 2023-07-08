@@ -44,7 +44,7 @@ include_once '../../connection/db.connection.php';
 				</div>
 
 				<!-- =====> Start Events <===== -->
-				<div class="row animate-box mt-3 mb-5" id="events">
+				<div class="row mt-3 mb-5 g-3" id="events">
 					<?php
 					$sql = "SELECT * from usea_events WHERE event_status = 'past' ORDER BY event_date DESC limit 12";
 					if (isset($_GET['page'])) {
@@ -60,27 +60,15 @@ include_once '../../connection/db.connection.php';
 					// print_r($_GET);
 					// echo "</pre>";
 					foreach ($result as $key => $value) { ?>
-						<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex gx-2 gy-2" id="events-card">
-							<div class="card">
-								<div class="bg-image hover-overlay ripple text-center" data-mdb-ripple-color="light">
-									<div class="inner">
-										<img src="../../media/events/<?php echo $value['event_cover']; ?>" class="img-fluid" id="card-events"/>
-									</div>
-									
-									<a href="#">
-										<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-									</a>
-								</div>
+						<div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 mb-sm-2 mb-lg-2 mb-xxl-0" id="events-card">
+							<div class="card w-50 h-100 w-100 animate-card">
+								<img src="../../media/events/<?php echo $value['event_cover']; ?>" alt="aquare" class="card-img-top">
 								<div class="card-body">
-									<h5 class="card-title " style="font-size: 1rem; color: #002060;">
-										<?php echo substr($value['event_title_en'], 0, 250) . "..."; ?>
-									</h5>
-									<p class="card-text">
-										<?php echo substr($value['event_description_en'], 0, 0) ?>
-									</p>
+									<h6 class="card-title"><?php echo substr($value['event_title_en'], 0, 140) . "..."; ?></h6>
+									
 								</div>
-								<div style="text-align: right;">
-									<a href="event-detail.php?id=<?php echo $value['event_id']?> " class="btn btn-danger btn-sm">Read More</a>
+								<div class="card-footer text-end p-1">
+									<a href="event-detail.php?id=<?php echo $value['event_id'] ?>" class="btn btn-sm event-btn text-end py-1 px-3">Read More</a>
 								</div>
 							</div>
 						</div>

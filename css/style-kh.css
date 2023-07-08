@@ -225,9 +225,8 @@ body {
 }
 
 .animate-card img:hover{
-  transform: scale(1.07) translateY(0px);
+  transform: scale(1.1) translateY(0px);
   transition: transform 400ms ease-in-out;
-  box-shadow: 0 10px 10px rgba(3, 3, 3, 0.2);
 }
 
 .animate-card {
@@ -237,22 +236,26 @@ body {
   overflow: hidden;
 }
 
-.animate-card:hover{
+/* .animate-card:hover{
   transition: transform 400ms ease-in-out;
   transform: scale(1.02) translateY(0px);
   transform-origin: top;
   box-shadow: 0 20px 20px rgba(3, 3, 3, 0.2);
   z-index: 999;
-}
+} */
 .event-btn{
   border: 1px solid #002060 !important;
   color: #002060;
-  
 }
 .event-btn:hover{
   border: 1px solid #002060 !important;
   background-color: #002060 !important;
   color: white;
+}
+
+/* Formdownloads Style */
+.F-download-shadow{
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 /* Start History Detail*/

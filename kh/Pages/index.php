@@ -63,7 +63,7 @@ include_once '../../connection/db.connection.php';
 			<!-- =====> End Upcoming Events <===== -->
 			<!-- <....................Kh card .....................> -->
 
-			<div class="row mt-5 mb-5 g-2">
+			<div class="row mt-5 mb-5 g-3">
 				<div class="row fh5co-heading">
 					<p style="font-size: 20px; font-weight: bold;">
 						<a href="events.php" style="text-decoration: none; color:#002060; font-size: 16pt;">

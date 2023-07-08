@@ -61,7 +61,7 @@ include_once '../../connection/db.connection.php';
 			<!-- =====> End Upcoming Events <===== -->
 
 			<!-- =====> Start Events <===== -->
-			<div class="row mt-5 mb-5 g-2" id=" events">
+			<div class="row mt-5 mb-5 g-3" id=" events">
 				<div class="row">
 					<p style="font-size: 20px; font-weight: bold;">
 						<a href="events.php" style="text-decoration: none; color:#002060;"> Events | <span style="font-size: 12px; font-weight: 500;">All Events</span></a></a>
