@@ -41,20 +41,19 @@
 					</div>
 				</div>
 				<!-- <div class="h-25 border border-1 border-primary mt-4"></div> -->
-				<div class="row mt-3 g-3">
+				<div class="row mt-3 g-3 mx-auto card-downloads">
 					<div class="col-12">
-						<div class="card mb-3 F-download-shadow overflow-hidden">
+						<div class="card mb-3 mx-auto F-download-shadow">
 							<div class="row g-0">
-								<div class="col-4">
-									<img src="../../media/test.png" class="img-fluid rounded-start" alt="...">
+								<div class="col-5">
+									<img src="../../media/logo_update.png" class="img-fluid rounded-start dl-img" alt="usea logo">
 								</div>
-								<div class="col-8">
-									<div class="card-body">
-										<h5 class="card-title">Card title</h5>
-										<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-										<div class="text-end">
-												<a href="" class="btn btn-sm event-btn py-1 px-3">Download</a>
-										</div>
+								<div class="col-7">
+									<div class="card-body mt-2 mb-5 text-center">
+										<h6 class="card-title fw-bold">ស្លាកសញ្ញាសាកលវិទ្យាល័យ</h6>
+									</div>
+									<div class="text-end m-3">
+										<a href="../../media/logo_update.png" class="btn btn-sm event-btn py-1" download>ទាញយក</a>
 									</div>
 								</div>
 							</div>
@@ -62,18 +61,17 @@
 					</div>
 
 					<div class="col-12">
-						<div class="card mb-3 F-download-shadow overflow-hidden">
+						<div class="card mb-3 mx-auto F-download-shadow">
 							<div class="row g-0">
-								<div class="col-4">
-									<img src="../../media/test.png" class="img-fluid rounded-start" alt="...">
+								<div class="col-5">
+									<img src="../../media/p-13-thesis-cover.png" class="img-fluid rounded-start dl-img" alt="usea Thesis Slide">
 								</div>
-								<div class="col-8">
-									<div class="card-body">
-										<h5 class="card-title">Card title</h5>
-										<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-										<div class="text-end">
-												<a href="" class="btn btn-sm event-btn py-1 px-3">Download</a>
-										</div>
+								<div class="col-7">
+									<div class="card-body mt-2 mb-5 text-center">
+										<h6 class="card-title fw-bold">គម្រូស្លាយ</h6>
+									</div>
+									<div class="text-end m-3">
+										<a href="../../media/media/បច្ចេកទេសរៀបចំស្លាយ_និងការពារ_P13_Ok_070922.pptx" class="btn btn-sm event-btn py-1" download>ទាញយក</a>
 									</div>
 								</div>
 							</div>
@@ -81,18 +79,17 @@
 					</div>
 
 					<div class="col-12">
-						<div class="card mb-3 F-download-shadow overflow-hidden">
+						<div class="card mb-3 mx-auto F-download-shadow">
 							<div class="row g-0">
-								<div class="col-4">
-									<img src="../../media/test.png" class="img-fluid rounded-start" alt="...">
+								<div class="col-5">
+									<img src="../../media/emp_app_form.PNG" class="img-fluid rounded-start dl-img" alt="usea Employment Application Form">
 								</div>
-								<div class="col-8">
-									<div class="card-body">
-										<h5 class="card-title">Card title</h5>
-										<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-										<div class="text-end">
-												<a href="" class="btn btn-sm event-btn py-1 px-3">Download</a>
-										</div>
+								<div class="col-7">
+									<div class="card-body mt-2 mb-5 text-center">
+										<h6 class="card-title fw-bold">ពាក្យស្នើសុំការងារ</h6>
+									</div>
+									<div class="text-end m-3">
+										<a href="../../media/logo_update.png" class="btn btn-sm event-btn py-1" download>ទាញយក</a>
 									</div>
 								</div>
 							</div>

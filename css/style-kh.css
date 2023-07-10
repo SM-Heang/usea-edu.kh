@@ -254,10 +254,17 @@ body {
 }
 
 /* Formdownloads Style */
+.card-downloads{
+  width: 450px !important;
+}
 .F-download-shadow{
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
-
+.dl-img{
+  width: 100% !important;
+  aspect-ratio: 1/1 !important;
+  object-fit: cover !important;
+}
 /* Start History Detail*/
 #content-detail h4 {
   font-weight: bold;
