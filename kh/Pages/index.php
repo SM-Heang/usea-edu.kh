@@ -13,15 +13,15 @@ include_once '../../connection/db.connection.php';
 	<div class="container">
 
 		<!-- =====> Start Upcoming Events <===== -->
-		<div class="row animate-box fh5co-heading">
-			<div class="text-center mt-5">
-				<h2 style="color: #002060; font-weight: bold; font-size: 23pt;">ព័ត៌មានថ្មីៗ</h2>
-				<span class="d-flex justify-content-center" width="100%" height="100%">
-					<img src="../../images/border.png" class="img-fluid icon_img" alt="">
-				</span>
+		<div class="row animate-box fh5co-heading py-0">
+			<div class="text-center mt-5 justify-content-center">
+				<h2 class="mt-2 mb-0">ព័ត៌មានថ្មីៗ</h2>
+				<!-- <span class="d-flex justify-content-center" width="100%" height="100%">
+						<img src="../../images/border.png" class="img-fluid icon_img" alt=""> 
+				</span> -->
 				<hr style="color: #002060;">
 			</div>
-			<p class="mt-5"><a href="upcoming-events.php" style="text-decoration:none; color:#002060; font-size: 16pt;">ព្រឹត្តិការណ៍នាពេលខាងមុខ | <span style="font-size: 0.75rem; font-weight: 500;">ព្រឹត្តិការណ៍ទាំងអស់</span></a></p>
+			<p class="mt-5"><a href="upcoming-events.php" class="a-news">ព្រឹត្តិការណ៍នាពេលខាងមុខ | <span style="font-size: 0.75rem; font-weight: 500;">ព្រឹត្តិការណ៍ទាំងអស់</span></a></p>
 		</div>
 		<div class="container mb-5" id="upcoming-events">
 
@@ -65,8 +65,8 @@ include_once '../../connection/db.connection.php';
 
 			<div class="row mt-5 mb-5 g-3">
 				<div class="row fh5co-heading">
-					<p style="font-size: 20px; font-weight: bold;">
-						<a href="events.php" style="text-decoration: none; color:#002060; font-size: 16pt;">
+					<p>
+						<a href="events.php" class="a-news">
 							ព្រឹត្តិការណ៍ | <span style="font-size: 12px; font-weight: 500;">ព្រឹត្តិការណ៍ទាំងអស់</span></a>
 					</p>
 				</div>
@@ -83,8 +83,7 @@ include_once '../../connection/db.connection.php';
 						<div class="card w-50 h-100 w-100 animate-card">
 							<img src="../../media/events/<?php echo $key['event_cover']; ?>" alt="aquare" class="card-img-top">
 							<div class="card-body">
-								<h5 class="card-title"><?php echo substr($key['event_title_kh'], 0, 140) . "..."; ?></h5>
-								<p class="card-text"><?php echo substr($key['event_description_kh'], 0, 250) ?></p>
+								<h5 class="card-title title-card"><?php echo substr($key['event_title_kh'], 0, 365) . "..."; ?></h5>
 							</div>
 							<div class="card-footer text-end">
 								<a href="event-detail.php?id=<?php echo $key['event_id'] ?>" class="btn btn-sm event-btn text-end py-1 px-3">អានបន្ថែម</a>
