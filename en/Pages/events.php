@@ -60,12 +60,11 @@ include_once '../../connection/db.connection.php';
 					// print_r($_GET);
 					// echo "</pre>";
 					foreach ($result as $key => $value) { ?>
-						<div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 mb-sm-2 mb-lg-2 mb-xxl-0" id="events-card">
+						<div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 mb-sm-2 mb-lg-2 mb-xxl-0" id="events-card">
 							<div class="card w-50 h-100 w-100 animate-card">
 								<img src="../../media/events/<?php echo $value['event_cover']; ?>" alt="aquare" class="card-img-top">
 								<div class="card-body">
-									<h6 class="card-title"><?php echo substr($value['event_title_en'], 0, 140) . "..."; ?></h6>
-									
+									<h5 class="card-title"><?php echo substr($value['event_title_en'], 0, 140) . "..."; ?></h5>
 								</div>
 								<div class="card-footer text-end p-1">
 									<a href="event-detail.php?id=<?php echo $value['event_id'] ?>" class="btn btn-sm event-btn text-end py-1 px-3">Read More</a>

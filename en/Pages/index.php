@@ -19,7 +19,7 @@ include_once '../../connection/db.connection.php';
 			<div class="text-center">
 				<h2 style="color: #002060; font-weight: bold;">LATEST NEWS</h2>
 				<span class="d-flex justify-content-center" width="100%" height="100%">
-					<img src="../../images/border.png" class="img-fluid icon_img" alt="">
+					<!-- <img src="../../images/border.png" class="img-fluid icon_img" alt=""> -->
 				</span>
 			</div>
 			<p><a href="upcoming-events.php" style="text-decoration:none; color:#002060;">Upcoming Events | <span style="font-size: 0.75rem; font-weight: 500;">All Events</span></a></p>

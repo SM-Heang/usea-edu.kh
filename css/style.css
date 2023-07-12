@@ -34,6 +34,46 @@ body {
 }
 
 /* Start My Custom Css */
+.tab-pane{
+  transition: all .5s ease-in-out;
+}
+.tab-pane > table{
+  animation: moving 1s ease;
+}
+@keyframes moving{
+  from{
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.nav-header > .nav-pills > .nav-item > .nav-link{
+  font-size: 18px;
+}
+#pills-tab > .nav-item > .nav-link{
+  background-color: #fff;
+  border-top: 1px solid var(--primary-color);
+  border-left: 1px solid var(--primary-color);
+  border-right: 1px solid var(--primary-color);
+  border-radius: 0;
+  color: var(--primary-color);
+}
+#pills-tab > .nav-item > .nav-link:hover{
+  background-color: var(--primary-color);
+  color: #fff !important;
+}
+#pills-tab > .nav-item > .active{
+  background-color: var(--primary-color);
+  color: #fff;
+}
+#pills-tab > .nav-item > .active:hover{
+  color: #fff !important;
+}
+
 
 .navbar-parent .wrapper {
   margin: 0;
