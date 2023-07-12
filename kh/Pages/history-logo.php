@@ -35,7 +35,7 @@
 			<!-- Start Content-->
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
-					<div class="row title-text" style="color: white; font-size: 16pt; padding: 5pt;">
+					<div class="row title-text">
 						ប្រវត្តិសាកលវិទ្យាល័យ និងអត្ថន័យរបស់និមិត្តសញ្ញា
 					</div>
 				</div>

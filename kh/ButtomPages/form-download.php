@@ -64,14 +64,14 @@
 						<div class="card mb-3 mx-auto F-download-shadow">
 							<div class="row g-0">
 								<div class="col-5">
-									<img src="../../media/p-13-thesis-cover.png" class="img-fluid rounded-start dl-img" alt="usea Thesis Slide">
+									<img src="../../media/thesis_slide_p14.PNG" class="img-fluid rounded-start dl-img" alt="usea Thesis Slide">
 								</div>
 								<div class="col-7">
 									<div class="card-body mt-2 mb-5 text-center">
 										<h6 class="card-title fw-bold">គម្រូស្លាយ</h6>
 									</div>
 									<div class="text-end m-3">
-										<a href="../../media/media/បច្ចេកទេសរៀបចំស្លាយ_និងការពារ_P13_Ok_070922.pptx" class="btn btn-sm event-btn py-1" download>ទាញយក</a>
+										<a href="../../media/thesis_slide_sample_p14.pptx" class="btn btn-sm event-btn py-1" download>ទាញយក</a>
 									</div>
 								</div>
 							</div>
