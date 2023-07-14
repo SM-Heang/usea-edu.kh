@@ -64,7 +64,7 @@ include_once '../../connection/db.connection.php';
 						<div class="card w-50 h-100 w-100 animate-card">
 							<img src="../../media/events/<?php echo $value['event_cover']; ?>" alt="aquare" class="card-img-top">
 							<div class="card-body">
-								<h6 class="card-title"><?php echo substr($value['event_title_kh'], 0, 140) . "..."; ?></h6>
+								<h6 class="card-title title-f"><?php echo substr($value['event_title_kh'], 0, 140) . "..."; ?></h6>
 								
 							</div>
 							<div class="card-footer text-end p-1">

@@ -614,6 +614,11 @@ body {
     padding: 5pt;
   }
 
+  .title-f{
+    font-size: 16px !important;
+    color: #002060;
+  }
+
 }
 
 @media screen and (max-width: 1399px) {
@@ -694,6 +699,11 @@ body {
     color: white;
     font-size: 18px !important;
     padding: 5pt;
+  }
+
+  .title-f{
+    font-size: 16px !important;
+    color: #002060;
   }
 
 }
@@ -845,6 +855,10 @@ body {
     padding: 5pt;
   }
 
+  .title-f{
+    font-size: 14px !important;
+    color: #002060;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -1201,6 +1215,13 @@ body {
 
 .title-card{
   font-size: 14.44px;
+  line-height: 27px;
+  color: #002060;
+}
+
+.title-f{
+  font-size: 14px;
+  line-height: 26px;
   color: #002060;
 }
 
