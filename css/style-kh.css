@@ -1215,11 +1215,13 @@ body {
 
 .title-card{
   font-size: 14.44px;
+  line-height: 27px;
   color: #002060;
 }
 
 .title-f{
   font-size: 14px;
+  line-height: 26px;
   color: #002060;
 }
 
