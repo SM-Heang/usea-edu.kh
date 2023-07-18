@@ -136,7 +136,7 @@
 									<?php
 										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =419");
 										$stmt->execute();
-										$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+										$result = $stmt->fetchAll(PDO::FETCH_ASSOC); 
 										// echo "<pre>";
 										// print_r($result);
 										// echo "</pre>";

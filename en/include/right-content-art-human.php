@@ -40,7 +40,7 @@
 						">							
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-khmer-literature'){
 								echo 'right_active';
-							}?>" href="#"> Khmer Literature
+							}?>" href="../BachelorDegree/bachelor-khmer-literature.php"> Khmer Literature
 								</a> </li>
 							
 						</ul>

@@ -1,12 +1,11 @@
 <?php 
 	$page = 'academics';
-		if(session_status() === PHP_SESSION_NONE){
-			session_start();
-		}
-		$_SESSION['right_economic'] = $page;
-		$_SESSION['right'] = 'bachelor-marketing';
-		
-
+	if(session_status() === PHP_SESSION_NONE){
+		session_start();
+	}
+	$_SESSION['right_economic'] = $page;
+	$_SESSION['right'] = 'bachelor-international-marketing';
+	
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     
  ?>
@@ -15,7 +14,8 @@
 		<div class="row">
 			<div class="col-12 web-location">
 				<ul>
-					<li><a href="index.php">
+					<li>
+						<a href="index.php">
 						<i class="fa-solid fa-house"></i>
 						<i class="fa-solid fa-caret-right"></i>
 					</a>
@@ -24,10 +24,10 @@
 						<a href="#"> Home > </a>
 					</li>
 					<li>
-					<a href="#"> Academics > </a>
+						<a href="#"> Academics > </a>
 					</li>
 					<li>
-					<a href="#"> Marketing </a>
+						<a href="#"> International Marketing </a>
 					</li>
 				</ul>
 			</div>
@@ -43,12 +43,12 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-					Bachelor's Degree in Marketing
+					Bachelor's Degree in International Marketing
 					</div>
 				</div>
 				<div id="content-detail">
 					<?php  
-							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =429");
+							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =432");
 							$stmt->execute();
 							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 							// echo "<pre>";
@@ -101,7 +101,7 @@
 								</div>
 								<div class="tab-pane" id="pills-cms" role="tabpanel" aria-labelledby="pills-cms-tab" tabindex="0">
 									<?php
-										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =430");
+										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =433");
 										$stmt->execute();
 										$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 										// echo "<pre>";
@@ -118,7 +118,7 @@
 								</div>
 								<div class="tab-pane" id="pills-bms" role="tabpanel" aria-labelledby="pills-bms-tab" tabindex="0">
 									<?php
-										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =431");
+										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =434");
 										$stmt->execute();
 										$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 										// echo "<pre>";
