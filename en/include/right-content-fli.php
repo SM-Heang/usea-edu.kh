@@ -106,7 +106,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-english-for-translation') {
 											echo 'right_active';
-										} ?>" href="#"> English for Translation and Interpreting
+										} ?>" href="../BachelorDegree/bachelor-english-for-translation.php"> English for Translation and Interpreting
 								</a>
 							</li>
 
@@ -114,7 +114,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-english-for-business') {
 											echo 'right_active';
-										} ?>" href="#"> English for International Business
+										} ?>" href="../BachelorDegree/bachelor-english-for-business.php"> English for International Business
 								</a>
 							</li>
 
@@ -122,7 +122,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-tefl') {
 											echo 'right_active';
-										} ?>" href="#"> Teaching English as a Foreign Language
+										} ?>" href="../BachelorDegree/bachelor-tefl.php"> Teaching English as a Foreign Language
 								</a>
 							</li>
 
@@ -130,7 +130,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-teaching-english-children') {
 											echo 'right_active';
-										} ?>" href="#"> Teaching English to Children
+										} ?>" href="../BachelorDegree/bachelor-teaching-english-to-children.php"> Teaching English to Children
 								</a>
 							</li>
 						</ul>

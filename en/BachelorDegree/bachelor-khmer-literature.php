@@ -43,7 +43,7 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-					Bachelor's Degree in Accounting & Auditing
+					Bachelor's Degree in Khmer Literature
 					</div>
 				</div>
 				<div id="content-detail">
@@ -101,7 +101,7 @@
 								</div>
 								<div class="tab-pane" id="pills-cms" role="tabpanel" aria-labelledby="pills-cms-tab" tabindex="0">
 									<?php
-										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =440");
+										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =444");
 										$stmt->execute();
 										$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 										// echo "<pre>";
@@ -118,7 +118,7 @@
 								</div>
 								<div class="tab-pane" id="pills-bms" role="tabpanel" aria-labelledby="pills-bms-tab" tabindex="0">
 									<?php
-										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =441");
+										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =445");
 										$stmt->execute();
 										$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 										// echo "<pre>";
@@ -135,7 +135,7 @@
 								</div>
 								<div class="tab-pane" id="pills-mis" role="tabpanel" aria-labelledby="pills-mis-tab" tabindex="0">
 									<?php
-										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =419");
+										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =446");
 										$stmt->execute();
 										$result = $stmt->fetchAll(PDO::FETCH_ASSOC); 
 										// echo "<pre>";

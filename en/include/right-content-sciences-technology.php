@@ -43,7 +43,7 @@
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-architecture'){
 								echo 'right_active';
 							}?>" aria-current="page"
-									href="../BachelorDegree/bachelor-architecture.php"> Architechture </a></li>
+									href="../BachelorDegree/bachelor-architecture.php"> Architecture </a></li>
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-civil-engineering'){
 								echo 'right_active';
 							}?>" href="../BachelorDegree/bachelor-civil-engineering.php"> Civil Engineering </a></li>

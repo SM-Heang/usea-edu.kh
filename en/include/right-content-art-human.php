@@ -3,7 +3,7 @@
 		<div class="item"><a class="item-link <?php if($_SESSION['right'] == 'faculty-science-art-human'){
 			echo 'right_active';
 		}?>"
-				href="../vission-Mission/vision-mision-corevalue-science-technology.php">Vision & Mission</a></div>
+				href="../vission-Mission/vision-mision-corevalue-art-humanities.php">Vision & Mission</a></div>
 		<hr>
 		<div class="item">
 		</div>

@@ -43,7 +43,7 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-					Bachelor's Degree in Accounting & Auditing
+					Bachelor's Degree in Teaching English as Foreign Language
 					</div>
 				</div>
 				<div id="content-detail">
