@@ -7,18 +7,35 @@
 			<nav class="sidebar">
 				<ul class="nav flex-column" id="nav_accordion">
 					<li class="nav-item has-submenu">
-						<a class="nav-link item-link" href="#"> Master's Degree <i class="fas fa-angle-down"></i> </a>
-						<ul class="submenu collapse">
-							<li><a class="nav-link item-link" aria-current="page"
-									href="#"> Accounting </a></li>
-							<li><a class="nav-link item-link" href="#"> Auditing </a></li>
-							<li><a class="nav-link item-link" href="#"> Finance & Banking </a></li>
-							<li><a class="nav-link item-link" href="#"> Information Technology
-								</a> </li>
-							<li><a class="nav-link item-link" href="#"> International Marketing </a> </li>
-							<li><a class="nav-link item-link" href="#"> Management </a> </li>
-							<li><a class="nav-link item-link" href="#"> Public Administration </a> </li>
-							<li><a class="nav-link item-link" href="#"> Teaching English </a> </li>
+						<a class="nav-link item-link" href="#"> Master's Degree
+							 <i class="fas fa-angle-down"></i> 
+						</a>
+						<ul class="submenu collapse
+						
+						<?php
+						if (
+							$_SESSION['right'] == 'master-accounting' ||
+							$_SESSION['right'] == 'master-auditing'   ||
+							$_SESSION['right'] == 'master-finance-banking' ||
+							$_SESSION['right'] == 'master-information-technology' ||							
+							$_SESSION['right'] == 'master-management' ||
+							$_SESSION['right'] == 'master-public-admin' ||
+							$_SESSION['right'] == 'master-tesol'
+						) {
+							echo "show";
+						}
+						?>
+						
+						">
+							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'master-accounting'){ echo 'right_active';} ?>" aria-current="page"
+									href="../MasterDegree/master-accounting.php"> Accounting </a></li>
+							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'master-auditing'){ echo 'right_active';} ?>" href="../MasterDegree/master-auditing.php"> Auditing </a></li>
+							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'master-finance-banking'){ echo 'right_active';} ?>" href="../MasterDegree/master-finance-banking.php"> Finance & Banking </a></li>
+							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'master-information-technology'){ echo 'right_active';} ?>" href="../MasterDegree/master-information-technology.php"> Information Technology
+								</a> </li>			
+							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'master-management'){ echo 'right_active';} ?>" href="../MasterDegree/master-management.php"> Management </a> </li>
+							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'master-public-admin'){ echo 'right_active';} ?>" href="../MasterDegree/master-public-admin.php"> Public Administration </a> </li>
+							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'master-tesol'){ echo 'right_active';} ?>" href="../MasterDegree/master-tesol.php"> Teaching English </a> </li>
 						</ul>
 					</li>
 				</ul>
@@ -30,12 +47,23 @@
 				<ul class="nav flex-column" id="nav_accordion">
 					<li class="nav-item has-submenu">
 						<a class="nav-link item-link" href="#"> Doctoral Degree <i class="fas fa-angle-down"></i> </a>
-						<ul class="submenu collapse">
-							<li><a class="nav-link item-link" aria-current="page"
-									href="#"> Business Management </a></li>
-							<li><a class="nav-link item-link" href="#"> Education Management </a></li>
-							<li><a class="nav-link item-link" href="#">Economic</a></li>
-							<li><a class="nav-link item-link" href="#"> Public Administration	</a> </li>							
+						<ul class="submenu collapse
+						<?php
+						if (
+							$_SESSION['right'] == 'phd-economics' ||
+							$_SESSION['right'] == 'phd-education-management' ||
+							$_SESSION['right'] == 'phd-business-management' ||
+							$_SESSION['right'] == 'phd-public-admin'
+						) {
+							echo "show";
+						}
+						?>
+						">
+							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'phd-business-management'){ echo 'right_active';} ?>" aria-current="page"
+									href="../DoctoralDegree/phd-business-management.php"> Business Management </a></li>
+							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'phd-education-management'){ echo 'right_active';} ?>" href="../DoctoralDegree/phd-education-management.php"> Education Management </a></li>
+							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'phd-economics'){ echo 'right_active';} ?>" href="../DoctoralDegree/phd-economics.php">Economics</a></li>
+							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'phd-public-admin'){ echo 'right_active';} ?>" href="../DoctoralDegree/phd-public-admin.php"> Public Administration	</a> </li>							
 						</ul>
 					</li>
 				</ul>

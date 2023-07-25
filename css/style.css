@@ -3135,6 +3135,19 @@ figure {
 .right-content-economic .select-menu-7.active_menu7 .select-btn-7 .i_7 {
   transform: rotate(-180deg);
 }
+/* right content master */
+/* 8 */
+.select-menu-8 {
+  cursor: pointer;
+}
+
+.select-btn-8 .i_8 {
+  transition: 0.4s;
+}
+
+.select-menu-8.active_menu8 .select-btn-8 .i_8 {
+  transform: rotate(-180deg);
+}
   
 /*
 For Media Query Devices with Breakpoint

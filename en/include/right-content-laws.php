@@ -56,9 +56,9 @@
 							if (
 								$_SESSION['right'] == 'bachelor-laws' || 'bachelor-public-admin' || 'bachelor-international-relations'
 							) {
-								echo '<i class="fa-solid fa-angle-up i_2"></i>';
+								echo '<i class="fa-solid fa-angle-up i_1"></i>';
 							} else {
-								echo '<i class="fa-solid fa-angle-down i_2"></i>';
+								echo '<i class="fa-solid fa-angle-down i_1"></i>';
 							}
 							?>
 						</a>
