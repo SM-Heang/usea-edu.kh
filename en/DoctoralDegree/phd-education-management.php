@@ -48,7 +48,7 @@
 				</div>
 				<div id="content-detail">
 					<?php  
-							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =489");
+							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =497");
 							$stmt->execute();
 							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 							// echo "<pre>";
@@ -81,7 +81,7 @@
 							<div class="tab-content" id="pills-tabContent">
 								<div class="tab-pane show active" id="pills-y1" role="tabpanel" aria-labelledby="pills-y1-tab" tabindex="0">
 									<?php
-										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =490");
+										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =498");
 										$stmt->execute();
 										$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 										// echo "<pre>";
@@ -98,7 +98,7 @@
 								</div>
 								<div class="tab-pane" id="pills-y2" role="tabpanel" aria-labelledby="pills-y2-tab" tabindex="0">
 									<?php
-										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =491");
+										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =499");
 										$stmt->execute();
 										$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 										// echo "<pre>";
@@ -115,7 +115,7 @@
 								</div>
                                 <div class="tab-pane" id="pills-y3" role="tabpanel" aria-labelledby="pills-y3-tab" tabindex="0">
 									<?php
-										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =492");
+										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =500");
 										$stmt->execute();
 										$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 										// echo "<pre>";
