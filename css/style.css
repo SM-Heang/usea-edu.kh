@@ -80,6 +80,8 @@ body {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  /* position: fixed;
+  z-index: 999; */
 }
 
 .navbar-parent .wrapper .logo {
@@ -328,7 +330,6 @@ body {
   font-family: var(--font-kh) !important;
   margin: 0;
   line-height: 30px;
-  text-decoration: underline;
   font-size: 1.25rem;
   color: var(--title-color);
 }
@@ -1214,7 +1215,10 @@ figure {
     display: flex;
     font-size: 12px;
   }
-
+.header-menu {
+  position: fixed !important;
+  background-color: red !important;
+}
   .navbar-parent .wrapper {
     margin: 0;
     padding: 0;

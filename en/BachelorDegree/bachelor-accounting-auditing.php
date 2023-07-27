@@ -10,6 +10,7 @@
 	include_once '../../connection/db.connection.php';     
 
  ?>
+
 	<!-- Start Web Location -->
 	<div class="container">
 		<div class="row">
