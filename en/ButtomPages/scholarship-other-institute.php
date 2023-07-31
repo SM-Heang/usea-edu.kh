@@ -1,11 +1,11 @@
 <?php
-$page = 'scholarship';
+$page = 'scholarship-other';
 if (session_status() === PHP_SESSION_NONE) {
 	session_start();
 }
 
 $_SESSION['page'] = $page;
-$_SESSION['right'] = 'scholarship-right';
+$_SESSION['right'] = 'scholarship-other-institute';
 include_once '../include/header.php';
 include_once '../../connection/db.connection.php';
 ?>
@@ -22,7 +22,7 @@ include_once '../../connection/db.connection.php';
 					</a>
 				</li>
 				<li>
-					<a href="#">Scholarship</a>
+					<a href="#">Scholarship Other Institution</a>
 				</li>
 			</ul>
 		</div>
@@ -38,7 +38,7 @@ include_once '../../connection/db.connection.php';
 		<div class="col-xxl-9">
 			<div class="container" style="background-color:#002060;">
 				<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-					Scholarship
+				Scholarship Other Institution
 				</div>
 			</div>
 
