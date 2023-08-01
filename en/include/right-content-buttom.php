@@ -149,10 +149,11 @@
 		</div>
 
 		<div class="item">
-			<a class="nav-link item-link <?php if ($_SESSION['right'] == 'scholarship-right') {
+			<a class="nav-link item-link <?php if ($_SESSION['right'] == 'career-right') {
 												echo 'right_active';
-											} ?>" href="scholarship.php"> Scholarship
+											} ?>" href="career.php"> Career
 			</a>
+			
 		</div>
 		<hr>
 
@@ -160,9 +161,9 @@
 			<nav class="sidebar">
 				<ul class="nav flex-column" id="nav_accordion">
 					<li class="nav-item has-submenu select-menu-4">
-						<a class="nav-link item-link select-btn-4" href="university.php" onclick="return false"> Career
+						<a class="nav-link item-link select-btn-4" href="#" onclick="return false"> Scholarship
 							<?php
-								if ($_SESSION['page'] == 'university') {
+								if ($_SESSION['page'] == 'scholarship') {
 									echo '<i class="fa-solid fa-angle-up i_4"></i>';
 								}else{
 									echo '<i class="fa-solid fa-angle-down i_4"></i>';
@@ -171,25 +172,25 @@
 						</a>
 						<ul class="submenu collapse
 							<?php
-									if ($_SESSION['page'] == 'university' || $_SESSION['page'] == 'career_other_institute') {
+									if ($_SESSION['page'] == 'scholarship-other' || $_SESSION['page'] == 'university') {
 										echo "show";
 									}
 							?>">
 							<li>
 								<a class="nav-link item-link 
 									<?php 
-										if ($_SESSION['right'] == 'univer-sity') {
+										if ($_SESSION['right'] == 'scholarship-university') {
 											echo 'right_active';
 									} ?>"
 									aria-current="page" 
-									href="career-university.php"> University
+									href="scholarship-university.php"> University
 								</a>
 							</li>
 							<li><a class="nav-link item-link
 							<?php 
-										if ($_SESSION['right'] == 'career-other-institute') {
+										if ($_SESSION['right'] == 'scholarship-other-institute') {
 											echo 'right_active';
-									} ?>" href="career-other-institution.php"> Other Institution </a></li>
+									} ?>" href="scholarship-other-institute.php"> Other Institution </a></li>
 						</ul>
 					</li>
 				</ul>

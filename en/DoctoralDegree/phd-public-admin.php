@@ -27,7 +27,7 @@
 					<a href="#"> Academics > </a>
 					</li>
 					<li>
-					<a href="#">Phd Economics </a>
+					<a href="#">Phd Public Administration </a>
 					</li>
 				</ul>
 			</div>
@@ -43,17 +43,14 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-					Doctoral's Degree in Economics
+					Doctoral's Degree in Public Administration
 					</div>
 				</div>
 				<div id="content-detail">
 					<?php  
-							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =489");
+							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =501");
 							$stmt->execute();
-							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-							// echo "<pre>";
-							// print_r($result);
-							// echo "</pre>";
+							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);							
 						foreach ($result as $key => $value) { ?>
 						<!-- <img src="media/events/independent_days.jpg" alt="independent_days" width="375px" height="245px"> -->
 						<p>
@@ -81,7 +78,7 @@
 							<div class="tab-content" id="pills-tabContent">
 								<div class="tab-pane show active" id="pills-y1" role="tabpanel" aria-labelledby="pills-y1-tab" tabindex="0">
 									<?php
-										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =490");
+										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =502");
 										$stmt->execute();
 										$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 										// echo "<pre>";
@@ -98,7 +95,7 @@
 								</div>
 								<div class="tab-pane" id="pills-y2" role="tabpanel" aria-labelledby="pills-y2-tab" tabindex="0">
 									<?php
-										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =491");
+										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =503");
 										$stmt->execute();
 										$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 										// echo "<pre>";
@@ -115,7 +112,7 @@
 								</div>
                                 <div class="tab-pane" id="pills-y3" role="tabpanel" aria-labelledby="pills-y3-tab" tabindex="0">
 									<?php
-										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =492");
+										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =504");
 										$stmt->execute();
 										$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 										// echo "<pre>";
