@@ -189,7 +189,7 @@
 									<ul class="mega-link">
 										<li class="list-control">
 											<img src="../../media/nav-icon/f-internation-college.png" width="25px" height="25px">
-											<a href="../Pages/international-college.php">មហាវិទ្យាល័យអន្តរជាតិ</a>
+											<a href="../vission-Mission/vision-mission-international-college.php">មហាវិទ្យាល័យអន្តរជាតិ</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/fli.png" width="25px" height="25px">
@@ -201,7 +201,7 @@
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/short-course.png" width="25px" height="25px">
-											<a href="../Pages/short-course.php">វគ្គបណ្ដុះបណ្ដាលខ្លី</a>
+											<a href="#">វគ្គបណ្ដុះបណ្ដាលខ្លី</a>
 										</li>
 									</ul>
 								</div>
@@ -309,7 +309,7 @@
 							</li>
 							<li>
 								<img src="../../media/nav-icon/f-internation-college.png" class="nav-icon" width="15px" height="15px">
-								<a href="../Pages/international-college.php">មហាវិទ្យាល័យអន្តរជាតិ</a>
+								<a href="../vission-Mission/vision-mission-international-college.php">មហាវិទ្យាល័យអន្តរជាតិ</a>
 							</li>
 							<li>
 								<img src="../../media/nav-icon/fli.png" class="nav-icon" width="15px" height="15px">
@@ -321,7 +321,7 @@
 							</li>
 							<li>
 								<img src="../../media/nav-icon/short-course.png" class="nav-icon" width="15px" height="15px">
-								<a href="../Pages/short-course.php">វគ្គបណ្ដុះបណ្ដាលខ្លី</a>
+								<a href="#">វគ្គបណ្ដុះបណ្ដាលខ្លី</a>
 							</li>
 						</ul>
 					</div>

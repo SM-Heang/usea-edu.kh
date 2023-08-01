@@ -104,12 +104,12 @@
 						if (
 							$_SESSION['right'] == 'bachelor-management-kh' ||
 							$_SESSION['right'] == 'bachelor-marketing-kh' ||
-							$_SESSION['right'] == 'bachelor-accounting-auditing-kh' ||
+							$_SESSION['right'] == 'bachelor-accounting-auditin-kh' ||
 							$_SESSION['right'] == 'bachelor-industrail-economics-kh' ||
 							$_SESSION['right'] == 'bachelor-finance-banking-kh' ||
 							$_SESSION['right'] == 'bachelor-international-economics-kh' ||
 							$_SESSION['right'] == 'bachelor-intrepreneurship-kh' ||
-							$_SESSION['right'] == 'bachelor-international-Marketing-kh' ||
+							$_SESSION['right'] == 'bachelor-international-marketing-kh' ||
 							$_SESSION['right'] == 'bachelor-international-tourism-management-kh' ||
 							$_SESSION['right'] == 'bachelor-catering-management-kh' ||
 							$_SESSION['right'] == 'bachelor-tourism-hospitality-management-kh' ||
@@ -123,9 +123,9 @@
 						">
 							<li>
 								<a class="nav-link item-link 
-										<?php if ($_SESSION['right'] == 'bachelor-accounting-auditing-kh') {
+										<?php if ($_SESSION['right'] == 'bachelor-accounting-auditin-kh') {
 											echo 'right_active';
-										} ?>" href="#"> គណនេយ្យ និងសវនកម្ម
+										} ?>" href="../BachelorDegree/bachelor-accounting-auditing.php"> គណនេយ្យ និងសវនកម្ម
 								</a>
 							</li>
 
@@ -133,15 +133,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-finance-banking-kh') {
 											echo 'right_active';
-										} ?>" href="#"> ហិរញ្ញវត្ថុ និងធនាគារ
-								</a>
-							</li>
-
-							<li>
-								<a class="nav-link item-link 
-										<?php if ($_SESSION['right'] == 'bachelor-international-Marketing-kh') {
-											echo 'right_active';
-										} ?>" href="#"> ទីផ្សារអន្តរជាតិ
+										} ?>" href="../BachelorDegree/bachelor-finance-banking.php"> ហិរញ្ញវត្ថុ និងធនាគារ
 								</a>
 							</li>
 
@@ -149,7 +141,15 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-international-economics-kh') {
 											echo 'right_active';
-										} ?>" href="#"> ពាណិជ្ជកម្មអន្តរជាតិ
+										} ?>" href="../BachelorDegree/bachelor-international-economics.php"> ពាណិជ្ជកម្មអន្តរជាតិ
+								</a>
+							</li>
+
+							<li>
+								<a class="nav-link item-link 
+										<?php if ($_SESSION['right'] == 'bachelor-international-marketing-kh') {
+											echo 'right_active';
+										} ?>" href="../BachelorDegree/bachelor-international-marketing.php"> ទីផ្សារអន្តរជាតិ
 								</a>
 							</li>
 
@@ -157,7 +157,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-international-tourism-management-kh') {
 											echo 'right_active';
-										} ?>" href="#">  ទេសចរណ៍ <br class="d-none d-xxl-block">និងបដិសណ្ឋារកិច្ចអន្តរជាតិ
+										} ?>" href="../BachelorDegree/bachelor-international-tourism-management.php">  ទេសចរណ៍ <br class="d-none d-xxl-block">និងបដិសណ្ឋារកិច្ចអន្តរជាតិ
 								</a>
 							</li>
 
@@ -165,7 +165,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-management-kh') {
 											echo 'right_active';
-										} ?>" href="#"> គ្រប់គ្រង
+										} ?>" href="../BachelorDegree/bachelor-management.php"> គ្រប់គ្រង
 								</a>
 							</li>
 
@@ -173,7 +173,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-marketing-kh') {
 											echo 'right_active';
-										} ?>" href="#"> ទីផ្សារ
+										} ?>" href="../BachelorDegree/bachelor-marketing.php"> ទីផ្សារ
 								</a>
 							</li>
 
@@ -181,7 +181,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-tourism-hospitality-management-kh') {
 											echo 'right_active';
-										} ?>" href="#"> គ្រប់គ្រងទេសចរណ៍ <br class="d-none d-xxl-block">និងបដិសណ្ឋារកិច្ច
+										} ?>" href="../BachelorDegree/bachelor-tourism-hospitality-management.php"> គ្រប់គ្រងទេសចរណ៍ <br class="d-none d-xxl-block">និងបដិសណ្ឋារកិច្ច
 								</a>
 							</li>
 

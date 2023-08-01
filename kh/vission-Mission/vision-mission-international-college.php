@@ -1,11 +1,11 @@
 <?php 
-	$page = 'about';
-	if (session_status() === PHP_SESSION_NONE) {
-		session_start();
-	}
-	$_SESSION['page']= $page;
-	$_SESSION['right']= 'structure-kh';
-	
+	$page = 'academics';
+		if(session_status() === PHP_SESSION_NONE){
+			session_start();
+		}
+		 $_SESSION['page'] = $page;
+		 $_SESSION['right'] = 'international-college-kh';
+		
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     
  ?>
@@ -21,12 +21,13 @@
 					</a>
 					</li>
 					<li>
-						<a href="#">រចនាសម្ព័ន្ធសាកលវិទ្យាល័យ</a>
+						<a href="#">មហាវិទ្យាល័យអន្តរជាតិ</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
+
 	<!-- End Web Location -->
 
 	<!-- Main Content-->
@@ -36,13 +37,12 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row title-text" style="color: white; font-size: 16pt; padding: 5pt;">
-						រចនាសម្ព័ន្ធសាកលវិទ្យាល័យ
+                    មហាវិទ្យាល័យអន្តរជាតិ
 					</div>
 				</div>
 				<div id="content-detail">
-					<div class="content-structure-detail">
-						<?php  
-							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =77");
+					<?php  
+							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =381");
 							$stmt->execute();
 							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 							// echo "<pre>";
@@ -52,18 +52,17 @@
 						<!-- <img src="media/events/independent_days.jpg" alt="independent_days" width="375px" height="245px"> -->
 						<p><?php echo $value['article_description_kh'];?></p>
 					<?php } ?>
-					</div>
 				</div>
 			</div>
 			<!-- Start Right Content-->
-			<?php
-				include_once '../include/right-content.php';
-			?>
+			<?php 
+				include_once "../include/right-content-international-college.php";
+			 ?>
 		</div>
 	</div>
 	<!-- End Main Content-->
+<?php
+	include_once '../include/buttom-content.php';
+	include_once '../include/footer.php';
+?>
 
-	<?php
-		include_once '../include/buttom-content.php';
-		include_once '../include/footer.php';
-	?>

@@ -35,11 +35,11 @@
 						">
 							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'laws-kh') {
 								echo 'right_active';
-							} ?>" aria-current="page" href="#"> នីតិសាស្រ្ត
+							} ?>" aria-current="page" href="../AssociateDegree/laws.php"> នីតិសាស្រ្ត
 								</a></li>
 							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'public-admin-kh') {
 								echo 'right_active';
-							} ?>" href="#"> រដ្ឋបាលសាធារណៈ </a></li>
+							} ?>" href="../AssociateDegree/public-admin.php"> រដ្ឋបាលសាធារណៈ </a></li>
 						</ul>
 					</li>
 				</ul>
@@ -87,12 +87,12 @@
 							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'bachelor-laws-kh') {
 								echo 'right_active';
 							} ?>" href="../BachelorDegree/bachelor-laws.php">នីតិសាស្រ្ត</a> </li>
-							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'bachelor-international-law-kh') {
-								echo 'right_active';
-							} ?>" href="#"> វិទ្យាសាស្ត្រនយោបាយ <br>និងទំនាក់ទំនងអន្តរជាតិ</a></li>
 							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'bachelor-international-relations-kh') {
 								echo 'right_active';
-							} ?>" href="#"> រដ្ឋបាលសាធារណៈ </a> </li>
+							} ?>" href="../BachelorDegree/bachelor-international-relations.php"> វិទ្យាសាស្ត្រនយោបាយ <br>និងទំនាក់ទំនងអន្តរជាតិ</a></li>
+							<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'bachelor-public-admin-kh') {
+								echo 'right_active';
+							} ?>" href="../BachelorDegree/bachelor-public-admin.php"> រដ្ឋបាលសាធារណៈ </a> </li>
 						</ul>
 					</li>
 				</ul>

@@ -49,14 +49,14 @@
 									href="../BachelorDegree/bachelor-architecture.php"> ស្ថាបត្យកម្ម </a></li>
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-civil-engineering-kh'){
 								echo 'right_active';
-							}?>" href="#"> វិស្វកម្មសំណង់ស៊ីវិល </a></li>
+							}?>" href="../BachelorDegree/bachelor-civil-engineering.php"> វិស្វកម្មសំណង់ស៊ីវិល </a></li>
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-information-technology-kh'){
 								echo 'right_active';
 							}?>" href="../BachelorDegree/bachelor-information-technology.php"> ព័ត៏មានវិទ្យា
 								</a> </li>
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-mathematics-kh'){
 								echo 'right_active';
-								}?>" href="#"> គណិតវិទ្យា </a> </li>
+								}?>" href="../BachelorDegree/bachelor-mathematics.php"> គណិតវិទ្យា </a> </li>
 						</ul>
 					</li>
 				</ul>

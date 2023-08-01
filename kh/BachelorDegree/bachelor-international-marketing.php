@@ -1,33 +1,33 @@
 <?php 
-	$page = 'academics_kh';
+	$page = 'academics';
 	if(session_status() === PHP_SESSION_NONE){
 		session_start();
 	}
 	$_SESSION['right_economic'] = $page;
-	$_SESSION['right'] = 'bachelor-khmer-literature-kh';
-
+	$_SESSION['right'] = 'bachelor-international-marketing-kh';
+	
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     
-
  ?>
 	<!-- Start Web Location -->
 	<div class="container">
 		<div class="row">
 			<div class="col-12 web-location">
 				<ul>
-					<li><a href="index.php">
+					<li>
+						<a href="index.php">
 						<i class="fa-solid fa-house"></i>
 						<i class="fa-solid fa-caret-right"></i>
 					</a>
 					</li>
 					<li>
-						<a href="#"> ទំព័រដើម > </a>
+						<a href="#"> Home > </a>
 					</li>
 					<li>
-					<a href="#"> សិក្សាធិការ > </a>
+						<a href="#"> Academics > </a>
 					</li>
 					<li>
-					<a href="#"> អក្សរសាស្រ្តខ្មែរ </a>
+						<a href="#"> International Marketing </a>
 					</li>
 				</ul>
 			</div>
@@ -43,12 +43,12 @@
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
 					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-					ថ្នាក់បរិញ្ញាបត្រ ឯកទេស អក្សរសាស្រ្តខ្មែរ
+					Bachelor's Degree in International Marketing
 					</div>
 				</div>
 				<div id="content-detail">
 					<?php  
-							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =382");
+							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =432");
 							$stmt->execute();
 							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 							// echo "<pre>";
@@ -62,7 +62,6 @@
                             ?>
                         </p>
 					<?php } ?>
-
 					<section>
 						<div class="container">
 							<div class="nav-header ml-5">
@@ -85,7 +84,7 @@
 							<div class="tab-content" id="pills-tabContent">
 								<div class="tab-pane show active" id="pills-ges" role="tabpanel" aria-labelledby="pills-ges-tab" tabindex="0">
 									<?php
-										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =443");
+										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =416");
 										$stmt->execute();
 										$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 										// echo "<pre>";
@@ -102,7 +101,7 @@
 								</div>
 								<div class="tab-pane" id="pills-cms" role="tabpanel" aria-labelledby="pills-cms-tab" tabindex="0">
 									<?php
-										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =444");
+										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =433");
 										$stmt->execute();
 										$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 										// echo "<pre>";
@@ -119,7 +118,7 @@
 								</div>
 								<div class="tab-pane" id="pills-bms" role="tabpanel" aria-labelledby="pills-bms-tab" tabindex="0">
 									<?php
-										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =445");
+										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =434");
 										$stmt->execute();
 										$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 										// echo "<pre>";
@@ -136,7 +135,7 @@
 								</div>
 								<div class="tab-pane" id="pills-mis" role="tabpanel" aria-labelledby="pills-mis-tab" tabindex="0">
 									<?php
-										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =446");
+										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =419");
 										$stmt->execute();
 										$result = $stmt->fetchAll(PDO::FETCH_ASSOC); 
 										// echo "<pre>";
@@ -160,18 +159,14 @@
 			</div>
 			<!-- Start Right Content-->
 			<?php
-				include_once '../include/right-content-art-human.php';
+				include_once '../include/right-content-economic.php';
 			?>
 		</div>
 	</div>
 	<!-- End Main Content-->
 
 	<?php
-		// include_once 'include/buttom-content.php';
 		include_once '../include/buttom-content.php';
-
-		// include_once 'include/footer.php';
 		include_once '../include/footer.php';
-
 	?>
 

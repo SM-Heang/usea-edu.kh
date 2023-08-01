@@ -87,11 +87,9 @@
 										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =401");
 										$stmt->execute();
 										$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-										// echo "<pre>";
-										// print_r($result);
-										// echo "</pre>";
+										
 										foreach ($result as $key => $value) { ?>
-										<!-- <img src="media/events/independent_days.jpg" alt="independent_days" width="375px" height="245px"> -->
+										
 										<p>
 											<?php
 												echo $value['article_description_en'];
@@ -104,11 +102,9 @@
 										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =405");
 										$stmt->execute();
 										$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-										// echo "<pre>";
-										// print_r($result);
-										// echo "</pre>";
+										
 										foreach ($result as $key => $value) { ?>
-										<!-- <img src="media/events/independent_days.jpg" alt="independent_days" width="375px" height="245px"> -->
+										
 										<p>
 											<?php
 												echo $value['article_description_en'];
@@ -121,11 +117,8 @@
 										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =406");
 										$stmt->execute();
 										$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-										// echo "<pre>";
-										// print_r($result);
-										// echo "</pre>";
 										foreach ($result as $key => $value) { ?>
-										<!-- <img src="media/events/independent_days.jpg" alt="independent_days" width="375px" height="245px"> -->
+										
 										<p>
 											<?php
 												echo $value['article_description_en'];
@@ -134,76 +127,14 @@
 									<?php } ?>
 								</div>
 								<div class="tab-pane" id="pills-mis" role="tabpanel" aria-labelledby="pills-mis-tab" tabindex="0">
-									<!-- <table class="table text-center">
-												<thead>
-													<th>No</th>
-													<th>Subject Description</th>
-													<th>Credit</th>
-												</thead>
-												<tbody class="table-group-divider">
-													<tr>
-														<td>1</td>
-														<td>English Language III</td>
-														<td>3</td>
-													</tr>
-													<tr>
-														<td>2</td>
-														<td>English Language IV</td>
-														<td>3</td>
-													</tr>
-													<tr>
-														<td>3</td>
-														<td>English Language V</td>
-														<td>3</td>
-													</tr>
-													<tr>
-														<td>4</td>
-														<td>English Language VI</td>
-														<td>3</td>
-													</tr>
-													<tr>
-														<td>5</td>
-														<td>English Language VII</td>
-														<td>3</td>
-													</tr>
-													<tr>
-														<td>6</td>
-														<td>Chinese Language III</td>
-														<td>0</td>
-													</tr>
-													<tr>
-														<td>7</td>
-														<td>Chinese Language IV</td>
-														<td>0</td>
-													</tr>
-													<tr>
-														<td>8</td>
-														<td>Chinese Language V</td>
-														<td>0</td>
-													</tr>
-													<tr>
-														<td>9</td>
-														<td>Chinese Language VI</td>
-														<td>0</td>
-													</tr>
-													<tr>
-														<td>10</td>
-														<td>Chinese Language VII</td>
-														<td>0</td>
-													</tr>
-													
-												</tbody>
-
-									</table> -->
+									
 									<?php
 										$stmt = $conn->prepare("SELECT * from usea_article WHERE article_id =404");
 										$stmt->execute();
 										$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-										// echo "<pre>";
-										// print_r($result);
-										// echo "</pre>";
+										
 										foreach ($result as $key => $value) { ?>
-										<!-- <img src="media/events/independent_days.jpg" alt="independent_days" width="375px" height="245px"> -->
+										
 										<p>
 											<?php
 												echo $value['article_description_en'];

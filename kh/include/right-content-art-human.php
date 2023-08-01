@@ -46,7 +46,7 @@
 							?>
 						
 						">
-							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-curriculum-development-kh'){
+							<!-- <li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-curriculum-development-kh'){
 								echo 'right_active';
 							}?>" aria-current="page"
 									href="#"> អភិវឌ្ឍន៍កម្មវិធីសិក្សា </a></li>
@@ -55,14 +55,14 @@
 							}?>" href="#"> គ្រប់គ្រងអប់រំ </a></li>
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-history-kh'){
 								echo 'right_active';
-							}?>" href="#"> ប្រវត្តិវិទ្យា </a></li>
+							}?>" href="#"> ប្រវត្តិវិទ្យា </a></li> -->
 							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-khmer-literature-kh'){
 								echo 'right_active';
-							}?>" href="#"> អក្សរសាស្រ្តខ្មែរ
+							}?>" href="../BachelorDegree/bachelor-khmer-literature.php"> អក្សរសាស្រ្តខ្មែរ
 								</a> </li>
-							<li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-philosophy-kh'){
+							<!-- <li><a class="nav-link item-link <?php if($_SESSION['right'] == 'bachelor-philosophy-kh'){
 								echo 'right_active';
-							}?>" href="#"> ទស្សនៈវិទ្យា </a> </li>
+							}?>" href="#"> ទស្សនៈវិទ្យា </a> </li> -->
 						</ul>
 					</li>
 				</ul>

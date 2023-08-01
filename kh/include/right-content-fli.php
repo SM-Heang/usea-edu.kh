@@ -106,7 +106,7 @@
 								<a class="nav-link item-link
 										<?php if ($_SESSION['right'] == 'bachelor-english-for-translation-kh') {
 											echo 'right_active';
-										} ?>" href="#"> ភាសាអង់គ្លេសសម្រាប់ការបកប្រែ
+										} ?>" href="../BachelorDegree/bachelor-english-for-translation.php"> ភាសាអង់គ្លេសសម្រាប់ការបកប្រែ
 								</a>
 							</li>
 
@@ -114,7 +114,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-english-for-business-kh') {
 											echo 'right_active';
-										} ?>" href="#"> ភាសាអង់គ្លេសសម្រាប់ទំនាក់ទំនងពាណិជ្ជកម្មអន្តរជាតិ
+										} ?>" href="../BachelorDegree/bachelor-english-for-business.php"> ភាសាអង់គ្លេសសម្រាប់ទំនាក់ទំនងពាណិជ្ជកម្មអន្តរជាតិ
 								</a>
 							</li>
 
@@ -122,7 +122,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-tefl-kh') {
 											echo 'right_active';
-										} ?>" href="#"> ការបង្រៀនភាសាអង់គ្លេសជាភាសាបរទេស
+										} ?>" href="../BachelorDegree/bachelor-tefl.php"> ការបង្រៀនភាសាអង់គ្លេសជាភាសាបរទេស
 								</a>
 							</li>
 
@@ -130,7 +130,7 @@
 								<a class="nav-link item-link 
 										<?php if ($_SESSION['right'] == 'bachelor-teaching-english-children-kh') {
 											echo 'right_active';
-										} ?>" href="#"> ការបង្រៀនភាសាអង់គ្លេសដល់កុមារ
+										} ?>" href="../BachelorDegree/bachelor-teaching-english-to-children.php"> ការបង្រៀនភាសាអង់គ្លេសដល់កុមារ
 								</a>
 							</li>
 						</ul>
