@@ -23,6 +23,8 @@ if(isset($_GET['action'])){
 			$stmt->execute();
 			$data = $stmt->fetch(PDO::FETCH_ASSOC);
 			break;
+		case 'scholarhip_university':
+			$sql = "SELECT * FROM usea_scholarship WHERE keyword= 'university'";
 		
 		default:
 			echo "Invalid Data";

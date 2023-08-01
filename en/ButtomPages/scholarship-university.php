@@ -63,8 +63,64 @@ include_once '../../connection/db.connection.php';
                                     <li><i class="fa-solid fa-book-open"></i> គណិតវិទ្យា</li>
                                 </ul>
                                 <ul>
-                                    <li><i class="fa-solid fa-calendar-xmark"></i> <?php echo date('Y-m-d', strtotime($value['expire_date']))?></li>
-                                    <li><i class="fa-solid fa-clock"></i> <?php echo date('h:i:sa', strtotime($value['expire_date']))?></li>
+                                    <li><i class="fa-solid fa-calendar-xmark"></i> ថ្ងៃទី <?php echo date("d",strtotime($value['expire_date']));?> ខែ
+                                <?php 
+                                   $month = date("M",strtotime($value['expire_date']));
+                                    switch($month){
+                                        case "Jan":
+                                            echo "មករា";
+                                        break;
+                                        case "Feb":
+                                            echo "កុម្ភៈ";
+                                        break;
+                                        case "Mar":
+                                            echo "មីនា";
+                                        break;
+                                        case "Apr":
+                                            echo "មេសា";
+                                        break;
+                                        case "May":
+                                            echo "ឧសភា";
+                                        break;
+                                        case "Jun":
+                                            echo "មិថុនា";
+                                        break;
+                                        case "Jul":
+                                            echo "កក្កដា";
+                                        break;
+                                        case "Aug":
+                                            echo "សីហា";
+                                        break;
+                                        case "Sep":
+                                            echo "កញ្ញា";
+                                        break;
+                                        case "Oct":
+                                            echo "តុលា";
+                                        break;
+                                        case "Nov":
+                                            echo "វិច្ឆិការ";
+                                        break;
+                                        case "Dec":
+                                            echo "ធ្នូ";
+                                        break;
+                                        default:
+                                        echo "invalid month";
+                                    }
+
+                                ?> 
+                                ឆ្នាំ<?php echo date("Y",strtotime($value['expire_date']));?></li>
+                                <li><i class="fa-solid fa-clock"></i>  
+                                <?php 
+                                   echo $times =date('h:i ', strtotime($value['expire_date'])); 
+                                   $shift =date('a', strtotime($value['expire_date'])) ;
+                                   if($shift == "pm"){
+                                     echo "ល្ងាច";
+                                   }elseif($shift == "am"){
+                                     echo "ព្រឹក";
+                                   }    
+     
+                                ?></li>
+                                    
                                 </ul>
                             </div>                    
                             

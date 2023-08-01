@@ -339,7 +339,7 @@ body {
 .scholarship-card > .scholarship-info > .row > span{
   color: var(--description-color);
   font-size: 20px;
-  font-family: "Khmer OS Battambang", sans-serif;
+  font-family: "Khmer OS Battambang";
 }
 .scholarship-card > .scholarship-info > .row > ul{
   display: flex;
@@ -350,7 +350,7 @@ body {
   margin-right: 10px;
   color: var(--primary-color);
   font-size: 16px;
-  font-family: "Khmer OS Battambang", sans-serif;
+  font-family: "Khmer OS Battambang";
 }
 
 /* scholarship-detail */

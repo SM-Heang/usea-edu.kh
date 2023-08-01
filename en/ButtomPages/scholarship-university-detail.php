@@ -115,7 +115,7 @@ include_once '../../connection/db.connection.php';
                                 ឆ្នាំ<?php echo date("Y",strtotime($result['expire_date']));?></li>
                                 <li><i class="fa-solid fa-clock"></i>  
                                 <?php 
-                                   echo $times =date('h:i', strtotime($result['expire_date'])); 
+                                   echo $times =date('h:i ', strtotime($result['expire_date'])); 
                                    $shift =date('a', strtotime($result['expire_date'])) ;
                                    if($shift == "pm"){
                                      echo "ល្ងាច";
@@ -132,7 +132,10 @@ include_once '../../connection/db.connection.php';
                 
                 <hr style="border: 1px solid #002060;" width="100%;">
                 <div class="​​col-xxl-12 scholarship-detail text-center">
-                    <img src="../../media/scholarship/AnnounceSch.jpg" alt="" width="100%;">
+                    <div class="container border">
+                         <img src="../../media/scholarship/<?php echo $result['scholarship_detail_img'] ?>" alt="" width="100%;">
+                    </div>
+                   
                     <!-- <div class="scholarship-title">
                         <?php echo $result['scholarship_title_en'];?>
                     </div><br>
