@@ -70,6 +70,8 @@ include_once '../../connection/db.connection.php';
                                 <li><i class="fa-solid fa-calendar-xmark"></i>  ថ្ងៃទី<?php echo date("d",strtotime($result['expire_date']));?> ខែ
                                 <?php 
                                    $month = date("M",strtotime($result['expire_date']));
+                                //    $months = ["មករា", "កុម្ភៈ", "មិនា","មេសា","ឧសភា","មិថុនា","កក្កដា","សីហា","កញ្ញា","តុលា","វិច្ឆិកា","ធ្នូ",];
+                               
                                     switch($month){
                                         case "Jan":
                                             echo "មករា";
@@ -115,7 +117,7 @@ include_once '../../connection/db.connection.php';
                                 ឆ្នាំ<?php echo date("Y",strtotime($result['expire_date']));?></li>
                                 <li><i class="fa-solid fa-clock"></i>  
                                 <?php 
-                                   echo $times =date('h:i ', strtotime($result['expire_date'])); 
+                                   echo $times =date('h:i', strtotime($result['expire_date'])); 
                                    $shift =date('a', strtotime($result['expire_date'])) ;
                                    if($shift == "pm"){
                                      echo "ល្ងាច";
