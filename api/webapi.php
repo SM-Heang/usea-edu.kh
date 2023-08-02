@@ -115,11 +115,29 @@ if(isset($_GET['action'])){
 					'o_educational_level' => $value['i_educational_level'],
 					'o_major' => $value['i_major'],
 					'o_expire_date' => "ថ្ងៃទី " . convertNumber(date("d",strtotime($value['i_expire_date']))) . " ខែ" . convertMonth(date("M",strtotime($value['i_expire_date']))) . " ឆ្នាំ" . convertNumber(date("Y",strtotime($value['i_expire_date']))) ." ម៉ោង". convertNumber(date("h",strtotime($value['i_expire_date']))) . " និង " . convertNumber(date("i",strtotime($value['i_expire_date']))) . "នាទី " . convertShift(date("a",strtotime($value['i_expire_date']))),
-					'o_link' => "http://".$_SERVER['HTTP_HOST']."/usea-edu.kh/en/ButtomPages/scholarship-university-detail.php?id=". $value['id']
+					'o_link' => "http://".$_SERVER['HTTP_HOST']."/en/ButtomPages/scholarship-university-detail.php?id=". $value['id']
 				);
 			}
-
 			$output = $newscholarship;
+			header('Content-Type: application/json');
+			echo json_encode($output);
+			break;
+		case 'career':
+			$sql = "SELECT career_id as id,	career_img as logo,	career_position as position, career_organization as organization FROM usea_career WHERE keyword = 'career'";
+			$stmt = $conn->prepare($sql);
+			$stmt->execute();
+			$career = $stmt->fetchAll(PDO::FETCH_ASSOC);
+			$newcareer = array();
+			foreach ($career as $key => $value) {
+				$newcareer[] = array(
+					'id' => $value['id'],
+					'logo' => "http://".$_SERVER['HTTP_HOST']."/media/career/". $value['logo'],
+					'position' => $value['position'],
+					'organization' => $value['organization'],
+					'link' => "http://".$_SERVER['HTTP_HOST']."/en/ButtomPages/career-detail.php?id=". $value['id']
+				);
+			}
+			$output = $newcareer;
 			header('Content-Type: application/json');
 			echo json_encode($output);
 			break;
