@@ -151,6 +151,10 @@
 											<img src="../../media/nav-icon/event.png" class="nav-icon" width="25px" height="25px">
 											<a class="<?php if($_SESSION['right'] == 'event-s'){ echo 'active';} ?>" href="../Pages/events.php">Events</a>
 										</li>
+										<li class="list-control">
+											<img src="../../media/nav-icon/comment-regular.svg" class="nav-icon" width="25px" height="25px">
+											<a class="<?php if($_SESSION['right'] == 'event-s'){ echo 'active';} ?>" href="../Pages/faq.php">FAQ</a>
+										</li>
 									</ul>
 								</div>
 							</div>

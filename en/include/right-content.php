@@ -65,13 +65,21 @@
 					</li>
 				</ul>
 			</nav>
-			<hr>
 		</div>
-
-
-		<div class="item"><a class="item-link <?php if ($_SESSION['right'] == 'location') {
-			echo 'right_active';
-		} ?>" href="location.php"> Location </a></div>
+		<div class="item">
+			<nav class="sidebar">
+				<ul class="nav flex-column">
+				<hr>
+				<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'location') {
+															echo 'right_active';
+														} ?>" href="location.php"> Location </a></li>
+				<hr>
+				<li> <a class="nav-link item-link <?php if ($_SESSION['right'] == 'faq') {
+															echo 'right_active';
+														} ?>" href="faq.php"> FAQ </a></li>
+				</ul>
+			</nav>
+		</div>
 	</div>
 	
 </div>
