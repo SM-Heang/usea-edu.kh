@@ -1,6 +1,6 @@
 	<div class="col-xxl-3">
 	<div class="right-content-economic">
-		<div class="item"><a class="item-link nav-item <?php if($_SESSION['right'] == 'post-graduate'){ echo 'right_active';} ?>"
+		<div class="item"><a class="item-link nav-item <?php if($_SESSION['right'] == 'post-graduate-kh'){ echo 'right_active';} ?>"
 				href="../vission-Mission/vision-mission-post-graduate.php">ចក្ខុវិស័យ​ និងបេសកកម្ម</a></div>
 		<hr>
 		<div class="item">

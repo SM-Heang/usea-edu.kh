@@ -25,14 +25,9 @@ include_once '../../connection/db.connection.php';
 					</a>
 				</li>
 				<li>
-					<a href="#">ទំព័រដើម > </a>
+					<a href="#">ថ្នាក់បរិញ្ញាបត្ររង ឯកទេស ទីផ្សារ </a>
 				</li>
-				<li>
-					<a href="#">សិក្សាធិការ > </a>
-				</li>
-				<li>
-					<a href="#">ទីផ្សារ </a>
-				</li>
+				
 			</ul>
 		</div>
 	</div>

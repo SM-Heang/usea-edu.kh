@@ -43,7 +43,7 @@
 						</a>
 						
 						<ul class="submenu collapse <?php
-													if ($_SESSION['right'] == 'upcoming_events' || $_SESSION['right'] == 'event-s-kh' ) {
+													if ($_SESSION['right'] == 'upcoming-events-kh' || $_SESSION['right'] == 'event-s-kh' ) {
 														echo "show";
 													}
 													?>">

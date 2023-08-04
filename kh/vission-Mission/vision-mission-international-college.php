@@ -1,5 +1,5 @@
 <?php 
-	$page = 'academics';
+	$page = 'academics_kh';
 		if(session_status() === PHP_SESSION_NONE){
 			session_start();
 		}
@@ -36,7 +36,7 @@
 			<!-- Start Content-->
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
-					<div class="row title-text" style="color: white; font-size: 16pt; padding: 5pt;">
+					<div class="row title-text">
                     មហាវិទ្យាល័យអន្តរជាតិ
 					</div>
 				</div>
