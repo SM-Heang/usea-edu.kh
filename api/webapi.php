@@ -52,6 +52,34 @@ function convertMonth($month){
         return "invalid month";
     }
 }
+// convert en to kh day of the week
+function convertWeekDay($days){
+    switch($days){
+        case "Mon":
+            return "ច័ន្ទ";
+        break;
+        case "Tue":
+            return "អង្គារ";
+        break;
+        case "Wed":
+            return "ពុធ";
+        break;
+        case "Thu":
+            return "ព្រហស្បតិ៍";
+        break;
+        case "Fri":
+            return "សុក្រ";
+        break;
+        case "Sat":
+            return "សៅរ៍";
+        break;
+        case "Sun":
+            return "អាទិត្យ";
+        break;
+        default:
+        return "invalid month";
+    }
+}
 // convert shift
 function convertShift($shift){
     if($shift == "pm"){
@@ -64,10 +92,37 @@ function convertShift($shift){
 if(isset($_GET['action'])){
 	switch ($_GET['action']) {
 		case 'registration_info':
-			$sql = "SELECT * FROM usea_admission";
+			$sql = "SELECT
+			admission_title as title,
+			date_title,
+			degree_name as education_name,
+			degree_info as info,
+			time_title,
+			time_detail FROM usea_admission";
 			$stmt=$conn->prepare($sql);
 			$stmt->execute();
-			$data = $stmt->fetch(PDO::FETCH_ASSOC);
+			$admission = $stmt->fetchAll(PDO::FETCH_ASSOC);
+			// var_dump($admission);
+			$newadmission = array();
+			foreach ($admission as $key => $value) {
+				$newadmission[] = array(
+					'title' => $value['title'],
+					'detail' => array(
+						'date_title' => $value['date_title'],
+						'education_list' => array(
+							'education_name' => $value['education_name'],
+							'list' => array(
+								'info' => $value['info']
+							)
+						),
+						'time_title' => $value['time_title'],
+						'time_detail' => $value['time_detail']
+					)
+				);
+			}
+			$output = $newadmission;
+			header('Content-Type: application/json');
+			echo json_encode($output);
 			break;
 		case 'scholarship_university':
 			$sql = "SELECT 
@@ -140,6 +195,133 @@ if(isset($_GET['action'])){
 			$output = $newcareer;
 			header('Content-Type: application/json');
 			echo json_encode($output);
+			break;
+		case 'faq':
+			$sql = "SELECT faq_id as id, faq_question as question, faq_answer as answer FROM usea_faq";
+			$stmt = $conn->prepare($sql);
+			$stmt->execute();
+			$faq = $stmt->fetchAll(PDO::FETCH_ASSOC);
+			$newfaq = array();
+			foreach ($faq as $key => $value) {
+				$newfaq[] = array(
+					'id' => $value['id'],
+					'question' => $value['question'],
+					'answer' => str_replace(array("<li>","</li>"), array("\n",""), strip_tags($value['answer'], array("<li>")))
+				);
+			}
+			header('Content-Type: application/json');
+			echo json_encode($newfaq);
+			break;
+		case 'past_events':
+			$sql = "SELECT 
+			event_id as id,
+			event_cover as past_image,
+			event_title_kh as past_title,
+			event_description_kh as past_desc,
+			event_date as past_date FROM usea_events WHERE event_status = 'past' ORDER BY event_id DESC LIMIT 10
+			";
+			$stmt=$conn->prepare($sql);
+			$stmt->execute();
+			$past_events = $stmt->fetchAll(PDO::FETCH_ASSOC);
+			$new_past_events = array();
+			foreach ($past_events as $key => $value) {
+				// if($value['past_image']&&$value['past_title'] == null){
+				// 	echo $value['past_image'] = $value['past_title'] = "Null";
+				// }
+				if($value['past_desc'] == null){
+					$value['past_desc'] = "";
+				}else{
+					$value['past_desc'] = str_replace(array("&nbsp;", "<br>"), array("", "\n"),strip_tags($value['past_desc'], "<br>"));
+				}
+				$new_past_events[] = array(
+					'id' => $value['id'],
+					'past_image' => "http://".$_SERVER['HTTP_HOST']."/media/events/". $value['past_image'],
+					'past_title' => $value['past_title'],
+					'past_desc' =>	$value['past_desc'] ,
+
+					'past_day' => convertWeekDay(date('D', strtotime($value['past_date']))),
+					'past_date' => convertNumber(date('d', strtotime($value['past_date']))),
+					'past_month' => convertMonth(date('M', strtotime($value['past_date']))),
+					'past_year' => convertNumber(date('Y', strtotime($value['past_date']))),
+					'past_time' => "៩:00 ព្រឹក"
+				);
+			}
+			header('Content-Type: application/json');
+			echo json_encode($new_past_events);
+			// var_dump($new_past_events['past_desc']);
+			break;
+		case 'upcoming_events':
+			$sql = "SELECT 
+			event_id as id,
+			event_cover as upcoming_image,
+			event_title_kh as upcoming_title,
+			event_description_kh as upcoming_desc,
+			event_date as upcoming_date FROM usea_events WHERE event_status = 'upcoming' ORDER BY event_id DESC LIMIT 10
+			";
+			$stmt=$conn->prepare($sql);
+			$stmt->execute();
+			$upcoming_events = $stmt->fetchAll(PDO::FETCH_ASSOC);
+			$new_upcoming_events = array();
+			foreach ($upcoming_events as $key => $value) {
+				// if($value['upcoming_image']&&$value['upcoming_title'] == null){
+				// 	echo $value['upcoming_image'] = $value['upcoming_title'] = "Null";
+				// }
+				if($value['upcoming_desc'] == null){
+					$value['upcoming_desc'] = "";
+				}else{
+					$value['upcoming_desc'] = str_replace("&nbsp;", "",strip_tags($value['upcoming_desc']));
+				}
+				$new_upcoming_events[] = array(
+					'id' => $value['id'],
+					'upcoming_image' => "http://".$_SERVER['HTTP_HOST']."/media/events/". $value['upcoming_image'],
+					'upcoming_title' => $value['upcoming_title'],
+					'upcoming_desc' =>	$value['upcoming_desc'],
+					'upcoming_day' => convertWeekDay(date('D', strtotime($value['upcoming_date']))),
+					'upcoming_date' => convertNumber(date('d', strtotime($value['upcoming_date']))),
+					'upcoming_month' => convertMonth(date('M', strtotime($value['upcoming_date']))),
+					'upcoming_year' => convertNumber(date('Y', strtotime($value['upcoming_date']))),
+					'upcoming_time' => "៩:00 ព្រឹក"
+				);
+			}
+			header('Content-Type: application/json');
+			echo json_encode($new_upcoming_events);
+			// var_dump($new_past_events['past_desc']);
+			break;
+		case 'slide_home':
+			$sql = "SELECT slide_image_name as image_url FROM usea_slide_show WHERE keyword = 'home' && slide_status = 1";
+			$stmt=$conn->prepare($sql);
+			$stmt->execute();
+			$image_url = $stmt->fetchAll(PDO::FETCH_ASSOC);
+			$new_image_url = array();
+			foreach ($image_url as $key => $value) {
+				$new_image_url[] = array(
+					'image_url' => "http://".$_SERVER['HTTP_HOST']."/media/slider/". $value['image_url'],
+				);
+			}
+			header('Content-Type: application/json');
+			echo json_encode($new_image_url);
+			break;
+		case 'yt_video':
+			$sql = "SELECT video_id  as id,
+			thumbnail as youtube_thumbnail,
+			video_title_kh as title,
+			video_caption_en as caption,
+			link FROM usea_video";
+			$stmt=$conn->prepare($sql);
+			$stmt->execute();
+			$yt_video = $stmt->fetchAll(PDO::FETCH_ASSOC);
+			$newyt_video = array();
+			foreach ($yt_video as $key => $value) {
+				$newyt_video[] = array(
+					'id' => $value['id'],
+					'youtube_thumbnail' => $value['youtube_thumbnail'],
+					'title' => $value['title'],
+					'caption' => $value['caption'],
+					'link' => $value['link']
+				);
+			}
+			header('Content-Type: application/json');
+			echo json_encode($newyt_video);
 			break;
 		default:
 			echo "Invalid Data";

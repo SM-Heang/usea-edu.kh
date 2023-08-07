@@ -49,16 +49,19 @@ include_once '../../connection/db.connection.php';
 				$stmt = $conn->prepare("SELECT * from usea_admission");
 				$stmt->execute();
 				$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-				// echo "<pre>";
-				// print_r($result);
-				// echo "</pre>";
+				echo "<pre>";
+				print_r($result);
+				echo "</pre>";
+                foreach($result as $key => $value){
+                    
+                
 				?>
                <div class="container">
-                        <h3>កាលបរិច្ឆេទចូលរៀន និងម៉ោងសិក្សាសម្រាប់កម្មវិធីសិក្សាថ្ងៃច័ន្ទ ដល់ថ្ងៃសៅរ៍</h3>
+                        <h3><?php echo $value['admission_title']; ?></h3>
                     <div class="enrolment-date">
-                        <h4><i class="fa-solid fa-hand-point-right"></i> កាលបរិច្ឆេទចូលរៀនសម្រាប់ថ្នាក់បរិញ្ញាបត្ររង និងបរិញ្ញាបត្រដូចខាងក្រោម៖</h4>
+                        <h4><i class="fa-solid fa-hand-point-right"></i> <?php echo $value['date_title']; ?></h4>
                         <div>
-                            <h4>ថ្នាក់បរិញ្ញាបត្ររង</h4>
+                            <h4>ថ្នាក់បរិញ្ញាបត្ររង static</h4>
                             <ul>
                                 <li>វគ្គសិក្សាទី១ ចូលរៀនថ្ងៃទី ១៦ ខែ មករា ឆ្នាំ២០២៣</li>
                                 <li>វគ្គសិក្សាទី២ ចូលរៀនថ្ងៃទី ១៣ ខែ កុម្ភៈ ឆ្នាំ២០២៣</li>
@@ -85,7 +88,7 @@ include_once '../../connection/db.connection.php';
                         </div>
                     </div>                                           
                </div>
-               
+               <?php } ?>
 
             </div>
         </div>
