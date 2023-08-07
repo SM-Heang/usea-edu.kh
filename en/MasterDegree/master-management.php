@@ -41,8 +41,8 @@
 		<div class="row">
 			<!-- Start Content-->
 			<div class="col-xxl-9">
-				<div class="container" style="background-color:#002060;">
-					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
+				<div class="container title-bg">
+					<div class="row title-txt">
 					Master's Degree in Management
 					</div>
 				</div>
@@ -64,12 +64,12 @@
 					<?php } ?>
 					<section>
 						<div class="container">
-							<div class="nav-header ml-5">
-								<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-									<li class="nav-item" role="presentation">
+							<div class="nav-header justify-content-center align-items-center px-0 px-lg-5">
+								<ul class="nav nav-pills d-block d-lg-flex" id="pills-tab" role="tablist">
+									<li class="nav-item mt-0" role="presentation">
 										<button class="nav-link active" id="pills-y1-tab" data-bs-toggle="pill" data-bs-target="#pills-y1" type="button" role="tab" aria-controls="pills-y1" aria-selected="true">Year One</button>
 									</li>
-									<li class="nav-item" role="presentation">
+									<li class="nav-item mt-2 mt-lg-0" role="presentation">
 										<button class="nav-link" id="pills-y2-tab" data-bs-toggle="pill" data-bs-target="#pills-y2" type="button" role="tab" aria-controls="pills-y2" aria-selected="false">Year Two</button>
 									</li>									
 								</ul>

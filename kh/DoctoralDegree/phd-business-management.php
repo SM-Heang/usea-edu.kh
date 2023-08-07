@@ -37,7 +37,7 @@
 			<!-- Start Content-->
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
-					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
+					<div class="row title-text">
 					ថ្នាក់បណ្ឌិត ឯកទេស គ្រប់គ្រងពាណិជ្ជកម្ម
 					</div>
 				</div>

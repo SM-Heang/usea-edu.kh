@@ -3,7 +3,7 @@
 		if(session_status() === PHP_SESSION_NONE){
 			session_start();
 		}
-		$_SESSION['page'] = 'vision-mission-law';
+		$_SESSION['page'] = $page;
 		$_SESSION['right'] = 'faculty-science-art-human';
 
 	include_once '../include/header.php';
@@ -34,8 +34,8 @@
 		<div class="row">
 			<!-- Start Content-->
 			<div class="col-xxl-9">
-				<div class="container" style="background-color:#002060;">
-					<div class="row title-text" style="color: white; font-size: 16pt; padding: 5pt;">
+				<div class="container title-bg">
+					<div class="row title-txt">
 					Faculty of Arts, Humanities & Education
 					</div>
 				</div>

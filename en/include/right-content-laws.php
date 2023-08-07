@@ -54,11 +54,13 @@
 						<a class="nav-link item-link select-btn-2" href="#"> Bachelor's Degree
 							<?php
 							if (
-								$_SESSION['right'] == 'bachelor-laws' || 'bachelor-public-admin' || 'bachelor-international-relations'
+								$_SESSION['right'] == 'bachelor-laws' || 
+								$_SESSION['right'] == 'bachelor-public-admin' || 
+								$_SESSION['right'] == 'bachelor-international-relations'
 							) {
-								echo '<i class="fa-solid fa-angle-up i_1"></i>';
+								echo '<i class="fa-solid fa-angle-up i_2"></i>';
 							} else {
-								echo '<i class="fa-solid fa-angle-down i_1"></i>';
+								echo '<i class="fa-solid fa-angle-down i_2"></i>';
 							}
 							?>
 						</a>

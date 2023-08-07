@@ -12,52 +12,52 @@
 						<a class="nav-link item-link select-btn" href="../AssociateDegree/finance-banking.php">Associate's Degree
 
 							<?php
-							if (
-								$_SESSION['page'] == 'finance_banking_kh' ||
-								$_SESSION['page'] == 'management_kh' ||
-								$_SESSION['page'] == 'accounting_kh' ||
-								$_SESSION['page'] == 'marketing_kh' ||
-								$_SESSION['page'] == 'tourism_kh'
-							) {
+							//if (
+							//	$_SESSION['page'] == 'finance_banking_kh' ||
+							//	$_SESSION['page'] == 'management_kh' ||
+							//	$_SESSION['page'] == 'accounting_kh' ||
+							//	$_SESSION['page'] == 'marketing_kh' ||
+							//	$_SESSION['page'] == 'tourism_kh'
+							//) {
 
-								echo '<i class="fa-solid fa-angle-up i_1"></i>';
-							} else {
-								echo '<i class="fa-solid fa-angle-down i_1"></i>';
-							}
+							//	echo '<i class="fa-solid fa-angle-up i_1"></i>';
+							//} else {
+							//	echo '<i class="fa-solid fa-angle-down i_1"></i>';
+							//}
 							?>
 
 						</a>
 						<ul class="submenu collapse
 						
 						<?php
-						if (
-							$_SESSION['page'] == 'finance_banking_kh' ||
-							$_SESSION['page'] == 'management_kh' ||
-							$_SESSION['page'] == 'accounting_kh' ||
-							$_SESSION['page'] == 'marketing_kh' ||
-							$_SESSION['page'] == 'tourism_kh'
-						) {
-							echo "show";
-						}
+						//if (
+						//	$_SESSION['page'] == 'finance_banking_kh' ||
+						//	$_SESSION['page'] == 'management_kh' ||
+						//	$_SESSION['page'] == 'accounting_kh' ||
+						//	$_SESSION['page'] == 'marketing_kh' ||
+						//	$_SESSION['page'] == 'tourism_kh'
+						//) {
+						//	echo "show";
+						//}
 						?>
 						
 						">
-							<li><a class="nav-link item-link <?php if ($_SESSION['page'] == 'accounting_kh') {
-								echo 'right_active';
-							} ?>" href="../AssociateDegree/accounting.php"> Accounting  </a></li>
+							<li><a class="nav-link item-link <?php //if ($_SESSION['page'] == 'accounting_kh') {
+							//	echo 'right_active';
+							//} ?>" href="../AssociateDegree/accounting.php"> Accounting  </a></li>
 							
-							<li><a class="nav-link item-link <?php if ($_SESSION['page'] == 'finance_banking_kh') {
-								echo 'right_active';
-							} ?>" href="../AssociateDegree/finance-banking.php">Finance & Banking </a></li>
-																<li><a class="nav-link item-link <?php if ($_SESSION['page'] == 'management_kh') {
-																	echo 'right_active';
-																} ?>" href="../AssociateDegree/management.php"> Management </a></li>
-							<li><a class="nav-link item-link <?php if ($_SESSION['page'] == 'marketing_kh') {
-								echo 'right_active';
-							} ?>" href="../AssociateDegree/marketing.php"> Marketing </a> </li>
-							<li><a class="nav-link item-link <?php if ($_SESSION['page'] == 'tourism_kh') {
-								echo 'right_active';
-							} ?>" href="../AssociateDegree/tourism.php"> Tourism </a> </li>
+							<li><a class="nav-link item-link <?php// if ($_SESSION['page'] == 'finance_banking_kh') {
+							//	echo 'right_active';
+							//} ?>" href="../AssociateDegree/finance-banking.php">Finance & Banking </a></li>
+																<li><a class="nav-link item-link <?php// if ($_SESSION['page'] == 'management_kh') {
+																//	echo 'right_active';
+																//} ?>" href="../AssociateDegree/management.php"> Management </a></li>
+							<li><a class="nav-link item-link <?php// if ($_SESSION['page'] == 'marketing_kh') {
+								//echo 'right_active';
+							//} ?>" href="../AssociateDegree/marketing.php"> Marketing </a> </li>
+							<li><a class="nav-link item-link <?php// if ($_SESSION['page'] == 'tourism_kh') {
+							//	echo 'right_active';
+							//} ?>" href="../AssociateDegree/tourism.php"> Tourism </a> </li>
 						</ul>
 					</li>
 				</ul>
@@ -68,8 +68,8 @@
 		<div class="item">
 			<nav class="sidebar">
 				<ul class="nav flex-column" id="nav_accordion">
-					<li class="nav-item has-submenu select-menu-2">
-						<a class="nav-link item-link select-btn-2" href="right-content-economic.php"> ថ្នាក់បិញ្ញាបត្រ
+					<li class="nav-item has-submenu select-menu">
+						<a class="nav-link item-link select-btn" href="right-content-economic.php"> ថ្នាក់បិញ្ញាបត្រ
 							<!-- <i class="fas fa-angle-down"></i> -->
 
 							<?php
@@ -80,9 +80,9 @@
 								$_SESSION['right'] == 'bachelor-teaching-english-children-kh'
 							) {
 
-								echo '<i class="fa-solid fa-angle-up i_2"></i>';
+								echo '<i class="fa-solid fa-angle-up i_1"></i>';
 							} else {
-								echo '<i class="fa-solid fa-angle-down i_2"></i>';
+								echo '<i class="fa-solid fa-angle-down i_1"></i>';
 							}
 							?>
 

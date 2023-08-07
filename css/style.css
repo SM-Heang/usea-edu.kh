@@ -42,6 +42,20 @@ body {
 .tab-pane > table {
   animation: moving 1s ease;
 }
+
+table, th,td{
+  border: none !important;
+}
+
+table th,td{
+  border: none !important;
+}
+
+.tab-pane > table > tbody td{
+  border: none !important;
+  border-bottom: 1px solid grey !important;
+}
+
 @keyframes moving {
   from {
     transform: translateX(1000px);
@@ -316,6 +330,16 @@ body {
   color: var(--primary-color);
   /* font-family: var(--font-kh); */
   text-align: justify;
+}
+
+.title-bg{
+  background-color: var(--primary-color);
+}
+
+.title-txt{
+  color: white;
+  font-size: 14.4px !important;
+  padding: 5pt;
 }
 
 /* scholarship */
@@ -789,6 +813,13 @@ body {
   color: var(--primary-color);
 }
 
+@media screen and (min-width: 1399px) {
+
+  .title-txt{
+    font-size: 18px !important;
+  }
+}
+
 @media screen and (max-width: 1399px) {
   .navbar-parent .wrapper {
     margin: 0;
@@ -826,6 +857,12 @@ body {
   .fh5co-footer .container p {
     font-size: 1.25rem;
   }
+
+  .title-txt{
+    font-size: 18px !important;
+  }
+
+
 }
 
 @media screen and (max-width: 1199px) {
@@ -932,6 +969,21 @@ body {
     font-size: 0.9rem;
     font-weight: bold;
   }
+
+  .tab-pane > table > thead span {
+    font-size: 14.4px !important;
+  }
+  .tab-pane > table > tbody span {
+    font-size: 14.4px !important;
+  }
+  .nav-header > .nav-pills > .nav-item > .nav-link{
+    font-size: 14.4px; 
+  }
+
+  .title-txt{
+    font-size: 14.4px !important;
+  }
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -955,6 +1007,15 @@ body {
   .mega-link .list-control .nav-icon {
     margin-top: 0px;
   }
+}
+
+@media screen and (max-width: 988px) {
+  .nav-header > .nav-pills > .nav-item > .nav-link{
+    font-size: 14.4px;
+    margin: auto !important;
+    width: 243px;
+  }
+
 }
 
 /* =============================== */
@@ -994,6 +1055,19 @@ body {
     margin-top: 0px;
   }
 }
+
+@media screen and (max-width: 605px) {
+
+  .tab-pane > table{
+    width: fit-content !important;
+    padding: 0 !important;
+    margin: auto !important;
+    display: block !important;
+    border: none !important;
+  }
+
+}
+
 #partnership-int .partnership-title {
   font-family: Khmer OS Content !important;
   color: var(--primary-color);
