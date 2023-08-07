@@ -3,6 +3,7 @@
 	if(session_status() === PHP_SESSION_NONE){
 		session_start();
 	}
+	$_SESSION['page'] = $page;
 	$_SESSION['right_economic'] = $page;
 	$_SESSION['right'] = 'bachelor-international-relations-kh';
 
@@ -42,7 +43,7 @@
 			<!-- Start Content-->
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
-					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
+					<div class="row title-text">
 					ថ្នាក់បរិញ្ញាបត្រ ឯកទេស វិទ្យាសាស្ត្រនយោបាយ និងទំនាក់ទំនងអន្តរជាតិ
 					</div>
 				</div>
@@ -65,18 +66,18 @@
 
 					<section>
 						<div class="container">
-							<div class="nav-header ml-5">
-								<ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
-									<li class="nav-item" role="presentation">
+						<div class="nav-header justify-content-center align-items-center px-0 px-lg-5">
+								<ul class="nav nav-pills d-block d-lg-flex" id="pills-tab" role="tablist">
+									<li class="nav-item mt-0" role="presentation">
 										<button class="nav-link active" id="pills-ges-tab" data-bs-toggle="pill" data-bs-target="#pills-ges" type="button" role="tab" aria-controls="pills-ges" aria-selected="true">General Education Subjects</button>
 									</li>
-									<li class="nav-item" role="presentation">
+									<li class="nav-item mt-2 mt-lg-0" role="presentation">
 										<button class="nav-link" id="pills-cms-tab" data-bs-toggle="pill" data-bs-target="#pills-cms" type="button" role="tab" aria-controls="pills-cms" aria-selected="false">Core Major Subjects</button>
 									</li>
-									<li class="nav-item" role="presentation">
+									<li class="nav-item mt-2 mt-lg-0" role="presentation">
 										<button class="nav-link" id="pills-bms-tab" data-bs-toggle="pill" data-bs-target="#pills-bms" type="button" role="tab" aria-controls="pills-bms" aria-selected="false">Basic Major Subjects</button>
 									</li>
-									<li class="nav-item" role="presentation">
+									<li class="nav-item mt-2 mt-lg-0" role="presentation">
 										<button class="nav-link" id="pills-mis-tab" data-bs-toggle="pill" data-bs-target="#pills-mis" type="button" role="tab" aria-controls="pills-mis" aria-selected="false">Minor Subjects</button>
 									</li>
 								</ul>

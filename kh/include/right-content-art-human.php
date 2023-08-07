@@ -3,7 +3,7 @@
 		<div class="item"><a class="item-link <?php if($_SESSION['right'] == 'faculty-science-art-human-kh'){
 			echo 'right_active';
 		}?>"
-				href="../vission-Mission/vision-mision-corevalue-science-technology.php">ចក្ខុវិស័យ និងបេសកកម្ម</a></div>
+				href="../vission-Mission/vision-mision-corevalue-art-humanities.php">ចក្ខុវិស័យ និងបេសកកម្ម</a></div>
 		<hr>
 		<div class="item">
 		</div>

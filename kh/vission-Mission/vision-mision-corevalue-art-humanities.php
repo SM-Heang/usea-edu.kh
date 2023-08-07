@@ -3,7 +3,7 @@
 		if(session_status() === PHP_SESSION_NONE){
 			session_start();
 		}
-		$_SESSION['page'] = 'vision-mission-law-kh';
+		$_SESSION['page'] = $page;
 		$_SESSION['right'] = 'faculty-science-art-human-kh';
 
 	include_once '../include/header.php';
@@ -35,7 +35,7 @@
 			<!-- Start Content-->
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
-					<div class="row title-text" style="color: white; font-size: 16pt; padding: 5pt;">
+					<div class="row title-text">
 						ចក្ខុវិស័យ និងបេសកកម្ម
 					</div>
 				</div>

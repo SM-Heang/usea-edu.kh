@@ -34,7 +34,7 @@
 			<!-- Start Content-->
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
-					<div class="row title-text" style="color: white; font-size: 16pt; padding: 5pt;">
+					<div class="row title-text">
 						ដៃគូរសហការ
 					</div>
 				</div>
@@ -56,7 +56,7 @@
 								<p class="partnership-title"><?php echo $value['partnership_title_en'];?></p>
 								<p class="partnership-date"><?php echo "<strong>MOU Signed</strong> : " .date('d M Y', strtotime($value['signed_date']));?></p>
 								<div style="text-align: right;">
-									<a href="partnership-local-detail.php?id=<?php echo $value['partnership_id'] ?>" class="btn btn-danger">អានបន្ថែម</a>
+									<a href="partnership-local-detail.php?id=<?php echo $value['partnership_id'] ?>" class="btn btn-sm px-3 py-1 event-btn">អានបន្ថែម</a>
 								</div>
 						
 						</div>

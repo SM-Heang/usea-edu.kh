@@ -50,7 +50,7 @@
 					<img src="../../media/g1.jpg" width="180px" height="130px">
 					<p class="txt_reco" style="margin-left: 10px; text-align: justify;">Goverment There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,</p>
 				</div>
-				<a class="btn btn-danger" style="float: right; margin-top: 0px;"><span style="font: 'Khmer OS Siemreap'; font-size: 12pt;">ទាញយក</span></a>
+				<a href="../../media/goverment-recognition.rar" class="btn btn-sm px-3 py-1 event-btn" style="float: right; margin-top: 0px;" Download ><span>ទាញយក</span></a>
 				<br>
 				<hr class="mt-5 mb-5" style="color: #002060;">
 
@@ -58,7 +58,7 @@
 					<img src="../../media/m1.jpg" width="200px" height="150px">
 					<p class="txt_reco" style="margin-left: 10px; text-align: justify;">MOEYS There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,</p>
 				</div>
-				<a class="btn btn-danger" style="float: right; margin-top: 0px;">ទាញយក </a>
+				<a href="../../media/moey-recognition.rar" class="btn btn-sm px-3 py-1 event-btn" style="float: right; margin-top: 0px;" Download >ទាញយក </a>
 				<br>
 				<hr class="mt-5 mb-5" style="color: #002060;">
 
@@ -66,7 +66,7 @@
 					<img src="../../media/ACC.jpg" width="180px" height="130px">
 					<p class="txt_reco" style="margin-left: 10px; text-align: justify;">ACC There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,</p>
 				</div>
-				<a class="btn btn-danger" style="float: right; margin-top: 0px;">ទាញយក </a>
+				<a href="../../media/ACC.jpg" class="btn btn-sm px-3 py-1 event-btn" style="float: right; margin-top: 0px;" Download >ទាញយក </a>
 				<br>
 				<hr class="mt-5 mb-5" style="color: #002060;">
 
@@ -74,7 +74,7 @@
 					<img src="../../media/AUN.jpg" width="180px" height="130px">
 					<p class="txt_reco" style="margin-left: 10px; text-align: justify;">AUN There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,</p>
 				</div>
-				<a class="btn btn-danger" style="float: right; margin-top: 0px;">ទាញយក </a>
+				<a href="../../media/AUN.jpg" class="btn btn-sm px-3 py-1 event-btn" style="float: right; margin-top: 0px;" Download >ទាញយក </a>
 				<br>
 				<hr class="mt-5 mb-5" style="color: #002060;">
 			</div>

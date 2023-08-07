@@ -38,7 +38,7 @@
 			<!-- Start Content-->
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
-					<div class="row title-text" style="color: white; font-size: 16pt; padding: 5pt;">
+					<div class="row title-text">
                         ព្រឹត្តិការណ៍នាពេលខាងមុខ
 					</div>
 				</div>
@@ -69,7 +69,7 @@
 					    <p class="card-text" ><?php echo substr($value['event_description_kh'],0 ,0) ?></p>
 					  </div>
 					  <div style="text-align: right;">
-					  	<a href="#" class="btn btn-danger btn-sm">អានបន្ថែម</a>
+					  	<a href="#" class="btn btn-sm event-btn px-3 py-1">អានបន្ថែម</a>
 					  </div>
 					</div>
 				</div>
