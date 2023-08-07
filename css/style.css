@@ -928,7 +928,7 @@ table th,td{
   .nav-link li a {
     color: var(--primary-color);
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 12pt !important;
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 5px;
@@ -981,8 +981,29 @@ table th,td{
   }
 
   .title-txt{
-    font-size: 14.4px !important;
+    font-size: 12pt !important;
   }
+
+  .right-content-economic .item .item-link {
+    padding: 0.9rem;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 12pt !important;
+    font-weight: 700;
+  }
+
+  #footer-location {
+    font-size: 12pt !important;
+  }
+  
+  #row-parent #button-content ul li a {
+    font-size: 12pt !important;
+  }
+
+  .copyright {
+    font-size: 12pt !important;
+  }
+
 
 }
 
@@ -1302,7 +1323,7 @@ table th,td{
   }
 
   #row-parent #button-content ul li a {
-    font-size: 12pt;
+    font-size: 0.9rem !important;
     color: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
@@ -1313,13 +1334,26 @@ table th,td{
   }
 
   #footer-location {
-    font-size: 0.9rem;
+    font-size: 0.9rem !important;
     color: white;
   }
 
   .copyright {
-    font-size: 0.9rem;
+    font-size: 0.9rem !important;
   }
+
+  .title-txt{
+    font-size: 0.9rem !important;
+  }
+
+  .right-content-economic .item .item-link {
+    padding: 0.9rem;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 0.9rem !important;
+    font-weight: 700;
+  }
+
 }
 
 #dropdown-menu {

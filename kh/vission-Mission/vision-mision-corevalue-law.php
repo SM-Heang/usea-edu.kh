@@ -20,7 +20,7 @@
 					</a>
 					</li>
 					<li>
-						<a href="#">ចក្ខុវិស័យ និងបេសកកម្ម</a>
+						<a href="#">មហាវិទ្យាល័យវិទ្យាសាស្រ្តសង្គម និងនីតិសាស្រ្ត</a>
 					</li>
 				</ul>
 			</div>
@@ -35,8 +35,8 @@
 			<!-- Start Content-->
 			<div class="col-xxl-9">
 				<div class="container" style="background-color:#002060;">
-					<div class="row title-text" style="color: white; font-size: 16pt; padding: 5pt;">
-						ចក្ខុវិស័យ និងបេសកកម្ម
+					<div class="row title-text">
+						មហាវិទ្យាល័យវិទ្យាសាស្រ្តសង្គម និងនីតិសាស្រ
 					</div>
 				</div>
 				<div id="content-detail">

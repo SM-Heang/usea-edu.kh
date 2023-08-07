@@ -69,7 +69,7 @@
 					    <p class="card-text" ><?php echo substr($value['event_description_en'],0 ,0) ?></p>
 					  </div>
 					  <div style="text-align: right;">
-					  	<a href="#" class="btn btn-danger btn-sm">Read More</a>
+					  	<a href="#" class="btn btn-sm event-btn px-3 py-1">Read More</a>
 					  </div>
 					</div>
 				</div>

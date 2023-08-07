@@ -408,7 +408,7 @@ table th,td{
 
 /* Start core value meaning Detail*/
 .title-text{
-  color: white;
+  color: white !important;
   font-size: 14.4px !important;
   padding: 5pt;
 }
@@ -834,33 +834,33 @@ table th,td{
 
   .mega-box #nav-about {
     height: 215px !important;
-    width: 593px !important;
+    width: 627px !important;
   }
 
   .mega-box #nav-academics {
     height: 225px !important;
-    width: 593px !important;
+    width: 607px !important;
   }
 
   .mega-box #nav-research {
     height: 175px !important;
-    width: 440px !important;
+    width: 431px !important;
   }
 
   .nav-link .mega-box {
     position: absolute;
     top: 150px !important;
-    left: 52.35% !important;
+    left: 48.59% !important;
   }
 
   #e-mega-box{
-    left: 65.45% !important;
+    left: 66.38% !important;
   }
 
   .nav-link li a {
     color: var(--primary-color);
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 12pt !important;
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 5px;
@@ -897,14 +897,18 @@ table th,td{
     font-weight: bold;
   }
 
+  .right-content-economic .item .item-link {
+    font-size: 12pt !important;
+  }
+
   #footer-location{
     background-color: var(--primary-color);
     color: white;
     padding: 20px;
-    font-size: 0.9rem !important;
+    font-size: 12pt !important;
   }
   .copyright p {
-    font-size: 0.9rem;
+    font-size: 12pt !important;
   }
 
   #partnership {
@@ -921,7 +925,7 @@ table th,td{
 
   .title-text{
     color: white;
-    font-size: 14.4px !important;
+    font-size: 12pt !important;
     padding: 5pt;
   }
 
@@ -939,6 +943,13 @@ table th,td{
 
   .nav-header > .nav-pills > .nav-item > .nav-link{
     font-size: 14.4px; 
+  }
+
+  #button-content ul li a {
+    font-size: 12pt !important;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
   }
 
 }
@@ -1277,6 +1288,11 @@ table th,td{
     font-size: 0.75rem;
   }
 
+  .right-content-economic .item .item-link {
+    font-size: 0.9rem !important;
+    padding: 0.5rem !important;
+  }
+
   #row-parent {
     margin: auto;
     padding: 0px;
@@ -1293,17 +1309,17 @@ table th,td{
   }
 
   #footer-location {
-    font-size: 0.9rem;
+    font-size: 0.9rem !important;
     color: white;
   }
 
-  .copyright {
-    font-size: 0.9rem;
+  .copyright p {
+    font-size: 0.9rem !important;
   }
 
   #button-content ul li a {
     font-family: "Khmer OS System";
-    font-size: 0.9rem;
+    font-size: 0.9rem !important;
     color: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
@@ -1314,6 +1330,10 @@ table th,td{
     font-size: 14px;
     line-height: 26px !important;
     color: var(--primary-color);
+  }
+
+  .title-text {
+    font-size: 0.9rem !important;
   }
   
 }
@@ -3649,7 +3669,7 @@ For Media Query Devices with Breakpoint
   }
 
   .right-content-economic hr {
-    border: 1px solid var(--primary-color)
+    border: 1px solid var(--primary-color);
     font-weight: bold;
     border-radius: 10px;
     opacity: 0.9 !important;
