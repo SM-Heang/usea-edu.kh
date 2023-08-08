@@ -56,6 +56,8 @@
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
 
+			<script defer src="../../js/sticky.js"></script>
+
 	</head>
 
 
@@ -63,7 +65,7 @@
 	<body>
 	<div class="fh5co-loader"></div>
 	<div id="page">
-	<nav class="fh5co-nav" role="navigation">
+	<nav class="fh5co-nav" role="navigation" id="top">
 		<div class="top">
 			<!-- =====> header <===== -->
 			<div class="container">
@@ -98,8 +100,9 @@
 
 		<!-- =====> Start Navigation <===== -->	
 	</nav>
+	<!-- default navbar -->
 	<div class="container">
-		<nav class="navbar-parent"> 
+		<nav class="navbar-parent" > 
 			<div class="wrapper align-items-center justify-content-center py-auto">
 				<div class="logo">
 					<a href="../Pages/index.php">

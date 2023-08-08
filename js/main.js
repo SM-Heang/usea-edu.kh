@@ -376,3 +376,17 @@
 
 
 }());
+
+let theEnd =0,
+	sticky = document.getElementById('sticky');
+    window.addEventListener('scroll', function(){
+        var scrollTop = window.pageXOffset || document.documentElement.scrollTop;
+        if(scrollTop > theEnd){
+            sticky.style.transition = 'top 0.4s ease';
+            sticky.style.top = '-900px';
+        }
+        else{
+            sticky.style.top = '0';
+        }
+        theEnd = scrollTop;
+    });
