@@ -506,6 +506,23 @@ table th,td{
   font-family: "Khmer OS Battambang";
 }
 
+/* career-detail */
+.career-content {
+  margin: 10px 0px;
+  padding: 10px;
+}
+.career-content > .row > .career-university-info {
+  display: flex;
+  align-items: center;
+}
+.career-content > .row > .career-university-info > .career-logo {
+  width: 200px;
+  text-align: center;
+}
+.career-content > .row > .career-university-info > .career-logo > img {
+  width: 150px;
+}
+
 /* Start Logo Meaning Detail*/
 
 #content-detail .content-meaning-detail {
