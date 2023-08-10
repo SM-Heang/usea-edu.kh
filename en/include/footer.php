@@ -13,12 +13,13 @@
 			</div>
 		</div>
 
+		<div class="gototop js-top" id="goto">
+			<a href="#top" class="js-gotop"><i class="icon-arrow-up"></i></a>
+		</div>
 	<!-- =====> End Footer <===== -->
 	</div>
 
-	<div class="gototop js-top" id="goto">
-		<a href="#top" class="js-gotop"><i class="icon-arrow-up"></i></a>
-	</div>
+	
 		
 	<!-- jQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

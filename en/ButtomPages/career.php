@@ -34,12 +34,12 @@
     <div class="row">
         <!-- Start Content-->
         <div class="col-xxl-9">
-            <div class="container" style="background-color:#002060;">
-                <div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
+            <div class="container title-bg">
+                <div class="row title-txt">
                 Career
                 </div>
             </div>
-                <div class="row">
+            <div class="row">
                     <?php
                 
                         $sql = "SELECT * FROM usea_career WHERE keyword = 'career'";
@@ -80,7 +80,10 @@
                     </div>
                     <?php } ?>
                 </div>
-        </div>
+        
+            </div>      
+    
+
 <?php
     include_once '../include/right-content-buttom.php';
     include_once '../include/footer.php';

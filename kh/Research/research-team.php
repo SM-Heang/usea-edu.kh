@@ -1,9 +1,10 @@
 <?php 
-	$page = 'research_team_kh';
+	$page = 'research_procedure-kh';
 		if(session_status() === PHP_SESSION_NONE){
 			session_start();
 		}
-		$_SESSION['right_research'] = $page;
+		$_SESSION['page'] = $page;
+		$_SESSION['right'] = 'research-team-kh';
 
 	include_once '../include/header.php';
 	include_once '../../connection/db.connection.php';     
@@ -19,7 +20,7 @@
 					</a>
 					</li>
 					<li>
-						<a href="#">Research Team</a>
+						<a href="#">ក្រុមស្រាវជ្រាវ</a>
 					</li>
 				</ul>
 			</div>
@@ -33,9 +34,9 @@
 		<div class="row">
 			<!-- Start Content-->
 			<div class="col-xxl-9">
-				<div class="container" style="background-color:#002060;">
-					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-						Research Team
+				<div class="container title-bg">
+					<div class="row title-text">
+						ក្រុមស្រាវជ្រាវ
 					</div>
 				</div>
 				<!-- <div id="content-detail">

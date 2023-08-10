@@ -1,11 +1,10 @@
 <?php
-$page = 'publication';
+$page = 'research_procedure';
 // $page = 'publication';
 if (session_status() === PHP_SESSION_NONE) {
 	session_start();
 }
 $_SESSION['page'] = $page;
-
 $_SESSION['right'] = 'publication';
 
 include_once '../include/header.php';
@@ -37,8 +36,8 @@ include_once '../../connection/db.connection.php';
 		<div class="row">
 			<!-- Start Content-->
 			<div class="col-xxl-9">
-				<div class="container" style="background-color:#002060;">
-					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
+				<div class="container title-bg">
+					<div class="row title-txt">
 						Publication
 					</div>
 				</div>
@@ -77,7 +76,7 @@ include_once '../../connection/db.connection.php';
 									</p>
 								</div>
 								<div style="text-align: right;">
-									<a href="publication-detail.php?id=<?php echo $value['article_id'] ?>" class="btn btn-danger btn-sm">Read More</a>
+									<a href="publication-detail.php?id=<?php echo $value['article_id'] ?>" class="btn btn-sm event-btn px-3 py-1">Read More</a>
 								</div>
 							</div>
 						</div>
@@ -91,7 +90,7 @@ include_once '../../connection/db.connection.php';
 			</div>
 			<!-- Start Right Content-->
 			<?php
-			include_once "../include/right-content-research.php";
+			include_once '../include/right-content-research.php';
 			?>
 			<!-- End Main Content-->
 

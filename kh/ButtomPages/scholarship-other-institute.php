@@ -1,11 +1,11 @@
 <?php
-$page = 'scholarship-other';
+$page = 'university_kh';
 if (session_status() === PHP_SESSION_NONE) {
 	session_start();
 }
 
 $_SESSION['page'] = $page;
-$_SESSION['right'] = 'scholarship-other-institute';
+$_SESSION['right'] = 'scholarship-other-institute-kh';
 include_once '../include/header.php';
 include_once '../../connection/db.connection.php';
 include_once '../../function.php';
@@ -23,7 +23,7 @@ include_once '../../function.php';
 					</a>
 				</li>
 				<li>
-					<a href="#">Scholarship Other Institution</a>
+					<a href="#">អាហារូបករណ៍របស់ស្ថាប័ន​ផ្សេងៗ</a>
 				</li>
 			</ul>
 		</div>
@@ -38,8 +38,8 @@ include_once '../../function.php';
 		<!-- Start Content-->
 		<div class="col-xxl-9">
 			<div class="container title-bg">
-				<div class="row title-txt">
-				Scholarship Other Institution
+				<div class="row title-text">
+				អាហារូបករណ៍របស់ស្ថាប័ន​ផ្សេងៗ
 				</div>
 			</div>
 			<div class="row">

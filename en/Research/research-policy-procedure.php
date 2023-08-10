@@ -3,7 +3,7 @@
 		if(session_status() === PHP_SESSION_NONE){
 			session_start();
 		}
-		$_SESSION['right_research'] = 'right-research-right-kh';
+		$_SESSION['right'] = 'right-research-right';
 		$_SESSION['page'] = $page;
 		
 	include_once '../include/header.php';
@@ -34,8 +34,8 @@
 		<div class="row">
 			<!-- Start Content-->
 			<div class="col-xxl-9">
-				<div class="container" style="background-color:#002060;">
-					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
+				<div class="container title-bg">
+					<div class="row title-txt">
 						Research Polocy and Prodedure
 					</div>
 				</div>

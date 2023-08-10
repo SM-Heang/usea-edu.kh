@@ -292,6 +292,10 @@
 								<img src="../../media/nav-icon/location.png" class="nav-icon" width="15px" height="15px">
 								<a href="../Pages/location.php">Location</a>
 							</li>
+							<li>
+								<img src="../../media/nav-icon/comment-regular.svg" class="nav-icon" width="15px" height="15px">
+								<a href="../Pages/faq.php">FAQ</a>
+							</li>
 						</ul>
 					</div>
 				</li><hr>
@@ -392,5 +396,5 @@
 			<span class="visually-hidden">Next</span>
 			</button>
 		</div>
-		</div>​
+		</div>
 	<!-- =====> End Slider <===== -->

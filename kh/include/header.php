@@ -56,6 +56,7 @@
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
 
+			<!-- sticky -->
 			<script defer src="../../js/sticky.js"></script>
 
 	</head>
@@ -136,6 +137,7 @@
 											<img src="../../media/nav-icon/location.png" class="nav-icon" width="25px" height="25px">
 											<a href="../Pages/location.php">ទីតាំង</a>
 										</li>
+										
 									</ul>
 								</div>
 								<div class="row">
@@ -151,6 +153,10 @@
 										<li class="list-control">
 											<img src="../../media/nav-icon/event.png" class="nav-icon" width="25px" height="25px">
 											<a href="../Pages/events.php">ព្រឹត្តិការណ៍</a>
+										</li>
+										<li class="list-control">
+											<img src="../../media/nav-icon/comment-regular.svg" class="nav-icon" width="25px" height="25px">
+											<a href="../Pages/faq.php">សំណួរដែលសួរញឹកញាប់</a>
 										</li>
 									</ul>
 								</div>
@@ -213,22 +219,22 @@
 					</li>
 					<li class="mx-0  main-menu"><a class=" <?php if($_SESSION['page'] == 'partnership_local_kh'){ echo 'active'; } ?>" href="../Pages/partnership-local.php">ដៃគូរសហការ</a></li>
 					<li class="mx-0 text-center main-menu">
-						<a class="<?php if($_SESSION['page'] == 'research_procedure_kh'){ echo 'active'; } ?>" id="drop" href="#">ស្រាវជ្រាវ</a>
+						<a class="<?php if($_SESSION['page'] == 'research_procedure-kh'){ echo 'active'; } ?>" id="drop" href="#">ស្រាវជ្រាវ</a>
 						<div class="mega-box" id="e-mega-box">
 							<div class="content" id="nav-research">
 								<div class="row">
 									<ul class="mega-link">
 										<li class="list-control">
 											<img src="../../media/nav-icon/policy-and-procedure.png" width="25px" height="25px">
-											<a href="#">គោលការណ៍ស្រាវជាវ និង​នីតិវិធី</a>
+											<a href="../Research/research-policy-procedure.php">គោលការណ៍ស្រាវជាវ និង​នីតិវិធី</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/research-activity.png" width="25px" height="25px">
-											<a href="#">សកម្មភាពស្រាវជ្រាវ</a>
+											<a href="../Research/research-activities.php">សកម្មភាពស្រាវជ្រាវ</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/project.png" width="25px" height="25px">
-											<a href="#">គម្រោងស្រាវជាវ</a>
+											<a href="../Research/research-project.php">គម្រោងស្រាវជាវ</a>
 										</li>
 									</ul>
 								</div>
@@ -236,11 +242,11 @@
 									<ul class="mega-link">
 										<li class="list-control">
 											<img src="../../media/nav-icon/research-team.png" width="25px" height="25px">
-											<a href="#">ក្រុមស្រាវជ្រាវ</a>
+											<a href="../Research/research-team.php">ក្រុមស្រាវជ្រាវ</a>
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/publication.png" width="25px" height="25px">
-											<a href="#">បោះពុម្ពផ្សាយ</a>
+											<a href="../Research/publication.php">បោះពុម្ពផ្សាយ</a>
 										</li>
 									</ul>
 								</div>
@@ -287,6 +293,10 @@
 								<img src="../../media/nav-icon/location.png" class="nav-icon" width="15px" height="15px">
 								<a href="../Pages/location.php">ទីតាំង</a>
 							</li>
+							<li>
+								<img src="../../media/nav-icon/comment-regular.svg" class="nav-icon" width="15px" height="15px">
+								<a href="../Pages/faq.php">សំណួរដែលសួរញឹកញាប់</a>
+							</li>
 						</ul>
 					</div>
 				</li><hr>
@@ -330,7 +340,7 @@
 					</div>
 				</li><hr>
 				<li><a class="<?php if($_SESSION['page'] == 'partnership_local_kh'){ echo 'active_mobile'; } ?>" href="../Pages/partnership-local.php">ដៃគូរសហការ</a></li><hr>
-				<li class="dropdown-parent"><a class="<?php if($_SESSION['page'] == 'research_procedure_kh'){ echo 'active_mobile';} ?>" href="#">ស្រាវជ្រាវ <i class="fas fa-caret-down"></i></a>
+				<li class="dropdown-parent"><a class="<?php if($_SESSION['page'] == 'research_procedure-kh'){ echo 'active_mobile';} ?>" href="#">ស្រាវជ្រាវ <i class="fas fa-caret-down"></i></a>
 					<div class="dropdown-hamburger">
 						<ul>
 							<li>
@@ -340,6 +350,10 @@
 							<li>
 								<img src="../../media/nav-icon/research-activity.png" class="nav-icon" width="15px" height="15px">
 								<a href="../Research/research-activities.php">សកម្មភាពស្រាវជ្រាវ</a>
+							</li>
+							<li>
+								<img src="../../media/nav-icon/project.png" class="nav-icon" width="15px" height="15px">
+								<a href="../Research/research-project.php">គម្រោងស្រាវជាវ</a>
 							</li>
 							<li>
 								<img src="../../media/nav-icon/research-team.png" class="nav-icon" width="15px" height="15px">

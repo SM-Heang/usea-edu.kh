@@ -24,7 +24,7 @@ include_once '../../function.php';
                     </a>
                 </li>
                 <li>
-                    <a href="#">Career University</a>
+                    <a href="#">ការងារ</a>
                 </li>
             </ul>
         </div>
@@ -39,12 +39,12 @@ include_once '../../function.php';
         <!-- Start Content-->
         <div class="col-xxl-9">
             <div class="container title-bg">
-                <div class="row title-txt">
-                Career
+                <div class="row title-text">
+                ការងារ
                 </div>
             </div>
            
-            <div class="career-content">
+            <div class="career-content my-3">
                 <div class="row">
 
                
@@ -59,11 +59,11 @@ include_once '../../function.php';
                     // var_dump($result);
                 }
                 ?>
-                    <div class="col-xxl-12 career-university-info">
-                        <div class="col-xxl-3 career-logo">
+                    <div class="col-12 career-university-info">
+                        <div class="col-3 career-logo">
                             <img src="../../media/career/<?php echo $result['career_img'];?>" alt="">
                         </div>
-                        <div class="col-xxl-9 career-info">
+                        <div class="col-9 career-info">
                             <div class="row">
                                 <span class="career-info-title"><?php echo $result['career_position']?></span>
                                 <hr width="100%;" style="color: #002060;">
@@ -93,7 +93,7 @@ include_once '../../function.php';
                 </div>
                 
                 <hr style="border: 1px solid #002060;" width="100%;">
-                <div class="​​col-xxl-12 career-detail text-center">
+                <div class="col-xxl-12 career-detail text-center">
                     <div class="container border">
                          <img src="../../media/career/details/<?php echo $result['career_detail_img'] ?>" alt="" width="100%;">
                     </div>

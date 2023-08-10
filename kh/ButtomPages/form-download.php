@@ -35,8 +35,8 @@
 		<div class="row"> 
 			<!-- Start Content-->
 			<div class="col-xxl-9">
-				<div class="container" style="background-color:#002060;">
-					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
+				<div class="container title-bg">
+					<div class="row title-text">
                     ទាញយកសំណុំបែបបទ​ USEA
 					</div>
 				</div>
@@ -46,7 +46,9 @@
 						<div class="card mb-3 mx-auto F-download-shadow">
 							<div class="row g-0">
 								<div class="col-5">
-									<img src="../../media/logo_update.png" class="img-fluid rounded-start dl-img" alt="usea logo">
+									<a href="../../media/logo_update.png" download >
+										<img src="../../media/logo_update.png" class="img-fluid rounded-start dl-img" alt="usea logo">
+									</a>
 								</div>
 								<div class="col-7">
 									<div class="card-body mt-2 mb-5 text-center">
@@ -64,7 +66,9 @@
 						<div class="card mb-3 mx-auto F-download-shadow">
 							<div class="row g-0">
 								<div class="col-5">
-									<img src="../../media/thesis_slide_p14.PNG" class="img-fluid rounded-start dl-img" alt="usea Thesis Slide">
+									<a href="../../media/thesis_slide_sample_p14.pptx" download >
+										<img src="../../media/thesis_slide_p14.PNG" class="img-fluid rounded-start dl-img" alt="usea Thesis Slide">
+									</a>
 								</div>
 								<div class="col-7">
 									<div class="card-body mt-2 mb-5 text-center">
@@ -82,14 +86,16 @@
 						<div class="card mb-3 mx-auto F-download-shadow">
 							<div class="row g-0">
 								<div class="col-5">
-									<img src="../../media/emp_app_form.PNG" class="img-fluid rounded-start dl-img" alt="usea Employment Application Form">
+									<a href="../../media/Application-Form.pdf" download >
+										<img src="../../media/emp_app_form.PNG" class="img-fluid rounded-start dl-img" alt="usea Employment Application Form">
+									</a>
 								</div>
 								<div class="col-7">
 									<div class="card-body mt-2 mb-5 text-center">
 										<h6 class="card-title fw-bold">ពាក្យស្នើសុំការងារ</h6>
 									</div>
 									<div class="text-end m-3">
-										<a href="../../media/logo_update.png" class="btn btn-sm event-btn py-1" download>ទាញយក</a>
+										<a href="../../media/Application-Form.pdf" class="btn btn-sm event-btn py-1" download>ទាញយក</a>
 									</div>
 								</div>
 							</div>

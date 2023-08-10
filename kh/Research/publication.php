@@ -1,11 +1,10 @@
 <?php
-$page = 'publication_kh';
+$page = 'research_procedure-kh';
 // $page = 'publication';
 if (session_status() === PHP_SESSION_NONE) {
 	session_start();
 }
 $_SESSION['page'] = $page;
-
 $_SESSION['right'] = 'publication-kh';
 
 include_once '../include/header.php';
@@ -24,7 +23,7 @@ include_once '../../connection/db.connection.php';
 						</a>
 					</li>
 					<li>
-						<a href="#">Publication</a>
+						<a href="#">បោះពុម្ពផ្សាយ</a>
 					</li>
 				</ul>
 			</div>
@@ -37,9 +36,9 @@ include_once '../../connection/db.connection.php';
 		<div class="row">
 			<!-- Start Content-->
 			<div class="col-xxl-9">
-				<div class="container" style="background-color:#002060;">
-					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-						Publication
+				<div class="container title-bg">
+					<div class="row title-text">
+						បោះពុម្ពផ្សាយ
 					</div>
 				</div>
 
@@ -77,7 +76,7 @@ include_once '../../connection/db.connection.php';
 									</p>
 								</div>
 								<div style="text-align: right;">
-									<a href="events.php?" class="btn btn-danger btn-sm">Read More</a>
+									<a href="publication-detail.php?id=<?php echo $value['article_id'] ?>" class="btn btn-sm event-btn px-3 py-1">អានបន្ថែម</a>
 								</div>
 							</div>
 						</div>
@@ -86,65 +85,12 @@ include_once '../../connection/db.connection.php';
 				</div>
 				<!-- =====> End Events <===== -->
 
-				<!--Start Pagination -->
-				<?php
-				$sql = "SELECT count(*) AS CountRecords FROM usea_article WHERE categories = 7 AND keywords  ";
-				$stmt = $conn->prepare($sql);
-				$stmt->execute();
-				$temp = $stmt->fetch(PDO::FETCH_ASSOC);
-				$maxpage = 1;
-				if ($temp) {
-					$maxpage = ceil($temp['CountRecords'] / 12);
-				}
- 
-				?>
-				<ul class="pagination d-flex justify-content-center mt-5 mb-3">
-					<li class="page-item">
-						<a class="page-link bg_btn btn m-0"​ href="events.php?page=<?php if (isset($_GET['page']) && $_GET['page'] > 1)
-							echo $_GET['page'] - 1;
-						else
-							echo 1;
-						?>">​Previous</a>
-					</li>
-					<!-- Loop Page Number -->
-					<?php
-					for ($i = 1; $i <= $maxpage; $i++) { ?>
-
-						<li class="page-item"><a class="page-link 
-													<?php
-													if (isset($_GET['page'])) {
-														if ($i == $_GET['page']) {
-															echo 'active';
-														}
-													} else {
-														if ($i == 1) {
-															echo 'active';
-														}
-													}
-													?>" href="events.php?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
-					<?php } ?>
-
-					<a class="page-link bg_btn btn m-0" href="events.php?page=<?php 
-					
-					if (isset($_GET['page'])){
-						if($_GET['page']==$maxpage){
-							echo $maxpage;
-						}else{
-							echo $_GET['page']+1;
-						}
-					}else{
-						echo 2;
-					}
-						?>">Next</a>
-					</li>
-				</ul>
-				<!--End Logic Pagination -->
+				
 
 			</div>
-
 			<!-- Start Right Content-->
 			<?php
-			include_once "../include/right-content-research.php";
+			include_once '../include/right-content-research.php';
 			?>
 			<!-- End Main Content-->
 

@@ -1,9 +1,9 @@
 <?php 
-	$page = 'research_procedure_kh';
+	$page = 'research_procedure-kh';
 		if(session_status() === PHP_SESSION_NONE){
 			session_start();
 		}
-		$_SESSION['right_research'] = 'right-research-right-kh';
+		$_SESSION['right'] = 'research-policy-kh';
 		$_SESSION['page'] = $page;
 		
 	include_once '../include/header.php';
@@ -20,7 +20,7 @@
 					</a>
 					</li>
 					<li>
-						<a href="#">Research Polocy and Prodedure</a>
+						<a href="#">គោលការណ៍ស្រាវជាវ និង​នីតិវិធី </a>
 					</li>
 				</ul>
 			</div>
@@ -34,9 +34,9 @@
 		<div class="row">
 			<!-- Start Content-->
 			<div class="col-xxl-9">
-				<div class="container" style="background-color:#002060;">
-					<div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
-						Research Polocy and Prodedure
+				<div class="container title-bg">
+					<div class="row title-text">
+						គោលការណ៍ស្រាវជាវ និង​នីតិវិធី 
 					</div>
 				</div>
 				<!-- <div id="content-detail">

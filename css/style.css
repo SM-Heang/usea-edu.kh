@@ -25,6 +25,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth !important;
+}
+
 body {
   font-family: var(--font-en);
   font-weight: 400;
@@ -639,6 +643,7 @@ table th,td{
 /* End core value meaning Detail*/
 
 /* president message */
+
 #content-detail .content-president-detail {
   margin-top: 30px;
 }
@@ -818,6 +823,7 @@ table th,td{
   .title-txt{
     font-size: 18px !important;
   }
+
 }
 
 @media screen and (max-width: 1399px) {
@@ -3050,17 +3056,17 @@ figure {
   transition: 0.5s;
 }
 
-.gototop.active {
-  opacity: 1;
-  visibility: visible;
+.goto-active {
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 .gototop a {
   width: 50px;
   height: 50px;
   display: table;
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  background: rgba(108, 93, 177, 0.5);
+  color: var(--primary-color) !important;
   text-align: center;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -3069,6 +3075,7 @@ figure {
 }
 
 .gototop a i {
+  color: var(--primary-color);
   height: 50px;
   display: table-cell;
   vertical-align: middle;

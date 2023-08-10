@@ -66,13 +66,30 @@
 					</li>
 				</ul>
 			</nav>
-			<hr>
 		</div>
 
 
-		<div class="item"><a class="item-link <?php if ($_SESSION['right'] == 'location-kh') {
-			echo 'right_active';
-		} ?>" href="location.php"> ទីតាំង </a></div>
+		<!-- <div class="item"><a class="item-link <?php// if ($_SESSION['right'] == 'location-kh') {
+			//echo 'right_active';
+		//} ?>" href="location.php"> ទីតាំង </a>
+		</div> -->
+
+		<div class="item">
+			<nav class="sidebar">
+				<ul class="nav flex-column">
+				<hr>
+				<li><a class="nav-link item-link <?php if ($_SESSION['right'] == 'location-kh') {
+															echo 'right_active';
+														} ?>" href="location.php"> ទីតាំង </a></li>
+				<hr>
+				<li> <a class="nav-link item-link <?php if ($_SESSION['right'] == 'faq-kh') {
+															echo 'right_active';
+														} ?>" href="faq.php"> សំណួរដែលសួរញឹកញាប់ </a></li>
+				<hr>
+				</ul>
+			</nav>
+		</div>
+		
 	</div>
 	
 </div>
