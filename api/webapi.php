@@ -92,37 +92,81 @@ function convertShift($shift){
 if(isset($_GET['action'])){
 	switch ($_GET['action']) {
 		case 'registration_info':
-			$sql = "SELECT
-			admission_title as title,
-			date_title,
-			degree_name as education_name,
-			degree_info as info,
-			time_title,
-			time_detail FROM usea_admission";
-			$stmt=$conn->prepare($sql);
+			$sql = "SELECT usea_degree.degree_id, admission_title as title, date_title, time_title, time_detail, usea_degree.degree_name_kh as education_name, degree_info, keyword FROM usea_admission, usea_degree WHERE usea_admission.degree_type = usea_degree.degree_id ";
+			$stmt = $conn->prepare($sql);
 			$stmt->execute();
-			$admission = $stmt->fetchAll(PDO::FETCH_ASSOC);
-			// var_dump($admission);
-			$newadmission = array();
-			foreach ($admission as $key => $value) {
-				$newadmission[] = array(
-					'title' => $value['title'],
-					'detail' => array(
-						'date_title' => $value['date_title'],
-						'education_list' => array(
-							'education_name' => $value['education_name'],
-							'list' => array(
-								'info' => $value['info']
-							)
-						),
-						'time_title' => $value['time_title'],
-						'time_detail' => $value['time_detail']
+			$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+			$newresult = array();
+			foreach ($result as $key => $value) {
+				if(!isset($newresult[$value['degree_id']] )){
+					$newresult[$value['degree_id']] = array(
+						'education_name' => $value['education_name'],
+						'list' => array(
+							'info' => $value['degree_info']
 					)
-				);
+					);
+
+				}
+
 			}
-			$output = $newadmission;
+			foreach ($result as $key => $value) {
+				
+				$finalresult = array(
+					'title' => $value['title'],
+					'details' => array(
+						'date_title' => $value['date_title'],
+						'education_list' => $newresult,	
+						'time_title' => $value['time_title'] ,
+						'time_detail' => $value['time_detail']
+					),
+
+				);
+			// header('Content-Type: application/json');
+			// echo json_encode($finalresult);
+			}
 			header('Content-Type: application/json');
-			echo json_encode($output);
+			echo json_encode($finalresult);
+
+
+			// foreach ($result as $key1 => $value1) {
+			// 	// check if degree_id apprear
+			// 	if(!isset($degree[$value1['degree_id']])){
+			// 		$degree[$value1['degree_id']] = array(
+			// 			'id' => $value1['degree_id'] ,
+			// 			'degree_name' => $value1['education_name']
+			// 		);
+			// 	}
+			// }
+
+			// foreach ($degree as $key => $value) {
+			// 	$list = array();
+			// 	foreach ($result as $key1 => $value1) {
+			// 		if($value['id']== $value1['degree_id']){
+			// 			$list[] = $value1;
+			// 		}
+			// 	}
+			// 	$degree[$key]['list'] = $list;
+			// }
+			// // var_dump($degree);
+			// $newresult = array();
+			// foreach ($result as $key => $value) {
+
+			// 	$newresult = array(
+			// 		'title' => 'កាលបរិច្ឆេទចូលរៀន និងម៉ោងសិក្សាសម្រាប់កម្មវិធី សិក្សាថ្ងៃច័ន្ទ ដល់ថ្ងៃសៅរ៍',
+			// 		'details' => array(
+			// 			'date_title' => 'កាលបរិច្ឆេទចូលរៀនសម្រាប់ ថ្នាក់បរិញ្ញាបត្ររង និងថ្នាក់បរិញ្ញាបត្រដូចខាងក្រោម',
+			// 			'education_list' => $degree,						
+			// 			'time_title' => 'ម៉ោងសិក្សាសម្រាប់ថ្នាក់បរិញ្ញាបត្ររង និងថ្នាក់បរិញ្ញាបត្រដូចខាងក្រោម',
+			// 			'time_detail' => "ពេលព្រឹក ម៉ោង ៧:០០ ដល់ ១០:៣០\r\n ពេលល្ងាច ម៉ោង ១៨:០០ ដល់ ២១:១៥" 
+			// 		),
+
+			// 	);
+			// }
+
+			
+			// header('Content-Type: application/json');
+			// echo json_encode($newresult);
+			
 			break;
 		case 'scholarship_university':
 			$sql = "SELECT 
@@ -337,9 +381,5 @@ if(isset($_GET['action'])){
     	JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP);
 }
 	
-
-
-
-
-
 ?>
+
