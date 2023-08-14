@@ -92,42 +92,71 @@ function convertShift($shift){
 if(isset($_GET['action'])){
 	switch ($_GET['action']) {
 		case 'registration_info':
-			$sql = "SELECT usea_degree.degree_id, admission_title as title, date_title, time_title, time_detail, usea_degree.degree_name_kh as education_name, degree_info, keyword FROM usea_admission, usea_degree WHERE usea_admission.degree_type = usea_degree.degree_id ";
+			$sql = "SELECT usea_degree.degree_id, shift_date.shift_id, shift_date.shift_title_kh as title, date_title, time_title, time_detail, usea_degree.degree_name_kh as education_name, degree_info, keyword FROM usea_admission, usea_degree, shift_date WHERE usea_admission.degree_type = usea_degree.degree_id && usea_admission.admission_title = shift_date.shift_id";
 			$stmt = $conn->prepare($sql);
 			$stmt->execute();
 			$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-			$newresult = array();
+			$shift_date = array();
 			foreach ($result as $key => $value) {
-				if(!isset($newresult[$value['degree_id']] )){
-					$newresult[$value['degree_id']] = array(
-						'education_name' => $value['education_name'],
-						'list' => array(
-							'info' => $value['degree_info']
-					)
+				if(!isset($shift_date[$value['degree_id']])){
+					$shift_date[$value['shift_id']] = array(
+						'id' => $value['shift_id'] ,
+						'title' => $value['title'],
 					);
-
 				}
-
-			}
-			foreach ($result as $key => $value) {
 				
-				$finalresult = array(
-					'title' => $value['title'],
-					'details' => array(
-						'date_title' => $value['date_title'],
-						'education_list' => $newresult,	
-						'time_title' => $value['time_title'] ,
-						'time_detail' => $value['time_detail']
-					),
-
-				);
-			// header('Content-Type: application/json');
-			// echo json_encode($finalresult);
 			}
-			header('Content-Type: application/json');
-			echo json_encode($finalresult);
+			foreach ($shift_date as $key => $value) {
+				$details = array();
+				foreach ($result as $key1 => $value1) {
+					if($value['id']== $value1['shift_id']){
+						$details[] = array(
+							'shift_id' => $value1['shift_id'],
+							'date_title' => $value1['date_title']
+						);
+					}
+				}
+				$shift_date[$key]['details'] = $details;
+			}
+
+			// header('Content-Type: application/json');
+			echo json_encode($shift_date);
+			
 
 
+			
+
+			// $groupDegree = array();
+			// foreach ($result as $key => $value) {
+			// 	$degreeId = $value['degree_id'];
+			// 	if(!isset($groupDegree[$degreeId] )){
+			// 			$groupDegree[$degreeId] = array(
+			// 			'education_name' => $value['education_name'],
+			// 			'list' => array(
+			// 				'info' => $value['degree_info']
+			// 		)
+			// 		);	
+			// 	}
+			// }
+			// $groupShift = array();
+			// foreach ($result as $key => $value) {
+			// 	$shift_date = $value['shift_id'];
+			// 	if(!isset($groupShift[$shift_date])){
+			// 		$groupShift[] = array(
+			// 		'title' => $value['title'],
+			// 		'details' => array(
+			// 			'date_title' => $value['date_title'],
+			// 			'education_list' => $groupDegree,	
+			// 			'time_title' => $value['time_title'] ,
+			// 			'time_detail' => $value['time_detail']
+			// 		),
+			// 	);
+			// 	}
+			// }
+			// header('Content-Type: application/json');
+			// echo json_encode($groupShift);
+
+			// teacher code
 			// foreach ($result as $key1 => $value1) {
 			// 	// check if degree_id apprear
 			// 	if(!isset($degree[$value1['degree_id']])){
