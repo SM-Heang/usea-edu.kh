@@ -1,25 +1,24 @@
 <!-- =====> Start Footer <===== -->
-		<div class="container-fluid">
+<div class="container-fluid">
 			<div class="row">
 				<div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center" id="footer-location">
-					<p>Address : Opposite Angkor High School, Siem Reap Municipality, Kingdom of Cambodia<br> Website: www.usea.edu.kh | Email : info@usea.edu.kh <br> Tel : 063 900 090, 017 386 678 </p>
+					<p>Address : Wat Bo Village, SangKat Salakamroek, Siem Reap Municipality, Cambodia(Opposite Angkor High School)<br> Website: www.usea.edu.kh | Email : info@usea.edu.kh | Facebook: University of South-East Asia<br> Tel : 063 900 090, 017 386 678, 090 905 902, 070 408 438 </p>
 				</div>
 			</div>
 		</div>
 		
 		<div class="container">
 			<div class="col-xxl-12 text-center copyright">
-				<p>Copyright © 2006 - 2022 University of South-East Asia, All rights reserved. </p>
+				<p>Copyright © 2006 University of South-East Asia, All rights reserved. </p>
 			</div>
 		</div>
 
-		<div class="gototop js-top" id="goto">
-			<a href="#top" class="js-gotop"><i class="icon-arrow-up"></i></a>
-		</div>
 	<!-- =====> End Footer <===== -->
 	</div>
 
-	
+	<div class="gototop js-top" id="goto">
+		<a href="#top" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
 		
 	<!-- jQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

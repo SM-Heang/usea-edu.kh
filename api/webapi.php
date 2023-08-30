@@ -91,111 +91,297 @@ function convertShift($shift){
 
 if(isset($_GET['action'])){
 	switch ($_GET['action']) {
+		case 'study_program':
+			// Prepare the query to fetch student performance data
+			$query = "SELECT usea_degree.degree_id, fac_icon, usea_faculty.fac_name_kh as fac_name, usea_major.major_name_kh as major_name, usea_degree.degree_name_kh as education_name,
+			major_info, usea_study_year.study_year_kh as year_name, usea_semester.semester_name_kh as semester_name, usea_subject.subject_name_kh as subject_name, study_hour as hour, credit
+			FROM usea_study_plan, usea_faculty, usea_major, usea_degree, usea_study_year, usea_semester, usea_subject 
+			WHERE usea_study_plan.fac_name = usea_faculty.fac_id 
+			AND usea_study_plan.major_name = usea_major.major_id 
+			AND usea_study_plan.education_name = usea_degree.degree_id 
+			AND usea_study_plan.study_year = usea_study_year.study_year_id 
+			AND usea_study_plan.semester_name = usea_semester.semester_id
+			AND usea_study_plan.subject_name = usea_subject.subject_id";
+
+			// Prepare the statement
+			$stmt = $conn->prepare($query);
+
+			// Execute the statement
+			$stmt->execute();
+
+			// Bind variables to the result columns
+			$stmt->bindColumn('fac_icon', $fac_icon);
+			$stmt->bindColumn('degree_id', $degree_id);
+			$stmt->bindColumn('fac_name', $fac_name);
+			$stmt->bindColumn('major_name', $major_name);
+			$stmt->bindColumn('education_name', $degree_name);
+			$stmt->bindColumn('major_info', $major_info);
+			$stmt->bindColumn('year_name', $year_name);
+			$stmt->bindColumn('semester_name', $semester_name);
+			$stmt->bindColumn('subject_name', $subject_name);
+			$stmt->bindColumn('hour', $hour);
+			$stmt->bindColumn('credit', $credit);
+
+			// Create an array to store the data
+			$data = [
+			    "program_data" => []
+			];
+
+			// Fetch the rows and store the data in the array
+			while ($stmt->fetch(PDO::FETCH_ASSOC)) {
+			    $subject_data = [
+			        "Subject" => $subject_name,
+			        "Hour"    => $hour,
+			        "Credit"  => $credit
+			    ];
+
+			    // Structure the data into nested arrays
+			    $faculty_key = array_search($fac_name, array_column($data['program_data'], 'faculty_name'));
+			    if ($faculty_key === false) {
+			        $data['program_data'][] = [
+			            'faculty_name' => $fac_name,
+			            'faculty_data' => [
+			                'fac_icon'   => "http://".$_SERVER['HTTP_HOST']."/media/asset/icon/nav-icon/". $fac_icon,
+			                'major_name' => []
+			            ]
+			        ];
+			        $faculty_key = count($data['program_data']) - 1;
+			    }
+
+			    $major_key = array_search($major_name, array_column($data['program_data'][$faculty_key]['faculty_data']['major_name'], 'major_name'));
+			    if ($major_key === false) {
+			        $data['program_data'][$faculty_key]['faculty_data']['major_name'][] = [
+			            'major_name' => $major_name,
+			            'major_data' => []
+			        ];
+			        $major_key = count($data['program_data'][$faculty_key]['faculty_data']['major_name']) - 1;
+			    }
+
+			    $degree_key = array_search($degree_name, array_column($data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'], 'degree_name'));
+			    if ($degree_key === false) {
+			        $data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][] = [
+			        	'degree_id' => $degree_id,
+			            'degree_name'   => $degree_name,
+			            'degree_detail' => [
+			                'major_info'  => $major_info,
+			                'degree_data' => []
+			            ]
+			        ];
+			        $degree_key = count($data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data']) - 1;
+			    }
+
+			    $year_key = array_search($year_name, array_column($data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][$degree_key]['degree_detail']['degree_data'], 'year_name'));
+			    if ($year_key === false) {
+			        $data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][$degree_key]['degree_detail']['degree_data'][] = [
+			            'year_name' => $year_name,
+			            'year_data' => []
+			        ];
+			        $year_key = count($data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][$degree_key]['degree_detail']['degree_data']) - 1;
+			    }
+
+			    $semester_key = array_search($semester_name, array_column($data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][$degree_key]['degree_detail']['degree_data'][$year_key]['year_data'], 'semester_name'));
+			    if ($semester_key === false) {
+			        $data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][$degree_key]['degree_detail']['degree_data'][$year_key]['year_data'][] = [
+			            'semester_name' => $semester_name,
+			            'semester_data' => []
+			        ];
+			        $semester_key = count($data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][$degree_key]['degree_detail']['degree_data'][$year_key]['year_data']) - 1;
+			    }
+
+			    $data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][$degree_key]['degree_detail']['degree_data'][$year_key]['year_data'][$semester_key]['semester_data'][] = $subject_data;
+			}
+
+			// Close the statement
+			// $stmt->close();
+
+			// Close the database connection
+			// $mysqli->close();
+
+			// Set the response headers
+			header('Content-Type: application/json');
+
+			// Send the JSON response
+			echo json_encode($data, JSON_PRETTY_PRINT);
+			break;
+		case 'study_program_en':
+			// Prepare the query to fetch student performance data
+			$query = "SELECT usea_degree.degree_id, fac_icon, usea_faculty.fac_name_en as fac_name, usea_major.major_name_en as major_name, usea_degree.degree_name_en as education_name,
+			major_info, usea_study_year.study_year_en as year_name, usea_semester.semester_name_en as semester_name, usea_subject.subject_name_en as subject_name, study_hour as hour, credit
+			FROM usea_study_plan, usea_faculty, usea_major, usea_degree, usea_study_year, usea_semester, usea_subject 
+			WHERE usea_study_plan.fac_name = usea_faculty.fac_id 
+			AND usea_study_plan.major_name = usea_major.major_id 
+			AND usea_study_plan.education_name = usea_degree.degree_id 
+			AND usea_study_plan.study_year = usea_study_year.study_year_id 
+			AND usea_study_plan.semester_name = usea_semester.semester_id
+			AND usea_study_plan.subject_name = usea_subject.subject_id";
+
+			// Prepare the statement
+			$stmt = $conn->prepare($query);
+
+			// Execute the statement
+			$stmt->execute();
+
+			// Bind variables to the result columns
+			$stmt->bindColumn('fac_icon', $fac_icon);
+			$stmt->bindColumn('degree_id', $degree_id);
+			$stmt->bindColumn('fac_name', $fac_name);
+			$stmt->bindColumn('major_name', $major_name);
+			$stmt->bindColumn('education_name', $degree_name);
+			$stmt->bindColumn('major_info', $major_info);
+			$stmt->bindColumn('year_name', $year_name);
+			$stmt->bindColumn('semester_name', $semester_name);
+			$stmt->bindColumn('subject_name', $subject_name);
+			$stmt->bindColumn('hour', $hour);
+			$stmt->bindColumn('credit', $credit);
+
+			// Create an array to store the data
+			$data = [
+			    "program_data" => []
+			];
+
+			// Fetch the rows and store the data in the array
+			while ($stmt->fetch(PDO::FETCH_ASSOC)) {
+			    $subject_data = [
+			        "Subject" => $subject_name,
+			        "Hour"    => $hour,
+			        "Credit"  => $credit
+			    ];
+
+			    // Structure the data into nested arrays
+			    $faculty_key = array_search($fac_name, array_column($data['program_data'], 'faculty_name'));
+			    if ($faculty_key === false) {
+			        $data['program_data'][] = [
+			            'faculty_name' => $fac_name,
+			            'faculty_data' => [
+			                'fac_icon'   => "http://".$_SERVER['HTTP_HOST']."/media/asset/icon/nav-icon/". $fac_icon,
+			                'major_name' => []
+			            ]
+			        ];
+			        $faculty_key = count($data['program_data']) - 1;
+			    }
+
+			    $major_key = array_search($major_name, array_column($data['program_data'][$faculty_key]['faculty_data']['major_name'], 'major_name'));
+			    if ($major_key === false) {
+			        $data['program_data'][$faculty_key]['faculty_data']['major_name'][] = [
+			            'major_name' => $major_name,
+			            'major_data' => []
+			        ];
+			        $major_key = count($data['program_data'][$faculty_key]['faculty_data']['major_name']) - 1;
+			    }
+
+			    $degree_key = array_search($degree_name, array_column($data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'], 'degree_name'));
+			    if ($degree_key === false) {
+			        $data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][] = [
+			        	'degree_id' => $degree_id,
+			            'degree_name'   => $degree_name,
+			            'degree_detail' => [
+			                'major_info'  => $major_info,
+			                'degree_data' => []
+			            ]
+			        ];
+			        $degree_key = count($data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data']) - 1;
+			    }
+
+			    $year_key = array_search($year_name, array_column($data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][$degree_key]['degree_detail']['degree_data'], 'year_name'));
+			    if ($year_key === false) {
+			        $data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][$degree_key]['degree_detail']['degree_data'][] = [
+			            'year_name' => $year_name,
+			            'year_data' => []
+			        ];
+			        $year_key = count($data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][$degree_key]['degree_detail']['degree_data']) - 1;
+			    }
+
+			    $semester_key = array_search($semester_name, array_column($data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][$degree_key]['degree_detail']['degree_data'][$year_key]['year_data'], 'semester_name'));
+			    if ($semester_key === false) {
+			        $data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][$degree_key]['degree_detail']['degree_data'][$year_key]['year_data'][] = [
+			            'semester_name' => $semester_name,
+			            'semester_data' => []
+			        ];
+			        $semester_key = count($data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][$degree_key]['degree_detail']['degree_data'][$year_key]['year_data']) - 1;
+			    }
+
+			    $data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][$degree_key]['degree_detail']['degree_data'][$year_key]['year_data'][$semester_key]['semester_data'][] = $subject_data;
+			}
+
+			// Close the statement
+			// $stmt->close();
+
+			// Close the database connection
+			// $mysqli->close();
+
+			// Set the response headers
+			header('Content-Type: application/json');
+
+			// Send the JSON response
+			echo json_encode($data, JSON_PRETTY_PRINT);
+			break;
 		case 'registration_info':
-			$sql = "SELECT usea_degree.degree_id, shift_date.shift_id, shift_date.shift_title_kh as title, date_title, time_title, time_detail, usea_degree.degree_name_kh as education_name, degree_info, keyword FROM usea_admission, usea_degree, shift_date WHERE usea_admission.degree_type = usea_degree.degree_id && usea_admission.admission_title = shift_date.shift_id";
+			$sql = 'SELECT shift_date.shift_title_kh as title, date_title, time_title, time_detail, usea_degree.degree_name_kh as degree_name, degree_info 
+			FROM usea_admission, usea_degree, shift_date WHERE usea_admission.degree_type = usea_degree.degree_id && usea_admission.admission_title = shift_date.shift_id';
 			$stmt = $conn->prepare($sql);
 			$stmt->execute();
-			$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-			$shift_date = array();
-			foreach ($result as $key => $value) {
-				if(!isset($shift_date[$value['degree_id']])){
-					$shift_date[$value['shift_id']] = array(
-						'id' => $value['shift_id'] ,
-						'title' => $value['title'],
-					);
-				}
-				
-			}
-			foreach ($shift_date as $key => $value) {
-				$details = array();
-				foreach ($result as $key1 => $value1) {
-					if($value['id']== $value1['shift_id']){
-						$details[] = array(
-							'shift_id' => $value1['shift_id'],
-							'date_title' => $value1['date_title']
-						);
+			$data = array();
+			while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+				$degree_name = $row['degree_name'];
+				$degree_info = $row['degree_info'];
+
+	    		// Create the details item for this row
+				$details_item = array(
+					"date_title"     => $row['date_title'],
+					"education_list" => array(
+						array(
+							"education_name" => $degree_name,
+							"list"           => array(
+								array("info" => $degree_info)
+							)
+						)
+					),
+					"time_title"     => $row['time_title'],
+					"time_detail"    => $row['time_detail'],
+				);
+
+	    		// Check if the title already exists in $data array
+				$index = -1;
+				foreach ($data as $key => $value) {
+					if ($value["title"] === $row["title"]) {
+						$index = $key;
+						break;
 					}
 				}
-				$shift_date[$key]['details'] = $details;
+
+				if ($index >= 0) {
+	       		 // If title exists, check if the education name already exists
+					$eduIndex = -1;
+					foreach ($data[$index]["details"][0]["education_list"] as $eduKey => $eduValue) {
+						if ($eduValue["education_name"] === $degree_name) {
+							$eduIndex = $eduKey;
+							break;
+						}
+					}
+
+					if ($eduIndex >= 0) {
+	            // If education name exists, append the new "info" to the existing list
+						array_push($data[$index]["details"][0]["education_list"][$eduIndex]["list"], array("info" => $degree_info));
+					} else {
+	            // If education name does not exist, add the new item
+						$data[$index]["details"][0]["education_list"][] = array(
+							"education_name" => $degree_name,
+							"list"           => array(
+								array("info" => $degree_info)
+							)
+						);
+					}
+				} else {
+	        // If title does not exist, add the new item along with the education name and "info"
+					$item = array(
+						"title"   => $row["title"],
+						"details" => array($details_item),
+					);
+					array_push($data, $item);
+				}
+
 			}
-
-			// header('Content-Type: application/json');
-			echo json_encode($shift_date);
-			
-
-
-			
-
-			// $groupDegree = array();
-			// foreach ($result as $key => $value) {
-			// 	$degreeId = $value['degree_id'];
-			// 	if(!isset($groupDegree[$degreeId] )){
-			// 			$groupDegree[$degreeId] = array(
-			// 			'education_name' => $value['education_name'],
-			// 			'list' => array(
-			// 				'info' => $value['degree_info']
-			// 		)
-			// 		);	
-			// 	}
-			// }
-			// $groupShift = array();
-			// foreach ($result as $key => $value) {
-			// 	$shift_date = $value['shift_id'];
-			// 	if(!isset($groupShift[$shift_date])){
-			// 		$groupShift[] = array(
-			// 		'title' => $value['title'],
-			// 		'details' => array(
-			// 			'date_title' => $value['date_title'],
-			// 			'education_list' => $groupDegree,	
-			// 			'time_title' => $value['time_title'] ,
-			// 			'time_detail' => $value['time_detail']
-			// 		),
-			// 	);
-			// 	}
-			// }
-			// header('Content-Type: application/json');
-			// echo json_encode($groupShift);
-
-			// teacher code
-			// foreach ($result as $key1 => $value1) {
-			// 	// check if degree_id apprear
-			// 	if(!isset($degree[$value1['degree_id']])){
-			// 		$degree[$value1['degree_id']] = array(
-			// 			'id' => $value1['degree_id'] ,
-			// 			'degree_name' => $value1['education_name']
-			// 		);
-			// 	}
-			// }
-
-			// foreach ($degree as $key => $value) {
-			// 	$list = array();
-			// 	foreach ($result as $key1 => $value1) {
-			// 		if($value['id']== $value1['degree_id']){
-			// 			$list[] = $value1;
-			// 		}
-			// 	}
-			// 	$degree[$key]['list'] = $list;
-			// }
-			// // var_dump($degree);
-			// $newresult = array();
-			// foreach ($result as $key => $value) {
-
-			// 	$newresult = array(
-			// 		'title' => 'កាលបរិច្ឆេទចូលរៀន និងម៉ោងសិក្សាសម្រាប់កម្មវិធី សិក្សាថ្ងៃច័ន្ទ ដល់ថ្ងៃសៅរ៍',
-			// 		'details' => array(
-			// 			'date_title' => 'កាលបរិច្ឆេទចូលរៀនសម្រាប់ ថ្នាក់បរិញ្ញាបត្ររង និងថ្នាក់បរិញ្ញាបត្រដូចខាងក្រោម',
-			// 			'education_list' => $degree,						
-			// 			'time_title' => 'ម៉ោងសិក្សាសម្រាប់ថ្នាក់បរិញ្ញាបត្ររង និងថ្នាក់បរិញ្ញាបត្រដូចខាងក្រោម',
-			// 			'time_detail' => "ពេលព្រឹក ម៉ោង ៧:០០ ដល់ ១០:៣០\r\n ពេលល្ងាច ម៉ោង ១៨:០០ ដល់ ២១:១៥" 
-			// 		),
-
-			// 	);
-			// }
-
-			
-			// header('Content-Type: application/json');
-			// echo json_encode($newresult);
-			
+			echo json_encode($data);
 			break;
 		case 'scholarship_university':
 			$sql = "SELECT 
@@ -270,7 +456,23 @@ if(isset($_GET['action'])){
 			echo json_encode($output);
 			break;
 		case 'faq':
-			$sql = "SELECT faq_id as id, faq_question as question, faq_answer as answer FROM usea_faq";
+			$sql = "SELECT faq_id as id, faq_question_kh as question, faq_answer_kh as answer FROM usea_faq";
+			$stmt = $conn->prepare($sql);
+			$stmt->execute();
+			$faq = $stmt->fetchAll(PDO::FETCH_ASSOC);
+			$newfaq = array();
+			foreach ($faq as $key => $value) {
+				$newfaq[] = array(
+					'id' => $value['id'],
+					'question' => $value['question'],
+					'answer' => str_replace(array("<li>","</li>"), array("\n",""), strip_tags($value['answer'], array("<li>")))
+				);
+			}
+			header('Content-Type: application/json');
+			echo json_encode($newfaq);
+			break;
+		case 'faq_en':
+			$sql = "SELECT faq_id as id, faq_question_en as question, faq_answer_en as answer FROM usea_faq";
 			$stmt = $conn->prepare($sql);
 			$stmt->execute();
 			$faq = $stmt->fetchAll(PDO::FETCH_ASSOC);
