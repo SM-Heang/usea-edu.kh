@@ -63,11 +63,11 @@ include_once '../../function.php';
                             <img src="../../media/scholarship/university/<?php echo $result['scholarship_img'];?>" alt="">
                         </div>
                         <div class="col-xxl-9 university-info">
-                            <hr style="border: 1px solid #002060;" width="100%;">
+                            <hr style="border: 1px solid var(--primary-color);" width="100%;">
                             <ul>
                                 <li><i class="fa-solid fa-building-columns"></i>  <?php echo $result['institutions'];?></i></li>
                             </ul>
-                            <ul style="display: flex;">
+                            <ul>
                                 <li style=" margin-right: 10px;"><i class="fa-solid fa-graduation-cap"> </i> <?php echo $result['education_level'];?></li>
                                 <li><i class="fa-solid fa-book-open"></i> <?php echo $result['education_major']?></li>
                             </ul>
@@ -75,7 +75,7 @@ include_once '../../function.php';
                                 <li><i class="fa-solid fa-location-dot"></i>  <?php echo $result['location'];?></li>
                                 
                             </ul>
-                            <ul style="display: flex;">
+                            <ul>
                                 <li style=" margin-right: 10px;"><i class="fa-solid fa-calendar-xmark"></i>  ថ្ងៃទី
                                     <?php 
                                         $days=date("d",strtotime($result['expire_date'])); 
@@ -103,8 +103,8 @@ include_once '../../function.php';
                     </div>
                 </div>
                 
-                <hr style="border: 1px solid #002060;" width="100%;">
-                <div class="​​col-xxl-12 scholarship-detail text-center">
+                <hr style="border: 1px solid var(--primary-color);" width="100%;">
+                <div class="col-xxl-12 scholarship-detail text-center">
                     <div class="container border">
                          <img src="../../media/scholarship/university/details/<?php echo $result['scholarship_detail_img'] ?>" alt="" width="100%;">
                     </div>

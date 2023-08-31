@@ -446,7 +446,8 @@ table th,td{
   > .scholarsip-university-info
   > .scholarship-logo
   > img {
-  width: 150px;
+    border: 1px solid red;
+    width: 150px;
 }
 .scholarship-content
   > .row
@@ -464,6 +465,7 @@ table th,td{
   font-size: 18px;
   font-family: "Khmer OS Battambang";
   color: var(--primary-color);
+  display: inline !important;
 }
 .scholarship-detail > .scholarship-title {
   text-align: center;
@@ -746,12 +748,6 @@ table th,td{
   color: #ff0000 !important;
 }
 
-
-
-/* 
-.fa-angle-up:before {
-  display: none !important;
-} */
 
 /* ========================================= */
 #footer-location{
@@ -1103,8 +1099,6 @@ table th,td{
 
 }
 
-
-
 @media screen and (max-width: 1024px) {
   .wrapper .nav-link {
     float: right;
@@ -1133,20 +1127,7 @@ table th,td{
   }
 
 }
-/* .table{
-  height: max-content !important;
-  padding: 0;
-  margin: auto;
-} */
-/* .table{
-  width: 100% !important;
-} */
-/* .table thead{
-  display: block !important;
-} */
-/* .table thead tbody{
-  display: block !important;
-} */
+
 
 @media screen and (max-width: 988px) {
   .nav-header > .nav-pills > .nav-item > .nav-link{
@@ -1203,8 +1184,8 @@ table th,td{
     display: block !important;
     border: none !important;
   }
-
 }
+
 #partnership-int .partnership-title{
   font-family: Khmer OS Content !important;
   color: var(--primary-color);

@@ -164,9 +164,9 @@
 								<a class="nav-link item-link select-btn-4" href="#" onclick="return false"> Scholarship
 									<?php
 										if ($_SESSION['page'] == 'scholarship') {
-											echo '<i class="fa-solid fa-angle-up i_4"></i>';
-										}else{
 											echo '<i class="fa-solid fa-angle-down i_4"></i>';
+										}else{
+											echo '<i class="fa-solid fa-angle-up i_4"></i>';
 										}
 									?>
 								</a>

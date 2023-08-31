@@ -415,6 +415,7 @@ table th,td{
   font-size: 18px;
   font-family: "Khmer OS Battambang";
   color: var(--primary-color);
+  display: inline !important;
 }
 .scholarship-detail > .scholarship-title {
   text-align: center;
@@ -1069,6 +1070,7 @@ table th,td{
   .mega-link .list-control .nav-icon {
     margin-top: 0px;
   }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -1092,6 +1094,38 @@ table th,td{
     display: block !important;
     border: none !important;
   }
+
+  .scholarship-content
+  > .row
+  > .scholarsip-university-info
+  > .university-info
+  > ul {
+  list-style: none;
+  height: fit-content !important;
+  width: fit-content !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  }
+
+  .scholarship-content
+  > .row
+  > .scholarsip-university-info
+  > .university-info
+  > ul
+  > li {
+  font-size: 0.9rem !important;
+  display: block !important;
+  font-family: "Khmer OS Battambang";
+  color: var(--primary-color);
+  }
+
+  .scholarship-content
+  > .row
+  > .scholarsip-university-info
+  > .scholarship-logo
+  > img {
+  width: 100px !important;
+}
 
 }
 
