@@ -46,8 +46,8 @@ include_once '../../connection/db.connection.php';
 		<div class="row">
 			<!-- Start Content-->
 			<div class="col-xxl-9">
-				<div class="container" style="background-color:#002060;">
-					<div class="row title-text" style="color: white; font-size: 16pt; padding: 5pt;">
+				<div class="container title-bg">
+					<div class="row title-text">
 						ព្រឹត្តិការណ៍កន្លងទៅ
 					</div>
 				</div>
@@ -57,6 +57,7 @@ include_once '../../connection/db.connection.php';
 						<div class="event_title">
 							<?php echo $temp['event_title_kh']?>
 						</div>
+						<hr class="event-hr">
 						<div class="event_detail">
 							<?php echo $temp['event_description_kh'];?>
 						</div>

@@ -16,6 +16,7 @@
 
 :root{
   --primary-color: #002060; 
+  --detail-color: #333333;
 }
 
 * {
@@ -374,17 +375,27 @@ table th,td{
 
 /* End History Detail*/
 .event_title{
+  font-family: 'Khmer OS Battambang' !important;
   margin: 0;
   line-height: 30px;
-  text-decoration: underline;
   font-size: 1.25rem;
-  color: red;
+  color: var(--primary-color) !important;
+}
+.event-hr{
+  width: 20%;
+  margin: 1%;
+  color: var(--primary-color) !important;
+  font-weight: bold;
 }
 .event_detail{
-  font-family: Khmer OS System;
-  font-size: 1rem;
-  color: var(--primary-color);
+  font-family: 'Khmer OS Battambang' !important;
+  font-size: 0.9rem !important;
+  color: var(--detail-color);
   text-align: justify;
+}
+.event_detail > p >span{
+  font-size: 16px !important;
+  color: var(--detail-color);
 }
 
 /* FAQ */
@@ -713,6 +724,7 @@ table th,td{
   padding: 0.9rem;
   text-decoration: none;
   color: var(--primary-color);
+  font-family: 'Khmer OS Battambang' !important;
   font-size: 1.15rem;
   font-weight: 700;
 }
@@ -785,7 +797,7 @@ table th,td{
     font-weight: 700;
   }
   #button-content ul li a {
-    font-family: "Khmer OS System";
+    font-family: "Khmer OS Battambang" !important;
     font-size: 1.25rem;
     color: var(--primary-color);
     text-decoration: none;
@@ -801,7 +813,7 @@ table th,td{
 
   .fh5co-heading div h2 {
     font-family: 'Khmer OS Battambang' !important;
-    font-size: 1.5rem !important;
+    font-size: 20px !important;
     margin-bottom: 20px;
     line-height: 1.5;
     color: var(--primary-color);
@@ -812,7 +824,7 @@ table th,td{
 
   #partnership {
     color: red;
-    font-size: 24px !important;
+    font-size: 20px !important;
     font-weight: bold;
   }
 
@@ -889,7 +901,7 @@ table th,td{
   }
 
   .fh5co-heading div h2 {
-    font-size: 1.5rem !important;
+    font-size: 20px !important;
     margin-bottom: 20px;
     line-height: 1.5;
     color: var(--primary-color);
@@ -900,7 +912,7 @@ table th,td{
 
   #partnership {
     color: red;
-    font-size: 24px !important;
+    font-size: 20px !important;
     font-weight: bold;
   }
 
@@ -1028,7 +1040,7 @@ table th,td{
   }
 
   .fh5co-heading div h2 {
-    font-size: 20px !important;
+    font-size: 16px !important;
     margin-bottom: 20px;
     line-height: 1.5;
     color: var(--primary-color);
@@ -1058,7 +1070,7 @@ table th,td{
 
   #partnership {
     color: red;
-    font-size: 20px !important;
+    font-size: 16px !important;
     font-weight: bold;
   }
 
@@ -1117,7 +1129,7 @@ table th,td{
   } 
 
   .fh5co-heading div h2 {
-    font-size: 20px !important;
+    font-size: 16px !important;
     margin-bottom: 20px;
     line-height: 1.5;
     color: var(--primary-color);
@@ -1448,7 +1460,7 @@ table th,td{
   }
 
   #button-content ul li a {
-    font-family: "Khmer OS System";
+    font-family: "Khmer OS Battambang" !important;
     font-size: 0.9rem !important;
     color: var(--primary-color);
     text-decoration: none;
@@ -2666,7 +2678,7 @@ figure {
 
 .fh5co-heading div h2 {
   font-family: 'Khmer OS Battambang' !important;
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 20px;
   line-height: 1.5;
   color: var(--primary-color);
@@ -2742,7 +2754,7 @@ figure {
 .a-news{
   text-decoration: none;
   color: var(--primary-color);
-  font-size: 16pt;
+  font-size: 16px;
   font-weight: bold
 }
 
