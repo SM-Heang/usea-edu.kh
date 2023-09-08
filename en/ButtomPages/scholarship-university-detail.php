@@ -51,7 +51,16 @@ include_once '../../function.php';
 
                 if(isset($_GET['id'])){
                     $id = $_GET['id'];
-                    $sql = "SELECT * FROM usea_scholarship WHERE scholarship_id= $id";
+                    $sql = "SELECT 
+                    scholarship_id,
+                    institutions_en as scholarship_title_en, 
+                    usea_degree.degree_name_en as education_level,
+                    education_major_en as education_major,
+                    location_en as location,
+                    expire_date,
+                    scholarship_img,
+                    scholarship_detail_img
+                    FROM usea_degree, usea_scholarship WHERE usea_scholarship.education_level = usea_degree.degree_id  AND scholarship_id= $id";
                     $stmt = $conn->prepare($sql);
                     $stmt->execute();
                     $result = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -65,7 +74,7 @@ include_once '../../function.php';
                         <div class="col-xxl-9 university-info">
                             <hr style="border: 1px solid var(--primary-color);" width="100%;">
                             <ul>
-                                <li><i class="fa-solid fa-building-columns"></i>  <?php echo $result['institutions'];?></i></li>
+                                <li><i class="fa-solid fa-building-columns"></i>  <?php echo $result['scholarship_title_en'];?></i></li>
                             </ul>
                             <ul>
                                 <li style=" margin-right: 10px;"><i class="fa-solid fa-graduation-cap"> </i> <?php echo $result['education_level'];?></li>
@@ -76,26 +85,25 @@ include_once '../../function.php';
                                 
                             </ul>
                             <ul>
-                                <li style=" margin-right: 10px;"><i class="fa-solid fa-calendar-xmark"></i>  ថ្ងៃទី
+                                <li style=" margin-right: 10px;"><i class="fa-solid fa-calendar-xmark"></i>
                                     <?php 
                                         $days=date("d",strtotime($result['expire_date'])); 
-                                        convertNumber($days);
-                                    ?> ខែ
+                                        echo $days;
+                                    ?>
                                     <?php 
                                     $month = date("M",strtotime($result['expire_date']));
-                                    convertMonth($month);
+                                        echo $month;
                                     ?> 
-                                    ឆ្នាំ
                                     <?php 
                                         $year = date("Y",strtotime($result['expire_date']));
-                                        convertNumber($year);
+                                        echo $year;
                                     ?></li>
                                     <li><i class="fa-solid fa-clock"></i>  
                                     <?php 
                                     $times =date('h:i', strtotime($result['expire_date'])); 
-                                        convertNumber($times);
+                                        echo $times . " ";
                                     $shift =date('a', strtotime($result['expire_date'])) ;
-                                    convertShift($shift);
+                                        echo $shift;
                                     ?>
                                 </li>
                             </ul>

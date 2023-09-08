@@ -25,7 +25,7 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth !important;
 }
 
@@ -47,15 +47,18 @@ body {
   animation: moving 1s ease;
 }
 
-table, th,td{
+table,
+th,
+td {
   border: none !important;
 }
 
-table th,td{
+table th,
+td {
   border: none !important;
 }
 
-.tab-pane > table > tbody td{
+.tab-pane > table > tbody td {
   border: none !important;
   border-bottom: 1px solid grey !important;
 }
@@ -336,11 +339,11 @@ table th,td{
   text-align: justify;
 }
 
-.title-bg{
+.title-bg {
   background-color: var(--primary-color);
 }
 
-.title-txt{
+.title-txt {
   color: white;
   font-size: 14.4px !important;
   padding: 5pt;
@@ -820,11 +823,9 @@ table th,td{
 }
 
 @media screen and (min-width: 1399px) {
-
-  .title-txt{
+  .title-txt {
     font-size: 18px !important;
   }
-
 }
 
 @media screen and (max-width: 1399px) {
@@ -865,11 +866,9 @@ table th,td{
     font-size: 1.25rem;
   }
 
-  .title-txt{
+  .title-txt {
     font-size: 18px !important;
   }
-
-
 }
 
 @media screen and (max-width: 1199px) {
@@ -983,11 +982,11 @@ table th,td{
   .tab-pane > table > tbody span {
     font-size: 14.4px !important;
   }
-  .nav-header > .nav-pills > .nav-item > .nav-link{
-    font-size: 14.4px; 
+  .nav-header > .nav-pills > .nav-item > .nav-link {
+    font-size: 14.4px;
   }
 
-  .title-txt{
+  .title-txt {
     font-size: 12pt !important;
   }
 
@@ -1002,7 +1001,7 @@ table th,td{
   #footer-location {
     font-size: 12pt !important;
   }
-  
+
   #row-parent #button-content ul li a {
     font-size: 12pt !important;
   }
@@ -1010,8 +1009,6 @@ table th,td{
   .copyright {
     font-size: 12pt !important;
   }
-
-
 }
 
 @media screen and (max-width: 1024px) {
@@ -1038,12 +1035,11 @@ table th,td{
 }
 
 @media screen and (max-width: 988px) {
-  .nav-header > .nav-pills > .nav-item > .nav-link{
+  .nav-header > .nav-pills > .nav-item > .nav-link {
     font-size: 14.4px;
     margin: auto !important;
     width: 243px;
   }
-
 }
 
 /* =============================== */
@@ -1070,7 +1066,6 @@ table th,td{
   .mega-link .list-control .nav-icon {
     margin-top: 0px;
   }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -1086,8 +1081,7 @@ table th,td{
 }
 
 @media screen and (max-width: 605px) {
-
-  .tab-pane > table{
+  .tab-pane > table {
     width: fit-content !important;
     padding: 0 !important;
     margin: auto !important;
@@ -1096,37 +1090,36 @@ table th,td{
   }
 
   .scholarship-content
-  > .row
-  > .scholarsip-university-info
-  > .university-info
-  > ul {
-  list-style: none;
-  height: fit-content !important;
-  width: fit-content !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
+    > .row
+    > .scholarsip-university-info
+    > .university-info
+    > ul {
+    list-style: none;
+    height: fit-content !important;
+    width: fit-content !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
 
   .scholarship-content
-  > .row
-  > .scholarsip-university-info
-  > .university-info
-  > ul
-  > li {
-  font-size: 0.9rem !important;
-  display: block !important;
-  font-family: "Khmer OS Battambang";
-  color: var(--primary-color);
+    > .row
+    > .scholarsip-university-info
+    > .university-info
+    > ul
+    > li {
+    font-size: 0.9rem !important;
+    display: block !important;
+    font-family: "Khmer OS Battambang";
+    color: var(--primary-color);
   }
 
   .scholarship-content
-  > .row
-  > .scholarsip-university-info
-  > .scholarship-logo
-  > img {
-  width: 100px !important;
-}
-
+    > .row
+    > .scholarsip-university-info
+    > .scholarship-logo
+    > img {
+    width: 100px !important;
+  }
 }
 
 #partnership-int .partnership-title {
@@ -1382,7 +1375,7 @@ table th,td{
     font-size: 0.9rem !important;
   }
 
-  .title-txt{
+  .title-txt {
     font-size: 0.9rem !important;
   }
 
@@ -1393,7 +1386,6 @@ table th,td{
     font-size: 0.9rem !important;
     font-weight: 700;
   }
-
 }
 
 #dropdown-menu {

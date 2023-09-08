@@ -90,6 +90,11 @@
 			});
 		});
 	</script>
-	
+	<script>
+		var loader = document.getElementById("fh5co-hero");
+		window.addEventListener("load", function(){
+			loader.style.display = "none";
+		})
+	</script>
 	</body>
 </html>

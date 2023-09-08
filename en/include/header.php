@@ -396,5 +396,6 @@
 			<span class="visually-hidden">Next</span>
 			</button>
 		</div>
-		</div>
+	</div>
+	<div id="fh5co-hero"></div>
 	<!-- =====> End Slider <===== -->
