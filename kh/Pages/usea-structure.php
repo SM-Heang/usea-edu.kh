@@ -34,8 +34,8 @@
 		<div class="row">
 			<!-- Start Content-->
 			<div class="col-xxl-9">
-				<div class="container" style="background-color:#002060;">
-					<div class="row title-text" style="color: white; font-size: 16pt; padding: 5pt;">
+				<div class="container title-bg">
+					<div class="row title-text">
 						រចនាសម្ព័ន្ធសាកលវិទ្យាល័យ
 					</div>
 				</div>
@@ -45,9 +45,6 @@
 							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =77");
 							$stmt->execute();
 							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-							// echo "<pre>";
-							// print_r($result);
-							// echo "</pre>";
 						foreach ($result as $key => $value) { ?>
 						<!-- <img src="media/events/independent_days.jpg" alt="independent_days" width="375px" height="245px"> -->
 						<p><?php echo $value['article_description_kh'];?></p>
