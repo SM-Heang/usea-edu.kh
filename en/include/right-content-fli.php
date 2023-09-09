@@ -5,67 +5,6 @@
 		} ?>" href="../vission-Mission/vision-mision-corevalue-fli.php">Vision & Mission</a></div>
 		<!-- <hr> -->
 		<div class="item">
-			<!-- <a class="item-link" href="#"><i class="fas fa-angle-right"></i> Associate's Degree</a><hr> -->
-			<!-- <nav class="sidebar">
-				<ul class="nav flex-column" id="nav_accordion">
-					<li class="nav-item has-submenu select-menu">
-						<a class="nav-link item-link select-btn" href="../AssociateDegree/finance-banking.php">Associate's Degree
-
-							<?php
-							//if (
-							//	$_SESSION['page'] == 'finance_banking' ||
-							//	$_SESSION['page'] == 'management' ||
-							//	$_SESSION['page'] == 'accounting' ||
-							//	$_SESSION['page'] == 'marketing' ||
-							//	$_SESSION['page'] == 'tourism'
-							//) {
-
-								//echo '<i class="fa-solid fa-angle-up i_1"></i>';
-							//} else {
-								//echo '<i class="fa-solid fa-angle-down i_1"></i>';
-							//}
-							//?>
-
-						</a>
-						<ul class="submenu collapse
-						
-						<?php
-						//if (
-							//$_SESSION['page'] == 'finance-banking' ||
-							//$_SESSION['page'] == 'management' ||
-							//$_SESSION['page'] == 'accounting' ||
-						//	$_SESSION['page'] == 'marketing' ||
-						//	$_SESSION['page'] == 'tourism'
-						//) {
-							//echo "show";
-						//}
-						//?>
-						
-						">
-							<li><a class="nav-link item-link <?php// if ($_SESSION['page'] == 'accounting') {
-								//echo 'right_active';
-							//} ?>" href="../AssociateDegree/accounting.php"> Accounting  </a></li>
-							
-							<li><a class="nav-link item-link <?php// if ($_SESSION['page'] == 'finance_banking') {
-							//	echo 'right_active';
-							//} ?>" href="../AssociateDegree/finance-banking.php">Finance & Banking </a></li>
-																<li><a class="nav-link item-link <?php// if ($_SESSION['page'] == 'management') {
-																//	echo 'right_active';
-																//} ?>" href="../AssociateDegree/management.php"> Management </a></li>
-							<li><a class="nav-link item-link <?php //if ($_SESSION['page'] == 'marketing') {
-							//	echo 'right_active';
-							//} ?>" href="../AssociateDegree/marketing.php"> Marketing </a> </li>
-							<li><a class="nav-link item-link <?php// if ($_SESSION['page'] == 'tourism') {
-								//echo 'right_active';
-							//} ?>" href="../AssociateDegree/tourism.php"> Tourism </a> </li>
-						</ul>
-					</li>
-				</ul>
-			</nav> -->
-			<hr>
-		</div>
-
-		<div class="item">
 			<nav class="sidebar">
 				<ul class="nav flex-column" id="nav_accordion">
 					<li class="nav-item has-submenu select-menu">

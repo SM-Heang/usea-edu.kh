@@ -52,7 +52,15 @@ include_once '../../function.php';
 
                 if(isset($_GET['id'])){
                     $id = $_GET['id'];
-                    $sql = "SELECT * FROM usea_career WHERE career_id= $id";
+                    $sql = "SELECT 
+                    career_id as id,
+                    career_img as logo,
+                    career_position_en as position,
+                    career_organization_en as organization,
+                    location_en as location,
+                    expire_date,
+                    career_detail_img
+                    FROM usea_career WHERE career_id = $id";
                     $stmt = $conn->prepare($sql);
                     $stmt->execute();
                     $result = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -61,29 +69,28 @@ include_once '../../function.php';
                 ?>
                     <div class="col-xxl-12 career-university-info">
                         <div class="col-xxl-3 career-logo">
-                            <img src="../../media/career/<?php echo $result['career_img'];?>" alt="">
+                            <img src="../../media/career/<?php echo $result['logo'];?>" alt="">
                         </div>
                         <div class="col-xxl-9 career-info">
                             <div class="row">
-                                <span class="career-info-title"><?php echo $result['career_position']?></span>
+                                <span class="career-info-title"><?php echo $result['position']?></span>
                                 <hr width="100%;" style="color: #002060;">
-                                <span class="span-career-info"><i class="fa-solid fa-building-columns"> <?php echo $result['career_organization'] ?></i></span>
+                                <span class="span-career-info"><i class="fa-solid fa-building-columns"> <?php echo $result['organization'] ?></i></span>
                                 <span class="span-career-info"><i class="fa-solid fa-location-dot"></i>  <?php echo $result['location'];?></span>
                                 <span class="span-career-info" style=" margin-right: 10px;"><i class="fa-solid fa-calendar-xmark">
                                         </i>  
-                                            ថ្ងៃទី
+                                            
                                             <?php 
                                                 $days=date("d",strtotime($result['expire_date'])); 
-                                                convertNumber($days);
-                                            ?> ខែ
+                                                echo $days;
+                                            ?>
                                             <?php 
                                             $month = date("M",strtotime($result['expire_date']));
-                                            convertMonth($month);
+                                                echo $month;
                                             ?> 
-                                            ឆ្នាំ
                                             <?php 
                                                 $year = date("Y",strtotime($result['expire_date']));
-                                                convertNumber($year);
+                                                echo $year;
                                             ?>
                                         </li> 
                                 </span>

@@ -45,7 +45,14 @@ include_once '../..//function.php';
                 <div class="row">
                     <?php
                 
-                        $sql = "SELECT * FROM usea_scholarship WHERE keyword = 'university'";
+                        $sql = "SELECT 
+                        scholarship_id, 
+                        institutions_en as scholarship_title_en, 
+                        usea_degree.degree_name_en as education_level,
+                        education_major_en as education_major,
+                        expire_date,
+                        scholarship_img
+                        FROM usea_degree, usea_scholarship WHERE usea_scholarship.education_level = usea_degree.degree_id AND scholarship_type= '1'";
                         $stmt = $conn->prepare($sql);
                         $stmt->execute();
                         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -54,38 +61,37 @@ include_once '../..//function.php';
                     ?>
                     <div class="col-xxl-12 scholarship-card">
                         <div class="col-xxl-2 scholarship-img">
-                            <a href="scholarship-university-detail.php?id=<?php echo $value['scholarship_id']?>"><img src="../../media/scholarship/university/<?php echo $value['scholarship_img'] ?>" alt=""></a>
+                            <a href="scholarship-university-detail.php?id=<?php echo $value['scholarship_id']?>"><img src="../../media/scholarship/university/<?php echo $value['scholarship_img'] ?>" alt="logo"></a>
                         </div>
                         <div class="col-xxl-10 scholarship-info">
                             <div class="row">
-                                <span><?php echo $value['scholarship_title_en']?></span>
+                                <ul>
+                                    <li><i class="fa-solid fa-building-columns"></i>  <?php echo $value['scholarship_title_en'];?></i></li>
+                                </ul>
                                 <ul>
                                     <li><i class="fa-solid fa-graduation-cap"></i> <?php echo $value['education_level']?></li>
                                     <li><i class="fa-solid fa-book-open"></i> <?php echo $value['education_major']?></li>
                                 </ul>
                                 <ul>
                                     <li><i class="fa-solid fa-calendar-xmark"></i> 
-                                        ថ្ងៃទី 
                                         <?php 
-                                            $day = date("d",strtotime($value['expire_date']));
-                                            convertNumber($day);
-                                        ?> ខែ
-                                        <?php 
-                                            $month = date("M",strtotime($value['expire_date']));
-                                            convertMonth($month);
-                                        ?> 
-                                        ឆ្នាំ
-                                        <?php 
-                                            $year=date("Y",strtotime($value['expire_date']));
-                                            convertNumber($year);
+                                            $days=date("d",strtotime($value['expire_date'])); 
+                                            echo $days;
                                         ?>
-                                    </li>
-                                    <li><i class="fa-solid fa-clock"></i>  
                                         <?php 
-                                            $times =date('h:i ', strtotime($value['expire_date'])); 
-                                            convertNumber($times);
-                                            $shift =date('a', strtotime($value['expire_date'])) ;
-                                            convertShift($shift);
+                                        $month = date("M",strtotime($value['expire_date']));
+                                            echo $month;
+                                        ?> 
+                                        <?php 
+                                            $year = date("Y",strtotime($value['expire_date']));
+                                            echo $year;
+                                        ?></li>
+                                        <li><i class="fa-solid fa-clock"></i>  
+                                        <?php 
+                                        $times =date('h:i', strtotime($value['expire_date'])); 
+                                            echo $times . " ";
+                                        $shift =date('a', strtotime($value['expire_date'])) ;
+                                            echo $shift;
                                         ?>
                                     </li>
                                 </ul>

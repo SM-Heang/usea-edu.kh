@@ -1,7 +1,8 @@
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
-  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"),
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix")
+      format("embedded-opentype"),
     url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"),
     url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"),
     url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
@@ -22,21 +23,20 @@
   font-style: normal;
 }
 
-:root{
-  --primary-color: #002060; 
-  --detail-color: #333333;
+:root {
+  --primary-color: #002060;
 }
 
 * {
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth !important;
 }
 
 body {
-  font-family: 'Khmer OS Battambang', sans-serif;
+  font-family: "Khmer OS Battambang", sans-serif;
   font-family: "Khmer OS Content";
   font-weight: 400;
   font-size: 0.9rem;
@@ -80,7 +80,7 @@ body {
   list-style: none;
 }
 /* nav-link li each one */
-.main-menu{
+.main-menu {
   padding: 5px 5px !important;
   white-space: nowrap !important;
 }
@@ -109,7 +109,7 @@ body {
   transform: translateY(0);
 }
 
-#sticky{
+#sticky {
   width: 100%;
 }
 
@@ -214,7 +214,7 @@ body {
   color: var(--primary-color);
   font-size: 20px !important;
 }
-.noactive{
+.noactive {
   color: var(--primary-color);
 }
 
@@ -245,9 +245,8 @@ body {
 
 /* === Font index === */
 
-
 /* card-event kh */
-.animate-card img{
+.animate-card img {
   transition: transform 400ms ease-in-out;
   width: 100%;
   height: 200px;
@@ -255,7 +254,7 @@ body {
   overflow: hidden;
 }
 
-.animate-card img:hover{
+.animate-card img:hover {
   transform: scale(1.1) translateY(0px);
   transition: transform 400ms ease-in-out;
 }
@@ -263,7 +262,7 @@ body {
 .animate-card {
   transition: transform 400ms ease-in-out;
   box-shadow: 0 5px 5px rgba(3, 3, 3, 0.2);
-  font-style: 'Khmer OS Battambang';
+  font-style: "Khmer OS Battambang";
   overflow: hidden;
 }
 
@@ -274,27 +273,26 @@ body {
   box-shadow: 0 20px 20px rgba(3, 3, 3, 0.2);
   z-index: 999;
 } */
-.event-btn{
-  font-family: 'Khmer OS Battambang' !important;
+.event-btn {
+  font-family: "Khmer OS Battambang" !important;
   font-size: 0.9rem !important;
   border: 1px solid var(--primary-color) !important;
   color: var(--primary-color);
-
 }
-.event-btn:hover{
+.event-btn:hover {
   border: 1px solid var(--primary-color) !important;
   background-color: var(--primary-color) !important;
   color: white;
 }
 
 /* Formdownloads Style */
-.card-downloads{
+.card-downloads {
   width: 450px !important;
 }
-.F-download-shadow{
+.F-download-shadow {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
-.dl-img{
+.dl-img {
   width: 100% !important;
   aspect-ratio: 1/1 !important;
   object-fit: cover !important;
@@ -305,7 +303,7 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   color: #ff0000;
-  font: 'Khmer OS Battambang';
+  font: "Khmer OS Battambang";
   font-size: 18pt;
 }
 
@@ -321,11 +319,11 @@ body {
   text-align: justify;
 }
 /* Major details */
-.nav-header > .nav-pills > .nav-item > .nav-link{
+.nav-header > .nav-pills > .nav-item > .nav-link {
   font-size: 18px;
   margin: auto !important;
 }
-#pills-tab > .nav-item > .nav-link{
+#pills-tab > .nav-item > .nav-link {
   background-color: #fff;
   border-top: 1px solid var(--primary-color);
   border-left: 1px solid var(--primary-color);
@@ -333,44 +331,45 @@ body {
   border-radius: 0;
   color: var(--primary-color);
 }
-#pills-tab > .nav-item > .nav-link:hover{
+#pills-tab > .nav-item > .nav-link:hover {
   background-color: var(--primary-color);
   color: #fff !important;
 }
-#pills-tab > .nav-item > .active{
+#pills-tab > .nav-item > .active {
   background-color: var(--primary-color);
   color: #fff;
 }
-#pills-tab > .nav-item > .active:hover{
+#pills-tab > .nav-item > .active:hover {
   color: #fff !important;
 }
 
-.tab-pane{
-  transition: all .5s ease-in-out;
+.tab-pane {
+  transition: all 0.5s ease-in-out;
 }
-.tab-pane > table{
+.tab-pane > table {
   animation: moving 1s ease;
   border: none !important;
 }
-.tab-pane > table > thead{
+.tab-pane > table > thead {
   border-bottom: 1px solid var(--primary-color) !important;
 }
 
-.tab-pane > table > tbody td{
+.tab-pane > table > tbody td {
   border: none !important;
   border-bottom: 1px solid grey !important;
 }
 
-table th,td{
+table th,
+td {
   border: none !important;
 }
 
-@keyframes moving{
-  from{
+@keyframes moving {
+  from {
     transform: translateX(1000px);
     opacity: 0;
   }
-  to{
+  to {
     transform: translateX(0px);
     opacity: 1;
   }
@@ -383,35 +382,34 @@ table th,td{
 }
 
 /* End History Detail*/
-.event_title{
-  font-family: 'Khmer OS Battambang' !important;
+.event_title {
   margin: 0;
   line-height: 30px;
   font-size: 1.25rem;
   color: var(--primary-color) !important;
 }
-.event-hr{
+.event-hr {
   width: 20%;
   margin: 1%;
   color: var(--primary-color) !important;
   font-weight: bold;
 }
-.event_detail{
-  font-family: 'Khmer OS Battambang' !important;
-  font-size: 0.9rem !important;
-  color: var(--detail-color);
+.event_detail {
+  font-family: Khmer OS System;
+  font-size: 1rem;
+  color: var(--primary-color);
   text-align: justify;
 }
-.event_detail > p >span{
+.event_detail > p > span {
   font-size: 16px !important;
   color: var(--detail-color);
 }
 
 /* FAQ */
-.font-kh{
-  font-family: 'Khmer OS Battambang' !important;
+.font-kh {
+  font-family: "Khmer OS Battambang" !important;
 }
-.nwrap{
+.nwrap {
   white-space: nowrap !important;
 }
 
@@ -466,8 +464,7 @@ table th,td{
   > .scholarsip-university-info
   > .scholarship-logo
   > img {
-    border: 1px solid red;
-    width: 150px;
+  width: 150px;
 }
 .scholarship-content
   > .row
@@ -574,7 +571,7 @@ table th,td{
 /* End Logo Meaning Detail*/
 
 /* Start core value meaning Detail*/
-.title-text{
+.title-text {
   color: white;
   font-size: 14.4px !important;
   padding: 5pt;
@@ -683,7 +680,7 @@ table th,td{
 }
 
 #button-content ul li a {
-  font-family: 'Khmer OS Battambang' !important;
+  font-family: "Khmer OS Battambang" !important;
   font-size: 16pt;
   color: var(--primary-color);
   text-decoration: none;
@@ -740,7 +737,7 @@ table th,td{
 }
 
 .right-content-economic hr {
-  border: .1px solid var(--primary-color);
+  border: 0.1px solid var(--primary-color);
   font-weight: bold;
   border-radius: 10px;
   opacity: 1 !important;
@@ -751,7 +748,7 @@ table th,td{
   padding: 0.9rem;
   text-decoration: none;
   color: var(--primary-color);
-  font-family: 'Khmer OS Battambang' !important;
+  font-family: "Khmer OS Battambang" !important;
   font-size: 1.15rem;
   font-weight: 700;
 }
@@ -787,9 +784,8 @@ table th,td{
   color: #ff0000 !important;
 }
 
-
-/* ========================================= */
-#footer-location{
+/* ========================================== */
+#footer-location {
   background-color: var(--primary-color);
   color: white;
   padding: 20px;
@@ -809,11 +805,10 @@ table th,td{
     left: 53.44% !important;
   }
 
-  .mega-box .mega-link .list-control img{
+  .mega-box .mega-link .list-control img {
     margin-top: 13px;
-    
   }
-  #e-mega-box{
+  #e-mega-box {
     left: 65.83% !important;
   }
   .right-content-economic .item .item-link {
@@ -831,7 +826,7 @@ table th,td{
     font-weight: bold;
   }
 
-  #footer-location{
+  #footer-location {
     background-color: var(--primary-color);
     color: white;
     padding: 20px;
@@ -839,8 +834,8 @@ table th,td{
   }
 
   .fh5co-heading div h2 {
-    font-family: 'Khmer OS Battambang' !important;
-    font-size: 20px !important;
+    font-family: "Khmer OS Battambang" !important;
+    font-size: 1.5rem !important;
     margin-bottom: 20px;
     line-height: 1.5;
     color: var(--primary-color);
@@ -855,24 +850,23 @@ table th,td{
     font-weight: bold;
   }
 
-  .title-card{
+  .title-card {
     font-size: 18px !important;
     color: var(--primary-color);
     line-height: 30px !important;
     font-family: "Khmer OS Battambang" !important;
   }
- 
-  .title-text{
+
+  .title-text {
     color: white;
     font-size: 18px !important;
     padding: 5pt;
   }
 
-  .title-f{
+  .title-f {
     font-size: 16px !important;
     color: var(--primary-color);
   }
-
 }
 
 @media screen and (max-width: 1399px) {
@@ -904,11 +898,11 @@ table th,td{
     top: 186px;
     left: 43.45% !important;
   }
-  #e-mega-box{
+  #e-mega-box {
     left: 59.98% !important;
   }
 
-  .nav-link .mega-box .mega-link .list-control img{
+  .nav-link .mega-box .mega-link .list-control img {
     margin-top: 15px;
   }
 
@@ -920,7 +914,7 @@ table th,td{
     font-size: 1.25rem;
   }
 
-  #footer-location{
+  #footer-location {
     background-color: var(--primary-color);
     color: white;
     padding: 20px;
@@ -943,23 +937,22 @@ table th,td{
     font-weight: bold;
   }
 
-  .title-card{
+  .title-card {
     font-size: 18px !important;
     color: var(--primary-color);
     line-height: 30px !important;
   }
 
-  .title-text{
+  .title-text {
     color: white;
     font-size: 18px !important;
     padding: 5pt;
   }
 
-  .title-f{
+  .title-f {
     font-size: 16px !important;
     color: var(--primary-color);
   }
-
 }
 
 @media screen and (max-width: 1199px) {
@@ -968,7 +961,7 @@ table th,td{
     margin-top: 15px;
     color: var(--primary-color);
   }
-  
+
   .fh5co-nav .top .social-parent span {
     margin: 10px 10px;
   }
@@ -1037,7 +1030,7 @@ table th,td{
     left: 48.59% !important;
   }
 
-  #e-mega-box{
+  #e-mega-box {
     left: 66.38% !important;
   }
 
@@ -1085,7 +1078,7 @@ table th,td{
     font-size: 12pt !important;
   }
 
-  #footer-location{
+  #footer-location {
     background-color: var(--primary-color);
     color: white;
     padding: 20px;
@@ -1101,19 +1094,19 @@ table th,td{
     font-weight: bold;
   }
 
-  .title-card{
+  .title-card {
     font-size: 0.9rem !important;
     color: var(--primary-color);
     line-height: 30px !important;
   }
 
-  .title-text{
+  .title-text {
     color: white;
     font-size: 12pt !important;
     padding: 5pt;
   }
 
-  .title-f{
+  .title-f {
     font-size: 0.9rem !important;
     color: var(--primary-color);
   }
@@ -1125,8 +1118,8 @@ table th,td{
     font-size: 14.4px !important;
   }
 
-  .nav-header > .nav-pills > .nav-item > .nav-link{
-    font-size: 14.4px; 
+  .nav-header > .nav-pills > .nav-item > .nav-link {
+    font-size: 14.4px;
   }
 
   #button-content ul li a {
@@ -1135,7 +1128,6 @@ table th,td{
     text-decoration: none;
     font-weight: bold;
   }
-
 }
 
 @media screen and (max-width: 1024px) {
@@ -1153,7 +1145,7 @@ table th,td{
 
   .mega-link .list-control .nav-icon {
     margin-top: 0px;
-  } 
+  }
 
   .fh5co-heading div h2 {
     font-size: 16px !important;
@@ -1164,17 +1156,14 @@ table th,td{
     text-transform: uppercase;
     position: relative;
   }
-
 }
 
-
 @media screen and (max-width: 988px) {
-  .nav-header > .nav-pills > .nav-item > .nav-link{
+  .nav-header > .nav-pills > .nav-item > .nav-link {
     font-size: 14.4px;
     margin: auto !important;
     width: 220px;
   }
-
 }
 /* =============================== */
 
@@ -1215,23 +1204,54 @@ table th,td{
 }
 
 @media screen and (max-width: 605px) {
-
-  .tab-pane > table{
+  .tab-pane > table {
     width: fit-content !important;
     padding: 0 !important;
     margin: auto !important;
     display: block !important;
     border: none !important;
   }
+
+  .scholarship-content
+    > .row
+    > .scholarsip-university-info
+    > .university-info
+    > ul {
+    list-style: none;
+    height: fit-content !important;
+    width: fit-content !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .scholarship-content
+    > .row
+    > .scholarsip-university-info
+    > .university-info
+    > ul
+    > li {
+    font-size: 0.9rem !important;
+    display: block !important;
+    font-family: "Khmer OS Battambang";
+    color: var(--primary-color);
+  }
+
+  .scholarship-content
+    > .row
+    > .scholarsip-university-info
+    > .scholarship-logo
+    > img {
+    width: 100px !important;
+  }
 }
 
-#partnership-int .partnership-title{
+#partnership-int .partnership-title {
   font-family: Khmer OS Content !important;
   color: var(--primary-color);
   font-weight: bold;
   font-size: 1.25rem !important;
 }
-#partnership-int .partnership-title{
+#partnership-int .partnership-title {
   font-family: Khmer OS Content !important;
   color: var(--primary-color);
   font-weight: bold;
@@ -1494,8 +1514,8 @@ table th,td{
     font-weight: bold;
   }
 
-  .title-f{
-    font-family: 'Khmer OS Battambang' !important;
+  .title-f {
+    font-family: "Khmer OS Battambang" !important;
     font-size: 0.9rem;
     line-height: 26px !important;
     color: var(--primary-color);
@@ -1504,6 +1524,7 @@ table th,td{
   .title-text {
     font-size: 0.9rem !important;
   }
+<<<<<<< HEAD
 
   .event_title{
     font-family: 'Khmer OS Battambang' !important;
@@ -1534,6 +1555,8 @@ table th,td{
     text-align: justify;
   }
 
+=======
+>>>>>>> ca22492519a995071a79e0620a5a09aab60346a3
 }
 
 #dropdown-menu {
@@ -1546,8 +1569,13 @@ table th,td{
 }
 
 #partnership {
+<<<<<<< HEAD
   font-family: 'Khmer OS Battambang' !important;
   color: var(--primary-color);
+=======
+  font-family: "Khmer OS Battambang" !important;
+  color: red;
+>>>>>>> ca22492519a995071a79e0620a5a09aab60346a3
   font-size: 20px;
   font-weight: bold;
 }
@@ -1557,15 +1585,15 @@ table th,td{
   height: 100px;
 }
 
-.title-card{
-  font-family: 'Khmer OS Battambang' !important;
+.title-card {
+  font-family: "Khmer OS Battambang" !important;
   font-size: 0.9rem;
   line-height: 27px;
   color: var(--primary-color);
 }
 
-.title-f{
-  font-family: 'Khmer OS Battambang' !important;
+.title-f {
+  font-family: "Khmer OS Battambang" !important;
   font-size: 0.9rem;
   line-height: 26px !important;
   color: var(--primary-color);
@@ -1657,7 +1685,16 @@ figure {
   padding-top: 30px;
 }
 
-.fh5co-nav .top-menu #top-nav-bar .row #navbar-parent #navbar-list #top-nav ul li a {
+.fh5co-nav
+  .top-menu
+  #top-nav-bar
+  .row
+  #navbar-parent
+  #navbar-list
+  #top-nav
+  ul
+  li
+  a {
   padding: 30px 10px 0px 15px;
 }
 
@@ -2278,7 +2315,7 @@ figure {
   box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
 }
 
-.fh5co-nav ul li.active>a {
+.fh5co-nav ul li.active > a {
   font-weight: 400;
 }
 
@@ -2357,20 +2394,20 @@ figure {
   z-index: 9;
 }
 
-#fh5co-hero .flexslider .slider-text>.slider-text-inner {
+#fh5co-hero .flexslider .slider-text > .slider-text-inner {
   display: table-cell;
   vertical-align: middle;
   min-height: 700px;
 }
 
-#fh5co-hero .flexslider .slider-text>.slider-text-inner h1,
-#fh5co-hero .flexslider .slider-text>.slider-text-inner h2 {
+#fh5co-hero .flexslider .slider-text > .slider-text-inner h1,
+#fh5co-hero .flexslider .slider-text > .slider-text-inner h2 {
   margin: 0;
   padding: 0;
   color: white;
 }
 
-#fh5co-hero .flexslider .slider-text>.slider-text-inner h1 {
+#fh5co-hero .flexslider .slider-text > .slider-text-inner h1 {
   margin-bottom: 20px;
   font-size: 40px;
   line-height: 1.3;
@@ -2378,23 +2415,23 @@ figure {
 }
 
 @media screen and (max-width: 768px) {
-  #fh5co-hero .flexslider .slider-text>.slider-text-inner h1 {
+  #fh5co-hero .flexslider .slider-text > .slider-text-inner h1 {
     font-size: 30px;
   }
 }
 
-#fh5co-hero .flexslider .slider-text>.slider-text-inner h2 {
+#fh5co-hero .flexslider .slider-text > .slider-text-inner h2 {
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 30px;
   font-family: "Source Sans Pro", Arial, sans-serif;
 }
 
-#fh5co-hero .flexslider .slider-text>.slider-text-inner h2 a {
+#fh5co-hero .flexslider .slider-text > .slider-text-inner h2 a {
   color: rgba(255, 255, 255, 0.5);
 }
 
-#fh5co-hero .flexslider .slider-text>.slider-text-inner .btn {
+#fh5co-hero .flexslider .slider-text > .slider-text-inner .btn {
   padding: 18px 30px !important;
   color: #fff;
   border: none !important;
@@ -2404,19 +2441,24 @@ figure {
   letter-spacing: 2px;
 }
 
-#fh5co-hero .flexslider .slider-text>.slider-text-inner .btn:hover {
+#fh5co-hero .flexslider .slider-text > .slider-text-inner .btn:hover {
   background: #2d6cdf !important;
   -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
 }
 
-#fh5co-hero .flexslider .slider-text>.slider-text-inner .fh5co-lead {
+#fh5co-hero .flexslider .slider-text > .slider-text-inner .fh5co-lead {
   font-size: 20px;
   color: #fff;
 }
 
-#fh5co-hero .flexslider .slider-text>.slider-text-inner .fh5co-lead .icon-heart {
+#fh5co-hero
+  .flexslider
+  .slider-text
+  > .slider-text-inner
+  .fh5co-lead
+  .icon-heart {
   color: #d9534f;
 }
 
@@ -2439,7 +2481,6 @@ figure {
 }
 
 @media screen and (max-width: 768px) {
-
   #fh5co-course-categories,
   #fh5co-counter,
   #fh5co-course,
@@ -2581,7 +2622,6 @@ figure {
 }
 
 @media screen and (max-width: 768px) {
-
   .course .desc,
   .course .course-img {
     width: 100%;
@@ -2733,8 +2773,8 @@ figure {
 }
 
 .fh5co-heading div h2 {
-  font-family: 'Khmer OS Battambang' !important;
-  font-size: 16px;
+  font-family: "Khmer OS Battambang" !important;
+  font-size: 15px;
   margin-bottom: 20px;
   line-height: 1.5;
   color: var(--primary-color);
@@ -2807,11 +2847,11 @@ figure {
   padding: 0;
 }
 
-.a-news{
+.a-news {
   text-decoration: none;
   color: var(--primary-color);
-  font-size: 16px;
-  font-weight: bold
+  font-size: 16pt;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
@@ -3006,7 +3046,7 @@ figure {
     display: flex;
     justify-content: center;
   }
-  .main-menu{
+  .main-menu {
     padding: 5px 0px !important;
     white-space: nowrap !important;
   }
@@ -3024,14 +3064,13 @@ figure {
     text-decoration: none;
     font-weight: bold;
   }
-
 }
 
 @media screen and (max-width: 992px) {
   .fh5co-blog {
     width: 100%;
   }
-  .main-menu{
+  .main-menu {
     padding: 5px 0px !important;
     white-space: nowrap !important;
   }
@@ -3043,7 +3082,7 @@ figure {
   margin-bottom: 3em;
 }
 
-.simply-countdown>.simply-section {
+.simply-countdown > .simply-section {
   /* coutndown blocks */
   display: inline-block;
   width: 120px;
@@ -3058,7 +3097,7 @@ figure {
   border-radius: 50%;
 }
 
-.simply-countdown>.simply-section>div {
+.simply-countdown > .simply-section > div {
   /* countdown block inner div */
   display: table-cell;
   vertical-align: middle;
@@ -3066,19 +3105,19 @@ figure {
   width: 120px;
 }
 
-.simply-countdown>.simply-section .simply-amount,
-.simply-countdown>.simply-section .simply-word {
+.simply-countdown > .simply-section .simply-amount,
+.simply-countdown > .simply-section .simply-word {
   display: block;
   color: white;
   /* amounts and words */
 }
 
-.simply-countdown>.simply-section .simply-amount {
+.simply-countdown > .simply-section .simply-amount {
   font-size: 40px;
   /* amounts */
 }
 
-.simply-countdown>.simply-section .simply-word {
+.simply-countdown > .simply-section .simply-word {
   color: rgba(255, 255, 255, 0.9);
   text-transform: uppercase;
   font-size: 12px;
@@ -3531,20 +3570,20 @@ figure {
 
 /* pagination of partnership */
 .pagination .page-item .bg_btn {
-  font-family: 'Khmer OS Battambang' !important;
+  font-family: "Khmer OS Battambang" !important;
   border-radius: 10px 0px 0px 10px;
   color: var(--primary-color);
   border: 3px solid var(--primary-color);
 }
 
 .pagination .bg_btn {
-  font-family: 'Khmer OS Battambang' !important;
+  font-family: "Khmer OS Battambang" !important;
   border-radius: 0px 10px 10px 0px;
   color: var(--primary-color);
   border: 3px solid var(--primary-color);
 }
 
-.pagination .active>.page-link,
+.pagination .active > .page-link,
 .page-link.active {
   background-color: #00205a;
   border: 2px solid var(--primary-color);
@@ -3625,7 +3664,6 @@ figure {
   transform: rotate(-180deg);
 }
 
-
 /* right content */
 
 /* 6 */
@@ -3654,7 +3692,7 @@ figure {
 .right-content-economic .select-menu-7.active_menu7 .select-btn-7 .i_7 {
   transform: rotate(-180deg);
 }
-  
+
 /*
 For Media Query Devices with Breakpoint
 =================================
@@ -3663,44 +3701,41 @@ For Media Query Devices with Breakpoint
 ** Mobile Element Image
 ==================================
 */
-@media only screen and (min-width : 320px) {
-
-  #content-detail{
+@media only screen and (min-width: 320px) {
+  #content-detail {
     text-align: justify;
   }
-  #content-detail .content-history-detail .first_img{
+  #content-detail .content-history-detail .first_img {
     width: 355px !important;
   }
-  .sub_container .content_mission{
+  .sub_container .content_mission {
     font-size: 1rem !important;
     display: block;
     width: 370px !important;
     word-spacing: -2px !important;
   }
-  .web-location ul li a{
+  .web-location ul li a {
     font-size: 14px;
   }
-  #content-detail .post{
+  #content-detail .post {
     font-size: 1rem !important;
     text-align: justify;
   }
 
   /* update title when responsive */
-
 }
 
-@media only screen and (min-width : 480px) {
-  #content-detail .post{
+@media only screen and (min-width: 480px) {
+  #content-detail .post {
     font-size: 1rem !important;
   }
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  #card-events{
+  #card-events {
     width: 100% !important;
     object-fit: cover;
-
   }
   .d-flex .icon_img {
     height: 80px !important;
@@ -3777,7 +3812,7 @@ For Media Query Devices with Breakpoint
     width: 370px;
     word-spacing: -2px !important;
   }
-  .sub_container .content_mission{
+  .sub_container .content_mission {
     font-size: 0.9rem !important;
     display: block;
     width: 390px !important;
@@ -3819,7 +3854,7 @@ For Media Query Devices with Breakpoint
     /* margin-left: 5px !important; */
   }
 
-  #content-detail .post{
+  #content-detail .post {
     font-size: 0.9rem !important;
   }
 
@@ -3846,7 +3881,7 @@ For Media Query Devices with Breakpoint
     border: 3px solid var(--primary-color);
     padding: 7px 10px;
   }
-  .mt-5{
+  .mt-5 {
     margin-top: 0rem !important;
   }
 
@@ -3902,16 +3937,14 @@ For Media Query Devices with Breakpoint
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
- .img-fluid {
+  .img-fluid {
     height: 100% !important;
     border-radius: 5px 5px 0px 0px;
- }
-  #card-events{
+  }
+  #card-events {
     width: 100%;
     object-fit: cover;
   }
-
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -3920,13 +3953,12 @@ For Media Query Devices with Breakpoint
     width: 100%;
     margin-bottom: 20px;
   }
-  .img-fluid{
+  .img-fluid {
     height: 100% !important	;
   }
-  .icon_img{
+  .icon_img {
     height: 90px !important;
   }
-
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -3934,8 +3966,8 @@ For Media Query Devices with Breakpoint
   iframe {
     width: 100%;
   }
-  
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}
