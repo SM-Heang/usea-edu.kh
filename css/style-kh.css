@@ -628,7 +628,8 @@ td {
   text-align: justify;
 }
 
-#content-detail .content-president-detail div , span {
+#content-detail .content-president-detail div,
+span {
   color: var(--detail-color);
   font-size: 18px !important;
   text-align: justify;
@@ -650,7 +651,7 @@ td {
   text-align: justify;
 }
 
-.content-structure-detail p span{
+.content-structure-detail p span {
   margin-top: 10px;
   color: var(--primary-color);
   font-size: 18px !important;
@@ -1524,39 +1525,36 @@ td {
   .title-text {
     font-size: 0.9rem !important;
   }
-<<<<<<< HEAD
 
-  .event_title{
-    font-family: 'Khmer OS Battambang' !important;
+  .event_title {
+    font-family: "Khmer OS Battambang" !important;
     font-size: 0.9rem !important;
   }
 
-  .event_detail{
-    font-family: 'Khmer OS Battambang' !important;
+  .event_detail {
+    font-family: "Khmer OS Battambang" !important;
     font-size: 12px !important;
     color: var(--detail-color);
     text-align: justify;
   }
-  .event_detail > p >span{
+  .event_detail > p > span {
     font-size: 12px !important;
     color: var(--detail-color);
   }
 
-  .content-structure-detail p span{
+  .content-structure-detail p span {
     margin-top: 10px;
     color: var(--primary-color);
     font-size: 0.9rem !important;
     text-align: justify;
   }
-  
-  #content-detail .content-president-detail div , span {
+
+  #content-detail .content-president-detail div,
+  span {
     color: var(--detail-color);
     font-size: 0.9rem !important;
     text-align: justify;
   }
-
-=======
->>>>>>> ca22492519a995071a79e0620a5a09aab60346a3
 }
 
 #dropdown-menu {
@@ -1569,13 +1567,8 @@ td {
 }
 
 #partnership {
-<<<<<<< HEAD
-  font-family: 'Khmer OS Battambang' !important;
-  color: var(--primary-color);
-=======
   font-family: "Khmer OS Battambang" !important;
-  color: red;
->>>>>>> ca22492519a995071a79e0620a5a09aab60346a3
+  color: var(--primary-color);
   font-size: 20px;
   font-weight: bold;
 }
@@ -3932,7 +3925,6 @@ For Media Query Devices with Breakpoint
     width: 175px !important;
     height: 220px !important;
   }
-
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
