@@ -63,7 +63,7 @@
                     ?>
                     <div class="col-xxl-12 career-card">
                         <div class="col-xxl-2 career-img">
-                            <a href="career-detail.php?id=<?php echo $value['id']?>"><img src="../../media/career/<?php echo $value['logo'] ?>" alt=""></a>
+                            <a href="career-detail.php?id=<?php echo $value['id']?>"><img src="../../media/career/logos/<?php echo $value['logo'] ?>" alt=""></a>
                         </div>
                         <div class="col-xxl-10 career-info">
                             <div class="row">

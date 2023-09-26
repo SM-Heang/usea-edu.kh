@@ -783,7 +783,7 @@ if(isset($_GET['action'])){
 			break;
 			
 		case 'career_en':
-			$sql = "SELECT career_id as id,	career_img as logo,	career_position_en as position, career_organization_en as organization FROM usea_career WHERE keyword = 'career'";
+			$sql = "SELECT career_id as id,	career_img as logo,	career_position_en as position, career_organization_en as organization, expire_date FROM usea_career WHERE keyword = 'career'";
 			$stmt = $conn->prepare($sql);
 			$stmt->execute();
 			$career = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -791,9 +791,10 @@ if(isset($_GET['action'])){
 			foreach ($career as $key => $value) {
 				$newcareer[] = array(
 					'id' => $value['id'],
-					'logo' => "http://".$_SERVER['HTTP_HOST']."/media/career/". $value['logo'],
+					'logo' => "http://".$_SERVER['HTTP_HOST']."/media/career/logos/". $value['logo'],
 					'position' => $value['position'],
 					'organization' => $value['organization'],
+                    'expired_date' => date("d",strtotime($value['expire_date'])). " " . date("F",strtotime($value['expire_date'])) . " " . date("Y",strtotime($value['expire_date'])),
 					'link' => "http://".$_SERVER['HTTP_HOST']."/en/ButtomPages/career-detail.php?id=". $value['id']
 				);
 			}
@@ -802,7 +803,7 @@ if(isset($_GET['action'])){
 			echo json_encode($output);
 			break;
 		case 'career_kh':
-			$sql = "SELECT career_id as id,	career_img as logo,	career_position_kh as position, career_organization_kh as organization FROM usea_career WHERE keyword = 'career'";
+			$sql = "SELECT career_id as id,	career_img as logo,	career_position_kh as position, career_organization_kh as organization, expire_date FROM usea_career WHERE keyword = 'career'";
 			$stmt = $conn->prepare($sql);
 			$stmt->execute();
 			$career = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -810,9 +811,10 @@ if(isset($_GET['action'])){
 			foreach ($career as $key => $value) {
 				$newcareer[] = array(
 					'id' => $value['id'],
-					'logo' => "http://".$_SERVER['HTTP_HOST']."/media/career/". $value['logo'],
+					'logo' => "http://".$_SERVER['HTTP_HOST']."/media/career/logos/". $value['logo'],
 					'position' => $value['position'],
 					'organization' => $value['organization'],
+                    'expired_date' => "ថ្ងៃទី " . convertNumber(date("d",strtotime($value['expire_date']))) . " ខែ" . convertMonth(date("M",strtotime($value['expire_date']))) . " ឆ្នាំ" . convertNumber(date("Y",strtotime($value['expire_date']))),
 					'link' => "http://".$_SERVER['HTTP_HOST']."/en/ButtomPages/career-detail.php?id=". $value['id']
 				);
 			}

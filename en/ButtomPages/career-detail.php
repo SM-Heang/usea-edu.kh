@@ -59,7 +59,8 @@ include_once '../../function.php';
                     career_organization_en as organization,
                     location_en as location,
                     expire_date,
-                    career_detail_img
+                    career_detail_img,
+                    career_detail_en as detail
                     FROM usea_career WHERE career_id = $id";
                     $stmt = $conn->prepare($sql);
                     $stmt->execute();
@@ -69,7 +70,7 @@ include_once '../../function.php';
                 ?>
                     <div class="col-xxl-12 career-university-info">
                         <div class="col-xxl-3 career-logo">
-                            <img src="../../media/career/<?php echo $result['logo'];?>" alt="">
+                            <img src="../../media/career/logos/<?php echo $result['logo'];?>" alt="">
                         </div>
                         <div class="col-xxl-9 career-info">
                             <div class="row">
@@ -79,18 +80,20 @@ include_once '../../function.php';
                                 <span class="span-career-info"><i class="fa-solid fa-location-dot"></i>  <?php echo $result['location'];?></span>
                                 <span class="span-career-info" style=" margin-right: 10px;"><i class="fa-solid fa-calendar-xmark">
                                         </i>  
-                                            
+                                            ថ្ងៃទី
                                             <?php 
                                                 $days=date("d",strtotime($result['expire_date'])); 
-                                                echo $days;
-                                            ?>
+                                                convertNumber($days);
+                                            ?> 
+                                            ខែ
                                             <?php 
                                             $month = date("M",strtotime($result['expire_date']));
-                                                echo $month;
+                                            convertMonth($month);
                                             ?> 
+                                            ឆ្នាំ
                                             <?php 
                                                 $year = date("Y",strtotime($result['expire_date']));
-                                                echo $year;
+                                                convertNumber($year);
                                             ?>
                                         </li> 
                                 </span>
@@ -100,6 +103,8 @@ include_once '../../function.php';
                 </div>
                 
                 <hr style="border: 1px solid #002060;" width="100%;">
+                <span style="color: #002060; font-size: 20px;">Announcement</span><br>
+                <span><?php echo $result['detail'] ?></span>
                 <div class="​​col-xxl-12 career-detail text-center">
                     <div class="container border">
                          <img src="../../media/career/details/<?php echo $result['career_detail_img'] ?>" alt="" width="100%;">
