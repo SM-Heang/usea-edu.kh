@@ -131,7 +131,7 @@
 				<div class="item">
 					<a class="nav-link item-link <?php if ($_SESSION['right'] == 'career-kh') {
 														echo 'right_active';
-													} ?>" href="career.php"> ការងារ
+													} ?>" href="career.php"> មជ្ឈមណ្ឌលការងារ
 					</a>
 				</div>
 				<hr>

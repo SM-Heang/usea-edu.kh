@@ -20,7 +20,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">Career</a>
+                    <a href="#">Career Center</a>
                 </li>
             </ul>
         </div>
@@ -36,7 +36,7 @@
         <div class="col-xxl-9">
             <div class="container title-bg">
                 <div class="row title-txt">
-                Career
+                Career Center
                 </div>
             </div>
             <div class="row">
