@@ -91,125 +91,10 @@ function convertShift($shift){
 
 if(isset($_GET['action'])){
 	switch ($_GET['action']) {
-	    case 'study_program':
-			// Prepare the query to fetch student performance data
-            $query = "SELECT usea_degree.degree_id, usea_faculty_icon.icon_name as fac_icon, usea_faculty.fac_name_kh as fac_name, usea_major.major_name_kh as major_name, usea_degree.degree_name_kh as education_name,
-            usea_major.major_info_kh as major_info, usea_study_year.study_year_kh as year_name, usea_semester.semester_name_kh as semester_name, usea_subject.subject_name_kh as subject_name, study_hour as hour, credit
-            FROM usea_study_plan, usea_faculty, usea_major, usea_degree, usea_study_year, usea_semester, usea_subject , usea_faculty_icon
-            WHERE usea_study_plan.fac_name = usea_faculty.fac_id 
-            AND usea_study_plan.major_name = usea_major.major_id 
-            AND usea_study_plan.major_info_kh = usea_major.major_id
-            AND usea_study_plan.education_name = usea_degree.degree_id 
-            AND usea_study_plan.study_year = usea_study_year.study_year_id 
-            AND usea_study_plan.semester_name = usea_semester.semester_id
-            AND usea_study_plan.subject_name = usea_subject.subject_id
-            AND usea_study_plan.fac_icon = usea_faculty_icon.icon_id
-            ";
-
-            // Prepare the statement
-            $stmt = $conn->prepare($query);
-            
-            // Execute the statement
-            $stmt->execute();
-            
-            // Bind variables to the result columns
-            $stmt->bindColumn('fac_icon', $fac_icon);
-            $stmt->bindColumn('degree_id', $degree_id);
-            $stmt->bindColumn('fac_name', $fac_name);
-            $stmt->bindColumn('major_name', $major_name);
-            $stmt->bindColumn('education_name', $degree_name);
-            $stmt->bindColumn('major_info', $major_info);
-            $stmt->bindColumn('year_name', $year_name);
-            $stmt->bindColumn('semester_name', $semester_name);
-            $stmt->bindColumn('subject_name', $subject_name);
-            $stmt->bindColumn('hour', $hour);
-            $stmt->bindColumn('credit', $credit);
-            
-            // Create an array to store the data
-            $data = [
-                "program_data" => []
-            ];
-
-            // Fetch the rows and store the data in the array
-            while ($stmt->fetch(PDO::FETCH_ASSOC)) {
-                $subject_data = [
-                    "Subject" => $subject_name,
-                    "Hour"    => $hour,
-                    "Credit"  => $credit
-                ];
-            
-                // Structure the data into nested arrays
-                $faculty_key = array_search($fac_name, array_column($data['program_data'], 'faculty_name'));
-                if ($faculty_key === false) {
-                    $data['program_data'][] = [
-                        'faculty_name' => $fac_name,
-                        'faculty_data' => [
-                            'fac_icon'   => "http://".$_SERVER['HTTP_HOST']."/media/asset/icon/nav-icon/". $fac_icon,
-                            'major_name' => []
-                        ]
-                    ];
-                    $faculty_key            = count($data['program_data']) - 1;
-                }
-            
-                $major_key = array_search($major_name, array_column($data['program_data'][$faculty_key]['faculty_data']['major_name'], 'major_name'));
-                if ($major_key === false) {
-                    $data['program_data'][$faculty_key]['faculty_data']['major_name'][] = [
-                        'major_name' => $major_name,
-                        'major_data' => []
-                    ];
-                    $major_key                                                          = count($data['program_data'][$faculty_key]['faculty_data']['major_name']) - 1;
-                }
-            
-                $degree_key = array_search($degree_name, array_column($data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'], 'degree_name'));
-                if ($degree_key === false) {
-                    $data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][] = [
-                        'degree_id' => $degree_id,
-                        'degree_name'   => $degree_name,
-                        'degree_detail' => [
-                            'major_info'  => $major_info,
-                            'degree_data' => []
-                        ]
-                    ];
-                    $degree_key                                                                                   = count($data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data']) - 1;
-                }
-            
-                $year_key = array_search($year_name, array_column($data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][$degree_key]['degree_detail']['degree_data'], 'year_name'));
-                if ($year_key === false) {
-                    $data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][$degree_key]['degree_detail']['degree_data'][] = [
-                        'year_name' => $year_name,
-                        'year_data' => []
-                    ];
-                    $year_key                                                                                                                                  = count($data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][$degree_key]['degree_detail']['degree_data']) - 1;
-                }
-            
-                $semester_key = array_search($semester_name, array_column($data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][$degree_key]['degree_detail']['degree_data'][$year_key]['year_data'], 'semester_name'));
-                if ($semester_key === false) {
-                    $data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][$degree_key]['degree_detail']['degree_data'][$year_key]['year_data'][] = [
-                        'semester_name' => $semester_name,
-                        'semester_data' => []
-                    ];
-                    $semester_key                                                                                                                                                      = count($data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][$degree_key]['degree_detail']['degree_data'][$year_key]['year_data']) - 1;
-                }
-            
-                $data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][$degree_key]['degree_detail']['degree_data'][$year_key]['year_data'][$semester_key]['semester_data'][] = $subject_data;
-            }
-            
-            // Close the statement
-            // $stmt->close();
-            
-            // Close the database connection
-            // $mysqli->close();
-            
-            // Set the response headers
-            header('Content-Type: application/json');
-            
-            // Send the JSON response
-            echo json_encode($data, JSON_PRETTY_PRINT);
-            			break;
-		case 'study_program_en':
+	    case 'study_program_kh':
             // Prepare the query to fetch student performance data
-            $query = "SELECT usea_degree.degree_id, usea_faculty_icon.icon_name as fac_icon, usea_faculty.fac_name_en as fac_name, usea_major.major_name_en as major_name, usea_degree.degree_name_en as education_name,
-            usea_major.major_info_en as major_info, usea_study_year.study_year_en as year_name, usea_subject.subject_name_en as subject_name, total_credit, credit
+            $query = "SELECT usea_degree.degree_id, usea_faculty_icon.icon_name as fac_icon, usea_faculty.fac_name_kh as fac_name, usea_major.major_name_kh as major_name, usea_degree.degree_name_kh as education_name,
+            usea_major.major_info_kh as major_info, usea_study_year.study_year_kh as year_name, usea_subject.subject_name_kh as subject_name, total_credit, credit
             FROM usea_study_plan, usea_faculty, usea_major, usea_degree, usea_study_year, usea_subject , usea_faculty_icon
             WHERE usea_study_plan.fac_name = usea_faculty.fac_id 
             AND usea_study_plan.major_name = usea_major.major_id 
@@ -217,7 +102,7 @@ if(isset($_GET['action'])){
             AND usea_study_plan.education_name = usea_degree.degree_id 
             AND usea_study_plan.study_year = usea_study_year.study_year_id 
             AND usea_study_plan.subject_name = usea_subject.subject_id
-            AND usea_study_plan.fac_icon = usea_faculty_icon.icon_id Order By subject_id";
+            AND usea_study_plan.fac_icon = usea_faculty_icon.icon_id ORDER BY degree_id ASC";
 
             // Prepare the statement
             $stmt = $conn->prepare($query);
@@ -314,6 +199,121 @@ if(isset($_GET['action'])){
             // $mysqli->close();
 
             // Set the response headers
+            header('Content-Type: application/json');
+
+            // Send the JSON response
+            echo json_encode($data, JSON_PRETTY_PRINT);
+            break;
+		case 'study_program_en':
+            // Prepare the query to fetch student performance data
+            $query = "SELECT usea_degree.degree_id, usea_faculty_icon.icon_name as fac_icon, usea_faculty.fac_name_en as fac_name, usea_major.major_name_en as major_name, usea_degree.degree_name_en as education_name,
+            usea_major.major_info_en as major_info, usea_study_year.study_year_en as year_name, usea_subject.subject_name_en as subject_name, total_credit, credit
+            FROM usea_study_plan, usea_faculty, usea_major, usea_degree, usea_study_year, usea_subject , usea_faculty_icon
+            WHERE usea_study_plan.fac_name = usea_faculty.fac_id 
+            AND usea_study_plan.major_name = usea_major.major_id 
+            AND usea_study_plan.major_info_en = usea_major.major_id
+            AND usea_study_plan.education_name = usea_degree.degree_id 
+            AND usea_study_plan.study_year = usea_study_year.study_year_id 
+            AND usea_study_plan.subject_name = usea_subject.subject_id
+            AND usea_study_plan.fac_icon = usea_faculty_icon.icon_id ORDER BY degree_id ASC";
+
+            // Prepare the statement
+            $stmt = $conn->prepare($query);
+
+            // Execute the statement
+            $stmt->execute();
+
+            // Bind variables to the result columns
+            $stmt->bindColumn('fac_icon', $fac_icon);
+            $stmt->bindColumn('degree_id', $degree_id);
+            $stmt->bindColumn('fac_name', $fac_name);
+            $stmt->bindColumn('major_name', $major_name);
+            $stmt->bindColumn('education_name', $degree_name);
+            $stmt->bindColumn('major_info', $major_info);
+            $stmt->bindColumn('year_name', $year_name);
+            // $stmt->bindColumn('semester_name', $semester_name);
+            $stmt->bindColumn('subject_name', $subject_name);
+            $stmt->bindColumn('total_credit', $total_credit);
+            $stmt->bindColumn('credit', $credit);
+
+            // Create an array to store the data
+            $data = [
+                "program_data" => []
+            ];
+
+            // Fetch the rows and store the data in the array
+            while ($stmt->fetch(PDO::FETCH_ASSOC)) {
+                $subject_data = [
+                    "Subject" => $subject_name,
+                    // "Hour"    => $hour,
+                    "Credit"  => $credit
+                ];
+
+                // Structure the data into nested arrays
+                $faculty_key = array_search($fac_name, array_column($data['program_data'], 'faculty_name'));
+                if ($faculty_key === false) {
+                    $data['program_data'][] = [
+                        'faculty_name' => $fac_name,
+                        'faculty_data' => [
+                            'fac_icon'   => "http://".$_SERVER['HTTP_HOST']."/media/asset/icon/nav-icon/". $fac_icon,
+                            'major_name' => []
+                        ]
+                    ];
+                    $faculty_key = count($data['program_data']) - 1;
+                }
+
+                $major_key = array_search($major_name, array_column($data['program_data'][$faculty_key]['faculty_data']['major_name'], 'major_name'));
+                if ($major_key === false) {
+                    $data['program_data'][$faculty_key]['faculty_data']['major_name'][] = [
+                        'major_name' => $major_name,
+                        'major_data' => []
+                    ];
+                    $major_key = count($data['program_data'][$faculty_key]['faculty_data']['major_name']) - 1;
+                }
+
+                $degree_key = array_search($degree_name, array_column($data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'], 'degree_name'));
+                if ($degree_key === false) {
+                    $data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][] = [
+                        'degree_id' => $degree_id,
+                        'degree_name'   => $degree_name,
+                        'degree_detail' => [
+                            'major_info'  => $major_info,
+                            'degree_data' => []
+                        ]
+                    ];
+                    $degree_key = count($data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data']) - 1;
+                }
+
+                $year_key = array_search($year_name, array_column($data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][$degree_key]['degree_detail']['degree_data'], 'year_name'));
+                if ($year_key === false) {
+                    $data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][$degree_key]['degree_detail']['degree_data'][] = [
+                        'year_name' => $year_name,
+                        'year_data' => []
+                    ];
+                    $year_key = count($data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][$degree_key]['degree_detail']['degree_data']) - 1;
+                }
+
+                $total_credit_key = array_search($total_credit, array_column($data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][$degree_key]['degree_detail']['degree_data'][$year_key]['year_data'], 'total_credit'));
+                if ($total_credit_key === false) {
+                    $data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][$degree_key]['degree_detail']['degree_data'][$year_key]['year_data'][] = [
+                        'total_credit' => $total_credit,
+                        'subject_data' => []
+                    ];
+                    $total_credit_key = count($data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][$degree_key]['degree_detail']['degree_data'][$year_key]['year_data']) - 1;
+                }
+                
+
+                $data['program_data'][$faculty_key]['faculty_data']['major_name'][$major_key]['major_data'][$degree_key]['degree_detail']['degree_data'][$year_key]['year_data'][$total_credit_key]['subject_data'][] = $subject_data;
+            }
+
+            // Close the statement
+            // $stmt->close();
+
+            // Close the database connection
+            // $mysqli->close();
+
+            // Set the response headers
+           
             header('Content-Type: application/json');
 
             // Send the JSON response
@@ -427,6 +427,7 @@ if(isset($_GET['action'])){
             // Send the JSON response
             echo json_encode($data, JSON_PRETTY_PRINT);
             break;
+            
         case 'acca_en':
 
             $sql = "SELECT usea_faculty_icon.icon_name as fac_icon,
@@ -534,9 +535,11 @@ if(isset($_GET['action'])){
             // Send the JSON response
             echo json_encode($data, JSON_PRETTY_PRINT);
             break;
+            
 		case 'registration_info':
-    		$sql    = 'SELECT shift_date.shift_title_kh as title,date_title_kh as date_title,time_title_kh as time_title,time_detail_kh as time_detail, usea_degree.degree_name_kh as degree_name,degree_info_kh as degree_info 
-            FROM usea_admission, usea_degree, shift_date WHERE usea_admission.degree_type = usea_degree.degree_id && usea_admission.admission_title = shift_date.shift_id';
+		    
+    		$sql    = 'SELECT shift_date.shift_title_kh as title, usea_admission_title.date_title_kh as date_title,usea_admission_title.time_title_kh as time_title,usea_admission_detail.time_detail_kh as time_detail, usea_degree.degree_name_kh as degree_name,usea_admission_info.degree_info_kh as degree_info 
+            FROM usea_admission, usea_degree, shift_date, usea_admission_title, usea_admission_detail, usea_admission_info WHERE usea_admission.degree_type = usea_degree.degree_id && usea_admission.admission_title = shift_date.shift_id && usea_admission.date_title = usea_admission_title.title_id && usea_admission.time_title = usea_admission_title.title_id && usea_admission.time_detail = usea_admission_detail.detail_id && usea_admission.degree_info = usea_admission_info.admission_info_id';
             
 			$stmt = $conn->prepare($sql);
 			$stmt->execute();
@@ -605,8 +608,9 @@ if(isset($_GET['action'])){
 			    break;
 			    
 		case 'registration_info_en':
-    		$sql    = 'SELECT shift_date.shift_title_en as title, date_title_en as date_title,time_title_en as time_title,time_detail_en as time_detail, usea_degree.degree_name_en as degree_name,degree_info_en as degree_info 
-            FROM usea_admission, usea_degree, shift_date WHERE usea_admission.degree_type = usea_degree.degree_id && usea_admission.admission_title = shift_date.shift_id';
+		    
+    		$sql    = 'SELECT shift_date.shift_title_en as title, usea_admission_title.date_title_en as date_title,usea_admission_title.time_title_en as time_title,usea_admission_detail.time_detail_en as time_detail, usea_degree.degree_name_en as degree_name,usea_admission_info.degree_info_en as degree_info 
+            FROM usea_admission, usea_degree, shift_date, usea_admission_title, usea_admission_detail, usea_admission_info WHERE usea_admission.degree_type = usea_degree.degree_id && usea_admission.admission_title = shift_date.shift_id && usea_admission.date_title = usea_admission_title.title_id && usea_admission.time_title = usea_admission_title.title_id && usea_admission.time_detail = usea_admission_detail.detail_id && usea_admission.degree_info = usea_admission_info.admission_info_id';
             
 			$stmt = $conn->prepare($sql);
 			$stmt->execute();
@@ -673,7 +677,9 @@ if(isset($_GET['action'])){
             }
                 echo json_encode($data);
 			    break;
+			    
 		case 'scholarship_i_university_en':
+		    
 			$sql = "SELECT 
 			scholarship_id as id,
 			institutions_en as i_school_name, 
@@ -700,6 +706,7 @@ if(isset($_GET['action'])){
 			header('Content-Type: application/json');
 			echo json_encode($output);
 			break;
+			
 		case 'scholarship_i_university_kh':
 			$sql = "SELECT 
 			scholarship_id as id, 
@@ -727,6 +734,7 @@ if(isset($_GET['action'])){
 			header('Content-Type: application/json');
 			echo json_encode($output);
 			break;
+			
 		case 'scholarship_o_university_en':
 			$sql = "SELECT 
 			scholarship_id as id, 
@@ -754,6 +762,7 @@ if(isset($_GET['action'])){
 			header('Content-Type: application/json');
 			echo json_encode($output);
 			break;
+			
 		case 'scholarship_o_university_kh':
 			$sql = "SELECT 
 			scholarship_id as id, 
@@ -783,7 +792,7 @@ if(isset($_GET['action'])){
 			break;
 			
 		case 'career_en':
-			$sql = "SELECT career_id as id,	career_img as logo,	career_position_en as position, career_organization_en as organization, expire_date FROM usea_career WHERE keyword = 'career'";
+			$sql = "SELECT career_id as id,	career_img as logo,	career_position_en as position, career_organization_en as organization, expire_date FROM usea_career WHERE keyword = 'career' ORDER BY career_id desc";
 			$stmt = $conn->prepare($sql);
 			$stmt->execute();
 			$career = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -794,7 +803,7 @@ if(isset($_GET['action'])){
 					'logo' => "http://".$_SERVER['HTTP_HOST']."/media/career/logos/". $value['logo'],
 					'position' => $value['position'],
 					'organization' => $value['organization'],
-                    'expired_date' => date("d",strtotime($value['expire_date'])). " " . date("F",strtotime($value['expire_date'])) . " " . date("Y",strtotime($value['expire_date'])),
+					'expired_date' => date("d",strtotime($value['expire_date'])). " " . date("F",strtotime($value['expire_date'])) . " " . date("Y",strtotime($value['expire_date'])),
 					'link' => "http://".$_SERVER['HTTP_HOST']."/en/ButtomPages/career-detail.php?id=". $value['id']
 				);
 			}
@@ -802,8 +811,9 @@ if(isset($_GET['action'])){
 			header('Content-Type: application/json');
 			echo json_encode($output);
 			break;
+			
 		case 'career_kh':
-			$sql = "SELECT career_id as id,	career_img as logo,	career_position_kh as position, career_organization_kh as organization, expire_date FROM usea_career WHERE keyword = 'career'";
+			$sql = "SELECT career_id as id,	career_img as logo,	career_position_kh as position, career_organization_kh as organization, expire_date FROM usea_career WHERE keyword = 'career' ORDER BY career_id desc";
 			$stmt = $conn->prepare($sql);
 			$stmt->execute();
 			$career = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -814,7 +824,7 @@ if(isset($_GET['action'])){
 					'logo' => "http://".$_SERVER['HTTP_HOST']."/media/career/logos/". $value['logo'],
 					'position' => $value['position'],
 					'organization' => $value['organization'],
-                    'expired_date' => "ថ្ងៃទី " . convertNumber(date("d",strtotime($value['expire_date']))) . " ខែ" . convertMonth(date("M",strtotime($value['expire_date']))) . " ឆ្នាំ" . convertNumber(date("Y",strtotime($value['expire_date']))),
+					'expired_date' => "ថ្ងៃទី " . convertNumber(date("d",strtotime($value['expire_date']))) . " ខែ" . convertMonth(date("M",strtotime($value['expire_date']))) . " ឆ្នាំ" . convertNumber(date("Y",strtotime($value['expire_date']))),
 					'link' => "http://".$_SERVER['HTTP_HOST']."/en/ButtomPages/career-detail.php?id=". $value['id']
 				);
 			}
@@ -822,6 +832,7 @@ if(isset($_GET['action'])){
 			header('Content-Type: application/json');
 			echo json_encode($output);
 			break;
+			
 		case 'faq':
 			$sql = "SELECT faq_id as id, faq_question_kh as question, faq_answer_kh as answer FROM usea_faq";
 			$stmt = $conn->prepare($sql);
@@ -837,6 +848,7 @@ if(isset($_GET['action'])){
 			}
 			echo json_encode($newfaq);
 			break;
+			
 		case 'faq_en':
 			$sql = "SELECT faq_id as id, faq_question_en as question, faq_answer_en as answer FROM usea_faq";
 			$stmt = $conn->prepare($sql);
@@ -885,6 +897,7 @@ if(isset($_GET['action'])){
 			echo json_encode($new_past_events);
 			// var_dump($new_past_events['past_desc']);
 			break;
+			
 		case 'past_events_kh':
 			$sql = "SELECT 
 			event_id as id,
@@ -916,6 +929,7 @@ if(isset($_GET['action'])){
 			echo json_encode($new_past_events);
 			// var_dump($new_past_events['past_desc']);
 			break;
+			
 		case 'upcoming_events_en':
 			$sql = "SELECT 
 			event_id as id,
@@ -950,6 +964,7 @@ if(isset($_GET['action'])){
 			echo json_encode($new_upcoming_events);
 			// var_dump($new_past_events['past_desc']);
 			break;
+			
 		case 'upcoming_events_kh':
 			$sql = "SELECT 
 			event_id as id,
@@ -984,6 +999,7 @@ if(isset($_GET['action'])){
 			echo json_encode($new_upcoming_events);
 			// var_dump($new_past_events['past_desc']);
 			break;
+			
 		case 'slide_home':
 			$sql = "SELECT slide_image_name as image_url FROM usea_slide_show WHERE keyword = 'home' && slide_status = 1";
 			$stmt=$conn->prepare($sql);
@@ -998,6 +1014,7 @@ if(isset($_GET['action'])){
 			header('Content-Type: application/json');
 			echo json_encode($new_image_url);
 			break;
+			
 		case 'yt_video':
 			$sql = "SELECT video_id  as id,
 			thumbnail as youtube_thumbnail,

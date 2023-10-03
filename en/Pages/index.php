@@ -27,7 +27,7 @@ include_once '../../connection/db.connection.php';
 		<div class="container mb-5" id="upcoming-events">
 			<div class="row">
 				<?php
-				$stmt = $conn->prepare("SELECT * from usea_events WHERE event_status = 'upcoming' ORDER BY event_date DESC limit 4;");
+				$stmt = $conn->prepare("SELECT * from usea_events WHERE event_status = 'upcoming' ORDER BY event_id DESC limit 4;");
 				$stmt->execute();
 				$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 				// echo "<pre>";
@@ -68,7 +68,7 @@ include_once '../../connection/db.connection.php';
 					</p>
 				</div>
 				<?php
-				$stmt = $conn->prepare("SELECT * from usea_events WHERE event_status = 'past' ORDER BY event_date DESC limit 4;");
+				$stmt = $conn->prepare("SELECT * from usea_events WHERE event_status = 'past' ORDER BY event_id DESC limit 4;");
 				$stmt->execute();
 				$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 				foreach ($result as $key => $value) { ?>

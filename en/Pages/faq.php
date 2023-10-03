@@ -63,12 +63,12 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="panelsStayOpen-heading<?php echo $value['faq_id']; ?>">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse<?php echo $value['faq_id']; ?>" aria-expanded="false" aria-controls="panelsStayOpen-collapse<?php echo $value['faq_id']; ?>">
-                                    <?php  echo $value['faq_question']; ?>
+                                    <?php  echo $value['faq_question_en']; ?>
                                 </button>
                                 </h2>
                                 <div id="panelsStayOpen-collapse<?php echo $value['faq_id']; ?>" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading<?php echo $value['faq_id']; ?>">
                                     <div class="accordion-body">
-                                        <?php echo $value['faq_answer']; ?>
+                                        <?php echo $value['faq_answer_en']; ?>
                                     </div>
                                 </div>
                             </div>
