@@ -80,11 +80,11 @@
 							</ul>
 						</div>
 						<div class="d-md-flex justify-content-end" id="btn-link">
-								<a href="#">Admission</a>	
+								<a href="../../en/Pages/feature-coming-soon.php">Admission</a>	
 								<span>|</span>					
 								<a href="http://116.212.155.149:8888/usealms/login/index.php">USEA LMS</a>
 								<span>|</span>			
-								<a href="#">Portal</a>
+								<a href="../../en/Pages/feature-coming-soon.php">Portal</a>
 								<span>|</span>
 								<a href="../../kh/Pages/index.php"><img src="../../media/nav-icon/khmer.png" width="25" height="25"><span style="margin: 0px 5px;">Khmer</span></a>
 						</div>	

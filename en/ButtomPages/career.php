@@ -41,7 +41,6 @@
             </div>
             <div class="row">
                     <?php
-                
                         $sql = "SELECT 
                         career_id as id,
                         career_img as logo,
@@ -49,10 +48,10 @@
                         career_organization_en as organization,
                         location_en as location,
                         expire_date
-                        FROM usea_career WHERE keyword = 'career' LIMIT 5";
+                        FROM usea_career WHERE keyword = 'career' ORDER BY career_id DESC LIMIT 10";
                         if (isset($_GET['page'])) {
                             if ($_GET['page'] > 1) {
-                                $sql .= " OFFSET " . ($_GET['page'] - 1) * 5;
+                                $sql .= " OFFSET " . ($_GET['page'] - 1) * 10;
                             }
                         }
                         $stmt = $conn->prepare($sql);
@@ -63,7 +62,7 @@
                     ?>
                     <div class="col-xxl-12 career-card">
                         <div class="col-xxl-2 career-img">
-                            <a href="career-detail.php?id=<?php echo $value['id']?>"><img src="../../media/career/<?php echo $value['logo'] ?>" alt=""></a>
+                            <a href="career-detail.php?id=<?php echo $value['id']?>"><img src="../../media/career/logos/<?php echo $value['logo'] ?>" alt=""></a>
                         </div>
                         <div class="col-xxl-10 career-info">
                             <div class="row">
@@ -71,27 +70,27 @@
                                 <hr width="100%;" style="color: #002060;">
                                 <span class="span-career-info"><i class="fa-solid fa-building-columns"> <?php echo $value['organization'] ?></i></span>
                                 <span class="span-career-info"><i class="fa-solid fa-location-dot"></i>  <?php echo $value['location'];?></span>
-                                <span class="span-career-info"><i class="fa-solid fa-calendar-xmark"></i>  
-                                    <?php 
-                                        $day = date("d",strtotime($value['expire_date']));
-                                        echo $day;
-                                    ?>
-                                    <?php 
-                                        $month = date("M",strtotime($value['expire_date']));
-                                        echo $month;
-                                    ?> 
-                                    <?php 
-                                        $year=date("Y",strtotime($value['expire_date']));
-                                        echo $year;
-                                    ?>
+                                <span class="span-career-info"><i class="fa-solid fa-calendar-xmark"> </i>  
+                                            <?php 
+                                                $day = date("d",strtotime($value['expire_date']));
+                                                echo $day;
+                                            ?> 
+                                            <?php 
+                                                $month = date("M",strtotime($value['expire_date']));
+                                                echo $month;
+                                            ?> 
+                                           
+                                            <?php 
+                                                $year=date("Y",strtotime($value['expire_date']));
+                                                echo $year;
+                                            ?>
+                                        </li> 
                                 </span> 
                             </div>                    
                         </div>
                     </div>
                     <?php } ?>
                 </div>
-
-
                 <!--Start Pagination -->
 				<?php
 				$sql = "SELECT count(*) AS CountRecords FROM usea_career WHERE keyword = 'career' ";
@@ -100,7 +99,7 @@
 				$temp = $stmt->fetch(PDO::FETCH_ASSOC);
 				$maxpage = 1;
 				if ($temp) {
-					$maxpage = ceil($temp['CountRecords'] / 5);
+					$maxpage = ceil($temp['CountRecords'] / 10);
 				}
  
 				?>
@@ -145,8 +144,8 @@
 					</li>
 				</ul>
 				<!--End Logic Pagination -->
-            </div>   
-               
+        
+            </div>      
     
 
 <?php

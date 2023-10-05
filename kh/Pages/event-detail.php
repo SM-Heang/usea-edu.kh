@@ -54,11 +54,11 @@ include_once '../../connection/db.connection.php';
 
 				<!-- =====> Start Events <===== -->
 				<div class="row animate-box mt-3 mb-5" id="events">
-						<div class="event_title">
+						<div class="event_title" style="font-family: 'Khmer OS Battambang'; color: #002060; font-size: 1.25rem;">
 							<?php echo $temp['event_title_kh']?>
 						</div>
 						<hr class="event-hr">
-						<div class="event_detail">
+						<div class="event_detail" style="font-family: 'Khmer OS Battambang'; color: #333333; font-size: 1rem;">
 							<?php echo $temp['event_description_kh'];?>
 						</div>
 				</div>

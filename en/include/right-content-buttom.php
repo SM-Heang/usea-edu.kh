@@ -151,7 +151,7 @@
 				<div class="item">
 					<a class="nav-link item-link <?php if ($_SESSION['right'] == 'career-right') {
 														echo 'right_active';
-													} ?>" href="career.php"> Career
+													} ?>" href="career.php"> Career Center
 					</a>
 					
 				</div>

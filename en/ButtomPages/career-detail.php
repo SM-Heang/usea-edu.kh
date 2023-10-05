@@ -24,7 +24,7 @@ include_once '../../function.php';
                     </a>
                 </li>
                 <li>
-                    <a href="#">Career University</a>
+                    <a href="#">Career Center</a>
                 </li>
             </ul>
         </div>
@@ -40,7 +40,7 @@ include_once '../../function.php';
         <div class="col-xxl-9">
             <div class="container title-bg">
                 <div class="row title-txt">
-                Career
+                Career Center
                 </div>
             </div>
            
@@ -49,27 +49,27 @@ include_once '../../function.php';
 
                
                 <?php
-
-                if(isset($_GET['id'])){
-                    $id = $_GET['id'];
-                    $sql = "SELECT 
-                    career_id as id,
-                    career_img as logo,
-                    career_position_en as position,
-                    career_organization_en as organization,
-                    location_en as location,
-                    expire_date,
-                    career_detail_img
-                    FROM usea_career WHERE career_id = $id";
-                    $stmt = $conn->prepare($sql);
-                    $stmt->execute();
-                    $result = $stmt->fetch(PDO::FETCH_ASSOC);
-                    // var_dump($result);
-                }
+                    if(isset($_GET['id'])){
+                        $id = $_GET['id'];
+                        $sql = "SELECT 
+                        career_id as id,
+                        career_img as logo,
+                        career_position_en as position,
+                        career_organization_en as organization,
+                        location_en as location,
+                        expire_date,
+                        career_detail_img,
+                        career_detail_en as detail
+                        FROM usea_career WHERE career_id = $id";
+                        $stmt = $conn->prepare($sql);
+                        $stmt->execute();
+                        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+                        // var_dump($result);
+                    }
                 ?>
                     <div class="col-xxl-12 career-university-info">
                         <div class="col-xxl-3 career-logo">
-                            <img src="../../media/career/<?php echo $result['logo'];?>" alt="">
+                            <img src="../../media/career/logos/<?php echo $result['logo'];?>" alt="">
                         </div>
                         <div class="col-xxl-9 career-info">
                             <div class="row">
@@ -85,9 +85,10 @@ include_once '../../function.php';
                                                 echo $days;
                                             ?>
                                             <?php 
-                                            $month = date("M",strtotime($result['expire_date']));
-                                                echo $month;
+                                            $month = date("F",strtotime($result['expire_date']));
+                                            echo $month;
                                             ?> 
+                                            
                                             <?php 
                                                 $year = date("Y",strtotime($result['expire_date']));
                                                 echo $year;
@@ -100,7 +101,9 @@ include_once '../../function.php';
                 </div>
                 
                 <hr style="border: 1px solid #002060;" width="100%;">
-                <div class="​​col-xxl-12 career-detail text-center">
+                <span style="color: #002060; font-size: 20px; font-weight: bold;">Announcement</span><br>
+                <span style="font-size: 16px; font-family: Khmer OS Battambang"><?php echo $result['detail'] ?></span>
+                <div class="col-xxl-12 career-detail text-center">
                     <div class="container border">
                          <img src="../../media/career/details/<?php echo $result['career_detail_img'] ?>" alt="" width="100%;">
                     </div>

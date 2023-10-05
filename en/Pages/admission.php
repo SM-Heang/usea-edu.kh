@@ -37,7 +37,7 @@ include_once '../../connection/db.connection.php';
 <div class="container">
     <div class="row">
         <!-- Start Content-->
-        <div class="col-xxl-9">
+        <div class="col-xxl-12">
             <div class="container" style="background-color:#002060;">
                 <div class="row" style="color: white; font-size: 16pt; padding: 5pt;">
                     Admission
@@ -46,56 +46,76 @@ include_once '../../connection/db.connection.php';
 
             <div id="content-detail">
                 <?php
-				$stmt = $conn->prepare("SELECT * from usea_admission");
-				$stmt->execute();
-				$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-				echo "<pre>";
-				print_r($result);
-				echo "</pre>";
-                foreach($result as $key => $value){
+                    $stmt = $conn->prepare("SELECT shift_date.shift_title_en as title, usea_admission_title.date_title_en as date_title,usea_admission_title.time_title_en as time_title,usea_admission_detail.time_detail_en as time_detail, usea_degree.degree_name_en as degree_name,usea_admission_info.degree_info_en as degree_info 
+                    FROM usea_admission, usea_degree, shift_date, usea_admission_title, usea_admission_detail, usea_admission_info WHERE usea_admission.degree_type = usea_degree.degree_id && usea_admission.admission_title = shift_date.shift_id && usea_admission.date_title = usea_admission_title.title_id && usea_admission.time_title = usea_admission_title.title_id && usea_admission.time_detail = usea_admission_detail.detail_id && usea_admission.degree_info = usea_admission_info.admission_info_id");
+                    $stmt->execute();
+                    $data = array();
+                    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                        $degree_name = $row['degree_name'];
+                        $degree_info = $row['degree_info'];
                     
-                
-				?>
-               <div class="container">
-                        <h3><?php echo $value['admission_title']; ?></h3>
-                    <div class="enrolment-date">
-                        <h4><i class="fa-solid fa-hand-point-right"></i> <?php echo $value['date_title']; ?></h4>
-                        <div>
-                            <h4>ថ្នាក់បរិញ្ញាបត្ររង static</h4>
-                            <ul>
-                                <li>វគ្គសិក្សាទី១ ចូលរៀនថ្ងៃទី ១៦ ខែ មករា ឆ្នាំ២០២៣</li>
-                                <li>វគ្គសិក្សាទី២ ចូលរៀនថ្ងៃទី ១៣ ខែ កុម្ភៈ ឆ្នាំ២០២៣</li>
-                                <li>វគ្គសិក្សាទី៣ ចូលរៀនថ្ងៃទី 20 ខែ មិនា ឆ្នាំ២០២៣</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4>ថ្នាក់បរិញ្ញាបត្រ</h4>
-                            <ul>
-                                <li>វគ្គសិក្សាទី១ ចូលរៀនថ្ងៃទី ១៦ ខែ មករា ឆ្នាំ២០២៣</li>
-                                <li>វគ្គសិក្សាទី២ ចូលរៀនថ្ងៃទី ១៣ ខែ កុម្ភៈ ឆ្នាំ២០២៣</li>
-                            </ul>
-                        </div>
-                    </div>   
-                    <div class="study-time">
-                        <h4><i class="fa-solid fa-hand-point-right"></i> ម៉ោងសិក្សាសម្រាប់ថ្នាក់បរិញ្ញាបត្ររង និងបរិញ្ញាបត្រដូចខាងក្រោម៖</h4>
-                        <div>
-                            <h4>ថ្នាក់បរិញ្ញាបត្ររង</h4>
-                            <ul>
-                                <li>វគ្គសិក្សាទី១ ចូលរៀនថ្ងៃទី ១៦ ខែ មករា ឆ្នាំ២០២៣</li>
-                                <li>វគ្គសិក្សាទី២ ចូលរៀនថ្ងៃទី ១៣ ខែ កុម្ភៈ ឆ្នាំ២០២៣</li>
-                                <li>វគ្គសិក្សាទី៣ ចូលរៀនថ្ងៃទី 20 ខែ មិនា ឆ្នាំ២០២៣</li>
-                            </ul>
-                        </div>
-                    </div>                                           
-               </div>
-               <?php } ?>
-
-            </div>
+                        // Create the details item for this row
+                        $details_item = array(
+                            "date_title"     => $row['date_title'],
+                            "education_list" => array(
+                                array(
+                                    "education_name" => $degree_name,
+                                    "list"           => array(
+                                        array("info" => $degree_info)
+                                    )
+                                )
+                            ),
+                            "time_title"     => $row['time_title'],
+                            "time_detail"    => $row['time_detail'],
+                        );
+                    
+                        // Check if the title already exists in $data array
+                        $index = -1;
+                        foreach ($data as $key => $value) {
+                            if ($value["title"] === $row["title"]) {
+                                $index = $key;
+                                break;
+                            }
+                        }
+        
+                        if ($index >= 0) {
+                            // If title exists, check if the education name already exists
+                            $eduIndex = -1;
+                            foreach ($data[$index]["details"][0]["education_list"] as $eduKey => $eduValue) {
+                                if ($eduValue["education_name"] === $degree_name) {
+                                    $eduIndex = $eduKey;
+                                    break;
+                                }
+                            }
+                    
+                            if ($eduIndex >= 0) {
+                                // If education name exists, append the new "info" to the existing list
+                                array_push($data[$index]["details"][0]["education_list"][$eduIndex]["list"], array("info" => $degree_info));
+                            } else {
+                                // If education name does not exist, add the new item
+                                $data[$index]["details"][0]["education_list"][] = array(
+                                    "education_name" => $degree_name,
+                                    "list"           => array(
+                                        array("info" => $degree_info)
+                                    )
+                                );
+                            }
+                        } else {
+                            // If title does not exist, add the new item along with the education name and "info"
+                            $item = array(
+                                "title"   => $row["title"],
+                                "details" => array($details_item),
+                            );
+                            array_push($data, $item);
+                        }
+                        
+                    }
+                    // echo "<pre>";
+                    // print_r($data);
+                    // echo "</pre>";
+                ?>
         </div>
-        <!-- Start Right Content-->
-        <?php
-		include_once '../include/right-content-laws.php';
-		?>
+        
     </div>
 </div>
 <!-- End Main Content-->

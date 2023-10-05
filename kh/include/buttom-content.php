@@ -12,7 +12,7 @@
 				<div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4" id="button-content">
 					<ul>
 						<li><a href="../ButtomPages/scholarship-university.php">អាហារូបករណ៍</a></li><br><hr>
-						<li><a href="../ButtomPages/career.php">ការងារ</a></li><br><hr>
+						<li><a href="../ButtomPages/career.php">មជ្ឈមណ្ឌលការងារ</a></li><br><hr>
 						<li><a href="../ButtomPages/alumni.php">អតីតនិស្សិត</a></li><br><hr>
 						<li><a href="../ButtomPages/facilities.php">បរិក្ខារ</a></li><br><hr>
 					</ul>
