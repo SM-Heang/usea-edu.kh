@@ -96,5 +96,10 @@
 			loader.style.display = "none";
 		})
 	</script>
+	<!-- scroll animation -->
+	 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 	</body>
 </html>

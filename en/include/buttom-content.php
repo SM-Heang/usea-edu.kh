@@ -1,11 +1,11 @@
 <!-- =====> Start Button Content <===== -->
-	<div class="container" id="container-parent">
+	<div class="container" id="container-parent" data-aos="fade-up" data-aos-once="true">
 		<div class="row" id="row-parent">
 				<div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4" id="button-content">
 					<ul>
-						<li><a href="../../en/Pages/feature-coming-soon.php">Human Resource</a></li><br><hr>
+						<li><a href="../../en/ButtomPages/human-resource.php">Human Resource</a></li><br><hr>
 						<li><a href="../../en/Pages/feature-coming-soon.php">Student Services</a></li><br><hr>
-						<li><a href="../../en/Pages/feature-coming-soon.php">Library</a></li><br><hr>
+						<li><a href="../ButtomPages/public-information-center.php">Library</a></li><br><hr>
 						<li><a href="../../en/Pages/feature-coming-soon.php">Outstanding Students</a></li><br><hr>
 					</ul>
 				</div>

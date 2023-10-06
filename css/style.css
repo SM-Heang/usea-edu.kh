@@ -452,6 +452,15 @@ td {
   font-size: 20px;
   color: var(--primary-color);
 }
+/* human-resource */
+.human-resource .img {
+  margin-right: 3%;
+}
+.human-resource .info span {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
 
 /* career */
 .career-card {
@@ -724,7 +733,17 @@ td {
 #button-content ul li a:hover {
   text-decoration: underline;
 }
-
+/* library style  */
+.pic-info .pic-image-info img {
+  display: block;
+}
+.pic-info h5 {
+  color: var(--title-color);
+}
+.pic-info p,
+.pic-info ul li {
+  color: var(--description-color);
+}
 /*Right Content*/
 .right-content {
   height: 70vh;

@@ -39,7 +39,7 @@
 						History & Logo Meaning
 					</div>
 				</div>
-				<div id="content-detail">
+				<div id="content-detail" data-aos="fade-right" data-aos-once="true">
 					<h4>History</h4>
 					<div class="content-history-detail">
 						<?php  
