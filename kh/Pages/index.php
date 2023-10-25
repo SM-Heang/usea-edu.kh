@@ -27,7 +27,7 @@ include_once '../../connection/db.connection.php';
 
 			<div class="row">
 				<?php
-				$stmt = $conn->prepare("SELECT * from usea_events WHERE event_status = 'upcoming' ORDER BY event_date DESC limit 4;");
+				$stmt = $conn->prepare("SELECT event_id, event_title_kh, event_date, event_cover, event_description_kh, usea_event_status.event_status_kh, event_style, tags from usea_events, usea_event_status WHERE usea_events.event_status = usea_event_status.status_id AND event_status = '2' ORDER BY event_date DESC limit 4");
 				$stmt->execute();
 				$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 				// echo "<pre>";
@@ -71,7 +71,7 @@ include_once '../../connection/db.connection.php';
 					</p>
 				</div>
 				<?php
-				$stmt = $conn->prepare("SELECT * from usea_events WHERE event_status = 'past' ORDER BY event_date DESC limit 4;");
+				$stmt = $conn->prepare("SELECT event_id, event_title_kh, event_date, event_cover, event_description_kh, usea_event_status.event_status_kh, event_style, tags from usea_events, usea_event_status WHERE usea_events.event_status = usea_event_status.status_id AND event_status = '1' ORDER BY event_date DESC limit 4");
 				$stmt->execute();
 				$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 				// echo "<pre>";

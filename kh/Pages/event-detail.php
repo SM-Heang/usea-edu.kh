@@ -34,7 +34,7 @@ include_once '../../connection/db.connection.php';
 	<?php
 					if (isset($_GET['id'])) {
 						$id = $_GET['id'];
-						$sql = "SELECT * FROM usea_events WHERE event_status = 'past' AND event_id =$id ORDER BY event_date DESC";
+						$sql = "SELECT * FROM usea_events WHERE event_status = '1' AND event_id =$id ORDER BY event_date DESC";
 						$stmt = $conn->prepare($sql);
 						$stmt->execute();
 						$temp = $stmt->fetch(PDO::FETCH_ASSOC);

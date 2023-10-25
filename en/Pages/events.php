@@ -46,7 +46,7 @@ include_once '../../connection/db.connection.php';
 				<!-- =====> Start Events <===== -->
 				<div class="row mt-3 mb-5 g-3" id="events">
 					<?php
-					$sql = "SELECT * from usea_events WHERE event_status = 'past' ORDER BY event_date DESC limit 12";
+					$sql = "SELECT event_id, event_title_en, event_date, event_cover, event_description_en, usea_event_status.event_status_en, event_style, tags from usea_events, usea_event_status WHERE usea_events.event_status = usea_event_status.status_id AND event_status = '1' ORDER BY event_date DESC limit 12";
 					if (isset($_GET['page'])) {
 						if ($_GET['page'] > 1) {
 							$sql .= " OFFSET " . ($_GET['page'] - 1) * 12;
@@ -57,7 +57,7 @@ include_once '../../connection/db.connection.php';
 					$stmt->execute();
 					$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 					// echo "<pre>";
-					// print_r($_GET);
+					// print_r($_GET[$result]);
 					// echo "</pre>";
 					foreach ($result as $key => $value) { ?>
 						<div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 mb-sm-2 mb-lg-2 mb-xxl-0" id="events-card">
@@ -78,7 +78,7 @@ include_once '../../connection/db.connection.php';
 
 				<!--Start Pagination -->
 				<?php
-				$sql = "SELECT count(*) AS CountRecords FROM usea_events WHERE event_status = 'past' ";
+				$sql = "SELECT count(*) AS CountRecords FROM usea_events WHERE event_status = '1' ";
 				$stmt = $conn->prepare($sql);
 				$stmt->execute();
 				$temp = $stmt->fetch(PDO::FETCH_ASSOC);

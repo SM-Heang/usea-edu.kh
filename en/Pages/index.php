@@ -24,10 +24,10 @@ include_once '../../connection/db.connection.php';
 			</div>
 			<p><a href="upcoming-events.php" style="text-decoration:none; color:#002060;">Upcoming Events | <span style="font-size: 0.75rem; font-weight: 500;">All Events</span></a></p>
 		</div>
-		<div class="container mb-5" id="upcoming-events" data-aos="fade-up" data-aos-once="true">
+		<div class="container mb-5" id="upcoming-events">
 			<div class="row">
 				<?php
-				$stmt = $conn->prepare("SELECT * from usea_events WHERE event_status = 'upcoming' ORDER BY event_id DESC limit 4;");
+				$stmt = $conn->prepare("SELECT event_id, event_title_en, event_date, event_cover, event_description_en, usea_event_status.event_status_en, event_style, tags from usea_events, usea_event_status WHERE usea_events.event_status = usea_event_status.status_id AND event_status = '2' ORDER BY event_date DESC limit 4");
 				$stmt->execute();
 				$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 				// echo "<pre>";
@@ -68,14 +68,14 @@ include_once '../../connection/db.connection.php';
 					</p>
 				</div>
 				<?php
-				$stmt = $conn->prepare("SELECT * from usea_events WHERE event_status = 'past' ORDER BY event_id DESC limit 4;");
+				$stmt = $conn->prepare("SELECT event_id, event_title_en, event_date, event_cover, event_description_en, usea_event_status.event_status_en, event_style, tags from usea_events, usea_event_status WHERE usea_events.event_status = usea_event_status.status_id AND event_status = '1' ORDER BY event_date DESC limit 4");
 				$stmt->execute();
 				$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 				foreach ($result as $key => $value) { ?>
 					<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
-						<div class="card w-50 h-100 w-100 animate-card" data-aos="fade-up" data-aos-once="true">
+						<div class="card w-50 h-100 w-100 animate-card">
 							<img src="../../media/events/<?php echo $value['event_cover']; ?>" alt="aquare" class="card-img-top">
-							<div class="card-body"> 
+							<div class="card-body">
 								<h5 class="card-title"><?php echo substr($value['event_title_en'], 0, 140) . "..."; ?></h5>
 								<p class="card-text"><?php echo substr($value['event_description_en'], 0, 240) ?></p>
 							</div>
@@ -93,7 +93,7 @@ include_once '../../connection/db.connection.php';
 
 	<!-- =====> Start Carousel Partnership <===== -->
 
-	<div class="container mt-5 mb-5" data-aos="fade-up" data-aos-once="true">
+	<div class="container mt-5 mb-5">
 		<h1 id="partnership">Partnership</h1>
 		<div class="owl-carousel owl-theme" id="partnership-logo">
 			<div class="item p-3" id="item"><a href="https://angel-project.eu/" target="_blank"><img src="../../media/Partnership/100px/angel.png"></a></div>

@@ -46,7 +46,7 @@
 				<!-- =====> Start Events <===== -->
 			<div class="row animate-box mt-5 mb-5" id="events">
 				<?php 
-					$sql ="SELECT * from usea_events WHERE event_status = 'upcoming' ORDER BY event_date DESC limit 12";
+					$sql ="SELECT * from usea_events WHERE event_status = '2' ORDER BY event_date DESC limit 12";
 					if (isset($_GET['page'])) {
 				    	if ($_GET['page']>1) {
 				    		 $sql .= " OFFSET ".  ($_GET['page']-1)*12;
@@ -80,7 +80,7 @@
 
 				<!--Start Pagination -->
 				<?php 
-				 	$sql = "SELECT count(*) AS CountRecords FROM usea_events WHERE event_status = 'upcoming' ";
+				 	$sql = "SELECT count(*) AS CountRecords FROM usea_events WHERE event_status = '2' ";
 				    $stmt = $conn->prepare($sql);
 				    $stmt ->execute();
 				    $temp = $stmt->fetch(PDO::FETCH_ASSOC);
