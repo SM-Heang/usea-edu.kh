@@ -355,6 +355,7 @@ td {
 }
 
 .title-bg {
+  margin-bottom: 1rem;
   background-color: var(--primary-color);
 }
 
@@ -3557,6 +3558,51 @@ figure {
   transform: rotate(-180deg);
 }
 
+/*usea form download  */
+.card__content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.card__downlaod {
+  display: flex;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: relative;
+}
+.card__downlaod .card__download-img {
+  width: 40%;
+}
+.card__download-img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card__downlaod .card__download-text {
+  position: relative;
+  font-family: "Popins";
+  width: 50%;
+}
+
+.card__downlaod .card__download-text button {
+  background: var(--primary-color);
+  color: var(--bg-color);
+  padding: 0 0.5rem;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.card__downlaod .card__download-text button:hover {
+  color: var(--primary-color);
+  background: var(--bg-color);
+}
+.card__downlaod .card__download-text button a {
+  text-decoration: none;
+  color: var(--bg-color);
+}
 /*
 For Media Query Devices with Breakpoint
 =================================

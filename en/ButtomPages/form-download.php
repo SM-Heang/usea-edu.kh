@@ -34,67 +34,97 @@
 	<div class="container">
 		<div class="row"> 
 			<!-- Start Content-->
-			<div class="col-xxl-9 mb-5">
+			<div class="col-xxl-9 mb-5 position-relative">
 				<div class="container title-bg">
-					<div class="row title-txt">
-                    USEA Form Download
+					<div class="title-txt">
+                    	USEA Form Download
 					</div>
 				</div>
-				<!-- <div class="h-25 border border-1 border-primary mt-4"></div> -->
-				<div class="col-12 mt-5 g-sm-5">
-					<div class="card F-download-shadow">
-					<div class="row g-0">
-						<div class="col-md-4 text-center">
-							<img src="../../media/logo_update.png" class="img-fluid rounded-start" alt="..." width="200px">
+				<div class="container">
+					<div class="card__content">
+						<div class="card__downlaod">
+							<div class="card__download-img">
+								<img src="../../media/download/16.png" alt="">
+							</div>
+							<div class="card__download-text">
+								<h6>English book for advance class</h6>
+								<p>A million to one by Tony Faggiolli</p>
+								<button>Download</button>
+							</div>						
 						</div>
-						<div class="col-md-8">
-							<div class="card-body">
-								<h5 class="card-title">USEA Logo</h5>
-								<p class="card-text">This is our latest updated Logo</p>
-								<!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-								<a href="../../media/logo_update.png" type="button" target="_blank" class="btn btn-sm event-btn py-1 px-3" download >Download</a>
+						<div class="card__downlaod">
+							<div class="card__download-img">
+								<img src="../../media/download/16.png" alt="">
+							</div>
+							<div class="card__download-text">
+								<h6>English book for advance class</h6>
+								<p>A million to one by Tony Faggiolli</p>
+								<button>Download</button>
 							</div>
 						</div>
-					</div>
-					</div>
-				</div>
-
-				<div class="col-12 mt-5 g-sm-5">
-					<div class="card mb-3 F-download-shadow">
-					<div class="row g-0">
-						<div class="col-md-4 text-center">
-							<img src="../../media/emp_app_form.PNG" class="img-fluid rounded-start" alt="..." width="200px">
+						<div class="card__downlaod">
+							<div class="card__download-img">
+								<img src="../../media/download/16.png" alt="">
+							</div>
+							<div class="card__download-text">
+								<h6>English book for advance class</h6>
+								<p>A million to one by Tony Faggiolli</p>
+								<button>Download</button>
+							</div>						
 						</div>
-						<div class="col-md-8">
-							<div class="card-body">
-								<h5 class="card-title">Employment Application Form</h5>
-								<p class="card-text">This form is used to apply for a university job.</p>
-								<!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-								<a href="../../media/Application-Form.pdf" type="button" target="_blank" class="btn btn-sm event-btn py-1 px-3" download >Download</a>
+						<div class="card__downlaod">
+							<div class="card__download-img">
+								<img src="../../media/download/16.png" alt="">
+							</div>
+							<div class="card__download-text">
+								<h6>English book for advance class</h6>
+								<p>A million to one by Tony Faggiolli</p>
+								<button>Download</button>
+							</div>						
+						</div>
+						<div class="card__downlaod">
+							<div class="card__download-img">
+								<img src="../../media/download/16.png" alt="">
+							</div>
+							<div class="card__download-text">
+								<h6>English book for advance class</h6>
+								<p>A million to one by Tony Faggiolli</p>
+								<button>Download</button>
+							</div>						
+						</div>
+						<div class="card__downlaod">
+							<div class="card__download-img">
+								<img src="../../media/download/16.png" alt="">
+							</div>
+							<div class="card__download-text">
+								<h6>English book for advance class</h6>
+								<p>A million to one by Tony Faggiolli</p>
+								<button>Download</button>
 							</div>
 						</div>
-					</div>
-					</div>
-				</div>
-
-				<div class="col-12 mt-5 g-sm-5">
-					<div class="card mb-3 F-download-shadow">
-					<div class="row g-0">
-						<div class="col-md-4 text-center">
-							<img src="../../media/thesis_slide_p14.png" class="img-fluid rounded-start" alt="..." width="200px">
-						</div>
-						<div class="col-md-8">
-							<div class="card-body">
-								<h5 class="card-title">Thesis Slide Sample</h5>
-								<p class="card-text">This is Slide Sample for P14 </p>
-								<!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-								<a href="../../media/thesis_slide_sample_p14.pptx" type="button" target="_blank" class="btn btn-sm event-btn py-1 px-3" download >Download</a>
+						<div class="card__downlaod">
+							<div class="card__download-img">
+								<img src="../../media/p-13-thesis-cover.png" alt="">
 							</div>
+							<div class="card__download-text">
+								<h6>English book for advance class</h6>
+								<p>A million to one by Tony Faggiolli</p>
+								<button>Download</button>
+							</div>						
 						</div>
-					</div>
+						<div class="card__downlaod">
+							<div class="card__download-img">
+								<img src="../../media/download/16.png" alt="">
+							</div>
+							<div class="card__download-text">
+								<h6>English book for advance class</h6>
+								<p>A million to one by Tony Faggiolli</p>
+								<button>Download</button>
+							</div>						
+						</div>
+						
 					</div>
 				</div>
-				
 			</div>
 
 			

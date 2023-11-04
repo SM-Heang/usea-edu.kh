@@ -9,30 +9,26 @@ $_SESSION['right'] = 'home';
 
 include_once '../include/header.php';
 include_once '../../connection/db.connection.php';
+include_once '../../function.php';
 ?>
 <!-- =====> Start Event <===== -->
 <div id="fh5co-blog">
 	<div class="container">
-
-		<!-- =====> Start Upcoming Events <===== -->
 		<div class="row animate-box fh5co-heading">
 			<div class="text-center">
 				<h2 style="color: #002060; font-weight: bold;">LATEST NEWS</h2>
 				<span class="d-flex justify-content-center" width="100%" height="100%">
-					<!-- <img src="../../images/border.png" class="img-fluid icon_img" alt=""> -->
 				</span>
 			</div>
 			<p><a href="upcoming-events.php" style="text-decoration:none; color:#002060;">Upcoming Events | <span style="font-size: 0.75rem; font-weight: 500;">All Events</span></a></p>
 		</div>
+		
 		<div class="container mb-5" id="upcoming-events">
+			<!-- =====> Start Upcoming Events <===== -->
 			<div class="row">
 				<?php
-				$stmt = $conn->prepare("SELECT event_id, event_title_en, event_date, event_cover, event_description_en, usea_event_status.event_status_en, event_style, tags from usea_events, usea_event_status WHERE usea_events.event_status = usea_event_status.status_id AND event_status = '2' ORDER BY event_date DESC limit 4");
-				$stmt->execute();
-				$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-				// echo "<pre>";
-				// print_r($result);
-				// echo "</pre>";
+				$sql = ("SELECT event_id, event_title_en, event_date, event_cover, event_description_en, usea_event_status.event_status_en, event_style, tags from usea_events, usea_event_status WHERE usea_events.event_status = usea_event_status.status_id AND event_status = '2' ORDER BY event_date DESC limit 4");
+				$result = selectData($conn, $sql);
 				foreach ($result as $key => $value) { ?>
 					<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 animate-box d-flex mt-auto">
 						<div class="fh5co-event item">
@@ -68,9 +64,8 @@ include_once '../../connection/db.connection.php';
 					</p>
 				</div>
 				<?php
-				$stmt = $conn->prepare("SELECT event_id, event_title_en, event_date, event_cover, event_description_en, usea_event_status.event_status_en, event_style, tags from usea_events, usea_event_status WHERE usea_events.event_status = usea_event_status.status_id AND event_status = '1' ORDER BY event_date DESC limit 4");
-				$stmt->execute();
-				$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+				$sql = ("SELECT event_id, event_title_en, event_date, event_cover, event_description_en, usea_event_status.event_status_en, event_style, tags from usea_events, usea_event_status WHERE usea_events.event_status = usea_event_status.status_id AND event_status = '1' ORDER BY event_date DESC limit 4");
+				$result = selectData($conn, $sql);
 				foreach ($result as $key => $value) { ?>
 					<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
 						<div class="card w-50 h-100 w-100 animate-card">
