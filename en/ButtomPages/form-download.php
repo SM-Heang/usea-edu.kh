@@ -1,13 +1,14 @@
 <?php
-    $page = 'form_download_kh';
+    $page = 'form_download';
     if (session_status() === PHP_SESSION_NONE) {
         session_start();
     }
 
     $_SESSION['page']= $page;
-    $_SESSION['right']= 'form-download-kh';
+    $_SESSION['right']= 'form-download';
     include_once '../include/header.php';
     include_once '../../connection/db.connection.php';
+    include_once '../../function.php';
 ?>
     <!-- Start Web Location -->
 	
@@ -41,89 +42,27 @@
 					</div>
 				</div>
 				<div class="container">
+					
 					<div class="card__content">
+						<?php
+							$sql = "SELECT * FROM usea_download";
+							$result = selectData($conn, $sql);
+							// var_dump($result);
+							foreach ($result as $key => $value) {
+						?>
 						<div class="card__downlaod">
 							<div class="card__download-img">
-								<img src="../../media/download/16.png" alt="">
+								<img src="../../media/<?php echo $value['img'] ?>" alt="">
 							</div>
 							<div class="card__download-text">
-								<h6>English book for advance class</h6>
-								<p>A million to one by Tony Faggiolli</p>
-								<button>Download</button>
+								<h5><?php echo $value['title_en'] ?></h5>
+								<p><?php echo $value['description_en'] ?></p>
+								<a href="../../media/<?php echo $value['file_name'] ?>" type="button" download>Download</a>
 							</div>						
 						</div>
-						<div class="card__downlaod">
-							<div class="card__download-img">
-								<img src="../../media/download/16.png" alt="">
-							</div>
-							<div class="card__download-text">
-								<h6>English book for advance class</h6>
-								<p>A million to one by Tony Faggiolli</p>
-								<button>Download</button>
-							</div>
-						</div>
-						<div class="card__downlaod">
-							<div class="card__download-img">
-								<img src="../../media/download/16.png" alt="">
-							</div>
-							<div class="card__download-text">
-								<h6>English book for advance class</h6>
-								<p>A million to one by Tony Faggiolli</p>
-								<button>Download</button>
-							</div>						
-						</div>
-						<div class="card__downlaod">
-							<div class="card__download-img">
-								<img src="../../media/download/16.png" alt="">
-							</div>
-							<div class="card__download-text">
-								<h6>English book for advance class</h6>
-								<p>A million to one by Tony Faggiolli</p>
-								<button>Download</button>
-							</div>						
-						</div>
-						<div class="card__downlaod">
-							<div class="card__download-img">
-								<img src="../../media/download/16.png" alt="">
-							</div>
-							<div class="card__download-text">
-								<h6>English book for advance class</h6>
-								<p>A million to one by Tony Faggiolli</p>
-								<button>Download</button>
-							</div>						
-						</div>
-						<div class="card__downlaod">
-							<div class="card__download-img">
-								<img src="../../media/download/16.png" alt="">
-							</div>
-							<div class="card__download-text">
-								<h6>English book for advance class</h6>
-								<p>A million to one by Tony Faggiolli</p>
-								<button>Download</button>
-							</div>
-						</div>
-						<div class="card__downlaod">
-							<div class="card__download-img">
-								<img src="../../media/p-13-thesis-cover.png" alt="">
-							</div>
-							<div class="card__download-text">
-								<h6>English book for advance class</h6>
-								<p>A million to one by Tony Faggiolli</p>
-								<button>Download</button>
-							</div>						
-						</div>
-						<div class="card__downlaod">
-							<div class="card__download-img">
-								<img src="../../media/download/16.png" alt="">
-							</div>
-							<div class="card__download-text">
-								<h6>English book for advance class</h6>
-								<p>A million to one by Tony Faggiolli</p>
-								<button>Download</button>
-							</div>						
-						</div>
-						
+						<?php } ?>
 					</div>
+					
 				</div>
 			</div>
 
