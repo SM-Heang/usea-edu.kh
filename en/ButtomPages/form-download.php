@@ -48,9 +48,10 @@
 							$sql = "SELECT * FROM usea_download";
 							$result = selectData($conn, $sql);
 							// var_dump($result);
+							$animationClass = "fade-right"; // Start with "fade-right"
 							foreach ($result as $key => $value) {
 						?>
-						<div class="card__downlaod">
+						<div class="card__downlaod"  data-aos="<?php echo $animationClass; ?>" data-aos-once="true">
 							<div class="card__download-img">
 								<img src="../../media/<?php echo $value['img'] ?>" alt="">
 							</div>
@@ -60,7 +61,16 @@
 								<a href="../../media/<?php echo $value['file_name'] ?>" type="button" download>Download</a>
 							</div>						
 						</div>
-						<?php } ?>
+						<?php
+							// Toggle the animation class for the next card
+							$animationClass = ($animationClass === "fade-right") ? "fade-left" : "fade-right";
+
+							// Check if two cards have been displayed in the current row
+							if ($key % 2 !== 0) {
+								echo '<div class="row"></div>';
+							}
+						}
+						?>
 					</div>
 					
 				</div>

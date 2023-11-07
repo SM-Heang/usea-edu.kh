@@ -3612,7 +3612,7 @@ figure {
 .card__downlaod .card__download-text a {
   margin-left: 0.5rem;
 }
-
+/* start responsive usea-form-download  */
 @media screen and (max-width: 1399px) {
   .card__download-img img {
     width: 200px;
@@ -3694,7 +3694,7 @@ figure {
     font-size: 75%;
   }
 }
-
+/* end responsive usea-form-download  */
 /*
 For Media Query Devices with Breakpoint
 =================================
