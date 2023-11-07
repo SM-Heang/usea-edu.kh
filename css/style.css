@@ -3612,11 +3612,20 @@ figure {
 .card__downlaod .card__download-text a {
   margin-left: 0.5rem;
 }
+
+@media screen and (max-width: 1399px) {
+  .card__download-img img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+}
 @media screen and (max-width: 991px) {
   .card__content {
-    width: 100%;
+    width: 75%;
     display: grid;
     grid-template-columns: 1fr;
+    margin: 0 auto;
   }
   .card__downlaod {
     display: flex;
@@ -3631,8 +3640,8 @@ figure {
     text-align: center;
   }
   .card__download-img img {
-    width: 75%;
-
+    width: 150px;
+    height: 150px;
     object-fit: cover;
   }
 }
@@ -3656,8 +3665,33 @@ figure {
     text-align: center;
   }
   .card__download-img img {
-    width: 100%;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
+  }
+  .card__downlaod .card__download-text h5,
+  .card__downlaod .card__download-text a {
+    font-size: 75%;
+    margin-left: 0.1rem;
+  }
+  .title-bg .title-txt,
+  .web-location ul li a {
+    font-size: 75%;
+  }
+}
+@media screen and (max-width: 410px) {
+  .card__download-img img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  .card__downlaod .card__download-text h5,
+  .card__downlaod .card__download-text a {
+    font-size: 75%;
+    margin-left: 0.1rem;
+  }
+  .title-bg .title-txt {
+    font-size: 75%;
   }
 }
 
