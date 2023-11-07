@@ -24,7 +24,7 @@
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="../../css/icomoon.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css"
 
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="../../css/bootstrap.css">

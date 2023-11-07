@@ -81,6 +81,27 @@
 			</nav>
 		</div>
 	</div>
+	<div class="right-menu-mobile">
+		<div><i class="fa-solid fa-bars" style="color: #ffffff;"></i></div>
+	</div>
+	<div class="right-content-mobile__about">
+			<ul>
+				<li><a href="#">History & Logo Meaning</a></li>
+				<li><a href="#">President message</a></li>
+				<li><a href="#">Vision, Mission & Core Value</a></li>
+				<li><a href="#">University Structure</a></li>
+				<li><a href="#">Recognition</a></li>
+				<li>
+					<a href="#">Events</a>
+					<div class="events-mobile">
+						<a href="#">Upcoming Events</a>
+						<a href="#">Past Events</a>
+					</div>
+			</li>
+				<li><a href="#">Location</a></li>
+				<li><a href="#">FAQ</a></li>
+			</ul>
+		</div>
 	
 </div>
 </div>
