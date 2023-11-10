@@ -33,12 +33,33 @@
 	<div class="container">
 		<div class="row">
 			<!-- Start Content-->
-			<div class="col-xxl-9">
-				<div class="container title-bg">
+			<div class="col-xxl-9 col-xl-9 col-lg-9">
+				<div class="container title-bg d-flex justify-content-between align-items-center">
 					<div class="row title-txt">
 						History & Logo Meaning
 					</div>
+					<!-- <div class="right-menu-mobile" id="right-menu-mobile">
+						<div><i class="fa-solid fa-bars" style="color: #ffffff;"></i></div>
+					</div> -->
 				</div>
+				<!-- <div class="right-content-mobile__about">
+						<ul>
+							<li><a href="#">History & Logo Meaning</a></li><hr>
+							<li><a href="#">President message</a></li><hr>
+							<li><a href="#">Vision, Mission & Core Value</a></li><hr>
+							<li><a href="#">University Structure</a></li><hr>
+							<li><a href="#">Recognition</a></li><hr>
+							<li>
+								<a href="#">Events <i class="fas fa-caret-down"></i></a>
+								<div class="events-mobile">
+									<a href="#">Upcoming Events</a>
+									<a href="#">Past Events</a>
+								</div>
+							</li><hr>
+							<li><a href="#">Location</a></li><hr>
+							<li><a href="#">FAQ</a></li><hr>
+						</ul>
+				</div> -->
 				<div id="content-detail" data-aos="fade-right" data-aos-once="true">
 					<h4>History</h4>
 					<div class="content-history-detail">
@@ -46,9 +67,6 @@
 							$stmt= $conn->prepare("SELECT * from usea_article WHERE article_id =25");
 							$stmt->execute();
 							$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-							// echo "<pre>";
-							// print_r($result);
-							// echo "</pre>";
 						foreach ($result as $key => $value) { ?>
 						<p>
 							<?php echo $value['article_description_en'];?>

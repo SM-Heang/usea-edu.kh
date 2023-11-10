@@ -295,6 +295,31 @@ td {
   height: 80px !important;
   margin-top: -50px;
 }
+/* index page  */
+.tab__events {
+  margin: 0 auto;
+  width: 50%;
+}
+.tab__events .tabs {
+  border-radius: 50px;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.2rem 0.2rem;
+}
+.tab__events .tabs .tabs-links {
+  text-align: center;
+  list-style: none;
+  color: var(--white-color);
+  font-size: 1.25rem;
+  padding: 0.5rem 2rem;
+}
+.tab__events .tabs .tabs-links:hover {
+  background: var(--bg-color);
+  color: currentColor;
+  border-radius: 50px;
+}
 
 /* card-event english */
 .animate-card img {
@@ -837,6 +862,58 @@ td {
   color: var(--title-color) !important;
 }
 
+/* right-content-about  */
+.right-content-mobile__about {
+  width: 100%;
+  font-family: "Poppins";
+  display: none;
+}
+.right-content-mobile__about ul {
+  padding-left: 1rem;
+}
+.right-content-mobile__about ul li {
+  line-height: 2rem;
+  list-style: none;
+}
+.right-content-mobile__about ul li .events-mobile {
+  display: none;
+}
+.right-content-mobile__about ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 14px;
+}
+.right-menu-mobile {
+  font-size: 1.25rem;
+  display: none;
+}
+@media screen and (max-width: 1399px) {
+  .right-content-economic .item .sidebar .nav li a {
+    font-size: 95%;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .right-content-economic .item .sidebar .nav li a {
+    font-size: 95% !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .right-content-economic {
+    display: none;
+  }
+  .right-menu-mobile {
+    font-size: 1.25rem;
+    display: block;
+  }
+  /* .right-menu-mobile {
+    position: absolute;
+    top: 0;
+  }
+  .right-content-mobile__about {
+    position: absolute;
+    top: 0;
+  } */
+}
 /* 
 .fa-angle-up:before {
   display: none !important;
@@ -1692,7 +1769,65 @@ figure {
     font-size: 0.9rem;
   }
 }
+@media screen and (max-width: 521px) {
+  .fh5co-nav .top .social-parent ul {
+    margin-top: 5px !important;
+  }
 
+  .fh5co-nav .top .social-parent ul li a {
+    padding: 3px;
+  }
+  .fh5co-nav .top .social-parent ul li i {
+    font-size: 95%;
+  }
+
+  #btn-link a {
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: var(--primary-color);
+    margin: 5px 10px 0px 10px !important;
+  }
+
+  #btn-link span {
+    margin-top: 5px !important;
+  }
+
+  #btn-link a span {
+    display: none;
+    width: 20px;
+    height: 20px;
+  }
+
+  .fh5co-nav .top {
+    position: relative;
+  }
+
+  .fh5co-nav .top .num {
+    display: none;
+  }
+
+  .fh5co-nav .top .social-parent {
+    display: flex;
+    font-size: 0.75rem;
+  }
+
+  .fh5co-nav .top #btn-link {
+    display: flex;
+    font-size: 12px;
+  }
+
+  #container-parent #row-parent #button-content ul li a {
+    font-size: 0.9rem;
+  }
+
+  #footer-location p {
+    font-size: 0.9rem;
+  }
+
+  .copyright p {
+    font-size: 0.9rem;
+  }
+}
 @media screen and (max-width: 500px) {
   .hamburger {
     position: relative;
@@ -1898,7 +2033,77 @@ figure {
 .fh5co-nav .top .social-parent ul li a {
   padding: 5px;
 }
+@media screen and (max-width: 392px) {
+  .fh5co-nav .top .social-parent p {
+    display: none;
+  }
 
+  .fh5co-nav .top .social-parent span {
+    display: none;
+  }
+
+  .fh5co-nav .top .social-parent ul {
+    margin-top: 5px !important;
+  }
+
+  .fh5co-nav .top .social-parent ul li a {
+    padding: 3px;
+  }
+  .fh5co-nav .top .social-parent ul li i {
+    font-size: 95%;
+  }
+
+  #btn-link a {
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: var(--primary-color);
+    margin: 5px 10px 0px 10px !important;
+  }
+
+  #btn-link span {
+    margin-top: 5px !important;
+  }
+
+  #btn-link a span {
+    display: none;
+    width: 20px;
+    height: 20px;
+  }
+
+  .fh5co-nav .top {
+    position: relative;
+  }
+
+  .fh5co-nav .top .num {
+    display: none;
+    /* position: absolute;
+    left: 80px;
+    font-size: 8px;
+    padding: 5px 5px; */
+  }
+
+  .fh5co-nav .top .social-parent {
+    display: flex;
+    font-size: 0.75rem;
+  }
+
+  .fh5co-nav .top #btn-link {
+    display: flex;
+    font-size: 12px;
+  }
+
+  #container-parent #row-parent #button-content ul li a {
+    font-size: 0.9rem;
+  }
+
+  #footer-location p {
+    font-size: 0.9rem;
+  }
+
+  .copyright p {
+    font-size: 0.9rem;
+  }
+}
 @media screen and (max-width: 384px) {
   .hamburger {
     position: relative;
@@ -3695,6 +3900,7 @@ figure {
   }
 }
 /* end responsive usea-form-download  */
+
 /*
 For Media Query Devices with Breakpoint
 =================================

@@ -74,13 +74,21 @@
     }
 })
 	</script>
+
+	<!-- mobile hamburger dropdown script  -->
 	<script>
 		$(document).ready(function(){
 			$('.hamburger').click(function(){				
 				$('.mobile-menu').slideToggle();
 			});
 		});
+		$(document).ready(function(){
+			$('.right-menu-mobile').click(function(){				
+				$('.right-content-mobile__about').slideToggle();
+			});
+		});
 	</script>
+	
 	<script>
 		$(document).ready(function(){
 			$('.dropdown-parent > a').click(function(){
