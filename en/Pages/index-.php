@@ -15,19 +15,19 @@ include_once '../../function.php';
 <div id="fh5co-blog">
 	<section class="events">
 		<div class="container">
-			<h1 class="text-center mt-5">EVENTS & ANNOUNCEMENTS</h1>
+			<h1 class="text-center">EVENTS & ANNOUNCEMENTS</h1>
 			<div class="tab__events">
-				<ul class="tabs">
-					<li class="tabs-links">Past Events</li>
-					<li class="tabs-links">Upcoming Events</li>
-					<li class="tabs-links">Announcement</li>
-				</ul>
+				<div class="tabs">
+					<a class="tabs-links active">Past Events</a>
+					<a class="tabs-links">Upcoming Events</a>
+					<a class="tabs-links">Announcement</a>
+				</div>
 			</div>
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
 						<div class="card h-100 animate-card">
-							<img src="../../media/events/" alt="aquare" class="card-img-top">
+							<img src="../../media/events/Environment 20143.JPG" alt="aquare" class="card-img-top">
 							<div class="card-body">
 								<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
@@ -39,7 +39,7 @@ include_once '../../function.php';
 					</div>
 					<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
 						<div class="card h-100 animate-card">
-							<img src="../../media/events/" alt="aquare" class="card-img-top">
+							<img src="../../media/events/Maha Sarakham Visit 02-Mar-20155.JPG" alt="aquare" class="card-img-top">
 							<div class="card-body">
 								<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
@@ -51,7 +51,7 @@ include_once '../../function.php';
 					</div>
 					<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
 						<div class="card h-100 animate-card">
-							<img src="../../media/events/" alt="aquare" class="card-img-top">
+							<img src="../../media/events/Preah Vihea trip 201410_s.jpg" alt="aquare" class="card-img-top">
 							<div class="card-body">
 								<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
@@ -63,7 +63,7 @@ include_once '../../function.php';
 					</div>
 					<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
 						<div class="card h-100 animate-card">
-							<img src="../../media/events/" alt="aquare" class="card-img-top">
+							<img src="../../media/events/MOU-with-Korea1_s.jpg" alt="aquare" class="card-img-top">
 							<div class="card-body">
 								<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
@@ -73,31 +73,44 @@ include_once '../../function.php';
 							</div>
 						</div>
 					</div>
+					
 				</div>
+				<a href="#" type="button">View All  <i class="fa-solid fa-angle-right" style="color: #ffffff;"></i></a>
 			</div>
 		</div>
 	</section>
 	<section class="faculty">
 		<div class="container">
 			<h1 class="text-center mt-5">FACULTY & INSTITUTE</h1>
-			<div class="row">
-				<div class="col-xxl-4">
-					<span>Faculty of Economics, Business & Tourism</span>
+			<div class="faculty-row" >
+				<div class="faculty-links">
+					<img src="../../media/nav-icon/f-economic.png" alt="">
+					<a href="#">Faculty of Economics, Business & Tourism </a>
+					 
 				</div>
-				<div class="col-xxl-4">
-					<span>Faculty of Economics, Business & Tourism</span>
+				<div class="faculty-links">
+					<img src="../../media/nav-icon/f-internation-college.png" alt=""> 
+					<a href="#">International College</a>
 				</div>
-				<div class="col-xxl-4">
-					<span>Faculty of Economics, Business & Tourism</span>
+				<div class="faculty-links">
+					<img src="../../media/nav-icon/f-it.png" alt=""> 
+					<a href="#">Faculty of Science and Technology</a>
 				</div>
-				<div class="col-xxl-4">
-					<span>Faculty of Economics, Business & Tourism</span>
+				<div class="faculty-links">
+					<img src="../../media/nav-icon/fli.png" alt=""> 
+					<a href="#">Foreign Language Institute</a>
 				</div>
-				<div class="col-xxl-4">
-					<span>Faculty of Economics, Business & Tourism</span>
+				<div class="faculty-links">
+					<img src="../../media/nav-icon/f-law.png" alt=""> 
+					<a href="#">Faculty of Social Science and Law</a>
 				</div>
-				<div class="col-xxl-4">
-					<span>Faculty of Economics, Business & Tourism</span>
+				<div class="faculty-links">
+				<img src="../../media/nav-icon/post-graduate.png" alt=""> 
+					<a href="#">Post Graduate</a>
+				</div>
+				<div class="faculty-links">
+					<img src="../../media/nav-icon/f-art.png" alt=""> 
+					<a href="#">Faculty of Arts, Humanities and Education</a>
 				</div>
 			</div>
 		</div>
@@ -106,11 +119,13 @@ include_once '../../function.php';
 	<section class="messages">
 		<div class="container">
 			<h1 class="text-center mt-5">PRESIDENT'S MESSAGE</h1>
-			<div class="message__content d-flex ">
-				<img src="../../media/president/01.jpg" alt="president" style="margin-right: 1rem;" width="260px" height="320px">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus id quo repudiandae labore beatae quia hic laudantium reprehenderit dolorem omnis tenetur nihil, ad voluptatibus officia ullam unde quisquam dolor reiciendis illum molestiae consectetur ipsam minus consequatur? Inventore, optio maiores. Laudantium placeat, ducimus eaque cum molestias fuga voluptatum debitis impedit voluptatem perspiciatis voluptate ab, iure corrupti voluptas nihil minima aspernatur. Doloribus recusandae, numquam sint tempora soluta architecto ratione suscipit aut ad quasi. Nisi, delectus est esse ex enim non magnam! Beatae quos optio nesciunt deserunt velit cumque similique animi ex nihil facere saepe rem officia mollitia tenetur expedita assumenda, nostrum debitis, minima error maxime quo nam sunt quia! Praesentium, voluptas sit ratione consequuntur ullam vitae sed expedita ipsam rem voluptatibus. Nisi, tenetur ex! Saepe, magnam beatae enim tempora, quae aut placeat officia voluptate autem sit non esse natus est quia delectus obcaecati cum commodi quibusdam ex at? Sequi quod non aliquid enim quos iure blanditiis incidunt ab? Necessitatibus voluptate, deleniti eveniet architecto tenetur tempore labore quo repudiandae voluptatibus illo ratione officia culpa. Dolore, pariatur possimus! Corrupti minus, delectus cumque, accusantium et sint sit dolore voluptatum temporibus, id ex! Esse praesentium eos repudiandae tempore error voluptates harum illo laudantium omnis. Suscipit, ipsa!</p>
-			</div>
 			
+			<div class="message__content d-flex justify-content-center align-items-center">
+			
+				<img src="../../media/president/01.jpg" alt="president" style="margin-right: 1rem;" width="260px" height="320px">
+				<p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus id quo repudiandae labore beatae quia hic laudantium reprehenderit dolorem omnis tenetur nihil, ad voluptatibus officia ullam unde quisquam dolor reiciendis illum molestiae consectetur ipsam minus consequatur? Inventore, optio maiores. Laudantium placeat, ducimus eaque cum molestias fuga voluptatum debitis impedit voluptatem perspiciatis voluptate ab, iure corrupti voluptas nihil minima aspernatur. Doloribus recusandae, numquam sint tempora soluta architecto ratione suscipit aut ad quasi. Nisi, delectus est esse ex enim non magnam! Beatae quos optio nesciunt deserunt velit cumque similique animi ex nihil facere saepe rem officia mollitia tenetur expedita assumenda, nostrum debitis, minima error maxime quo nam sunt quia! Praesentium, voluptas sit ratione consequuntur ullam vitae sed expedita ipsam rem voluptatibus. Nisi, tenetur ex! Saepe, magnam beatae enim tempora, quae aut placeat officia voluptate autem sit non esse natus est quia delectus obcaecati cum commodi quibusdam ex at? Sequi quod non aliquid enim quos iure blanditiis incidunt ab? Necessitatibus voluptate, deleniti eveniet architecto tenetur tempore labore quo repudiandae voluptatibus illo ratione officia culpa. Dolore, pariatur possimus! Corrupti minus, delectus cumque, accusantium et sint sit dolore voluptatum temporibus, id ex! Esse praesentium eos repudiandae tempore error voluptates harum illo laudantium omnis. Suscipit, ipsa!”</p>
+				
+			</div>
 		</div>
 	</section>
 
@@ -141,6 +156,49 @@ include_once '../../function.php';
 	</section>
 
 	<!-- =====> End Carousel Partnership <===== -->
+	<section class="faq">
+		<div class="container">
+		<h1 class="text-center mt-5 mb-5">Frequently Ask Question</h1>
+		<div class="accordion" id="accordionPanelsStayOpenExample">
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="panelsStayOpen-headingOne">
+			<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+				How to Apply?
+			</button>
+			</h2>
+			<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+			<div class="accordion-body">
+				<strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+			</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+				Accordion Item #2
+			</button>
+			</h2>
+			<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+			<div class="accordion-body">
+				<strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+			</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="panelsStayOpen-headingThree">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+				Accordion Item #3
+			</button>
+			</h2>
+			<div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+			<div class="accordion-body">
+				<strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+			</div>
+			</div>
+		</div>
+		</div>
+		</div>
+	</section>
 
 	<script>
 		$(".carousel").owlCarousel({
