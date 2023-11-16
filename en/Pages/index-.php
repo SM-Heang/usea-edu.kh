@@ -13,6 +13,56 @@ include_once '../../function.php';
 ?>
 <!-- =====> Start Event <===== -->
 <div id="fh5co-blog">
+	<section class="messages">
+		<div class="container">
+			<h1 class="text-center mt-5">PRESIDENT'S MESSAGE</h1>
+			<div class="message__content">
+				<div class="message__detail d-flex">
+					<img src="../../media/dr-meansothy.png" alt="president" width="560px" height="620px">
+					<p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus id quo repudiandae labore beatae quia hic laudantium reprehenderit dolorem omnis tenetur nihil, ad voluptatibus officia ullam unde quisquam dolor reiciendis illum molestiae consectetur ipsam minus consequatur? Inventore, optio maiores. Laudantium placeat, ducimus eaque cum molestias fuga voluptatum debitis impedit voluptatem perspiciatis voluptate ab, iure corrupti voluptas nihil minima aspernatur. Doloribus recusandae, numquam sint tempora soluta architecto ratione suscipit aut ad quasi. Nisi, delectus est esse ex enim non magnam! Beatae quos optio nesciunt deserunt velit cumque similique animi ex nihil facere saepe rem officia mollitia tenetur expedita assumenda, nostrum debitis, minima error maxime quo nam sunt quia! Praesentium, voluptas sit ratione consequuntur ullam vitae sed expedita ipsam rem voluptatibus. Nisi, tenetur ex! Saepe, magnam beatae enim tempora, quae aut placeat officia voluptate autem sit non esse natus est quia delectus obcaecati cum commodi quibusdam ex at? Sequi quod non aliquid enim quos iure blanditiis incidunt ab? Necessitatibus voluptate, deleniti eveniet architecto tenetur tempore labore quo repudiandae voluptatibus illo ratione officia culpa. Dolore, pariatur possimus! Corrupti minus, delectus cumque, accusantium et sint sit dolore voluptatum temporibus, id ex! Esse praesentium eos repudiandae tempore error voluptates harum illo laudantium omnis. Suscipit, ipsa!”</p>
+				</div>
+				<span>Dr. Mean Sothy</span>
+				<span>President of University of South-East Asia</span>
+			</div>
+			
+		</div>
+	</section>
+	<section class="faculty">
+		<div class="container">
+			<h1 class="text-center mt-5">FACULTY & INSTITUTE</h1>
+			<div class="faculty-row" >
+				<div class="faculty-links">
+					<img src="../../media/nav-icon/f-economic.png" alt="">
+					<a href="#">Faculty of Economics, Business & Tourism </a>
+					 
+				</div>
+				<div class="faculty-links">
+					<img src="../../media/nav-icon/f-internation-college.png" alt=""> 
+					<a href="#">International College</a>
+				</div>
+				<div class="faculty-links">
+					<img src="../../media/nav-icon/f-it.png" alt=""> 
+					<a href="#">Faculty of Science and Technology</a>
+				</div>
+				<div class="faculty-links">
+					<img src="../../media/nav-icon/fli.png" alt=""> 
+					<a href="#">Foreign Language Institute</a>
+				</div>
+				<div class="faculty-links">
+					<img src="../../media/nav-icon/f-law.png" alt=""> 
+					<a href="#">Faculty of Social Science and Law</a>
+				</div>
+				<div class="faculty-links">
+				<img src="../../media/nav-icon/post-graduate.png" alt=""> 
+					<a href="#">Post Graduate</a>
+				</div>
+				<div class="faculty-links">
+					<img src="../../media/nav-icon/f-art.png" alt=""> 
+					<a href="#">Faculty of Arts, Humanities and Education</a>
+				</div>
+			</div>
+		</div>
+	</section>
 	<section class="events">
 		<div class="container">
 			<h1 class="text-center">EVENTS & ANNOUNCEMENTS</h1>
@@ -79,57 +129,33 @@ include_once '../../function.php';
 			</div>
 		</div>
 	</section>
-	<section class="faculty">
-		<div class="container">
-			<h1 class="text-center mt-5">FACULTY & INSTITUTE</h1>
-			<div class="faculty-row" >
-				<div class="faculty-links">
-					<img src="../../media/nav-icon/f-economic.png" alt="">
-					<a href="#">Faculty of Economics, Business & Tourism </a>
-					 
-				</div>
-				<div class="faculty-links">
-					<img src="../../media/nav-icon/f-internation-college.png" alt=""> 
-					<a href="#">International College</a>
-				</div>
-				<div class="faculty-links">
-					<img src="../../media/nav-icon/f-it.png" alt=""> 
-					<a href="#">Faculty of Science and Technology</a>
-				</div>
-				<div class="faculty-links">
-					<img src="../../media/nav-icon/fli.png" alt=""> 
-					<a href="#">Foreign Language Institute</a>
-				</div>
-				<div class="faculty-links">
-					<img src="../../media/nav-icon/f-law.png" alt=""> 
-					<a href="#">Faculty of Social Science and Law</a>
-				</div>
-				<div class="faculty-links">
-				<img src="../../media/nav-icon/post-graduate.png" alt=""> 
-					<a href="#">Post Graduate</a>
-				</div>
-				<div class="faculty-links">
-					<img src="../../media/nav-icon/f-art.png" alt=""> 
-					<a href="#">Faculty of Arts, Humanities and Education</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="messages">
-		<div class="container">
-			<h1 class="text-center mt-5">PRESIDENT'S MESSAGE</h1>
-			
-			<div class="message__content d-flex justify-content-center align-items-center">
-			
-				<img src="../../media/president/01.jpg" alt="president" style="margin-right: 1rem;" width="260px" height="320px">
-				<p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus id quo repudiandae labore beatae quia hic laudantium reprehenderit dolorem omnis tenetur nihil, ad voluptatibus officia ullam unde quisquam dolor reiciendis illum molestiae consectetur ipsam minus consequatur? Inventore, optio maiores. Laudantium placeat, ducimus eaque cum molestias fuga voluptatum debitis impedit voluptatem perspiciatis voluptate ab, iure corrupti voluptas nihil minima aspernatur. Doloribus recusandae, numquam sint tempora soluta architecto ratione suscipit aut ad quasi. Nisi, delectus est esse ex enim non magnam! Beatae quos optio nesciunt deserunt velit cumque similique animi ex nihil facere saepe rem officia mollitia tenetur expedita assumenda, nostrum debitis, minima error maxime quo nam sunt quia! Praesentium, voluptas sit ratione consequuntur ullam vitae sed expedita ipsam rem voluptatibus. Nisi, tenetur ex! Saepe, magnam beatae enim tempora, quae aut placeat officia voluptate autem sit non esse natus est quia delectus obcaecati cum commodi quibusdam ex at? Sequi quod non aliquid enim quos iure blanditiis incidunt ab? Necessitatibus voluptate, deleniti eveniet architecto tenetur tempore labore quo repudiandae voluptatibus illo ratione officia culpa. Dolore, pariatur possimus! Corrupti minus, delectus cumque, accusantium et sint sit dolore voluptatum temporibus, id ex! Esse praesentium eos repudiandae tempore error voluptates harum illo laudantium omnis. Suscipit, ipsa!”</p>
-				
-			</div>
-		</div>
-	</section>
+	
 
 	<!-- =====> End Events <===== -->
+
+<section class="career-center">
+	<div class="container mt-5 mb-5">
+		<h1 class="text-center mt-5">
+			Career Center
+		</h1>
+		<div class="row">
+    <div class="col-xxl-8 career-center-info">
+        <p>Career Center is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+        <div class="career-center-social">
+            <span>Join US</span>
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-xxl-4 career-center-image">
+        <img src="../../media/career-center-logo.png" alt="faq" width="400px" height="400px">
+    </div>
+</div>
+
+	</div>
+</section>
 
 	<!-- =====> Start Carousel Partnership <===== -->
 
@@ -158,45 +184,44 @@ include_once '../../function.php';
 	<!-- =====> End Carousel Partnership <===== -->
 	<section class="faq">
 		<div class="container">
-		<h1 class="text-center mt-5 mb-5">Frequently Ask Question</h1>
-		<div class="accordion" id="accordionPanelsStayOpenExample">
-		<div class="accordion-item">
-			<h2 class="accordion-header" id="panelsStayOpen-headingOne">
-			<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-				How to Apply?
-			</button>
-			</h2>
-			<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-			<div class="accordion-body">
-				<strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+			<h1 class="text-center mt-5 mb-5">Frequently Ask Question</h1>
+			<div class="row">
+				<div class="col-xxl-6 faq-image">
+					<img src="../../media/faq1.png" alt="faq">
+				</div>
+				<div class="col-xxl-6 faq-accordion">
+					<ul>
+						<li>
+							<label for="first">In publishing and graphic design, Lorem ipsum is a placeholder text commonly?<span>&#x3e</span></label>
+							<input type="radio" name="accordion" id="first">
+							<div class="content">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, dolor aperiam ipsa accusantium mollitia voluptate veritatis. Aut eveniet quidem minima, ratione quibusdam quisquam? Culpa eius harum id sit eos pariatur.
+							</div>
+						</li>
+						<li>
+							<label for="second">In publishing and graphic design, Lorem ipsum is a placeholder text commonly?<span>&#x3e</span></label>
+							<input type="radio" name="accordion" id="second">
+							<div class="content">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, dolor aperiam ipsa accusantium mollitia voluptate veritatis. Aut eveniet quidem minima, ratione quibusdam quisquam? Culpa eius harum id sit eos pariatur.
+							</div>
+						</li>
+						<li>
+							<label for="third">In publishing and graphic design, Lorem ipsum is a placeholder text commonly?<span>&#x3e</span></label>
+							<input type="radio" name="accordion" id="third">
+							<div class="content">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, dolor aperiam ipsa accusantium mollitia voluptate veritatis. Aut eveniet quidem minima, ratione quibusdam quisquam? Culpa eius harum id sit eos pariatur.
+							</div>
+						</li>
+						<li>
+							<label for="fourth">In publishing and graphic design, Lorem ipsum is a placeholder text commonly?<span>&#x3e</span></label>
+							<input type="radio" name="accordion" id="fourth">
+							<div class="content">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, dolor aperiam ipsa accusantium mollitia voluptate veritatis. Aut eveniet quidem minima, ratione quibusdam quisquam? Culpa eius harum id sit eos pariatur.
+							</div>
+						</li>
+					</ul>
+				</div>
 			</div>
-			</div>
-		</div>
-		<div class="accordion-item">
-			<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-				Accordion Item #2
-			</button>
-			</h2>
-			<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-			<div class="accordion-body">
-				<strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-			</div>
-			</div>
-		</div>
-		<div class="accordion-item">
-			<h2 class="accordion-header" id="panelsStayOpen-headingThree">
-			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-				Accordion Item #3
-			</button>
-			</h2>
-			<div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-			<div class="accordion-body">
-				<strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-			</div>
-			</div>
-		</div>
-		</div>
 		</div>
 	</section>
 
