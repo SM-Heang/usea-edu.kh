@@ -1,11 +1,45 @@
 <!-- =====> Start Footer <===== -->
-<div class="container-fluid">
-			<div class="row">
-				<div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center" id="footer-location">
-					<p>Address : Wat Bo Village, SangKat Salakamroek, Siem Reap Municipality, Cambodia(Opposite Angkor High School)<br> Website: www.usea.edu.kh | Email : info@usea.edu.kh | Facebook: University of South-East Asia<br> Tel : 063 900 090, 017 386 678, 090 905 902, 070 408 438 </p>
-				</div>
-			</div>
-		</div>
+<div class="container-fluid" id="footer-location">
+    <div class="container">
+        <div class="row">
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 footer-links">
+                <h4>Contact Us</h4>
+                <p><strong>Address:</strong> Opposite Angkor High School, Siemreap Municipality, Kingdom of Cambodia</p>
+                <ul>
+                    <li><i class="fa-solid fa-phone" style="color: #ffffff;"></i> 063 900 090, 017386 678</li>
+                    <li><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i> University of South-East Asia</li>
+                    <li><i class="fa-brands fa-telegram"></i> https//t.me/university_of_south_east_asia</li>
+                    <li><i class="fa-regular fa-envelope"></i> info@usea.edu.kh</li>
+                    <li><i class="fa-solid fa-earth-americas"></i> www.usea.edu.kh</li>
+                </ul>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> Scholarship</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> Career Center</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> Facilities</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> E-Library</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> Alumni</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> Student Service </a></li>
+                </ul>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 footer-links">
+                <h4>About US</h4>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> History & Logo Meaning</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> President Message</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> Vision, Mission & Core Value</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> University Structure</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> Recognition</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 		
 		<div class="container">
 			<div class="col-xxl-12 text-center copyright">
@@ -14,7 +48,7 @@
 		</div>
 
 	<!-- =====> End Footer <===== -->
-	</div>
+</div>
 
 	<div class="gototop js-top" id="goto">
 		<a href="#top" class="js-gotop"><i class="icon-arrow-up"></i></a>

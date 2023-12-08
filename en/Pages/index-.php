@@ -27,7 +27,7 @@ include_once '../../function.php';
 			
 		</div>
 	</section>
-	<section class="faculty">
+	<section class="faculty" id="faculty">
 		<div class="container">
 			<h1 class="text-center mt-5">FACULTY & INSTITUTE</h1>
 			<div class="faculty-row" >
@@ -63,7 +63,7 @@ include_once '../../function.php';
 			</div>
 		</div>
 	</section>
-	<section class="events">
+	<section class="events" id="events">
 		<div class="container">
 			<h1 class="text-center">EVENTS & ANNOUNCEMENTS</h1>
 			<div class="tab__events">
@@ -76,50 +76,50 @@ include_once '../../function.php';
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
-						<div class="card h-100 animate-card">
+						<div class="card h-100 animate-card custom-card" >
 							<img src="../../media/events/Environment 20143.JPG" alt="aquare" class="card-img-top">
 							<div class="card-body">
 								<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
 							</div>
 							<div class="card-footer text-end">
-								<a href="#" class="btn btn-sm event-btn text-end py-1 px-3">Read More</a>
+								<a href="#" class="event-btn">Read More</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
-						<div class="card h-100 animate-card">
+						<div class="card h-100 animate-card custom-card">
 							<img src="../../media/events/Maha Sarakham Visit 02-Mar-20155.JPG" alt="aquare" class="card-img-top">
 							<div class="card-body">
 								<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
 							</div>
 							<div class="card-footer text-end">
-								<a href="#" class="btn btn-sm event-btn text-end py-1 px-3">Read More</a>
+								<a href="#" class="event-btn">Read More</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
-						<div class="card h-100 animate-card">
+						<div class="card h-100 animate-card custom-card">
 							<img src="../../media/events/Preah Vihea trip 201410_s.jpg" alt="aquare" class="card-img-top">
 							<div class="card-body">
 								<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
 							</div>
 							<div class="card-footer text-end">
-								<a href="#" class="btn btn-sm event-btn text-end py-1 px-3">Read More</a>
+								<a href="#" class="event-btn">Read More</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
-						<div class="card h-100 animate-card">
+						<div class="card h-100 animate-card custom-card">
 							<img src="../../media/events/MOU-with-Korea1_s.jpg" alt="aquare" class="card-img-top">
 							<div class="card-body">
 								<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
 							</div>
 							<div class="card-footer text-end">
-								<a href="#" class="btn btn-sm event-btn text-end py-1 px-3">Read More</a>
+								<a href="#" class="event-btn">Read More</a>
 							</div>
 						</div>
 					</div>
@@ -133,7 +133,7 @@ include_once '../../function.php';
 
 	<!-- =====> End Events <===== -->
 
-<section class="career-center">
+<section class="career-center" id="career-center">
 	<div class="container mt-5 mb-5">
 		<h1 class="text-center mt-5">
 			Career Center
@@ -144,8 +144,8 @@ include_once '../../function.php';
         <div class="career-center-social">
             <span>Join US</span>
             <ul>
-                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/useacareercenter" target="_blank"><img src="../../media/nav-icon/facebook.png" alt="facebook-icon"></a></li>
+                <li><a href="https://t.me/useacareercenter" target="_blank"><img src="../../media/nav-icon/telegram.png" alt="telegram-icon"></a></li>
             </ul>
         </div>
     </div>
@@ -159,15 +159,16 @@ include_once '../../function.php';
 
 	<!-- =====> Start Carousel Partnership <===== -->
 
-	<section class="partnerships">
+	<section class="partnerships" id="partnerships">
 		<div class="container mt-5 mb-5">
 			<h1 class="text-center mt-5">PARTNERSHIP</h1>
 			<div class="owl-carousel owl-theme" id="partnership-logo">
-				<div class="item p-3" id="item"><a href="https://angel-project.eu/" target="_blank"><img src="../../media/Partnership/100px/angel.png"></a></div>
-				<div class="item p-3" id="item"><a href="https://rwi.lu.se/" target="_blank"><img src="../../media/Partnership/100px/rwi.png"></a></div>
-				<div class="item p-3" id="item"><a href="https://www.accaglobal.com/gb/en.html" target="_blank"><img src="../../media/Partnership/100px/acca.png"></a></div>
+				<div class="item p-3" id="item"><a href="https://angel-project.eu/" target="_blank"><img src="../../media/Partnership/100px/angel.png">Angel Project</a></div>
+				
+				<div class="item p-3" id="item"><a href="https://rwi.lu.se/" target="_blank"><img src="../../media/Partnership/100px/rwi.png">Raoul Wallenberg Institute</a></div>
+				<div class="item p-3" id="item"><a href="https://www.accaglobal.com/gb/en.html" target="_blank"><img src="../../media/Partnership/100px/acca.png">ACCA Cambodia</a></div>
 				<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/ati.png"></a></div>
-				<div class="item p-3" id="item"><a href="https://www.cisco.com/site/us/en/index.html" target="_blank"><img src="../../media/Partnership/100px/cisco.png"></a></div>
+				<div class="item p-3" id="item"><a href="https://www.cisco.com/site/us/en/index.html" target="_blank"><img src="../../media/Partnership/100px/cisco.png">Cisco Networking Academy</a></div>
 				<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/jnu.png"></a></div>
 				<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/dpu.png"></a></div>
 				<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/hu.png"></a></div>
@@ -176,13 +177,13 @@ include_once '../../function.php';
 				<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/ku.png"></a></div>
 				<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/mara-logo.png"></a></div>
 				<div class="item p-3" id="item"><a href="https://www.srru.ac.th/" target="_blank"><img src="../../media/Partnership/100px/SymbolSRRU.gif"></a></div>
-				<div class="item p-3" id="item"><a href="https://www.fwd.com.kh/en/" target="_blank"><img src="../../media/Partnership/100px/fwd.jpg"></a></div>
+				<div class="item p-3" id="item"><a href="https://www.fwd.com.kh/en/" target="_blank"><img src="../../media/Partnership/100px/fwd.jpg">FWI Insurance</a></div>
 			</div>
 		</div>
 	</section>
 
 	<!-- =====> End Carousel Partnership <===== -->
-	<section class="faq">
+	<section class="faq" id="faq">
 		<div class="container">
 			<h1 class="text-center mt-5 mb-5">Frequently Ask Question</h1>
 			<div class="row">
@@ -194,28 +195,28 @@ include_once '../../function.php';
 						<li>
 							<label for="first">In publishing and graphic design, Lorem ipsum is a placeholder text commonly?<span>&#x3e</span></label>
 							<input type="radio" name="accordion" id="first">
-							<div class="content">
+							<div class="contents">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, dolor aperiam ipsa accusantium mollitia voluptate veritatis. Aut eveniet quidem minima, ratione quibusdam quisquam? Culpa eius harum id sit eos pariatur.
 							</div>
 						</li>
 						<li>
 							<label for="second">In publishing and graphic design, Lorem ipsum is a placeholder text commonly?<span>&#x3e</span></label>
 							<input type="radio" name="accordion" id="second">
-							<div class="content">
+							<div class="contents">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, dolor aperiam ipsa accusantium mollitia voluptate veritatis. Aut eveniet quidem minima, ratione quibusdam quisquam? Culpa eius harum id sit eos pariatur.
 							</div>
 						</li>
 						<li>
 							<label for="third">In publishing and graphic design, Lorem ipsum is a placeholder text commonly?<span>&#x3e</span></label>
 							<input type="radio" name="accordion" id="third">
-							<div class="content">
+							<div class="contents">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, dolor aperiam ipsa accusantium mollitia voluptate veritatis. Aut eveniet quidem minima, ratione quibusdam quisquam? Culpa eius harum id sit eos pariatur.
 							</div>
 						</li>
 						<li>
 							<label for="fourth">In publishing and graphic design, Lorem ipsum is a placeholder text commonly?<span>&#x3e</span></label>
 							<input type="radio" name="accordion" id="fourth">
-							<div class="content">
+							<div class="contents">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, dolor aperiam ipsa accusantium mollitia voluptate veritatis. Aut eveniet quidem minima, ratione quibusdam quisquam? Culpa eius harum id sit eos pariatur.
 							</div>
 						</li>
@@ -250,6 +251,6 @@ include_once '../../function.php';
 	</script>
 
 	<?php
-	include_once '../include/buttom-content.php';
+	// include_once '../include/buttom-content.php';
 	include_once '../include/footer.php';
 	?>

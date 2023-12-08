@@ -374,13 +374,16 @@
 		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="../../media/slider/2-Law.png" class="d-flex align-items-center w-100 " alt="...">
+				<img src="../../media/slider/2023-2024.png" class="d-flex align-items-center w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="../../media/slider/2-Law.png" class="d-flex align-items-center w-100" alt="...">
 			</div>
 			<div class="carousel-item">
 				<img src="../../media/slider/3-IT.png" class="d-flex align-items-center w-100" alt="...">
 			</div>
 			<div class="carousel-item">
-				<img src="../../media/slider/4-English.png" class="d-flex align-items-center w-100" alt="...">
+				<img src="../../media/slider/fli-slider.png" class="d-flex align-items-center w-100" alt="...">
 			</div>
 			<div class="carousel-item">
 				<img src="../../media/slider/5-Education.png" class="d-flex align-items-center w-100" alt="...">

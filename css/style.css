@@ -357,6 +357,10 @@ td {
   color: var(--white-color);
 }
 
+.custom-card {
+  border-radius: 10px;
+}
+
 /* faculty home section  */
 .faculty .container h1,
 .events .container h1,
@@ -368,6 +372,7 @@ td {
   color: var(--primary-color);
   font-weight: bold;
 }
+
 .faculty .container h1 {
   margin-bottom: 50px;
 }
@@ -377,12 +382,14 @@ td {
   gap: 20px;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 .faculty .container .faculty-row .faculty-links {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   /* border: 1px solid #ccc; */
   border-radius: 20px;
-  padding: 20px;
+  margin: 10px 0;
+  padding: 30px;
   display: flex;
   align-items: center;
 }
@@ -400,10 +407,6 @@ td {
 }
 
 /* president message home section  */
-.messages .container h3 {
-  color: var(--primary-color);
-  font-weight: bold;
-}
 .messages .container h1 {
   padding-top: 50px;
 }
@@ -446,6 +449,88 @@ td {
   padding: 0.75rem 2rem;
   border-radius: 20px;
 }
+@media screen and (max-width: 1399px) {
+  .messages .container h1 {
+    font-size: 1.5rem;
+  }
+  .messages .container .message__content .message__detail p {
+    font-weight: bold;
+    font-size: 95%;
+    color: var(--primary-color);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  .messages .container .message__content span {
+    font-weight: bold;
+    font-size: 95%;
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+}
+@media screen and (max-width: 991px) {
+  .messages .container h1 {
+    font-size: 1.5rem;
+  }
+  .messages .container .message__content .message__detail p {
+    font-weight: bold;
+    font-size: 75%;
+    color: var(--primary-color);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  .messages .container .message__content span {
+    font-weight: bold;
+    font-size: 85%;
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .messages .container .message__content .message__detail img {
+    border-radius: 50px;
+    width: 50% !important;
+    height: auto;
+    margin-right: 2rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .messages .container h1 {
+    font-size: 1.5rem;
+  }
+  .messages .container .message__content .message__detail {
+    display: block !important;
+    text-align: center;
+  }
+  .messages .container .message__content .message__detail p {
+    font-weight: bold;
+    font-size: 75%;
+    color: var(--primary-color);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  .messages .container .message__content span {
+    font-weight: bold;
+    font-size: 85%;
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .messages .container .message__content .message__detail img {
+    border-radius: 50px;
+    width: 50% !important;
+    height: auto;
+    margin: auto;
+  }
+}
 
 /* career center home page  */
 .career-center {
@@ -457,7 +542,7 @@ td {
 .career-center .row .career-center-info p {
   font-family: "Poppins";
   color: var(--primary-color);
-  font-size: 28px;
+  font-size: 2rem;
 }
 
 .career-center .row .career-center-info .career-center-social {
@@ -518,7 +603,7 @@ td {
   display: none;
 }
 
-ul .content {
+ul .contents {
   color: var(--primary-color);
   font-size: 1.5rem;
   padding: 0 10px;
@@ -527,7 +612,7 @@ ul .content {
   overflow: hidden;
   transition: max-height 0.5s;
 }
-.faq .container ul li label + input[type="radio"]:checked + .content {
+.faq .container ul li label + input[type="radio"]:checked + .contents {
   max-height: 400px;
 }
 /* card-event english */
@@ -547,7 +632,8 @@ ul .content {
 
 .animate-card {
   transition: transform 400ms ease-in-out;
-  box-shadow: 0 5px 5px rgba(3, 3, 3, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 10px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   font-style: "Khmer OS Battambang";
   overflow: hidden;
 }
@@ -561,12 +647,15 @@ ul .content {
 } */
 .event-btn {
   border: 1px solid #002060 !important;
-  color: #002060;
+  background-color: #002060 !important;
+  text-decoration: none;
+  color: var(--white-color);
+  padding: 7px 20px;
+  border-radius: 5px;
 }
 .event-btn:hover {
-  border: 1px solid #002060 !important;
-  background-color: #002060 !important;
-  color: white;
+  background-color: white !important;
+  color: #002060 !important;
 }
 
 /* Start History Detail*/
@@ -1131,13 +1220,36 @@ ul .content {
 
 /* ========================================= */
 
+#carousel-inner .carousel-item {
+  width: 100% !important;
+  height: 734px !important;
+}
+
 #footer-location {
   background-color: var(--primary-color);
   color: var(--white-color);
   padding: 20px;
-  font-size: 20px;
+  font-size: 15px;
 }
-
+.footer-links {
+  padding: 2rem;
+}
+.footer-links h4 {
+  font-weight: bold;
+  color: white;
+}
+.footer-links ul {
+  margin: 0;
+  padding: 0;
+}
+.footer-links ul li {
+  text-wrap: nowrap;
+  list-style: none;
+}
+.footer-links ul li a {
+  text-decoration: none;
+  color: var(--white-color);
+}
 .copyright {
   margin-top: 5px;
   font-size: 20px;
