@@ -19,7 +19,7 @@
 				</div>
 				<div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4" id="button-content">
 					<ul>
-						<li><a href="../../en/Pages/feature-coming-soon.php">Policies and Strategies</a></li><br><hr>
+						<li><a href="../../en/Pages/policies.php">Policies and Strategies</a></li><br><hr>
 						<li><a href="../ButtomPages/form-download.php">USEA Form Download</a></li><br><hr>
 						<li><a href="../../en/Pages/feature-coming-soon.php">News Website</a></li><br><hr>
 					</ul>

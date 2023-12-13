@@ -249,7 +249,7 @@
 				<div class="item">
 					<a class="nav-link item-link <?php if ($_SESSION['right'] == 'Policies-Strategies') {
 										echo 'right_active';
-													} ?>" href="policies-strategies.php"> Policies and Strategies
+													} ?>" href="../Pages/policies.php"> Policies and Strategies
 					</a>
 				</div>
 				<hr>

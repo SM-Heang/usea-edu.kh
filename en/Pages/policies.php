@@ -49,14 +49,16 @@
 							// var_dump($result);
 							foreach($result as $key => $value){
 						?>
+
 						<div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 mb-sm-2 mb-lg-2 mb-xxl-0" id="events-card">
-							<div class="card mt-3 mb-3 animate-card">
+							<div class="card mt-2 mb-2 animate-card">
 								<img src="../../media/policies/cover/<?php echo $value['image']; ?>" alt="aquare" class="card-img-top">
 								<div class="card-body">
-									<h5 class="card-title"><?php echo substr($value['policies_title_en'], 0, 140) . "..."; ?></h5>
+									<h6 class="card-title"><?php echo substr($value['policies_title_en'], 0, 200) . "..."; ?></h6>
+									<p><?php echo substr($value['description_en'], 0, 300) . "..."; ?></p>
 								</div>
 								<div class="card-footer text-center p-1">
-									<a href="policies-detail.php?id=<?php echo $value['id'] ?>" class="btn btn-sm event-btn w-50 py-1 px-3">View Document</a>
+								<a href="policies-detail.php?id=<?php echo $value['id'] ?>" class="event-btn w-50 py-1 px-3">View Document</a>
 								</div>
 							</div>
 						</div>

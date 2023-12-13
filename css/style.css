@@ -636,8 +636,12 @@ ul .contents {
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   font-style: "Khmer OS Battambang";
   overflow: hidden;
+  height: 400px;
 }
-
+.animate-card .card-body p {
+  font-family: Khmer OS Battambang;
+  font-size: 12px;
+}
 /* .animate-card:hover{
   transition: transform 400ms ease-in-out;
   transform: scale(1.02) translateY(0px);
@@ -646,16 +650,14 @@ ul .contents {
   z-index: 999;
 } */
 .event-btn {
-  border: 1px solid #002060 !important;
-  background-color: #002060 !important;
   text-decoration: none;
-  color: var(--white-color);
+  color: var(--primary-color);
   padding: 7px 20px;
   border-radius: 5px;
 }
 .event-btn:hover {
-  background-color: white !important;
-  color: #002060 !important;
+  /* background-color: white !important; */
+  color: #1356db !important;
 }
 
 /* Start History Detail*/
