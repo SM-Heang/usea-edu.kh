@@ -53,7 +53,7 @@ include_once '../../function.php';
                     $id = $_GET['id'];
                     $sql = "SELECT 
                     scholarship_id,
-                    institutions_en as scholarship_title_en, 
+                    institutions_en as institution, 
                     usea_degree.degree_name_en as education_level,
                     education_major_en as education_major,
                     location_en as location,
@@ -67,14 +67,14 @@ include_once '../../function.php';
                     // var_dump($result);
                 }
                 ?>
-                    <div class="col-xxl-12 scholarsip-university-info">
+                    <div class="col-xxl-12 scholarsip-university-info"> 
                         <div class="col-xxl-3 scholarship-logo">
                             <img src="../../media/scholarship/university/<?php echo $result['scholarship_img'];?>" alt="">
                         </div>
                         <div class="col-xxl-9 university-info">
                             <hr style="border: 1px solid var(--primary-color);" width="100%;">
                             <ul>
-                                <li><i class="fa-solid fa-building-columns"></i>  <?php echo $result['scholarship_title_en'];?></i></li>
+                                <li><i class="fa-solid fa-building-columns"></i>  <?php echo $result['institution'];?></i></li>
                             </ul>
                             <ul>
                                 <li style=" margin-right: 10px;"><i class="fa-solid fa-graduation-cap"> </i> <?php echo $result['education_level'];?></li>

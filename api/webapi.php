@@ -1124,7 +1124,7 @@ if(isset($_GET['action'])){
                 $scholarship_key = array_search($scholarship_name, array_column($data['scholarship'], 'scholarship_name'));
                 if ($scholarship_key === false) {
                     $data['scholarship'][] = [
-                        'scholarship_name' => $scholarship_name,
+                        'scholarship_name' => $scholarship_name, 
                         'scholarship_data' =>[]
                     ];
                     $scholarship_key = count($data['scholarship']) - 1;
