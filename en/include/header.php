@@ -247,7 +247,7 @@
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/publication.png" width="25px" height="25px">
-											<a href="../Research/publication.php">Publication</a>
+											<a href="../Research/publication.php">USEA Journal</a>
 										</li>
 									</ul>
 								</div>
