@@ -16,22 +16,22 @@
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 footer-links">
                 <h4>Explore</h4>
                 <ul>
-                    <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> Scholarship</a></li>
-                    <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> Career Center</a></li>
-                    <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> Facilities</a></li>
-                    <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> E-Library</a></li>
-                    <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> Alumni</a></li>
-                    <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> Student Service </a></li>
+                    <li><a href="#">Scholarship</a></li>
+                    <li><a href="#">Career Center</a></li>
+                    <li><a href="#">Facilities</a></li>
+                    <li><a href="#">E-Library</a></li>
+                    <li><a href="#">Alumni</a></li>
+                    <li><a href="#">Student Service </a></li>
                 </ul>
             </div>
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 footer-links">
                 <h4>About US</h4>
                 <ul>
-                    <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> History & Logo Meaning</a></li>
-                    <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> President Message</a></li>
-                    <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> Vision, Mission & Core Value</a></li>
-                    <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> University Structure</a></li>
-                    <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> Recognition</a></li>
+                    <li><a href="#">History & Logo Meaning</a></li>
+                    <li><a href="#">President Message</a></li>
+                    <li><a href="#">Vision, Mission & Core Value</a></li>
+                    <li><a href="#">University Structure</a></li>
+                    <li><a href="#">Recognition</a></li>
                 </ul>
             </div>
         </div>
@@ -103,7 +103,7 @@
             items:3
         },
         1000:{
-            items:8
+            items:5
         }
     }
 })

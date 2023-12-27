@@ -319,7 +319,11 @@ td {
   padding: 0.75rem 2rem;
   border-radius: 20px;
 }
-
+.events .container > a:hover {
+  border: 1px solid #002060;
+  background: #ffffff;
+  color: #002060;
+}
 .events .container h1 {
   margin-top: 50px;
   padding-top: 50px;
@@ -392,11 +396,30 @@ td {
   padding: 30px;
   display: flex;
   align-items: center;
+  text-decoration: none;
+  position: relative;
 }
-.faculty .container .faculty-row .faculty-links a {
+.faculty .container .faculty-row .faculty-links::before {
+  /* background: #e4ac3f; */
+  background: #002060;
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+.faculty .container .faculty-row .faculty-links:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.faculty .container .faculty-row .faculty-links:hover span {
+  color: #ffffff;
+}
+.faculty .container .faculty-row .faculty-links span {
   font-size: 1.25rem;
   margin-left: 1rem;
-  text-decoration: none;
   color: var(--primary-color);
   font-weight: bold;
 }
@@ -651,13 +674,15 @@ ul .contents {
 } */
 .event-btn {
   text-decoration: none;
-  color: var(--primary-color);
+  color: #ffffff;
+  background-color: var(--primary-color);
   padding: 7px 20px;
   border-radius: 5px;
 }
 .event-btn:hover {
-  /* background-color: white !important; */
-  color: #1356db !important;
+  background-color: white !important;
+  border: 1px solid #002060;
+  color: #002060 !important;
 }
 
 /* Start History Detail*/
@@ -1234,7 +1259,7 @@ ul .contents {
   font-size: 15px;
 }
 .footer-links {
-  padding: 2rem;
+  padding: 1rem 2rem;
 }
 .footer-links h4 {
   font-weight: bold;
@@ -1245,6 +1270,7 @@ ul .contents {
   padding: 0;
 }
 .footer-links ul li {
+  margin: 1rem 0;
   text-wrap: nowrap;
   list-style: none;
 }
@@ -1840,11 +1866,22 @@ ul .contents {
 }
 
 #partnership-logo #item img {
-  width: auto;
-  height: 100px;
+  height: 200px;
+  width: 200px;
   position: relative;
 }
-
+#partnerships #partnership-logo div a {
+  text-decoration: none;
+}
+#partnerships #partnership-logo div a div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.25rem;
+}
 #page {
   position: relative;
   overflow-x: hidden;

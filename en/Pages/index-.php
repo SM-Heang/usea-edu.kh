@@ -31,38 +31,40 @@ include_once '../../function.php';
 		<div class="container">
 			<h1 class="text-center mt-5">FACULTY & INSTITUTE</h1>
 			<div class="faculty-row" >
-				<div class="faculty-links">
+				<a href="#" class="faculty-links">
 					<img src="../../media/nav-icon/f-economic.png" alt="">
-					<a href="#">Faculty of Economics, Business & Tourism </a>
-					 
-				</div>
-				<div class="faculty-links">
+					<span>Faculty of Economics, Business & Tourism</span> 
+				</a>
+				<a href="#" class="faculty-links">
 					<img src="../../media/nav-icon/f-internation-college.png" alt=""> 
-					<a href="#">International College</a>
-				</div>
-				<div class="faculty-links">
+					<span href="#">International College</span>
+				</a>
+				<a href="#" class="faculty-links">
 					<img src="../../media/nav-icon/f-it.png" alt=""> 
-					<a href="#">Faculty of Science and Technology</a>
-				</div>
-				<div class="faculty-links">
+					<span href="#">Faculty of Science and Technology</span>
+				</a>
+				<a href="#" class="faculty-links">
 					<img src="../../media/nav-icon/fli.png" alt=""> 
-					<a href="#">Foreign Language Institute</a>
-				</div>
-				<div class="faculty-links">
+					<span href="#">Foreign Language Institute</span>
+				</a>
+				<a href="#" class="faculty-links">
 					<img src="../../media/nav-icon/f-law.png" alt=""> 
-					<a href="#">Faculty of Social Science and Law</a>
-				</div>
-				<div class="faculty-links">
+					<span href="#">Faculty of Social Science and Law</span>
+				</a>
+				<a href="#" class="faculty-links">
 				<img src="../../media/nav-icon/post-graduate.png" alt=""> 
-					<a href="#">Post Graduate</a>
-				</div>
-				<div class="faculty-links">
+					<span href="#">Post Graduate</span>
+				</a>
+				<a href="#" class="faculty-links">
 					<img src="../../media/nav-icon/f-art.png" alt=""> 
-					<a href="#">Faculty of Arts, Humanities and Education</a>
-				</div>
+					<span href="#">Faculty of Arts, Humanities and Education</span>
+				</a>
 			</div>
 		</div>
 	</section>
+
+
+	<!-- Event & Announcement -->
 	<section class="events" id="events">
 		<div class="container">
 			<h1 class="text-center">EVENTS & ANNOUNCEMENTS</h1>
@@ -82,7 +84,7 @@ include_once '../../function.php';
 								<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
 							</div>
-							<div class="card-footer text-end">
+							<div class="mx-2 mb-3 text-end">
 								<a href="#" class="event-btn">Read More</a>
 							</div>
 						</div>
@@ -94,7 +96,7 @@ include_once '../../function.php';
 								<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
 							</div>
-							<div class="card-footer text-end">
+							<div class="mx-2 mb-3 text-end">
 								<a href="#" class="event-btn">Read More</a>
 							</div>
 						</div>
@@ -106,7 +108,7 @@ include_once '../../function.php';
 								<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
 							</div>
-							<div class="card-footer text-end">
+							<div class=" mx-2 mb-3 text-end">
 								<a href="#" class="event-btn">Read More</a>
 							</div>
 						</div>
@@ -118,14 +120,14 @@ include_once '../../function.php';
 								<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
 								<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
 							</div>
-							<div class="card-footer text-end">
+							<div class="mx-2 mb-3 text-end">
 								<a href="#" class="event-btn">Read More</a>
 							</div>
 						</div>
 					</div>
 					
 				</div>
-				<a href="#" type="button">View All  <i class="fa-solid fa-angle-right" style="color: #ffffff;"></i></a>
+				<a href="#" type="button">View All  <i class="fa-solid fa-angle-right"></i></a>
 			</div>
 		</div>
 	</section>
@@ -133,6 +135,7 @@ include_once '../../function.php';
 
 	<!-- =====> End Events <===== -->
 
+	<!-- Career Center  -->
 <section class="career-center" id="career-center">
 	<div class="container mt-5 mb-5">
 		<h1 class="text-center mt-5">
@@ -150,7 +153,7 @@ include_once '../../function.php';
         </div>
     </div>
     <div class="col-xxl-4 career-center-image">
-        <img src="../../media/career-center-logo.png" alt="faq" width="400px" height="400px">
+        <a href="#"><img src="../../media/career-center-logo.png" alt="faq" width="400px" height="400px"></a>
     </div>
 </div>
 
@@ -158,26 +161,73 @@ include_once '../../function.php';
 </section>
 
 	<!-- =====> Start Carousel Partnership <===== -->
-
 	<section class="partnerships" id="partnerships">
 		<div class="container mt-5 mb-5">
 			<h1 class="text-center mt-5">PARTNERSHIP</h1>
 			<div class="owl-carousel owl-theme" id="partnership-logo">
-				<div class="item p-3" id="item"><a href="https://angel-project.eu/" target="_blank"><img src="../../media/Partnership/100px/angel.png">Angel Project</a></div>
-				
-				<div class="item p-3" id="item"><a href="https://rwi.lu.se/" target="_blank"><img src="../../media/Partnership/100px/rwi.png">Raoul Wallenberg Institute</a></div>
-				<div class="item p-3" id="item"><a href="https://www.accaglobal.com/gb/en.html" target="_blank"><img src="../../media/Partnership/100px/acca.png">ACCA Cambodia</a></div>
-				<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/ati.png"></a></div>
-				<div class="item p-3" id="item"><a href="https://www.cisco.com/site/us/en/index.html" target="_blank"><img src="../../media/Partnership/100px/cisco.png">Cisco Networking Academy</a></div>
-				<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/jnu.png"></a></div>
-				<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/dpu.png"></a></div>
-				<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/hu.png"></a></div>
-				<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/cu.png"></a></div>
-				<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/knu.png"></a></div>
-				<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/ku.png"></a></div>
-				<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/mara-logo.png"></a></div>
-				<div class="item p-3" id="item"><a href="https://www.srru.ac.th/" target="_blank"><img src="../../media/Partnership/100px/SymbolSRRU.gif"></a></div>
-				<div class="item p-3" id="item"><a href="https://www.fwd.com.kh/en/" target="_blank"><img src="../../media/Partnership/100px/fwd.jpg">FWI Insurance</a></div>
+				<div class="d-flex item p-3" id="item">
+					<a href="https://angel-project.eu/" target="_blank">
+						<div class="partnership-logo">
+							<img src="../../media/Partnership/100px/angel.png">
+							<span>Angel Project</span>
+						</div>
+					</a>
+				</div>
+				<div class="d-flex item p-3" id="item">
+					<a href="https://rwi.lu.se/" target="_blank">
+						<div class="partnership-logo">
+							<img src="../../media/Partnership/100px/rwi.png">
+							<span>Raoul Wallenberg Institute</span>
+						</div>
+					</a>
+				</div>
+				<div class="d-flex item p-3 align-items-center" id="item">
+					<a href="https://www.cisco.com/site/us/en/index.html" target="_blank">
+						<div class="partnership-logo">
+							<img src="../../media/Partnership/100px/acca.png">
+							<span>ACCA Cambodia</span>
+						</div>
+					</a>
+				</div>
+				<!-- <div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/ati.png"></a></div> -->
+				<div class="d-flex item p-3 align-items-center" id="item">
+					<a href="https://www.cisco.com/site/us/en/index.html" target="_blank">
+						<div class="partnership-logo">
+							<img src="../../media/Partnership/100px/cisco.png">
+							<span>Cisco Networking Academy</span>
+						</div>
+					</a>
+				</div>
+				<!-- <div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/jnu.png"></a></div>
+				<div class="item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/dpu.png"></a></div> -->
+				<div class="d-flex item p-3 align-items-center" id="item">
+					<a href="https://www.cisco.com/site/us/en/index.html" target="_blank">
+						<div class="partnership-logo">
+							<img src="../../media/Partnership/100px/hu.png">
+							<span>Hyupsung University</span>
+						</div>
+					</a>
+				</div>
+				<!-- <div class="d-flex  item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/cu.png"></a></div> -->
+				<div class="d-flex item p-3 align-items-center" id="item">
+					<a href="https://www.cisco.com/site/us/en/index.html" target="_blank">
+						<div class="partnership-logo">
+							<img src="../../media/Partnership/100px/knu.png">
+							<span>Kunsan National University</span>
+						</div>
+					</a>
+				</div>
+				<!-- <div class="d-flex  item p-3" id="item"><a href="#"><img src="../../media/Partnership/100px/ku.png"></a></div> -->
+				<!-- <div class="d-flex  item p-3" id="item"><a href="#"><img src="../../media/Partnership/mara-logo.png"></a></div> -->
+				<!-- <div class="d-flex  item p-3" id="item"><a href="https://www.srru.ac.th/" target="_blank"><img src="../../media/Partnership/100px/SymbolSRRU.gif"></a></div> -->
+				<div class="d-flex item p-3 align-items-center" id="item">
+					<a href="https://www.cisco.com/site/us/en/index.html" target="_blank">
+						<div class="partnership-logo">
+							<img src="../../media/Partnership/100px/fwd.jpg">
+							<span>FWI Insurance</span>
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
 	</section>
