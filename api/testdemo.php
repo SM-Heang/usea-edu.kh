@@ -115,7 +115,6 @@ if(isset($_GET['action'])){
 
             // Fetch the rows and store the data in the array
             while ($stmt->fetch(PDO::FETCH_ASSOC)) {
-                var_dump($startDate);
                 $new_events_data = array();
                 if($description == null){
                         $description = "";
@@ -134,6 +133,7 @@ if(isset($_GET['action'])){
                 $event_key = array_search($event_name, array_column($data['event'], 'event_name'));
                 if ($event_key === false) {
                     $data['event'][] = [
+                        'events_date'=> $event_date,
                         'event_name' => $event_name,
                         'event_data' =>[]
                     ];
@@ -146,7 +146,14 @@ if(isset($_GET['action'])){
             // Send the JSON response
             // echo json_encode($data, JSON_PRETTY_PRINT);
             foreach ($data as $key => $value) {
-                var_dump($value[0]['event_data']);
+                // var_dump($value[0]['events_date']);
+                $eventDate = $value[0]['events_date'];
+                $currentDate = date('Y-m-d');
+                if (strtotime($eventDate) >= strtotime($currentDate)) {
+                    
+                } else {
+                    
+                }
             }
             break;
         default:
