@@ -1,4 +1,5 @@
-<div class="col-xxl-3">
+<div class="col-xxl-3 col-xl-3 col-lg-3">
+	
 	<div class="right-content-economic">
 		<div class="item">
 			<nav class="sidebar">
@@ -81,7 +82,6 @@
 			</nav>
 		</div>
 	</div>
-	
 </div>
 </div>
 <script src="../../js/main.js"></script>

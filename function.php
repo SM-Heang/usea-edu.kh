@@ -59,4 +59,10 @@ function convertShift($shift){
         echo "ព្រឹក";
       }    
 }
+function selectData($conn, $sql) {
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    return $result;
+    }
 ?>

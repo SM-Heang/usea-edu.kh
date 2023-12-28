@@ -24,7 +24,7 @@
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="../../css/icomoon.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css"
 
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="../../css/bootstrap.css">
@@ -247,7 +247,7 @@
 										</li>
 										<li class="list-control">
 											<img src="../../media/nav-icon/publication.png" width="25px" height="25px">
-											<a href="../Research/publication.php">Publication</a>
+											<a href="../Research/publication.php">USEA Journal</a>
 										</li>
 									</ul>
 								</div>
@@ -370,17 +370,20 @@
 
 
 	<!-- =====> Start Slider <===== -->
-	<div class="container">
+	<div class="container-fluid">
 		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="../../media/slider/2-Law.png" class="d-flex align-items-center w-100 " alt="...">
+				<img src="../../media/slider/2023-2024.png" class="d-flex align-items-center w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="../../media/slider/2-Law.png" class="d-flex align-items-center w-100" alt="...">
 			</div>
 			<div class="carousel-item">
 				<img src="../../media/slider/3-IT.png" class="d-flex align-items-center w-100" alt="...">
 			</div>
 			<div class="carousel-item">
-				<img src="../../media/slider/4-English.png" class="d-flex align-items-center w-100" alt="...">
+				<img src="../../media/slider/fli-slider.png" class="d-flex align-items-center w-100" alt="...">
 			</div>
 			<div class="carousel-item">
 				<img src="../../media/slider/5-Education.png" class="d-flex align-items-center w-100" alt="...">
