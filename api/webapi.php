@@ -1256,6 +1256,7 @@ if(isset($_GET['action'])){
         
                 if ($event_key === false) {
                     $data['event'][] = [
+                        'events_date'=> $event_date,
                         'event_name' => $event_name,
                         'event_data' => []
                     ];
@@ -1266,8 +1267,10 @@ if(isset($_GET['action'])){
             }
         
             // Send the JSON response
-            echo json_encode($data, JSON_PRETTY_PRINT);
-
+            // echo json_encode($data, JSON_PRETTY_PRINT);
+            foreach ($data as $key => $value) {
+                var_dump($value[0]['event_data']);
+            }
             break;
         case 'events_kh':
             // Prepare the query to fetch student performance data

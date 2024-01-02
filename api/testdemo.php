@@ -141,10 +141,13 @@ if(isset($_GET['action'])){
         
             // Fetch the rows and store the data in the array
             while ($stmt->fetch(PDO::FETCH_ASSOC)) {
-                $new_events_data = [];
-        
-                // Process description as before
-        
+                var_dump($startDate);
+                $new_events_data = array();
+                if($description == null){
+                        $description = "";
+                    }else{
+                        $description = str_replace(array("&nbsp;", "<br>"), array("", "\n"),strip_tags($description, "<br>"));
+                    }
                 $new_events_data = [
                     "image" => "http://" . $_SERVER['HTTP_HOST'] . "/media/events/" . $image,
                     "title" => $title,
@@ -158,6 +161,7 @@ if(isset($_GET['action'])){
         
                 if ($event_key === false) {
                     $data['event'][] = [
+                        'events_date'=> $event_date,
                         'event_name' => $event_name,
                         'event_data' => []
                     ];
@@ -168,10 +172,10 @@ if(isset($_GET['action'])){
             }
         
             // Send the JSON response
-            echo json_encode($data, JSON_PRETTY_PRINT);
-        
-        
-            
+            // echo json_encode($data, JSON_PRETTY_PRINT);
+            foreach ($data as $key => $value) {
+                var_dump($value[0]['event_data']);
+            }
             break;
         default:
             echo "Invalid Data";
