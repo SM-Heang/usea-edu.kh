@@ -15,17 +15,86 @@ include_once '../../function.php';
 <div id="fh5co-blog">
 	<div class="container">
 		<div class="row animate-box fh5co-heading">
-			<div class="text-center">
-				<h2 style="color: #002060; font-weight: bold;">LATEST NEWS</h2>
-				<span class="d-flex justify-content-center" width="100%" height="100%">
-				</span>
+			<div class="mt-3 text-center home-heading">
+				<h2>News & Events</h2>
+				<div class="separator">
+					<div class="line"></div>
+				</div>
+				
 			</div>
-			<p><a href="upcoming-events.php" style="text-decoration:none; color:#002060;">Upcoming Events | <span style="font-size: 0.75rem; font-weight: 500;">All Events</span></a></p>
+			<!-- <p><a href="upcoming-events.php" style="text-decoration:none; color:#002060;">Upcoming Events | <span style="font-size: 0.75rem; font-weight: 500;">All Events</span></a></p> -->
 		</div>
 		
+		<section class="events" id="events">
+			<div class="container">
+				<!-- <h1 class="text-center">EVENTS & ANNOUNCEMENTS</h1> -->
+				<div class="mt-3 tab__events">
+					<div class="tabs">
+						<a class="tabs-links active" onclick="changeTab(this)">Announcement</a>
+						<a class="tabs-links" onclick="changeTab(this)">Upcoming Events</a>
+						<a class="tabs-links" onclick="changeTab(this)">Past Events</a>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
+							<div class="card h-100 animate-card custom-card" >
+								<img src="../../media/events/Environment 20143.JPG" alt="aquare" class="card-img-top">
+								<div class="card-body">
+									<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
+								</div>
+								<div class="mx-2 mb-3 text-end">
+									<a href="#" class="event-btn">Read More</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
+							<div class="card h-100 animate-card custom-card">
+								<img src="../../media/events/Maha Sarakham Visit 02-Mar-20155.JPG" alt="aquare" class="card-img-top">
+								<div class="card-body">
+									<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
+								</div>
+								<div class="mx-2 mb-3 text-end">
+									<a href="#" class="event-btn">Read More</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
+							<div class="card h-100 animate-card custom-card">
+								<img src="../../media/events/Preah Vihea trip 201410_s.jpg" alt="aquare" class="card-img-top">
+								<div class="card-body">
+									<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
+								</div>
+								<div class=" mx-2 mb-3 text-end">
+									<a href="#" class="event-btn">Read More</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
+							<div class="card h-100 animate-card custom-card">
+								<img src="../../media/events/MOU-with-Korea1_s.jpg" alt="aquare" class="card-img-top">
+								<div class="card-body">
+									<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
+								</div>
+								<div class="mx-2 mb-3 text-end">
+									<a href="#" class="event-btn">Read More</a>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<a href="#" type="button">View All <i class="fa-solid fa-angle-right"></i></a>
+				</div>
+			</div>
+		</section>
 		<div class="container mb-5" id="upcoming-events">
 			<!-- =====> Start Upcoming Events <===== -->
-			<div class="row">
+
+			<!-- <div class="row">
 				<?php
 				$sql = ("SELECT event_id, event_title_en, event_date, event_cover, event_description_en, usea_event_status.event_status_en, event_style, tags from usea_events, usea_event_status WHERE usea_events.event_status = usea_event_status.status_id AND event_status = '2' ORDER BY event_date DESC limit 4");
 				$result = selectData($conn, $sql);
@@ -51,13 +120,13 @@ include_once '../../function.php';
 						</div>
 					</div>
 				<?php } ?>
-			</div>
+			</div> -->
 
 			<!-- ==================== -->
 			<!-- =====> End Upcoming Events <===== -->
 
 			<!-- =====> Start Events <===== -->
-			<div class="row mt-5 mb-5 g-3" id=" events">
+			<!-- <div class="row mt-5 mb-5 g-3" id=" events">
 				<div class="row">
 					<p style="font-size: 20px; font-weight: bold;">
 						<a href="events.php" style="text-decoration: none; color:#002060;"> Events | <span style="font-size: 12px; font-weight: 500;">All Events</span></a></a>
@@ -80,7 +149,7 @@ include_once '../../function.php';
 						</div>
 					</div>
 				<?php } ?>
-			</div>
+			</div> -->
 			<!-- =====> End Events <===== -->
 		</div>
 	</div>
@@ -88,8 +157,11 @@ include_once '../../function.php';
 
 	<!-- =====> Start Carousel Partnership <===== -->
 
-	<div class="container mt-5 mb-5">
-		<h1 id="partnership">Partnership</h1>
+	<div class="container partnership">
+		<h2>Partnership</h2>
+		<div class="separator">
+			<div class="line"></div>
+		</div>
 		<div class="owl-carousel owl-theme" id="partnership-logo">
 			<div class="item p-3" id="item"><a href="https://angel-project.eu/" target="_blank"><img src="../../media/Partnership/100px/angel.png"></a></div>
 			<div class="item p-3" id="item"><a href="https://rwi.lu.se/" target="_blank"><img src="../../media/Partnership/100px/rwi.png"></a></div>
