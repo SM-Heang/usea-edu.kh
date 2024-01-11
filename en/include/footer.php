@@ -53,9 +53,7 @@
 	<div class="gototop js-top" id="goto">
 		<a href="#top" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
-	<!-- Custom JS -->
-	<script src="../js/script.js"></script>
-	<script src="../js/main.js"></script>
+	
 	<!-- jQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="../js/jquery.min.js"></script>
@@ -146,5 +144,20 @@
 		AOS.init();
 	</script>
 
+	<!-- Custom JS -->
+	<script src="../js/main.js"></script>
+	<script>
+		
+		const cardsAnnouncement = document.querySelector("#announcement");
+		const cardsUpcomingEvents = document.querySelector("#upcoming-events");
+		const cardsPastEvents = document.querySelector("#past-events");
+		const tabs = document.querySelectorAll(".tabs-links");
+		tabs.forEach((tab) => {
+		tab.addEventListener("click", () => {
+			tabs.forEach(tab=>{tab.classList.remove('active')});
+			tab.classList.add("active");
+		});
+		});
+	</script>
 	</body>
 </html>

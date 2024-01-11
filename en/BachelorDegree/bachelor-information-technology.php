@@ -97,7 +97,7 @@
 												echo $value['article_description_en'];
 												?>
 										</p>
-									<?php } ?>
+									<?php } ?> 
 								</div>
 								<div class="tab-pane" id="pills-cms" role="tabpanel" aria-labelledby="pills-cms-tab" tabindex="0">
 									<?php
