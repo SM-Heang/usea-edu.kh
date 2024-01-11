@@ -93,8 +93,8 @@ include_once '../../function.php';
 									</div>
 								</div>
 							</div>
-							<a href="#" type="button" class="events-view">View All <i class="fa-solid fa-angle-right"></i></a>
 						</div>
+						<a href="#" type="button" class="events-view">View All <i class="fa-solid fa-angle-right"></i></a>
 					</div>
 					<!-- row upcoming events  -->
 					<div class="row">

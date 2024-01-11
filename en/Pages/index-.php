@@ -72,180 +72,189 @@ include_once '../../function.php';
 
 	<!-- Event & Announcement -->
 	
-		<section class="events" id="events">
+		<section class="events mt-5" id="events">
 			<div class="container">
-				<div class="nav-header d-flex justify-content-center align-items-center px-0 px-lg-4">
-					<ul class="nav nav-pills d-block d-flex" id="pills-tab" role="tablist">
-						<li class="nav-item mt-0" role="presentation">
-							<button class="nav-link active" id="pills-ges-tab" data-bs-toggle="pill" data-bs-target="#pills-ges" type="button" role="tab" aria-controls="pills-ges" aria-selected="true">Announcement</button>
-						</li>
-						<li class="nav-item mt-2 mt-lg-0" role="presentation">
-							<button class="nav-link" id="pills-cms-tab" data-bs-toggle="pill" data-bs-target="#pills-cms" type="button" role="tab" aria-controls="pills-cms" aria-selected="false">Upcoming Events</button>
-						</li>
-						<li class="nav-item mt-2 mt-lg-0" role="presentation">
-							<button class="nav-link" id="pills-bms-tab" data-bs-toggle="pill" data-bs-target="#pills-bms" type="button" role="tab" aria-controls="pills-bms" aria-selected="false">Past Events</button>
-						</li>									
-					</ul>
-				</div>
-				
-				<div class="tab-content mt-3" id="pills-tabContent">
-					<div class="tab-pane show active" id="pills-ges" role="tabpanel" aria-labelledby="pills-ges-tab" tabindex="0">
-						<div class="cards-wrapper d-flex">
-							<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
-								<div class="card h-100 animate-card custom-card" >
-									<img src="../../media/events/Environment 20143.JPG" alt="aquare" class="card-img-top">
-									<div class="card-body">
-										<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-										<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
+					<h1 class="text-center mt-5">EVENT & ANNOUNCEMENT</h1>
+					<div class="separator">
+						<div class="line"></div>
+					</div>
+					<div class="nav-header d-flex justify-content-center align-items-center px-0 px-lg-4 mb-3 gx-3">
+						<ul class="nav nav-pills d-block d-flex" id="pills-tab" role="tablist">
+							<li class="nav-item mt-0" role="presentation">
+								<button class="nav-link active" id="pills-ges-tab" data-bs-toggle="pill" data-bs-target="#pills-ges" type="button" role="tab" aria-controls="pills-ges" aria-selected="true">Announcement</button>
+							</li>
+							<li class="nav-item mt-2 mt-lg-0" role="presentation">
+								<button class="nav-link" id="pills-cms-tab" data-bs-toggle="pill" data-bs-target="#pills-cms" type="button" role="tab" aria-controls="pills-cms" aria-selected="false">Upcoming Events</button>
+							</li>
+							<li class="nav-item mt-2 mt-lg-0" role="presentation">
+								<button class="nav-link" id="pills-bms-tab" data-bs-toggle="pill" data-bs-target="#pills-bms" type="button" role="tab" aria-controls="pills-bms" aria-selected="false">Past Events</button>
+							</li>									
+						</ul>
+					</div>
+					
+					<div class="tab-content mt-3" id="pills-tabContent">
+						<div class="tab-pane show active" id="pills-ges" role="tabpanel" aria-labelledby="pills-ges-tab" tabindex="0">
+							<div class="cards-wrapper d-flex">
+								<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
+									<div class="card h-100 animate-card custom-card" >
+										<img src="../../media/events/Environment 20143.JPG" alt="aquare" class="card-img-top">
+										<div class="card-body">
+											<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+											<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
+										</div>
+										<div class="mx-2 mb-3 text-end">
+											<a href="#" class="event-btn">Read More</a>
+										</div>
 									</div>
-									<div class="mx-2 mb-3 text-end">
-										<a href="#" class="event-btn">Read More</a>
+								</div>
+								<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
+									<div class="card h-100 animate-card custom-card">
+										<img src="../../media/events/Maha Sarakham Visit 02-Mar-20155.JPG" alt="aquare" class="card-img-top">
+										<div class="card-body">
+											<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+											<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
+										</div>
+										<div class="mx-2 mb-3 text-end">
+											<a href="#" class="event-btn">Read More</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
+									<div class="card h-100 animate-card custom-card">
+										<img src="../../media/events/Preah Vihea trip 201410_s.jpg" alt="aquare" class="card-img-top">
+										<div class="card-body">
+											<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+											<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
+										</div>
+										<div class=" mx-2 mb-3 text-end">
+											<a href="#" class="event-btn">Read More</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
+									<div class="card h-100 animate-card custom-card">
+										<img src="../../media/events/MOU-with-Korea1_s.jpg" alt="aquare" class="card-img-top">
+										<div class="card-body">
+											<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+											<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
+										</div>
+										<div class="mx-2 mb-3 text-end">
+											<a href="#" class="event-btn">Read More</a>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							<a href="#" type="button" class="events-view">View All <i class="fa-solid fa-angle-right"></i></a>
+						</div>
+						
+						<div class="tab-pane" id="pills-cms" role="tabpanel" aria-labelledby="pills-cms-tab" tabindex="0">
+							<div class="cards-wrapper d-flex">
+								<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
+									<div class="card h-100 animate-card custom-card" >
+										<img src="../../media/events/Environment 20143.JPG" alt="aquare" class="card-img-top">
+										<div class="card-body">
+											<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+											<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
+										</div>
+										<div class="mx-2 mb-3 text-end">
+											<a href="#" class="event-btn">Read More</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
+									<div class="card h-100 animate-card custom-card">
+										<img src="../../media/events/Maha Sarakham Visit 02-Mar-20155.JPG" alt="aquare" class="card-img-top">
+										<div class="card-body">
+											<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+											<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
+										</div>
+										<div class="mx-2 mb-3 text-end">
+											<a href="#" class="event-btn">Read More</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
+									<div class="card h-100 animate-card custom-card">
+										<img src="../../media/events/Preah Vihea trip 201410_s.jpg" alt="aquare" class="card-img-top">
+										<div class="card-body">
+											<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+											<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
+										</div>
+										<div class=" mx-2 mb-3 text-end">
+											<a href="#" class="event-btn">Read More</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
+									<div class="card h-100 animate-card custom-card">
+										<img src="../../media/events/MOU-with-Korea1_s.jpg" alt="aquare" class="card-img-top">
+										<div class="card-body">
+											<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+											<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
+										</div>
+										<div class="mx-2 mb-3 text-end">
+											<a href="#" class="event-btn">Read More</a>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
-								<div class="card h-100 animate-card custom-card">
-									<img src="../../media/events/Maha Sarakham Visit 02-Mar-20155.JPG" alt="aquare" class="card-img-top">
-									<div class="card-body">
-										<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-										<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
+							<a href="#" type="button" class="events-view">View All <i class="fa-solid fa-angle-right"></i></a>
+						</div>
+						<div class="tab-pane" id="pills-bms" role="tabpanel" aria-labelledby="pills-bms-tab" tabindex="0">
+							<div class="cards-wrapper d-flex">
+								<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
+									<div class="card h-100 animate-card custom-card" >
+										<img src="../../media/events/Environment 20143.JPG" alt="aquare" class="card-img-top">
+										<div class="card-body">
+											<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+											<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
+										</div>
+										<div class="mx-2 mb-3 text-end">
+											<a href="#" class="event-btn">Read More</a>
+										</div>
 									</div>
-									<div class="mx-2 mb-3 text-end">
-										<a href="#" class="event-btn">Read More</a>
+								</div>
+								<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
+									<div class="card h-100 animate-card custom-card">
+										<img src="../../media/events/Maha Sarakham Visit 02-Mar-20155.JPG" alt="aquare" class="card-img-top">
+										<div class="card-body">
+											<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+											<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
+										</div>
+										<div class="mx-2 mb-3 text-end">
+											<a href="#" class="event-btn">Read More</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
+									<div class="card h-100 animate-card custom-card">
+										<img src="../../media/events/Preah Vihea trip 201410_s.jpg" alt="aquare" class="card-img-top">
+										<div class="card-body">
+											<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+											<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
+										</div>
+										<div class=" mx-2 mb-3 text-end">
+											<a href="#" class="event-btn">Read More</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
+									<div class="card h-100 animate-card custom-card">
+										<img src="../../media/events/MOU-with-Korea1_s.jpg" alt="aquare" class="card-img-top">
+										<div class="card-body">
+											<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+											<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
+										</div>
+										<div class="mx-2 mb-3 text-end">
+											<a href="#" class="event-btn">Read More</a>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
-								<div class="card h-100 animate-card custom-card">
-									<img src="../../media/events/Preah Vihea trip 201410_s.jpg" alt="aquare" class="card-img-top">
-									<div class="card-body">
-										<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-										<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
-									</div>
-									<div class=" mx-2 mb-3 text-end">
-										<a href="#" class="event-btn">Read More</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
-								<div class="card h-100 animate-card custom-card">
-									<img src="../../media/events/MOU-with-Korea1_s.jpg" alt="aquare" class="card-img-top">
-									<div class="card-body">
-										<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-										<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
-									</div>
-									<div class="mx-2 mb-3 text-end">
-										<a href="#" class="event-btn">Read More</a>
-									</div>
-								</div>
-							</div>
-						</div>
+							<a href="#" type="button" class="events-view">View All <i class="fa-solid fa-angle-right"></i></a>
+						</div>													
 					</div>
-					<div class="tab-pane" id="pills-cms" role="tabpanel" aria-labelledby="pills-cms-tab" tabindex="0">
-					<div class="cards-wrapper d-flex">
-					<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
-						<div class="card h-100 animate-card custom-card" >
-							<img src="../../media/events/Environment 20143.JPG" alt="aquare" class="card-img-top">
-							<div class="card-body">
-								<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-								<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
-							</div>
-							<div class="mx-2 mb-3 text-end">
-								<a href="#" class="event-btn">Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
-						<div class="card h-100 animate-card custom-card">
-							<img src="../../media/events/Maha Sarakham Visit 02-Mar-20155.JPG" alt="aquare" class="card-img-top">
-							<div class="card-body">
-								<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-								<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
-							</div>
-							<div class="mx-2 mb-3 text-end">
-								<a href="#" class="event-btn">Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
-						<div class="card h-100 animate-card custom-card">
-							<img src="../../media/events/Preah Vihea trip 201410_s.jpg" alt="aquare" class="card-img-top">
-							<div class="card-body">
-								<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-								<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
-							</div>
-							<div class=" mx-2 mb-3 text-end">
-								<a href="#" class="event-btn">Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
-						<div class="card h-100 animate-card custom-card">
-							<img src="../../media/events/MOU-with-Korea1_s.jpg" alt="aquare" class="card-img-top">
-							<div class="card-body">
-								<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-								<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
-							</div>
-							<div class="mx-2 mb-3 text-end">
-								<a href="#" class="event-btn">Read More</a>
-							</div>
-						</div>
-					</div>
-				</div>
-					</div>
-					<div class="tab-pane" id="pills-bms" role="tabpanel" aria-labelledby="pills-bms-tab" tabindex="0">
-					<div class="cards-wrapper d-flex">
-					<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
-						<div class="card h-100 animate-card custom-card" >
-							<img src="../../media/events/Environment 20143.JPG" alt="aquare" class="card-img-top">
-							<div class="card-body">
-								<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-								<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
-							</div>
-							<div class="mx-2 mb-3 text-end">
-								<a href="#" class="event-btn">Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
-						<div class="card h-100 animate-card custom-card">
-							<img src="../../media/events/Maha Sarakham Visit 02-Mar-20155.JPG" alt="aquare" class="card-img-top">
-							<div class="card-body">
-								<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-								<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
-							</div>
-							<div class="mx-2 mb-3 text-end">
-								<a href="#" class="event-btn">Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
-						<div class="card h-100 animate-card custom-card">
-							<img src="../../media/events/Preah Vihea trip 201410_s.jpg" alt="aquare" class="card-img-top">
-							<div class="card-body">
-								<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-								<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
-							</div>
-							<div class=" mx-2 mb-3 text-end">
-								<a href="#" class="event-btn">Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-6 col-xxl-3 mb-sm-2 mb-lg-2 mb-xxl-0">
-						<div class="card h-100 animate-card custom-card">
-							<img src="../../media/events/MOU-with-Korea1_s.jpg" alt="aquare" class="card-img-top">
-							<div class="card-body">
-								<h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-								<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam accusamus, fugiat non magnam aspernatur maiores!</p>
-							</div>
-							<div class="mx-2 mb-3 text-end">
-								<a href="#" class="event-btn">Read More</a>
-							</div>
-						</div>
-					</div>
-				</div>
-					</div>													
-				</div>
 			</div>
 		</section>
 	<!-- =====> End Events <===== -->

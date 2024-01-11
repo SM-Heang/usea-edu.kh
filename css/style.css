@@ -84,6 +84,8 @@ body {
   animation: moving 1s ease;
 }
 .tab-pane .cards-wrapper {
+  display: flex;
+  gap: 30px;
   animation: moving 1s ease;
 }
 
@@ -117,13 +119,18 @@ td {
 .nav-header > .nav-pills > .nav-item > .nav-link {
   font-size: 18px;
 }
+pills-tab{
+  display: flex;
+  gap: 20px !important;
+}
 #pills-tab > .nav-item > .nav-link {
+  margin-right: 10px;
   background-color: #fff;
-  border-top: 1px solid var(--primary-color);
-  border-left: 1px solid var(--primary-color);
-  border-right: 1px solid var(--primary-color);
-  border-radius: 0;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 15px 20px;
   color: var(--primary-color);
+  font-weight: 600;
 }
 #pills-tab > .nav-item > .nav-link:hover {
   background-color: var(--primary-color);
@@ -323,13 +330,21 @@ td {
 /* index page  */
 .events,
 .messages {
-  /* background: var(--bg-section); */
+  background: var(--bg-section);
   margin-bottom: 100px;
+}
+.events .container h1 {
+  padding-top: 50px;
+}
+.events .container #pills-tabContent{
+  margin-bottom: 50px;
 }
 .events .container {
   padding-bottom: 10px;
 }
-.events .container .cards .row .events-view {
+.events .container #pills-tabContent #pills-ges .events-view,
+.events .container #pills-tabContent #pills-cms .events-view,
+.events .container #pills-tabContent #pills-bms .events-view {
   width: 150px;
   text-wrap: nowrap;
   display: block;
@@ -340,11 +355,13 @@ td {
   font-weight: bold;
   background-color: var(--primary-color);
   color: var(--white-color);
-  padding: 0.75rem 2rem;
-  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 15px;
   display: block;
 }
-.events .container .cards .row .events-view:hover {
+.events .container #pills-tabContent #pills-ges .events-view:hover,
+.events .container #pills-tabContent #pills-cms .events-view:hover,
+.events .container #pills-tabContent #pills-bms .events-view:hover {
   border: 1px solid #002060;
   background: #ffffff;
   color: #002060;
@@ -353,55 +370,7 @@ td {
   margin-top: 50px;
   padding-top: 50px;
 }
-.tab__events {
-  margin: 3rem auto;
-  width: 50%;
-}
-.tab__events .tabs {
-  /* border-radius: 10px; */
-  /* background-color: var(--white-color); */
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0.1rem 0.2rem;
-  cursor: pointer;
-}
-.tab__events .tabs input[type="radio"] {
-  display: none;
-}
-.tab__events .tabs .tabs-links {
-  font-weight: bold;
-  border-radius: 15px;
-  text-align: center;
-  text-decoration: none;
-  color: var(--primary-color);
-  background: var(--white-color);
-  border: 1px solid var(--primary-color);
-  font-size: 1.25rem;
-  padding: 0.75rem 2.5rem;
-  margin: 0 1.5rem;
-  text-wrap: nowrap;
-}
-.tab__events .tabs .tabs-links.active {
-  background: var(--primary-color);
-  color: var(--white-color);
-}
-.tab__events .tabs .tabs-links:hover {
-  background: var(--primary-color);
-  color: var(--white-color);
-}
-.events .container .cards .row .events-cards .cards-wrapper {
-  display: flex;
-  gap: 30px;
-}
-.events .container .cards .row .events-cards {
-  display: none;
-}
-/* #announcement:checked ~ .events .container .cards .row .announcement,
-#upcoming-events:checked ~ .events .container .cards .row .upcoming-events,
-#past-events:checked ~ .events .container .cards .row .past-events {
-  display: block;
-} */
+
 .custom-card {
   border-radius: 10px;
 }
